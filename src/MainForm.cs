@@ -35,6 +35,9 @@ namespace ESPWorkbench
     }
     public sealed class Settings
     {
+#if DISTRIBUTION
+        public int SchemaVersion;
+#endif
         public string AdbPath = "", ConsolePath = "", ProfilePath = "", Serial = "";
         public string Emulator = "LDPlayer";
         public string Language = "ar";
@@ -60,7 +63,13 @@ namespace ESPWorkbench
             }
         }
         public static Settings Load() { try { return new JavaScriptSerializer().Deserialize<Settings>(File.ReadAllText(File.Exists(FilePath)?FilePath:LegacyFilePath)) ?? new Settings(); } catch { return new Settings(); } }
-        public void Save() { UserData.Replace(FilePath,System.Text.Encoding.UTF8.GetBytes(new JavaScriptSerializer().Serialize(this))); }
+        public void Save()
+        {
+#if DISTRIBUTION
+            SchemaVersion = Math.Max(SchemaVersion, 2);
+#endif
+            UserData.Replace(FilePath,System.Text.Encoding.UTF8.GetBytes(new JavaScriptSerializer().Serialize(this)));
+        }
     }
     public sealed partial class MainForm : Form
     {
@@ -138,11 +147,10 @@ namespace ESPWorkbench
             AddLabel(setup,"ADB device (actual serial)"); ConfigureCombo(setup,devices);
             AddLabel(setup,"Overlay target (select matching instance)"); ConfigureCombo(setup,instances);
             FlowLayoutPanel connectionButtons = Row(); ConfigureButton(scan,"تحديث الأجهزة",async delegate { await Scan(); }); ConfigureButton(inspect,"فحص اللعبة",async delegate { await Inspect(); }); connectionButtons.Controls.Add(scan); connectionButtons.Controls.Add(inspect); setup.Controls.Add(connectionButtons);
-            AddLabel(displaySetup,"JSON profile");
-            ConfigurePath(displaySetup,"JSON profile",profilePath,delegate {
+            ConfigurePath(displaySetup,"JSON profile (optional)",profilePath,delegate {
                 using (OpenFileDialog dialog = new OpenFileDialog { Filter=L.Text("JSON profile (*.json)|*.json"),InitialDirectory=Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"profiles") }) if (dialog.ShowDialog(this)==DialogResult.OK) profilePath.Text=dialog.FileName;
             });
-            Label note = new Label { Width=340,Height=72,ForeColor=Color.FromArgb(237,188,104),Margin=new Padding(0,12,0,4) }; BindText(note,"ملفا 4.6.0 للبناءين 21525 و21518 مرتبطان ببصمة المكتبة. Live يقرأ بيانات فعلية؛ العرض التجريبي يستخدم بيانات مصطنعة."); displaySetup.Controls.Add(note);
+            Label note = new Label { Width=340,Height=72,ForeColor=Color.FromArgb(237,188,104),Margin=new Padding(0,12,0,4) }; BindText(note,"Leave the profile blank to use the verified profile for the installed game build."); displaySetup.Controls.Add(note);
             FlowLayoutPanel checks = new FlowLayoutPanel { Width=340,Height=90,Margin=Padding.Empty };
             AddCheck(checks,"Boxes",options.Boxes,v=>options.Boxes=v); AddCheck(checks,"الصحة",options.Health,v=>options.Health=v); AddCheck(checks,"Labels",options.Names,v=>options.Names=v); AddCheck(checks,"المسافة",options.Distance,v=>options.Distance=v); AddCheck(checks,"Top lines",options.Lines,v=>options.Lines=v); AddCheck(checks,"Alerts",options.Alerts,v=>options.Alerts=v); AddCheck(checks,"أفراد الفريق",options.Allies,v=>options.Allies=v,true); displaySetup.Controls.Add(checks);
             FlowLayoutPanel range = Row(); AddLabel(range,"Max distance (m)");
@@ -169,6 +177,9 @@ namespace ESPWorkbench
             SetStatus("Idle / waiting for connection");
             Native.timeBeginPeriod(1);
             timer.Interval=Math.Max(1,1000/options.RefreshRate); timer.Tick+=delegate {
+#if DISTRIBUTION
+                if (license != null) SuspendUnlicensedFeatures();
+#endif
                 int requestedInterval=Math.Max(1,1000/Math.Max(30,options.RefreshRate)); if(timer.Interval!=requestedInterval) timer.Interval=requestedInterval;
                 if (demoMode) latest=Demo.Make(demoClock.Elapsed.TotalSeconds);
                 if (liveDisplay&&!demoMode&&Painter.Fresh(latest)) SetStatus("LIVE / {0} entities / {1:0} Hz / {2} menu / {3} stop",latest.Actors.Length,latest.ReadHertz,options.Shortcuts.Label(8),options.Shortcuts.Label(2));
@@ -203,8 +214,7 @@ namespace ESPWorkbench
             consolePath.Text=File.Exists(connection.ConsolePath)?connection.ConsolePath:activeEmulator==EmulatorKind.LDPlayer?Emulators.FindConsole():"";
             adbPath.Text=File.Exists(connection.AdbPath)?connection.AdbPath:Emulators.FindAdb(activeEmulator,consolePath.Text);
             endpoint.Text=connection.Endpoint;
-            string defaultProfile=Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"profiles",activeEmulator==EmulatorKind.GameLoop?"pubg-global-4.6.0-21518.json":"pubg-global-4.6.0-21525.json");
-            profilePath.Text=File.Exists(connection.ProfilePath)&&!connection.ProfilePath.EndsWith("pubg-global.template.json",StringComparison.OrdinalIgnoreCase)?connection.ProfilePath:defaultProfile;
+            profilePath.Text=File.Exists(connection.ProfilePath)&&!Profile.IsBundledPath(connection.ProfilePath)?connection.ProfilePath:"";
             consoleRow.Visible=((Control)consoleRow.Tag).Visible=activeEmulator==EmulatorKind.LDPlayer;
             endpointRow.Visible=((Control)endpointRow.Tag).Visible=activeEmulator==EmulatorKind.GameLoop;
         }
@@ -343,6 +353,11 @@ namespace ESPWorkbench
         {
             busy=value; bool running=readerTask!=null && !readerTask.IsCompleted;
             scan.Enabled=inspect.Enabled=!value&&!running; live.Enabled=demo.Enabled=!value&&!running;
+#if DISTRIBUTION
+            inspect.Enabled &= license != null && license.Allows("inspection");
+            live.Enabled &= license != null && license.Allows("live");
+            demo.Enabled &= license != null && license.Allows("demo");
+#endif
             adbPath.Enabled=consolePath.Enabled=profilePath.Enabled=devices.Enabled=instances.Enabled=!value&&!running;
             connectionSetup.Enabled=profilePath.Parent.Enabled=!value&&!running;
             stop.Enabled=!value && (demoMode||running||latest!=null);
@@ -395,36 +410,71 @@ namespace ESPWorkbench
         }
         private async Task Inspect()
         {
-            if (busy) return; SetBusy(true);
-            try { Adb adb=SelectedAdb(); Profile profile=Profile.Load(profilePath.Text); string text=await Task.Run(()=>Diagnostics.Run(adb,profile)); WriteLog(text); SetStatus("Inspection complete / see results below"); }
+            if (busy) return;
+#if DISTRIBUTION
+            using (var permission = license == null ? null : license.BeginWork("inspection"))
+            {
+                if (permission == null) return;
+                await InspectWithPermission(permission.Token);
+            }
+#else
+            await InspectWithPermission(CancellationToken.None);
+#endif
+        }
+        private async Task InspectWithPermission(CancellationToken token)
+        {
+            SetBusy(true);
+            try { Adb adb=SelectedAdb(); Profile profile=String.IsNullOrWhiteSpace(profilePath.Text)?null:Profile.Load(profilePath.Text); string text=await Task.Run(()=>Diagnostics.Run(adb,profile,token)); token.ThrowIfCancellationRequested(); WriteLog(text); SetStatus("Inspection complete / see results below"); }
+            catch (OperationCanceledException) { SetStatus("Stopped"); }
             catch (Exception ex) { Failure(ex); }
             finally { SetBusy(false); }
         }
         private void StartDemo()
         {
             if (busy || (readerTask!=null&&!readerTask.IsCompleted)) return;
+#if DISTRIBUTION
+            if (license == null || !license.Allows("demo")) return;
+            if (demoPermission != null) demoPermission.Dispose();
+            demoPermission = license.BeginWork("demo");
+            if (demoPermission == null) return;
+#endif
             demoMode=true; demoClock.Restart(); overlay.Hide(); latest=Demo.Make(0); SetStatus("DEMO / generated actors only / no game data"); WriteLogText("Demo started. All displayed positions and labels are synthetic."); SetBusy(false);
         }
         internal async Task StartLive()
         {
-            if (busy || (readerTask!=null&&!readerTask.IsCompleted)) return; SetBusy(true);
+            if (busy || (readerTask!=null&&!readerTask.IsCompleted)) return;
+#if DISTRIBUTION
+            if (license == null || !license.Allows("live")) return;
+#endif
+            SetBusy(true);
             try
             {
-                Profile p=Profile.Load(profilePath.Text); p.Validate(); Adb adb=SelectedAdb();
+                Profile p=String.IsNullOrWhiteSpace(profilePath.Text)?null:Profile.Load(profilePath.Text); Adb adb=SelectedAdb();
                 Instance target=instances.SelectedItem as Instance;
                 if (target==null) throw new IOException(L.Format("Select the matching running {0} game window.",Emulators.Name(activeEmulator)));
                 if (!Native.IsWindow(target.Window)) throw new IOException(L.Text("The game render surface is unavailable. Restore the emulator game window and refresh devices."));
                 demoMode=false; latest=null; frameBuffer.Clear(); overlay.Hide();
                 if (readerCancel!=null) readerCancel.Dispose();
-                readerCancel=new CancellationTokenSource(); CancellationToken token=readerCancel.Token;
-                GameInfo info=await Task.Run(()=>GameInfo.Inspect(adb,p.Package,false,token));
+#if DISTRIBUTION
+                if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
+                readerCancel = license.BeginWork("live");
+                if (readerCancel == null) return;
+#else
+                readerCancel = new CancellationTokenSource();
+#endif
+                CancellationToken token=readerCancel.Token;
+                string package=p==null?Profile.GlobalPackage:p.Package;
+                GameInfo info=await Task.Run(()=>GameInfo.Inspect(adb,package,false,token));
+                if (p==null) p=Profile.ForInstalled(info);
+                p.Validate();
                 GameCompatibility.Ensure(p,info,Emulators.Name(activeEmulator));
                 info.Maps=await Task.Run(()=>adb.ReadMaps(info.Pid,token));
                 List<MapRegion> maps=MapRegion.Parse(info.Maps); ulong baseAddress=MapRegion.ModuleBase(maps,p.Module);
                 AndroidMemory memory=new AndroidMemory(adb,info.Pid,maps,token);
                 await Task.Run(()=>memory.Read(baseAddress,64));
                 NativeReader nativeReader=null;
-                if (p.Backend=="Native") { await Task.Run(()=>NativeReader.Prepare(adb,p,info,maps,token)); nativeReader=new NativeReader(adb,info.Pid,baseAddress); }
+                if (p.Backend=="Native") { await Task.Run(()=>NativeReader.Prepare(adb,p,info,maps,token)); nativeReader=new NativeReader(adb,info.Pid,baseAddress,p); }
+                token.ThrowIfCancellationRequested();
                 GameReader reader=p.Backend=="Native"?null:new GameReader(p,memory,baseAddress); overlay.Target=target.Window; overlay.Suppressed=false;
                 StopAimInput();
                 WriteLogText("Aim input: Windows Mouse (no touchscreen gestures). Tool integrity: 0x{0:X}. GameLoop may require restarting this tool as administrator.",WindowsInputAccess.CurrentIntegrity);
@@ -458,6 +508,9 @@ namespace ESPWorkbench
         }
         public async Task StopReader()
         {
+#if DISTRIBUTION
+            if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
+#endif
             StopAimInput();
             liveDisplay=false; overlay.Suppressed=true; demoMode=false; latest=null; frameBuffer.Clear(); overlay.Hide();
             UpdateQuickBindings();
@@ -553,6 +606,9 @@ namespace ESPWorkbench
         private void RebindShortcuts()
         {
             ReleaseShortcuts();overlay.Quick.Unavailable.Clear();shortcutsSuspended=false;
+#if DISTRIBUTION
+            if (license == null || !license.Allows(null)) return;
+#endif
             toggleHotkey=RegisterShortcut(1);stopHotkey=RegisterShortcut(2);menuHotkey=RegisterShortcut(3);UpdateQuickBindings();
         }
         private void CaptureShortcuts(bool capturing)
@@ -606,6 +662,9 @@ namespace ESPWorkbench
         {
             if (closing) return;
             e.Cancel=true; closing=true; liveDisplay=false; overlay.Suppressed=true; overlay.Hide(); timer.Stop();StopAimInput(); if (readerCancel!=null) readerCancel.Cancel();
+#if DISTRIBUTION
+            if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
+#endif
             UpdateQuickBindings();
             ReleaseShortcuts();
             if (readerTask!=null) try { await readerTask; } catch { }

@@ -203,9 +203,15 @@ namespace ESPWorkbench
     }
     public sealed class Profile
     {
+        public const string GlobalPackage = "com.tencent.ig";
+        private static readonly Dictionary<string,string> NativeHashes = new Dictionary<string,string>(StringComparer.Ordinal) {
+            { "4.6.0-21525", "abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce" },
+            { "4.6.0-21518", "ad923890b4e12e389aba66253ef0259285b351b3742fbda7ae0d0716ea070484" },
+            { "4.7.0-21718", "0467ee62be0054b9e7ed4a5544178296e827af61627a691b06fd6d48d464006c" }
+        };
         public string Name = "Unconfigured profile";
         public bool Enabled;
-        public string Package = "com.tencent.ig", VersionName = "", VersionCode = "", Module = "libUE4.so", Backend="AdbPages", ModuleSha256="";
+        public string Package = GlobalPackage, VersionName = "", VersionCode = "", Module = "libUE4.so", Backend="AdbPages", ModuleSha256="";
         public int PointerSize = 8, MaxActors = 1024, MaxDisplayed = 100, PollMilliseconds = 500;
         public bool ColumnMajor;
         public float UnitsPerMeter = 100, ActorHeight = 180, MaxHealth = 100;
@@ -229,9 +235,9 @@ namespace ESPWorkbench
             if (!Vec3.Good(UnitsPerMeter) || UnitsPerMeter <= 0 || !Vec3.Good(ActorHeight) || ActorHeight <= 0 || !Vec3.Good(MaxHealth) || MaxHealth <= 0) throw new InvalidDataException(L.Text("Invalid units, height, or health."));
             if (Backend=="Native")
             {
-                bool known=(VersionCode=="21525"&&ModuleSha256=="abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce")
-                    || (VersionCode=="21518"&&ModuleSha256=="ad923890b4e12e389aba66253ef0259285b351b3742fbda7ae0d0716ea070484");
-                if (Package!="com.tencent.ig" || VersionName!="4.6.0" || Module!="libUE4.so" || PointerSize!=8 || !known) throw new InvalidDataException(L.Text("Native reader requires an exact inspected PUBG Global 4.6.0 ARM64 build/library pair (21525 or 21518)."));
+                string expected;
+                if (Package!=GlobalPackage || Module!="libUE4.so" || PointerSize!=8 || !NativeHashes.TryGetValue(VersionName+"-"+VersionCode,out expected) || !String.Equals(ModuleSha256,expected,StringComparison.OrdinalIgnoreCase))
+                    throw new InvalidDataException(L.Text("Native reader requires a verified PUBG Global ARM64 build and library fingerprint."));
                 return;
             }
             if (Backend!="AdbPages") throw new InvalidDataException(L.Text("Unknown reader backend."));
@@ -250,8 +256,16 @@ namespace ESPWorkbench
         public static Profile ForInstalled(GameInfo info)
         {
             if(!Regex.IsMatch(info.VersionName??"",@"^[0-9]+(\.[0-9]+)*$")||!Regex.IsMatch(info.VersionCode??"",@"^[0-9]+$")) throw new InvalidDataException(L.Text("Invalid installed game version."));
-            string file=Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"profiles","pubg-global-"+info.VersionName+"-"+info.VersionCode+".json");
+            string file=Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"profiles",BundledFileName(info.VersionName+"-"+info.VersionCode));
+            if (!File.Exists(file)) throw new InvalidDataException(L.Format("No verified profile is installed for PUBG Global {0} ({1}).",info.VersionName,info.VersionCode));
             Profile profile=Load(file); profile.Validate(); return profile;
+        }
+        private static string BundledFileName(string build) { return "pubg-global-"+build+".json"; }
+        internal static bool IsBundledPath(string path)
+        {
+            string file=Path.GetFileName(path);
+            return String.Equals(file,"pubg-global.template.json",StringComparison.OrdinalIgnoreCase) ||
+                NativeHashes.Keys.Any(build=>String.Equals(file,BundledFileName(build),StringComparison.OrdinalIgnoreCase));
         }
     }
     public sealed class MapRegion

@@ -1,0 +1,64 @@
+name: Deploy production
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: spectravision-production
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/main'
+    uses: ./.github/workflows/verify.yml
+  deploy:
+    needs: verify
+    runs-on: ubuntu-latest
+    environment: production
+    defaults:
+      run:
+        working-directory: licensing
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: licensing/package-lock.json
+      - run: npm ci && npm run build
+      - name: Verify admin authentication before touching production D1
+        run: node tests/smoke.mjs production --admin-only --require-auth
+      - name: Record restore point, reconcile schema and deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" && test -n "$CLOUDFLARE_ACCOUNT_ID"
+          db=spectravision-licenses
+          mkdir -p deployment
+          printf '%s\n' "$GITHUB_SHA" > deployment/commit.txt
+          npx --no-install wrangler d1 time-travel info "$db" --config wrangler.client.jsonc --json > deployment/bookmark.json
+          npx --no-install wrangler d1 execute "$db" --remote --config wrangler.client.jsonc --json --command "$(cat tests/reconcile.sql)" > deployment/before.json
+          npx --no-install wrangler d1 migrations apply "$db" --remote --config wrangler.client.jsonc
+          npx --no-install wrangler d1 execute "$db" --remote --config wrangler.client.jsonc --json --command "$(cat tests/reconcile.sql)" > deployment/after.json
+          node --input-type=module <<'JS'
+          import assert from "node:assert/strict";
+          import { readFileSync } from "node:fs";
+          const read = name => JSON.parse(readFileSync("deployment/" + name + ".json"))[0].results[0];
+          const before = read("before"), after = read("after");
+          assert.equal(after.orphaned_devices, 0);
+          assert.equal(after.duplicate_codes, 0);
+          assert.equal(after.duplicate_legacy_tokens, 0);
+          assert.deepEqual(after, before, "Counts changed during the migration. Reconcile concurrent v1 changes before deploying.");
+          JS
+          for config in client admin; do
+            npx --no-install wrangler deploy --config "wrangler.$config.jsonc"
+            npx --no-install wrangler deployments list --config "wrangler.$config.jsonc" --json > "deployment/$config.json"
+          done
+      - run: node tests/smoke.mjs production --require-auth
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: production-deployment
+          path: licensing/deployment/
+          retention-days: 14

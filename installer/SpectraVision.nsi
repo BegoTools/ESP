@@ -8,9 +8,15 @@ SetCompressor /SOLID lzma
 !include "x64.nsh"
 
 !if "${PRODUCT}" == "SpectraVision-Test"
-!define PRODUCT_NAME "RAM HAX Test"
+!define PRODUCT_NAME "RAM HAX"
+; Keep the staging and stable Start menu entries from replacing each other.
+!define START_MENU_DIR "$SMPROGRAMS\SpectraVision Staging"
+!else if "${PRODUCT}" == "SpectraVision-Local"
+!define PRODUCT_NAME "RAM HAX Local"
+!define START_MENU_DIR "$SMPROGRAMS"
 !else
 !define PRODUCT_NAME "RAM HAX"
+!define START_MENU_DIR "$SMPROGRAMS"
 !endif
 Name "${PRODUCT_NAME}"
 OutFile "${SETUP_FILE}"
@@ -73,7 +79,22 @@ Section "RAM HAX"
   SetOutPath "$INSTDIR\versions\${VERSION}"
   WriteUninstaller "$INSTDIR\Uninstall.exe"
   Delete "$SMPROGRAMS\${PRODUCT}.lnk"
-  CreateShortcut "$SMPROGRAMS\${PRODUCT_NAME}.lnk" "$INSTDIR\versions\${VERSION}\ESPWorkbench.exe"
+!if "${PRODUCT}" == "SpectraVision-Test"
+  Delete "$SMPROGRAMS\RAM HAX Test.lnk"
+  CreateDirectory "${START_MENU_DIR}"
+!endif
+  CreateShortcut "${START_MENU_DIR}\${PRODUCT_NAME}.lnk" "$INSTDIR\versions\${VERSION}\ESPWorkbench.exe"
+
+  ; The shared desktop name can be replaced by another install. Record this file
+  ; so this uninstaller only removes the shortcut it actually created.
+  ClearErrors
+  CreateShortcut "$DESKTOP\${PRODUCT_NAME}.lnk" "$INSTDIR\versions\${VERSION}\ESPWorkbench.exe"
+  ${IfNot} ${Errors}
+    GetFileTime "$DESKTOP\${PRODUCT_NAME}.lnk" $0 $1
+    ${IfNot} ${Errors}
+      WriteRegStr HKCU "Software\${PRODUCT}" "DesktopShortcutStamp" "$0:$1"
+    ${EndIf}
+  ${EndIf}
   WriteRegStr HKCU "Software\${PRODUCT}" "Version" "${VERSION}"
   WriteRegStr HKCU "Software\${PRODUCT}" "InstallDir" "$INSTDIR"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT}" "DisplayName" "${PRODUCT_NAME}"
@@ -96,7 +117,19 @@ FunctionEnd
 Section "Uninstall"
   SetShellVarContext current
   Delete "$SMPROGRAMS\${PRODUCT}.lnk"
-  Delete "$SMPROGRAMS\${PRODUCT_NAME}.lnk"
+  Delete "${START_MENU_DIR}\${PRODUCT_NAME}.lnk"
+!if "${PRODUCT}" == "SpectraVision-Test"
+  RMDir "${START_MENU_DIR}"
+!endif
+  ReadRegStr $2 HKCU "Software\${PRODUCT}" "DesktopShortcutStamp"
+  ${If} $2 != ""
+    ClearErrors
+    GetFileTime "$DESKTOP\${PRODUCT_NAME}.lnk" $0 $1
+    ${IfNot} ${Errors}
+    ${AndIf} $2 == "$0:$1"
+      Delete "$DESKTOP\${PRODUCT_NAME}.lnk"
+    ${EndIf}
+  ${EndIf}
   RMDir /r "$INSTDIR\versions"
   Delete "$INSTDIR\Uninstall.exe"
   RMDir "$INSTDIR"

@@ -13,13 +13,17 @@ namespace ESPWorkbench
     {
         public static string Run(Adb adb)
         {
-            return Run(adb,Profile.ForInstalled(GameInfo.Inspect(adb,"com.tencent.ig",false,CancellationToken.None)));
+            return Run(adb,null,CancellationToken.None);
         }
         public static string Run(Adb adb,Profile profile)
         {
-            CancellationToken token=CancellationToken.None;
+            return Run(adb,profile,CancellationToken.None);
+        }
+        internal static string Run(Adb adb,Profile profile,CancellationToken token)
+        {
+            GameInfo info=GameInfo.Inspect(adb,profile==null?Profile.GlobalPackage:profile.Package,false,token);
+            if (profile==null) profile=Profile.ForInstalled(info);
             profile.Validate();
-            GameInfo info=GameInfo.Inspect(adb,profile.Package,false,token);
             string report=String.Join("\r\n",new[] {
                 "ADB: "+adb.Executable,
                 L.Text("Serial:")+" "+adb.Serial,
@@ -42,6 +46,7 @@ namespace ESPWorkbench
                 report+="\r\n"+L.Text("libUE4.so base:")+" 0x"+module.ToString("X")+"\r\n"+L.Text("Memory transport:")+" "+L.Format("PASS / {0} decoded bytes",page.Length);
                 report+="\r\n"+L.Text("Live startup also verifies the profile's library SHA-256.");
             }
+            catch (OperationCanceledException) { throw; }
             catch (Exception ex) { report+="\r\n"+L.Text("Memory transport:")+" "+L.Text("FAILED")+" / "+ex.Message; }
             return report;
         }
@@ -87,13 +92,13 @@ namespace ESPWorkbench
                 if (args.Length>=4 && args[0]=="--capture-native")
                 {
                     Adb adb=new Adb(args[1],args[2]); CancellationToken token=CancellationToken.None;
-                    GameInfo info=GameInfo.Inspect(adb,"com.tencent.ig",false,token);
+                    GameInfo info=GameInfo.Inspect(adb,Profile.GlobalPackage,false,token);
                     Profile profile=args.Length>=5?Profile.Load(args[4]):Profile.ForInstalled(info); profile.Validate();
                     GameCompatibility.Ensure(profile,info,"Selected emulator");
                     info.Maps=adb.ReadMaps(info.Pid,token);
                     System.Collections.Generic.List<MapRegion> maps=MapRegion.Parse(info.Maps);
                     NativeReader.Prepare(adb,profile,info,maps,token);
-                    NativeSnapshot snapshot=new NativeReader(adb,info.Pid,MapRegion.ModuleBase(maps,profile.Module)).Once(token);
+                    NativeSnapshot snapshot=new NativeReader(adb,info.Pid,MapRegion.ModuleBase(maps,profile.Module),profile).Once(token);
                     File.WriteAllText(args[3],new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(snapshot)); return 0;
                 }
                 if (args.Length>=4 && args[0]=="--render-snapshot")
@@ -168,21 +173,18 @@ namespace ESPWorkbench
                     return 0;
                 }
 #if DISTRIBUTION
-                LicenseClient license = new LicenseClient();
-                bool firstLaunch = true;
-                while (true)
+                using (var license = new LicenseService())
                 {
-                    using (ActivationForm activation = new ActivationForm(license, firstLaunch && license.HasToken))
+                    using (var activation = new ActivationForm(license, license.HasToken))
                         if (activation.ShowDialog() != DialogResult.OK) return 0;
-                    using (MainForm form = new MainForm(firstLaunch && args.Contains("--live"), preferred))
+                    using (var form = new MainForm(args.Contains("--live"), preferred))
                     {
                         form.ConnectDistribution(license);
                         Application.Run(form);
                         form.InstallStagedUpdate();
-                        if (!form.LicenseEnded) return 0;
                     }
-                    firstLaunch = false;
                 }
+                return 0;
 #else
                 Application.Run(new MainForm(args.Contains("--live"),preferred)); return 0;
 #endif

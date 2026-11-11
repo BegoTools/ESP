@@ -46,6 +46,15 @@ namespace ESPWorkbench
             Profile knownNative=new Profile {Enabled=true,Backend="Native",VersionName="4.6.0",VersionCode="21518",ModuleSha256="ad923890b4e12e389aba66253ef0259285b351b3742fbda7ae0d0716ea070484"};knownNative.Validate();
             Check(true,"verified GameLoop exact-build profile accepted");
             knownNative.VersionCode="21525";Throws(()=>knownNative.Validate(),"native build and hash cannot be interchanged");
+            var game47=new GameInfo { VersionName="4.7.0", VersionCode="21718", Abi="arm64-v8a", Root=true };
+            Profile installed47=Profile.ForInstalled(game47);
+            Check(installed47.Backend=="Native"&&GameCompatibility.Problems(installed47,game47).Count==0,"installed 4.7.0 selects its shipped native profile");
+            game47.Abi="x86_64";
+            Throws(()=>GameCompatibility.Ensure(installed47,game47,"GameLoop"),"native profile rejects a different 64-bit ABI");
+            installed47.VersionName="4.6.0";
+            Throws(()=>installed47.Validate(),"native fingerprint is bound to both the version and build number");
+            game47.VersionCode="21719";
+            Throws(()=>Profile.ForInstalled(game47),"an unverified game build does not fall back to a neighboring profile");
             Check(Emulators.ValidateEndpoint("localhost:5555")=="127.0.0.1:5555","GameLoop local ADB address normalization");
             Throws(()=>Emulators.ValidateEndpoint("127.0.0.1:65536"),"invalid GameLoop port rejected");
             Throws(()=>Emulators.ValidateEndpoint("example.com:5555"),"non-local GameLoop address rejected");

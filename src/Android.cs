@@ -175,7 +175,9 @@ namespace ESPWorkbench
             if (!info.Root)
                 problems.Add(L.Text("Root access unavailable: the reader needs an existing privileged command facility (su, root shell, or GameLoop txperm). ADB connection alone is insufficient."));
             string abi=info.Abi??"";
-            if ((abi.Contains("64") && profile.PointerSize!=8) || (!abi.Contains("64") && abi!="null" && abi.Length>0 && profile.PointerSize!=4))
+            if (profile.Backend=="Native" && abi!="arm64-v8a")
+                problems.Add(L.Text("The native reader requires the arm64-v8a game package."));
+            if (profile.Backend!="Native" && ((abi.Contains("64") && profile.PointerSize!=8) || (!abi.Contains("64") && abi!="null" && abi.Length>0 && profile.PointerSize!=4)))
                 problems.Add(L.Text("Package ABI does not match the profile pointer width."));
             return problems;
         }
