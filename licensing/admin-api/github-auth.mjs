@@ -90,7 +90,7 @@ async function finishLogin(config, request, url) {
   const code = url.searchParams.get("code");
   if (!code || code.length > 128 || url.searchParams.get("state") !== nonce.state) throw new HttpError(401, "unauthorized");
   const exchange = await fetch("https://github.com/login/oauth/access_token", {
-    method: "POST", redirect: "error", signal: AbortSignal.timeout(5000),
+    method: "POST", redirect: "manual", signal: AbortSignal.timeout(5000),
     headers: { Accept: "application/json" },
     body: new URLSearchParams({
       client_id: config.clientId, client_secret: config.clientSecret,
@@ -101,7 +101,7 @@ async function finishLogin(config, request, url) {
   const { access_token: token } = await exchange.json();
   if (typeof token !== "string" || !token) throw new HttpError(401, "unauthorized");
   const profile = await fetch("https://api.github.com/user", {
-    redirect: "error", signal: AbortSignal.timeout(5000),
+    redirect: "manual", signal: AbortSignal.timeout(5000),
     headers: { Authorization: "Bearer " + token, Accept: "application/vnd.github+json", "User-Agent": "SpectraVision" }
   });
   if (!profile.ok) throw new HttpError(502, "login_failed");

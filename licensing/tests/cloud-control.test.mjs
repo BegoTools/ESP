@@ -139,6 +139,7 @@ test("GitHub login exchanges a state-bound PKCE code and authorizes only configu
 
   let userId = 456;
   t.mock.method(globalThis, "fetch", async (target, options) => {
+    assert.equal(options.redirect, "manual");
     if (target === "https://github.com/login/oauth/access_token") {
       assert.equal(options.body.get("code"), "example");
       assert.equal(options.body.get("redirect_uri"), origin + "/auth/callback");
