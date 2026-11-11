@@ -1,0 +1,27 @@
+﻿[
+    {
+        "Snapshot":  "investigation\\host-native-snapshot.json",
+        "Count":  4,
+        "TrainingTargets":  0
+    },
+    {
+        "Snapshot":  "investigation\\gameloop-21518\\host-native-snapshot.json",
+        "Count":  4,
+        "TrainingTargets":  4
+    },
+    {
+        "Snapshot":  "investigation\\gameloop-21518\\render-native-snapshot.json",
+        "Count":  4,
+        "TrainingTargets":  4
+    },
+    {
+        "Snapshot":  "investigation\\aim-v4\\activation-state.json",
+        "Count":  4,
+        "TrainingTargets":  4
+    },
+    {
+        "Snapshot":  "build-player-count\\live-snapshot.json",
+        "Count":  4,
+        "TrainingTargets":  4
+    }
+]

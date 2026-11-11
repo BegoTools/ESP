@@ -1,0 +1,60 @@
+0x75eb4c4: sub      sp, sp, #0x40
+0x75eb4c8: stp      x29, x30, [sp, #0x20]
+0x75eb4cc: stp      x20, x19, [sp, #0x30]
+0x75eb4d0: add      x29, sp, #0x20
+0x75eb4d4: stur     xzr, [x29, #-8]
+0x75eb4d8: ldr      x8, [x1, #0x20]
+0x75eb4dc: mov      x20, x1
+0x75eb4e0: mov      x19, x2
+0x75eb4e4: cbz      x8, #0x75eb4fc
+0x75eb4e8: ldr      x1, [x20, #0x18]
+0x75eb4ec: sub      x2, x29, #8
+0x75eb4f0: mov      x0, x20
+0x75eb4f4: bl       #0x8e54d38
+0x75eb4f8: b        #0x75eb514
+0x75eb4fc: ldr      x2, [x20, #0x80]
+0x75eb500: sub      x1, x29, #8
+0x75eb504: mov      x0, x20
+0x75eb508: ldr      x8, [x2, #0x28]
+0x75eb50c: str      x8, [x20, #0x80]
+0x75eb510: bl       #0x8e54d74
+0x75eb514: ldr      x8, [x20, #0x20]
+0x75eb518: cmp      x8, #0
+0x75eb51c: cinc     x8, x8, ne
+0x75eb520: str      x8, [x20, #0x20]
+0x75eb524: ldur     x0, [x29, #-8]
+0x75eb528: add      x8, sp, #8
+0x75eb52c: add      x20, sp, #8
+0x75eb530: bl       #0x6c70198
+0x75eb534: cmp      x20, x19
+0x75eb538: b.eq     #0x75eb55c
+0x75eb53c: ldr      x0, [x19]
+0x75eb540: cbz      x0, #0x75eb548
+0x75eb544: bl       #0x8a8eb0c
+0x75eb548: ldr      x8, [sp, #8]
+0x75eb54c: str      x8, [x19]
+0x75eb550: ldr      d0, [sp, #0x10]
+0x75eb554: str      d0, [x19, #8]
+0x75eb558: b        #0x75eb568
+0x75eb55c: ldr      x0, [sp, #8]
+0x75eb560: cbz      x0, #0x75eb568
+0x75eb564: bl       #0x8a8eb0c
+0x75eb568: ldp      x20, x19, [sp, #0x30]
+0x75eb56c: ldp      x29, x30, [sp, #0x20]
+0x75eb570: add      sp, sp, #0x40
+0x75eb574: ret      
+0x75eb578: bl       #0x5bfb020
+0x75eb57c: ldr      x8, [sp, #8]
+0x75eb580: mov      x19, x0
+0x75eb584: cbz      x8, #0x75eb590
+0x75eb588: mov      x0, x8
+0x75eb58c: bl       #0x8a8eb0c
+0x75eb590: mov      x0, x19
+0x75eb594: bl       #0xb752a6c
+0x75eb598: bl       #0x5bfb020
+0x75eb59c: sub      sp, sp, #0x30
+0x75eb5a0: stp      x29, x30, [sp, #0x10]
+0x75eb5a4: stp      x20, x19, [sp, #0x20]
+0x75eb5a8: add      x29, sp, #0x10
+0x75eb5ac: str      xzr, [sp, #8]
+0x75eb5b0: ldr      x8, [x1, #0x20]

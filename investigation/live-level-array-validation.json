@@ -1,0 +1,79 @@
+{
+  "level": "0x7beb69b83f90",
+  "arrays": [
+    {
+      "offset": "0xa0",
+      "pointer": "0x7beb6d1fcfc0",
+      "count": 290,
+      "capacity": 316,
+      "samples": [
+        {
+          "object": "0x7beb3c92e000",
+          "name": "WorldSettings",
+          "class": "WorldSettings"
+        },
+        {
+          "object": "0x7beb69b86a10",
+          "name": "InstancedFoliageActor",
+          "class": "InstancedFoliageActor"
+        },
+        {
+          "object": "0x7beb69b84a30",
+          "name": "ExponentialHeightFog",
+          "class": "ExponentialHeightFog"
+        },
+        {
+          "object": "0x7beb6984d980",
+          "name": "WaterPlane",
+          "class": "WaterSwimObject_C"
+        },
+        {
+          "object": "0x7beb4b57afb0",
+          "name": "PhysicsVolume_Water",
+          "class": "PhysicsVolume"
+        }
+      ]
+    },
+    {
+      "offset": "0xb0",
+      "pointer": "0x7beaa5546a40",
+      "count": 279,
+      "capacity": 327,
+      "samples": [
+        {
+          "object": "0x7beb69b84f80",
+          "name": "DefaultPhysicsVolume",
+          "class": "DefaultPhysicsVolume"
+        },
+        {
+          "object": "0x7beb69b8af20",
+          "name": "ParticleEventManager",
+          "class": "ParticleEventManager"
+        },
+        {
+          "error": "Invalid name index"
+        },
+        {
+          "error": "Invalid name index"
+        },
+        {
+          "object": "0x7beb3b73e4e0",
+          "name": "CameraActor",
+          "class": "CameraActor"
+        }
+      ]
+    }
+  ],
+  "camera": {
+    "address": "0x7beb59d38aa0",
+    "rotation": [
+      -29.05003547668457,
+      -104.63851928710938,
+      -48.640323638916016
+    ],
+    "fov": 90.0,
+    "lockedfov": 0.0,
+    "vfunc": "0x40002ddcaf58",
+    "expected_vfunc": "0x40002ddcaf58"
+  }
+}

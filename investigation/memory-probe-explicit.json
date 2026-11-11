@@ -1,0 +1,18 @@
+[
+  {
+    "command": "/system/bin/toybox dd if=/proc/3418/mem bs=4096 skip=17180013056 count=1",
+    "bytes": 4175,
+    "exit_code": 0,
+    "stderr": "",
+    "prefix_hex": "5000005800021fd640360668eb7b00000300b700010000000080bd0500000000400000000000000018a0090f0000000000000000400038000e00400018001700",
+    "sha256": "e26f00fcf7b053daf645269ba8c6365f100ef1723ff27ca42f76d3cdd607ac4d"
+  },
+  {
+    "command": "/system/bin/toolbox dd if=/proc/3418/mem bs=4096 skip=17180013056 count=1",
+    "bytes": 18,
+    "exit_code": 0,
+    "stderr": "",
+    "prefix_hex": "64643a206e6f207375636820746f6f6c0d0a",
+    "sha256": "540afe41cc611c683282c8e8e2cca0ac0e59482a171b49b5c7413179bf807075"
+  }
+]

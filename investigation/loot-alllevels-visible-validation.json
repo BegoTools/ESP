@@ -1,0 +1,204 @@
+{
+  "level_count": 3,
+  "world_actor_count": 977,
+  "active_native_loot_count": 314,
+  "samples": [
+    {
+      "address": "0x7beb624829e0",
+      "class": "BP_Ammo_762mm_Pickup_C",
+      "parents": [
+        "BP_Ammo_762mm_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "hidden": false,
+      "hidden_byte": 100,
+      "item_type": 3,
+      "item_id": 302001,
+      "count": 100,
+      "can_pick_up": 1,
+      "picked": 0,
+      "attach_parent": "0x7beb3bfe9800",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matches_native_position": true,
+      "native_item_id": "302001",
+      "native_quantity": 100
+    },
+    {
+      "address": "0x7beb621139e0",
+      "class": "BP_Rifle_M416_Wrapper_C",
+      "parents": [
+        "BP_Rifle_M416_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "hidden": false,
+      "hidden_byte": 100,
+      "item_type": 1,
+      "item_id": 101004,
+      "count": 1,
+      "can_pick_up": 1,
+      "picked": 0,
+      "attach_parent": "0x7beb584aa000",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matches_native_position": true,
+      "native_item_id": "101004",
+      "native_quantity": 1
+    },
+    {
+      "address": "0x7beb61f14a60",
+      "class": "Drink_Pickup_C",
+      "parents": [
+        "Drink_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "hidden": false,
+      "hidden_byte": 100,
+      "item_type": 6,
+      "item_id": 601001,
+      "count": 1,
+      "can_pick_up": 1,
+      "picked": 0,
+      "attach_parent": "0x7beaab2ea400",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matches_native_position": true,
+      "native_item_id": "601001",
+      "native_quantity": 1
+    },
+    {
+      "address": "0x7beb61ed8f80",
+      "class": "PickUp_BP_Helmet_Lv1_C",
+      "parents": [
+        "PickUp_BP_Helmet_Lv1_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "hidden": false,
+      "hidden_byte": 100,
+      "item_type": 5,
+      "item_id": 502001,
+      "count": 1,
+      "can_pick_up": 1,
+      "picked": 0,
+      "attach_parent": "0x7beaab2f5400",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matches_native_position": true,
+      "native_item_id": "502001",
+      "native_quantity": 1
+    },
+    {
+      "address": "0x7beb621aef80",
+      "class": "BP_MZJ_8X_Pickup_C",
+      "parents": [
+        "BP_MZJ_8X_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "hidden": false,
+      "hidden_byte": 100,
+      "item_type": 2,
+      "item_id": 203005,
+      "count": 1,
+      "can_pick_up": 1,
+      "picked": 0,
+      "attach_parent": "0x7beb698b1c00",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matches_native_position": true,
+      "native_item_id": "203005",
+      "native_quantity": 1
+    },
+    {
+      "address": "0x7beb62343520",
+      "class": "BP_Grenade_Shoulei_Weapon_Wrapper_C",
+      "parents": [
+        "BP_Grenade_Shoulei_Weapon_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "hidden": false,
+      "hidden_byte": 100,
+      "item_type": 6,
+      "item_id": 602004,
+      "count": 1,
+      "can_pick_up": 1,
+      "picked": 0,
+      "attach_parent": "0x0",
+      "position": [
+        40372.0,
+        444035.0,
+        927.0
+      ],
+      "matches_native_position": true,
+      "native_item_id": "602004",
+      "native_quantity": 1
+    },
+    {
+      "address": "0x7beb4b56d2c0",
+      "class": "GasCan_Destructible_Pickup_C",
+      "parents": [
+        "GasCan_Destructible_Pickup_C",
+        "GasCan_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "hidden": false,
+      "hidden_byte": 100,
+      "item_type": 6,
+      "item_id": 603001,
+      "count": 1,
+      "can_pick_up": 1,
+      "picked": 0,
+      "attach_parent": "0x0",
+      "position": [
+        33898.44921875,
+        426479.3125,
+        -6.982448577880859
+      ],
+      "matches_native_position": true,
+      "native_item_id": "603001",
+      "native_quantity": 1
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "GetNearestAutoAimEnemy": {
+    "string": "0x41bf057",
+    "refs": [
+      {
+        "storage": "0xddbd1a0",
+        "near_start": "0xddbd188",
+        "words": [
+          "0x404c8c5",
+          "0x784acb8",
+          "0x0",
+          "0x41bf057",
+          "0x784acf0",
+          "0x0",
+          "0x40c2b3c",
+          "0x784ada8",
+          "0x0",
+          "0x41a763e",
+          "0x784ae30",
+          "0x0",
+          "0x4190b63"
+        ],
+        "candidate": "0x784acf0",
+        "assembly": [
+          "0x784acf0: adr x6, #0x77fdd9a"
+        ]
+      },
+      {
+        "storage": "0xddbdb28",
+        "near_start": "0xddbdb10",
+        "words": [
+          "0xddbda88",
+          "0xddbdac8",
+          "0x784a088",
+          "0x41bf057",
+          "0x45",
+          "0x0",
+          "0x20401",
+          "0x40",
+          "0xddbdb10",
+          "0x2",
+          "0xc",
+          "0x40d1719",
+          "0x45"
+        ]
+      },
+      {
+        "storage": "0xddbe388",
+        "near_start": "0xddbe370",
+        "words": [
+          "0x784b534",
+          "0x404c8c5",
+          "0x784b58c",
+          "0x41bf057",
+          "0x784b5e4",
+          "0x40c2b3c",
+          "0x784b63c",
+          "0x41a763e",
+          "0x784b688",
+          "0x4190b63",
+          "0x784b6e0",
+          "0x401eef2",
+          "0x784b738"
+        ],
+        "candidate": "0x784b5e4",
+        "assembly": []
+      }
+    ]
+  },
+  "RegisterAutoAimCandidateWithAimPoint": {
+    "string": "0x4107c6a",
+    "refs": [
+      {
+        "storage": "0xddbd2a8",
+        "near_start": "0xddbd290",
+        "words": [
+          "0x40c2b53",
+          "0x784b0b8",
+          "0x0",
+          "0x4107c6a",
+          "0x784b134",
+          "0x0",
+          "0x4202b6d",
+          "0x784b1f0",
+          "0x0",
+          "0x401ef06",
+          "0x784b274",
+          "0x0",
+          "0x16"
+        ],
+        "candidate": "0x784b134",
+        "assembly": []
+      },
+      {
+        "storage": "0xddbe1a0",
+        "near_start": "0xddbe188",
+        "words": [
+          "0xddbe108",
+          "0xddbe148",
+          "0x784a088",
+          "0x4107c6a",
+          "0x45",
+          "0x0",
+          "0x4020401",
+          "0x10",
+          "0xddbe188",
+          "0x2",
+          "0xc",
+          "0x417961e",
+          "0x45"
+        ]
+      },
+      {
+        "storage": "0xddbe448",
+        "near_start": "0xddbe430",
+        "words": [
+          "0x784b8b4",
+          "0x40c2b53",
+          "0x784b900",
+          "0x4107c6a",
+          "0x784b94c",
+          "0x4202b6d",
+          "0x784b9a4",
+          "0x401ef06",
+          "0x16",
+          "0x41bf06e",
+          "0x45",
+          "0x10000000010001",
+          "0x1"
+        ],
+        "candidate": "0x784b94c",
+        "assembly": [
+          "0x784b94c: adr x6, #0x77fe9f6",
+          "0x784b950: b.vs #0x78d89e0",
+          "0x784b954: adr x6, #0x77fe9fe",
+          "0x784b958: stp q6, q1, [x11], #0x330",
+          "0x784b95c: adr x6, #0x77fea06",
+          "0x784b960: adr x6, #0x77fea0a",
+          "0x784b964: add x5, x8, #0x387, lsl #12",
+          "0x784b968: stp q6, q1, [x11], #0x330",
+          "0x784b96c: adr x6, #0x77fea16",
+          "0x784b970: stp q6, q1, [x11], #0x330",
+          "0x784b974: adr x6, #0x77fea1e"
+        ]
+      }
+    ]
+  },
+  "UnregisterAutoAimCandidate": {
+    "string": "0x401ef06",
+    "refs": [
+      {
+        "storage": "0xddbd2d8",
+        "near_start": "0xddbd2c0",
+        "words": [
+          "0x4202b6d",
+          "0x784b1f0",
+          "0x0",
+          "0x401ef06",
+          "0x784b274",
+          "0x0",
+          "0x16",
+          "0x411e37a",
+          "0x45",
+          "0x10000008000182",
+          "0x1",
+          "0x0",
+          "0x0"
+        ],
+        "candidate": "0x784b274",
+        "assembly": []
+      },
+      {
+        "storage": "0xddbe2b8",
+        "near_start": "0xddbe2a0",
+        "words": [
+          "0xaf00334",
+          "0xddbe268",
+          "0x784a088",
+          "0x401ef06",
+          "0x45",
+          "0x0",
+          "0x4020401",
+          "0x8",
+          "0xddbe2a8",
+          "0x1",
+          "0xaf0a7a0",
+          "0x74ef9e4",
+          "0x784b2f0"
+        ]
+      },
+      {
+        "storage": "0xddbe468",
+        "near_start": "0xddbe450",
+        "words": [
+          "0x784b94c",
+          "0x4202b6d",
+          "0x784b9a4",
+          "0x401ef06",
+          "0x16",
+          "0x41bf06e",
+          "0x45",
+          "0x10000000010001",
+          "0x1",
+          "0x0",
+          "0x640",
+          "0x19",
+          "0x41bf06e"
+        ]
+      }
+    ]
+  },
+  "AutoAimInfo": {
+    "string": "0x426d353",
+    "refs": [
+      {
+        "storage": "0xd79a400",
+        "near_start": "0xd79a3e8",
+        "words": [
+          "0x74ef9e4",
+          "0x0",
+          "0x71287cc",
+          "0x426d353",
+          "0x100000045",
+          "0x40",
+          "0x8",
+          "0xd79a3a8",
+          "0x8",
+          "0x40738b7",
+          "0x7128a28",
+          "0x0",
+          "0x405c474"
+        ]
+      },
+      {
+        "storage": "0xd79ad90",
+        "near_start": "0xd79ad78",
+        "words": [
+          "0x1d0",
+          "0x712863c",
+          "0x19",
+          "0x426d353",
+          "0x45",
+          "0x10000000000005",
+          "0x1",
+          "0x0",
+          "0x190",
+          "0x7128780",
+          "0xa",
+          "0x3fe9af8",
+          "0x45"
+        ]
+      }
+    ]
+  },
+  "AutoAimParams": {
+    "string": "0x411e37a",
+    "refs": [
+      {
+        "storage": "0xddbd2f8",
+        "near_start": "0xddbd2e0",
+        "words": [
+          "0x784b274",
+          "0x0",
+          "0x16",
+          "0x411e37a",
+          "0x45",
+          "0x10000008000182",
+          "0x1",
+          "0x0",
+          "0x0",
+          "0xa",
+          "0x411e37a",
+          "0x45",
+          "0x0"
+        ]
+      },
+      {
+        "storage": "0xddbd330",
+        "near_start": "0xddbd318",
+        "words": [
+          "0x0",
+          "0x0",
+          "0xa",
+          "0x411e37a",
+          "0x45",
+          "0x0",
+          "0x1",
+          "0x0",
+          "0x0",
+          "0xddbd2f0",
+          "0xddbd328",
+          "0x784a088",
+          "0x422edc9"
+        ]
+      }
+    ]
+  },
+  "AutoAimTargetSelector": {
+    "string": "0x41ec736",
+    "refs": [
+      {
+        "storage": "0xddbcf98",
+        "near_start": "0xddbcf80",
+        "words": [
+          "0x74ef9e4",
+          "0x0",
+          "0x784a218",
+          "0x41ec736",
+          "0x20500000045",
+          "0x300",
+          "0x8",
+          "0xddbcf68",
+          "0x3",
+          "0x74ef9e4",
+          "0x0",
+          "0x784a2f0",
+          "0x40917cd"
+        ]
+      }
+    ]
+  },
+  "EnemyInfoList": {
+    "string": "0x41a95d7",
+    "refs": [
+      {
+        "storage": "0xe022b28",
+        "near_start": "0xe022b10",
+        "words": [
+          "0x0",
+          "0xe0",
+          "0x16",
+          "0x41a95d7",
+          "0x45",
+          "0x10000000000001",
+          "0x1",
+          "0x0",
+          "0xd0",
+          "0x19",
+          "0x41a95d7",
+          "0x45",
+          "0x0"
+        ]
+      },
+      {
+        "storage": "0xe022b60",
+        "near_start": "0xe022b48",
+        "words": [
+          "0x0",
+          "0xd0",
+          "0x19",
+          "0x41a95d7",
+          "0x45",
+          "0x0",
+          "0x1",
+          "0x0",
+          "0x0",
+          "0x70c6200",
+          "0x3",
+          "0x40dbe1a",
+          "0x45"
+        ]
+      }
+    ]
+  },
+  "bCanSee": {
+    "string": "0x4160f66",
+    "refs": [
+      {
+        "storage": "0xdc1e5b0",
+        "near_start": "0xdc1e598",
+        "words": [
+          "0x2",
+          "0x7674194",
+          "0xc",
+          "0x4160f66",
+          "0x45",
+          "0x10000000000080",
+          "0x1",
+          "0x0",
+          "0x100000001",
+          "0x2",
+          "0x76741a0",
+          "0xdc1e560",
+          "0xdc1e5a8"
+        ]
+      },
+      {
+        "storage": "0xdc471a8",
+        "near_start": "0xdc47190",
+        "words": [
+          "0x2",
+          "0x76aa9ac",
+          "0xc",
+          "0x4160f66",
+          "0x45",
+          "0x10000000000080",
+          "0x1",
+          "0x0",
+          "0x100000001",
+          "0x2",
+          "0x76aa9b8",
+          "0xdc47158",
+          "0xdc471a0"
+        ]
+      }
+    ]
+  },
+  "CanSeeCustomVar": {
+    "string": "0x406c884",
+    "refs": [
+      {
+        "storage": "0xe9a7090",
+        "near_start": "0xe9a7078",
+        "words": [
+          "0x40b0db8",
+          "0xe9a7008",
+          "0x4",
+          "0x406c884",
+          "0xb581258",
+          "0x0",
+          "0x4126ea0",
+          "0xb581384",
+          "0x0",
+          "0x41f4da9",
+          "0xb581400",
+          "0x0",
+          "0x41f4dba"
+        ],
+        "candidate": "0xb581258",
+        "assembly": [
+          "0xb581258: sub sp, sp, #0x40",
+          "0xb58125c: stp x29, x30, [sp, #0x10]",
+          "0xb581260: stp x22, x21, [sp, #0x20]",
+          "0xb581264: stp x20, x19, [sp, #0x30]",
+          "0xb581268: add x29, sp, #0x10",
+          "0xb58126c: sturb wzr, [x29, #-4]",
+          "0xb581270: ldr x8, [x1, #0x20]",
+          "0xb581274: mov x20, x1",
+          "0xb581278: mov x19, x0",
+          "0xb58127c: str xzr, [x1, #0x38]",
+          "0xb581280: cbz x8, #0xb581298",
+          "0xb581284: ldr x1, [x20, #0x18]",
+          "0xb581288: sub x2, x29, #4",
+          "0xb58128c: mov x0, x20",
+          "0xb581290: bl #0x8e54d38",
+          "0xb581294: b #0xb5812b0",
+          "0xb581298: ldr x2, [x20, #0x80]",
+          "0xb58129c: sub x1, x29, #4",
+          "0xb5812a0: mov x0, x20",
+          "0xb5812a4: ldr x8, [x2, #0x28]",
+          "0xb5812a8: str x8, [x20, #0x80]",
+          "0xb5812ac: bl #0x8e54d74",
+          "0xb5812b0: ldr x21, [x20, #0x38]",
+          "0xb5812b4: strb wzr, [sp, #8]",
+          "0xb5812b8: ldr x8, [x20, #0x20]",
+          "0xb5812bc: str xzr, [x20, #0x38]",
+          "0xb5812c0: cbz x8, #0xb5812d8",
+          "0xb5812c4: ldr x1, [x20, #0x18]",
+          "0xb5812c8: add x2, sp, #8",
+          "0xb5812cc: mov x0, x20",
+          "0xb5812d0: bl #0x8e54d38",
+          "0xb5812d4: b #0xb5812f0",
+          "0xb5812d8: ldr x2, [x20, #0x80]",
+          "0xb5812dc: add x1, sp, #8",
+          "0xb5812e0: mov x0, x20",
+          "0xb5812e4: ldr x8, [x2, #0x28]",
+          "0xb5812e8: str x8, [x20, #0x80]",
+          "0xb5812ec: bl #0x8e54d74",
+          "0xb5812f0: ldr x22, [x20, #0x38]",
+          "0xb5812f4: strb wzr, [sp, #4]",
+          "0xb5812f8: ldr x8, [x20, #0x20]",
+          "0xb5812fc: str xzr, [x20, #0x38]",
+          "0xb581300: cbz x8, #0xb581318",
+          "0xb581304: ldr x1, [x20, #0x18]",
+          "0xb581308: add x2, sp, #4"
+        ]
+      },
+      {
+        "storage": "0xe9a7260",
+        "near_start": "0xe9a7248",
+        "words": [
+          "0xe9a71b0",
+          "0xe9a71f8",
+          "0xb5815fc",
+          "0x406c884",
+          "0x45",
+          "0x0",
+          "0x4420401",
+          "0x3",
+          "0xe9a7240",
+          "0x3",
+          "0x0",
+          "0x41c790b",
+          "0x45"
+        ]
+      },
+      {
+        "storage": "0xe9a7688",
+        "near_start": "0xe9a7670",
+        "words": [
+          "0xb57fcc0",
+          "0xb570e60",
+          "0xb58158c",
+          "0x406c884",
+          "0xb581648",
+          "0x4126ea0",
+          "0xb581694",
+          "0x41f4da9",
+          "0xb5816ec",
+          "0x41f4dba",
+          "0xb581744",
+          "0x4265d46",
+          "0xb58179c"
+        ],
+        "candidate": "0xb581648",
+        "assembly": [
+          "0xb581648: stp x29, x30, [sp, #-0x20]!",
+          "0xb58164c: str x19, [sp, #0x10]",
+          "0xb581650: mov x29, sp",
+          "0xb581654: adrp x8, #0xf682000",
+          "0xb581658: ldr x0, [x8, #0xb90]",
+          "0xb58165c: cbz x0, #0xb58166c",
+          "0xb581660: ldr x19, [sp, #0x10]",
+          "0xb581664: ldp x29, x30, [sp], #0x20",
+          "0xb581668: ret ",
+          "0xb58166c: adrp x19, #0xf682000",
+          "0xb581670: add x19, x19, #0xb90",
+          "0xb581674: adrp x1, #0xe9a7000",
+          "0xb581678: add x1, x1, #0x2e0",
+          "0xb58167c: mov x0, x19",
+          "0xb581680: bl #0x8e7bbb4",
+          "0xb581684: ldr x0, [x19]",
+          "0xb581688: ldr x19, [sp, #0x10]",
+          "0xb58168c: ldp x29, x30, [sp], #0x20",
+          "0xb581690: ret ",
+          "0xb581694: stp x29, x30, [sp, #-0x20]!",
+          "0xb581698: str x19, [sp, #0x10]",
+          "0xb58169c: mov x29, sp",
+          "0xb5816a0: adrp x8, #0xf682000",
+          "0xb5816a4: ldr x0, [x8, #0xb98]",
+          "0xb5816a8: cbz x0, #0xb5816b8",
+          "0xb5816ac: ldr x19, [sp, #0x10]",
+          "0xb5816b0: ldp x29, x30, [sp], #0x20",
+          "0xb5816b4: ret ",
+          "0xb5816b8: adrp x19, #0xf682000",
+          "0xb5816bc: add x19, x19, #0xb98",
+          "0xb5816c0: adrp x1, #0xe9a7000",
+          "0xb5816c4: add x1, x1, #0x370",
+          "0xb5816c8: mov x0, x19",
+          "0xb5816cc: bl #0x8e7bbb4",
+          "0xb5816d0: ldr x0, [x19]",
+          "0xb5816d4: ldr x19, [sp, #0x10]",
+          "0xb5816d8: ldp x29, x30, [sp], #0x20",
+          "0xb5816dc: ret ",
+          "0xb5816e0: mov w8, #1",
+          "0xb5816e4: strb w8, [x0]",
+          "0xb5816e8: ret ",
+          "0xb5816ec: stp x29, x30, [sp, #-0x20]!",
+          "0xb5816f0: str x19, [sp, #0x10]",
+          "0xb5816f4: mov x29, sp",
+          "0xb5816f8: adrp x8, #0xf682000"
+        ]
+      }
+    ]
+  },
+  "bSetCanSeeTargetFlag": {
+    "string": "0x4038626",
+    "refs": [
+      {
+        "storage": "0xe01ff70",
+        "near_start": "0xe01ff58",
+        "words": [
+          "0xf8",
+          "0x81266f4",
+          "0xc",
+          "0x4038626",
+          "0x45",
+          "0x10000000000001",
+          "0x1",
+          "0x0",
+          "0x100000001",
+          "0xf8",
+          "0x8126700",
+          "0x19",
+          "0x4120512"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1560 @@
+{
+  "bCanSee1": [
+    {
+      "address": "0xdc1e0e0",
+      "text": "GuidID",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xdc1e090",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xdc1e1f8",
+      "text": "InfectionPlayerPawnInitType__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0xdc1e1e0",
+      "plus48": "0x2",
+      "minus8": "0x74ef9e4"
+    },
+    {
+      "address": "0xdc1e238",
+      "text": "ShowKillNum",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xdc1e230",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xdc1e278",
+      "text": "InfectionShowKillNumDelegate__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0xdc1e268",
+      "plus48": "0x1",
+      "minus8": "0x74ef9e4"
+    },
+    {
+      "address": "0xdc1e2b8",
+      "text": "DamageType",
+      "next": "0x45",
+      "plus40": "0x28",
+      "plus48": "0x12",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xdc1e2f0",
+      "text": "DamageCauser",
+      "next": "0x45",
+      "plus40": "0x20",
+      "plus48": "0xaf00334",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xdc1e330",
+      "text": "Controller",
+      "next": "0x45",
+      "plus40": "0x18",
+      "plus48": "0xaf6dae4",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xdc1e370",
+      "text": "DamageEvent",
+      "next": "0x45",
+      "plus40": "0x8",
+      "plus48": "0xaf96abc",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xdc1e410",
+      "text": "PostTakeDamageDelegate__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0xdc1e3e0",
+      "plus48": "0x5",
+      "minus8": "0x74ef9e4"
+    },
+    {
+      "address": "0xdc1e4d0",
+      "text": "bUsed",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x10",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xdc1e528",
+      "text": "OnUpdateUseVehicleWeaponUIDelegate__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0xdc1e510",
+      "plus48": "0x2",
+      "minus8": "0x74ef9e4"
+    },
+    {
+      "address": "0xdc1e568",
+      "text": "bIsEntireMap",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x2",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xdc1e5b0",
+      "text": "bCanSee",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x2",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xdc1e648",
+      "text": "CharacterStatesChangeWithoutState__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x0",
+      "minus8": "0x74ef9e4"
+    },
+    {
+      "address": "0xdc1e6d0",
+      "text": "NewState",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xdc1e680",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xdc1e7a0",
+      "text": "OnSetObserveCharacter__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0xdc1e790",
+      "plus48": "0x1",
+      "minus8": "0x74ef9e4"
+    },
+    {
+      "address": "0xdc1e8b8",
+      "text": "PlayerControllerTacticalSpreadDelegate__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0xdc1e8a8",
+      "plus48": "0x1",
+      "minus8": "0x74ef9e4"
+    },
+    {
+      "address": "0xdc1e938",
+      "text": "PlayerSwitchToDeadBoxDelegate__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0xdc1e928",
+      "plus48": "0x1",
+      "minus8": "0x74ef9e4"
+    },
+    {
+      "address": "0xdc1e978",
+      "text": "ExtraInfo",
+      "next": "0x45",
+      "plus40": "0x28",
+      "plus48": "0x15",
+      "minus8": "0x15"
+    },
+    {
+      "address": "0xdc1e9b0",
+      "text": "CallSource",
+      "next": "0x45",
+      "plus40": "0x18",
+      "plus48": "0xa",
+      "minus8": "0x15"
+    },
+    {
+      "address": "0xdc1e9e8",
+      "text": "DeltaValue",
+      "next": "0x45",
+      "plus40": "0x10",
+      "plus48": "0x15",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xdc1ea20",
+      "text": "ChangeSource",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xdc1e970",
+      "minus8": "0x15"
+    },
+    {
+      "address": "0xdc1ea78",
+      "text": "OnControlRotationSuddenChangeSignature__DelegateSignature",
+      "next": "0x45",
+      "plus40": "0xdc1ea50",
+      "plus48": "0x4",
+      "minus8": "0x74ef9e4"
+    }
+  ],
+  "bCanSee2": [
+    {
+      "address": "0xdc46cd8",
+      "text": "TriggerMoveVoiceCheckFuction",
+      "next": "0x45",
+      "plus40": "0xdc46cb8",
+      "plus48": "0x3",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc46d18",
+      "text": "isExplosion",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x28",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xdc46d60",
+      "text": "isslience",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x28",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xdc46da8",
+      "text": "showTime",
+      "next": "0x45",
+      "plus40": "0x1c",
+      "plus48": "0x19",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xdc46de0",
+      "text": "posVector",
+      "next": "0x45",
+      "plus40": "0x10",
+      "plus48": "0x8e9d358",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xdc46e20",
+      "text": "nowWeapon",
+      "next": "0x45",
+      "plus40": "0x8",
+      "plus48": "0x76bfa30",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xdc46e60",
+      "text": "InOwnerPawn",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x7592518",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xdc46f10",
+      "text": "showTime",
+      "next": "0x45",
+      "plus40": "0x14",
+      "plus48": "0x19",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xdc46f48",
+      "text": "posVector",
+      "next": "0x45",
+      "plus40": "0x8",
+      "plus48": "0x8e9d358",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xdc46f88",
+      "text": "nowVehicle",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x76ff01c",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xdc46fe0",
+      "text": "TriggerVehicleVoiceCheckFuction",
+      "next": "0x45",
+      "plus40": "0xdc46fc0",
+      "plus48": "0x3",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47020",
+      "text": "FollowUID",
+      "next": "0x45",
+      "plus40": "0x8",
+      "plus48": "0x3",
+      "minus8": "0x15"
+    },
+    {
+      "address": "0xdc47058",
+      "text": "FollowType",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xdc47018",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xdc470a0",
+      "text": "TryReqMoveToTarget",
+      "next": "0x45",
+      "plus40": "0xdc47088",
+      "plus48": "0x2",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc470e0",
+      "text": "TryShowJoystick",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x0",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47120",
+      "text": "UnPossess",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x0",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47160",
+      "text": "bIsEntireMap",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x2",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xdc471a8",
+      "text": "bCanSee",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x2",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xdc47200",
+      "text": "UpdateCanPlayerSeeLastVehicle",
+      "next": "0x45",
+      "plus40": "0xdc471e8",
+      "plus48": "0x2",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47280",
+      "text": "PoseType",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x7581e38",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xdc472c8",
+      "text": "UpdatePoseState",
+      "next": "0x45",
+      "plus40": "0xdc472b8",
+      "plus48": "0x1",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47308",
+      "text": "UpdatePoseViewPitchLimit",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x0",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47348",
+      "text": "UpdateSurfboardUI",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x0",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47388",
+      "text": "Id",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xdc47380",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xdc47408",
+      "text": "DefineID",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x79d9820",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xdc47450",
+      "text": "UserDropItemOperation",
+      "next": "0x45",
+      "plus40": "0xdc47440",
+      "plus48": "0x1",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47490",
+      "text": "ReturnValue",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x1",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xdc474e0",
+      "text": "UseSharedBagSkin",
+      "next": "0x45",
+      "plus40": "0xdc474d0",
+      "plus48": "0x1",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47558",
+      "text": "DamageCauser",
+      "next": "0x45",
+      "plus40": "0x10",
+      "plus48": "0xaf00334",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xdc47598",
+      "text": "CauserLocation",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x8e9d358",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xdc475f0",
+      "text": "VehicleWarFireTakeDamagedEvent",
+      "next": "0x45",
+      "plus40": "0xdc475d0",
+      "plus48": "0x3",
+      "minus8": "0x7670e18"
+    },
+    {
+      "address": "0xdc47630",
+      "text": "ViewPlane",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x0",
+      "minus8": "0x7670e18"
+    }
+  ],
+  "EnemyInfoList": [
+    {
+      "address": "0xe022648",
+      "text": "SearchMethod",
+      "next": "0x45",
+      "plus40": "0x61",
+      "plus48": "0x81279e4",
+      "minus8": "0x1d"
+    },
+    {
+      "address": "0xe022740",
+      "text": "Angle",
+      "next": "0x45",
+      "plus40": "0x4",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe022778",
+      "text": "Radius",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xe022738",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe0227d0",
+      "text": "SightFanInfo",
+      "next": "0x100000045",
+      "plus40": "0x2",
+      "plus48": "0xa357c60",
+      "minus8": "0x8127bf0"
+    },
+    {
+      "address": "0xe022818",
+      "text": "SensedNearestEnemyInVisibleRadius",
+      "next": "0x45",
+      "plus40": "0x168",
+      "plus48": "0x3",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xe022850",
+      "text": "SensedNearestEnemyVisibleRadius",
+      "next": "0x45",
+      "plus40": "0x164",
+      "plus48": "0xa",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xe022888",
+      "text": "NearestEnemyVisibleMemoryTime",
+      "next": "0x45",
+      "plus40": "0x160",
+      "plus48": "0x19",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe0228c0",
+      "text": "OutNearestEnemyPawnInVisible",
+      "next": "0x45",
+      "plus40": "0x138",
+      "plus48": "0xa349f60",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe022900",
+      "text": "OutNearestEnemyPawnVisible",
+      "next": "0x45",
+      "plus40": "0x110",
+      "plus48": "0xa349f60",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe022940",
+      "text": "bFindNearestEnemyPawn",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x170",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe022988",
+      "text": "FanInfoList",
+      "next": "0x45",
+      "plus40": "0xf8",
+      "plus48": "0x19",
+      "minus8": "0x16"
+    },
+    {
+      "address": "0xe0229c0",
+      "text": "FanInfoList",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x8127ba4",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe022a48",
+      "text": "EquipWeaponSensedRadius",
+      "next": "0x45",
+      "plus40": "0xec",
+      "plus48": "0x3",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xe022a80",
+      "text": "SensedRadius",
+      "next": "0x45",
+      "plus40": "0xe8",
+      "plus48": "0xa",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xe022af0",
+      "text": "MinTimeLockTarget",
+      "next": "0x45",
+      "plus40": "0xe0",
+      "plus48": "0x16",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe022b28",
+      "text": "EnemyInfoList",
+      "next": "0x45",
+      "plus40": "0xd0",
+      "plus48": "0x19",
+      "minus8": "0x16"
+    },
+    {
+      "address": "0xe022b60",
+      "text": "EnemyInfoList",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x70c6200",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe022ba0",
+      "text": "MaxTraceLastAttackedMeDistance",
+      "next": "0x45",
+      "plus40": "0xcc",
+      "plus48": "0xa",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xe022d08",
+      "text": "bUpdateItemOptimize",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x170",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe022e58",
+      "text": "OnlyTeleportToLand",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x10",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe022ea0",
+      "text": "TryFindDstLocNum",
+      "next": "0x45",
+      "plus40": "0x8",
+      "plus48": "0xa",
+      "minus8": "0x6"
+    },
+    {
+      "address": "0xe022ed8",
+      "text": "DstCheckRadius",
+      "next": "0x45",
+      "plus40": "0x4",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe022f10",
+      "text": "SrcCheckRadius",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xe022e50",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe022f78",
+      "text": "InTroubleTeleportConfig",
+      "next": "0x100000045",
+      "plus40": "0x4",
+      "plus48": "0xa357c60",
+      "minus8": "0x8127e10"
+    },
+    {
+      "address": "0xe023008",
+      "text": "TeleportCfg",
+      "next": "0x45",
+      "plus40": "0x78",
+      "plus48": "0x8127db8",
+      "minus8": "0x19"
+    }
+  ],
+  "AutoAimInfo": [
+    {
+      "address": "0xd79a8a0",
+      "text": "RemoveTarget",
+      "next": "0x45",
+      "plus40": "0xd79a890",
+      "plus48": "0x1",
+      "minus8": "0x7128e48"
+    },
+    {
+      "address": "0xd79a920",
+      "text": "NewDelayTime",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xd79a918",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xd79a9a0",
+      "text": "DeltaTime",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xd79a998",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xd79a9e0",
+      "text": "TryDoAutoAim",
+      "next": "0x45",
+      "plus40": "0xd79a9d0",
+      "plus48": "0x1",
+      "minus8": "0x7128e48"
+    },
+    {
+      "address": "0xd79aa40",
+      "text": "CalcLockActor",
+      "next": "0x7128ee0",
+      "plus40": "0x7128f78",
+      "plus48": "0x412db6a",
+      "minus8": "0x7128e94"
+    },
+    {
+      "address": "0xd79aa50",
+      "text": "ChangeLockState",
+      "next": "0x7128f2c",
+      "plus40": "0x7128fc4",
+      "plus48": "0x3fe9ae4",
+      "minus8": "0x7128ee0"
+    },
+    {
+      "address": "0xd79aa70",
+      "text": "GetCacheTargetList",
+      "next": "0x7128fc4",
+      "plus40": "0x712905c",
+      "plus48": "0x40e93db",
+      "minus8": "0x7128f78"
+    },
+    {
+      "address": "0xd79aa80",
+      "text": "InitCacheTargetList",
+      "next": "0x7129010",
+      "plus40": "0x71290a8",
+      "plus48": "0x41e5421",
+      "minus8": "0x7128fc4"
+    },
+    {
+      "address": "0xd79aa90",
+      "text": "OnLockTimerOver",
+      "next": "0x712905c",
+      "plus40": "0x71290f4",
+      "plus48": "0x40d2d0c",
+      "minus8": "0x7129010"
+    },
+    {
+      "address": "0xd79aaa0",
+      "text": "RemoveTarget",
+      "next": "0x71290a8",
+      "plus40": "0x7129140",
+      "plus48": "0x40bb989",
+      "minus8": "0x712905c"
+    },
+    {
+      "address": "0xd79aad0",
+      "text": "TryDoAutoAim",
+      "next": "0xa",
+      "plus40": "0x1",
+      "plus48": "0x0",
+      "minus8": "0x7129140"
+    },
+    {
+      "address": "0xd79ab18",
+      "text": "RpcRotationTime",
+      "next": "0x45",
+      "plus40": "0x234",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xd79ab50",
+      "text": "SimulateRotateSpeed",
+      "next": "0x45",
+      "plus40": "0x230",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xd79ab88",
+      "text": "RotateBackSpeed",
+      "next": "0x45",
+      "plus40": "0x22c",
+      "plus48": "0xc",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xd79abc0",
+      "text": "bLostAutoAimTarget",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x240",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xd79ac08",
+      "text": "bHasInitCacheTargetList",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x240",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xd79ac50",
+      "text": "OnAutoAimLockStateDelegate",
+      "next": "0x45",
+      "plus40": "0x1f0",
+      "plus48": "0x71285f0",
+      "minus8": "0x1b"
+    },
+    {
+      "address": "0xd79ac90",
+      "text": "OnAutoAimInfoDelegate",
+      "next": "0x45",
+      "plus40": "0x1e0",
+      "plus48": "0x7128688",
+      "minus8": "0x1b"
+    },
+    {
+      "address": "0xd79acd0",
+      "text": "WorldLocToAim",
+      "next": "0x45",
+      "plus40": "0x1d4",
+      "plus48": "0x8e9d358",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xd79ad10",
+      "text": "PreLockState",
+      "next": "0x45",
+      "plus40": "0x1d1",
+      "plus48": "0x712863c",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xd79ad90",
+      "text": "AutoAimInfo",
+      "next": "0x45",
+      "plus40": "0x190",
+      "plus48": "0x7128780",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xd79add0",
+      "text": "DebugRectSize",
+      "next": "0x45",
+      "plus40": "0x188",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xd79ae08",
+      "text": "TraceUpOffset",
+      "next": "0x45",
+      "plus40": "0x184",
+      "plus48": "0xc",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xd79ae40",
+      "text": "bUseAimPoint",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x240",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xd79ae88",
+      "text": "bShowDebug",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x240",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xd79aff0",
+      "text": "MatID",
+      "next": "0x45",
+      "plus40": "0x50",
+      "plus48": "0x3",
+      "minus8": "0x16"
+    },
+    {
+      "address": "0xd79b028",
+      "text": "MatID",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xd79afe8",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xd79b080",
+      "text": "AvatarAction_ApplyDIYMatParam",
+      "next": "0x100000045",
+      "plus40": "0x2",
+      "plus48": "0x16",
+      "minus8": "0x7129374"
+    },
+    {
+      "address": "0xd79b0b8",
+      "text": "MirroParam",
+      "next": "0x45",
+      "plus40": "0x50",
+      "plus48": "0x3",
+      "minus8": "0x16"
+    },
+    {
+      "address": "0xd79b0f0",
+      "text": "MirroParam",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xd79b0b0",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xd79b148",
+      "text": "AvatarAction_ApplyDIYMirroParam",
+      "next": "0x100000045",
+      "plus40": "0x2",
+      "plus48": "0x3",
+      "minus8": "0x712944c"
+    },
+    {
+      "address": "0xd79b180",
+      "text": "UVIndex",
+      "next": "0x45",
+      "plus40": "0x28",
+      "plus48": "0x16",
+      "minus8": "0x3"
+    },
+    {
+      "address": "0xd79b258",
+      "text": "AvatarAction_ApplyDIYPattern",
+      "next": "0x100000045",
+      "plus40": "0x3",
+      "plus48": "0x19",
+      "minus8": "0x7129570"
+    }
+  ],
+  "AutoAimSelector": [
+    {
+      "address": "0xddbcad0",
+      "text": "ShootTimeGunPosBigCircle",
+      "next": "0x45",
+      "plus40": "0x26c",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xddbcb78",
+      "text": "ShootHitTargetIntervalMulCoff",
+      "next": "0x45",
+      "plus40": "0x20c",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xddbcbb0",
+      "text": "ShootRateCheckMulCoff",
+      "next": "0x45",
+      "plus40": "0x208",
+      "plus48": "0xc",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xddbcc30",
+      "text": "ShootRateCheckInterval",
+      "next": "0x45",
+      "plus40": "0x200",
+      "plus48": "0xe",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xddbcc68",
+      "text": "OwnerShootWeapon",
+      "next": "0x45",
+      "plus40": "0x1e0",
+      "plus48": "0x76bfa30",
+      "minus8": "0xe"
+    },
+    {
+      "address": "0xddbcd88",
+      "text": "UAE",
+      "next": "0x429d9b0",
+      "plus40": "0x3fc4517",
+      "plus48": "0x45",
+      "minus8": "0x16"
+    },
+    {
+      "address": "0xddbce30",
+      "text": "SCOPE",
+      "next": "0x0",
+      "plus40": "0x2",
+      "plus48": "0x74ef9e4",
+      "minus8": "0x1"
+    },
+    {
+      "address": "0xddbce40",
+      "text": "INNER",
+      "next": "0x1",
+      "plus40": "0x0",
+      "plus48": "0x425cfe9",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbce70",
+      "text": "EAutoAimRangeType",
+      "next": "0x45",
+      "plus40": "0xddbce30",
+      "plus48": "0x3",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbce90",
+      "text": "EAutoAimRangeType",
+      "next": "0xddbce30",
+      "plus40": "0x45",
+      "plus48": "0x10000000000000",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbceb0",
+      "text": "PlayerController",
+      "next": "0x45",
+      "plus40": "0x10",
+      "plus48": "0x76725d8",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xddbcef0",
+      "text": "PlayerPawn",
+      "next": "0x45",
+      "plus40": "0x8",
+      "plus48": "0x7592518",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xddbcf98",
+      "text": "AutoAimTargetSelector",
+      "next": "0x20500000045",
+      "plus40": "0x3",
+      "plus48": "0x74ef9e4",
+      "minus8": "0x784a218"
+    },
+    {
+      "address": "0xddbcfe0",
+      "text": "CompareEnemyInfo",
+      "next": "0x100000045",
+      "plus40": "0x0",
+      "plus48": "0x14",
+      "minus8": "0x784a2f0"
+    },
+    {
+      "address": "0xddbd018",
+      "text": "BoneName",
+      "next": "0x45",
+      "plus40": "0x20",
+      "plus48": "0x12",
+      "minus8": "0x14"
+    },
+    {
+      "address": "0xddbd050",
+      "text": "EnemyPawn",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0x76621ec",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xddbd0e0",
+      "text": "BPDrawDebugInfo",
+      "next": "0x784a6ac",
+      "plus40": "0x0",
+      "plus48": "0x41a7630",
+      "minus8": "0x2"
+    },
+    {
+      "address": "0xddbd0f8",
+      "text": "CanEnemeyRaycastReach",
+      "next": "0x784a770",
+      "plus40": "0x0",
+      "plus48": "0x40a86a1",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd110",
+      "text": "CheckBuffStun",
+      "next": "0x784a910",
+      "plus40": "0x0",
+      "plus48": "0x4202b62",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd128",
+      "text": "CheckInAngle",
+      "next": "0x784a948",
+      "plus40": "0x0",
+      "plus48": "0x422edd9",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd158",
+      "text": "FindEnemyNearScreenCenter",
+      "next": "0x784ab6c",
+      "plus40": "0x0",
+      "plus48": "0x404c8c5",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd170",
+      "text": "GetDataFromWeaponEntity",
+      "next": "0x784aca4",
+      "plus40": "0x0",
+      "plus48": "0x41bf057",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd188",
+      "text": "GetIsStartScopeAutoAimCheck",
+      "next": "0x784acb8",
+      "plus40": "0x0",
+      "plus48": "0x40c2b3c",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd1a0",
+      "text": "GetNearestAutoAimEnemy",
+      "next": "0x784acf0",
+      "plus40": "0x0",
+      "plus48": "0x41a763e",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd1d0",
+      "text": "init",
+      "next": "0x784ae30",
+      "plus40": "0x0",
+      "plus48": "0x401eef2",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd1e8",
+      "text": "IsCurrentWeaponSupportAutoAim",
+      "next": "0x784aeac",
+      "plus40": "0x0",
+      "plus48": "0x3fc1f0c",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd200",
+      "text": "IsTriggerBeforeFire",
+      "next": "0x784aee4",
+      "plus40": "0x0",
+      "plus48": "0x4162eaa",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd218",
+      "text": "OnCharacterEnterState",
+      "next": "0x784af1c",
+      "plus40": "0x0",
+      "plus48": "0x413248f",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd260",
+      "text": "OnShoot",
+      "next": "0x784b028",
+      "plus40": "0x0",
+      "plus48": "0x40c2b53",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd278",
+      "text": "OnUnequipWeapon",
+      "next": "0x784b0a4",
+      "plus40": "0x0",
+      "plus48": "0x4107c6a",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd2a8",
+      "text": "RegisterAutoAimCandidateWithAimPoint",
+      "next": "0x784b134",
+      "plus40": "0x0",
+      "plus48": "0x401ef06",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd2d8",
+      "text": "UnregisterAutoAimCandidate",
+      "next": "0x784b274",
+      "plus40": "0x45",
+      "plus48": "0x10000008000182",
+      "minus8": "0x0"
+    },
+    {
+      "address": "0xddbd2f8",
+      "text": "AutoAimParams",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xa",
+      "minus8": "0x16"
+    },
+    {
+      "address": "0xddbd330",
+      "text": "AutoAimParams",
+      "next": "0x45",
+      "plus40": "0x0",
+      "plus48": "0xddbd2f0",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xddbd378",
+      "text": "BPDrawDebugInfo",
+      "next": "0x45",
+      "plus40": "0xddbd360",
+      "plus48": "0x2",
+      "minus8": "0x784a088"
+    },
+    {
+      "address": "0xddbd3b8",
+      "text": "ReturnValue",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0x30",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xddbd438",
+      "text": "EnemeyActor",
+      "next": "0x45",
+      "plus40": "0x18",
+      "plus48": "0xaf00334",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xddbd478",
+      "text": "EndPoint",
+      "next": "0x45",
+      "plus40": "0xc",
+      "plus48": "0x8e9d358",
+      "minus8": "0x19"
+    }
+  ],
+  "CanSeeTargetFlag": [
+    {
+      "address": "0xe01fa88",
+      "text": "DifficultyShootingConfig",
+      "next": "0x100000045",
+      "plus40": "0x4",
+      "plus48": "0xa357c60",
+      "minus8": "0x812656c"
+    },
+    {
+      "address": "0xe01fad0",
+      "text": "LineLifeTime",
+      "next": "0x45",
+      "plus40": "0xf4",
+      "plus48": "0xc",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe01fb08",
+      "text": "bShowDebugLine",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xf8",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe01fb50",
+      "text": "LowSpeedScaleShootProbabilityCurve",
+      "next": "0x45",
+      "plus40": "0xe8",
+      "plus48": "0xaf729a0",
+      "minus8": "0x12"
+    },
+    {
+      "address": "0xe01fb90",
+      "text": "bEnableShootProbabilityCompensate",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xf8",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe01fbd8",
+      "text": "bStopShootingWhenCannotSee",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xf8",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe01fc20",
+      "text": "ScaleForHitPart",
+      "next": "0x45",
+      "plus40": "0xdc",
+      "plus48": "0xc",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe01fc58",
+      "text": "bMissOnPurpose",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xf8",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe01fce8",
+      "text": "HitRateLerpSpeed",
+      "next": "0x45",
+      "plus40": "0xd4",
+      "plus48": "0xc",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe01fd20",
+      "text": "bForceUseAIControllerRotation",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xf8",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe01fd68",
+      "text": "ShootTargetDistanceRangeDueToSpeed",
+      "next": "0x45",
+      "plus40": "0xc8",
+      "plus48": "0x8e9d3f0",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe01fda8",
+      "text": "ShootTargetSpeedRange",
+      "next": "0x45",
+      "plus40": "0xc0",
+      "plus48": "0x8e9d3f0",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe01fe28",
+      "text": "ShootLeftRightRange",
+      "next": "0x45",
+      "plus40": "0xb0",
+      "plus48": "0x8e9d3f0",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe01fe68",
+      "text": "TargetWidth",
+      "next": "0x45",
+      "plus40": "0xac",
+      "plus48": "0x19",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe01fea0",
+      "text": "ShootUpDownRange",
+      "next": "0x45",
+      "plus40": "0xa4",
+      "plus48": "0x8e9d3f0",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe01fee0",
+      "text": "bNeedCheckBullets",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xf8",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe01ff28",
+      "text": "bUseTargetEnemyCfg",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xf8",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe01ff70",
+      "text": "bSetCanSeeTargetFlag",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xf8",
+      "minus8": "0xc"
+    },
+    {
+      "address": "0xe01ffb8",
+      "text": "ReloadBlackBoardKey",
+      "next": "0x45",
+      "plus40": "0x78",
+      "plus48": "0xa349f60",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe01fff8",
+      "text": "RandomShootFreqRange",
+      "next": "0x45",
+      "plus40": "0x6c",
+      "plus48": "0x8e9d3f0",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe020038",
+      "text": "ShootGunDeviationAngle",
+      "next": "0x45",
+      "plus40": "0x68",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe0200a8",
+      "text": "WeaponShotType",
+      "next": "0x45",
+      "plus40": "0x61",
+      "plus48": "0x70c6ef8",
+      "minus8": "0x1d"
+    },
+    {
+      "address": "0xe020258",
+      "text": "EquipWeaponSensedRadius",
+      "next": "0x45",
+      "plus40": "0x68",
+      "plus48": "0xa",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe020290",
+      "text": "SensedRadius",
+      "next": "0x45",
+      "plus40": "0x64",
+      "plus48": "0xe020250",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe020330",
+      "text": "MaxMoveDistanceVolumeBox",
+      "next": "0x45",
+      "plus40": "0x10",
+      "plus48": "0x8e9d780",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe020370",
+      "text": "SpawnLocation",
+      "next": "0x45",
+      "plus40": "0x4",
+      "plus48": "0x8e9d358",
+      "minus8": "0x19"
+    },
+    {
+      "address": "0xe0203d0",
+      "text": "BTAICheckInAIBehaviorRegionMemory",
+      "next": "0x100000045",
+      "plus40": "0x2",
+      "plus48": "0xa357c60",
+      "minus8": "0x8126920"
+    },
+    {
+      "address": "0xe020418",
+      "text": "HeightTestOffset",
+      "next": "0x45",
+      "plus40": "0xbc",
+      "plus48": "0xc",
+      "minus8": "0xa"
+    },
+    {
+      "address": "0xe020450",
+      "text": "bUseAIMaxMoveDistanceVolume",
+      "next": "0x45",
+      "plus40": "0x100000001",
+      "plus48": "0xc0",
+      "minus8": "0xc"
+    }
+  ],
+  "bCanSee1Setter": [
+    "0x76741a0: mov w8, #1",
+    "0x76741a4: strb w8, [x0]",
+    "0x76741a8: ret ",
+    "0x76741ac: stp x29, x30, [sp, #-0x20]!",
+    "0x76741b0: str x19, [sp, #0x10]",
+    "0x76741b4: mov x29, sp",
+    "0x76741b8: adrp x8, #0xf148000",
+    "0x76741bc: ldr x0, [x8, #0xfb8]",
+    "0x76741c0: cbz x0, #0x76741d0",
+    "0x76741c4: ldr x19, [sp, #0x10]",
+    "0x76741c8: ldp x29, x30, [sp], #0x20",
+    "0x76741cc: ret ",
+    "0x76741d0: adrp x19, #0xf148000",
+    "0x76741d4: add x19, x19, #0xfb8",
+    "0x76741d8: adrp x1, #0xdc1e000",
+    "0x76741dc: add x1, x1, #0x640",
+    "0x76741e0: mov x0, x19",
+    "0x76741e4: bl #0x8e7bbb4",
+    "0x76741e8: ldr x0, [x19]",
+    "0x76741ec: ldr x19, [sp, #0x10]",
+    "0x76741f0: ldp x29, x30, [sp], #0x20",
+    "0x76741f4: ret ",
+    "0x76741f8: stp x29, x30, [sp, #-0x20]!",
+    "0x76741fc: str x19, [sp, #0x10]",
+    "0x7674200: mov x29, sp",
+    "0x7674204: adrp x8, #0xf148000",
+    "0x7674208: ldr x0, [x8, #0xfc0]",
+    "0x767420c: cbz x0, #0x767421c",
+    "0x7674210: ldr x19, [sp, #0x10]",
+    "0x7674214: ldp x29, x30, [sp], #0x20",
+    "0x7674218: ret ",
+    "0x767421c: adrp x19, #0xf148000"
+  ],
+  "bCanSee2Setter": [
+    "0x76aa9b8: stp d25, d1, [x28, #0xf8]!",
+    "0x76aa9bc: mov x7, #0x3431"
+  ],
+  "AutoAimInfoStruct": [
+    "0x712863c: stp x29, x30, [sp, #-0x20]!",
+    "0x7128640: str x19, [sp, #0x10]",
+    "0x7128644: mov x29, sp",
+    "0x7128648: adrp x8, #0xf0dc000",
+    "0x712864c: ldr x0, [x8, #0x28]",
+    "0x7128650: cbz x0, #0x7128660",
+    "0x7128654: ldr x19, [sp, #0x10]",
+    "0x7128658: ldp x29, x30, [sp], #0x20",
+    "0x712865c: ret ",
+    "0x7128660: adrp x19, #0xf0dc000",
+    "0x7128664: add x19, x19, #0x28",
+    "0x7128668: adrp x1, #0xd79a000",
+    "0x712866c: add x1, x1, #0x180",
+    "0x7128670: mov x0, x19",
+    "0x7128674: bl #0x8e7be6c",
+    "0x7128678: ldr x0, [x19]",
+    "0x712867c: ldr x19, [sp, #0x10]",
+    "0x7128680: ldp x29, x30, [sp], #0x20",
+    "0x7128684: ret ",
+    "0x7128688: stp x29, x30, [sp, #-0x20]!",
+    "0x712868c: str x19, [sp, #0x10]",
+    "0x7128690: mov x29, sp",
+    "0x7128694: adrp x8, #0xf0dc000",
+    "0x7128698: ldr x0, [x8, #0x20]",
+    "0x712869c: cbz x0, #0x71286ac",
+    "0x71286a0: ldr x19, [sp, #0x10]",
+    "0x71286a4: ldp x29, x30, [sp], #0x20",
+    "0x71286a8: ret ",
+    "0x71286ac: adrp x19, #0xf0dc000",
+    "0x71286b0: add x19, x19, #0x20",
+    "0x71286b4: adrp x1, #0xd79a000",
+    "0x71286b8: add x1, x1, #0x100"
+  ],
+  "AutoAimInfoPropertyStruct": [
+    "0x7128780: stp x29, x30, [sp, #-0x20]!",
+    "0x7128784: str x19, [sp, #0x10]",
+    "0x7128788: mov x29, sp",
+    "0x712878c: adrp x8, #0xf0dc000",
+    "0x7128790: ldr x0, [x8, #0x38]",
+    "0x7128794: cbz x0, #0x71287a4",
+    "0x7128798: ldr x19, [sp, #0x10]",
+    "0x712879c: ldp x29, x30, [sp], #0x20",
+    "0x71287a0: ret ",
+    "0x71287a4: adrp x19, #0xf0dc000",
+    "0x71287a8: add x19, x19, #0x38",
+    "0x71287ac: adrp x1, #0xd79a000",
+    "0x71287b0: add x1, x1, #0x3e8",
+    "0x71287b4: mov x0, x19",
+    "0x71287b8: bl #0x8e7c230",
+    "0x71287bc: ldr x0, [x19]",
+    "0x71287c0: ldr x19, [sp, #0x10]",
+    "0x71287c4: ldp x29, x30, [sp], #0x20",
+    "0x71287c8: ret ",
+    "0x71287cc: stp x29, x30, [sp, #-0x10]!",
+    "0x71287d0: mov x29, sp",
+    "0x71287d4: mov w0, #0x10",
+    "0x71287d8: bl #0x6a82744",
+    "0x71287dc: adrp x8, #0x37d7000",
+    "0x71287e0: ldr d0, [x8, #0xf38]",
+    "0x71287e4: adrp x8, #0xd79d000",
+    "0x71287e8: add x8, x8, #0x198",
+    "0x71287ec: str x8, [x0]",
+    "0x71287f0: str d0, [x0, #8]",
+    "0x71287f4: ldp x29, x30, [sp], #0x10",
+    "0x71287f8: ret ",
+    "0x71287fc: stp x29, x30, [sp, #-0x20]!"
+  ]
+}

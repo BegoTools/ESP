@@ -1,0 +1,27 @@
+{
+  "pid": 3418,
+  "world": "0x7beb7a0d2000",
+  "level": "0x7beb69b83f90",
+  "local_pawn": "0x7beb6d60b000",
+  "arrays": [
+    {
+      "offset": "0xa0",
+      "pointer": "0x7beb6d1fcfc0",
+      "count": 285,
+      "capacity": 316,
+      "local_pawn_indexes": [
+        52
+      ]
+    },
+    {
+      "offset": "0xb0",
+      "pointer": "0x7beaa5546a40",
+      "count": 283,
+      "capacity": 327,
+      "local_pawn_indexes": [
+        9
+      ]
+    }
+  ],
+  "pages_read": 14
+}

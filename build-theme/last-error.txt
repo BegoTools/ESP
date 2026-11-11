@@ -1,0 +1,4 @@
+System.Exception: home switch updates the shared ESP option
+   at ESPWorkbench.ThemeTests.<>c__DisplayClass1.<Run>b__0(Boolean condition, String name)
+   at ESPWorkbench.ThemeTests.Run()
+   at ESPWorkbench.Program.Main(String[] args)

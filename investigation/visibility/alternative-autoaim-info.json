@@ -1,0 +1,442 @@
+[
+  {
+    "address": "0xd79a030",
+    "name": "LocToAim",
+    "next": "0x45",
+    "minus8": "0x19",
+    "plus40": "0x10",
+    "plus48": "0x8e9d358"
+  },
+  {
+    "address": "0xd79a070",
+    "name": "ScreenLoc",
+    "next": "0x45",
+    "minus8": "0x19",
+    "plus40": "0x8",
+    "plus48": "0x8e9d3f0"
+  },
+  {
+    "address": "0xd79a108",
+    "name": "AutoAimInfoDelegate__DelegateSignature",
+    "next": "0x45",
+    "minus8": "0x74ef9e4",
+    "plus40": "0xd79a0e8",
+    "plus48": "0x3"
+  },
+  {
+    "address": "0xd79a150",
+    "name": "LockNoTarget",
+    "next": "0x1",
+    "minus8": "0x0",
+    "plus40": "0x3",
+    "plus48": "0x74ef9e4"
+  },
+  {
+    "address": "0xd79a1d0",
+    "name": "DotValue",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x38",
+    "plus48": "0x14"
+  },
+  {
+    "address": "0xd79a208",
+    "name": "LockSocketName",
+    "next": "0x45",
+    "minus8": "0x14",
+    "plus40": "0x30",
+    "plus48": "0xa"
+  },
+  {
+    "address": "0xd79a240",
+    "name": "DefaultLockDelay",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x28",
+    "plus48": "0x19"
+  },
+  {
+    "address": "0xd79a2b8",
+    "name": "MaxAimScreenDis",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x18",
+    "plus48": "0xa"
+  },
+  {
+    "address": "0xd79a2f0",
+    "name": "MaxAimDistance",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x14",
+    "plus48": "0x19"
+  },
+  {
+    "address": "0xd79a328",
+    "name": "AimOffset",
+    "next": "0x45",
+    "minus8": "0x19",
+    "plus40": "0x8",
+    "plus48": "0x8e9d358"
+  },
+  {
+    "address": "0xd79a368",
+    "name": "AimClass",
+    "next": "0x45",
+    "minus8": "0x11",
+    "plus40": "0x0",
+    "plus48": "0xaf00334"
+  },
+  {
+    "address": "0xd79a400",
+    "name": "AutoAimInfo",
+    "next": "0x100000045",
+    "minus8": "0x71287cc",
+    "plus40": "0x8",
+    "plus48": "0x40738b7"
+  },
+  {
+    "address": "0xd79a448",
+    "name": "CalcLockActor",
+    "next": "0x7128aa4",
+    "minus8": "0x0",
+    "plus40": "0x0",
+    "plus48": "0x40738c1"
+  },
+  {
+    "address": "0xd79a460",
+    "name": "ChangeLockState",
+    "next": "0x7128b28",
+    "minus8": "0x0",
+    "plus40": "0x0",
+    "plus48": "0x412db6a"
+  },
+  {
+    "address": "0xd79a490",
+    "name": "GetCacheTargetList",
+    "next": "0x7128bc0",
+    "minus8": "0x0",
+    "plus40": "0x0",
+    "plus48": "0x41fbc47"
+  },
+  {
+    "address": "0xd79a4a8",
+    "name": "InitCacheTargetList",
+    "next": "0x7128c44",
+    "minus8": "0x0",
+    "plus40": "0x0",
+    "plus48": "0x40e93db"
+  },
+  {
+    "address": "0xd79a4c0",
+    "name": "OnLockTimerOver",
+    "next": "0x7128c58",
+    "minus8": "0x0",
+    "plus40": "0x0",
+    "plus48": "0x41e5421"
+  },
+  {
+    "address": "0xd79a4d8",
+    "name": "RemoveTarget",
+    "next": "0x7128c74",
+    "minus8": "0x0",
+    "plus40": "0x0",
+    "plus48": "0x40d2d0c"
+  },
+  {
+    "address": "0xd79a520",
+    "name": "TryDoAutoAim",
+    "next": "0x7128d80",
+    "minus8": "0x0",
+    "plus40": "0x45",
+    "plus48": "0x10000000000080"
+  },
+  {
+    "address": "0xd79a540",
+    "name": "Target",
+    "next": "0x45",
+    "minus8": "0x12",
+    "plus40": "0x0",
+    "plus48": "0xaf00334"
+  },
+  {
+    "address": "0xd79a5c8",
+    "name": "Delta",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x0",
+    "plus48": "0xd79a5c0"
+  },
+  {
+    "address": "0xd79a608",
+    "name": "CalcLockActor",
+    "next": "0x45",
+    "minus8": "0x7128e48",
+    "plus40": "0xd79a5f8",
+    "plus48": "0x1"
+  },
+  {
+    "address": "0xd79a648",
+    "name": "InState",
+    "next": "0x45",
+    "minus8": "0x0",
+    "plus40": "0x0",
+    "plus48": "0x712863c"
+  },
+  {
+    "address": "0xd79a690",
+    "name": "ChangeLockState",
+    "next": "0x45",
+    "minus8": "0x7128e48",
+    "plus40": "0xd79a680",
+    "plus48": "0x1"
+  },
+  {
+    "address": "0xd79a710",
+    "name": "ReturnValue",
+    "next": "0x45",
+    "minus8": "0x16",
+    "plus40": "0x0",
+    "plus48": "0xe"
+  },
+  {
+    "address": "0xd79a748",
+    "name": "ReturnValue",
+    "next": "0x45",
+    "minus8": "0xe",
+    "plus40": "0x0",
+    "plus48": "0xaf00334"
+  },
+  {
+    "address": "0xd79a798",
+    "name": "GetCacheTargetList",
+    "next": "0x45",
+    "minus8": "0x7128e48",
+    "plus40": "0xd79a780",
+    "plus48": "0x2"
+  },
+  {
+    "address": "0xd79a7d8",
+    "name": "InitCacheTargetList",
+    "next": "0x45",
+    "minus8": "0x7128e48",
+    "plus40": "0x0",
+    "plus48": "0x0"
+  },
+  {
+    "address": "0xd79a818",
+    "name": "OnLockTimerOver",
+    "next": "0x45",
+    "minus8": "0x7128e48",
+    "plus40": "0x0",
+    "plus48": "0x0"
+  },
+  {
+    "address": "0xd79a858",
+    "name": "Target",
+    "next": "0x45",
+    "minus8": "0x12",
+    "plus40": "0x0",
+    "plus48": "0xaf00334"
+  },
+  {
+    "address": "0xd79a8a0",
+    "name": "RemoveTarget",
+    "next": "0x45",
+    "minus8": "0x7128e48",
+    "plus40": "0xd79a890",
+    "plus48": "0x1"
+  },
+  {
+    "address": "0xd79a920",
+    "name": "NewDelayTime",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x0",
+    "plus48": "0xd79a918"
+  },
+  {
+    "address": "0xd79a9a0",
+    "name": "DeltaTime",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x0",
+    "plus48": "0xd79a998"
+  },
+  {
+    "address": "0xd79a9e0",
+    "name": "TryDoAutoAim",
+    "next": "0x45",
+    "minus8": "0x7128e48",
+    "plus40": "0xd79a9d0",
+    "plus48": "0x1"
+  },
+  {
+    "address": "0xd79aa40",
+    "name": "CalcLockActor",
+    "next": "0x7128ee0",
+    "minus8": "0x7128e94",
+    "plus40": "0x7128f78",
+    "plus48": "0x412db6a"
+  },
+  {
+    "address": "0xd79aa50",
+    "name": "ChangeLockState",
+    "next": "0x7128f2c",
+    "minus8": "0x7128ee0",
+    "plus40": "0x7128fc4",
+    "plus48": "0x3fe9ae4"
+  },
+  {
+    "address": "0xd79aa70",
+    "name": "GetCacheTargetList",
+    "next": "0x7128fc4",
+    "minus8": "0x7128f78",
+    "plus40": "0x712905c",
+    "plus48": "0x40e93db"
+  },
+  {
+    "address": "0xd79aa80",
+    "name": "InitCacheTargetList",
+    "next": "0x7129010",
+    "minus8": "0x7128fc4",
+    "plus40": "0x71290a8",
+    "plus48": "0x41e5421"
+  },
+  {
+    "address": "0xd79aa90",
+    "name": "OnLockTimerOver",
+    "next": "0x712905c",
+    "minus8": "0x7129010",
+    "plus40": "0x71290f4",
+    "plus48": "0x40d2d0c"
+  },
+  {
+    "address": "0xd79aaa0",
+    "name": "RemoveTarget",
+    "next": "0x71290a8",
+    "minus8": "0x712905c",
+    "plus40": "0x7129140",
+    "plus48": "0x40bb989"
+  },
+  {
+    "address": "0xd79aad0",
+    "name": "TryDoAutoAim",
+    "next": "0xa",
+    "minus8": "0x7129140",
+    "plus40": "0x1",
+    "plus48": "0x0"
+  },
+  {
+    "address": "0xd79ab18",
+    "name": "RpcRotationTime",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x234",
+    "plus48": "0xa"
+  },
+  {
+    "address": "0xd79ab50",
+    "name": "SimulateRotateSpeed",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x230",
+    "plus48": "0xa"
+  },
+  {
+    "address": "0xd79ab88",
+    "name": "RotateBackSpeed",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x22c",
+    "plus48": "0xc"
+  },
+  {
+    "address": "0xd79abc0",
+    "name": "bLostAutoAimTarget",
+    "next": "0x45",
+    "minus8": "0xc",
+    "plus40": "0x100000001",
+    "plus48": "0x240"
+  },
+  {
+    "address": "0xd79ac08",
+    "name": "bHasInitCacheTargetList",
+    "next": "0x45",
+    "minus8": "0xc",
+    "plus40": "0x100000001",
+    "plus48": "0x240"
+  },
+  {
+    "address": "0xd79ac50",
+    "name": "OnAutoAimLockStateDelegate",
+    "next": "0x45",
+    "minus8": "0x1b",
+    "plus40": "0x1f0",
+    "plus48": "0x71285f0"
+  },
+  {
+    "address": "0xd79ac90",
+    "name": "OnAutoAimInfoDelegate",
+    "next": "0x45",
+    "minus8": "0x1b",
+    "plus40": "0x1e0",
+    "plus48": "0x7128688"
+  },
+  {
+    "address": "0xd79acd0",
+    "name": "WorldLocToAim",
+    "next": "0x45",
+    "minus8": "0x19",
+    "plus40": "0x1d4",
+    "plus48": "0x8e9d358"
+  },
+  {
+    "address": "0xd79ad10",
+    "name": "PreLockState",
+    "next": "0x45",
+    "minus8": "0x0",
+    "plus40": "0x1d1",
+    "plus48": "0x712863c"
+  },
+  {
+    "address": "0xd79ad90",
+    "name": "AutoAimInfo",
+    "next": "0x45",
+    "minus8": "0x19",
+    "plus40": "0x190",
+    "plus48": "0x7128780"
+  },
+  {
+    "address": "0xd79add0",
+    "name": "DebugRectSize",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x188",
+    "plus48": "0xa"
+  },
+  {
+    "address": "0xd79ae08",
+    "name": "TraceUpOffset",
+    "next": "0x45",
+    "minus8": "0xa",
+    "plus40": "0x184",
+    "plus48": "0xc"
+  },
+  {
+    "address": "0xd79ae40",
+    "name": "bUseAimPoint",
+    "next": "0x45",
+    "minus8": "0xc",
+    "plus40": "0x100000001",
+    "plus48": "0x240"
+  },
+  {
+    "address": "0xd79ae88",
+    "name": "bShowDebug",
+    "next": "0x45",
+    "minus8": "0xc",
+    "plus40": "0x100000001",
+    "plus48": "0x240"
+  }
+]

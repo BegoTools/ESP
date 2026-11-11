@@ -1,0 +1,501 @@
+INPUT MANAGER (dumpsys input)
+
+Input properties:
+  persist.input.velocitytracker.strategy = default
+
+Input Manager State:
+  Interactive: true
+  System UI Lights Out: false
+  Pointer Speed: 0
+  Pointer Acceleration: 3.000
+  Pointer Gestures Enabled: true
+  Show Touches: false
+  Pointer Capture: Disabled, seq=0
+
+Event Hub State:
+  BuiltInKeyboardId: -2
+  Devices:
+    6: androVM Virtual Input 2
+      Classes: KEYBOARD | ALPHAKEY | TOUCH | CURSOR | TOUCH_MT
+      Path: /dev/input/event2
+      Enabled: true
+      Descriptor: 201b41eca3c4fc6a7a5ea4dcc4d5a14df7a64e17
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0019, vendor=0x6000, product=0x0002, version=0x0001
+      KeyLayoutFile: /system/usr/keylayout/Vendor_6000_Product_0002.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: /system/usr/idc/Vendor_6000_Product_0002.idc
+      VideoDevice: <none>
+    2: androVM Virtual Input
+      Classes: KEYBOARD | ALPHAKEY | TOUCH | CURSOR | TOUCH_MT
+      Path: /dev/input/event1
+      Enabled: true
+      Descriptor: e2af2aee625c3b6e5e9b6244f78a3667ab1b5c9e
+      Location: 
+      ControllerNumber: 0
+      UniqueId: 
+      Identifier: bus=0x0019, vendor=0x1234, product=0x0001, version=0x0001
+      KeyLayoutFile: /system/usr/keylayout/Vendor_1234_Product_0001.kl
+      KeyCharacterMapFile: /system/usr/keychars/Generic.kcm
+      ConfigurationFile: /system/usr/idc/Vendor_1234_Product_0001.idc
+      VideoDevice: <none>
+    -1: Virtual
+      Classes: KEYBOARD | ALPHAKEY | DPAD | VIRTUAL
+      Path: <virtual>
+      Enabled: true
+      Descriptor: a718a782d34bc767f4689c232d64d527998ea7fd
+      Location: 
+      ControllerNumber: 0
+      UniqueId: <virtual>
+      Identifier: bus=0x0000, vendor=0x0000, product=0x0000, version=0x0000
+      KeyLayoutFile: /system/usr/keylayout/Generic.kl
+      KeyCharacterMapFile: /system/usr/keychars/Virtual.kcm
+      ConfigurationFile: 
+      VideoDevice: <none>
+  Unattached video devices:
+    <none>
+
+Input Reader State (Nums of device: 3):
+  Device 2: androVM Virtual Input
+    EventHub Devices: [ 2 ] 
+    Generation: 70
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    AssociatedDisplayUniqueId: <none>
+    HasMic:     false
+    Sources: KEYBOARD | TOUCHSCREEN | MOUSE
+    KeyboardType: 2
+    ControllerNum: 0
+    Motion Ranges:
+      X: source=MOUSE, min=0.000, max=1919.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=MOUSE, min=0.000, max=1079.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=MOUSE, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      VSCROLL: source=MOUSE, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      HSCROLL: source=MOUSE, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      X: source=TOUCHSCREEN, min=0.000, max=479.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=TOUCHSCREEN, min=0.000, max=319.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=TOUCHSCREEN, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      VSCROLL: source=TOUCHSCREEN, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      HSCROLL: source=TOUCHSCREEN, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 2
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x100000
+      DownTime: 0
+    Cursor Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: true
+        Mode: POINTER
+        OrientationAware: false
+      XScale: 1.000
+      YScale: 1.000
+      XPrecision: 1.000
+      YPrecision: 1.000
+      HaveVWheel: true
+      HaveHWheel: true
+      VWheelScale: 1.000
+      HWheelScale: 1.000
+      DisplayId: 5
+      Orientation: 3
+      ButtonState: 0x00000000
+      Down: false
+      DownTime: 0
+    Touch Input Mapper (mode - DIRECT):
+      Parameters:
+        GestureMode: MULTI_TOUCH
+        DeviceType: TOUCH_SCREEN
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId=''
+        OrientationAware: true
+        Orientation: ORIENTATION_0
+      Raw Touch Axes:
+        X: min=0, max=480, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=320, flat=0, fuzz=0, resolution=0
+        Pressure: unknown range
+        TouchMajor: unknown range
+        TouchMinor: unknown range
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: unknown range
+        Slot: unknown range
+      Calibration:
+        touch.size.calibration: NONE
+        touch.pressure.calibration: none
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport INTERNAL: displayId=0, uniqueId=local:4619827259835644672, port=0, orientation=0, logicalFrame=[0, 0, 1440, 1080], physicalFrame=[27, 0, 453, 320], deviceSize=[480, 320], isActive=[1]
+      DisplayWidth: 480px
+      DisplayHeight: 320px
+      PhysicalWidth: 426px
+      PhysicalHeight: 320px
+      PhysicalLeft: 27
+      PhysicalTop: 0
+      InputDeviceOrientation: 0
+      Translation and Scaling Factors:
+        XScale: 0.998
+        YScale: 0.997
+        XPrecision: 1.002
+        YPrecision: 1.003
+        GeometricScale: 0.997
+        PressureScale: 0.000
+        SizeScale: 0.000
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device 6: androVM Virtual Input 2
+    EventHub Devices: [ 6 ] 
+    Generation: 76
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    AssociatedDisplayUniqueId: <none>
+    HasMic:     false
+    Sources: KEYBOARD | TOUCHSCREEN | MOUSE
+    KeyboardType: 2
+    ControllerNum: 0
+    Motion Ranges:
+      X: source=MOUSE, min=0.000, max=1919.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=MOUSE, min=0.000, max=1079.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=MOUSE, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      VSCROLL: source=MOUSE, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      HSCROLL: source=MOUSE, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      X: source=TOUCHSCREEN, min=0.000, max=1079.000, flat=0.000, fuzz=0.000, resolution=0.000
+      Y: source=TOUCHSCREEN, min=0.000, max=1919.000, flat=0.000, fuzz=0.000, resolution=0.000
+      PRESSURE: source=TOUCHSCREEN, min=0.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      VSCROLL: source=TOUCHSCREEN, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+      HSCROLL: source=TOUCHSCREEN, min=-1.000, max=1.000, flat=0.000, fuzz=0.000, resolution=0.000
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 2
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x100000
+      DownTime: 0
+    Cursor Input Mapper:
+      Parameters:
+        HasAssociatedDisplay: true
+        Mode: POINTER
+        OrientationAware: true
+      XScale: 1.000
+      YScale: 1.000
+      XPrecision: 1.000
+      YPrecision: 1.000
+      HaveVWheel: true
+      HaveHWheel: true
+      VWheelScale: 1.000
+      HWheelScale: 1.000
+      DisplayId: 5
+      Orientation: 0
+      ButtonState: 0x00000000
+      Down: false
+      DownTime: 0
+    Touch Input Mapper (mode - DIRECT):
+      Parameters:
+        GestureMode: MULTI_TOUCH
+        DeviceType: TOUCH_SCREEN
+        AssociatedDisplay: hasAssociatedDisplay=true, isExternal=false, displayId='local:4619827551948147201'
+        OrientationAware: true
+        Orientation: ORIENTATION_0
+      Raw Touch Axes:
+        X: min=0, max=1080, flat=0, fuzz=0, resolution=0
+        Y: min=0, max=1920, flat=0, fuzz=0, resolution=0
+        Pressure: unknown range
+        TouchMajor: unknown range
+        TouchMinor: unknown range
+        ToolMajor: unknown range
+        ToolMinor: unknown range
+        Orientation: unknown range
+        Distance: unknown range
+        TiltX: unknown range
+        TiltY: unknown range
+        TrackingId: unknown range
+        Slot: unknown range
+      Calibration:
+        touch.size.calibration: NONE
+        touch.pressure.calibration: none
+        touch.orientation.calibration: none
+        touch.distance.calibration: none
+        touch.coverage.calibration: none
+      Affine Transformation:
+        X scale: 1.000
+        X ymix: 0.000
+        X offset: 0.000
+        Y xmix: 0.000
+        Y scale: 1.000
+        Y offset: 0.000
+      Viewport EXTERNAL: displayId=5, uniqueId=local:4619827551948147201, port=1, orientation=1, logicalFrame=[0, 0, 1920, 1080], physicalFrame=[0, 0, 1920, 1080], deviceSize=[1920, 1080], isActive=[1]
+      DisplayWidth: 1080px
+      DisplayHeight: 1920px
+      PhysicalWidth: 1080px
+      PhysicalHeight: 1920px
+      PhysicalLeft: 0
+      PhysicalTop: 0
+      InputDeviceOrientation: 0
+      Translation and Scaling Factors:
+        XScale: 0.999
+        YScale: 0.999
+        XPrecision: 1.001
+        YPrecision: 1.001
+        GeometricScale: 0.999
+        PressureScale: 0.000
+        SizeScale: 0.000
+        OrientationScale: 0.000
+        DistanceScale: 0.000
+        HaveTilt: false
+        TiltXCenter: 0.000
+        TiltXScale: 0.000
+        TiltYCenter: 0.000
+        TiltYScale: 0.000
+      Last Raw Button State: 0x00000000
+      Last Raw Touch: pointerCount=0
+      Last Cooked Button State: 0x00000000
+      Last Cooked Touch: pointerCount=0
+      Stylus Fusion:
+        ExternalStylusConnected: false
+        External Stylus ID: -1
+        External Stylus Data Timeout: 9223372036854775807
+      External Stylus State:
+        When: 9223372036854775807
+        Pressure: 0.000000
+        Button State: 0x00000000
+        Tool Type: 0
+  Device -1: Virtual
+    EventHub Devices: [ -1 ] 
+    Generation: 3
+    IsExternal: false
+    AssociatedDisplayPort: <none>
+    AssociatedDisplayUniqueId: <none>
+    HasMic:     false
+    Sources: KEYBOARD | DPAD
+    KeyboardType: 2
+    ControllerNum: 0
+    Keyboard Input Mapper:
+      Parameters:
+        OrientationAware: false
+        HandlesKeyRepeat: false
+      KeyboardType: 2
+      Orientation: 0
+      KeyDowns: 0 keys currently down
+      MetaState: 0x0
+      DownTime: 0
+  Configuration:
+    ExcludedDeviceNames: []
+    VirtualKeyQuietTime: 0.0ms
+    PointerVelocityControlParameters: scale=1.000, lowThreshold=500.000, highThreshold=3000.000, acceleration=3.000
+    WheelVelocityControlParameters: scale=1.000, lowThreshold=15.000, highThreshold=50.000, acceleration=4.000
+    PointerGesture:
+      Enabled: true
+      QuietInterval: 100.0ms
+      DragMinSwitchSpeed: 50.0px/s
+      TapInterval: 150.0ms
+      TapDragInterval: 300.0ms
+      TapSlop: 20.0px
+      MultitouchSettleInterval: 100.0ms
+      MultitouchMinDistance: 15.0px
+      SwipeTransitionAngleCosine: 0.3
+      SwipeMaxWidthRatio: 0.2
+      MovementSpeedRatio: 0.8
+      ZoomSpeedRatio: 0.3
+      Viewports:
+        Viewport INTERNAL: displayId=0, uniqueId=local:4619827259835644672, port=0, orientation=0, logicalFrame=[0, 0, 1440, 1080], physicalFrame=[27, 0, 453, 320], deviceSize=[480, 320], isActive=[1]
+        Viewport EXTERNAL: displayId=5, uniqueId=local:4619827551948147201, port=1, orientation=1, logicalFrame=[0, 0, 1920, 1080], physicalFrame=[0, 0, 1920, 1080], deviceSize=[1920, 1080], isActive=[1]
+
+UnwantedInteractionBlocker:
+  mPreferStylusOverTouchBlocker:
+    mActiveStyli: {}
+    mLastTouchEvents: 
+    mDevicesWithMixedToolType: {}
+    mCanceledDevices: {}
+  mEnablePalmRejection: 0
+  isPalmRejectionEnabled (flag value): 0
+  mPalmRejectors: None
+
+Input Classifier State:
+  Motion Classifier:
+    <nullptr>
+
+Input Dispatcher State:
+  DispatchEnabled: true
+  DispatchFrozen: false
+  InputFilterEnabled: false
+  FocusedDisplayId: 5
+  FocusedApplications:
+    displayId=5, name='ActivityRecord{8bb7302 u0 com.tencent.ig/com.epicgames.ue4.GameActivity} t19}', dispatchingTimeout=6000ms
+    displayId=0, name='ActivityRecord{1991a7d u0 com.tencent.launcher/.MainActivity} t2}', dispatchingTimeout=6000ms
+  FocusedWindows:
+    displayId=5, name='9d1056e com.tencent.ig/com.epicgames.ue4.GameActivity'
+    displayId=0, name='93e187c com.tencent.launcher/com.tencent.launcher.MainActivity'
+  FocusRequests:
+    displayId=5, name='9d1056e com.tencent.ig/com.epicgames.ue4.GameActivity' result='OK'
+    displayId=0, name='93e187c com.tencent.launcher/com.tencent.launcher.MainActivity' result='OK'
+  Pointer Capture Requested: false
+  Current Window with Pointer Capture: None
+  TouchStates: <no displays touched>
+  Display: 5
+    logicalSize=1920x1080
+        transform (ROT_270) (ROTATE TRANSLATE)
+            0.0000  1.0000  0.0000
+            -1.0000  0.0000  1080.0000
+            0.0000  0.0000  1.0000
+    Windows:
+      0: name='9d1056e com.tencent.ig/com.epicgames.ue4.GameActivity', id=297, displayId=5, inputConfig=0x0, alpha=1.00, frame=[0,0][1080,1920], globalScale=1.000000, applicationInfo.name=ActivityRecord{8bb7302 u0 com.tencent.ig/com.epicgames.ue4.GameActivity} t19}, applicationInfo.token=0x74a51c8f7ad0, touchableRegion=[0,0][1080,1920], ownerPid=9307, ownerUid=10075, dispatchingTimeout=6000ms, hasToken=true, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_270) (ROTATE TRANSLATE)
+            0.0000  1.0000  0.0000
+            -1.0000  0.0000  1080.0000
+            0.0000  0.0000  1.0000
+      1: name='SurfaceView[com.tencent.ig/com.epicgames.ue4.GameActivity](BLAST)#300', id=300, displayId=5, inputConfig=NO_INPUT_CHANNEL, alpha=1.00, frame=[360,0][1080,1280], globalScale=1.000000, applicationInfo.name=, applicationInfo.token=<null>, touchableRegion=<empty>, ownerPid=9307, ownerUid=10075, dispatchingTimeout=5000ms, hasToken=false, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_270) (ROTATE TRANSLATE)
+            0.0000  1.0000  0.0000
+            -1.0000  0.0000  1080.0000
+            0.0000  0.0000  1.0000
+      2: name='9de3fe4 ActivityRecordInputSink com.tencent.ig/com.epicgames.ue4.GameActivity', id=293, displayId=5, inputConfig=NO_INPUT_CHANNEL | NOT_FOCUSABLE, alpha=1.00, frame=[1080,0][1080,0], globalScale=0.000000, applicationInfo.name=, applicationInfo.token=<null>, touchableRegion=[-18120,-10799][20279,10800], ownerPid=558, ownerUid=1000, dispatchingTimeout=0ms, hasToken=false, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_270) (ROTATE TRANSLATE)
+            0.0000  1.0000  0.0000
+            -1.0000  0.0000  1080.0000
+            0.0000  0.0000  1.0000
+      3: name='Wallpaper BBQ wrapper#286', id=286, displayId=5, inputConfig=NO_INPUT_CHANNEL | NOT_VISIBLE, alpha=1.00, frame=[1080,0][1080,0], globalScale=1.000000, applicationInfo.name=, applicationInfo.token=<null>, touchableRegion=<empty>, ownerPid=738, ownerUid=10058, dispatchingTimeout=5000ms, hasToken=false, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_270) (ROTATE TRANSLATE)
+            0.0000  1.0000  0.0000
+            -1.0000  0.0000  1080.0000
+            0.0000  0.0000  1.0000
+      4: name='28322b6 com.android.systemui.wallpapers.ImageWallpaper', id=285, displayId=5, inputConfig=NOT_VISIBLE | NOT_FOCUSABLE | NOT_TOUCHABLE | PREVENT_SPLITTING | IS_WALLPAPER, alpha=1.00, frame=[1080,0][1080,0], globalScale=1.000000, applicationInfo.name=, applicationInfo.token=<null>, touchableRegion=<empty>, ownerPid=738, ownerUid=10058, dispatchingTimeout=6000ms, hasToken=true, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_270) (ROTATE TRANSLATE)
+            0.0000  1.0000  0.0000
+            -1.0000  0.0000  1080.0000
+            0.0000  0.0000  1.0000
+  Display: 0
+    logicalSize=1440x1080
+        transform (ROT_0) (SCALE TRANSLATE)
+            3.3803  -0.0000  -91.2676
+            -0.0000  3.3750  0.0000
+            0.0000  0.0000  1.0000
+    Windows:
+      0: name='93e187c com.tencent.launcher/com.tencent.launcher.MainActivity', id=259, displayId=0, inputConfig=DUPLICATE_TOUCH_TO_WALLPAPER, alpha=1.00, frame=[27,0][453,320], globalScale=1.000000, applicationInfo.name=ActivityRecord{1991a7d u0 com.tencent.launcher/.MainActivity} t2}, applicationInfo.token=0x74a51c8e09d0, touchableRegion=[27,0][453,320], ownerPid=894, ownerUid=1000, dispatchingTimeout=6000ms, hasToken=true, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_0) (SCALE TRANSLATE)
+            3.3803  -0.0000  -91.2676
+            -0.0000  3.3750  0.0000
+            0.0000  0.0000  1.0000
+      1: name='436060e ActivityRecordInputSink com.tencent.launcher/.MainActivity', id=46, displayId=0, inputConfig=NO_INPUT_CHANNEL | NOT_FOCUSABLE, alpha=1.00, frame=[27,0][27,0], globalScale=0.000000, applicationInfo.name=, applicationInfo.token=<null>, touchableRegion=[-3168,-5689][3222,5689], ownerPid=558, ownerUid=1000, dispatchingTimeout=0ms, hasToken=false, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_0) (SCALE TRANSLATE)
+            3.3803  -0.0000  -91.2676
+            -0.0000  3.3750  0.0000
+            0.0000  0.0000  1.0000
+      2: name='Wallpaper BBQ wrapper#62', id=62, displayId=0, inputConfig=NO_INPUT_CHANNEL, alpha=1.00, frame=[27,0][27,0], globalScale=1.000000, applicationInfo.name=, applicationInfo.token=<null>, touchableRegion=<empty>, ownerPid=738, ownerUid=10058, dispatchingTimeout=5000ms, hasToken=false, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_0) (SCALE TRANSLATE)
+            3.3803  -0.0000  -91.2676
+            -0.0000  3.3750  0.0000
+            0.0000  0.0000  1.0000
+      3: name='7b8f4fe com.android.systemui.wallpapers.ImageWallpaper', id=61, displayId=0, inputConfig=NOT_FOCUSABLE | NOT_TOUCHABLE | PREVENT_SPLITTING | IS_WALLPAPER, alpha=1.00, frame=[27,0][27,0], globalScale=1.000000, applicationInfo.name=, applicationInfo.token=<null>, touchableRegion=<empty>, ownerPid=738, ownerUid=10058, dispatchingTimeout=6000ms, hasToken=true, touchOcclusionMode=BLOCK_UNTRUSTED
+        transform (ROT_0) (SCALE TRANSLATE)
+            3.3803  -0.0000  -91.2676
+            -0.0000  3.3750  0.0000
+            0.0000  0.0000  1.0000
+  Global monitors on display 5:
+    0: 'PointerEventDispatcher5 (server)', 
+  Global monitors on display 0:
+    0: 'PointerEventDispatcher0 (server)', 
+  RecentQueue: length=10
+    MotionEvent, age=50064ms
+    MotionEvent, age=50056ms
+    MotionEvent, age=50042ms
+    MotionEvent, age=50026ms
+    MotionEvent, age=49763ms
+    MotionEvent, age=49760ms
+    MotionEvent, age=49124ms
+    MotionEvent, age=49109ms
+    MotionEvent, age=49098ms
+    MotionEvent, age=48529ms
+  PendingEvent: <none>
+  InboundQueue: <empty>
+  ReplacedKeys: <empty>
+  CommandQueue: <empty>
+  Connections:
+    373: channelName='e294ff5 InputMethod (server)', windowName='e294ff5 InputMethod (server)', status=NORMAL, monitor=false, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    421: channelName='9d1056e com.tencent.ig/com.epicgames.ue4.GameActivity (server)', windowName='9d1056e com.tencent.ig/com.epicgames.ue4.GameActivity (server)', status=NORMAL, monitor=false, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    400: channelName='28322b6 com.android.systemui.wallpapers.ImageWallpaper (server)', windowName='28322b6 com.android.systemui.wallpapers.ImageWallpaper (server)', status=NORMAL, monitor=false, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    339: channelName='7b8f4fe com.android.systemui.wallpapers.ImageWallpaper (server)', windowName='7b8f4fe com.android.systemui.wallpapers.ImageWallpaper (server)', status=NORMAL, monitor=false, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    172: channelName='PointerEventDispatcher0 (server)', windowName='PointerEventDispatcher0 (server)', status=NORMAL, monitor=true, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    313: channelName='51d03d0 ScreenDecorOverlayBottom (server)', windowName='51d03d0 ScreenDecorOverlayBottom (server)', status=NORMAL, monitor=false, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    335: channelName='3b6dc4e ShellDropTarget (server)', windowName='3b6dc4e ShellDropTarget (server)', status=NORMAL, monitor=false, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    307: channelName='82b4aa5 ScreenDecorOverlay (server)', windowName='82b4aa5 ScreenDecorOverlay (server)', status=NORMAL, monitor=false, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    398: channelName='PointerEventDispatcher5 (server)', windowName='PointerEventDispatcher5 (server)', status=NORMAL, monitor=true, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+    314: channelName='93e187c com.tencent.launcher/com.tencent.launcher.MainActivity (server)', windowName='93e187c com.tencent.launcher/com.tencent.launcher.MainActivity (server)', status=NORMAL, monitor=false, responsive=true
+      OutboundQueue: <empty>
+      WaitQueue: <empty>
+  AppSwitch: not pending
+  Configuration:
+    KeyRepeatDelay: 50ms
+    KeyRepeatTimeout: 400ms
+    LatencyTracker:
+      mTimelines.size() = 544
+      mEventTimes.size() = 544
+    LatencyAggregator:
+      Sketches:
+        mDownSketches[0]->num_values = 173 size = 0.2KB mMoveSketches[0]->num_values = 19827 size = 1.4KB
+        mDownSketches[1]->num_values = 0 size = 0.0KB mMoveSketches[1]->num_values = 0 size = 0.0KB
+        mDownSketches[2]->num_values = 0 size = 0.0KB mMoveSketches[2]->num_values = 0 size = 0.0KB
+        mDownSketches[3]->num_values = 0 size = 0.0KB mMoveSketches[3]->num_values = 0 size = 0.0KB
+        mDownSketches[4]->num_values = 0 size = 0.0KB mMoveSketches[4]->num_values = 0 size = 0.0KB
+        mDownSketches[5]->num_values = 0 size = 0.0KB mMoveSketches[5]->num_values = 0 size = 0.0KB
+        mDownSketches[6]->num_values = 0 size = 0.0KB mMoveSketches[6]->num_values = 0 size = 0.0KB
+      mNumSketchEventsProcessed=20000
+      mLastSlowEventTime=0
+      mNumEventsSinceLastSlowEventReport = 0
+      mNumSkippedSlowEvents = 0
+
+
+Input Manager Service (Java) State:
+  BatteryController: 0 battery listeners

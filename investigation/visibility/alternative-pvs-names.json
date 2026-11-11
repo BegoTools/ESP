@@ -1,0 +1,166 @@
+[
+  {
+    "rva": "0x3fca72d",
+    "text": "DSPVSParameter"
+  },
+  {
+    "rva": "0x3fd64a4",
+    "text": "PVSNotInCityKillCount"
+  },
+  {
+    "rva": "0x3fdc630",
+    "text": "SensedNearestEnemyVisibleRadius"
+  },
+  {
+    "rva": "0x3feb83e",
+    "text": "bCheckActorVisible"
+  },
+  {
+    "rva": "0x3fec59a",
+    "text": "PVSInCityKillerTotalMoveDistance"
+  },
+  {
+    "rva": "0x400fa16",
+    "text": "OverrideInvisibleActors"
+  },
+  {
+    "rva": "0x401aab3",
+    "text": "PVSNotInCityKillTotalTime"
+  },
+  {
+    "rva": "0x401edb3",
+    "text": "VisibleActorMetaInfo"
+  },
+  {
+    "rva": "0x401edc8",
+    "text": "VisibleActorInfo"
+  },
+  {
+    "rva": "0x40215fa",
+    "text": "DevPVSCheckClientLocationC2S"
+  },
+  {
+    "rva": "0x402fe9d",
+    "text": "CreatePVSNetRelevant"
+  },
+  {
+    "rva": "0x403b5c4",
+    "text": "LPVSecondaryBounceIntensity"
+  },
+  {
+    "rva": "0x405f1eb",
+    "text": "PVSInCityKillCount"
+  },
+  {
+    "rva": "0x405fae8",
+    "text": "PVSVisibleAfterKeyTime"
+  },
+  {
+    "rva": "0x4068f68",
+    "text": "bOverride_LPVSecondaryBounceIntensity"
+  },
+  {
+    "rva": "0x4081161",
+    "text": "EDSPVSConfigCategory"
+  },
+  {
+    "rva": "0x408d355",
+    "text": "CheckPVSVisibilityDeltaTime"
+  },
+  {
+    "rva": "0x40cf1cc",
+    "text": "SetPhysicsActorVisible"
+  },
+  {
+    "rva": "0x40e1818",
+    "text": "OverrideVisibleActors"
+  },
+  {
+    "rva": "0x4119982",
+    "text": "NearestEnemyVisibleElapsedTime"
+  },
+  {
+    "rva": "0x411a768",
+    "text": "PVSInvisibleAfterKeyTime"
+  },
+  {
+    "rva": "0x4137125",
+    "text": "NearestEnemyVisibleMemoryTime"
+  },
+  {
+    "rva": "0x415e9f7",
+    "text": "EPVSGameModeModType::Uninitialize"
+  },
+  {
+    "rva": "0x4167ffb",
+    "text": "bOverride_LPVSecondaryOcclusionIntensity"
+  },
+  {
+    "rva": "0x41bd578",
+    "text": "PVSComponent"
+  },
+  {
+    "rva": "0x41dcd73",
+    "text": "DSPVSCategorys_Key"
+  },
+  {
+    "rva": "0x41e6221",
+    "text": "ResetAllPlayerPVSTime"
+  },
+  {
+    "rva": "0x41e8794",
+    "text": "PVSVisibleBeforeKeyTime"
+  },
+  {
+    "rva": "0x41e9d50",
+    "text": "bShouldIgnorePVSTarget"
+  },
+  {
+    "rva": "0x41fe7ea",
+    "text": "PVSCellHidePercent"
+  },
+  {
+    "rva": "0x421860f",
+    "text": "SetActorVisible"
+  },
+  {
+    "rva": "0x42190ae",
+    "text": "VisibleActor"
+  },
+  {
+    "rva": "0x422ae4f",
+    "text": "PVSNotInCityKillerTotalMoveDistance"
+  },
+  {
+    "rva": "0x422b411",
+    "text": "ReportPVSException"
+  },
+  {
+    "rva": "0x422b431",
+    "text": "EPVSGameModeModType::Modded"
+  },
+  {
+    "rva": "0x4236e8c",
+    "text": "DSPVSCategorys"
+  },
+  {
+    "rva": "0x42402e6",
+    "text": "AddTimerToSetModelActorVisible"
+  },
+  {
+    "rva": "0x424b760",
+    "text": "bOverride_LPVSpecularOcclusionExponent"
+  },
+  {
+    "rva": "0x424bfea",
+    "text": "DSPVS"
+  },
+  {
+    "rva": "0x42591b1",
+    "text": "EPVSGameModeModType"
+  },
+  {
+    "rva": "0x4290722",
+    "text": "bOverride_LPVSize"
+  }
+]

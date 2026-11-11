@@ -1,0 +1,2717 @@
+{
+  "Rotation": [],
+  "OwningGameInstance": [
+    {
+      "descriptor": "0xe7c1400",
+      "type": 18,
+      "offset": "0x240"
+    },
+    {
+      "descriptor": "0xe935938",
+      "type": 18,
+      "offset": "0x470"
+    }
+  ],
+  "Location": [
+    {
+      "descriptor": "0xd743498",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd74e920",
+      "type": 25,
+      "offset": "0x84"
+    },
+    {
+      "descriptor": "0xd757e18",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd75d200",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xd76bce8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd770c08",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xd817898",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xd846e88",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd848f58",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd866eb8",
+      "type": 25,
+      "offset": "0x74"
+    },
+    {
+      "descriptor": "0xd86e758",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd871e88",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd890220",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8ab728",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8d3d98",
+      "type": 25,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xd8dec10",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8e24c0",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8e5da0",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xd8e6070",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8fb240",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd92e1a0",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd935ad0",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd935c38",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd935fe0",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xd936e28",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd93d5d8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd94a678",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd97e838",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd97ef30",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd97f528",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd97fb98",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd986b80",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9a4660",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xd9a5f38",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd9a94b0",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xd9b8a38",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9c39c8",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd9c5e10",
+      "type": 25,
+      "offset": "0x24"
+    },
+    {
+      "descriptor": "0xd9cee38",
+      "type": 25,
+      "offset": "0x24"
+    },
+    {
+      "descriptor": "0xd9d5b38",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9e3140",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xd9ecd98",
+      "type": 25,
+      "offset": "0x498"
+    },
+    {
+      "descriptor": "0xd9eef60",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9fc6d8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xd9fc8d8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xd9fcb98",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xd9fce20",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xda15678",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xda57df8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xda58f28",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xda59088",
+      "type": 25,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xda69ab8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xda734a8",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xda81df0",
+      "type": 25,
+      "offset": "0x7c"
+    },
+    {
+      "descriptor": "0xda9b6c0",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdabac30",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xdafa828",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdb42128",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xdb50a60",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdb50c58",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdb6d270",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdb90c28",
+      "type": 25,
+      "offset": "0x14"
+    },
+    {
+      "descriptor": "0xdb96a70",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdb9dbf0",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdba4b00",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdba6348",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdba6580",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdba6888",
+      "type": 25,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xdba6ba8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdbc2718",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdbc29e8",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdbc2d00",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdbc4ac8",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xdbc59a8",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xdbc9148",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xdbca990",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdbe9b18",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdbe9de8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdbea100",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdbea2d8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdbf1730",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdc09fc8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdc1ffa8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdc20390",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdc46380",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdc46570",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdc5b2b0",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdc5e220",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xdcd8fb0",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xdcdc1e0",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf9270",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdd01fd8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdd065a8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdd06680",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdd3b650",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdd3be70",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xdd608f0",
+      "type": 25,
+      "offset": "0x28"
+    },
+    {
+      "descriptor": "0xdd704e0",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdd72a40",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdd72e00",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdd8db98",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdd92650",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddb0738",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf295f0",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xdf37df8",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdf4df78",
+      "type": 25,
+      "offset": "0x28"
+    },
+    {
+      "descriptor": "0xdf4fdd0",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdf83170",
+      "type": 25,
+      "offset": "0x34"
+    },
+    {
+      "descriptor": "0xdf83430",
+      "type": 25,
+      "offset": "0x38"
+    },
+    {
+      "descriptor": "0xdf92680",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfa1f10",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfb8ff8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe011cd0",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe066280",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe23cc08",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe241bb0",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe2805d8",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe28ad40",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe316298",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe39de58",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe3b1058",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe3b5b38",
+      "type": 25,
+      "offset": "0xb0"
+    },
+    {
+      "descriptor": "0xe3d94c8",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe3e8a30",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe4ed530",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe504200",
+      "type": 25,
+      "offset": "0x28"
+    },
+    {
+      "descriptor": "0xe5422e0",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe542560",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe590928",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe5e0068",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe5e0520",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xe5e55a0",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe5ff4d0",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe5ff730",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe5ff920",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe602270",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe78fc38",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe790d80",
+      "type": 25,
+      "offset": "0x28"
+    },
+    {
+      "descriptor": "0xe790e48",
+      "type": 25,
+      "offset": "0x2c"
+    },
+    {
+      "descriptor": "0xe797d98",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe79cc98",
+      "type": 25,
+      "offset": "0x14"
+    },
+    {
+      "descriptor": "0xe79d148",
+      "type": 25,
+      "offset": "0x14"
+    },
+    {
+      "descriptor": "0xe7bf230",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe7bf420",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe7bf6b8",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xe7c10b8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe7ccf80",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xe7cdc68",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe7cece0",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xe7e2798",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe7e47c8",
+      "type": 25,
+      "offset": "0x94"
+    },
+    {
+      "descriptor": "0xe7e8638",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xe7e8ea8",
+      "type": 25,
+      "offset": "0x28"
+    },
+    {
+      "descriptor": "0xe7e93f8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe7eaac8",
+      "type": 25,
+      "offset": "0x1c"
+    },
+    {
+      "descriptor": "0xe7ead38",
+      "type": 25,
+      "offset": "0x28"
+    },
+    {
+      "descriptor": "0xe7eb318",
+      "type": 25,
+      "offset": "0x28"
+    },
+    {
+      "descriptor": "0xe7eb6e8",
+      "type": 25,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xe7eb9d8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe7ebc58",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xe7ebf20",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xe7ec260",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe7ec5f8",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xe7ecd68",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe7ed138",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xe7ee270",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe7ee388",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe7f8f58",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe7fc108",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe804750",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe816468",
+      "type": 25,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xe81f700",
+      "type": 10,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe820160",
+      "type": 25,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xe823878",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe82d1e0",
+      "type": 25,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xe841e80",
+      "type": 25,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xe856998",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xe875e48",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe87dd70",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe89e750",
+      "type": 25,
+      "offset": "0x50"
+    },
+    {
+      "descriptor": "0xe8b7040",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe8c0b98",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe8c4e08",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe8cf060",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xe8cf170",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xe8cf398",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xe8e22d0",
+      "type": 25,
+      "offset": "0x84"
+    },
+    {
+      "descriptor": "0xe915408",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe931498",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xeaf69a8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xeafd188",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xeafdc68",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xeafddd8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xeafdfd8",
+      "type": 25,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xeaff808",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xebb5dd8",
+      "type": 25,
+      "offset": "0xc0"
+    },
+    {
+      "descriptor": "0xebc0a98",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xebc0f10",
+      "type": 25,
+      "offset": "0xc0"
+    },
+    {
+      "descriptor": "0xebc11a0",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xebda8c0",
+      "type": 25,
+      "offset": "0x70"
+    },
+    {
+      "descriptor": "0xebec4b0",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xec94560",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xecab1f8",
+      "type": 25,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xecab5e0",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xecc90a8",
+      "type": 25,
+      "offset": "0x34"
+    },
+    {
+      "descriptor": "0xecc9820",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xecc9a00",
+      "type": 25,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xecc9d98",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xecdd200",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xed02a00",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xed07a88",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xed40078",
+      "type": 25,
+      "offset": "0xc0"
+    },
+    {
+      "descriptor": "0xed6be80",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xed6c0b8",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xed95830",
+      "type": 25,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xed96ce8",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xee2c650",
+      "type": 25,
+      "offset": "0x48"
+    },
+    {
+      "descriptor": "0xee2cce8",
+      "type": 25,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xee2e3c8",
+      "type": 25,
+      "offset": "0x48"
+    },
+    {
+      "descriptor": "0xee586c0",
+      "type": 21,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xee8dc68",
+      "type": 3,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xee8dd70",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xee8e2f8",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xee8e448",
+      "type": 3,
+      "offset": "0x0"
+    }
+  ],
+  "TeamID": [
+    {
+      "descriptor": "0xd750d30",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd771da8",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd82b3c0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd82b528",
+      "type": 3,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd82ba10",
+      "type": 3,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd8310d8",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd836630",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd83a730",
+      "type": 3,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xd8b55a0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8b5918",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8b6098",
+      "type": 3,
+      "offset": "0x60"
+    },
+    {
+      "descriptor": "0xd8bca70",
+      "type": 3,
+      "offset": "0x604"
+    },
+    {
+      "descriptor": "0xd90e4a8",
+      "type": 3,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd90e8b8",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd921688",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd921f38",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd922108",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd92c538",
+      "type": 3,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd92d518",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9371a8",
+      "type": 3,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xd951d38",
+      "type": 3,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xd951f40",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9521c0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9542a0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd95cca8",
+      "type": 3,
+      "offset": "0x4bc"
+    },
+    {
+      "descriptor": "0xd9a7760",
+      "type": 6,
+      "offset": "0x4b8"
+    },
+    {
+      "descriptor": "0xda1f248",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xda82420",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdacb2a8",
+      "type": 3,
+      "offset": "0x1c"
+    },
+    {
+      "descriptor": "0xdae0aa0",
+      "type": 3,
+      "offset": "0x2c"
+    },
+    {
+      "descriptor": "0xdc1f7a8",
+      "type": 3,
+      "offset": "0x24"
+    },
+    {
+      "descriptor": "0xdcbed80",
+      "type": 3,
+      "offset": "0x1574"
+    },
+    {
+      "descriptor": "0xdcea3d0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcea700",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf4740",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf5608",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf5828",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf59f8",
+      "type": 3,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xdcf5ee0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf7338",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf78e0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf79b0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf7a38",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdcf7af8",
+      "type": 3,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xddb2bb0",
+      "type": 3,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xde0d4d8",
+      "type": 6,
+      "offset": "0x14"
+    },
+    {
+      "descriptor": "0xde0d628",
+      "type": 6,
+      "offset": "0x24"
+    },
+    {
+      "descriptor": "0xdf28f98",
+      "type": 3,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xdf2a770",
+      "type": 3,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdf328c0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf329c8",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf3a4d8",
+      "type": 3,
+      "offset": "0x54"
+    },
+    {
+      "descriptor": "0xdf4cbf0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf4cea0",
+      "type": 3,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdf4db48",
+      "type": 3,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xdf57680",
+      "type": 6,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xdf6d088",
+      "type": 3,
+      "offset": "0xe0"
+    },
+    {
+      "descriptor": "0xdf6d798",
+      "type": 3,
+      "offset": "0x68"
+    },
+    {
+      "descriptor": "0xdf73298",
+      "type": 3,
+      "offset": "0xcc"
+    },
+    {
+      "descriptor": "0xdf74d08",
+      "type": 3,
+      "offset": "0x4c"
+    },
+    {
+      "descriptor": "0xdf7a838",
+      "type": 3,
+      "offset": "0x13c"
+    },
+    {
+      "descriptor": "0xdf7b430",
+      "type": 3,
+      "offset": "0x44"
+    },
+    {
+      "descriptor": "0xdf89b88",
+      "type": 3,
+      "offset": "0x998"
+    },
+    {
+      "descriptor": "0xdf912a0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf91370",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf92e80",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf93158",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf953d8",
+      "type": 3,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdf959f0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfa0448",
+      "type": 3,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdfa0bb0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfa1160",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfa1250",
+      "type": 3,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdfa1428",
+      "type": 3,
+      "offset": "0x64"
+    },
+    {
+      "descriptor": "0xdfa2080",
+      "type": 3,
+      "offset": "0x40"
+    },
+    {
+      "descriptor": "0xdfadaf0",
+      "type": 3,
+      "offset": "0x940"
+    },
+    {
+      "descriptor": "0xdfb5590",
+      "type": 3,
+      "offset": "0x700"
+    },
+    {
+      "descriptor": "0xe065048",
+      "type": 6,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe065100",
+      "type": 6,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe304110",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe3043a0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe305338",
+      "type": 3,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe306270",
+      "type": 3,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xe395e58",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe397fb8",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe398088",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe398248",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe398350",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe398450",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe3985f0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xea11400",
+      "type": 3,
+      "offset": "0x14"
+    },
+    {
+      "descriptor": "0xea167d8",
+      "type": 3,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xebfee08",
+      "type": 3,
+      "offset": "0xa4c"
+    },
+    {
+      "descriptor": "0xec97c18",
+      "type": 1,
+      "offset": "0x24"
+    },
+    {
+      "descriptor": "0xec97ef8",
+      "type": 1,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xec98088",
+      "type": 1,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xeca0320",
+      "type": 3,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xeca0578",
+      "type": 3,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xecb4d20",
+      "type": 3,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xecd6060",
+      "type": 3,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xecd6928",
+      "type": 3,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xecd7168",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xecd72f0",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xecd7678",
+      "type": 3,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xecdbf28",
+      "type": 3,
+      "offset": "0x40"
+    },
+    {
+      "descriptor": "0xecdc0f8",
+      "type": 3,
+      "offset": "0x40"
+    },
+    {
+      "descriptor": "0xecdc2c8",
+      "type": 3,
+      "offset": "0x40"
+    }
+  ],
+  "ServerConnection": [
+    {
+      "descriptor": "0xe88bd78",
+      "type": 18,
+      "offset": "0x78"
+    }
+  ],
+  "POV": [
+    {
+      "descriptor": "0xe7970c0",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe8bc608",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe8bc6e8",
+      "type": 25,
+      "offset": "0x10"
+    }
+  ],
+  "PlayerName": [
+    {
+      "descriptor": "0xd73d9a0",
+      "type": 21,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xd7a9f10",
+      "type": 21,
+      "offset": "0x3a8"
+    },
+    {
+      "descriptor": "0xd8317b0",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd888b10",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd888f08",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd888f88",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8b6350",
+      "type": 21,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xd90d208",
+      "type": 21,
+      "offset": "0x1378"
+    },
+    {
+      "descriptor": "0xd926c18",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd935388",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xd935728",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9f6bb0",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xda305f0",
+      "type": 21,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xda57768",
+      "type": 21,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xda7a1f8",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xda86868",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdae0148",
+      "type": 21,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdae02a0",
+      "type": 21,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdb9aec0",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdbcab50",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdbde340",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdc1f860",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdca7180",
+      "type": 21,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdcf49d8",
+      "type": 21,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdd5de38",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdd5e018",
+      "type": 21,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xdd787b0",
+      "type": 21,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xde64e10",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdea6a58",
+      "type": 21,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xdec0bc8",
+      "type": 21,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xdefe178",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdf29090",
+      "type": 21,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdf30500",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdf317d0",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdf3a548",
+      "type": 21,
+      "offset": "0x40"
+    },
+    {
+      "descriptor": "0xdf3ce88",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf3ddf8",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdf4db80",
+      "type": 21,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdf81480",
+      "type": 21,
+      "offset": "0x40"
+    },
+    {
+      "descriptor": "0xdf89c68",
+      "type": 21,
+      "offset": "0x960"
+    },
+    {
+      "descriptor": "0xdfa0e38",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfa1518",
+      "type": 21,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xdfa2128",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfadbd0",
+      "type": 21,
+      "offset": "0x910"
+    },
+    {
+      "descriptor": "0xe3050d0",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe3051e8",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe305370",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe396490",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe8c93b8",
+      "type": 21,
+      "offset": "0x4b8"
+    },
+    {
+      "descriptor": "0xe9f2050",
+      "type": 20,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xe9f5930",
+      "type": 20,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xea16810",
+      "type": 21,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xed31fc8",
+      "type": 21,
+      "offset": "0x0"
+    }
+  ],
+  "PlayerController": [
+    {
+      "descriptor": "0xd819bb0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd819c78",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd837840",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd891c30",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8931a0",
+      "type": 18,
+      "offset": "0x3b8"
+    },
+    {
+      "descriptor": "0xd8b8fa8",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd914490",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd914800",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd924320",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9243e8",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd9262e0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd926748",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd939fe8",
+      "type": 18,
+      "offset": "0x1f8"
+    },
+    {
+      "descriptor": "0xd97b698",
+      "type": 18,
+      "offset": "0x4e8"
+    },
+    {
+      "descriptor": "0xda78908",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdb9a948",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdb9aa50",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdb9ab58",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdb9bce8",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdb9d060",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdba8618",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdc29fe0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdc2a128",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddb4970",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddb4ad0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddb5328",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddb5640",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddb5708",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddb5798",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddb5930",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xddbceb0",
+      "type": 18,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdea17a8",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfa5218",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdfa52a0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe065c18",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe080990",
+      "type": 18,
+      "offset": "0x3b0"
+    },
+    {
+      "descriptor": "0xe270158",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe2c8e18",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe2fdae8",
+      "type": 18,
+      "offset": "0x2d8"
+    },
+    {
+      "descriptor": "0xe3ef6e0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe592a40",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe592b18",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe5936d0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe59c358",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe59c718",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe59c838",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe755420",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe7554a8",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe8bc308",
+      "type": 18,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xe926190",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xebd0dc0",
+      "type": 14,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xec77900",
+      "type": 18,
+      "offset": "0x1218"
+    },
+    {
+      "descriptor": "0xec79b30",
+      "type": 18,
+      "offset": "0x278"
+    },
+    {
+      "descriptor": "0xec8ec80",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xec8ee68",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xec91658",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xecb0d38",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xecb74b0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedbc408",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedcc580",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcc738",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcc918",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcca30",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcce20",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcd0f0",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcd3a8",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcd5f0",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcd920",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcdbf0",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedce028",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedce780",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedceaf0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedcee20",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedcf130",
+      "type": 18,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xedcf808",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedcfac0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedcfce8",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedcff98",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedd0138",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedd0218",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedd2030",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedd2228",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xedd2768",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedd28b8",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedd2a40",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xedd2b68",
+      "type": 18,
+      "offset": "0x8"
+    }
+  ],
+  "NetDriver": [
+    {
+      "descriptor": "0xd9342a0",
+      "type": 18,
+      "offset": "0xc8"
+    },
+    {
+      "descriptor": "0xda197a0",
+      "type": 18,
+      "offset": "0x8e0"
+    },
+    {
+      "descriptor": "0xde3bbd8",
+      "type": 18,
+      "offset": "0x8"
+    },
+    {
+      "descriptor": "0xe7c17e0",
+      "type": 18,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe8b2e60",
+      "type": 18,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xe935470",
+      "type": 18,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe936100",
+      "type": 18,
+      "offset": "0x38"
+    },
+    {
+      "descriptor": "0xedd0408",
+      "type": 18,
+      "offset": "0x4c0"
+    }
+  ],
+  "RelativeLocation": [
+    {
+      "descriptor": "0xd798878",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xd798a60",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xd86bfa8",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xd88f638",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xd890438",
+      "type": 25,
+      "offset": "0x14"
+    },
+    {
+      "descriptor": "0xd9ced78",
+      "type": 25,
+      "offset": "0x50"
+    },
+    {
+      "descriptor": "0xdaebbe8",
+      "type": 25,
+      "offset": "0x13d8"
+    },
+    {
+      "descriptor": "0xdb26ca0",
+      "type": 25,
+      "offset": "0x14"
+    },
+    {
+      "descriptor": "0xdb3b430",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdb3b618",
+      "type": 25,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xdb71320",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xdc0bfb8",
+      "type": 25,
+      "offset": "0x34"
+    },
+    {
+      "descriptor": "0xdcdf558",
+      "type": 25,
+      "offset": "0x28"
+    },
+    {
+      "descriptor": "0xdd32af0",
+      "type": 25,
+      "offset": "0x88"
+    },
+    {
+      "descriptor": "0xdd7a300",
+      "type": 25,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xe2f14f0",
+      "type": 25,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe3b6fe0",
+      "type": 25,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xe8f26c8",
+      "type": 25,
+      "offset": "0x1e4"
+    },
+    {
+      "descriptor": "0xe900508",
+      "type": 25,
+      "offset": "0x38"
+    },
+    {
+      "descriptor": "0xe922fd8",
+      "type": 25,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xec773b8",
+      "type": 25,
+      "offset": "0x12c0"
+    }
+  ],
+  "FOV": [
+    {
+      "descriptor": "0xdbc9b88",
+      "type": 10,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdc41f30",
+      "type": 10,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xe7961c0",
+      "type": 10,
+      "offset": "0x1c"
+    },
+    {
+      "descriptor": "0xe797ce0",
+      "type": 10,
+      "offset": "0x24"
+    },
+    {
+      "descriptor": "0xe7cdbf0",
+      "type": 10,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xec860b8",
+      "type": 10,
+      "offset": "0x1c"
+    }
+  ],
+  "HealthMax": [
+    {
+      "descriptor": "0xd8a4f98",
+      "type": 10,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xd8a6310",
+      "type": 10,
+      "offset": "0x2a0"
+    },
+    {
+      "descriptor": "0xdbb6148",
+      "type": 10,
+      "offset": "0xe64"
+    },
+    {
+      "descriptor": "0xdc46488",
+      "type": 10,
+      "offset": "0x20"
+    },
+    {
+      "descriptor": "0xdfa1ea0",
+      "type": 3,
+      "offset": "0x10"
+    },
+    {
+      "descriptor": "0xebfbc38",
+      "type": 10,
+      "offset": "0xbf0"
+    }
+  ],
+  "Health": [
+    {
+      "descriptor": "0xd899df0",
+      "type": 10,
+      "offset": "0x34"
+    },
+    {
+      "descriptor": "0xd8a4fd0",
+      "type": 10,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd8a62d8",
+      "type": 10,
+      "offset": "0x2a4"
+    },
+    {
+      "descriptor": "0xd8e6170",
+      "type": 10,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xd936d38",
+      "type": 10,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xd9690b0",
+      "type": 10,
+      "offset": "0x680"
+    },
+    {
+      "descriptor": "0xd9bfbc8",
+      "type": 3,
+      "offset": "0x78"
+    },
+    {
+      "descriptor": "0xda1c318",
+      "type": 10,
+      "offset": "0x178"
+    },
+    {
+      "descriptor": "0xdbb6180",
+      "type": 10,
+      "offset": "0xe60"
+    },
+    {
+      "descriptor": "0xdbbe0a8",
+      "type": 10,
+      "offset": "0x65c"
+    },
+    {
+      "descriptor": "0xdc39760",
+      "type": 10,
+      "offset": "0x0"
+    },
+    {
+      "descriptor": "0xdc464c0",
+      "type": 10,
+      "offset": "0x1c"
+    },
+    {
+      "descriptor": "0xdcf7300",
+      "type": 10,
+      "offset": "0x4"
+    },
+    {
+      "descriptor": "0xdf6e610",
+      "type": 10,
+      "offset": "0x6c"
+    },
+    {
+      "descriptor": "0xdfa1ed8",
+      "type": 3,
+      "offset": "0xc"
+    },
+    {
+      "descriptor": "0xe06b7a8",
+      "type": 10,
+      "offset": "0x698"
+    },
+    {
+      "descriptor": "0xe320400",
+      "type": 10,
+      "offset": "0x678"
+    },
+    {
+      "descriptor": "0xebbd5f8",
+      "type": 10,
+      "offset": "0x30"
+    },
+    {
+      "descriptor": "0xebfbc00",
+      "type": 10,
+      "offset": "0xbf4"
+    },
+    {
+      "descriptor": "0xecccec8",
+      "type": 10,
+      "offset": "0x18"
+    },
+    {
+      "descriptor": "0xed94d60",
+      "type": 10,
+      "offset": "0x6ec"
+    }
+  ]
+}

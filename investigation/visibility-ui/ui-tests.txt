@@ -1,0 +1,11 @@
+PASS visibility coloring preserves the existing default
+PASS ESP exposes independent visible, occluded, and unknown color pickers
+PASS ESP exposes the visibility color enable switch
+PASS visibility switch updates the shared option and autosave observer
+PASS color picker rows fit the content width 1100
+PASS color picker rows fit the content width 650
+PASS Aim exposes an obstacle handling selector
+PASS Aim defaults to the existing unrestricted selection mode
+PASS visible-only selection updates the shared option and autosave observer
+PASS normal aim selection can be restored from the same selector
+10 visibility UI checks passed. No windows displayed.

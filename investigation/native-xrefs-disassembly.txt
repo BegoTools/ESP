@@ -1,0 +1,2238 @@
+
+{"target": ["PersistentLevel_reflection"], "target_va": "0x39b96b0", "adrp_va": "0x8be3d1c", "add_va": "0x8be3d20", "distance": 1}
+0x8be3cbc: adrp     x1, #0x3c58000
+0x8be3cc0: add      x1, x1, #0xdee
+0x8be3cc4: add      x0, sp, #0x288
+0x8be3cc8: mov      w3, #1
+0x8be3ccc: mov      w5, #0xd6
+0x8be3cd0: mov      w2, wzr
+0x8be3cd4: mov      w4, wzr
+0x8be3cd8: bl       #0x8be22a4
+0x8be3cdc: adrp     x1, #0x3cab000
+0x8be3ce0: add      x1, x1, #0x190
+0x8be3ce4: add      x0, sp, #0x280
+0x8be3ce8: mov      w3, #1
+0x8be3cec: mov      w5, #0xd7
+0x8be3cf0: mov      w2, wzr
+0x8be3cf4: mov      w4, wzr
+0x8be3cf8: bl       #0x8be22a4
+0x8be3cfc: adrp     x1, #0x3f9b000
+0x8be3d00: add      x1, x1, #0xa98
+0x8be3d04: add      x0, sp, #0x278
+0x8be3d08: mov      w3, #1
+0x8be3d0c: mov      w5, #0xd8
+0x8be3d10: mov      w2, wzr
+0x8be3d14: mov      w4, wzr
+0x8be3d18: bl       #0x8be22a4
+0x8be3d1c: adrp     x1, #0x39b9000
+0x8be3d20: add      x1, x1, #0x6b0
+0x8be3d24: add      x0, sp, #0x270
+0x8be3d28: mov      w3, #1
+0x8be3d2c: mov      w5, #0xd9
+0x8be3d30: mov      w2, wzr
+0x8be3d34: mov      w4, wzr
+0x8be3d38: bl       #0x8be22a4
+0x8be3d3c: adrp     x1, #0x38f8000
+0x8be3d40: add      x1, x1, #0x492
+0x8be3d44: add      x0, sp, #0x268
+0x8be3d48: mov      w3, #1
+0x8be3d4c: mov      w5, #0xda
+0x8be3d50: mov      w2, wzr
+0x8be3d54: mov      w4, wzr
+0x8be3d58: bl       #0x8be22a4
+0x8be3d5c: adrp     x1, #0x387a000
+0x8be3d60: add      x1, x1, #0x67a
+0x8be3d64: add      x0, sp, #0x260
+0x8be3d68: mov      w3, #1
+0x8be3d6c: mov      w5, #0xdb
+0x8be3d70: mov      w2, wzr
+0x8be3d74: mov      w4, wzr
+0x8be3d78: bl       #0x8be22a4
+0x8be3d7c: adrp     x1, #0x383d000
+0x8be3d80: add      x1, x1, #0x128
+0x8be3d84: add      x0, sp, #0x258
+0x8be3d88: mov      w3, #1
+0x8be3d8c: mov      w5, #0xdc
+0x8be3d90: mov      w2, wzr
+0x8be3d94: mov      w4, wzr
+0x8be3d98: bl       #0x8be22a4
+0x8be3d9c: adrp     x1, #0x3ed0000
+0x8be3da0: add      x1, x1, #0x4d0
+0x8be3da4: add      x0, sp, #0x250
+0x8be3da8: mov      w3, #1
+0x8be3dac: mov      w5, #0xdd
+0x8be3db0: mov      w2, wzr
+0x8be3db4: mov      w4, wzr
+0x8be3db8: bl       #0x8be22a4
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a2da0", "add_va": "0xa9a2da8", "distance": 2}
+0xa9a2d40: cmp      w10, #3
+0xa9a2d44: b.lo     #0xa9a2dd8
+0xa9a2d48: ldr      x9, [x9, #8]
+0xa9a2d4c: add      x0, sp, #0x30
+0xa9a2d50: stur     x9, [x29, #-0x50]
+0xa9a2d54: ldr      x8, [x8, #0x18]
+0xa9a2d58: str      x8, [sp, #0x30]
+0xa9a2d5c: add      x8, sp, #0x80
+0xa9a2d60: bl       #0x8be2f20
+0xa9a2d64: ldr      w22, [sp, #0x88]
+0xa9a2d68: ldr      x8, [x21, #0x18]
+0xa9a2d6c: ldr      x23, [sp, #0x80]
+0xa9a2d70: str      x8, [sp, #0x70]
+0xa9a2d74: add      x8, sp, #0x30
+0xa9a2d78: add      x0, sp, #0x70
+0xa9a2d7c: bl       #0x8be2f20
+0xa9a2d80: ldr      w9, [sp, #0x38]
+0xa9a2d84: ldr      x10, [sp, #0x30]
+0xa9a2d88: adrp     x8, #0x3f7e000
+0xa9a2d8c: add      x8, x8, #0x366
+0xa9a2d90: cmp      w22, #0
+0xa9a2d94: csel     x5, x8, x23, eq
+0xa9a2d98: cmp      w9, #0
+0xa9a2d9c: csel     x6, x8, x10, eq
+0xa9a2da0: adrp     x0, #0x4196000
+0xa9a2da4: adrp     x4, #0x398c000
+0xa9a2da8: add      x0, x0, #0xfb8
+0xa9a2dac: add      x4, x4, #0x4f2
+0xa9a2db0: sub      x2, x29, #0x50
+0xa9a2db4: mov      w1, #0x179
+0xa9a2db8: mov      w3, #3
+0xa9a2dbc: bl       #0x8ae2b7c
+0xa9a2dc0: ldr      x0, [sp, #0x30]
+0xa9a2dc4: cbz      x0, #0xa9a2dcc
+0xa9a2dc8: bl       #0x8a8eb0c
+0xa9a2dcc: ldr      x0, [sp, #0x80]
+0xa9a2dd0: cbz      x0, #0xa9a2dd8
+0xa9a2dd4: bl       #0x8a8eb0c
+0xa9a2dd8: ldrb     w8, [x20, #0x50]
+0xa9a2ddc: tbz      w8, #1, #0xa9a2f4c
+0xa9a2de0: b        #0xa9a322c
+0xa9a2de4: adrp     x8, #0xee95000
+0xa9a2de8: ldr      x8, [x8, #0x6a8]
+0xa9a2dec: mov      x26, xzr
+0xa9a2df0: ldr      w8, [x8]
+0xa9a2df4: cbnz     w8, #0xa9a2f50
+0xa9a2df8: adrp     x8, #0xee9f000
+0xa9a2dfc: ldr      x8, [x8, #0xa0]
+0xa9a2e00: ldrb     w9, [x8]
+0xa9a2e04: cmp      w9, #3
+0xa9a2e08: b.lo     #0xa9a2f50
+0xa9a2e0c: ldr      x8, [x8, #8]
+0xa9a2e10: adrp     x0, #0x4196000
+0xa9a2e14: adrp     x4, #0x3c40000
+0xa9a2e18: add      x0, x0, #0xfb8
+0xa9a2e1c: add      x4, x4, #0xd1e
+0xa9a2e20: add      x2, sp, #0x80
+0xa9a2e24: mov      w1, #0x160
+0xa9a2e28: str      x8, [sp, #0x80]
+0xa9a2e2c: mov      w3, #3
+0xa9a2e30: bl       #0x8ae2b7c
+0xa9a2e34: b        #0xa9a2f4c
+0xa9a2e38: adrp     x8, #0xee95000
+0xa9a2e3c: ldr      x8, [x8, #0x6a8]
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a2e10", "add_va": "0xa9a2e18", "distance": 2}
+0xa9a2db0: sub      x2, x29, #0x50
+0xa9a2db4: mov      w1, #0x179
+0xa9a2db8: mov      w3, #3
+0xa9a2dbc: bl       #0x8ae2b7c
+0xa9a2dc0: ldr      x0, [sp, #0x30]
+0xa9a2dc4: cbz      x0, #0xa9a2dcc
+0xa9a2dc8: bl       #0x8a8eb0c
+0xa9a2dcc: ldr      x0, [sp, #0x80]
+0xa9a2dd0: cbz      x0, #0xa9a2dd8
+0xa9a2dd4: bl       #0x8a8eb0c
+0xa9a2dd8: ldrb     w8, [x20, #0x50]
+0xa9a2ddc: tbz      w8, #1, #0xa9a2f4c
+0xa9a2de0: b        #0xa9a322c
+0xa9a2de4: adrp     x8, #0xee95000
+0xa9a2de8: ldr      x8, [x8, #0x6a8]
+0xa9a2dec: mov      x26, xzr
+0xa9a2df0: ldr      w8, [x8]
+0xa9a2df4: cbnz     w8, #0xa9a2f50
+0xa9a2df8: adrp     x8, #0xee9f000
+0xa9a2dfc: ldr      x8, [x8, #0xa0]
+0xa9a2e00: ldrb     w9, [x8]
+0xa9a2e04: cmp      w9, #3
+0xa9a2e08: b.lo     #0xa9a2f50
+0xa9a2e0c: ldr      x8, [x8, #8]
+0xa9a2e10: adrp     x0, #0x4196000
+0xa9a2e14: adrp     x4, #0x3c40000
+0xa9a2e18: add      x0, x0, #0xfb8
+0xa9a2e1c: add      x4, x4, #0xd1e
+0xa9a2e20: add      x2, sp, #0x80
+0xa9a2e24: mov      w1, #0x160
+0xa9a2e28: str      x8, [sp, #0x80]
+0xa9a2e2c: mov      w3, #3
+0xa9a2e30: bl       #0x8ae2b7c
+0xa9a2e34: b        #0xa9a2f4c
+0xa9a2e38: adrp     x8, #0xee95000
+0xa9a2e3c: ldr      x8, [x8, #0x6a8]
+0xa9a2e40: mov      x26, xzr
+0xa9a2e44: ldr      w8, [x8]
+0xa9a2e48: cbnz     w8, #0xa9a2f50
+0xa9a2e4c: adrp     x8, #0xee9f000
+0xa9a2e50: ldr      x8, [x8, #0xa0]
+0xa9a2e54: ldrb     w9, [x8]
+0xa9a2e58: cmp      w9, #3
+0xa9a2e5c: b.lo     #0xa9a2f50
+0xa9a2e60: ldr      x8, [x8, #8]
+0xa9a2e64: add      x0, sp, #0x30
+0xa9a2e68: str      x8, [sp, #0x70]
+0xa9a2e6c: ldr      x8, [x21, #0x18]
+0xa9a2e70: str      x8, [sp, #0x30]
+0xa9a2e74: add      x8, sp, #0x80
+0xa9a2e78: bl       #0x8be2f20
+0xa9a2e7c: ldr      w8, [sp, #0x88]
+0xa9a2e80: ldr      x9, [sp, #0x80]
+0xa9a2e84: adrp     x10, #0x3f7e000
+0xa9a2e88: add      x10, x10, #0x366
+0xa9a2e8c: cmp      w8, #0
+0xa9a2e90: csel     x5, x10, x9, eq
+0xa9a2e94: adrp     x0, #0x4196000
+0xa9a2e98: adrp     x4, #0x3c7f000
+0xa9a2e9c: add      x0, x0, #0xfb8
+0xa9a2ea0: add      x4, x4, #0x648
+0xa9a2ea4: add      x2, sp, #0x70
+0xa9a2ea8: mov      w1, #0x16a
+0xa9a2eac: mov      w3, #3
+
+{"target": ["SpawnActorNoClass"], "target_va": "0x3c40d1e", "adrp_va": "0xa9a2e14", "add_va": "0xa9a2e1c", "distance": 2}
+0xa9a2db4: mov      w1, #0x179
+0xa9a2db8: mov      w3, #3
+0xa9a2dbc: bl       #0x8ae2b7c
+0xa9a2dc0: ldr      x0, [sp, #0x30]
+0xa9a2dc4: cbz      x0, #0xa9a2dcc
+0xa9a2dc8: bl       #0x8a8eb0c
+0xa9a2dcc: ldr      x0, [sp, #0x80]
+0xa9a2dd0: cbz      x0, #0xa9a2dd8
+0xa9a2dd4: bl       #0x8a8eb0c
+0xa9a2dd8: ldrb     w8, [x20, #0x50]
+0xa9a2ddc: tbz      w8, #1, #0xa9a2f4c
+0xa9a2de0: b        #0xa9a322c
+0xa9a2de4: adrp     x8, #0xee95000
+0xa9a2de8: ldr      x8, [x8, #0x6a8]
+0xa9a2dec: mov      x26, xzr
+0xa9a2df0: ldr      w8, [x8]
+0xa9a2df4: cbnz     w8, #0xa9a2f50
+0xa9a2df8: adrp     x8, #0xee9f000
+0xa9a2dfc: ldr      x8, [x8, #0xa0]
+0xa9a2e00: ldrb     w9, [x8]
+0xa9a2e04: cmp      w9, #3
+0xa9a2e08: b.lo     #0xa9a2f50
+0xa9a2e0c: ldr      x8, [x8, #8]
+0xa9a2e10: adrp     x0, #0x4196000
+0xa9a2e14: adrp     x4, #0x3c40000
+0xa9a2e18: add      x0, x0, #0xfb8
+0xa9a2e1c: add      x4, x4, #0xd1e
+0xa9a2e20: add      x2, sp, #0x80
+0xa9a2e24: mov      w1, #0x160
+0xa9a2e28: str      x8, [sp, #0x80]
+0xa9a2e2c: mov      w3, #3
+0xa9a2e30: bl       #0x8ae2b7c
+0xa9a2e34: b        #0xa9a2f4c
+0xa9a2e38: adrp     x8, #0xee95000
+0xa9a2e3c: ldr      x8, [x8, #0x6a8]
+0xa9a2e40: mov      x26, xzr
+0xa9a2e44: ldr      w8, [x8]
+0xa9a2e48: cbnz     w8, #0xa9a2f50
+0xa9a2e4c: adrp     x8, #0xee9f000
+0xa9a2e50: ldr      x8, [x8, #0xa0]
+0xa9a2e54: ldrb     w9, [x8]
+0xa9a2e58: cmp      w9, #3
+0xa9a2e5c: b.lo     #0xa9a2f50
+0xa9a2e60: ldr      x8, [x8, #8]
+0xa9a2e64: add      x0, sp, #0x30
+0xa9a2e68: str      x8, [sp, #0x70]
+0xa9a2e6c: ldr      x8, [x21, #0x18]
+0xa9a2e70: str      x8, [sp, #0x30]
+0xa9a2e74: add      x8, sp, #0x80
+0xa9a2e78: bl       #0x8be2f20
+0xa9a2e7c: ldr      w8, [sp, #0x88]
+0xa9a2e80: ldr      x9, [sp, #0x80]
+0xa9a2e84: adrp     x10, #0x3f7e000
+0xa9a2e88: add      x10, x10, #0x366
+0xa9a2e8c: cmp      w8, #0
+0xa9a2e90: csel     x5, x10, x9, eq
+0xa9a2e94: adrp     x0, #0x4196000
+0xa9a2e98: adrp     x4, #0x3c7f000
+0xa9a2e9c: add      x0, x0, #0xfb8
+0xa9a2ea0: add      x4, x4, #0x648
+0xa9a2ea4: add      x2, sp, #0x70
+0xa9a2ea8: mov      w1, #0x16a
+0xa9a2eac: mov      w3, #3
+0xa9a2eb0: bl       #0x8ae2b7c
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a2e94", "add_va": "0xa9a2e9c", "distance": 2}
+0xa9a2e34: b        #0xa9a2f4c
+0xa9a2e38: adrp     x8, #0xee95000
+0xa9a2e3c: ldr      x8, [x8, #0x6a8]
+0xa9a2e40: mov      x26, xzr
+0xa9a2e44: ldr      w8, [x8]
+0xa9a2e48: cbnz     w8, #0xa9a2f50
+0xa9a2e4c: adrp     x8, #0xee9f000
+0xa9a2e50: ldr      x8, [x8, #0xa0]
+0xa9a2e54: ldrb     w9, [x8]
+0xa9a2e58: cmp      w9, #3
+0xa9a2e5c: b.lo     #0xa9a2f50
+0xa9a2e60: ldr      x8, [x8, #8]
+0xa9a2e64: add      x0, sp, #0x30
+0xa9a2e68: str      x8, [sp, #0x70]
+0xa9a2e6c: ldr      x8, [x21, #0x18]
+0xa9a2e70: str      x8, [sp, #0x30]
+0xa9a2e74: add      x8, sp, #0x80
+0xa9a2e78: bl       #0x8be2f20
+0xa9a2e7c: ldr      w8, [sp, #0x88]
+0xa9a2e80: ldr      x9, [sp, #0x80]
+0xa9a2e84: adrp     x10, #0x3f7e000
+0xa9a2e88: add      x10, x10, #0x366
+0xa9a2e8c: cmp      w8, #0
+0xa9a2e90: csel     x5, x10, x9, eq
+0xa9a2e94: adrp     x0, #0x4196000
+0xa9a2e98: adrp     x4, #0x3c7f000
+0xa9a2e9c: add      x0, x0, #0xfb8
+0xa9a2ea0: add      x4, x4, #0x648
+0xa9a2ea4: add      x2, sp, #0x70
+0xa9a2ea8: mov      w1, #0x16a
+0xa9a2eac: mov      w3, #3
+0xa9a2eb0: bl       #0x8ae2b7c
+0xa9a2eb4: ldr      x0, [sp, #0x80]
+0xa9a2eb8: cbz      x0, #0xa9a2f4c
+0xa9a2ebc: bl       #0x8a8eb0c
+0xa9a2ec0: b        #0xa9a2f4c
+0xa9a2ec4: adrp     x8, #0xee95000
+0xa9a2ec8: ldr      x8, [x8, #0x6a8]
+0xa9a2ecc: mov      x26, xzr
+0xa9a2ed0: ldr      w8, [x8]
+0xa9a2ed4: cbnz     w8, #0xa9a2f50
+0xa9a2ed8: adrp     x8, #0xee9f000
+0xa9a2edc: ldr      x8, [x8, #0xa0]
+0xa9a2ee0: ldrb     w9, [x8]
+0xa9a2ee4: cmp      w9, #3
+0xa9a2ee8: b.lo     #0xa9a2f50
+0xa9a2eec: ldr      x8, [x8, #8]
+0xa9a2ef0: add      x0, sp, #0x30
+0xa9a2ef4: str      x8, [sp, #0x70]
+0xa9a2ef8: ldr      x8, [x21, #0x18]
+0xa9a2efc: str      x8, [sp, #0x30]
+0xa9a2f00: add      x8, sp, #0x80
+0xa9a2f04: bl       #0x8be2f20
+0xa9a2f08: ldr      w8, [sp, #0x88]
+0xa9a2f0c: ldr      x9, [sp, #0x80]
+0xa9a2f10: adrp     x10, #0x3f7e000
+0xa9a2f14: add      x10, x10, #0x366
+0xa9a2f18: cmp      w8, #0
+0xa9a2f1c: csel     x5, x10, x9, eq
+0xa9a2f20: adrp     x0, #0x4196000
+0xa9a2f24: adrp     x4, #0x3df6000
+0xa9a2f28: add      x0, x0, #0xfb8
+0xa9a2f2c: add      x4, x4, #0xc5c
+0xa9a2f30: add      x2, sp, #0x70
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a2f20", "add_va": "0xa9a2f28", "distance": 2}
+0xa9a2ec0: b        #0xa9a2f4c
+0xa9a2ec4: adrp     x8, #0xee95000
+0xa9a2ec8: ldr      x8, [x8, #0x6a8]
+0xa9a2ecc: mov      x26, xzr
+0xa9a2ed0: ldr      w8, [x8]
+0xa9a2ed4: cbnz     w8, #0xa9a2f50
+0xa9a2ed8: adrp     x8, #0xee9f000
+0xa9a2edc: ldr      x8, [x8, #0xa0]
+0xa9a2ee0: ldrb     w9, [x8]
+0xa9a2ee4: cmp      w9, #3
+0xa9a2ee8: b.lo     #0xa9a2f50
+0xa9a2eec: ldr      x8, [x8, #8]
+0xa9a2ef0: add      x0, sp, #0x30
+0xa9a2ef4: str      x8, [sp, #0x70]
+0xa9a2ef8: ldr      x8, [x21, #0x18]
+0xa9a2efc: str      x8, [sp, #0x30]
+0xa9a2f00: add      x8, sp, #0x80
+0xa9a2f04: bl       #0x8be2f20
+0xa9a2f08: ldr      w8, [sp, #0x88]
+0xa9a2f0c: ldr      x9, [sp, #0x80]
+0xa9a2f10: adrp     x10, #0x3f7e000
+0xa9a2f14: add      x10, x10, #0x366
+0xa9a2f18: cmp      w8, #0
+0xa9a2f1c: csel     x5, x10, x9, eq
+0xa9a2f20: adrp     x0, #0x4196000
+0xa9a2f24: adrp     x4, #0x3df6000
+0xa9a2f28: add      x0, x0, #0xfb8
+0xa9a2f2c: add      x4, x4, #0xc5c
+0xa9a2f30: add      x2, sp, #0x70
+0xa9a2f34: mov      w1, #0x16f
+0xa9a2f38: mov      w3, #3
+0xa9a2f3c: bl       #0x8ae2b7c
+0xa9a2f40: ldr      x0, [sp, #0x80]
+0xa9a2f44: cbz      x0, #0xa9a2f4c
+0xa9a2f48: bl       #0x8a8eb0c
+0xa9a2f4c: mov      x26, xzr
+0xa9a2f50: mov      x0, x26
+0xa9a2f54: ldp      x20, x19, [sp, #0x160]
+0xa9a2f58: ldp      x22, x21, [sp, #0x150]
+0xa9a2f5c: ldp      x24, x23, [sp, #0x140]
+0xa9a2f60: ldp      x26, x25, [sp, #0x130]
+0xa9a2f64: ldp      x28, x27, [sp, #0x120]
+0xa9a2f68: ldp      x29, x30, [sp, #0x110]
+0xa9a2f6c: ldp      d9, d8, [sp, #0x100]
+0xa9a2f70: ldp      d11, d10, [sp, #0xf0]
+0xa9a2f74: ldp      d13, d12, [sp, #0xe0]
+0xa9a2f78: ldp      d15, d14, [sp, #0xd0]
+0xa9a2f7c: add      sp, sp, #0x170
+0xa9a2f80: ret      
+0xa9a2f84: ldrb     w8, [x19, #0xc41]
+0xa9a2f88: cbz      w8, #0xa9a3020
+0xa9a2f8c: ldrb     w8, [x20, #0x50]
+0xa9a2f90: tbnz     w8, #3, #0xa9a3020
+0xa9a2f94: adrp     x8, #0xee95000
+0xa9a2f98: ldr      x8, [x8, #0x6a8]
+0xa9a2f9c: mov      x26, xzr
+0xa9a2fa0: ldr      w8, [x8]
+0xa9a2fa4: cbnz     w8, #0xa9a2f50
+0xa9a2fa8: adrp     x8, #0xee9f000
+0xa9a2fac: ldr      x8, [x8, #0xa0]
+0xa9a2fb0: ldrb     w9, [x8]
+0xa9a2fb4: cmp      w9, #3
+0xa9a2fb8: b.lo     #0xa9a2f50
+0xa9a2fbc: ldr      x8, [x8, #8]
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a2ff0", "add_va": "0xa9a2ff8", "distance": 2}
+0xa9a2f90: tbnz     w8, #3, #0xa9a3020
+0xa9a2f94: adrp     x8, #0xee95000
+0xa9a2f98: ldr      x8, [x8, #0x6a8]
+0xa9a2f9c: mov      x26, xzr
+0xa9a2fa0: ldr      w8, [x8]
+0xa9a2fa4: cbnz     w8, #0xa9a2f50
+0xa9a2fa8: adrp     x8, #0xee9f000
+0xa9a2fac: ldr      x8, [x8, #0xa0]
+0xa9a2fb0: ldrb     w9, [x8]
+0xa9a2fb4: cmp      w9, #3
+0xa9a2fb8: b.lo     #0xa9a2f50
+0xa9a2fbc: ldr      x8, [x8, #8]
+0xa9a2fc0: add      x0, sp, #0x30
+0xa9a2fc4: str      x8, [sp, #0x70]
+0xa9a2fc8: ldr      x8, [x21, #0x18]
+0xa9a2fcc: str      x8, [sp, #0x30]
+0xa9a2fd0: add      x8, sp, #0x80
+0xa9a2fd4: bl       #0x8be2f20
+0xa9a2fd8: ldr      w8, [sp, #0x88]
+0xa9a2fdc: ldr      x9, [sp, #0x80]
+0xa9a2fe0: adrp     x10, #0x3f7e000
+0xa9a2fe4: add      x10, x10, #0x366
+0xa9a2fe8: cmp      w8, #0
+0xa9a2fec: csel     x5, x10, x9, eq
+0xa9a2ff0: adrp     x0, #0x4196000
+0xa9a2ff4: adrp     x4, #0x394c000
+0xa9a2ff8: add      x0, x0, #0xfb8
+0xa9a2ffc: add      x4, x4, #0xb2
+0xa9a3000: add      x2, sp, #0x70
+0xa9a3004: mov      w1, #0x181
+0xa9a3008: mov      w3, #3
+0xa9a300c: bl       #0x8ae2b7c
+0xa9a3010: ldr      x0, [sp, #0x80]
+0xa9a3014: cbz      x0, #0xa9a2f4c
+0xa9a3018: bl       #0x8a8eb0c
+0xa9a301c: b        #0xa9a2f4c
+0xa9a3020: ldrb     w8, [x19, #0xd59]
+0xa9a3024: tbnz     w8, #2, #0xa9a32bc
+0xa9a3028: cbz      x25, #0xa9a322c
+0xa9a302c: adrp     x23, #0xf092000
+0xa9a3030: add      x23, x23, #0xbe0
+0xa9a3034: ldarb    w8, [x23]
+0xa9a3038: adrp     x22, #0xf092000
+0xa9a303c: tbz      w8, #0, #0xa9a4528
+0xa9a3040: ldr      q0, [x25]
+0xa9a3044: ldr      q1, [x22, #0xbd0]
+0xa9a3048: adrp     x8, #0x37d8000
+0xa9a304c: ldr      d8, [x8, #0xa88]
+0xa9a3050: and      v0.16b, v1.16b, v0.16b
+0xa9a3054: fcmeq    v0.4s, v0.4s, v1.4s
+0xa9a3058: ext      v1.16b, v0.16b, v0.16b, #8
+0xa9a305c: tbl      v2.8b, {v0.16b}, v8.8b
+0xa9a3060: zip2     v0.8b, v0.8b, v1.8b
+0xa9a3064: zip2     v0.4h, v2.4h, v0.4h
+0xa9a3068: mov      w8, v0.s[1]
+0xa9a306c: and      w8, w8, #0x80808080
+0xa9a3070: lsr      w9, w8, #7
+0xa9a3074: orr      w9, w9, w8, lsr #13
+0xa9a3078: orr      w9, w9, w8, lsr #22
+0xa9a307c: lsr      w8, w8, #0x1c
+0xa9a3080: bfxil    w8, w9, #0, #3
+0xa9a3084: cbnz     w8, #0xa9a311c
+0xa9a3088: ldarb    w8, [x23]
+0xa9a308c: mov      w24, #-0x7f7f7f80
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a3170", "add_va": "0xa9a3178", "distance": 2}
+0xa9a3110: and      w9, w9, #7
+0xa9a3114: orr      w8, w9, w8, lsr #28
+0xa9a3118: cbz      w8, #0xa9a322c
+0xa9a311c: adrp     x8, #0xee95000
+0xa9a3120: ldr      x8, [x8, #0x6a8]
+0xa9a3124: mov      x26, xzr
+0xa9a3128: ldr      w8, [x8]
+0xa9a312c: cbnz     w8, #0xa9a2f50
+0xa9a3130: adrp     x8, #0xee9f000
+0xa9a3134: ldr      x8, [x8, #0xa0]
+0xa9a3138: ldrb     w9, [x8]
+0xa9a313c: cmp      w9, #3
+0xa9a3140: b.lo     #0xa9a2f50
+0xa9a3144: ldr      x8, [x8, #8]
+0xa9a3148: mov      x0, x25
+0xa9a314c: str      x8, [sp, #0x30]
+0xa9a3150: add      x8, sp, #0x80
+0xa9a3154: bl       #0x8b00a68
+0xa9a3158: ldr      w8, [sp, #0x88]
+0xa9a315c: ldr      x9, [sp, #0x80]
+0xa9a3160: adrp     x10, #0x3f7e000
+0xa9a3164: add      x10, x10, #0x366
+0xa9a3168: cmp      w8, #0
+0xa9a316c: csel     x5, x10, x9, eq
+0xa9a3170: adrp     x0, #0x4196000
+0xa9a3174: adrp     x4, #0x3810000
+0xa9a3178: add      x0, x0, #0xfb8
+0xa9a317c: add      x4, x4, #0x90e
+0xa9a3180: add      x2, sp, #0x30
+0xa9a3184: mov      w1, #0x18b
+0xa9a3188: mov      w3, #3
+0xa9a318c: bl       #0x8ae2b7c
+0xa9a3190: ldr      x0, [sp, #0x80]
+0xa9a3194: cbz      x0, #0xa9a2f4c
+0xa9a3198: bl       #0x8a8eb0c
+0xa9a319c: b        #0xa9a2f4c
+0xa9a31a0: adrp     x8, #0xee95000
+0xa9a31a4: ldr      x8, [x8, #0x6a8]
+0xa9a31a8: mov      x26, xzr
+0xa9a31ac: ldr      w8, [x8]
+0xa9a31b0: cbnz     w8, #0xa9a2f50
+0xa9a31b4: adrp     x8, #0xee9f000
+0xa9a31b8: ldr      x8, [x8, #0xa0]
+0xa9a31bc: ldrb     w9, [x8]
+0xa9a31c0: cmp      w9, #3
+0xa9a31c4: b.lo     #0xa9a2f50
+0xa9a31c8: ldr      x8, [x8, #8]
+0xa9a31cc: add      x0, sp, #0x30
+0xa9a31d0: str      x8, [sp, #0x70]
+0xa9a31d4: ldr      x8, [x21, #0x18]
+0xa9a31d8: str      x8, [sp, #0x30]
+0xa9a31dc: add      x8, sp, #0x80
+0xa9a31e0: bl       #0x8be2f20
+0xa9a31e4: ldr      w8, [sp, #0x88]
+0xa9a31e8: ldr      x9, [sp, #0x80]
+0xa9a31ec: adrp     x10, #0x3f7e000
+0xa9a31f0: add      x10, x10, #0x366
+0xa9a31f4: cmp      w8, #0
+0xa9a31f8: csel     x5, x10, x9, eq
+0xa9a31fc: adrp     x0, #0x4196000
+0xa9a3200: adrp     x4, #0x384f000
+0xa9a3204: add      x0, x0, #0xfb8
+0xa9a3208: add      x4, x4, #0x830
+0xa9a320c: add      x2, sp, #0x70
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a31fc", "add_va": "0xa9a3204", "distance": 2}
+0xa9a319c: b        #0xa9a2f4c
+0xa9a31a0: adrp     x8, #0xee95000
+0xa9a31a4: ldr      x8, [x8, #0x6a8]
+0xa9a31a8: mov      x26, xzr
+0xa9a31ac: ldr      w8, [x8]
+0xa9a31b0: cbnz     w8, #0xa9a2f50
+0xa9a31b4: adrp     x8, #0xee9f000
+0xa9a31b8: ldr      x8, [x8, #0xa0]
+0xa9a31bc: ldrb     w9, [x8]
+0xa9a31c0: cmp      w9, #3
+0xa9a31c4: b.lo     #0xa9a2f50
+0xa9a31c8: ldr      x8, [x8, #8]
+0xa9a31cc: add      x0, sp, #0x30
+0xa9a31d0: str      x8, [sp, #0x70]
+0xa9a31d4: ldr      x8, [x21, #0x18]
+0xa9a31d8: str      x8, [sp, #0x30]
+0xa9a31dc: add      x8, sp, #0x80
+0xa9a31e0: bl       #0x8be2f20
+0xa9a31e4: ldr      w8, [sp, #0x88]
+0xa9a31e8: ldr      x9, [sp, #0x80]
+0xa9a31ec: adrp     x10, #0x3f7e000
+0xa9a31f0: add      x10, x10, #0x366
+0xa9a31f4: cmp      w8, #0
+0xa9a31f8: csel     x5, x10, x9, eq
+0xa9a31fc: adrp     x0, #0x4196000
+0xa9a3200: adrp     x4, #0x384f000
+0xa9a3204: add      x0, x0, #0xfb8
+0xa9a3208: add      x4, x4, #0x830
+0xa9a320c: add      x2, sp, #0x70
+0xa9a3210: mov      w1, #0x174
+0xa9a3214: mov      w3, #3
+0xa9a3218: bl       #0x8ae2b7c
+0xa9a321c: ldr      x0, [sp, #0x80]
+0xa9a3220: cbz      x0, #0xa9a2f4c
+0xa9a3224: bl       #0x8a8eb0c
+0xa9a3228: b        #0xa9a2f4c
+0xa9a322c: ldrb     w8, [x21, #0xb6]
+0xa9a3230: adrp     x9, #0xf5fb000
+0xa9a3234: add      x9, x9, #0xb18
+0xa9a3238: tbnz     w8, #2, #0xa9a3308
+0xa9a323c: ldr      w8, [x9]
+0xa9a3240: ldr      w9, [x9, #0x2c]
+0xa9a3244: cmp      w8, w9
+0xa9a3248: b.eq     #0xa9a33ac
+0xa9a324c: adrp     x11, #0xf5fb000
+0xa9a3250: add      x11, x11, #0xb48
+0xa9a3254: ldr      x10, [x21, #0x18]
+0xa9a3258: ldr      x12, [x11, #8]
+0xa9a325c: ldr      w13, [x11, #0x10]
+0xa9a3260: lsr      x14, x10, #0x20
+0xa9a3264: cmp      x12, #0
+0xa9a3268: add      w14, w14, w10
+0xa9a326c: sub      w13, w13, #1
+0xa9a3270: csel     x11, x11, xzr, eq
+0xa9a3274: orr      x11, x11, x12
+0xa9a3278: and      w12, w13, w14
+0xa9a327c: ldr      w12, [x11, w12, sxtw #2]
+0xa9a3280: cmn      w12, #1
+0xa9a3284: b.eq     #0xa9a33ac
+0xa9a3288: adrp     x11, #0xf5fb000
+0xa9a328c: ldr      x11, [x11, #0xb10]
+0xa9a3290: mov      w13, #0x18
+0xa9a3294: smaddl   x14, w12, w13, x11
+0xa9a3298: ldr      x15, [x14]
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a32e8", "add_va": "0xa9a32f0", "distance": 2}
+0xa9a3288: adrp     x11, #0xf5fb000
+0xa9a328c: ldr      x11, [x11, #0xb10]
+0xa9a3290: mov      w13, #0x18
+0xa9a3294: smaddl   x14, w12, w13, x11
+0xa9a3298: ldr      x15, [x14]
+0xa9a329c: sxtw     x12, w12
+0xa9a32a0: cmp      x15, x10
+0xa9a32a4: b.eq     #0xa9a338c
+0xa9a32a8: madd     x12, x12, x13, x11
+0xa9a32ac: ldr      w12, [x12, #0x10]
+0xa9a32b0: cmn      w12, #1
+0xa9a32b4: b.ne     #0xa9a3294
+0xa9a32b8: b        #0xa9a33ac
+0xa9a32bc: adrp     x8, #0xee95000
+0xa9a32c0: ldr      x8, [x8, #0x6a8]
+0xa9a32c4: mov      x26, xzr
+0xa9a32c8: ldr      w8, [x8]
+0xa9a32cc: cbnz     w8, #0xa9a2f50
+0xa9a32d0: adrp     x8, #0xee9f000
+0xa9a32d4: ldr      x8, [x8, #0xa0]
+0xa9a32d8: ldrb     w9, [x8]
+0xa9a32dc: cmp      w9, #3
+0xa9a32e0: b.lo     #0xa9a2f50
+0xa9a32e4: ldr      x8, [x8, #8]
+0xa9a32e8: adrp     x0, #0x4196000
+0xa9a32ec: adrp     x4, #0x398c000
+0xa9a32f0: add      x0, x0, #0xfb8
+0xa9a32f4: str      x8, [sp, #0x80]
+0xa9a32f8: add      x4, x4, #0x58e
+0xa9a32fc: add      x2, sp, #0x80
+0xa9a3300: mov      w1, #0x186
+0xa9a3304: b        #0xa9a2e2c
+0xa9a3308: ldr      w8, [x9]
+0xa9a330c: ldr      w9, [x9, #0x2c]
+0xa9a3310: cmp      w8, w9
+0xa9a3314: b.eq     #0xa9a33ac
+0xa9a3318: ldr      x10, [x21, #0x30]
+0xa9a331c: adrp     x11, #0xf5fb000
+0xa9a3320: add      x11, x11, #0xb48
+0xa9a3324: ldr      x12, [x11, #8]
+0xa9a3328: ldr      x10, [x10, #0x18]
+0xa9a332c: ldr      w13, [x11, #0x10]
+0xa9a3330: cmp      x12, #0
+0xa9a3334: csel     x11, x11, xzr, eq
+0xa9a3338: orr      x11, x11, x12
+0xa9a333c: lsr      x12, x10, #0x20
+0xa9a3340: add      w12, w12, w10
+0xa9a3344: sub      w13, w13, #1
+0xa9a3348: and      w12, w13, w12
+0xa9a334c: ldr      w12, [x11, w12, sxtw #2]
+0xa9a3350: cmn      w12, #1
+0xa9a3354: b.eq     #0xa9a33ac
+0xa9a3358: adrp     x11, #0xf5fb000
+0xa9a335c: ldr      x11, [x11, #0xb10]
+0xa9a3360: mov      w13, #0x18
+0xa9a3364: smaddl   x14, w12, w13, x11
+0xa9a3368: ldr      x15, [x14]
+0xa9a336c: sxtw     x12, w12
+0xa9a3370: cmp      x15, x10
+0xa9a3374: b.eq     #0xa9a338c
+0xa9a3378: madd     x12, x12, x13, x11
+0xa9a337c: ldr      w12, [x12, #0x10]
+0xa9a3380: cmn      w12, #1
+0xa9a3384: b.ne     #0xa9a3364
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a3694", "add_va": "0xa9a369c", "distance": 2}
+0xa9a3634: b        #0xa9a4278
+0xa9a3638: adrp     x8, #0xee95000
+0xa9a363c: ldr      x8, [x8, #0x6a8]
+0xa9a3640: mov      x26, xzr
+0xa9a3644: ldr      w8, [x8]
+0xa9a3648: cbnz     w8, #0xa9a4210
+0xa9a364c: adrp     x8, #0xee9f000
+0xa9a3650: ldr      x8, [x8, #0xa0]
+0xa9a3654: ldrb     w9, [x8]
+0xa9a3658: cmp      w9, #3
+0xa9a365c: b.lo     #0xa9a4210
+0xa9a3660: ldr      x8, [x8, #8]
+0xa9a3664: str      x8, [sp, #0x70]
+0xa9a3668: ldr      x8, [x21, #0x18]
+0xa9a366c: str      x8, [sp, #0x30]
+0xa9a3670: add      x8, sp, #0x80
+0xa9a3674: add      x0, sp, #0x30
+0xa9a3678: bl       #0x8be2f20
+0xa9a367c: ldr      w8, [sp, #0x88]
+0xa9a3680: ldr      x9, [sp, #0x80]
+0xa9a3684: adrp     x10, #0x3f7e000
+0xa9a3688: add      x10, x10, #0x366
+0xa9a368c: cmp      w8, #0
+0xa9a3690: csel     x5, x10, x9, eq
+0xa9a3694: adrp     x0, #0x4196000
+0xa9a3698: adrp     x4, #0x3a47000
+0xa9a369c: add      x0, x0, #0xfb8
+0xa9a36a0: add      x4, x4, #0xa42
+0xa9a36a4: add      x2, sp, #0x70
+0xa9a36a8: mov      w1, #0x1d5
+0xa9a36ac: mov      w3, #3
+0xa9a36b0: bl       #0x8ae2b7c
+0xa9a36b4: ldr      x0, [sp, #0x80]
+0xa9a36b8: cbz      x0, #0xa9a36c0
+0xa9a36bc: bl       #0x8a8eb0c
+0xa9a36c0: mov      x26, xzr
+0xa9a36c4: b        #0xa9a4210
+0xa9a36c8: ldr      x0, [x19, #0xb8]
+0xa9a36cc: cbz      x0, #0xa9a36dc
+0xa9a36d0: bl       #0xa7e3550
+0xa9a36d4: mov      w26, w0
+0xa9a36d8: b        #0xa9a36e0
+0xa9a36dc: mov      w26, wzr
+0xa9a36e0: ldrb     w8, [x20, #0x44]
+0xa9a36e4: tbnz     w8, #0, #0xa9a37f8
+0xa9a36e8: adrp     x8, #0xf5fb000
+0xa9a36ec: ldr      w28, [x8, #0x388]
+0xa9a36f0: add      x25, x19, #0xc8
+0xa9a36f4: mov      x0, x25
+0xa9a36f8: bl       #0xaa930a8
+0xa9a36fc: tbz      w0, #0, #0xa9a37f8
+0xa9a3700: mov      x0, x19
+0xa9a3704: bl       #0xaedede0
+0xa9a3708: cmp      w0, #3
+0xa9a370c: b.ne     #0xa9a37f8
+0xa9a3710: mov      x0, x19
+0xa9a3714: bl       #0xaecb9fc
+0xa9a3718: cmp      w28, #1
+0xa9a371c: cset     w8, lt
+0xa9a3720: and      w8, w26, w8
+0xa9a3724: tbnz     w8, #0, #0xa9a37f8
+0xa9a3728: eor      w8, w0, #1
+0xa9a372c: tbnz     w8, #0, #0xa9a37f8
+0xa9a3730: bl       #0xb08f17c
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a3e84", "add_va": "0xa9a3e8c", "distance": 2}
+0xa9a3e24: ldr      q0, [sp, #0x10]
+0xa9a3e28: fcvt     d1, s9
+0xa9a3e2c: fcvt     d2, s8
+0xa9a3e30: str      x8, [sp, #0x28]
+0xa9a3e34: fcvt     d0, s0
+0xa9a3e38: adrp     x0, #0x3a55000
+0xa9a3e3c: add      x0, x0, #0x1ae
+0xa9a3e40: add      x8, sp, #0x80
+0xa9a3e44: bl       #0x8a4cca4
+0xa9a3e48: ldr      w19, [sp, #0x88]
+0xa9a3e4c: ldr      x8, [x21, #0x18]
+0xa9a3e50: ldr      x20, [sp, #0x80]
+0xa9a3e54: stur     x8, [x29, #-0x50]
+0xa9a3e58: add      x8, sp, #0x70
+0xa9a3e5c: sub      x0, x29, #0x50
+0xa9a3e60: bl       #0x8be2f20
+0xa9a3e64: ldr      w9, [sp, #0x78]
+0xa9a3e68: ldr      x10, [sp, #0x70]
+0xa9a3e6c: adrp     x8, #0x3f7e000
+0xa9a3e70: add      x8, x8, #0x366
+0xa9a3e74: cmp      w19, #0
+0xa9a3e78: csel     x5, x8, x20, eq
+0xa9a3e7c: cmp      w9, #0
+0xa9a3e80: csel     x6, x8, x10, eq
+0xa9a3e84: adrp     x0, #0x4196000
+0xa9a3e88: adrp     x4, #0x3a45000
+0xa9a3e8c: add      x0, x0, #0xfb8
+0xa9a3e90: add      x4, x4, #0x8b8
+0xa9a3e94: add      x2, sp, #0x28
+0xa9a3e98: mov      w1, #0x278
+0xa9a3e9c: mov      w3, #5
+0xa9a3ea0: bl       #0x8ae2b7c
+0xa9a3ea4: ldr      x0, [sp, #0x70]
+0xa9a3ea8: cbz      x0, #0xa9a3eb0
+0xa9a3eac: bl       #0x8a8eb0c
+0xa9a3eb0: ldr      x0, [sp, #0x80]
+0xa9a3eb4: cbz      x0, #0xa9a36c0
+0xa9a3eb8: bl       #0x8a8eb0c
+0xa9a3ebc: b        #0xa9a36c0
+0xa9a3ec0: mov      w26, #4
+0xa9a3ec4: ldr      w25, [x20, #0x54]
+0xa9a3ec8: ldr      x28, [x20, #0x38]
+0xa9a3ecc: mov      w23, w23
+0xa9a3ed0: bfi      x23, x27, #0x20, #0x20
+0xa9a3ed4: cbnz     x23, #0xa9a3ee8
+0xa9a3ed8: adrp     x1, #0x37dc000
+0xa9a3edc: add      x1, x1, #0x806
+0xa9a3ee0: mov      x0, x22
+0xa9a3ee4: bl       #0x8e78538
+0xa9a3ee8: mov      x0, x21
+0xa9a3eec: mov      x1, x22
+0xa9a3ef0: mov      x2, x23
+0xa9a3ef4: mov      w3, w25
+0xa9a3ef8: mov      w4, wzr
+0xa9a3efc: mov      x5, x24
+0xa9a3f00: mov      w6, wzr
+0xa9a3f04: mov      x7, xzr
+0xa9a3f08: strb     wzr, [sp, #8]
+0xa9a3f0c: str      x28, [sp]
+0xa9a3f10: bl       #0x8e75e60
+0xa9a3f14: adrp     x8, #0xee9b000
+0xa9a3f18: ldr      x8, [x8, #0x28]
+0xa9a3f1c: mov      x21, x0
+0xa9a3f20: ldr      x8, [x8]
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a3ffc", "add_va": "0xa9a4004", "distance": 2}
+0xa9a3f9c: ldr      x8, [x22]
+0xa9a3fa0: adrp     x24, #0xee95000
+0xa9a3fa4: str      x21, [x8, x23, lsl #3]
+0xa9a3fa8: ldr      x24, [x24, #0x6a8]
+0xa9a3fac: adrp     x23, #0xee9f000
+0xa9a3fb0: ldr      w8, [x24]
+0xa9a3fb4: ldr      x23, [x23, #0xa0]
+0xa9a3fb8: cbnz     w8, #0xa9a4028
+0xa9a3fbc: ldrb     w8, [x23]
+0xa9a3fc0: cmp      w8, #5
+0xa9a3fc4: b.lo     #0xa9a4028
+0xa9a3fc8: ldr      x8, [x23, #8]
+0xa9a3fcc: stur     x8, [x29, #-0x50]
+0xa9a3fd0: ldr      x8, [x21, #0x18]
+0xa9a3fd4: str      x8, [sp, #0x70]
+0xa9a3fd8: add      x8, sp, #0x80
+0xa9a3fdc: add      x0, sp, #0x70
+0xa9a3fe0: bl       #0x8be2f20
+0xa9a3fe4: ldr      w8, [sp, #0x88]
+0xa9a3fe8: ldr      x9, [sp, #0x80]
+0xa9a3fec: adrp     x10, #0x3f7e000
+0xa9a3ff0: add      x10, x10, #0x366
+0xa9a3ff4: cmp      w8, #0
+0xa9a3ff8: csel     x5, x10, x9, eq
+0xa9a3ffc: adrp     x0, #0x4196000
+0xa9a4000: adrp     x4, #0x3f71000
+0xa9a4004: add      x0, x0, #0xfb8
+0xa9a4008: add      x4, x4, #0x6b4
+0xa9a400c: sub      x2, x29, #0x50
+0xa9a4010: mov      w1, #0x29b
+0xa9a4014: mov      w3, #5
+0xa9a4018: bl       #0x8ae2b7c
+0xa9a401c: ldr      x0, [sp, #0x80]
+0xa9a4020: cbz      x0, #0xa9a4028
+0xa9a4024: bl       #0x8a8eb0c
+0xa9a4028: strb     w26, [x21, #0x1df]
+0xa9a402c: ldrb     w8, [x20, #0x30]
+0xa9a4030: strb     w8, [x21, #0xf8]
+0xa9a4034: ldr      x0, [x20, #0x38]
+0xa9a4038: cbz      x0, #0xa9a404c
+0xa9a403c: ldr      x8, [x0]
+0xa9a4040: ldr      x8, [x8, #8]
+0xa9a4044: blr      x8
+0xa9a4048: str      x0, [x21, #0x100]
+0xa9a404c: ldr      w8, [x20, #0x40]
+0xa9a4050: str      w8, [x21, #0x1e8]
+0xa9a4054: ldr      w1, [x20, #0x2c]
+0xa9a4058: mov      w2, #0x100
+0xa9a405c: mov      x0, x21
+0xa9a4060: bl       #0xa4d71d0
+0xa9a4064: ldrb     w8, [x20, #0x50]
+0xa9a4068: ldp      x2, x3, [x20, #0x10]
+0xa9a406c: ubfx     w5, w8, #1, #1
+0xa9a4070: ubfx     w6, w8, #2, #1
+0xa9a4074: and      w4, w8, #1
+0xa9a4078: add      x1, sp, #0x30
+0xa9a407c: mov      x0, x21
+0xa9a4080: bl       #0xa4de574
+0xa9a4084: ldrb     w8, [x20, #0x50]
+0xa9a4088: tbz      w8, #2, #0xa9a4094
+0xa9a408c: ldr      x8, [x21, #0x208]
+0xa9a4090: cbz      x8, #0xa9a421c
+0xa9a4094: ldrb     w8, [x21, #0x1d1]
+0xa9a4098: and      w8, w8, #0xfffffffd
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a412c", "add_va": "0xa9a4134", "distance": 2}
+0xa9a40cc: cmp      w9, w8
+0xa9a40d0: csel     x8, x10, xzr, gt
+0xa9a40d4: ldrb     w8, [x8, #0xb]
+0xa9a40d8: tbz      w8, #5, #0xa9a415c
+0xa9a40dc: ldrb     w8, [x20, #0x50]
+0xa9a40e0: tbnz     w8, #1, #0xa9a415c
+0xa9a40e4: ldr      w8, [x24]
+0xa9a40e8: mov      x26, xzr
+0xa9a40ec: cbnz     w8, #0xa9a4210
+0xa9a40f0: ldrb     w8, [x23]
+0xa9a40f4: cmp      w8, #5
+0xa9a40f8: b.lo     #0xa9a4210
+0xa9a40fc: ldr      x8, [x23, #8]
+0xa9a4100: str      x8, [sp, #0x70]
+0xa9a4104: add      x8, sp, #0x80
+0xa9a4108: mov      x0, x21
+0xa9a410c: mov      x1, xzr
+0xa9a4110: bl       #0x8e60c64
+0xa9a4114: ldr      w8, [sp, #0x88]
+0xa9a4118: ldr      x9, [sp, #0x80]
+0xa9a411c: adrp     x10, #0x3f7e000
+0xa9a4120: add      x10, x10, #0x366
+0xa9a4124: cmp      w8, #0
+0xa9a4128: csel     x5, x10, x9, eq
+0xa9a412c: adrp     x0, #0x4196000
+0xa9a4130: adrp     x4, #0x394c000
+0xa9a4134: add      x0, x0, #0xfb8
+0xa9a4138: add      x4, x4, #0x138
+0xa9a413c: add      x2, sp, #0x70
+0xa9a4140: mov      w1, #0x2d0
+0xa9a4144: mov      w3, #5
+0xa9a4148: bl       #0x8ae2b7c
+0xa9a414c: ldr      x0, [sp, #0x80]
+0xa9a4150: cbz      x0, #0xa9a36c0
+0xa9a4154: bl       #0x8a8eb0c
+0xa9a4158: b        #0xa9a36c0
+0xa9a415c: mov      x0, x21
+0xa9a4160: mov      w1, wzr
+0xa9a4164: bl       #0x8dfa8e8
+0xa9a4168: ldr      w8, [x19, #0x6f4]
+0xa9a416c: ldr      w22, [x19, #0x6e8]
+0xa9a4170: add      w9, w8, #1
+0xa9a4174: cmp      w22, #1
+0xa9a4178: str      w9, [x19, #0x6f4]
+0xa9a417c: b.lt     #0xa9a4208
+0xa9a4180: mov      w23, wzr
+0xa9a4184: add      x20, x19, #0x6e0
+0xa9a4188: b        #0xa9a4198
+0xa9a418c: subs     x22, x22, #1
+0xa9a4190: mov      w23, #1
+0xa9a4194: b.le     #0xa9a42e0
+0xa9a4198: lsl      x24, x22, #4
+0xa9a419c: ldr      x8, [x20]
+0xa9a41a0: add      x8, x8, x24
+0xa9a41a4: ldur     w9, [x8, #-8]
+0xa9a41a8: ldur     x0, [x8, #-0x10]
+0xa9a41ac: cmp      w9, #0
+0xa9a41b0: ccmp     x0, #0, #4, ne
+0xa9a41b4: b.eq     #0xa9a418c
+0xa9a41b8: ldr      x8, [x0]
+0xa9a41bc: ldr      x8, [x8, #0x70]
+0xa9a41c0: mov      x1, x21
+0xa9a41c4: blr      x8
+0xa9a41c8: tbz      w0, #0, #0xa9a418c
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a65b8", "add_va": "0xa9a65c0", "distance": 2}
+0xa9a6558: mov      x19, x1
+0xa9a655c: blr      x8
+0xa9a6560: adrp     x28, #0xee95000
+0xa9a6564: adrp     x27, #0xee9f000
+0xa9a6568: ldr      x28, [x28, #0x6a8]
+0xa9a656c: ldr      x27, [x27, #0xa0]
+0xa9a6570: cbnz     x0, #0xa9a65e4
+0xa9a6574: ldr      w8, [x28]
+0xa9a6578: cbnz     w8, #0xa9a65e4
+0xa9a657c: ldrb     w8, [x27]
+0xa9a6580: cmp      w8, #3
+0xa9a6584: b.lo     #0xa9a65e4
+0xa9a6588: ldr      x8, [x27, #8]
+0xa9a658c: mov      x0, x19
+0xa9a6590: mov      x1, xzr
+0xa9a6594: stur     x8, [x29, #-0x28]
+0xa9a6598: add      x8, sp, #0x10
+0xa9a659c: bl       #0x8e60c64
+0xa9a65a0: ldr      w8, [sp, #0x18]
+0xa9a65a4: ldr      x9, [sp, #0x10]
+0xa9a65a8: adrp     x10, #0x3f7e000
+0xa9a65ac: add      x10, x10, #0x366
+0xa9a65b0: cmp      w8, #0
+0xa9a65b4: csel     x5, x10, x9, eq
+0xa9a65b8: adrp     x0, #0x4196000
+0xa9a65bc: adrp     x4, #0x394a000
+0xa9a65c0: add      x0, x0, #0xfb8
+0xa9a65c4: add      x4, x4, #0x118
+0xa9a65c8: sub      x2, x29, #0x28
+0xa9a65cc: mov      w1, #0x31b
+0xa9a65d0: mov      w3, #3
+0xa9a65d4: bl       #0x8ae2b7c
+0xa9a65d8: ldr      x0, [sp, #0x10]
+0xa9a65dc: cbz      x0, #0xa9a65e4
+0xa9a65e0: bl       #0x8a8eb0c
+0xa9a65e4: ldrb     w8, [x19, #0x1de]
+0xa9a65e8: ldrh     w9, [x19, #0x1dc]
+0xa9a65ec: bfi      w9, w8, #0x10, #8
+0xa9a65f0: tbnz     w9, #3, #0xa9a6f9c
+0xa9a65f4: adrp     x26, #0xee95000
+0xa9a65f8: ldrsw    x8, [x19, #0xc]
+0xa9a65fc: ldr      x26, [x26, #0x9d8]
+0xa9a6600: mov      w11, #0x18
+0xa9a6604: ldr      x9, [x26, #0x10]
+0xa9a6608: ldr      w10, [x26, #0x1c]
+0xa9a660c: nop      
+0xa9a6610: madd     x9, x8, x11, x9
+0xa9a6614: cmp      w10, w8
+0xa9a6618: csel     x8, x9, xzr, gt
+0xa9a661c: ldrb     w8, [x8, #0xb]
+0xa9a6620: tbnz     w8, #5, #0xa9a6f9c
+0xa9a6624: add      x0, x20, #0x180
+0xa9a6628: mov      x1, x19
+0xa9a662c: bl       #0xac07924
+0xa9a6630: mov      x0, x20
+0xa9a6634: bl       #0xaecb9fc
+0xa9a6638: tbz      w0, #0, #0xa9a6688
+0xa9a663c: mov      w2, #1
+0xa9a6640: mov      x0, x20
+0xa9a6644: mov      w1, wzr
+0xa9a6648: bl       #0xaec921c
+0xa9a664c: cmp      x0, x19
+0xa9a6650: b.eq     #0xa9a6680
+0xa9a6654: ldrb     w8, [x19, #0x1a8]
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a66e4", "add_va": "0xa9a66ec", "distance": 2}
+0xa9a6684: b        #0xa9a6fa0
+0xa9a6688: ldr      x8, [x19]
+0xa9a668c: mov      w1, #1
+0xa9a6690: mov      x0, x19
+0xa9a6694: ldr      x8, [x8, #0x98]
+0xa9a6698: blr      x8
+0xa9a669c: ldr      w8, [x28]
+0xa9a66a0: cbnz     w8, #0xa9a6710
+0xa9a66a4: ldrb     w8, [x27]
+0xa9a66a8: cmp      w8, #5
+0xa9a66ac: b.lo     #0xa9a6710
+0xa9a66b0: ldr      x8, [x27, #8]
+0xa9a66b4: sub      x0, x29, #0x28
+0xa9a66b8: stur     x8, [x29, #-0x38]
+0xa9a66bc: ldr      x8, [x19, #0x18]
+0xa9a66c0: stur     x8, [x29, #-0x28]
+0xa9a66c4: add      x8, sp, #0x10
+0xa9a66c8: bl       #0x8be2f20
+0xa9a66cc: ldr      w8, [sp, #0x18]
+0xa9a66d0: ldr      x9, [sp, #0x10]
+0xa9a66d4: adrp     x10, #0x3f7e000
+0xa9a66d8: add      x10, x10, #0x366
+0xa9a66dc: cmp      w8, #0
+0xa9a66e0: csel     x5, x10, x9, eq
+0xa9a66e4: adrp     x0, #0x4196000
+0xa9a66e8: adrp     x4, #0x3ac5000
+0xa9a66ec: add      x0, x0, #0xfb8
+0xa9a66f0: add      x4, x4, #0x84a
+0xa9a66f4: sub      x2, x29, #0x38
+0xa9a66f8: mov      w1, #0x344
+0xa9a66fc: mov      w3, #5
+0xa9a6700: bl       #0x8ae2b7c
+0xa9a6704: ldr      x0, [sp, #0x10]
+0xa9a6708: cbz      x0, #0xa9a6710
+0xa9a670c: bl       #0x8a8eb0c
+0xa9a6710: adrp     x8, #0xee95000
+0xa9a6714: ldr      x8, [x8, #0x7c8]
+0xa9a6718: ldr      x9, [x19, #0x18]
+0xa9a671c: sub      x0, x29, #0x28
+0xa9a6720: ldr      x22, [x8]
+0xa9a6724: add      x8, sp, #0x10
+0xa9a6728: stur     x9, [x29, #-0x28]
+0xa9a672c: bl       #0x8be2f20
+0xa9a6730: add      x2, sp, #0x10
+0xa9a6734: mov      w1, #0x7d6
+0xa9a6738: mov      w4, #0x3e8
+0xa9a673c: mov      x0, x22
+0xa9a6740: mov      w3, wzr
+0xa9a6744: bl       #0x8cd51a0
+0xa9a6748: ldr      x0, [sp, #0x10]
+0xa9a674c: cbz      x0, #0xa9a6754
+0xa9a6750: bl       #0x8a8eb0c
+0xa9a6754: ldr      x0, [x20, #0xb8]
+0xa9a6758: cbz      x0, #0xa9a6764
+0xa9a675c: bl       #0xa7e3550
+0xa9a6760: tbnz     w0, #0, #0xa9a67dc
+0xa9a6764: add      x22, x20, #0xd68
+0xa9a6768: bl       #0xb08dcac
+0xa9a676c: mov      x23, x0
+0xa9a6770: cbz      x0, #0xa9a679c
+0xa9a6774: bl       #0xb08dcac
+0xa9a6778: cmp      x0, x23
+0xa9a677c: b.eq     #0xa9a679c
+0xa9a6780: mov      x8, x23
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a68d8", "add_va": "0xa9a68e0", "distance": 2}
+0xa9a6878: ldr      x0, [sp, #8]
+0xa9a687c: add      x2, sp, #0x10
+0xa9a6880: mov      x1, x19
+0xa9a6884: str      s0, [sp, #0x10]
+0xa9a6888: bl       #0xaa937dc
+0xa9a688c: tbz      w0, #0, #0xa9a69a8
+0xa9a6890: ldr      w8, [x28]
+0xa9a6894: cbnz     w8, #0xa9a6904
+0xa9a6898: ldrb     w8, [x27]
+0xa9a689c: cmp      w8, #3
+0xa9a68a0: b.lo     #0xa9a6904
+0xa9a68a4: ldr      x8, [x27, #8]
+0xa9a68a8: sub      x0, x29, #0x28
+0xa9a68ac: stur     x8, [x29, #-0x38]
+0xa9a68b0: ldr      x8, [x19, #0x18]
+0xa9a68b4: stur     x8, [x29, #-0x28]
+0xa9a68b8: add      x8, sp, #0x10
+0xa9a68bc: bl       #0x8be2f20
+0xa9a68c0: ldr      w8, [sp, #0x18]
+0xa9a68c4: ldr      x9, [sp, #0x10]
+0xa9a68c8: adrp     x10, #0x3f7e000
+0xa9a68cc: add      x10, x10, #0x366
+0xa9a68d0: cmp      w8, #0
+0xa9a68d4: csel     x5, x10, x9, eq
+0xa9a68d8: adrp     x0, #0x4196000
+0xa9a68dc: adrp     x4, #0x3cbe000
+0xa9a68e0: add      x0, x0, #0xfb8
+0xa9a68e4: add      x4, x4, #0x64
+0xa9a68e8: sub      x2, x29, #0x38
+0xa9a68ec: mov      w1, #0x396
+0xa9a68f0: mov      w3, #3
+0xa9a68f4: bl       #0x8ae2b7c
+0xa9a68f8: ldr      x0, [sp, #0x10]
+0xa9a68fc: cbz      x0, #0xa9a6904
+0xa9a6900: bl       #0x8a8eb0c
+0xa9a6904: cbz      x19, #0xa9a6928
+0xa9a6908: bl       #0xb08f17c
+0xa9a690c: mov      x1, x0
+0xa9a6910: mov      x0, x19
+0xa9a6914: bl       #0x8e601f4
+0xa9a6918: cbz      x0, #0xa9a6928
+0xa9a691c: ldr      x8, [x0]
+0xa9a6920: ldr      x8, [x8, #0x28]
+0xa9a6924: blr      x8
+0xa9a6928: ldr      x0, [x20, #0x38]
+0xa9a692c: cbz      x0, #0xa9a693c
+0xa9a6930: mov      w2, #1
+0xa9a6934: mov      x1, x19
+0xa9a6938: bl       #0xaa7d6e8
+0xa9a693c: ldr      x0, [x20, #0xb8]
+0xa9a6940: cbz      x0, #0xa9a6958
+0xa9a6944: ldr      x8, [x0]
+0xa9a6948: mov      x1, x19
+0xa9a694c: mov      w2, wzr
+0xa9a6950: ldr      x8, [x8, #0x398]
+0xa9a6954: blr      x8
+0xa9a6958: mov      x0, x19
+0xa9a695c: bl       #0xa4d1d00
+0xa9a6960: cbz      x0, #0xa9a7124
+0xa9a6964: mov      x21, x0
+0xa9a6968: bl       #0xa98c454
+0xa9a696c: ldrsw    x10, [x0, #8]
+0xa9a6970: cbz      w10, #0xa9a7098
+0xa9a6974: ldr      x9, [x0]
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a6be0", "add_va": "0xa9a6be8", "distance": 2}
+0xa9a6b80: ldrb     w8, [x27]
+0xa9a6b84: cmp      w8, #3
+0xa9a6b88: b.lo     #0xa9a6c18
+0xa9a6b8c: ldr      x8, [x27, #8]
+0xa9a6b90: stur     x8, [x29, #-0x10]
+0xa9a6b94: ldr      x8, [x20, #0x18]
+0xa9a6b98: stur     x8, [x29, #-0x38]
+0xa9a6b9c: add      x8, sp, #0x10
+0xa9a6ba0: sub      x0, x29, #0x38
+0xa9a6ba4: bl       #0x8be2f20
+0xa9a6ba8: ldr      w22, [sp, #0x18]
+0xa9a6bac: ldr      x23, [sp, #0x10]
+0xa9a6bb0: sub      x8, x29, #0x38
+0xa9a6bb4: mov      x0, x19
+0xa9a6bb8: mov      x1, xzr
+0xa9a6bbc: bl       #0x8e60c64
+0xa9a6bc0: ldur     w9, [x29, #-0x30]
+0xa9a6bc4: ldur     x10, [x29, #-0x38]
+0xa9a6bc8: adrp     x8, #0x3f7e000
+0xa9a6bcc: add      x8, x8, #0x366
+0xa9a6bd0: cmp      w22, #0
+0xa9a6bd4: csel     x5, x8, x23, eq
+0xa9a6bd8: cmp      w9, #0
+0xa9a6bdc: csel     x6, x8, x10, eq
+0xa9a6be0: adrp     x0, #0x4196000
+0xa9a6be4: adrp     x4, #0x3b43000
+0xa9a6be8: add      x0, x0, #0xfb8
+0xa9a6bec: add      x4, x4, #0xf7c
+0xa9a6bf0: sub      x2, x29, #0x10
+0xa9a6bf4: mov      w1, #0x42e
+0xa9a6bf8: mov      w3, #3
+0xa9a6bfc: bl       #0x8ae2b7c
+0xa9a6c00: ldur     x0, [x29, #-0x38]
+0xa9a6c04: cbz      x0, #0xa9a6c0c
+0xa9a6c08: bl       #0x8a8eb0c
+0xa9a6c0c: ldr      x0, [sp, #0x10]
+0xa9a6c10: cbz      x0, #0xa9a6c18
+0xa9a6c14: bl       #0x8a8eb0c
+0xa9a6c18: ldr      x0, [x20, #0xb8]
+0xa9a6c1c: cbz      x0, #0xa9a6c34
+0xa9a6c20: ldr      x8, [x0]
+0xa9a6c24: ldr      x8, [x8, #0x398]
+0xa9a6c28: mov      x1, x19
+0xa9a6c2c: mov      w2, wzr
+0xa9a6c30: blr      x8
+0xa9a6c34: and      w2, w21, #1
+0xa9a6c38: mov      x0, x20
+0xa9a6c3c: mov      x1, x19
+0xa9a6c40: bl       #0xaecb7a4
+0xa9a6c44: ldr      x8, [x19]
+0xa9a6c48: ldr      x8, [x8, #0x590]
+0xa9a6c4c: mov      x0, x19
+0xa9a6c50: mov      w1, wzr
+0xa9a6c54: blr      x8
+0xa9a6c58: ldrsw    x8, [x19, #0xc]
+0xa9a6c5c: ldr      x9, [x26, #0x10]
+0xa9a6c60: ldr      w10, [x26, #0x1c]
+0xa9a6c64: mov      w11, #0x18
+0xa9a6c68: madd     x9, x8, x11, x9
+0xa9a6c6c: cmp      w10, w8
+0xa9a6c70: csel     x8, x9, xzr, gt
+0xa9a6c74: ldr      w9, [x8, #8]
+0xa9a6c78: orr      w9, w9, #0x20000000
+0xa9a6c7c: str      w9, [x8, #8]
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a723c", "add_va": "0xa9a7244", "distance": 2}
+0xa9a71dc: bl       #0x8df8508
+0xa9a71e0: ldur     x0, [x29, #-0x38]
+0xa9a71e4: cbz      x0, #0xa9a71ec
+0xa9a71e8: bl       #0x8a8eb0c
+0xa9a71ec: ldr      w8, [x28]
+0xa9a71f0: cbnz     w8, #0xa9a7268
+0xa9a71f4: ldrb     w8, [x27]
+0xa9a71f8: cmp      w8, #3
+0xa9a71fc: b.lo     #0xa9a7268
+0xa9a7200: ldr      x8, [x27, #8]
+0xa9a7204: ldr      w20, [sp, #0x18]
+0xa9a7208: stur     x8, [x29, #-0x50]
+0xa9a720c: ldr      x8, [x19, #0x18]
+0xa9a7210: ldr      x19, [sp, #0x10]
+0xa9a7214: stur     x8, [x29, #-0x10]
+0xa9a7218: sub      x8, x29, #0x38
+0xa9a721c: sub      x0, x29, #0x10
+0xa9a7220: bl       #0x8be2f20
+0xa9a7224: ldur     w8, [x29, #-0x30]
+0xa9a7228: ldur     x9, [x29, #-0x38]
+0xa9a722c: cmp      w20, #0
+0xa9a7230: csel     x5, x22, x19, eq
+0xa9a7234: cmp      w8, #0
+0xa9a7238: csel     x6, x22, x9, eq
+0xa9a723c: adrp     x0, #0x4196000
+0xa9a7240: adrp     x4, #0x3b43000
+0xa9a7244: add      x0, x0, #0xfb8
+0xa9a7248: add      x4, x4, #0xf42
+0xa9a724c: sub      x2, x29, #0x50
+0xa9a7250: mov      w1, #0x3bc
+0xa9a7254: mov      w3, #3
+0xa9a7258: bl       #0x8ae2b7c
+0xa9a725c: ldur     x0, [x29, #-0x38]
+0xa9a7260: cbz      x0, #0xa9a7268
+0xa9a7264: bl       #0x8a8eb0c
+0xa9a7268: ldur     x0, [x29, #-0x28]
+0xa9a726c: cbz      x0, #0xa9a7274
+0xa9a7270: bl       #0x8a8eb0c
+0xa9a7274: ldr      x0, [sp, #0x10]
+0xa9a7278: cbz      x0, #0xa9a6f9c
+0xa9a727c: bl       #0x8a8eb0c
+0xa9a7280: b        #0xa9a6f9c
+0xa9a7284: mov      w24, wzr
+0xa9a7288: ldr      x0, [sp, #0x28]
+0xa9a728c: cbnz     x0, #0xa9a6fd8
+0xa9a7290: b        #0xa9a6fdc
+0xa9a7294: bl       #0x5bfb020
+0xa9a7298: bl       #0x5bfb020
+0xa9a729c: ldur     x8, [x29, #-0x38]
+0xa9a72a0: mov      x19, x0
+0xa9a72a4: cbz      x8, #0xa9a7378
+0xa9a72a8: mov      x0, x8
+0xa9a72ac: bl       #0x8a8eb0c
+0xa9a72b0: b        #0xa9a7378
+0xa9a72b4: bl       #0x5bfb020
+0xa9a72b8: b        #0xa9a7374
+0xa9a72bc: ldr      x8, [sp, #0x10]
+0xa9a72c0: mov      x19, x0
+0xa9a72c4: cbz      x8, #0xa9a756c
+0xa9a72c8: mov      x0, x8
+0xa9a72cc: bl       #0x8a8eb0c
+0xa9a72d0: b        #0xa9a756c
+0xa9a72d4: bl       #0x5bfb020
+0xa9a72d8: bl       #0x5bfb020
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a78bc", "add_va": "0xa9a78c4", "distance": 2}
+0xa9a785c: csel     x24, x8, x9, eq
+0xa9a7860: cbz      x20, #0xa9a78e0
+0xa9a7864: ldr      x8, [x20, #0x18]
+0xa9a7868: str      x8, [sp, #0x28]
+0xa9a786c: add      x8, sp, #0x38
+0xa9a7870: add      x0, sp, #0x28
+0xa9a7874: bl       #0x8be2f20
+0xa9a7878: ldr      w8, [sp, #0x40]
+0xa9a787c: cbz      w8, #0xa9a78f4
+0xa9a7880: ldr      x26, [sp, #0x38]
+0xa9a7884: ldr      x0, [x19, #8]
+0xa9a7888: cbnz     x0, #0xa9a7904
+0xa9a788c: b        #0xa9a7938
+0xa9a7890: cbnz     w10, #0xa9a7a08
+0xa9a7894: cmp      w9, #3
+0xa9a7898: b.lo     #0xa9a7a08
+0xa9a789c: ldr      x8, [x8, #8]
+0xa9a78a0: stur     x8, [x29, #-0x20]
+0xa9a78a4: ldr      w8, [x24, #8]
+0xa9a78a8: ldr      x9, [x24]
+0xa9a78ac: cmp      w8, #0
+0xa9a78b0: adrp     x8, #0x3f7e000
+0xa9a78b4: add      x8, x8, #0x366
+0xa9a78b8: csel     x5, x8, x9, eq
+0xa9a78bc: adrp     x0, #0x4196000
+0xa9a78c0: adrp     x4, #0x3c02000
+0xa9a78c4: add      x0, x0, #0xfb8
+0xa9a78c8: add      x4, x4, #0x7ee
+0xa9a78cc: sub      x2, x29, #0x20
+0xa9a78d0: mov      w1, #0x4a5
+0xa9a78d4: mov      w3, #3
+0xa9a78d8: bl       #0x8ae2b7c
+0xa9a78dc: b        #0xa9a7a08
+0xa9a78e0: adrp     x26, #0x385c000
+0xa9a78e4: add      x26, x26, #0xc50
+0xa9a78e8: ldr      x0, [x19, #8]
+0xa9a78ec: cbnz     x0, #0xa9a7904
+0xa9a78f0: b        #0xa9a7938
+0xa9a78f4: adrp     x26, #0x3f7e000
+0xa9a78f8: add      x26, x26, #0x366
+0xa9a78fc: ldr      x0, [x19, #8]
+0xa9a7900: cbz      x0, #0xa9a7938
+0xa9a7904: ldr      x8, [x0]
+0xa9a7908: ldr      x8, [x8, #0x18]
+0xa9a790c: blr      x8
+0xa9a7910: tbz      w0, #0, #0xa9a7938
+0xa9a7914: ldr      x0, [x19, #8]
+0xa9a7918: ldr      x8, [x0]
+0xa9a791c: ldr      x9, [x8, #0x20]
+0xa9a7920: add      x8, sp, #0x28
+0xa9a7924: blr      x9
+0xa9a7928: ldr      w8, [sp, #0x30]
+0xa9a792c: cbz      w8, #0xa9a7948
+0xa9a7930: ldr      x7, [sp, #0x28]
+0xa9a7934: b        #0xa9a7950
+0xa9a7938: adrp     x7, #0x3e41000
+0xa9a793c: mov      w19, wzr
+0xa9a7940: add      x7, x7, #0x10e
+0xa9a7944: b        #0xa9a7954
+0xa9a7948: adrp     x7, #0x3f7e000
+0xa9a794c: add      x7, x7, #0x366
+0xa9a7950: mov      w19, #1
+0xa9a7954: adrp     x0, #0x4196000
+0xa9a7958: adrp     x4, #0x3eb2000
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a7954", "add_va": "0xa9a795c", "distance": 2}
+0xa9a78f4: adrp     x26, #0x3f7e000
+0xa9a78f8: add      x26, x26, #0x366
+0xa9a78fc: ldr      x0, [x19, #8]
+0xa9a7900: cbz      x0, #0xa9a7938
+0xa9a7904: ldr      x8, [x0]
+0xa9a7908: ldr      x8, [x8, #0x18]
+0xa9a790c: blr      x8
+0xa9a7910: tbz      w0, #0, #0xa9a7938
+0xa9a7914: ldr      x0, [x19, #8]
+0xa9a7918: ldr      x8, [x0]
+0xa9a791c: ldr      x9, [x8, #0x20]
+0xa9a7920: add      x8, sp, #0x28
+0xa9a7924: blr      x9
+0xa9a7928: ldr      w8, [sp, #0x30]
+0xa9a792c: cbz      w8, #0xa9a7948
+0xa9a7930: ldr      x7, [sp, #0x28]
+0xa9a7934: b        #0xa9a7950
+0xa9a7938: adrp     x7, #0x3e41000
+0xa9a793c: mov      w19, wzr
+0xa9a7940: add      x7, x7, #0x10e
+0xa9a7944: b        #0xa9a7954
+0xa9a7948: adrp     x7, #0x3f7e000
+0xa9a794c: add      x7, x7, #0x366
+0xa9a7950: mov      w19, #1
+0xa9a7954: adrp     x0, #0x4196000
+0xa9a7958: adrp     x4, #0x3eb2000
+0xa9a795c: add      x0, x0, #0xfb8
+0xa9a7960: add      x4, x4, #0xe6a
+0xa9a7964: sub      x2, x29, #0x28
+0xa9a7968: mov      w1, #0x4ac
+0xa9a796c: mov      w3, #5
+0xa9a7970: mov      x5, x24
+0xa9a7974: mov      x6, x26
+0xa9a7978: bl       #0x8ae2b7c
+0xa9a797c: cbz      w19, #0xa9a798c
+0xa9a7980: ldr      x0, [sp, #0x28]
+0xa9a7984: cbz      x0, #0xa9a798c
+0xa9a7988: bl       #0x8a8eb0c
+0xa9a798c: cbz      x20, #0xa9a799c
+0xa9a7990: ldr      x0, [sp, #0x38]
+0xa9a7994: cbz      x0, #0xa9a799c
+0xa9a7998: bl       #0x8a8eb0c
+0xa9a799c: ldur     x0, [x29, #-0x20]
+0xa9a79a0: cbz      x0, #0xa9a79a8
+0xa9a79a4: bl       #0x8a8eb0c
+0xa9a79a8: ldr      w8, [sp, #4]
+0xa9a79ac: cmp      w21, #0
+0xa9a79b0: cset     w1, ne
+0xa9a79b4: strb     w8, [x25, #0x683]
+0xa9a79b8: mov      w8, #3
+0xa9a79bc: strb     w8, [x25, #0x1a8]
+0xa9a79c0: mov      x0, x25
+0xa9a79c4: bl       #0xa4dcf54
+0xa9a79c8: cmp      w21, #2
+0xa9a79cc: b.ne     #0xa9a79e0
+0xa9a79d0: mov      w1, #1
+0xa9a79d4: mov      w2, #1
+0xa9a79d8: mov      x0, x25
+0xa9a79dc: bl       #0xa4e15f8
+0xa9a79e0: ldr      x8, [x25]
+0xa9a79e4: ldr      x8, [x8, #0xd30]
+0xa9a79e8: mov      x0, x25
+0xa9a79ec: mov      x1, x20
+0xa9a79f0: blr      x8
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a7f48", "add_va": "0xa9a7f50", "distance": 2}
+0xa9a7ee8: cmp      w9, #5
+0xa9a7eec: b.lo     #0xa9a84f8
+0xa9a7ef0: ldr      x8, [x8, #8]
+0xa9a7ef4: str      x8, [sp]
+0xa9a7ef8: ldr      x8, [x19, #0x18]
+0xa9a7efc: str      x8, [sp, #0x40]
+0xa9a7f00: add      x8, sp, #0x60
+0xa9a7f04: add      x0, sp, #0x40
+0xa9a7f08: bl       #0x8be2f20
+0xa9a7f0c: ldr      w19, [sp, #0x68]
+0xa9a7f10: ldr      x8, [x25, #0x18]
+0xa9a7f14: ldr      x20, [sp, #0x60]
+0xa9a7f18: str      x8, [sp, #0x30]
+0xa9a7f1c: add      x8, sp, #0x40
+0xa9a7f20: add      x0, sp, #0x30
+0xa9a7f24: bl       #0x8be2f20
+0xa9a7f28: ldr      w9, [sp, #0x48]
+0xa9a7f2c: ldr      x10, [sp, #0x40]
+0xa9a7f30: adrp     x8, #0x3f7e000
+0xa9a7f34: add      x8, x8, #0x366
+0xa9a7f38: cmp      w19, #0
+0xa9a7f3c: csel     x5, x8, x20, eq
+0xa9a7f40: cmp      w9, #0
+0xa9a7f44: csel     x6, x8, x10, eq
+0xa9a7f48: adrp     x0, #0x4196000
+0xa9a7f4c: adrp     x4, #0x3a26000
+0xa9a7f50: add      x0, x0, #0xfb8
+0xa9a7f54: add      x4, x4, #0x68c
+0xa9a7f58: mov      x2, sp
+0xa9a7f5c: mov      w1, #0x553
+0xa9a7f60: mov      w3, #5
+0xa9a7f64: bl       #0x8ae2b7c
+0xa9a7f68: ldr      x0, [sp, #0x40]
+0xa9a7f6c: cbz      x0, #0xa9a7f74
+0xa9a7f70: bl       #0x8a8eb0c
+0xa9a7f74: ldr      x0, [sp, #0x60]
+0xa9a7f78: cbz      x0, #0xa9a819c
+0xa9a7f7c: bl       #0x8a8eb0c
+0xa9a7f80: b        #0xa9a819c
+0xa9a7f84: mov      w22, wzr
+0xa9a7f88: cbz      x21, #0xa9a8504
+0xa9a7f8c: cbz      x19, #0xa9a8504
+0xa9a7f90: adrp     x8, #0xf5fb000
+0xa9a7f94: ldr      x8, [x8, #0x960]
+0xa9a7f98: ldr      x9, [x19]
+0xa9a7f9c: mov      x0, x19
+0xa9a7fa0: ldr      s8, [x8]
+0xa9a7fa4: ldr      x8, [x9, #0x5d0]
+0xa9a7fa8: blr      x8
+0xa9a7fac: ldr      x8, [x19]
+0xa9a7fb0: mov      w22, w0
+0xa9a7fb4: fneg     s0, s8
+0xa9a7fb8: mov      x0, x19
+0xa9a7fbc: ldr      x8, [x8, #0x868]
+0xa9a7fc0: blr      x8
+0xa9a7fc4: cmp      w0, #1
+0xa9a7fc8: stp      x0, x1, [sp, #0x20]
+0xa9a7fcc: b.ne     #0xa9a81ac
+0xa9a7fd0: bl       #0xaf4c4a4
+0xa9a7fd4: ldr      x8, [x19, #0x10]
+0xa9a7fd8: ldrsw    x9, [x0, #0x90]
+0xa9a7fdc: ldr      w10, [x8, #0x90]
+0xa9a7fe0: cmp      w9, w10
+0xa9a7fe4: b.gt     #0xa9a7ffc
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a8084", "add_va": "0xa9a808c", "distance": 2}
+0xa9a8024: cmp      w9, #5
+0xa9a8028: b.lo     #0xa9a8504
+0xa9a802c: ldr      x8, [x8, #8]
+0xa9a8030: add      x0, sp, #0x40
+0xa9a8034: str      x8, [sp, #0x30]
+0xa9a8038: ldr      x8, [x19, #0x18]
+0xa9a803c: str      x8, [sp, #0x40]
+0xa9a8040: add      x8, sp, #0x60
+0xa9a8044: bl       #0x8be2f20
+0xa9a8048: ldr      w19, [sp, #0x68]
+0xa9a804c: ldr      x8, [x25, #0x18]
+0xa9a8050: ldr      x20, [sp, #0x60]
+0xa9a8054: stur     x8, [x29, #-0x30]
+0xa9a8058: add      x8, sp, #0x40
+0xa9a805c: sub      x0, x29, #0x30
+0xa9a8060: bl       #0x8be2f20
+0xa9a8064: ldr      w9, [sp, #0x48]
+0xa9a8068: ldr      x10, [sp, #0x40]
+0xa9a806c: adrp     x8, #0x3f7e000
+0xa9a8070: add      x8, x8, #0x366
+0xa9a8074: cmp      w19, #0
+0xa9a8078: csel     x5, x8, x20, eq
+0xa9a807c: cmp      w9, #0
+0xa9a8080: csel     x6, x8, x10, eq
+0xa9a8084: adrp     x0, #0x4196000
+0xa9a8088: adrp     x4, #0x3a26000
+0xa9a808c: add      x0, x0, #0xfb8
+0xa9a8090: add      x4, x4, #0x68c
+0xa9a8094: add      x2, sp, #0x30
+0xa9a8098: mov      w1, #0x520
+0xa9a809c: mov      w3, #5
+0xa9a80a0: bl       #0x8ae2b7c
+0xa9a80a4: ldr      x0, [sp, #0x40]
+0xa9a80a8: cbz      x0, #0xa9a80b0
+0xa9a80ac: bl       #0x8a8eb0c
+0xa9a80b0: ldr      x0, [sp, #0x60]
+0xa9a80b4: cbz      x0, #0xa9a80bc
+0xa9a80b8: bl       #0x8a8eb0c
+0xa9a80bc: mov      w22, wzr
+0xa9a80c0: b        #0xa9a8504
+0xa9a80c4: adrp     x8, #0xf5fb000
+0xa9a80c8: add      x8, x8, #0x438
+0xa9a80cc: ldarb    w8, [x8]
+0xa9a80d0: tbz      w8, #0, #0xa9a8668
+0xa9a80d4: adrp     x8, #0xf5fb000
+0xa9a80d8: ldr      x1, [x8, #0x430]
+0xa9a80dc: add      x0, sp, #0x60
+0xa9a80e0: add      x2, sp, #0x40
+0xa9a80e4: mov      w3, wzr
+0xa9a80e8: mov      x4, x25
+0xa9a80ec: bl       #0xa689978
+0xa9a80f0: add      x0, sp, #0x40
+0xa9a80f4: bl       #0xabbf58c
+0xa9a80f8: add      x0, sp, #0x40
+0xa9a80fc: mov      w1, #2
+0xa9a8100: bl       #0xabbf1d8
+0xa9a8104: ldr      x8, [x19]
+0xa9a8108: ldr      x8, [x8, #0x860]
+0xa9a810c: add      x1, sp, #0x60
+0xa9a8110: add      x2, sp, #0x40
+0xa9a8114: mov      x0, x19
+0xa9a8118: blr      x8
+0xa9a811c: add      x0, sp, #0x60
+0xa9a8120: mov      x1, x23
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a8628", "add_va": "0xa9a8630", "distance": 2}
+0xa9a85c8: mov      x0, x21
+0xa9a85cc: mov      x2, x19
+0xa9a85d0: mov      w5, w22
+0xa9a85d4: bl       #0xa69cd08
+0xa9a85d8: mov      w22, w0
+0xa9a85dc: add      x0, sp, #0x60
+0xa9a85e0: bl       #0x5c780b4
+0xa9a85e4: ldur     x0, [x29, #-0x30]
+0xa9a85e8: cbz      x0, #0xa9a8504
+0xa9a85ec: bl       #0x8a8eb0c
+0xa9a85f0: b        #0xa9a8504
+0xa9a85f4: adrp     x8, #0xee95000
+0xa9a85f8: ldr      x8, [x8, #0x6a8]
+0xa9a85fc: ldr      w8, [x8]
+0xa9a8600: cbnz     w8, #0xa9a8648
+0xa9a8604: adrp     x8, #0xee97000
+0xa9a8608: ldr      x8, [x8, #0x5c8]
+0xa9a860c: ldrb     w8, [x8]
+0xa9a8610: cmp      w8, #5
+0xa9a8614: b.lo     #0xa9a8648
+0xa9a8618: adrp     x8, #0xee97000
+0xa9a861c: ldr      x8, [x8, #0x5c8]
+0xa9a8620: ldr      x8, [x8, #8]
+0xa9a8624: str      x8, [sp, #0x30]
+0xa9a8628: adrp     x0, #0x4196000
+0xa9a862c: adrp     x4, #0x3d17000
+0xa9a8630: add      x0, x0, #0xfb8
+0xa9a8634: add      x4, x4, #0xa70
+0xa9a8638: add      x2, sp, #0x30
+0xa9a863c: mov      w1, #0x575
+0xa9a8640: mov      w3, #5
+0xa9a8644: bl       #0x8ae2b7c
+0xa9a8648: ldr      w8, [x26, #8]
+0xa9a864c: ldr      x9, [x26]
+0xa9a8650: mov      w22, #1
+0xa9a8654: str      w8, [x24, #8]
+0xa9a8658: str      x9, [x24]
+0xa9a865c: ldur     x0, [x29, #-0x30]
+0xa9a8660: cbnz     x0, #0xa9a8500
+0xa9a8664: b        #0xa9a8504
+0xa9a8668: adrp     x0, #0xf5fb000
+0xa9a866c: add      x0, x0, #0x438
+0xa9a8670: bl       #0xb724a54
+0xa9a8674: cbz      w0, #0xa9a80d4
+0xa9a8678: adrp     x0, #0xf5fb000
+0xa9a867c: adrp     x1, #0x3fc9000
+0xa9a8680: add      x0, x0, #0x430
+0xa9a8684: add      x1, x1, #0xf45
+0xa9a8688: mov      w2, #1
+0xa9a868c: bl       #0x8be23c8
+0xa9a8690: adrp     x0, #0xf5fb000
+0xa9a8694: add      x0, x0, #0x438
+0xa9a8698: bl       #0xb724c40
+0xa9a869c: b        #0xa9a80d4
+0xa9a86a0: adrp     x0, #0xf5fb000
+0xa9a86a4: add      x0, x0, #0x458
+0xa9a86a8: bl       #0xb724a54
+0xa9a86ac: cbz      w0, #0xa9a81bc
+0xa9a86b0: adrp     x0, #0xf5fb000
+0xa9a86b4: adrp     x1, #0x419f000
+0xa9a86b8: add      x0, x0, #0x450
+0xa9a86bc: add      x1, x1, #0xe84
+0xa9a86c0: mov      w2, #1
+0xa9a86c4: bl       #0x8be23c8
+
+{"target": ["SpawnActorTearingDown"], "target_va": "0x398c58e", "adrp_va": "0xa9a32ec", "add_va": "0xa9a32f8", "distance": 3}
+0xa9a328c: ldr      x11, [x11, #0xb10]
+0xa9a3290: mov      w13, #0x18
+0xa9a3294: smaddl   x14, w12, w13, x11
+0xa9a3298: ldr      x15, [x14]
+0xa9a329c: sxtw     x12, w12
+0xa9a32a0: cmp      x15, x10
+0xa9a32a4: b.eq     #0xa9a338c
+0xa9a32a8: madd     x12, x12, x13, x11
+0xa9a32ac: ldr      w12, [x12, #0x10]
+0xa9a32b0: cmn      w12, #1
+0xa9a32b4: b.ne     #0xa9a3294
+0xa9a32b8: b        #0xa9a33ac
+0xa9a32bc: adrp     x8, #0xee95000
+0xa9a32c0: ldr      x8, [x8, #0x6a8]
+0xa9a32c4: mov      x26, xzr
+0xa9a32c8: ldr      w8, [x8]
+0xa9a32cc: cbnz     w8, #0xa9a2f50
+0xa9a32d0: adrp     x8, #0xee9f000
+0xa9a32d4: ldr      x8, [x8, #0xa0]
+0xa9a32d8: ldrb     w9, [x8]
+0xa9a32dc: cmp      w9, #3
+0xa9a32e0: b.lo     #0xa9a2f50
+0xa9a32e4: ldr      x8, [x8, #8]
+0xa9a32e8: adrp     x0, #0x4196000
+0xa9a32ec: adrp     x4, #0x398c000
+0xa9a32f0: add      x0, x0, #0xfb8
+0xa9a32f4: str      x8, [sp, #0x80]
+0xa9a32f8: add      x4, x4, #0x58e
+0xa9a32fc: add      x2, sp, #0x80
+0xa9a3300: mov      w1, #0x186
+0xa9a3304: b        #0xa9a2e2c
+0xa9a3308: ldr      w8, [x9]
+0xa9a330c: ldr      w9, [x9, #0x2c]
+0xa9a3310: cmp      w8, w9
+0xa9a3314: b.eq     #0xa9a33ac
+0xa9a3318: ldr      x10, [x21, #0x30]
+0xa9a331c: adrp     x11, #0xf5fb000
+0xa9a3320: add      x11, x11, #0xb48
+0xa9a3324: ldr      x12, [x11, #8]
+0xa9a3328: ldr      x10, [x10, #0x18]
+0xa9a332c: ldr      w13, [x11, #0x10]
+0xa9a3330: cmp      x12, #0
+0xa9a3334: csel     x11, x11, xzr, eq
+0xa9a3338: orr      x11, x11, x12
+0xa9a333c: lsr      x12, x10, #0x20
+0xa9a3340: add      w12, w12, w10
+0xa9a3344: sub      w13, w13, #1
+0xa9a3348: and      w12, w13, w12
+0xa9a334c: ldr      w12, [x11, w12, sxtw #2]
+0xa9a3350: cmn      w12, #1
+0xa9a3354: b.eq     #0xa9a33ac
+0xa9a3358: adrp     x11, #0xf5fb000
+0xa9a335c: ldr      x11, [x11, #0xb10]
+0xa9a3360: mov      w13, #0x18
+0xa9a3364: smaddl   x14, w12, w13, x11
+0xa9a3368: ldr      x15, [x14]
+0xa9a336c: sxtw     x12, w12
+0xa9a3370: cmp      x15, x10
+0xa9a3374: b.eq     #0xa9a338c
+0xa9a3378: madd     x12, x12, x13, x11
+0xa9a337c: ldr      w12, [x12, #0x10]
+0xa9a3380: cmn      w12, #1
+0xa9a3384: b.ne     #0xa9a3364
+0xa9a3388: b        #0xa9a33ac
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a6ddc", "add_va": "0xa9a6de8", "distance": 3}
+0xa9a6d7c: smaddl   x9, w0, w9, x8
+0xa9a6d80: cbz      x9, #0xa9a6fc0
+0xa9a6d84: sxtw     x9, w0
+0xa9a6d88: mov      w10, #0x38
+0xa9a6d8c: madd     x8, x9, x10, x8
+0xa9a6d90: ldr      x8, [x8, #0x28]
+0xa9a6d94: ldrb     w9, [x8, #0x28]
+0xa9a6d98: cbnz     w9, #0xa9a6da4
+0xa9a6d9c: ldrb     w9, [x8, #0x194]
+0xa9a6da0: cbz      w9, #0xa9a7284
+0xa9a6da4: ldrb     w8, [x8, #0x118]
+0xa9a6da8: cmp      w8, #0
+0xa9a6dac: cset     w24, eq
+0xa9a6db0: ldr      x0, [sp, #0x28]
+0xa9a6db4: cbnz     x0, #0xa9a6fd8
+0xa9a6db8: b        #0xa9a6fdc
+0xa9a6dbc: mov      x0, xzr
+0xa9a6dc0: mov      w8, wzr
+0xa9a6dc4: cmp      x0, #0
+0xa9a6dc8: add      x9, sp, #0x10
+0xa9a6dcc: csel     x9, x9, xzr, eq
+0xa9a6dd0: cbz      w8, #0xa9a6f68
+0xa9a6dd4: sxtw     x8, w8
+0xa9a6dd8: adrp     x22, #0x3f7e000
+0xa9a6ddc: adrp     x21, #0x4196000
+0xa9a6de0: orr      x23, x9, x0
+0xa9a6de4: add      x22, x22, #0x366
+0xa9a6de8: add      x21, x21, #0xfb8
+0xa9a6dec: lsl      x24, x8, #3
+0xa9a6df0: b        #0xa9a6e00
+0xa9a6df4: subs     x24, x24, #8
+0xa9a6df8: add      x23, x23, #8
+0xa9a6dfc: b.eq     #0xa9a6f64
+0xa9a6e00: ldr      x25, [x23]
+0xa9a6e04: ldr      x8, [x25, #0x10]
+0xa9a6e08: ldr      x1, [x8, #0x18]
+0xa9a6e0c: ldr      x0, [sp, #8]
+0xa9a6e10: bl       #0xaa944ec
+0xa9a6e14: tbz      w0, #0, #0xa9a6df4
+0xa9a6e18: ldr      x26, [x25, #0x10]
+0xa9a6e1c: cbz      x26, #0xa9a6df4
+0xa9a6e20: bl       #0xb08f17c
+0xa9a6e24: mov      x1, x0
+0xa9a6e28: mov      x0, x26
+0xa9a6e2c: bl       #0x8d3a0d8
+0xa9a6e30: tbz      w0, #0, #0xa9a6df4
+0xa9a6e34: mov      x0, x20
+0xa9a6e38: bl       #0xaec8bf4
+0xa9a6e3c: cbz      x0, #0xa9a6df4
+0xa9a6e40: add      x8, x0, #0xc8
+0xa9a6e44: add      x2, x0, #0xcc8
+0xa9a6e48: mov      x0, x8
+0xa9a6e4c: mov      x1, x25
+0xa9a6e50: bl       #0xaa937dc
+0xa9a6e54: ldr      w8, [x28]
+0xa9a6e58: ldrb     w9, [x27]
+0xa9a6e5c: cmp      w8, #0
+0xa9a6e60: cset     w8, ne
+0xa9a6e64: cmp      w9, #3
+0xa9a6e68: cset     w9, lo
+0xa9a6e6c: orr      w8, w8, w9
+0xa9a6e70: tbz      w0, #0, #0xa9a6f08
+0xa9a6e74: tbnz     w8, #0, #0xa9a6ecc
+0xa9a6e78: ldr      x8, [x27, #8]
+
+{"target": ["PixUtil_GameWorld_GEngine_null"], "target_va": "0x409f06a", "adrp_va": "0xcec3d28", "add_va": "0xcec3d34", "distance": 3}
+0xcec3cc8: bl       #0x5bfc08c
+0xcec3ccc: ldr      x0, [sp, #0x28]
+0xcec3cd0: lsl      x2, x27, #1
+0xcec3cd4: mov      x1, x26
+0xcec3cd8: bl       #0xd494680
+0xcec3cdc: b        #0xcec45f4
+0xcec3ce0: adrp     x2, #0x4015000
+0xcec3ce4: adrp     x3, #0x412b000
+0xcec3ce8: adrp     x5, #0x41b5000
+0xcec3cec: add      x2, x2, #0x78f
+0xcec3cf0: add      x3, x3, #0x5fb
+0xcec3cf4: add      x5, x5, #0x754
+0xcec3cf8: mov      w0, #1
+0xcec3cfc: mov      w1, #2
+0xcec3d00: mov      w4, #0x127
+0xcec3d04: bl       #0xcee8120
+0xcec3d08: mov      x19, xzr
+0xcec3d0c: stp      xzr, xzr, [x20]
+0xcec3d10: mov      w21, #1
+0xcec3d14: ldur     x20, [x29, #-0x20]
+0xcec3d18: cbnz     x20, #0xcec44c8
+0xcec3d1c: b        #0xcec4518
+0xcec3d20: adrp     x2, #0x41f9000
+0xcec3d24: adrp     x3, #0x409f000
+0xcec3d28: adrp     x5, #0x409f000
+0xcec3d2c: add      x2, x2, #0x5b8
+0xcec3d30: add      x3, x3, #0x16
+0xcec3d34: add      x5, x5, #0x6a
+0xcec3d38: mov      w0, #1
+0xcec3d3c: mov      w1, #1
+0xcec3d40: mov      w4, #0x89
+0xcec3d44: bl       #0xcee8120
+0xcec3d48: cbz      x21, #0xcec3e14
+0xcec3d4c: ldur     x8, [x29, #-0x28]
+0xcec3d50: ldp      w25, w9, [x8, #0x18]
+0xcec3d54: add      x26, x8, #0x10
+0xcec3d58: sxtw     x25, w25
+0xcec3d5c: add      w10, w25, #1
+0xcec3d60: cmp      w25, w9
+0xcec3d64: str      w10, [x8, #0x18]
+0xcec3d68: b.lt     #0xcec3d78
+0xcec3d6c: mov      x0, x26
+0xcec3d70: mov      w1, w25
+0xcec3d74: bl       #0xced51a4
+0xcec3d78: ldr      x8, [x26]
+0xcec3d7c: add      x8, x8, x25, lsl #4
+0xcec3d80: stp      x21, x19, [x8]
+0xcec3d84: cbz      x19, #0xcec3d9c
+0xcec3d88: add      x8, x19, #8
+0xcec3d8c: ldaxr    w9, [x8]
+0xcec3d90: add      w9, w9, #1
+0xcec3d94: stlxr    w10, w9, [x8]
+0xcec3d98: cbnz     w10, #0xcec3d8c
+0xcec3d9c: sub      x8, x29, #0x60
+0xcec3da0: bl       #0xce299e4
+0xcec3da4: ldur     x8, [x29, #-0x60]
+0xcec3da8: cbz      x8, #0xcec3dcc
+0xcec3dac: mov      w0, w22
+0xcec3db0: bl       #0xce2afb8
+0xcec3db4: cbz      x0, #0xcec3dcc
+0xcec3db8: ldr      d0, [x21]
+0xcec3dbc: stur     d0, [x29, #-0x78]
+0xcec3dc0: sub      x1, x29, #0x78
+0xcec3dc4: bl       #0xce354f0
+
+{"target": ["PixUtil_GameWorld_GEngine_null"], "target_va": "0x409f06a", "adrp_va": "0xcec544c", "add_va": "0xcec5458", "distance": 3}
+0xcec53ec: stp      x29, x30, [sp, #-0x20]!
+0xcec53f0: str      x19, [sp, #0x10]
+0xcec53f4: mov      x29, sp
+0xcec53f8: adrp     x8, #0xee95000
+0xcec53fc: ldr      x8, [x8, #0x6c8]
+0xcec5400: ldr      x19, [x8]
+0xcec5404: cbz      x19, #0xcec5444
+0xcec5408: bl       #0xafa5da4
+0xcec540c: ldr      x8, [x19, #0x10]
+0xcec5410: ldrsw    x9, [x0, #0x90]
+0xcec5414: ldr      w10, [x8, #0x90]
+0xcec5418: cmp      w9, w10
+0xcec541c: b.gt     #0xcec5434
+0xcec5420: ldr      x8, [x8, #0x88]
+0xcec5424: ldr      x8, [x8, x9, lsl #3]
+0xcec5428: add      x9, x0, #0x88
+0xcec542c: cmp      x8, x9
+0xcec5430: b.eq     #0xcec547c
+0xcec5434: ldr      x19, [sp, #0x10]
+0xcec5438: mov      x0, xzr
+0xcec543c: ldp      x29, x30, [sp], #0x20
+0xcec5440: ret      
+0xcec5444: adrp     x2, #0x41f9000
+0xcec5448: adrp     x3, #0x409f000
+0xcec544c: adrp     x5, #0x409f000
+0xcec5450: add      x2, x2, #0x5b8
+0xcec5454: add      x3, x3, #0x16
+0xcec5458: add      x5, x5, #0x6a
+0xcec545c: mov      w0, #1
+0xcec5460: mov      w1, #1
+0xcec5464: mov      w4, #0x89
+0xcec5468: bl       #0xcee8120
+0xcec546c: ldr      x19, [sp, #0x10]
+0xcec5470: mov      x0, xzr
+0xcec5474: ldp      x29, x30, [sp], #0x20
+0xcec5478: ret      
+0xcec547c: mov      x0, x19
+0xcec5480: ldr      x19, [sp, #0x10]
+0xcec5484: ldp      x29, x30, [sp], #0x20
+0xcec5488: b        #0xa858440
+0xcec548c: sub      sp, sp, #0x50
+0xcec5490: stp      x29, x30, [sp, #0x20]
+0xcec5494: stp      x22, x21, [sp, #0x30]
+0xcec5498: stp      x20, x19, [sp, #0x40]
+0xcec549c: add      x29, sp, #0x20
+0xcec54a0: mov      x20, x0
+0xcec54a4: mov      x19, x8
+0xcec54a8: stp      xzr, xzr, [x8]
+0xcec54ac: adrp     x1, #0x3a15000
+0xcec54b0: add      x1, x1, #0xcf4
+0xcec54b4: sub      x0, x29, #8
+0xcec54b8: mov      w2, #1
+0xcec54bc: bl       #0x8be2284
+0xcec54c0: add      x8, sp, #8
+0xcec54c4: sub      x0, x29, #8
+0xcec54c8: bl       #0xcec3724
+0xcec54cc: ldr      x8, [sp, #8]
+0xcec54d0: cbz      x8, #0xcec5500
+0xcec54d4: ldrsw    x9, [x8, #0x18]
+0xcec54d8: cbz      w9, #0xcec5528
+0xcec54dc: ldr      x21, [x8, #0x10]
+0xcec54e0: lsl      x8, x9, #4
+0xcec54e4: ldr      x9, [x21]
+0xcec54e8: cmp      x9, x20
+
+{"target": ["PixUtil_GameInstance_GEngine_null"], "target_va": "0x3ffdd6e", "adrp_va": "0xcec6048", "add_va": "0xcec6054", "distance": 3}
+0xcec5fe8: stp      x29, x30, [sp, #-0x20]!
+0xcec5fec: str      x19, [sp, #0x10]
+0xcec5ff0: mov      x29, sp
+0xcec5ff4: adrp     x8, #0xee95000
+0xcec5ff8: ldr      x8, [x8, #0x6c8]
+0xcec5ffc: ldr      x19, [x8]
+0xcec6000: cbz      x19, #0xcec6040
+0xcec6004: bl       #0xafa5da4
+0xcec6008: ldr      x8, [x19, #0x10]
+0xcec600c: ldrsw    x9, [x0, #0x90]
+0xcec6010: ldr      w10, [x8, #0x90]
+0xcec6014: cmp      w9, w10
+0xcec6018: b.gt     #0xcec6068
+0xcec601c: ldr      x8, [x8, #0x88]
+0xcec6020: ldr      x8, [x8, x9, lsl #3]
+0xcec6024: add      x9, x0, #0x88
+0xcec6028: cmp      x8, x9
+0xcec602c: b.ne     #0xcec6068
+0xcec6030: ldr      x0, [x19, #0xe08]
+0xcec6034: ldr      x19, [sp, #0x10]
+0xcec6038: ldp      x29, x30, [sp], #0x20
+0xcec603c: ret      
+0xcec6040: adrp     x2, #0x40da000
+0xcec6044: adrp     x3, #0x409f000
+0xcec6048: adrp     x5, #0x3ffd000
+0xcec604c: add      x2, x2, #0x99b
+0xcec6050: add      x3, x3, #0x16
+0xcec6054: add      x5, x5, #0xd6e
+0xcec6058: mov      w0, #1
+0xcec605c: mov      w1, #1
+0xcec6060: mov      w4, #0xa7
+0xcec6064: bl       #0xcee8120
+0xcec6068: mov      x0, xzr
+0xcec606c: ldr      x19, [sp, #0x10]
+0xcec6070: ldp      x29, x30, [sp], #0x20
+0xcec6074: ret      
+0xcec6078: stp      x29, x30, [sp, #-0x20]!
+0xcec607c: str      x19, [sp, #0x10]
+0xcec6080: mov      x29, sp
+0xcec6084: adrp     x8, #0xee95000
+0xcec6088: ldr      x8, [x8, #0x6c8]
+0xcec608c: ldr      x19, [x8]
+0xcec6090: cbz      x19, #0xcec60dc
+0xcec6094: bl       #0xafa5da4
+0xcec6098: ldr      x8, [x19, #0x10]
+0xcec609c: ldrsw    x9, [x0, #0x90]
+0xcec60a0: ldr      w10, [x8, #0x90]
+0xcec60a4: cmp      w9, w10
+0xcec60a8: b.gt     #0xcec6104
+0xcec60ac: ldr      x8, [x8, #0x88]
+0xcec60b0: ldr      x8, [x8, x9, lsl #3]
+0xcec60b4: add      x9, x0, #0x88
+0xcec60b8: cmp      x8, x9
+0xcec60bc: b.ne     #0xcec6104
+0xcec60c0: mov      x0, x19
+0xcec60c4: bl       #0xa858440
+0xcec60c8: cmp      x0, #0
+0xcec60cc: cset     w0, ne
+0xcec60d0: ldr      x19, [sp, #0x10]
+0xcec60d4: ldp      x29, x30, [sp], #0x20
+0xcec60d8: ret      
+0xcec60dc: adrp     x2, #0x41f9000
+0xcec60e0: adrp     x3, #0x409f000
+0xcec60e4: adrp     x5, #0x409f000
+
+{"target": ["PixUtil_GameWorld_GEngine_null"], "target_va": "0x409f06a", "adrp_va": "0xcec60e4", "add_va": "0xcec60f0", "distance": 3}
+0xcec6084: adrp     x8, #0xee95000
+0xcec6088: ldr      x8, [x8, #0x6c8]
+0xcec608c: ldr      x19, [x8]
+0xcec6090: cbz      x19, #0xcec60dc
+0xcec6094: bl       #0xafa5da4
+0xcec6098: ldr      x8, [x19, #0x10]
+0xcec609c: ldrsw    x9, [x0, #0x90]
+0xcec60a0: ldr      w10, [x8, #0x90]
+0xcec60a4: cmp      w9, w10
+0xcec60a8: b.gt     #0xcec6104
+0xcec60ac: ldr      x8, [x8, #0x88]
+0xcec60b0: ldr      x8, [x8, x9, lsl #3]
+0xcec60b4: add      x9, x0, #0x88
+0xcec60b8: cmp      x8, x9
+0xcec60bc: b.ne     #0xcec6104
+0xcec60c0: mov      x0, x19
+0xcec60c4: bl       #0xa858440
+0xcec60c8: cmp      x0, #0
+0xcec60cc: cset     w0, ne
+0xcec60d0: ldr      x19, [sp, #0x10]
+0xcec60d4: ldp      x29, x30, [sp], #0x20
+0xcec60d8: ret      
+0xcec60dc: adrp     x2, #0x41f9000
+0xcec60e0: adrp     x3, #0x409f000
+0xcec60e4: adrp     x5, #0x409f000
+0xcec60e8: add      x2, x2, #0x5b8
+0xcec60ec: add      x3, x3, #0x16
+0xcec60f0: add      x5, x5, #0x6a
+0xcec60f4: mov      w0, #1
+0xcec60f8: mov      w1, #1
+0xcec60fc: mov      w4, #0x89
+0xcec6100: bl       #0xcee8120
+0xcec6104: mov      w0, wzr
+0xcec6108: ldr      x19, [sp, #0x10]
+0xcec610c: ldp      x29, x30, [sp], #0x20
+0xcec6110: ret      
+0xcec6114: adrp     x8, #0xee95000
+0xcec6118: ldr      x8, [x8, #0x6c8]
+0xcec611c: ldr      x8, [x8]
+0xcec6120: cbz      x8, #0xcec6130
+0xcec6124: and      w1, w0, #1
+0xcec6128: mov      x0, x8
+0xcec612c: b        #0xae4916c
+0xcec6130: ret      
+0xcec6134: stp      x29, x30, [sp, #-0x30]!
+0xcec6138: str      x21, [sp, #0x10]
+0xcec613c: stp      x20, x19, [sp, #0x20]
+0xcec6140: mov      x29, sp
+0xcec6144: adrp     x8, #0xee95000
+0xcec6148: ldr      x8, [x8, #0x6c8]
+0xcec614c: ldr      x20, [x8]
+0xcec6150: cbz      x20, #0xcec6184
+0xcec6154: mov      x19, x0
+0xcec6158: bl       #0xafa5da4
+0xcec615c: ldr      x8, [x20, #0x10]
+0xcec6160: ldrsw    x9, [x0, #0x90]
+0xcec6164: ldr      w10, [x8, #0x90]
+0xcec6168: cmp      w9, w10
+0xcec616c: b.le     #0xcec61b0
+0xcec6170: mov      w0, wzr
+0xcec6174: ldp      x20, x19, [sp, #0x20]
+0xcec6178: ldr      x21, [sp, #0x10]
+0xcec617c: ldp      x29, x30, [sp], #0x30
+0xcec6180: ret      
+
+{"target": ["PixUtil_GameWorld_GEngine_null"], "target_va": "0x409f06a", "adrp_va": "0xcec618c", "add_va": "0xcec6198", "distance": 3}
+0xcec612c: b        #0xae4916c
+0xcec6130: ret      
+0xcec6134: stp      x29, x30, [sp, #-0x30]!
+0xcec6138: str      x21, [sp, #0x10]
+0xcec613c: stp      x20, x19, [sp, #0x20]
+0xcec6140: mov      x29, sp
+0xcec6144: adrp     x8, #0xee95000
+0xcec6148: ldr      x8, [x8, #0x6c8]
+0xcec614c: ldr      x20, [x8]
+0xcec6150: cbz      x20, #0xcec6184
+0xcec6154: mov      x19, x0
+0xcec6158: bl       #0xafa5da4
+0xcec615c: ldr      x8, [x20, #0x10]
+0xcec6160: ldrsw    x9, [x0, #0x90]
+0xcec6164: ldr      w10, [x8, #0x90]
+0xcec6168: cmp      w9, w10
+0xcec616c: b.le     #0xcec61b0
+0xcec6170: mov      w0, wzr
+0xcec6174: ldp      x20, x19, [sp, #0x20]
+0xcec6178: ldr      x21, [sp, #0x10]
+0xcec617c: ldp      x29, x30, [sp], #0x30
+0xcec6180: ret      
+0xcec6184: adrp     x2, #0x41f9000
+0xcec6188: adrp     x3, #0x409f000
+0xcec618c: adrp     x5, #0x409f000
+0xcec6190: add      x2, x2, #0x5b8
+0xcec6194: add      x3, x3, #0x16
+0xcec6198: add      x5, x5, #0x6a
+0xcec619c: mov      w0, #1
+0xcec61a0: mov      w1, #1
+0xcec61a4: mov      w4, #0x89
+0xcec61a8: bl       #0xcee8120
+0xcec61ac: b        #0xcec61c4
+0xcec61b0: ldr      x8, [x8, #0x88]
+0xcec61b4: ldr      x8, [x8, x9, lsl #3]
+0xcec61b8: add      x9, x0, #0x88
+0xcec61bc: cmp      x8, x9
+0xcec61c0: b.eq     #0xcec61d8
+0xcec61c4: mov      w0, wzr
+0xcec61c8: ldp      x20, x19, [sp, #0x20]
+0xcec61cc: ldr      x21, [sp, #0x10]
+0xcec61d0: ldp      x29, x30, [sp], #0x30
+0xcec61d4: ret      
+0xcec61d8: mov      x0, x20
+0xcec61dc: bl       #0xa858440
+0xcec61e0: cbz      x0, #0xcec6174
+0xcec61e4: mov      x20, x0
+0xcec61e8: bl       #0xaed3920
+0xcec61ec: cbz      x0, #0xcec6174
+0xcec61f0: mov      x0, x20
+0xcec61f4: bl       #0xaed3920
+0xcec61f8: ldr      x8, [x0, #0x98]
+0xcec61fc: cbz      x8, #0xcec61c4
+0xcec6200: mov      x0, x20
+0xcec6204: bl       #0xaed3920
+0xcec6208: ldr      x0, [x0, #0x98]
+0xcec620c: ldr      x8, [x0]
+0xcec6210: ldr      x8, [x8, #0x20]
+0xcec6214: blr      x8
+0xcec6218: mov      x20, x0
+0xcec621c: bl       #0xb145224
+0xcec6220: mov      x21, x0
+0xcec6224: ldr      x0, [x0, #0xf8]
+0xcec6228: cbnz     x0, #0xcec6240
+
+{"target": ["LevelActorSource"], "target_va": "0x4196fb8", "adrp_va": "0xa9a83ec", "add_va": "0xa9a8400", "distance": 5}
+0xa9a838c: ldr      q0, [x20]
+0xa9a8390: str      q0, [sp]
+0xa9a8394: ldr      x8, [x25]
+0xa9a8398: ldr      x8, [x8, #0x988]
+0xa9a839c: add      x1, sp, #0x60
+0xa9a83a0: add      x2, sp, #0x30
+0xa9a83a4: add      x3, sp, #0x10
+0xa9a83a8: mov      x4, sp
+0xa9a83ac: mov      x0, x25
+0xa9a83b0: blr      x8
+0xa9a83b4: tbnz     w0, #0, #0xa9a825c
+0xa9a83b8: adrp     x8, #0xee95000
+0xa9a83bc: ldr      x8, [x8, #0x6a8]
+0xa9a83c0: ldr      w8, [x8]
+0xa9a83c4: cbnz     w8, #0xa9a8288
+0xa9a83c8: adrp     x8, #0xee97000
+0xa9a83cc: ldr      x8, [x8, #0x5c8]
+0xa9a83d0: ldrb     w8, [x8]
+0xa9a83d4: cmp      w8, #5
+0xa9a83d8: b.lo     #0xa9a8288
+0xa9a83dc: adrp     x8, #0xee97000
+0xa9a83e0: ldr      x8, [x8, #0x5c8]
+0xa9a83e4: ldr      x8, [x8, #8]
+0xa9a83e8: str      x8, [sp]
+0xa9a83ec: adrp     x0, #0x4196000
+0xa9a83f0: adrp     x4, #0x3ba0000
+0xa9a83f4: mov      x2, sp
+0xa9a83f8: mov      w1, #0x589
+0xa9a83fc: mov      w3, #5
+0xa9a8400: add      x0, x0, #0xfb8
+0xa9a8404: add      x4, x4, #0x962
+0xa9a8408: bl       #0x8ae2b7c
+0xa9a840c: b        #0xa9a8288
+0xa9a8410: adrp     x8, #0xf5fb000
+0xa9a8414: add      x8, x8, #0x428
+0xa9a8418: ldarb    w8, [x8]
+0xa9a841c: tbz      w8, #0, #0xa9a86d8
+0xa9a8420: adrp     x8, #0xf5fb000
+0xa9a8424: ldr      x1, [x8, #0x420]
+0xa9a8428: add      x0, sp, #0x60
+0xa9a842c: add      x2, sp, #0x40
+0xa9a8430: mov      w3, wzr
+0xa9a8434: mov      x4, x25
+0xa9a8438: bl       #0xa689978
+0xa9a843c: add      x0, sp, #0x40
+0xa9a8440: bl       #0xabbf58c
+0xa9a8444: add      x0, sp, #0x40
+0xa9a8448: mov      w1, #2
+0xa9a844c: bl       #0xabbf1d8
+0xa9a8450: ldr      x8, [x19]
+0xa9a8454: ldr      x8, [x8, #0x860]
+0xa9a8458: add      x1, sp, #0x60
+0xa9a845c: add      x2, sp, #0x40
+0xa9a8460: mov      x0, x19
+0xa9a8464: blr      x8
+0xa9a8468: add      x0, sp, #0x60
+0xa9a846c: mov      x1, x23
+0xa9a8470: bl       #0xa689bdc
+0xa9a8474: ldr      q0, [x20, #0x10]
+0xa9a8478: mov      x8, sp
+0xa9a847c: add      x8, x8, #8
+0xa9a8480: str      d0, [sp]
+0xa9a8484: st1      {v0.s}[2], [x8]
+0xa9a8488: ldr      q0, [x20]
+
+DATA {"target": ["RemoveActorName"], "target_va": "0x41fd609", "storage_va": "0xd91f1a0", "type": 1027}
+0xd91f180: 0000000000000000  0x0
+0xd91f188: 0000000000000000  0x0
+0xd91f190: 0000000000000000  0x0
+0xd91f198: 0000000000000000  0x0
+0xd91f1a0: 0000000000000000  0x0
+0xd91f1a8: 0000000000000000  0x0
+0xd91f1b0: 0000000000000000  0x0
+0xd91f1b8: 0000000000000000  0x0
+0xd91f1c0: 0000000000000000  0x0
+0xd91f1c8: 0000000000000000  0x0
+0xd91f1d0: 0000000000000000  0x0
+0xd91f1d8: 0000000000000000  0x0
+0xd91f1e0: 0000000000000000  0x0
+0xd91f1e8: 0000000000000000  0x0
+0xd91f1f0: 0000000000000000  0x0
+0xd91f1f8: 0000000000000000  0x0
+
+DATA {"target": ["RemoveActorName"], "target_va": "0x41fd609", "storage_va": "0xd92c898", "type": 1027}
+0xd92c878: 0000000000000000  0x0
+0xd92c880: 0000000000000000  0x0
+0xd92c888: 0000000000000000  0x0
+0xd92c890: 0000000000000000  0x0
+0xd92c898: 0000000000000000  0x0
+0xd92c8a0: 4500000000000000  0x45
+0xd92c8a8: 0000000000000000  0x0
+0xd92c8b0: 0104020000000000  0x20401
+0xd92c8b8: 1000000000000000  0x10
+0xd92c8c0: 0000000000000000  0x0
+0xd92c8c8: 0200000000000000  0x2
+0xd92c8d0: 0c00000000000000  0xc
+0xd92c8d8: 0000000000000000  0x0
+0xd92c8e0: 4500000000000000  0x45
+0xd92c8e8: 8005000000001000  0x10000000000580
+0xd92c8f0: 0100000000000000  0x1
+
+DATA {"target": ["RemoveActorName"], "target_va": "0x41fd609", "storage_va": "0xd930d10", "type": 1027}
+0xd930cf0: 0000000000000000  0x0
+0xd930cf8: 0000000000000000  0x0
+0xd930d00: 0000000000000000  0x0
+0xd930d08: 0000000000000000  0x0
+0xd930d10: 0000000000000000  0x0
+0xd930d18: 0000000000000000  0x0
+0xd930d20: 0000000000000000  0x0
+0xd930d28: 0000000000000000  0x0
+0xd930d30: 0000000000000000  0x0
+0xd930d38: 0000000000000000  0x0
+0xd930d40: 0000000000000000  0x0
+0xd930d48: 0000000000000000  0x0
+0xd930d50: 0000000000000000  0x0
+0xd930d58: 0000000000000000  0x0
+0xd930d60: 0000000000000000  0x0
+0xd930d68: 0000000000000000  0x0
+
+DATA {"target": ["GetLevelActorsName"], "target_va": "0x418e9d0", "storage_va": "0xdbce540", "type": 1027}
+0xdbce520: 0000000000000000  0x0
+0xdbce528: 0000000000000000  0x0
+0xdbce530: 0000000000000000  0x0
+0xdbce538: 0000000000000000  0x0
+0xdbce540: 0000000000000000  0x0
+0xdbce548: 0000000000000000  0x0
+0xdbce550: 0000000000000000  0x0
+0xdbce558: 0000000000000000  0x0
+0xdbce560: 0000000000000000  0x0
+0xdbce568: 0000000000000000  0x0
+0xdbce570: 0000000000000000  0x0
+0xdbce578: 0000000000000000  0x0
+0xdbce580: 0000000000000000  0x0
+0xdbce588: 0000000000000000  0x0
+0xdbce590: 0000000000000000  0x0
+0xdbce598: 0000000000000000  0x0
+
+DATA {"target": ["GetLevelActorsName"], "target_va": "0x418e9d0", "storage_va": "0xdbd37e0", "type": 1027}
+0xdbd37c0: 0000000000000000  0x0
+0xdbd37c8: 0000000000000000  0x0
+0xdbd37d0: 0000000000000000  0x0
+0xdbd37d8: 0000000000000000  0x0
+0xdbd37e0: 0000000000000000  0x0
+0xdbd37e8: 4500000000000000  0x45
+0xdbd37f0: 0000000000000000  0x0
+0xdbd37f8: 0124020400000000  0x4022401
+0xdbd3800: 2000000000000000  0x20
+0xdbd3808: 0000000000000000  0x0
+0xdbd3810: 0400000000000000  0x4
+0xdbd3818: 0300000000000000  0x3
+0xdbd3820: 0000000000000000  0x0
+0xdbd3828: 4500000000000000  0x45
+0xdbd3830: 8005000000001000  0x10000000000580
+0xdbd3838: 0100000000000000  0x1
+
+DATA {"target": ["GetLevelActorsName"], "target_va": "0x418e9d0", "storage_va": "0xdbd7bf8", "type": 1027}
+0xdbd7bd8: 0000000000000000  0x0
+0xdbd7be0: 0000000000000000  0x0
+0xdbd7be8: 0000000000000000  0x0
+0xdbd7bf0: 0000000000000000  0x0
+0xdbd7bf8: 0000000000000000  0x0
+0xdbd7c00: 0000000000000000  0x0
+0xdbd7c08: 0000000000000000  0x0
+0xdbd7c10: 0000000000000000  0x0
+0xdbd7c18: 0000000000000000  0x0
+0xdbd7c20: 0000000000000000  0x0
+0xdbd7c28: 0000000000000000  0x0
+0xdbd7c30: 0000000000000000  0x0
+0xdbd7c38: 0000000000000000  0x0
+0xdbd7c40: 0000000000000000  0x0
+0xdbd7c48: 0000000000000000  0x0
+0xdbd7c50: 0000000000000000  0x0
+
+DATA {"target": ["AcknowledgedPawn_reflection"], "target_va": "0x406b974", "storage_va": "0xe8c6fb8", "type": 1027}
+0xe8c6f98: 0000000000000000  0x0
+0xe8c6fa0: 3005000000000000  0x530
+0xe8c6fa8: 0000000000000000  0x0
+0xe8c6fb0: 1200000000000000  0x12
+0xe8c6fb8: 0000000000000000  0x0
+0xe8c6fc0: 4500000000000000  0x45
+0xe8c6fc8: 0000000000001000  0x10000000000000
+0xe8c6fd0: 0100000000000000  0x1
+0xe8c6fd8: 0000000000000000  0x0
+0xe8c6fe0: 2805000000000000  0x528
+0xe8c6fe8: 0000000000000000  0x0
+0xe8c6ff0: 1200000000000000  0x12
+0xe8c6ff8: 0000000000000000  0x0
+0xe8c7000: 4500000000000000  0x45
+0xe8c7008: 0000000000001000  0x10000000000000
+0xe8c7010: 0100000000000000  0x1

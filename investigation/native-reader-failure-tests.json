@@ -1,0 +1,40 @@
+{
+  "Binary": {
+    "Machine": "EM_X86_64",
+    "Class": 64,
+    "Type": "ET_DYN",
+    "InterpreterSegments": [],
+    "Size": 525000,
+    "SHA256": "df8bfe30cecbb19058f7bfb2ee40d543d3d13d7424a47fac54ae7ea68b1a0ac3"
+  },
+  "Tests": [
+    {
+      "Case": "wrong-base",
+      "ADBExitCode": 0,
+      "Result": {
+        "Error": "Module base does not match libUE4.so process maps"
+      }
+    },
+    {
+      "Case": "invalid-session",
+      "ADBExitCode": 0,
+      "Result": {
+        "Error": "Session must contain 1..64 hexadecimal characters"
+      }
+    },
+    {
+      "Case": "unknown-option",
+      "ADBExitCode": 0,
+      "Result": {
+        "Error": "Usage: esp-reader PID MODULE_BASE_HEX [--once|--inventory] [--session=HEXGUID]"
+      }
+    },
+    {
+      "Case": "invalid-pid",
+      "ADBExitCode": 0,
+      "Result": {
+        "Error": "Usage: esp-reader PID MODULE_BASE_HEX [--once|--inventory] [--session=HEXGUID]"
+      }
+    }
+  ]
+}

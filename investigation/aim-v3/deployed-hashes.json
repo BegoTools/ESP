@@ -1,0 +1,14 @@
+[
+  {
+    "Path": "C:\\Users\\ahmed\\Desktop\\ESP\\dist\\ESPWorkbench.exe",
+    "Hash": "A032801B209887C3CF9CCEA103134BF59E9DBC0E98E65077A76B32D36E646B62"
+  },
+  {
+    "Path": "C:\\Users\\ahmed\\Desktop\\ESP\\dist\\native\\esp-touch.jar",
+    "Hash": "3AFB0A4D9F4C01141F19D454C900007D34678C401599F96B178DE40DAC7603BE"
+  },
+  {
+    "Path": "C:\\Users\\ahmed\\Desktop\\ESP\\native\\android-input\\build\\esp-touch.jar",
+    "Hash": "3AFB0A4D9F4C01141F19D454C900007D34678C401599F96B178DE40DAC7603BE"
+  }
+]

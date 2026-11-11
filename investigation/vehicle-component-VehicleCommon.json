@@ -1,0 +1,688 @@
+{
+  "address": "0x7beaa7fe1fe0",
+  "class": "VehicleCommonComponent",
+  "properties": [
+    {
+      "name": "VehicleHPChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x258",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c080",
+      "extra": "0x40000a6899b0"
+    },
+    {
+      "name": "OnEnergyChangeDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x268",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c100",
+      "extra": "0x40000a689b50"
+    },
+    {
+      "name": "VehicleWheelsHPChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x278",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c180",
+      "extra": "0x40000a689e90"
+    },
+    {
+      "name": "VehicleHPFuelChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x288",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c200",
+      "extra": "0x40000a689cf0"
+    },
+    {
+      "name": "OnHPPreChange",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x298",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c280",
+      "extra": "0x40000a689f50"
+    },
+    {
+      "name": "OnEnergyRunOutDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2a8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c300",
+      "extra": "0x40000a68a0f0"
+    },
+    {
+      "name": "OnEnergySupplyDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2b8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c380",
+      "extra": "0x40000a68a220"
+    },
+    {
+      "name": "OnExtraDriveDataChangeDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2c8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c400",
+      "extra": "0x40000a68a3c0"
+    },
+    {
+      "name": "UnmannedVehicleHPChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2d8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c480",
+      "extra": "0x40000a6899b0"
+    },
+    {
+      "name": "UnmannedVehicleFuelChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2e8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c500",
+      "extra": "0x40000a689b50"
+    },
+    {
+      "name": "DontDamage",
+      "type": "BoolProperty",
+      "offset": "0x2f8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c580",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "CanMaintained",
+      "type": "BoolProperty",
+      "offset": "0x2f9",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c600",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "DamageFactor",
+      "type": "MapProperty",
+      "offset": "0x300",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b2ac3a0",
+      "extra": "0x7beb7b3e8a60"
+    },
+    {
+      "name": "HPMax",
+      "type": "FloatProperty",
+      "offset": "0x350",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8ad0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "HP",
+      "type": "FloatProperty",
+      "offset": "0x354",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8b40",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ExtraDriveData",
+      "type": "StructProperty",
+      "offset": "0x358",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c680",
+      "extra": "0x40000a68a500"
+    },
+    {
+      "name": "DamageScaleMap",
+      "type": "MapProperty",
+      "offset": "0x360",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b2ac450",
+      "extra": "0x7beb7b01c780"
+    },
+    {
+      "name": "ShowHealthUI",
+      "type": "BoolProperty",
+      "offset": "0x3b0",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c800",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "WheelsHP",
+      "type": "ArrayProperty",
+      "offset": "0x3b8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c900",
+      "extra": "0x7beb7b01c880"
+    },
+    {
+      "name": "WheelsCurrentHP",
+      "type": "ArrayProperty",
+      "offset": "0x3c8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c980",
+      "extra": "0x7beb7b3e8c20"
+    },
+    {
+      "name": "CheckIgnoreVehicleBody",
+      "type": "BoolProperty",
+      "offset": "0x3d8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01ca00",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "BoneHpSetups",
+      "type": "ArrayProperty",
+      "offset": "0x3e0",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01cb00",
+      "extra": "0x7beb7b01ca80"
+    },
+    {
+      "name": "BoneHps",
+      "type": "ArrayProperty",
+      "offset": "0x3f0",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01cb80",
+      "extra": "0x7beb7b3e8c90"
+    },
+    {
+      "name": "DamageRecords",
+      "type": "ArrayProperty",
+      "offset": "0x400",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01cc80",
+      "extra": "0x7beb7b01cc00"
+    },
+    {
+      "name": "DelayDestroySeconds",
+      "type": "FloatProperty",
+      "offset": "0x410",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8d00",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "MaterialDamageConfig",
+      "type": "ArrayProperty",
+      "offset": "0x418",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01cd80",
+      "extra": "0x7beb7b01cd00"
+    },
+    {
+      "name": "UGCHUDStatus",
+      "type": "IntProperty",
+      "offset": "0x428",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8d70",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "FuelMax",
+      "type": "FloatProperty",
+      "offset": "0x438",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8de0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "Fuel",
+      "type": "FloatProperty",
+      "offset": "0x43c",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8e50",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "EnergyRunOutTipsID",
+      "type": "IntProperty",
+      "offset": "0x440",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8ec0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ShowEnergyUI",
+      "type": "BoolProperty",
+      "offset": "0x444",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01ce00",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "FuelConsumeFactor",
+      "type": "FloatProperty",
+      "offset": "0x448",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8f30",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "bUseDriverConsumeFactor",
+      "type": "BoolProperty",
+      "offset": "0x44c",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01ce80",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "EnergyType",
+      "type": "EnumProperty",
+      "offset": "0x44d",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01cf80",
+      "extra": "0x7beb7b01cf00"
+    },
+    {
+      "name": "EnergySupplyMethod",
+      "type": "IntProperty",
+      "offset": "0x450",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8fa0",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "EnergyUpdateCount",
+      "type": "IntProperty",
+      "offset": "0x454",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e9010",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "IsEnergyRegenerating",
+      "type": "BoolProperty",
+      "offset": "0x45c",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01d000",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "EnergyRegeneration",
+      "type": "ObjectProperty",
+      "offset": "0x460",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01d080",
+      "extra": "0x7beb7d8d4280"
+    },
+    {
+      "name": "FeatureTypes",
+      "type": "ArrayProperty",
+      "offset": "0x240",
+      "owner": "VehicleComponent",
+      "field": "0x40000a6545f0",
+      "extra": "0x40000a654670"
+    },
+    {
+      "name": "LuaNetSerialization",
+      "type": "StructProperty",
+      "offset": "0x1d0",
+      "owner": "LuaActorComponent",
+      "field": "0x40000a654090",
+      "extra": "0x40000a5fea10"
+    },
+    {
+      "name": "LuaFilePath",
+      "type": "StrProperty",
+      "offset": "0x220",
+      "owner": "LuaActorComponent",
+      "field": "0x40000a654020",
+      "extra": "0x40003161ad50"
+    },
+    {
+      "name": "PrimaryComponentTick",
+      "type": "StructProperty",
+      "offset": "0x30",
+      "owner": "ActorComponent",
+      "field": "0x40000a578e90",
+      "extra": "0x40000a578f10"
+    },
+    {
+      "name": "bSupportSuspendTick",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "ActorComponent",
+      "field": "0x40000a578e10",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ComponentTags",
+      "type": "ArrayProperty",
+      "offset": "0xf0",
+      "owner": "ActorComponent",
+      "field": "0x40000a578d20",
+      "extra": "0x40000a578da0"
+    },
+    {
+      "name": "bDestroyIfOnClientNoLocalControl",
+      "type": "BoolProperty",
+      "offset": "0x100",
+      "owner": "ActorComponent",
+      "field": "0x40000a578ca0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bFastCreation",
+      "type": "BoolProperty",
+      "offset": "0x101",
+      "owner": "ActorComponent",
+      "field": "0x40000a578c20",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bCallPreReplication",
+      "type": "BoolProperty",
+      "offset": "0x101",
+      "owner": "ActorComponent",
+      "field": "0x40000a578ba0",
+      "extra": "0x2020001"
+    },
+    {
+      "name": "bNeedDeferCreatePhysicsState",
+      "type": "BoolProperty",
+      "offset": "0x101",
+      "owner": "ActorComponent",
+      "field": "0x40000a578b20",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "NetUpdateFrequency",
+      "type": "FloatProperty",
+      "offset": "0x104",
+      "owner": "ActorComponent",
+      "field": "0x40000a578ab0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "AssetUserData",
+      "type": "ArrayProperty",
+      "offset": "0x110",
+      "owner": "ActorComponent",
+      "field": "0x40000a5789b0",
+      "extra": "0x40000a578a30"
+    },
+    {
+      "name": "bReplicates",
+      "type": "BoolProperty",
+      "offset": "0x120",
+      "owner": "ActorComponent",
+      "field": "0x40000a578930",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bNetAddressable",
+      "type": "BoolProperty",
+      "offset": "0x120",
+      "owner": "ActorComponent",
+      "field": "0x40000a5788b0",
+      "extra": "0x20200001"
+    },
+    {
+      "name": "bAutoActivate",
+      "type": "BoolProperty",
+      "offset": "0x12a",
+      "owner": "ActorComponent",
+      "field": "0x40000a578830",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "bIsActive",
+      "type": "BoolProperty",
+      "offset": "0x12a",
+      "owner": "ActorComponent",
+      "field": "0x40000a5787b0",
+      "extra": "0x8080001"
+    },
+    {
+      "name": "bEditableWhenInherited",
+      "type": "BoolProperty",
+      "offset": "0x12a",
+      "owner": "ActorComponent",
+      "field": "0x40000a578730",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bCanEverAffectNavigation",
+      "type": "BoolProperty",
+      "offset": "0x12c",
+      "owner": "ActorComponent",
+      "field": "0x40000a5786b0",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bIsEditorOnly",
+      "type": "BoolProperty",
+      "offset": "0x12c",
+      "owner": "ActorComponent",
+      "field": "0x40000a578630",
+      "extra": "0x8080001"
+    },
+    {
+      "name": "bIsClientOnly",
+      "type": "BoolProperty",
+      "offset": "0x12c",
+      "owner": "ActorComponent",
+      "field": "0x40000a5785b0",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bIsDSOnly",
+      "type": "BoolProperty",
+      "offset": "0x12c",
+      "owner": "ActorComponent",
+      "field": "0x40000a578530",
+      "extra": "0x20200001"
+    },
+    {
+      "name": "bRelevantForNetworkReplays",
+      "type": "BoolProperty",
+      "offset": "0x12c",
+      "owner": "ActorComponent",
+      "field": "0x40000a5784b0",
+      "extra": "0x40400001"
+    },
+    {
+      "name": "CreationMethod",
+      "type": "EnumProperty",
+      "offset": "0x12e",
+      "owner": "ActorComponent",
+      "field": "0x40000a578350",
+      "extra": "0x40000a578430"
+    },
+    {
+      "name": "UCSModifiedProperties",
+      "type": "ArrayProperty",
+      "offset": "0x130",
+      "owner": "ActorComponent",
+      "field": "0x40000a578040",
+      "extra": "0x40000a5780c0"
+    },
+    {
+      "name": "OnComponentActivated",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x148",
+      "owner": "ActorComponent",
+      "field": "0x40000a577fc0",
+      "extra": "0x40000a55cbf0"
+    },
+    {
+      "name": "OnComponentDeactivated",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x158",
+      "owner": "ActorComponent",
+      "field": "0x40000a577f40",
+      "extra": "0x40000a55ceb0"
+    }
+  ],
+  "selected": [
+    {
+      "name": "VehicleHPChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x258",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c080",
+      "extra": "0x40000a6899b0",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "VehicleWheelsHPChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x278",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c180",
+      "extra": "0x40000a689e90",
+      "raw_value": "409e7735eb7b00000100000004000000"
+    },
+    {
+      "name": "VehicleHPFuelChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x288",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c200",
+      "extra": "0x40000a689cf0",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "OnHPPreChange",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x298",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c280",
+      "extra": "0x40000a689f50",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "UnmannedVehicleHPChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2d8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c480",
+      "extra": "0x40000a6899b0",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "UnmannedVehicleFuelChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2e8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c500",
+      "extra": "0x40000a689b50",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "HPMax",
+      "type": "FloatProperty",
+      "offset": "0x350",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8ad0",
+      "extra": "0x400031616628",
+      "raw_value": "00c0c1446e6e92440000000000000000",
+      "value": 1550.0
+    },
+    {
+      "name": "HP",
+      "type": "FloatProperty",
+      "offset": "0x354",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8b40",
+      "extra": "0x400031616628",
+      "raw_value": "6e6e92440000000000000000c0667735",
+      "value": 1171.450927734375
+    },
+    {
+      "name": "ShowHealthUI",
+      "type": "BoolProperty",
+      "offset": "0x3b0",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c800",
+      "extra": "0xff010001",
+      "raw_value": "010000000000000000a6b9a7ea7b0000"
+    },
+    {
+      "name": "WheelsHP",
+      "type": "ArrayProperty",
+      "offset": "0x3b8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c900",
+      "extra": "0x7beb7b01c880",
+      "raw_value": "00a6b9a7ea7b00000400000004000000"
+    },
+    {
+      "name": "WheelsCurrentHP",
+      "type": "ArrayProperty",
+      "offset": "0x3c8",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01c980",
+      "extra": "0x7beb7b3e8c20",
+      "raw_value": "60cdbe57eb7b00000400000004000000"
+    },
+    {
+      "name": "BoneHpSetups",
+      "type": "ArrayProperty",
+      "offset": "0x3e0",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01cb00",
+      "extra": "0x7beb7b01ca80",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "BoneHps",
+      "type": "ArrayProperty",
+      "offset": "0x3f0",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01cb80",
+      "extra": "0x7beb7b3e8c90",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "FuelMax",
+      "type": "FloatProperty",
+      "offset": "0x438",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8de0",
+      "extra": "0x400031616628",
+      "raw_value": "8096184a8096184a40a1070001000000",
+      "value": 2500000.0
+    },
+    {
+      "name": "Fuel",
+      "type": "FloatProperty",
+      "offset": "0x43c",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8e50",
+      "extra": "0x40003161b530",
+      "raw_value": "8096184a40a10700010000000000803f",
+      "value": 2500000.0
+    },
+    {
+      "name": "FuelConsumeFactor",
+      "type": "FloatProperty",
+      "offset": "0x448",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b3e8f30",
+      "extra": "0x40003161b530",
+      "raw_value": "0000803f00000000030000002c010000",
+      "value": 1.0
+    },
+    {
+      "name": "EnergyType",
+      "type": "EnumProperty",
+      "offset": "0x44d",
+      "owner": "VehicleCommonComponent",
+      "field": "0x7beb7b01cf80",
+      "extra": "0x7beb7b01cf00",
+      "raw_value": "000000030000002c0100005535024600"
+    },
+    {
+      "name": "FeatureTypes",
+      "type": "ArrayProperty",
+      "offset": "0x240",
+      "owner": "VehicleComponent",
+      "field": "0x40000a6545f0",
+      "extra": "0x40000a654670",
+      "raw_value": "00000000000000000000000000000000"
+    }
+  ],
+  "pages_read": 231
+}

@@ -1,0 +1,351 @@
+{
+  "SpawnActor failed": [
+    {
+      "va": "0x381090e",
+      "start": "0x381090e",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "SpawnActor failed because the given transform (%s) is invalid"
+    },
+    {
+      "va": "0x384f830",
+      "start": "0x384f830",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "SpawnActor failed because %s is not an actor class"
+    },
+    {
+      "va": "0x394c0b2",
+      "start": "0x394c0b2",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "SpawnActor failed because we are running a ConstructionScript (%s)"
+    },
+    {
+      "va": "0x394c138",
+      "start": "0x394c138",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "SpawnActor failed because the spawned actor %s IsPendingKill"
+    },
+    {
+      "va": "0x398c4f2",
+      "start": "0x398c4f2",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "SpawnActor failed because template class (%s) does not match spawn class (%s)"
+    },
+    {
+      "va": "0x398c58e",
+      "start": "0x398c58e",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "SpawnActor failed because we are in the process of tearing down the world"
+    },
+    {
+      "va": "0x3a264c6",
+      "start": "0x3a26460",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "USTExtraVehicleUtils::SpawnVehicleInFrontOfActor - SpawnActor failed, VehicleID: %d, Path: %s"
+    },
+    {
+      "va": "0x3c40d1e",
+      "start": "0x3c40d1e",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "SpawnActor failed because no class was specified"
+    },
+    {
+      "va": "0x39d58b8",
+      "start": "0x39d58b8",
+      "encoding": "utf-16le",
+      "xor": 200,
+      "text": "SpawnActor failed because of collision at the spawn location [%s] for [%s]"
+    }
+  ],
+  "Actors.Add": [],
+  "Actors.Remove": [],
+  "AddActor": [
+    {
+      "va": "0x409dfe3",
+      "start": "0x409dfe3",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "AddActorToRecord"
+    },
+    {
+      "va": "0x410df83",
+      "start": "0x410df80",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "K2_AddActorLocalTransform"
+    },
+    {
+      "va": "0x412a077",
+      "start": "0x412a077",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "AddActorData"
+    },
+    {
+      "va": "0x4197204",
+      "start": "0x4197201",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "K2_AddActorWorldOffset"
+    },
+    {
+      "va": "0x41bb3bf",
+      "start": "0x41bb3bf",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "AddActorMask"
+    },
+    {
+      "va": "0x42089d9",
+      "start": "0x42089d6",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "K2_AddActorWorldTransform"
+    },
+    {
+      "va": "0x421eeed",
+      "start": "0x421eeea",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "K2_AddActorLocalOffset"
+    },
+    {
+      "va": "0x41552bc",
+      "start": "0x41552b9",
+      "encoding": "utf-8",
+      "xor": 200,
+      "text": "K2_AddActorLocalRotation"
+    },
+    {
+      "va": "0x41e2a6c",
+      "start": "0x41e2a69",
+      "encoding": "utf-8",
+      "xor": 200,
+      "text": "K2_AddActorWorldRotation"
+    },
+    {
+      "va": "0x387b9ac",
+      "start": "0x387b9a0",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "Actor.AddActorLocalOffset"
+    },
+    {
+      "va": "0x38f99e6",
+      "start": "0x38f99da",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "Actor.AddActorLocalTranslation"
+    },
+    {
+      "va": "0x393a372",
+      "start": "0x393a366",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "Actor.AddActorLocalTransform"
+    },
+    {
+      "va": "0x39fa0e6",
+      "start": "0x39fa0d4",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "Actor.K2_AddActorLocalTransform"
+    },
+    {
+      "va": "0x3a660da",
+      "start": "0x3a660da",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "AddActorMask"
+    },
+    {
+      "va": "0x3af0ad6",
+      "start": "0x3af0ac4",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "Actor.K2_AddActorLocalOffset"
+    },
+    {
+      "va": "0x3ceb124",
+      "start": "0x3ceb118",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "Actor.AddActorWorldTransform"
+    },
+    {
+      "va": "0x3ea0a54",
+      "start": "0x3ea0a48",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "Actor.AddActorWorldRotation"
+    },
+    {
+      "va": "0x3df2146",
+      "start": "0x3df2134",
+      "encoding": "utf-16le",
+      "xor": 200,
+      "text": "Actor.K2_AddActorLocalRotation"
+    },
+    {
+      "va": "0x3df2184",
+      "start": "0x3df2172",
+      "encoding": "utf-16le",
+      "xor": 200,
+      "text": "Actor.K2_AddActorWorldTransform"
+    }
+  ],
+  "RemoveActor": [
+    {
+      "va": "0x3fc0611",
+      "start": "0x3fc0611",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "RemoveActorMask"
+    },
+    {
+      "va": "0x402d727",
+      "start": "0x402d727",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "RemoveActorTagEventNode"
+    },
+    {
+      "va": "0x4086990",
+      "start": "0x4086990",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "RemoveActorData"
+    },
+    {
+      "va": "0x41fd609",
+      "start": "0x41fd609",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "RemoveActor"
+    },
+    {
+      "va": "0x3e93024",
+      "start": "0x3e93024",
+      "encoding": "utf-16le",
+      "xor": 200,
+      "text": "RemoveActorMask"
+    }
+  ],
+  "LevelActor": [
+    {
+      "va": "0x3fbed70",
+      "start": "0x3fbed65",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "PullDynamicLevelActors"
+    },
+    {
+      "va": "0x3fdab79",
+      "start": "0x3fdab6c",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "OverlappedSubLevelActorArray"
+    },
+    {
+      "va": "0x400e0b4",
+      "start": "0x400e075",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "D:\\Release4.6.0\\AS\\UE4181\\Engine\\Source\\Runtime\\Engine\\Private\\LevelActorContainer.cpp"
+    },
+    {
+      "va": "0x411eb83",
+      "start": "0x411eb7e",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "CheckLevelActorsOvertime"
+    },
+    {
+      "va": "0x418e9d3",
+      "start": "0x418e9d0",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "GetLevelActors"
+    },
+    {
+      "va": "0x41913f5",
+      "start": "0x41913ef",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "UnLoadLevelActorCollection"
+    },
+    {
+      "va": "0x4196ff7",
+      "start": "0x4196fb8",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "D:\\Release4.6.0\\AS\\UE4181\\Engine\\Source\\Runtime\\Engine\\Private\\LevelActor.cpp"
+    },
+    {
+      "va": "0x41b6e40",
+      "start": "0x41b6e40",
+      "encoding": "utf-8",
+      "xor": 0,
+      "text": "LevelActors"
+    },
+    {
+      "va": "0x3a6bae0",
+      "start": "0x3a6bab8",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "net.NetUpdateVisibleLevelActors"
+    },
+    {
+      "va": "0x3d21694",
+      "start": "0x3d21642",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "0 or 1 Disable or Enable NetUpdateVisibleLevelActors"
+    },
+    {
+      "va": "0x3d3b1d6",
+      "start": "0x3d3b1d0",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "LogLevelActorContainer"
+    },
+    {
+      "va": "0x3d7bdde",
+      "start": "0x3d7bdce",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "Created LevelActorCluster (%d) for %s with %d objects, %d referenced clusters and %d mutable objects."
+    },
+    {
+      "va": "0x3e370c2",
+      "start": "0x3e370c0",
+      "encoding": "utf-16le",
+      "xor": 0,
+      "text": "ULevelActorContainer"
+    },
+    {
+      "va": "0x3e952ac",
+      "start": "0x3e952a0",
+      "encoding": "utf-16le",
+      "xor": 200,
+      "text": "UnLoadLevelActorCollection"
+    }
+  ],
+  "Level Actors": [],
+  "GetActorCount": [
+    {
+      "va": "0x4022b27",
+      "start": "0x4022b27",
+      "encoding": "utf-8",
+      "xor": 200,
+      "text": "GetActorCount"
+    }
+  ]
+}

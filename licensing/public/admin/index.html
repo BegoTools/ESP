@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>إدارة تراخيص SpectraVision</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="9" r="4"/><path d="m11 12 8 8 2-2-2-2 2-2-2-2-2 2-4-4"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="10" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="3" y="17" width="7" height="4" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s7-3 7-10V5l-7-3-7 3v7c0 7 7 10 7 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-device" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 5 5"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2 12h5l3-7 4 14 3-7h5"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M11 4a1.15 1.15 0 0 1 2 0l8 14a1.15 1.15 0 0 1-1 2H4a1.15 1.15 0 0 1-1-2Z"/><path d="M12 9v4m0 3h.01"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-12h-7z"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M3 6h1m-1 6h1m-1 6h1"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-exit" viewBox="0 0 24 24"><path d="M11 4H5v16h6m3-12 4 4-4 4m-5-4h9"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 20v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/></symbol>
+  </svg>
+
+  <main id="auth-screen" class="auth-screen">
+    <div class="auth-card card">
+      <div class="brand">
+        <span class="brand-mark"><svg><use href="#i-key"/></svg></span>
+        <div><strong>SpectraVision</strong><small>إدارة التراخيص</small></div>
+      </div>
+      <form id="login" class="fields" method="post" hidden>
+        <div><h1>تسجيل الدخول</h1><p class="muted">ادخل على لوحة إدارة الأكواد والأجهزة.</p></div>
+        <label>الإيميل <input id="login-email" type="email" dir="ltr" required maxlength="254" autocomplete="username"></label>
+        <label>الباسورد <input id="login-password" type="password" dir="ltr" required maxlength="128" autocomplete="current-password"></label>
+        <button type="submit" class="button primary">دخول</button>
+      </form>
+      <form id="setup" class="fields" method="post" hidden>
+        <div><h1>إعداد حساب الإدارة</h1><p class="muted">على جهاز النشر، شغّل <bdi>Open-License-Admin.cmd</bdi> والصق مفتاح الإعداد في الخانة.</p></div>
+        <label>مفتاح الإعداد <input id="setup-key" type="password" dir="ltr" required pattern="[a-f0-9]{64}" autocomplete="off"></label>
+        <label>الإيميل <input id="setup-email" type="email" dir="ltr" required maxlength="254" autocomplete="username"></label>
+        <label>الباسورد <input id="setup-password" type="password" dir="ltr" required minlength="15" maxlength="128" autocomplete="new-password"></label>
+        <label>تأكيد الباسورد <input id="setup-confirm" type="password" dir="ltr" required minlength="15" maxlength="128" autocomplete="new-password"></label>
+        <p class="muted">استخدم ١٥ حرفًا على الأقل.</p>
+        <button type="submit" class="button primary">إنشاء حساب الإدارة</button>
+      </form>
+      <p id="auth-status" class="message" role="status">جاري تحميل لوحة الإدارة…</p>
+    </div>
+  </main>
+
+  <div id="panel" class="shell" hidden>
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark"><svg><use href="#i-key"/></svg></span>
+        <div><strong>SpectraVision</strong><small>إدارة التراخيص</small></div>
+      </div>
+      <div class="sidebar-session"><span>جلسة الإدارة</span><span class="dot"></span></div>
+      <nav aria-label="أقسام لوحة الإدارة">
+        <a href="#overview" data-view="overview"><svg><use href="#i-grid"/></svg>لوحة المؤشرات</a>
+        <a href="#generator" data-view="generator"><svg><use href="#i-key"/></svg>توليد الأكواد</a>
+        <a href="#licenses" data-view="licenses"><svg><use href="#i-shield"/></svg>إدارة التراخيص</a>
+        <a href="#devices" data-view="devices"><svg><use href="#i-device"/></svg>الأجهزة المرتبطة</a>
+      </nav>
+      <div class="sidebar-metrics">
+        <div><span>الأكواد المتاحة</span><strong class="mono" id="sidebar-available">—</strong></div>
+        <meter id="sidebar-meter" min="0" max="1" value="0" aria-label="نسبة الأكواد المتاحة"></meter>
+        <div><span>إجمالي الأكواد</span><strong class="mono" id="sidebar-total">—</strong></div>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <form id="search" role="search" class="search">
+          <svg aria-hidden="true"><use href="#i-search"/></svg>
+          <input id="search-text" type="search" maxlength="100" placeholder="بحث سريع عن الأكواد…" aria-label="بحث سريع" enterkeyhint="search">
+          <kbd dir="ltr">Ctrl K</kbd>
+        </form>
+        <div class="topbar-account">
+          <span class="badge green session-badge"><span class="dot"></span>متصل</span>
+          <span class="badge topbar-metric">الأكواد المتاحة <bdi class="mono" data-stat="available">—</bdi></span>
+          <span class="avatar"><svg><use href="#i-user"/></svg></span>
+          <div class="account-details"><strong id="account-email" dir="ltr"></strong><small>مدير اللوحة</small></div>
+          <button id="logout" class="button quiet icon-button" type="button" aria-label="تسجيل الخروج" title="تسجيل الخروج"><svg><use href="#i-exit"/></svg></button>
+        </div>
+      </header>
+
+      <main class="content">
+        <p id="status" class="message" role="status"></p>
+
+        <section id="view-overview" class="view" aria-labelledby="overview-title">
+          <div class="hero">
+            <div><p class="eyebrow">لوحة إدارة SpectraVision</p><h1 id="overview-title">أهلًا بيك في لوحة التحكم</h1><p>تابع الأكواد والأجهزة المرتبطة بيها، واصدر تراخيص جديدة من مكان واحد.</p></div>
+            <a class="button primary" href="#generator"><svg><use href="#i-key"/></svg>إنشاء كود جديد</a>
+          </div>
+
+          <div class="metrics">
+            <article class="metric purple"><span class="tile-icon"><svg><use href="#i-key"/></svg></span><span>إجمالي الأكواد</span><strong class="mono" data-stat="total">—</strong><small>كل التراخيص المسجلة</small></article>
+            <article class="metric mint"><span class="tile-icon"><svg><use href="#i-shield"/></svg></span><span>الأكواد المتاحة</span><strong class="mono" data-stat="available">—</strong><small>أكواد قابلة للاستخدام</small></article>
+            <article class="metric cyan"><span class="tile-icon"><svg><use href="#i-device"/></svg></span><span>الأجهزة المرتبطة</span><strong class="mono" data-stat="linked">—</strong><small>الارتباطات المسجلة</small></article>
+            <article class="metric rose"><span class="tile-icon"><svg><use href="#i-alert"/></svg></span><span>الأكواد غير المتاحة</span><strong class="mono" data-stat="inactive">—</strong><small>أكواد موقوفة أو منتهية</small></article>
+          </div>
+
+          <div class="columns overview-columns">
+            <section class="card">
+              <div class="card-head"><span class="dot"></span><div><h2>آخر نشاط تفعيل</h2><p>أحدث الأجهزة المرتبطة بالأكواد.</p></div></div>
+              <div id="recent-devices" class="activity-list"></div>
+              <a class="text-link" href="#devices">عرض الأجهزة المرتبطة ←</a>
+            </section>
+            <section class="card quick">
+              <div class="card-head"><span class="tile-icon purple"><svg><use href="#i-bolt"/></svg></span><div><h2>مولّد كود سريع</h2><p>اختار المدة وكمل بيانات الكود.</p></div></div>
+              <div class="quick-options">
+                <button type="button" data-quick-days="1"><strong>يوم واحد</strong><small>تجربة قصيرة</small></button>
+                <button type="button" data-quick-days="7"><strong>٧ أيام</strong><small>ترخيص أسبوعي</small></button>
+                <button type="button" data-quick-days="30"><strong>٣٠ يوم</strong><small>ترخيص شهري</small></button>
+              </div>
+              <a href="#generator" class="button accent"><svg><use href="#i-bolt"/></svg>افتح مولّد الأكواد</a>
+            </section>
+          </div>
+
+          <section class="card table-card">
+            <div class="card-head table-head"><div><h2>أحدث الأكواد</h2><p>آخر التراخيص اللي تم إصدارها.</p></div><a class="button quiet" href="#licenses">عرض كل الأكواد</a></div>
+            <div id="recent-licenses" class="table-scroll"></div>
+          </section>
+        </section>
+
+        <section id="view-generator" class="view" aria-labelledby="generator-title" hidden>
+          <div class="hero">
+            <div><p class="eyebrow">إصدار التراخيص</p><h1 id="generator-title">مولّد الأكواد والتراخيص</h1><p>حدد عدد الأجهزة والصلاحية لإنشاء كود تفعيل جديد.</p></div>
+          </div>
+          <div class="columns generator-columns">
+            <form id="issue" class="card fields">
+              <div class="card-head"><span class="tile-icon purple"><svg><use href="#i-key"/></svg></span><div><h2>توليد كود جديد</h2><p>بيانات الترخيص</p></div></div>
+              <label>اسم المستخدم أو وصف الكود <input name="label" maxlength="100" required placeholder="مثال: اشتراك شهري"></label>
+              <div class="field-section">
+                <h3>عدد الأجهزة المسموح بها</h3>
+                <label>حد الأجهزة <input name="limit" type="number" dir="ltr" min="1" max="100" value="1" required></label>
+              </div>
+              <div class="field-section fields">
+                <h3>تاريخ ومدة الصلاحية</h3>
+                <label>طريقة الانتهاء <select name="mode"><option value="days">مدة من أول تفعيل</option><option value="date">تاريخ ثابت</option></select></label>
+                <div id="validity-presets" class="presets" aria-label="مدد جاهزة">
+                  <button class="button quiet" type="button" data-preset="1" aria-pressed="false">٢٤ ساعة</button>
+                  <button class="button quiet" type="button" data-preset="7" aria-pressed="false">٧ أيام</button>
+                  <button class="button quiet" type="button" data-preset="30" aria-pressed="true">٣٠ يوم</button>
+                </div>
+                <label id="days">عدد الأيام <input name="days" type="number" dir="ltr" min="1" max="3650" value="30" required></label>
+                <label id="date" hidden>تاريخ وساعة الانتهاء <input name="date" type="datetime-local" dir="ltr" disabled required></label>
+              </div>
+              <button class="button primary generate-button" type="submit"><svg><use href="#i-bolt"/></svg>توليد كود ترخيص</button>
+            </form>
+            <div class="stack">
+              <section class="card result-card">
+              <div class="card-head"><span class="tile-icon cyan"><svg><use href="#i-key"/></svg></span><div><h2>مفتاح الترخيص</h2><p>نتيجة التوليد</p></div></div>
+              <div id="result-empty" class="result-empty">
+                <span class="tile-icon cyan"><svg><use href="#i-key"/></svg></span>
+                <p>الكود الجديد هيظهر هنا بعد التوليد.</p>
+              </div>
+              <div id="issued" class="fields" hidden>
+                <p class="badge green"><span class="dot"></span>تم إصدار الكود</p>
+                <div class="key-box">
+                  <input id="code" aria-label="كود الترخيص" class="mono" readonly dir="ltr">
+                  <button id="copy" class="button quiet" type="button"><svg><use href="#i-copy"/></svg>نسخ</button>
+                </div>
+                <p class="muted">انسخ الكود واحفظه. بيظهر مرة واحدة.</p>
+              </div>
+              </section>
+              <section class="card fields">
+                <div class="card-head table-head"><h2>أحدث الأكواد</h2><a class="text-link" href="#licenses">عرض الكل</a></div>
+                <div id="generator-recent" class="activity-list"></div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+        <section id="view-licenses" class="view" aria-labelledby="licenses-title" hidden>
+          <div class="hero">
+            <div><p class="eyebrow">إدارة التراخيص</p><h1 id="licenses-title">إدارة الأكواد</h1><p>استعرض التراخيص، وعدّل الصلاحية وعدد الأجهزة من تفاصيل كل كود.</p></div>
+            <a class="button primary" href="#generator"><svg><use href="#i-key"/></svg>إنشاء كود جديد</a>
+          </div>
+          <section class="card table-card">
+            <div class="card-head table-head"><div><h2>سجل الأكواد</h2><p id="licenses-context">الأحدث أولًا</p></div><button id="licenses-clear" class="button quiet" type="button" hidden>مسح البحث</button></div>
+            <div id="licenses" class="table-scroll"></div>
+            <div class="pagination">
+              <span id="licenses-page"></span>
+              <div><button id="previous" class="button quiet" type="button" disabled>السابق</button><button id="next" class="button quiet" type="button" disabled>التالي</button></div>
+            </div>
+          </section>
+        </section>
+
+        <section id="view-devices" class="view" aria-labelledby="devices-title" hidden>
+          <div class="hero">
+            <div><p class="eyebrow">ربط الأجهزة</p><h1 id="devices-title">إدارة الأجهزة المرتبطة</h1><p>تابع الأجهزة المسجلة على التراخيص وافصل أي جهاز عند الحاجة.</p></div>
+            <a class="button quiet" href="#licenses"><svg><use href="#i-shield"/></svg>إدارة التراخيص</a>
+          </div>
+          <div class="metrics device-metrics">
+            <article class="metric purple"><span class="tile-icon"><svg><use href="#i-device"/></svg></span><span>الأجهزة المرتبطة</span><strong class="mono" data-stat="linked">—</strong></article>
+            <article class="metric cyan"><span class="tile-icon"><svg><use href="#i-shield"/></svg></span><span>الأكواد المتاحة</span><strong class="mono" data-stat="available">—</strong></article>
+            <article class="metric rose"><span class="tile-icon"><svg><use href="#i-alert"/></svg></span><span>الأكواد غير المتاحة</span><strong class="mono" data-stat="inactive">—</strong></article>
+          </div>
+          <div class="columns devices-columns">
+            <section class="card table-card">
+              <div class="card-head table-head"><div><h2>الأجهزة المسجلة</h2><p id="devices-context">الأحدث أولًا</p></div><button id="devices-clear" class="button quiet" type="button" hidden>مسح البحث</button></div>
+              <div id="devices" class="table-scroll"></div>
+              <div class="pagination">
+                <span id="devices-page"></span>
+                <div><button id="devices-previous" class="button quiet" type="button" disabled>السابق</button><button id="devices-next" class="button quiet" type="button" disabled>التالي</button></div>
+              </div>
+            </section>
+            <aside class="card device-help">
+              <div class="card-head"><span class="tile-icon purple"><svg><use href="#i-device"/></svg></span><h2>ربط الأجهزة</h2></div>
+              <p>لما تفك ربط جهاز، مكانه بيبقى متاح لجهاز تاني على نفس الكود.</p>
+              <p>ابحث باسم الترخيص أو بمعرّف الجهاز من شريط البحث.</p>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="license-dialog" class="drawer" aria-labelledby="license-title">
+    <header class="dialog-head">
+      <span class="tile-icon cyan"><svg><use href="#i-shield"/></svg></span>
+      <div><h2 id="license-title">تفاصيل الكود</h2><p id="license-id" class="mono" dir="ltr"></p></div>
+      <button id="license-close" type="button" class="button quiet icon-button" aria-label="إغلاق التفاصيل"><svg><use href="#i-close"/></svg></button>
+    </header>
+    <div class="drawer-body">
+      <section class="card fields">
+        <div class="card-head table-head"><h3 id="license-label"></h3><span id="license-badge" class="badge"></span></div>
+        <dl id="license-info" class="detail-list"></dl>
+      </section>
+      <section class="card fields">
+        <div class="card-head table-head"><h3>الأجهزة المرتبطة</h3><span id="license-slots" class="badge mono" dir="ltr"></span></div>
+        <div id="license-devices" class="activity-list"></div>
+      </section>
+      <section class="card fields">
+        <h3>إعدادات الكود</h3>
+        <div class="actions">
+          <button id="license-edit" class="button primary" type="button">تعديل الكود</button>
+          <button id="license-extend" class="button quiet" type="button">تمديد الصلاحية</button>
+          <button id="license-revoke" class="button danger" type="button">إيقاف الكود</button>
+        </div>
+      </section>
+      <p id="license-status" class="message" role="status"></p>
+    </div>
+  </dialog>
+
+  <dialog id="edit-dialog" class="modal" aria-labelledby="edit-title">
+    <form id="edit" class="fields" method="dialog">
+      <h2 id="edit-title">تعديل الكود</h2>
+      <label>الاسم أو الوصف <input name="label" maxlength="100" required></label>
+      <label>عدد الأجهزة <input name="limit" type="number" dir="ltr" min="1" max="100" required></label>
+      <label>الصلاحية <select name="mode">
+        <option value="keep">الاحتفاظ بالصلاحية الحالية</option>
+        <option value="date">تحديد تاريخ انتهاء</option>
+        <option value="days">مدة من أول تفعيل</option>
+      </select></label>
+      <label id="edit-days" hidden>عدد الأيام <input name="days" type="number" dir="ltr" min="1" max="3650" disabled required></label>
+      <label id="edit-date" hidden>تاريخ وساعة الانتهاء <input name="date" type="datetime-local" dir="ltr" disabled required></label>
+      <p id="edit-status" class="message" role="status"></p>
+      <div class="actions"><button class="button primary" type="submit">حفظ</button><button id="edit-cancel" class="button quiet" type="button">إلغاء</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="extend-dialog" class="modal" aria-labelledby="extend-title">
+    <form id="extend" class="fields" method="dialog">
+      <h2 id="extend-title">تمديد صلاحية الكود</h2>
+      <label>عدد الأيام الإضافية <input name="days" type="number" dir="ltr" min="1" max="3650" value="30" required></label>
+      <p id="extend-status" class="message" role="status"></p>
+      <div class="actions"><button class="button primary" type="submit">تمديد</button><button id="extend-cancel" class="button quiet" type="button">إلغاء</button></div>
+    </form>
+  </dialog>
+</body>
+</html>

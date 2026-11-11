@@ -1,0 +1,5136 @@
+{
+  "pid": 3418,
+  "vehicle": "0x7beaa743edb0",
+  "class_chain": [
+    {
+      "address": "0x7beb79def080",
+      "name": "BP_VH_Buggy_2_C"
+    },
+    {
+      "address": "0x7beb79def400",
+      "name": "BP_VH_Buggy_C"
+    },
+    {
+      "address": "0x7beb3b0d7880",
+      "name": "BP_STExtraWheeledVehicle_C"
+    },
+    {
+      "address": "0x7beb7d993000",
+      "name": "STExtraWheeledVehicle"
+    },
+    {
+      "address": "0x7beb7d992d80",
+      "name": "STExtraVehicleBase"
+    },
+    {
+      "address": "0x7beb7dad0f80",
+      "name": "Pawn"
+    },
+    {
+      "address": "0x7beb7e102680",
+      "name": "Actor"
+    },
+    {
+      "address": "0x7bec924c2780",
+      "name": "Object"
+    }
+  ],
+  "properties": [
+    {
+      "name": "BP_Battle_VehicleLicensePlateComponent",
+      "type": "ObjectProperty",
+      "offset": "0x2218",
+      "owner": "BP_VH_Buggy_C",
+      "field": "0x7beb3f216480",
+      "extra": "0x7beb79deb880"
+    },
+    {
+      "name": "VehicleCharacterAnimListComponentBase",
+      "type": "ObjectProperty",
+      "offset": "0x2220",
+      "owner": "BP_VH_Buggy_C",
+      "field": "0x7beb7f94b080",
+      "extra": "0x7beb7da6d600"
+    },
+    {
+      "name": "UAEChaVehAnimList_Passenger",
+      "type": "ObjectProperty",
+      "offset": "0x2228",
+      "owner": "BP_VH_Buggy_C",
+      "field": "0x7beb7f94d200",
+      "extra": "0x7beb7d7edc00"
+    },
+    {
+      "name": "UAEChaVehAnimList_driver",
+      "type": "ObjectProperty",
+      "offset": "0x2230",
+      "owner": "BP_VH_Buggy_C",
+      "field": "0x7beb3f216180",
+      "extra": "0x7beb7d7edc00"
+    },
+    {
+      "name": "UberGraphFrame",
+      "type": "StructProperty",
+      "offset": "0x21b0",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34deb500",
+      "extra": "0x7beb7bbb7780"
+    },
+    {
+      "name": "BP_VehicleMusic",
+      "type": "ObjectProperty",
+      "offset": "0x21b8",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34deb980",
+      "extra": "0x7beb3b0de500"
+    },
+    {
+      "name": "VehicleProtection",
+      "type": "ObjectProperty",
+      "offset": "0x21c0",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34decb80",
+      "extra": "0x7beb7d8bb300"
+    },
+    {
+      "name": "BP_VehicleShowFrameComp",
+      "type": "ObjectProperty",
+      "offset": "0x21c8",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34dec000",
+      "extra": "0x7beb3b0dd700"
+    },
+    {
+      "name": "VehicleAvatarComponent_BP",
+      "type": "ObjectProperty",
+      "offset": "0x21d0",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34deca80",
+      "extra": "0x7beb3b0de180"
+    },
+    {
+      "name": "Camera",
+      "type": "ObjectProperty",
+      "offset": "0x21d8",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34dec380",
+      "extra": "0x7beb7da66080"
+    },
+    {
+      "name": "vehicleSpringArm",
+      "type": "ObjectProperty",
+      "offset": "0x21e0",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34decb00",
+      "extra": "0x7beb7d96dd80"
+    },
+    {
+      "name": "IsPlayingEngineAk",
+      "type": "BoolProperty",
+      "offset": "0x21e8",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34debc80",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "TailLightParamName",
+      "type": "NameProperty",
+      "offset": "0x21f0",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb3aecd8c0",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "FrontLightParamName",
+      "type": "NameProperty",
+      "offset": "0x21f8",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb3aecd930",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "FPPBoostLightParamName",
+      "type": "NameProperty",
+      "offset": "0x2200",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb3aecdd20",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "bEngineStarted",
+      "type": "BoolProperty",
+      "offset": "0x2208",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34deb780",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "LastOverlapShakeTime",
+      "type": "FloatProperty",
+      "offset": "0x220c",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb3aece2d0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "OverlapShakeInterval",
+      "type": "FloatProperty",
+      "offset": "0x2210",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb3aece260",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bLobbyShow",
+      "type": "BoolProperty",
+      "offset": "0x2214",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34deb880",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bInvincibleProtect",
+      "type": "BoolProperty",
+      "offset": "0x2215",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34deb800",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "EnableLightEffect",
+      "type": "BoolProperty",
+      "offset": "0x2216",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34deb900",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableUpdateExhuastEffectBP",
+      "type": "BoolProperty",
+      "offset": "0x2217",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb34deb680",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "DustConfig",
+      "type": "ObjectProperty",
+      "offset": "0x1d40",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452200",
+      "extra": "0x7beb7d8c2100"
+    },
+    {
+      "name": "PSCs",
+      "type": "ArrayProperty",
+      "offset": "0x1d48",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452300",
+      "extra": "0x7beb7b452280"
+    },
+    {
+      "name": "TrailMarkClass",
+      "type": "SoftClassProperty",
+      "offset": "0x1d58",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452380",
+      "extra": "0x7beb7d69df00"
+    },
+    {
+      "name": "WeakTrailMarkActor",
+      "type": "WeakObjectProperty",
+      "offset": "0x1d80",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452400",
+      "extra": "0x7beb7d8fb580"
+    },
+    {
+      "name": "WheelVelocityVectorOffset",
+      "type": "FloatProperty",
+      "offset": "0x1d88",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497af0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "WheelUpVectorOffset",
+      "type": "FloatProperty",
+      "offset": "0x1d8c",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497b60",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "TrailMarkDurationAfterExitDrift",
+      "type": "FloatProperty",
+      "offset": "0x1d90",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497bd0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "EnterDriftTimeToAlphaCurve",
+      "type": "ObjectProperty",
+      "offset": "0x1d98",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452480",
+      "extra": "0x7beb7d624d00"
+    },
+    {
+      "name": "ExitDriftTimeToAlphaCurve",
+      "type": "ObjectProperty",
+      "offset": "0x1da0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452500",
+      "extra": "0x7beb7d624d00"
+    },
+    {
+      "name": "PhysicalSurfaceToDriftTrailMarkClass",
+      "type": "MapProperty",
+      "offset": "0x1db0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b8c20d0",
+      "extra": "0x7beb7b452600"
+    },
+    {
+      "name": "PhysicalSurfaceToDriftTrailMarkActor",
+      "type": "MapProperty",
+      "offset": "0x1e00",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b8c2180",
+      "extra": "0x7beb7b452700"
+    },
+    {
+      "name": "VehicleMovement",
+      "type": "ObjectProperty",
+      "offset": "0x1e50",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452780",
+      "extra": "0x7beb7d977700"
+    },
+    {
+      "name": "TorqueMultiplierforBoosting",
+      "type": "FloatProperty",
+      "offset": "0x1e5c",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497c40",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "WheelEffectUpdateInterval",
+      "type": "FloatProperty",
+      "offset": "0x1e60",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497cb0",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "bWheelEffectUseSocketBone",
+      "type": "BoolProperty",
+      "offset": "0x1e64",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452800",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ValidTransformMinWheelNum",
+      "type": "IntProperty",
+      "offset": "0x1e68",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497d20",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "OnVehicleWheelLanded",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1e70",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452880",
+      "extra": "0x40000a900fe0"
+    },
+    {
+      "name": "MinLandingWheelSuspensionOffset",
+      "type": "FloatProperty",
+      "offset": "0x1e80",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497d90",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "OnVehicleGearChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1e88",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452900",
+      "extra": "0x40000a9010a0"
+    },
+    {
+      "name": "Sfx_MoveConcrete",
+      "type": "ObjectProperty",
+      "offset": "0x1ea0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452980",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_MoveMud",
+      "type": "ObjectProperty",
+      "offset": "0x1ea8",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452a00",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_MoveWater",
+      "type": "ObjectProperty",
+      "offset": "0x1eb0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452a80",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_Slip",
+      "type": "ObjectProperty",
+      "offset": "0x1eb8",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452b00",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_TireExplosion",
+      "type": "ObjectProperty",
+      "offset": "0x1ec0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452b80",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_GearUp",
+      "type": "ObjectProperty",
+      "offset": "0x1ec8",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452c00",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_GearDown",
+      "type": "ObjectProperty",
+      "offset": "0x1ed0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452c80",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_BackFire",
+      "type": "ObjectProperty",
+      "offset": "0x1ed8",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452d00",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_MotorEngineStart",
+      "type": "ObjectProperty",
+      "offset": "0x1ee0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452d80",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_MotorEngineStop",
+      "type": "ObjectProperty",
+      "offset": "0x1ee8",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452e00",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_MotorEngineLoop",
+      "type": "ObjectProperty",
+      "offset": "0x1ef0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452e80",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_MotorEngineLoop_Team",
+      "type": "ObjectProperty",
+      "offset": "0x1ef8",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452f00",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_MotorBoost",
+      "type": "ObjectProperty",
+      "offset": "0x1f00",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b452f80",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "MotorAudioSpeedThreshold",
+      "type": "FloatProperty",
+      "offset": "0x1f08",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497e00",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "Sfx_RPMRelativeCurve",
+      "type": "ObjectProperty",
+      "offset": "0x1f10",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453000",
+      "extra": "0x7beb7d624d00"
+    },
+    {
+      "name": "BackFireGears",
+      "type": "ArrayProperty",
+      "offset": "0x1f18",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453080",
+      "extra": "0x7beb7b497e70"
+    },
+    {
+      "name": "WheelSfxConfig",
+      "type": "ObjectProperty",
+      "offset": "0x1f28",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453100",
+      "extra": "0x7beb7d837800"
+    },
+    {
+      "name": "WheelSlipSfxLoop",
+      "type": "StructProperty",
+      "offset": "0x1f30",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453c00",
+      "extra": "0x40000a6baae0"
+    },
+    {
+      "name": "WheelSfxOnSurface",
+      "type": "StructProperty",
+      "offset": "0x1fb0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453180",
+      "extra": "0x7beb7be161c0"
+    },
+    {
+      "name": "AkComp_WheelFriction",
+      "type": "ObjectProperty",
+      "offset": "0x2020",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453200",
+      "extra": "0x7beb7d54b200"
+    },
+    {
+      "name": "RTPC_Throttle_InterpSpeed_Up",
+      "type": "FloatProperty",
+      "offset": "0x2030",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497ee0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "RTPC_Throttle_InterpSpeed_Down",
+      "type": "FloatProperty",
+      "offset": "0x2034",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497f50",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bUsingMotorAudio",
+      "type": "BoolProperty",
+      "offset": "0x205c",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453280",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "WheelSfxUpdateInterval",
+      "type": "FloatProperty",
+      "offset": "0x2060",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b497fc0",
+      "extra": "0x40003161e0e0"
+    },
+    {
+      "name": "DustPSC",
+      "type": "ObjectProperty",
+      "offset": "0x2068",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453300",
+      "extra": "0x7beb7da43500"
+    },
+    {
+      "name": "PlumeSmokeTemplate",
+      "type": "ObjectProperty",
+      "offset": "0x2088",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453380",
+      "extra": "0x7beb7d67b200"
+    },
+    {
+      "name": "LoopSmokeCmpName",
+      "type": "StrProperty",
+      "offset": "0x2090",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b498030",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ShouldDestroyPhysxWhileFreeze",
+      "type": "BoolProperty",
+      "offset": "0x20a0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453400",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ExtraBoostFactor",
+      "type": "FloatProperty",
+      "offset": "0x20a4",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b4980a0",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "IsStoppedBlackboardKeyName",
+      "type": "NameProperty",
+      "offset": "0x20f8",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b498110",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "TargetLocationBlackboardKeyName",
+      "type": "NameProperty",
+      "offset": "0x2100",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b498180",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "PathingLocationBlackboardKeyName",
+      "type": "NameProperty",
+      "offset": "0x2108",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b4981f0",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "PathInputLocationBlackboardKeyName",
+      "type": "NameProperty",
+      "offset": "0x2110",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b498260",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "InputState",
+      "type": "StructProperty",
+      "offset": "0x2118",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453480",
+      "extra": "0x7beb7be116c0"
+    },
+    {
+      "name": "TireTracksUpdateInterval",
+      "type": "FloatProperty",
+      "offset": "0x2168",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b4982d0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "OnVehicleInputMoveDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2180",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453500",
+      "extra": "0x40000a9011e0"
+    },
+    {
+      "name": "NeutralThrottleComp",
+      "type": "ObjectProperty",
+      "offset": "0x2190",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453580",
+      "extra": "0x7beb7d838480"
+    },
+    {
+      "name": "RepNeutralThrottleStatus",
+      "type": "EnumProperty",
+      "offset": "0x2198",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453680",
+      "extra": "0x7beb7b453600"
+    },
+    {
+      "name": "NeutralThrottleCharacter",
+      "type": "ObjectProperty",
+      "offset": "0x21a0",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b453700",
+      "extra": "0x7beb7d94b800"
+    },
+    {
+      "name": "iRegionVehicle",
+      "type": "IntProperty",
+      "offset": "0x6f0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c1500",
+      "extra": "0x400031613858"
+    },
+    {
+      "name": "CharacterInVehicleAnimBPs",
+      "type": "ArrayProperty",
+      "offset": "0x6f8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c1400",
+      "extra": "0x40000a6c1480"
+    },
+    {
+      "name": "MeshAlwaysTickPoseAndRefreshBones",
+      "type": "BoolProperty",
+      "offset": "0x708",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c1380",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "AutoEnterVehicle",
+      "type": "BoolProperty",
+      "offset": "0x709",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c1300",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bStopSkillWhenEnterVehicle",
+      "type": "BoolProperty",
+      "offset": "0x70a",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c1280",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bAIBehaviorVehicle",
+      "type": "BoolProperty",
+      "offset": "0x70b",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c1200",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "VehicleType",
+      "type": "EnumProperty",
+      "offset": "0x70c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c10a0",
+      "extra": "0x40000a6c1180"
+    },
+    {
+      "name": "VehicleShapeType",
+      "type": "EnumProperty",
+      "offset": "0x70d",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0f40",
+      "extra": "0x40000a6c1020"
+    },
+    {
+      "name": "AvatarDefaultCfg",
+      "type": "StructProperty",
+      "offset": "0x710",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0ec0",
+      "extra": "0x40000a5dea30"
+    },
+    {
+      "name": "AvatarDefaultCfgLOD",
+      "type": "StructProperty",
+      "offset": "0x728",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0e40",
+      "extra": "0x40000a5dea30"
+    },
+    {
+      "name": "BrokenMat",
+      "type": "ObjectProperty",
+      "offset": "0x740",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0dc0",
+      "extra": "0x7beb7d68d780"
+    },
+    {
+      "name": "AssetParticleExplosion",
+      "type": "SoftObjectProperty",
+      "offset": "0x748",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0d40",
+      "extra": "0x7beb7d67b200"
+    },
+    {
+      "name": "ParticleExplosionOffset",
+      "type": "StructProperty",
+      "offset": "0x770",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0cc0",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "ParticleExplosionScale",
+      "type": "StructProperty",
+      "offset": "0x77c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0c40",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "AssetParticlePreExplosion",
+      "type": "SoftObjectProperty",
+      "offset": "0x788",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0bc0",
+      "extra": "0x7beb7d67b200"
+    },
+    {
+      "name": "ParticlePreExplosionOffset",
+      "type": "StructProperty",
+      "offset": "0x7b0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0b40",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "ParticlePreExplosionScale",
+      "type": "StructProperty",
+      "offset": "0x7bc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0ac0",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "PS_OnHitObstacles",
+      "type": "ObjectProperty",
+      "offset": "0x7c8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0a40",
+      "extra": "0x7beb7d67b200"
+    },
+    {
+      "name": "bEnableAutoMoveForJoystick",
+      "type": "BoolProperty",
+      "offset": "0x7d0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c09c0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ParticleSoftWrapperMap",
+      "type": "MapProperty",
+      "offset": "0x7d8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0820",
+      "extra": "0x40000a6c08d0"
+    },
+    {
+      "name": "RuntimeParticleSoftWrapperMap",
+      "type": "MapProperty",
+      "offset": "0x828",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0680",
+      "extra": "0x40000a6c0730"
+    },
+    {
+      "name": "ParticleRuntimeDataMap",
+      "type": "MapProperty",
+      "offset": "0x878",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0220",
+      "extra": "0x40000a6c02d0"
+    },
+    {
+      "name": "ReplaceParticleMap",
+      "type": "MapProperty",
+      "offset": "0x8c8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c0080",
+      "extra": "0x40000a6c0130"
+    },
+    {
+      "name": "AdditionalParticleMap",
+      "type": "MapProperty",
+      "offset": "0x918",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bfca0",
+      "extra": "0x40000a6bfd50"
+    },
+    {
+      "name": "AdjustViewDistanceByHeight",
+      "type": "BoolProperty",
+      "offset": "0x968",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bfc20",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "AdjustViewDistanceBaseDist",
+      "type": "FloatProperty",
+      "offset": "0x96c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bfbb0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "AdjustViewDistanceBaseFactor",
+      "type": "FloatProperty",
+      "offset": "0x970",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bfb40",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "IsUnmannedVehicle",
+      "type": "BoolProperty",
+      "offset": "0x974",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bfac0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bCanChangeSeatAccurately",
+      "type": "BoolProperty",
+      "offset": "0x975",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bfa40",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ShowGrainyScreenMinDist",
+      "type": "FloatProperty",
+      "offset": "0x978",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf9d0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "ImmuePassageDamage",
+      "type": "BoolProperty",
+      "offset": "0x97c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf950",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bCanHandBreak",
+      "type": "BoolProperty",
+      "offset": "0x97d",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf8d0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "DefaultLeaveVelocityScale",
+      "type": "FloatProperty",
+      "offset": "0x980",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf860",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bUseSyncAtClient",
+      "type": "BoolProperty",
+      "offset": "0x984",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf7e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bCheckOnGround",
+      "type": "BoolProperty",
+      "offset": "0x985",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf760",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "LanscapeCheckDistance",
+      "type": "FloatProperty",
+      "offset": "0x988",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf6f0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bLockZeroAngularDamping",
+      "type": "BoolProperty",
+      "offset": "0x98c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf670",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "LockZeroAngularDampingValue",
+      "type": "FloatProperty",
+      "offset": "0x990",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf600",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bInvulnerableWhenHasRiders",
+      "type": "BoolProperty",
+      "offset": "0x994",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf580",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bRespawnNeedAdjustLocation",
+      "type": "BoolProperty",
+      "offset": "0x995",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf500",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "MainMaterialIndex",
+      "type": "IntProperty",
+      "offset": "0x998",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf490",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "VehicleDisplayName",
+      "type": "TextProperty",
+      "offset": "0x9a0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf420",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "AdvanceVehicleShowAsStandardVehicle",
+      "type": "BoolProperty",
+      "offset": "0x9b8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf3a0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "AirDropVelocity",
+      "type": "StructProperty",
+      "offset": "0x9bc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf320",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "AirDropParachuteMesh",
+      "type": "ObjectProperty",
+      "offset": "0x9c8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf2a0",
+      "extra": "0x7beb7d590480"
+    },
+    {
+      "name": "AirDropParachuteSocketName",
+      "type": "NameProperty",
+      "offset": "0x9d0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf230",
+      "extra": "0x40003161c5d0"
+    },
+    {
+      "name": "AirdropOvertime",
+      "type": "FloatProperty",
+      "offset": "0x9d8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf1c0",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "OnVehicleStartAirdrop",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x9e0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf140",
+      "extra": "0x40000a68c980"
+    },
+    {
+      "name": "OnVehicleEndAirdrop",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x9f0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf0c0",
+      "extra": "0x40000a68ca40"
+    },
+    {
+      "name": "bAllowDifferentTeam",
+      "type": "BoolProperty",
+      "offset": "0xa00",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf040",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bHasBeenCollision",
+      "type": "BoolProperty",
+      "offset": "0xa01",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6befc0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableBuffComponent",
+      "type": "BoolProperty",
+      "offset": "0xa02",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bef40",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableAttrModifyComponent",
+      "type": "BoolProperty",
+      "offset": "0xa03",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6beec0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "SupportMusicGame",
+      "type": "BoolProperty",
+      "offset": "0xa04",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bee40",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "VehicleBackpack",
+      "type": "BoolProperty",
+      "offset": "0xa05",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bedc0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "BackpackCapacity",
+      "type": "FloatProperty",
+      "offset": "0xa08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bed50",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "BackpackName",
+      "type": "NameProperty",
+      "offset": "0xa10",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bece0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "marr_MidIndexes",
+      "type": "ArrayProperty",
+      "offset": "0xa18",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bebf0",
+      "extra": "0x40000a6bec70"
+    },
+    {
+      "name": "EnterVehicleCameraBlendTime",
+      "type": "FloatProperty",
+      "offset": "0xa28",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6beb80",
+      "extra": "0x400031617210"
+    },
+    {
+      "name": "ExitVehicleCameraBlendTime",
+      "type": "FloatProperty",
+      "offset": "0xa2c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6beb10",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bEnableVehicleSteeringCamera",
+      "type": "BoolProperty",
+      "offset": "0xa30",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bea90",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "SendClientSideCameraUpdateInterval",
+      "type": "FloatProperty",
+      "offset": "0xa34",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bea20",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "NetCullingDistanceOnVeryLowDevice",
+      "type": "FloatProperty",
+      "offset": "0xa3c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be9b0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "DisableTickVehicleJump",
+      "type": "BoolProperty",
+      "offset": "0xa40",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be930",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "StaticForceFixInterval",
+      "type": "FloatProperty",
+      "offset": "0xa44",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be8c0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "EnableMapMark",
+      "type": "BoolProperty",
+      "offset": "0xa50",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be840",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "SwitchSeatWithItemTypeList",
+      "type": "ArrayProperty",
+      "offset": "0xa58",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be750",
+      "extra": "0x40000a6be7d0"
+    },
+    {
+      "name": "RouteList",
+      "type": "ArrayProperty",
+      "offset": "0xa68",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be650",
+      "extra": "0x40000a6be6d0"
+    },
+    {
+      "name": "AutoDrive_BestWaypoint",
+      "type": "ArrayProperty",
+      "offset": "0xa78",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be560",
+      "extra": "0x40000a6be5e0"
+    },
+    {
+      "name": "AutoDrive_CurrentTargetWaypointIdx",
+      "type": "IntProperty",
+      "offset": "0xa88",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be4f0",
+      "extra": "0x400031617210"
+    },
+    {
+      "name": "AutoDriverTargetPosition",
+      "type": "StructProperty",
+      "offset": "0xa8c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be470",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "AutoDriverStartPosition",
+      "type": "StructProperty",
+      "offset": "0xa98",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be3f0",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "OnSeatAttached",
+      "type": "MulticastDelegateProperty",
+      "offset": "0xaa8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be370",
+      "extra": "0x40000a68b9a0"
+    },
+    {
+      "name": "OnSeatDetached",
+      "type": "MulticastDelegateProperty",
+      "offset": "0xab8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be2f0",
+      "extra": "0x40000a68b9a0"
+    },
+    {
+      "name": "OnSeatChange",
+      "type": "MulticastDelegateProperty",
+      "offset": "0xac8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6be270",
+      "extra": "0x40000a68bc50"
+    },
+    {
+      "name": "RepMovementKeyLoc",
+      "type": "StructProperty",
+      "offset": "0xad8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bdf50",
+      "extra": "0x40000a6bdfd0"
+    },
+    {
+      "name": "mb_ZeroLocked",
+      "type": "BoolProperty",
+      "offset": "0xb04",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bded0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "LuaFilePath",
+      "type": "StrProperty",
+      "offset": "0xb08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bde60",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "LuaNetSerialization",
+      "type": "StructProperty",
+      "offset": "0xb18",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bdde0",
+      "extra": "0x40000a5fea10"
+    },
+    {
+      "name": "HookedObjects",
+      "type": "ArrayProperty",
+      "offset": "0xb68",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bdce0",
+      "extra": "0x40000a6bdd60"
+    },
+    {
+      "name": "bDebugDrawEnterVehicle",
+      "type": "BoolProperty",
+      "offset": "0xb78",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bdc60",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "PassengerInjuryAvoidance",
+      "type": "FloatProperty",
+      "offset": "0xb7c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bdbf0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bNotAllowReqExit",
+      "type": "BoolProperty",
+      "offset": "0xb80",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bdb70",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "IsCanVehicleJump",
+      "type": "BoolProperty",
+      "offset": "0xb81",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bdaf0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "CanPushUpCharacter",
+      "type": "BoolProperty",
+      "offset": "0xb82",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bda70",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ParticleExplosion",
+      "type": "ObjectProperty",
+      "offset": "0xbb8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd9f0",
+      "extra": "0x7beb7d67b200"
+    },
+    {
+      "name": "ParticlePreExplosion",
+      "type": "ObjectProperty",
+      "offset": "0xbc0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd970",
+      "extra": "0x7beb7d67b200"
+    },
+    {
+      "name": "bIsEngineStarted",
+      "type": "BoolProperty",
+      "offset": "0xbc8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd8f0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bIsUsingHorn",
+      "type": "BoolProperty",
+      "offset": "0xbc9",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd870",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bUseHornWithPreludes",
+      "type": "BoolProperty",
+      "offset": "0xbca",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd7f0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bIsVehicleSpringArmAutoReturn",
+      "type": "BoolProperty",
+      "offset": "0xbd9",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd770",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "BloodEffectScale",
+      "type": "StructProperty",
+      "offset": "0xbdc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd6f0",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "Mesh",
+      "type": "ObjectProperty",
+      "offset": "0xbe8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd670",
+      "extra": "0x7beb7e104480"
+    },
+    {
+      "name": "VehicleSeats",
+      "type": "ObjectProperty",
+      "offset": "0xbf0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd5f0",
+      "extra": "0x7beb7d8ba900"
+    },
+    {
+      "name": "AnimTickThrottleComponent",
+      "type": "ObjectProperty",
+      "offset": "0xbf8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd570",
+      "extra": "0x7beb7d8d8d80"
+    },
+    {
+      "name": "VehicleDamage",
+      "type": "ObjectProperty",
+      "offset": "0xc00",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd4f0",
+      "extra": "0x7beb7d8c3280"
+    },
+    {
+      "name": "VehicleCommon",
+      "type": "ObjectProperty",
+      "offset": "0xc08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd470",
+      "extra": "0x7beb7d8d4000"
+    },
+    {
+      "name": "BuoyancyForceComponent",
+      "type": "ObjectProperty",
+      "offset": "0xc10",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd3f0",
+      "extra": "0x7beb7d545800"
+    },
+    {
+      "name": "VehicleSyncComponent",
+      "type": "ObjectProperty",
+      "offset": "0xc18",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd370",
+      "extra": "0x7beb7d8b9000"
+    },
+    {
+      "name": "VehicleShootAntiCheat",
+      "type": "ObjectProperty",
+      "offset": "0xc20",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd2f0",
+      "extra": "0x7beb7da00f80"
+    },
+    {
+      "name": "TickedComponents",
+      "type": "ArrayProperty",
+      "offset": "0xc28",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd1f0",
+      "extra": "0x40000a6bd270"
+    },
+    {
+      "name": "WeakTickedComponents",
+      "type": "ArrayProperty",
+      "offset": "0xc38",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd0f0",
+      "extra": "0x40000a6bd170"
+    },
+    {
+      "name": "EnActiveTimeThreshold",
+      "type": "FloatProperty",
+      "offset": "0xc50",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd080",
+      "extra": "0x400031617210"
+    },
+    {
+      "name": "FreezeVehicleThreshold",
+      "type": "FloatProperty",
+      "offset": "0xc54",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd010",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bFreezeNeedChangeVehiclePhysx",
+      "type": "BoolProperty",
+      "offset": "0xc60",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bcf90",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "VehicleHitThreshold",
+      "type": "FloatProperty",
+      "offset": "0xc64",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bcf20",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "VehicleHitCharacterThreshold",
+      "type": "FloatProperty",
+      "offset": "0xc68",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bceb0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "AndroidGLES2TailLightScale",
+      "type": "FloatProperty",
+      "offset": "0xc78",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bce40",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "EnableTickEffectsDevciveLevel",
+      "type": "IntProperty",
+      "offset": "0xc7c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bcdd0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "EffectUpdateInterval",
+      "type": "FloatProperty",
+      "offset": "0xc84",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bcd60",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "VehicleBackpackItems",
+      "type": "ArrayProperty",
+      "offset": "0xc88",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bcae0",
+      "extra": "0x40000a6bcb60"
+    },
+    {
+      "name": "VehicleAntiCheat",
+      "type": "ObjectProperty",
+      "offset": "0xc98",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bca60",
+      "extra": "0x7beb7da1d380"
+    },
+    {
+      "name": "VehicleIsHitCharacter",
+      "type": "BoolProperty",
+      "offset": "0xca0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc9e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "OverlapCharacterInflation",
+      "type": "StructProperty",
+      "offset": "0xca4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc960",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "VehicleHitAdjustLinearInterpAlpha",
+      "type": "FloatProperty",
+      "offset": "0xcb0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc8f0",
+      "extra": "0x40003161ad50"
+    },
+    {
+      "name": "VehicleHitAdjustAngularInterpAlpha",
+      "type": "FloatProperty",
+      "offset": "0xcb4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc880",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "VehicleAngularInterpAlphaOverride",
+      "type": "FloatProperty",
+      "offset": "0xcb8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc810",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "VehicleAngularRecipFixTimeOverride",
+      "type": "FloatProperty",
+      "offset": "0xcbc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc7a0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "VehicleLinearInterpAlphaOverride",
+      "type": "FloatProperty",
+      "offset": "0xcc0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc730",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "VehicleLinearRecipFixTimeOverride",
+      "type": "FloatProperty",
+      "offset": "0xcc4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc6c0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "CharacterCacheSubsystem",
+      "type": "ObjectProperty",
+      "offset": "0xcc8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc640",
+      "extra": "0x7beb7da84280"
+    },
+    {
+      "name": "lastForwardSpeed",
+      "type": "FloatProperty",
+      "offset": "0xcd0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc5d0",
+      "extra": "0x40003161c5d0"
+    },
+    {
+      "name": "OnClientEnterVehicleEvent",
+      "type": "MulticastDelegateProperty",
+      "offset": "0xcd8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc550",
+      "extra": "0x40000a68aa40"
+    },
+    {
+      "name": "OnClientExitVehicleEvent",
+      "type": "MulticastDelegateProperty",
+      "offset": "0xce8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc4d0",
+      "extra": "0x40000a68ac80"
+    },
+    {
+      "name": "OnPreExitVehicleEvent",
+      "type": "MulticastDelegateProperty",
+      "offset": "0xcf8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc450",
+      "extra": "0x40000a68aec0"
+    },
+    {
+      "name": "OnPreExitVehicleFinishedEvent",
+      "type": "MulticastDelegateProperty",
+      "offset": "0xd08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc3d0",
+      "extra": "0x40000a68b180"
+    },
+    {
+      "name": "OnClientChangeVehicleSeatEvent",
+      "type": "MulticastDelegateProperty",
+      "offset": "0xd18",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc350",
+      "extra": "0x40000a68b440"
+    },
+    {
+      "name": "NeedCheckMovetoVehicleStraight",
+      "type": "BoolProperty",
+      "offset": "0xd28",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc2d0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bPassengerSpringArmAbsoluteRotation",
+      "type": "BoolProperty",
+      "offset": "0xd29",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc250",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableEnterDistanceCheck",
+      "type": "BoolProperty",
+      "offset": "0xd2b",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc1d0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "VehicleEnterDistance",
+      "type": "FloatProperty",
+      "offset": "0xd2c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc160",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "TickEnterSphereInterval",
+      "type": "FloatProperty",
+      "offset": "0xd30",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc0f0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "EnterSphereExtraHeight",
+      "type": "FloatProperty",
+      "offset": "0xd34",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc080",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bUseControlRotVehicle",
+      "type": "BoolProperty",
+      "offset": "0xd38",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bc000",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "EnableTickEnterSphereAsyncLoadRes",
+      "type": "BoolProperty",
+      "offset": "0xd45",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbf80",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "AsyncLoadResDistance",
+      "type": "FloatProperty",
+      "offset": "0xd48",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbf10",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "TickEnterSphereAsyncLoadResInterval",
+      "type": "FloatProperty",
+      "offset": "0xd4c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbea0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "EnableCullWater",
+      "type": "BoolProperty",
+      "offset": "0xd55",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbe20",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "TickEnterCullWaterSphereInterval",
+      "type": "FloatProperty",
+      "offset": "0xd58",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbdb0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "EnterCullWaterDistanceSq",
+      "type": "FloatProperty",
+      "offset": "0xd5c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbd40",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "CullWaterCapsuleA",
+      "type": "StructProperty",
+      "offset": "0xd60",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbcc0",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "CullWaterCapsuleB",
+      "type": "StructProperty",
+      "offset": "0xd6c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbc40",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "CullWaterCapsuleRadius",
+      "type": "FloatProperty",
+      "offset": "0xd78",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbbd0",
+      "extra": "0x40003161ad50"
+    },
+    {
+      "name": "CullWaterCapsuleBlendWidth",
+      "type": "FloatProperty",
+      "offset": "0xd7c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbb60",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "SaveValidTransformInterval",
+      "type": "FloatProperty",
+      "offset": "0xd88",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bbaf0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bIsAirdroppingVehicle",
+      "type": "BoolProperty",
+      "offset": "0xdb0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bba70",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "AirDropParachuteMeshComp",
+      "type": "ObjectProperty",
+      "offset": "0xdc0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb9f0",
+      "extra": "0x7beb7da29000"
+    },
+    {
+      "name": "Sfx_EngineLoop",
+      "type": "ObjectProperty",
+      "offset": "0xdc8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb970",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_EngineLoop_Team",
+      "type": "ObjectProperty",
+      "offset": "0xdd0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb8f0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_Boost",
+      "type": "ObjectProperty",
+      "offset": "0xdd8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb870",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_FireLoop",
+      "type": "ObjectProperty",
+      "offset": "0xde0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb7f0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_Landing",
+      "type": "ObjectProperty",
+      "offset": "0xde8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb770",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_PreExplosion",
+      "type": "ObjectProperty",
+      "offset": "0xdf0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb6f0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_Explosion",
+      "type": "ObjectProperty",
+      "offset": "0xdf8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb670",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_HitBody",
+      "type": "ObjectProperty",
+      "offset": "0xe00",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb5f0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_HitZombie",
+      "type": "ObjectProperty",
+      "offset": "0xe08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb570",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_HitMetal",
+      "type": "ObjectProperty",
+      "offset": "0xe10",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb4f0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_Horn",
+      "type": "ObjectProperty",
+      "offset": "0xe18",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb470",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_HornWithPreludePlayEvents",
+      "type": "ArrayProperty",
+      "offset": "0xe20",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb370",
+      "extra": "0x40000a6bb3f0"
+    },
+    {
+      "name": "Sfx_HornWithPreludeStopEvents",
+      "type": "ArrayProperty",
+      "offset": "0xe30",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb270",
+      "extra": "0x40000a6bb2f0"
+    },
+    {
+      "name": "Sfx_Throttle",
+      "type": "ObjectProperty",
+      "offset": "0xe40",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb1f0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_UnderWater_In",
+      "type": "ObjectProperty",
+      "offset": "0xe48",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb170",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_UnderWater_Out",
+      "type": "ObjectProperty",
+      "offset": "0xe50",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb0f0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_CannotThrottle",
+      "type": "ObjectProperty",
+      "offset": "0xe58",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bb070",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_BodyOverlapDamage",
+      "type": "ObjectProperty",
+      "offset": "0xe60",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6baff0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_EngineStart",
+      "type": "ObjectProperty",
+      "offset": "0xe68",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6baf70",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "Sfx_EngineStop",
+      "type": "ObjectProperty",
+      "offset": "0xe70",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6baef0",
+      "extra": "0x7beb7d54be80"
+    },
+    {
+      "name": "EngineSfxEndDelayTime",
+      "type": "FloatProperty",
+      "offset": "0xe78",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bae80",
+      "extra": "0x40003161c5d0"
+    },
+    {
+      "name": "bAudioLogEnabled",
+      "type": "BoolProperty",
+      "offset": "0xe7c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bae00",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "EngineSfxLoop",
+      "type": "StructProperty",
+      "offset": "0xe80",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bad80",
+      "extra": "0x40000a6baae0"
+    },
+    {
+      "name": "FireSfxLoop",
+      "type": "StructProperty",
+      "offset": "0xf00",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bad00",
+      "extra": "0x40000a6baae0"
+    },
+    {
+      "name": "HornSfxLoop",
+      "type": "StructProperty",
+      "offset": "0xf80",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba7b0",
+      "extra": "0x40000a6baae0"
+    },
+    {
+      "name": "SoundComponent",
+      "type": "ObjectProperty",
+      "offset": "0x1000",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba730",
+      "extra": "0x7beb7d54b200"
+    },
+    {
+      "name": "RPMSfxScale",
+      "type": "FloatProperty",
+      "offset": "0x103c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba6c0",
+      "extra": "0x40003161c5d0"
+    },
+    {
+      "name": "ThrottleSfxMinSpeed",
+      "type": "FloatProperty",
+      "offset": "0x1040",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba650",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bInitAkComponentUpdateEmmiterTransform",
+      "type": "BoolProperty",
+      "offset": "0x1044",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba5d0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bForceReportException",
+      "type": "BoolProperty",
+      "offset": "0x1060",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba550",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "VehicleSyncTag",
+      "type": "EnumProperty",
+      "offset": "0x1079",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba450",
+      "extra": "0x40000a6ba4d0"
+    },
+    {
+      "name": "ReplicatedServerLastTransformUpdateTimeStamp",
+      "type": "FloatProperty",
+      "offset": "0x107c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba3e0",
+      "extra": "0x400031614250"
+    },
+    {
+      "name": "OnVehiclePossessed",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1080",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba360",
+      "extra": "0x40000a68cc80"
+    },
+    {
+      "name": "OnVehicleUnPossessed",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1090",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba2e0",
+      "extra": "0x40000a68cdc0"
+    },
+    {
+      "name": "bSyncControlRotationByVehicle",
+      "type": "BoolProperty",
+      "offset": "0x10c8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba260",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "SyncCameraVersion",
+      "type": "IntProperty",
+      "offset": "0x10cc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba1f0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "ViewReplication",
+      "type": "StructProperty",
+      "offset": "0x10d0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba170",
+      "extra": "0x40000a6aae10"
+    },
+    {
+      "name": "FreeViewReplication",
+      "type": "StructProperty",
+      "offset": "0x10e0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba0f0",
+      "extra": "0x40000a6aae10"
+    },
+    {
+      "name": "SimulateViewData",
+      "type": "StructProperty",
+      "offset": "0x10f0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6ba070",
+      "extra": "0x40000a6b9dd0"
+    },
+    {
+      "name": "SimulateFreeCameraViewData",
+      "type": "StructProperty",
+      "offset": "0x10f4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9d50",
+      "extra": "0x40000a6b9dd0"
+    },
+    {
+      "name": "SpringArmComponent",
+      "type": "ObjectProperty",
+      "offset": "0x10f8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9cd0",
+      "extra": "0x7beb7d96dd80"
+    },
+    {
+      "name": "VehiclePickupComp",
+      "type": "ObjectProperty",
+      "offset": "0x1100",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9c50",
+      "extra": "0x7beb7d8bbd00"
+    },
+    {
+      "name": "bAddVehicleRotationChangeOnPlayer",
+      "type": "BoolProperty",
+      "offset": "0x1118",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9bd0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bNetReceiveInterpolateWhenNoPhysics",
+      "type": "BoolProperty",
+      "offset": "0x1119",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9b50",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "NetReceiveRepMovement",
+      "type": "StructProperty",
+      "offset": "0x1120",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9ad0",
+      "extra": "0x40000a571f10"
+    },
+    {
+      "name": "OnVehicleBoostChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x11a0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9a50",
+      "extra": "0x40000a68d9a0"
+    },
+    {
+      "name": "OnVehicleTakeDamageBeforeDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x11b0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b99d0",
+      "extra": "0x40000a68c070"
+    },
+    {
+      "name": "OnVehicleTakeDamageDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x11c0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9950",
+      "extra": "0x40000a68c1b0"
+    },
+    {
+      "name": "bAlwaysIgnoreRideCheck",
+      "type": "BoolProperty",
+      "offset": "0x11d0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b98d0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "MinRideAngleDgree",
+      "type": "FloatProperty",
+      "offset": "0x11d4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9860",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bServerDetachApplyVelocity",
+      "type": "BoolProperty",
+      "offset": "0x11d8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b97e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bCanUseSpeculativeCCD",
+      "type": "BoolProperty",
+      "offset": "0x11e4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9760",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bUseSpeculativeCCDOnServer",
+      "type": "BoolProperty",
+      "offset": "0x11e5",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b96e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "VehicleRadiusImulseScale",
+      "type": "FloatProperty",
+      "offset": "0x11e8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9670",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "VehicleAdditionalBlowUp",
+      "type": "FloatProperty",
+      "offset": "0x11ec",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9600",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bShouldRespawnSelfWhenUnusable",
+      "type": "BoolProperty",
+      "offset": "0x1210",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9580",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "RespawnWaitingTime",
+      "type": "FloatProperty",
+      "offset": "0x1214",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9510",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "RespawnTickInterval",
+      "type": "FloatProperty",
+      "offset": "0x1218",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b94a0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bDrawDebug",
+      "type": "BoolProperty",
+      "offset": "0x121c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9420",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bServerDetachEveryoneWhenRespawn",
+      "type": "BoolProperty",
+      "offset": "0x12a0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b93a0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "VACTaskSetups",
+      "type": "ArrayProperty",
+      "offset": "0x12a8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b92b0",
+      "extra": "0x40000a6b9330"
+    },
+    {
+      "name": "VacInstancedTasks",
+      "type": "ArrayProperty",
+      "offset": "0x12b8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b91c0",
+      "extra": "0x40000a6b9240"
+    },
+    {
+      "name": "bIsUnableToControl",
+      "type": "BoolProperty",
+      "offset": "0x12c8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9140",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableServerAuthorize",
+      "type": "BoolProperty",
+      "offset": "0x12d8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b90c0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bIsInMidAirLast",
+      "type": "BoolProperty",
+      "offset": "0x12e0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b9040",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "mf_InAirTime",
+      "type": "FloatProperty",
+      "offset": "0x12e4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8fd0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "FPPMeshComponent",
+      "type": "ObjectProperty",
+      "offset": "0x12f8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8f50",
+      "extra": "0x7beb7e104480"
+    },
+    {
+      "name": "FPPDynamicMat",
+      "type": "ObjectProperty",
+      "offset": "0x1300",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8ed0",
+      "extra": "0x7beb7d5e4a80"
+    },
+    {
+      "name": "MeshAssetRef",
+      "type": "SoftObjectProperty",
+      "offset": "0x1308",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8e50",
+      "extra": "0x7beb7d66f080"
+    },
+    {
+      "name": "TPPMesh",
+      "type": "ObjectProperty",
+      "offset": "0x1330",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8dd0",
+      "extra": "0x7beb7d66f080"
+    },
+    {
+      "name": "bOnPlayerActiveRegionsChanged",
+      "type": "BoolProperty",
+      "offset": "0x1410",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8d50",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bInActiveRegions",
+      "type": "BoolProperty",
+      "offset": "0x1411",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8cd0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableSkeletalMeshOptimizationDS",
+      "type": "BoolProperty",
+      "offset": "0x1412",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8c50",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "SeekLockOffset",
+      "type": "StructProperty",
+      "offset": "0x1414",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8bd0",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "SeekLockSocket",
+      "type": "NameProperty",
+      "offset": "0x1420",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8b60",
+      "extra": "0x40003161ad50"
+    },
+    {
+      "name": "StuckGroundZOffset",
+      "type": "FloatProperty",
+      "offset": "0x1428",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8af0",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "ProduceSoundInterval",
+      "type": "FloatProperty",
+      "offset": "0x142c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8a80",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "VehicleAnimEventDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1438",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8a00",
+      "extra": "0x40000a68a690"
+    },
+    {
+      "name": "VehicleFppEventDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1448",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8980",
+      "extra": "0x40000a68a900"
+    },
+    {
+      "name": "BindingHandle",
+      "type": "ObjectProperty",
+      "offset": "0x1458",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8900",
+      "extra": "0x7beb7da9ec80"
+    },
+    {
+      "name": "OnEnterVehicle",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1460",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8880",
+      "extra": "0x40000a68a7c0"
+    },
+    {
+      "name": "OverlapCameraShakeInterval",
+      "type": "FloatProperty",
+      "offset": "0x1480",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8810",
+      "extra": "0x40003161e498"
+    },
+    {
+      "name": "bFixedRadialDamage",
+      "type": "BoolProperty",
+      "offset": "0x1488",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8790",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "OverlapDamageRate",
+      "type": "FloatProperty",
+      "offset": "0x148c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8720",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "OverlapImpulseRate",
+      "type": "FloatProperty",
+      "offset": "0x1490",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b86b0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "OverlapImpulseRateZ",
+      "type": "FloatProperty",
+      "offset": "0x1494",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8640",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "MaxOverlapImpulse",
+      "type": "FloatProperty",
+      "offset": "0x1498",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b85d0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "MinOverlapSpeed",
+      "type": "FloatProperty",
+      "offset": "0x149c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8560",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "OverlapSimpleCharacterInterval",
+      "type": "FloatProperty",
+      "offset": "0x14a0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b84f0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "OverrideOverlapSimpleCharBoxExtent",
+      "type": "StructProperty",
+      "offset": "0x14a4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8470",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "OverlapVehicleDamageRate",
+      "type": "FloatProperty",
+      "offset": "0x14b4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8400",
+      "extra": "0x40003161ad50"
+    },
+    {
+      "name": "MaxOverlapVehicleDamageRange",
+      "type": "FloatProperty",
+      "offset": "0x14b8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8390",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "EngineParams",
+      "type": "StructProperty",
+      "offset": "0x14c0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8310",
+      "extra": "0x40000a6b7ee0"
+    },
+    {
+      "name": "EngineSoundCheckInterval",
+      "type": "FloatProperty",
+      "offset": "0x14d0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b82a0",
+      "extra": "0x40003161ad50"
+    },
+    {
+      "name": "EngineSoundMinCheckSpeed",
+      "type": "FloatProperty",
+      "offset": "0x14d8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b8230",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "LoudspeakerParams",
+      "type": "StructProperty",
+      "offset": "0x14dc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7e60",
+      "extra": "0x40000a6b7ee0"
+    },
+    {
+      "name": "IsForbidNightVehicle",
+      "type": "BoolProperty",
+      "offset": "0x14ed",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7de0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "AttrModifyCompClass",
+      "type": "ClassProperty",
+      "offset": "0x14f0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7d60",
+      "extra": "0x7beb7d69df00"
+    },
+    {
+      "name": "AttrModifyComp",
+      "type": "ObjectProperty",
+      "offset": "0x14f8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7ce0",
+      "extra": "0x7beb7d834880"
+    },
+    {
+      "name": "DamageableGameObjectTypeList",
+      "type": "ArrayProperty",
+      "offset": "0x1500",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7b60",
+      "extra": "0x40000a6b7be0"
+    },
+    {
+      "name": "BuffSystem",
+      "type": "ObjectProperty",
+      "offset": "0x1510",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7ae0",
+      "extra": "0x7beb7d82c080"
+    },
+    {
+      "name": "OnVehicleAvatarDataCopied",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1518",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7a60",
+      "extra": "0x40000a68c590"
+    },
+    {
+      "name": "VehicleAvatar",
+      "type": "ObjectProperty",
+      "offset": "0x1528",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b79e0",
+      "extra": "0x7beb7d8d7700"
+    },
+    {
+      "name": "VehicleAdvanceAvatar",
+      "type": "ObjectProperty",
+      "offset": "0x1530",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7960",
+      "extra": "0x7beb7d8dae00"
+    },
+    {
+      "name": "bAdvanceAvatar",
+      "type": "BoolProperty",
+      "offset": "0x1538",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b78e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bChangeBrokenOnlyOnce",
+      "type": "BoolProperty",
+      "offset": "0x1539",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7860",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bChangeBrokenOnDS",
+      "type": "BoolProperty",
+      "offset": "0x153a",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b77e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bAdvanceAvatarLocal",
+      "type": "BoolProperty",
+      "offset": "0x153c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7760",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "OnAdvanceAvatarChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1540",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b76e0",
+      "extra": "0x40000a68ce80"
+    },
+    {
+      "name": "ForcePlayerUpdateAnimEveryFrame",
+      "type": "BoolProperty",
+      "offset": "0x1550",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7660",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "CandidateAvatarID",
+      "type": "IntProperty",
+      "offset": "0x1554",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b75f0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bNeedDelayProcessAvatarOutline",
+      "type": "BoolProperty",
+      "offset": "0x1558",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7570",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableWeakTickComponent",
+      "type": "BoolProperty",
+      "offset": "0x1560",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b74f0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "WeakTickDoSomethingDuration",
+      "type": "FloatProperty",
+      "offset": "0x1564",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7480",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bSpawnedInReady",
+      "type": "BoolProperty",
+      "offset": "0x1568",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7400",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "MaxLinearVelocity",
+      "type": "FloatProperty",
+      "offset": "0x156c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7390",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bInBuffSpeedState",
+      "type": "BoolProperty",
+      "offset": "0x1570",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7310",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "TeamID",
+      "type": "IntProperty",
+      "offset": "0x1574",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b72a0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "Campid",
+      "type": "IntProperty",
+      "offset": "0x1578",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7230",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "VehicleGoStraight",
+      "type": "FloatProperty",
+      "offset": "0x157c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b71c0",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "DamageIgnoreWheels",
+      "type": "BoolProperty",
+      "offset": "0x1580",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7140",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ReqExchangeCharacter",
+      "type": "ObjectProperty",
+      "offset": "0x1588",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b70c0",
+      "extra": "0x7beb7d94b800"
+    },
+    {
+      "name": "ExchangeVehicleSeatInterval",
+      "type": "FloatProperty",
+      "offset": "0x1590",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b7050",
+      "extra": "0x40003161c5d0"
+    },
+    {
+      "name": "OnHitSpecialEffectDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1598",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6fd0",
+      "extra": "0x40000a68c710"
+    },
+    {
+      "name": "OnControlRotationInit",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x15a8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6f50",
+      "extra": "0x40000a68c650"
+    },
+    {
+      "name": "WeaponManagerComponent",
+      "type": "ObjectProperty",
+      "offset": "0x15b8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6ed0",
+      "extra": "0x7beb7d83b680"
+    },
+    {
+      "name": "NewEffectComponent",
+      "type": "ObjectProperty",
+      "offset": "0x15c0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6e50",
+      "extra": "0x7beb7da80080"
+    },
+    {
+      "name": "OpenShootVertify",
+      "type": "BoolProperty",
+      "offset": "0x15c8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6dd0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "IsPveShootVerify",
+      "type": "BoolProperty",
+      "offset": "0x15c9",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6d50",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "WeaponReconnectIdx",
+      "type": "IntProperty",
+      "offset": "0x15cc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6ce0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bIgnorePassengerBulletHit",
+      "type": "BoolProperty",
+      "offset": "0x15d0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6c60",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "PassengerBulletDamageScale",
+      "type": "FloatProperty",
+      "offset": "0x15d4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6bf0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "UAVOperateState",
+      "type": "EnumProperty",
+      "offset": "0x15dc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6af0",
+      "extra": "0x40000a6b6b70"
+    },
+    {
+      "name": "SingleMoveRate",
+      "type": "FloatProperty",
+      "offset": "0x15e0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6a80",
+      "extra": "0x400031614250"
+    },
+    {
+      "name": "VehicleStatesConfigClass",
+      "type": "StructProperty",
+      "offset": "0x15e8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6a00",
+      "extra": "0x40000a557970"
+    },
+    {
+      "name": "VehicleBloodMaxHpConfigClass",
+      "type": "StructProperty",
+      "offset": "0x1600",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6980",
+      "extra": "0x40000a557970"
+    },
+    {
+      "name": "CurrentVehicleStatesData",
+      "type": "IntProperty",
+      "offset": "0x1618",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6910",
+      "extra": "0x40003161ad50"
+    },
+    {
+      "name": "TombBoxOnVehicle",
+      "type": "ArrayProperty",
+      "offset": "0x1630",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6810",
+      "extra": "0x40000a6b6890"
+    },
+    {
+      "name": "StandingVehiclePlayers",
+      "type": "ArrayProperty",
+      "offset": "0x1640",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6710",
+      "extra": "0x40000a6b6790"
+    },
+    {
+      "name": "ExplodedTombBoxPlaceSocket",
+      "type": "NameProperty",
+      "offset": "0x1650",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b66a0",
+      "extra": "0x400031617210"
+    },
+    {
+      "name": "TombBoxTraceLength",
+      "type": "FloatProperty",
+      "offset": "0x1658",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6630",
+      "extra": "0x40003161dd28"
+    },
+    {
+      "name": "PlayerOutAngleCosin",
+      "type": "FloatProperty",
+      "offset": "0x165c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b65c0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bFrozenStatic",
+      "type": "BoolProperty",
+      "offset": "0x1660",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6540",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bInHouseSpawn",
+      "type": "BoolProperty",
+      "offset": "0x1661",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b64c0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "SleepVehicleTolerance",
+      "type": "FloatProperty",
+      "offset": "0x1664",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6450",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "StaticFixAngel",
+      "type": "FloatProperty",
+      "offset": "0x1668",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b63e0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ClientAwakeVehicleTolerance",
+      "type": "FloatProperty",
+      "offset": "0x166c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6370",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "SleepVehicleTickTime",
+      "type": "FloatProperty",
+      "offset": "0x1670",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6300",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ServerInitForceSleepPhysicsDelay",
+      "type": "FloatProperty",
+      "offset": "0x1678",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6290",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ClientInitForceSleepPhysicsDelay",
+      "type": "FloatProperty",
+      "offset": "0x167c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6220",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "AICustomState",
+      "type": "UInt32Property",
+      "offset": "0x1680",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b61b0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "CharacterFollowVehicleViewLimit",
+      "type": "BoolProperty",
+      "offset": "0x1689",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6130",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "CannotEnterTips",
+      "type": "IntProperty",
+      "offset": "0x168c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b60c0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "CannotDriveTips",
+      "type": "IntProperty",
+      "offset": "0x1690",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6050",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "VehicleBeforeWheelDestroy",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1698",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5fd0",
+      "extra": "0x40000a68c850"
+    },
+    {
+      "name": "AttachedRelLoc",
+      "type": "StructProperty",
+      "offset": "0x16a8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5f50",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "AttachedActor",
+      "type": "ObjectProperty",
+      "offset": "0x16b8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5ed0",
+      "extra": "0x7beb7e102680"
+    },
+    {
+      "name": "HasAttachedActorTips",
+      "type": "IntProperty",
+      "offset": "0x16c0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5e60",
+      "extra": "0x40003161c5d0"
+    },
+    {
+      "name": "VehicleAIComponent",
+      "type": "ObjectProperty",
+      "offset": "0x16d0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5de0",
+      "extra": "0x7beb7d8dab80"
+    },
+    {
+      "name": "ShootDriverCompClass",
+      "type": "ClassProperty",
+      "offset": "0x16d8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5d60",
+      "extra": "0x7beb7d69df00"
+    },
+    {
+      "name": "ShootDriverComponent",
+      "type": "ObjectProperty",
+      "offset": "0x16e0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5ce0",
+      "extra": "0x7beb7d8ba680"
+    },
+    {
+      "name": "LandTraceMaxHeight",
+      "type": "FloatProperty",
+      "offset": "0x16e8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5c70",
+      "extra": "0x40003161c5d0"
+    },
+    {
+      "name": "bNeedPlayVehicleEnterMontage",
+      "type": "BoolProperty",
+      "offset": "0x16ec",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5bf0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bExitLeanOutWhenWeaponFold",
+      "type": "BoolProperty",
+      "offset": "0x16ed",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5b70",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bDoNotReloadOnVehicle",
+      "type": "BoolProperty",
+      "offset": "0x16ee",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5af0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bDoNotBoltOnVehicle",
+      "type": "BoolProperty",
+      "offset": "0x16ef",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5a70",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bIgnoreResetTouchInputWhenExitVehicle",
+      "type": "BoolProperty",
+      "offset": "0x16f0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b59f0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ViewDistanceScale",
+      "type": "FloatProperty",
+      "offset": "0x16f4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5980",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "FeatureMap",
+      "type": "MapProperty",
+      "offset": "0x1700",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5750",
+      "extra": "0x40000a6b5800"
+    },
+    {
+      "name": "SyncBoostStateTime",
+      "type": "FloatProperty",
+      "offset": "0x1768",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b56e0",
+      "extra": "0x40003161a5e0"
+    },
+    {
+      "name": "TeleportLocationThreshold",
+      "type": "FloatProperty",
+      "offset": "0x176c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5670",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "TeleportDegreeThreshold",
+      "type": "FloatProperty",
+      "offset": "0x1770",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5600",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bMovementSyncEnabled",
+      "type": "BoolProperty",
+      "offset": "0x1774",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5580",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "BoostState",
+      "type": "StructProperty",
+      "offset": "0x1778",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5500",
+      "extra": "0x40000a6a4ea0"
+    },
+    {
+      "name": "ClientBoostState",
+      "type": "StructProperty",
+      "offset": "0x1784",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5480",
+      "extra": "0x40000a6a4ea0"
+    },
+    {
+      "name": "VehicleSkillCDChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1798",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5400",
+      "extra": "0x40000a68d100"
+    },
+    {
+      "name": "VehicleSkillDurationChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x17a8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5380",
+      "extra": "0x40000a68d2a0"
+    },
+    {
+      "name": "VehicleSkillStateChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x17b8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5300",
+      "extra": "0x40000a68d440"
+    },
+    {
+      "name": "VehicleLaunchJamming",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x17c8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5280",
+      "extra": "0x40000a68cfc0"
+    },
+    {
+      "name": "bShowVehicleEnterButton",
+      "type": "BoolProperty",
+      "offset": "0x17d8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5200",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "OnVehicleHealthStateChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x17e8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5180",
+      "extra": "0x40000a68b780"
+    },
+    {
+      "name": "OnVehicleHealthDestroy",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x17f8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5100",
+      "extra": "0x40000a68c4d0"
+    },
+    {
+      "name": "VehicleHealthStateGoodPercent",
+      "type": "FloatProperty",
+      "offset": "0x1808",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5090",
+      "extra": "0x40003161e498"
+    },
+    {
+      "name": "VehicleHealthStateSmokingPercent",
+      "type": "FloatProperty",
+      "offset": "0x180c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5020",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ExplosionDelaySeconds",
+      "type": "FloatProperty",
+      "offset": "0x1810",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b4fb0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "DestroyedSetup",
+      "type": "StructProperty",
+      "offset": "0x1818",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b4860",
+      "extra": "0x40000a6b48e0"
+    },
+    {
+      "name": "ExplodedSetup",
+      "type": "StructProperty",
+      "offset": "0x18c8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b46c0",
+      "extra": "0x40000a6b4740"
+    },
+    {
+      "name": "VehicleHealthState",
+      "type": "EnumProperty",
+      "offset": "0x18c9",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b45c0",
+      "extra": "0x40000a6b4640"
+    },
+    {
+      "name": "PrevVehicleHealthState",
+      "type": "EnumProperty",
+      "offset": "0x18ca",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b44c0",
+      "extra": "0x40000a6b4540"
+    },
+    {
+      "name": "ReplicatedEnergyRatio",
+      "type": "UInt16Property",
+      "offset": "0x18d8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b4450",
+      "extra": "0x400031614250"
+    },
+    {
+      "name": "bCanOptimizeNetFrequency",
+      "type": "BoolProperty",
+      "offset": "0x18db",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b43d0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "DelayTimeOptimizeNetFrequency",
+      "type": "FloatProperty",
+      "offset": "0x18dc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b4360",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "MinVehicleNetFrequency",
+      "type": "FloatProperty",
+      "offset": "0x18e0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b42f0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ChassisBoneName",
+      "type": "NameProperty",
+      "offset": "0x18f0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b4280",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "VehicleIgnoreActors",
+      "type": "ArrayProperty",
+      "offset": "0x18f8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b4180",
+      "extra": "0x40000a6b4200"
+    },
+    {
+      "name": "OnVehicleStateChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1908",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b4100",
+      "extra": "0x40000a6b0b30"
+    },
+    {
+      "name": "TrailerMovement",
+      "type": "StructProperty",
+      "offset": "0x1924",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3ee0",
+      "extra": "0x40000a6b3f60"
+    },
+    {
+      "name": "bEnableAudioMonitor",
+      "type": "BoolProperty",
+      "offset": "0x1944",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3e60",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "CameraDataType",
+      "type": "ByteProperty",
+      "offset": "0x1945",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3d80",
+      "extra": "0x40000a6b3e00"
+    },
+    {
+      "name": "AutoMoveEnableType",
+      "type": "EnumProperty",
+      "offset": "0x1946",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3c20",
+      "extra": "0x40000a6b3d00"
+    },
+    {
+      "name": "bBaseAutoMoveForward",
+      "type": "BoolProperty",
+      "offset": "0x1960",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3ba0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bBaseAutoSpeedUp",
+      "type": "BoolProperty",
+      "offset": "0x1961",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3b20",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bUseReverseJoystickPauseAutoForward",
+      "type": "BoolProperty",
+      "offset": "0x1962",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3aa0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bBlockForwardInput",
+      "type": "BoolProperty",
+      "offset": "0x1963",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3a20",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "TipsCd_BlockForwardInput",
+      "type": "FloatProperty",
+      "offset": "0x1964",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b39b0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "TipsId_BlockForwardInput",
+      "type": "IntProperty",
+      "offset": "0x1968",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3940",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "AutoMoveSetup",
+      "type": "StructProperty",
+      "offset": "0x196c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b36d0",
+      "extra": "0x40000a6b3750"
+    },
+    {
+      "name": "bCanBoostSpeed",
+      "type": "BoolProperty",
+      "offset": "0x1978",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3650",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "FuelConsumptionModifierBoost",
+      "type": "FloatProperty",
+      "offset": "0x197c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b35e0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "ForwardInputForbidden",
+      "type": "BoolProperty",
+      "offset": "0x1980",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3560",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "OnSimulatePhysicsChangeDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x19a8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b34e0",
+      "extra": "0x40000a6aead0"
+    },
+    {
+      "name": "CanSimulatePhysics",
+      "type": "BoolProperty",
+      "offset": "0x19b8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3460",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bVehicleSimualetdPhysics",
+      "type": "BoolProperty",
+      "offset": "0x19b9",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b33e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "InteractionMap",
+      "type": "MapProperty",
+      "offset": "0x1a28",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3230",
+      "extra": "0x40000a6b32e0"
+    },
+    {
+      "name": "bCanFreezePhysics",
+      "type": "BoolProperty",
+      "offset": "0x1a78",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b31b0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bNetTeleportPhysics",
+      "type": "BoolProperty",
+      "offset": "0x1a79",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3130",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "SimDisabledFlags",
+      "type": "UInt32Property",
+      "offset": "0x1a7c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b30c0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bSimulatingPhysicsLocked",
+      "type": "BoolProperty",
+      "offset": "0x1a80",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b3040",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "PendingSimulatingPhysics",
+      "type": "BoolProperty",
+      "offset": "0x1a81",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2fc0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "SimOnlyShapeUsage",
+      "type": "ByteProperty",
+      "offset": "0x1ae0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2ee0",
+      "extra": "0x40000a6b2f60"
+    },
+    {
+      "name": "SimOnlyBlockingChannels",
+      "type": "ArrayProperty",
+      "offset": "0x1ae8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2de0",
+      "extra": "0x40000a6b2e60"
+    },
+    {
+      "name": "DecalSocketName",
+      "type": "NameProperty",
+      "offset": "0x1b08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2d70",
+      "extra": "0x400031617210"
+    },
+    {
+      "name": "DecalActors",
+      "type": "ArrayProperty",
+      "offset": "0x1b10",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2c70",
+      "extra": "0x40000a6b2cf0"
+    },
+    {
+      "name": "Timer_HitEffect",
+      "type": "FloatProperty",
+      "offset": "0x1b20",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2c00",
+      "extra": "0x400031617210"
+    },
+    {
+      "name": "bEnableVoiceCheck",
+      "type": "BoolProperty",
+      "offset": "0x1b30",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2b80",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "VoiceCheckUpdateInterval",
+      "type": "FloatProperty",
+      "offset": "0x1b34",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2b10",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "voiceCheckCD",
+      "type": "FloatProperty",
+      "offset": "0x1b38",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2aa0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "voiceCheckShowCD",
+      "type": "FloatProperty",
+      "offset": "0x1b3c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2a30",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "voiceCheckDis",
+      "type": "FloatProperty",
+      "offset": "0x1b40",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b29c0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "voiceUsingHornCheckDis",
+      "type": "FloatProperty",
+      "offset": "0x1b44",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2950",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "voiceCheckSpeed",
+      "type": "FloatProperty",
+      "offset": "0x1b48",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b28e0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bOptimizeTick",
+      "type": "BoolProperty",
+      "offset": "0x1b70",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2860",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bRepPhysicsSleep",
+      "type": "BoolProperty",
+      "offset": "0x1b71",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b27e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bCheckCharacterStepUpOn",
+      "type": "BoolProperty",
+      "offset": "0x1bc8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2760",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "MaxSpeedAsBase",
+      "type": "FloatProperty",
+      "offset": "0x1bcc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b26f0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "ReqEnterVehicleFlag",
+      "type": "ByteProperty",
+      "offset": "0x1be0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2670",
+      "extra": "0x0"
+    },
+    {
+      "name": "EnterVehicleFailReason",
+      "type": "ByteProperty",
+      "offset": "0x1be1",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b25f0",
+      "extra": "0x0"
+    },
+    {
+      "name": "ReqExitVehicleFlag",
+      "type": "ByteProperty",
+      "offset": "0x1be2",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2570",
+      "extra": "0x0"
+    },
+    {
+      "name": "OnVehicleHide",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1be8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b24f0",
+      "extra": "0x40000a68d860"
+    },
+    {
+      "name": "AudioDebugList",
+      "type": "ArrayProperty",
+      "offset": "0x1bf8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1eb0",
+      "extra": "0x40000a6b1f30"
+    },
+    {
+      "name": "ExceptionList",
+      "type": "ArrayProperty",
+      "offset": "0x1c08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b19e0",
+      "extra": "0x40000a6b1a60"
+    },
+    {
+      "name": "RecoverMaxTime",
+      "type": "FloatProperty",
+      "offset": "0x1c80",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1970",
+      "extra": "0x400031617210"
+    },
+    {
+      "name": "RecoverMaxDist",
+      "type": "FloatProperty",
+      "offset": "0x1c84",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1900",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bDestroyedCanBeSigned",
+      "type": "BoolProperty",
+      "offset": "0x1cb0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1880",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableClampPickRotationWithWeapon",
+      "type": "BoolProperty",
+      "offset": "0x1cc0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1800",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "MaxPickRotationYaw",
+      "type": "FloatProperty",
+      "offset": "0x1cc4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1790",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "MinPickRotationYaw",
+      "type": "FloatProperty",
+      "offset": "0x1cc8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1720",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bEnableModifyBoneUpperBody",
+      "type": "BoolProperty",
+      "offset": "0x1ccc",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b16a0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "MaxModifyBoneUpperBodyYaw",
+      "type": "FloatProperty",
+      "offset": "0x1cd0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1630",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "MinModifyBoneUpperBodyYaw",
+      "type": "FloatProperty",
+      "offset": "0x1cd4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b15c0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ModifyBoneUpperBodyCurve",
+      "type": "ObjectProperty",
+      "offset": "0x1cd8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1540",
+      "extra": "0x7beb7d624d00"
+    },
+    {
+      "name": "bEnableDualWieldingHandIK",
+      "type": "BoolProperty",
+      "offset": "0x1ce0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b14c0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bEnableDualWieldingFPPHandIK",
+      "type": "BoolProperty",
+      "offset": "0x1ce1",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1440",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bDisableDualWieldingAdditive",
+      "type": "BoolProperty",
+      "offset": "0x1ce2",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b13c0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "DualWieldingIdleBlendStyle",
+      "type": "IntProperty",
+      "offset": "0x1ce4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1350",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bIsDeformed",
+      "type": "BoolProperty",
+      "offset": "0x1ce8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b12d0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "ServerCorrectRotationYaw",
+      "type": "FloatProperty",
+      "offset": "0x1cec",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1260",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bFrozenCameraWhenDeformed",
+      "type": "BoolProperty",
+      "offset": "0x1cf0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b11e0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "FronzeCameraMinSpeed",
+      "type": "FloatProperty",
+      "offset": "0x1cf4",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1170",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "OnVehicleAutoMoveChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1cf8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b10f0",
+      "extra": "0x40000a68cb00"
+    },
+    {
+      "name": "OnVehicleSpeedUpChangedDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x1d08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b1070",
+      "extra": "0x40000a68cbc0"
+    },
+    {
+      "name": "bForceExitShowLeaveVehicleFailed",
+      "type": "BoolProperty",
+      "offset": "0x1d18",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b0ff0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bForbidCarryPlayerToVehicle",
+      "type": "BoolProperty",
+      "offset": "0x1d19",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b0f70",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bIgnoreOverlapCarryPlayerToVehicle",
+      "type": "BoolProperty",
+      "offset": "0x1d1a",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b0ef0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bVehicleRepMovementWithBatch",
+      "type": "BoolProperty",
+      "offset": "0x1d1b",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b0e70",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "BatchMoveConsiderFrequency",
+      "type": "FloatProperty",
+      "offset": "0x1d28",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b0e00",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "BatchMoveUpdateFrequency",
+      "type": "FloatProperty",
+      "offset": "0x1d2c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b0d90",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "BatchMoveMinNetUpdateFrequency",
+      "type": "FloatProperty",
+      "offset": "0x1d30",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b0d20",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "bUseControllerRotationPitch",
+      "type": "BoolProperty",
+      "offset": "0x4b8",
+      "owner": "Pawn",
+      "field": "0x40000a62fbd0",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bUseControllerRotationYaw",
+      "type": "BoolProperty",
+      "offset": "0x4b8",
+      "owner": "Pawn",
+      "field": "0x40000a62fb50",
+      "extra": "0x2020001"
+    },
+    {
+      "name": "bUseControllerRotationRoll",
+      "type": "BoolProperty",
+      "offset": "0x4b8",
+      "owner": "Pawn",
+      "field": "0x40000a62fad0",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "bCanAffectNavigationGeneration",
+      "type": "BoolProperty",
+      "offset": "0x4b8",
+      "owner": "Pawn",
+      "field": "0x40000a62fa50",
+      "extra": "0x8080001"
+    },
+    {
+      "name": "bRoleReplicationOptim",
+      "type": "BoolProperty",
+      "offset": "0x4b8",
+      "owner": "Pawn",
+      "field": "0x40000a62f9d0",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bUseViewTranslatedTransform",
+      "type": "BoolProperty",
+      "offset": "0x4b8",
+      "owner": "Pawn",
+      "field": "0x40000a62f950",
+      "extra": "0x20200001"
+    },
+    {
+      "name": "bPossessOnlyClient",
+      "type": "BoolProperty",
+      "offset": "0x4b8",
+      "owner": "Pawn",
+      "field": "0x40000a62f8d0",
+      "extra": "0x40400001"
+    },
+    {
+      "name": "iPossessRate",
+      "type": "ByteProperty",
+      "offset": "0x4b9",
+      "owner": "Pawn",
+      "field": "0x40000a62f850",
+      "extra": "0x0"
+    },
+    {
+      "name": "bDestroyControllerIfPlayStateIsNull",
+      "type": "BoolProperty",
+      "offset": "0x4ba",
+      "owner": "Pawn",
+      "field": "0x40000a62f7d0",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "BaseEyeHeight",
+      "type": "FloatProperty",
+      "offset": "0x4bc",
+      "owner": "Pawn",
+      "field": "0x40000a62f760",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "AutoPossessPlayer",
+      "type": "ByteProperty",
+      "offset": "0x4c0",
+      "owner": "Pawn",
+      "field": "0x40000a62f6e0",
+      "extra": "0x40000a571790"
+    },
+    {
+      "name": "AutoPossessAI",
+      "type": "EnumProperty",
+      "offset": "0x4c1",
+      "owner": "Pawn",
+      "field": "0x40000a62f580",
+      "extra": "0x40000a62f660"
+    },
+    {
+      "name": "AIControllerClass",
+      "type": "ClassProperty",
+      "offset": "0x4c8",
+      "owner": "Pawn",
+      "field": "0x40000a62f500",
+      "extra": "0x7beb7d69df00"
+    },
+    {
+      "name": "PlayerState",
+      "type": "ObjectProperty",
+      "offset": "0x4d0",
+      "owner": "Pawn",
+      "field": "0x40000a62f480",
+      "extra": "0x7beb7da8ce80"
+    },
+    {
+      "name": "RemoteViewPitch",
+      "type": "ByteProperty",
+      "offset": "0x4d8",
+      "owner": "Pawn",
+      "field": "0x40000a62f400",
+      "extra": "0x0"
+    },
+    {
+      "name": "LastHitBy",
+      "type": "ObjectProperty",
+      "offset": "0x4e0",
+      "owner": "Pawn",
+      "field": "0x40000a62f380",
+      "extra": "0x7beb7dac6800"
+    },
+    {
+      "name": "Controller",
+      "type": "ObjectProperty",
+      "offset": "0x4e8",
+      "owner": "Pawn",
+      "field": "0x40000a62f300",
+      "extra": "0x7beb7dac6800"
+    },
+    {
+      "name": "ControlInputVector",
+      "type": "StructProperty",
+      "offset": "0x4f8",
+      "owner": "Pawn",
+      "field": "0x40000a62f280",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "LastControlInputVector",
+      "type": "StructProperty",
+      "offset": "0x504",
+      "owner": "Pawn",
+      "field": "0x40000a62f200",
+      "extra": "0x40000a552900"
+    },
+    {
+      "name": "PrimaryActorTick",
+      "type": "StructProperty",
+      "offset": "0x28",
+      "owner": "Actor",
+      "field": "0x40000a5735c0",
+      "extra": "0x40000a573a50"
+    },
+    {
+      "name": "bSupportSuspendTick",
+      "type": "BoolProperty",
+      "offset": "0xe0",
+      "owner": "Actor",
+      "field": "0x40000a573540",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "CustomTimeDilation",
+      "type": "FloatProperty",
+      "offset": "0xe4",
+      "owner": "Actor",
+      "field": "0x40000a5734d0",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bHidden",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "Actor",
+      "field": "0x40000a573450",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bNetTemporary",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "Actor",
+      "field": "0x40000a5733d0",
+      "extra": "0x2020001"
+    },
+    {
+      "name": "bNetStartup",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "Actor",
+      "field": "0x40000a573350",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "bOnlyRelevantToOwner",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "Actor",
+      "field": "0x40000a5732d0",
+      "extra": "0x8080001"
+    },
+    {
+      "name": "bOnlyRelevantToConnection",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "Actor",
+      "field": "0x40000a573250",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bRegionBasedNetConsideration",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "Actor",
+      "field": "0x40000a5731d0",
+      "extra": "0x20200001"
+    },
+    {
+      "name": "bFastDistBasedRelevancy",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "Actor",
+      "field": "0x40000a573150",
+      "extra": "0x40400001"
+    },
+    {
+      "name": "bFastCustomOwnersRelevancy",
+      "type": "BoolProperty",
+      "offset": "0xe8",
+      "owner": "Actor",
+      "field": "0x40000a5730d0",
+      "extra": "0x80800001"
+    },
+    {
+      "name": "bAlwaysRelevant",
+      "type": "BoolProperty",
+      "offset": "0xe9",
+      "owner": "Actor",
+      "field": "0x40000a573050",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bReplicateMovement",
+      "type": "BoolProperty",
+      "offset": "0xe9",
+      "owner": "Actor",
+      "field": "0x40000a572fd0",
+      "extra": "0x2020001"
+    },
+    {
+      "name": "bNewPhysicsReplicationImpl",
+      "type": "BoolProperty",
+      "offset": "0xe9",
+      "owner": "Actor",
+      "field": "0x40000a572f50",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "bRepMovementWithBatch",
+      "type": "BoolProperty",
+      "offset": "0xea",
+      "owner": "Actor",
+      "field": "0x40000a572ed0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bForceReliableRep",
+      "type": "BoolProperty",
+      "offset": "0xeb",
+      "owner": "Actor",
+      "field": "0x40000a572e50",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bTearOff",
+      "type": "BoolProperty",
+      "offset": "0xeb",
+      "owner": "Actor",
+      "field": "0x40000a572dd0",
+      "extra": "0x2020001"
+    },
+    {
+      "name": "bExchangedRoles",
+      "type": "BoolProperty",
+      "offset": "0xeb",
+      "owner": "Actor",
+      "field": "0x40000a572d50",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "bNetLoadOnClient",
+      "type": "BoolProperty",
+      "offset": "0xeb",
+      "owner": "Actor",
+      "field": "0x40000a572cd0",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bNetUseOwnerRelevancy",
+      "type": "BoolProperty",
+      "offset": "0xeb",
+      "owner": "Actor",
+      "field": "0x40000a572c50",
+      "extra": "0x20200001"
+    },
+    {
+      "name": "bBlockInput",
+      "type": "BoolProperty",
+      "offset": "0xeb",
+      "owner": "Actor",
+      "field": "0x40000a572bd0",
+      "extra": "0x40400001"
+    },
+    {
+      "name": "bAllowTickBeforeBeginPlay",
+      "type": "BoolProperty",
+      "offset": "0xec",
+      "owner": "Actor",
+      "field": "0x40000a572b50",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bActorEnableCollision",
+      "type": "BoolProperty",
+      "offset": "0xec",
+      "owner": "Actor",
+      "field": "0x40000a572ad0",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bReplicates",
+      "type": "BoolProperty",
+      "offset": "0xec",
+      "owner": "Actor",
+      "field": "0x40000a572a50",
+      "extra": "0x40400001"
+    },
+    {
+      "name": "RemoteRole",
+      "type": "ByteProperty",
+      "offset": "0xed",
+      "owner": "Actor",
+      "field": "0x40000a5729d0",
+      "extra": "0x40000a5648c0"
+    },
+    {
+      "name": "Owner",
+      "type": "ObjectProperty",
+      "offset": "0xf0",
+      "owner": "Actor",
+      "field": "0x40000a572950",
+      "extra": "0x7beb7e102680"
+    },
+    {
+      "name": "WorldParallelismID",
+      "type": "ByteProperty",
+      "offset": "0xf8",
+      "owner": "Actor",
+      "field": "0x40000a5728d0",
+      "extra": "0x0"
+    },
+    {
+      "name": "NetDriverName",
+      "type": "NameProperty",
+      "offset": "0x108",
+      "owner": "Actor",
+      "field": "0x40000a572860",
+      "extra": "0x400031616200"
+    },
+    {
+      "name": "ReplicatedMovement",
+      "type": "StructProperty",
+      "offset": "0x110",
+      "owner": "Actor",
+      "field": "0x40000a571e90",
+      "extra": "0x40000a571f10"
+    },
+    {
+      "name": "InitialLifeSpan",
+      "type": "FloatProperty",
+      "offset": "0x158",
+      "owner": "Actor",
+      "field": "0x40000a571e20",
+      "extra": "0x40003161ad50"
+    },
+    {
+      "name": "AttachmentReplication",
+      "type": "StructProperty",
+      "offset": "0x160",
+      "owner": "Actor",
+      "field": "0x40000a5718f0",
+      "extra": "0x40000a571970"
+    },
+    {
+      "name": "Role",
+      "type": "ByteProperty",
+      "offset": "0x1a8",
+      "owner": "Actor",
+      "field": "0x40000a571870",
+      "extra": "0x40000a5648c0"
+    },
+    {
+      "name": "NetDormancy",
+      "type": "ByteProperty",
+      "offset": "0x1a9",
+      "owner": "Actor",
+      "field": "0x40000a5717f0",
+      "extra": "0x40000a56e480"
+    },
+    {
+      "name": "AutoReceiveInput",
+      "type": "ByteProperty",
+      "offset": "0x1aa",
+      "owner": "Actor",
+      "field": "0x40000a571710",
+      "extra": "0x40000a571790"
+    },
+    {
+      "name": "InputPriority",
+      "type": "IntProperty",
+      "offset": "0x1ac",
+      "owner": "Actor",
+      "field": "0x40000a5716a0",
+      "extra": "0x400031616200"
+    },
+    {
+      "name": "InputComponent",
+      "type": "ObjectProperty",
+      "offset": "0x1b0",
+      "owner": "Actor",
+      "field": "0x40000a571620",
+      "extra": "0x7beb7d613680"
+    },
+    {
+      "name": "NetCullDistanceSquared",
+      "type": "FloatProperty",
+      "offset": "0x1b8",
+      "owner": "Actor",
+      "field": "0x40000a5715b0",
+      "extra": "0x40003161c5d0"
+    },
+    {
+      "name": "NetTag",
+      "type": "IntProperty",
+      "offset": "0x1bc",
+      "owner": "Actor",
+      "field": "0x40000a571540",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "NetConsiderFrequency",
+      "type": "FloatProperty",
+      "offset": "0x1c4",
+      "owner": "Actor",
+      "field": "0x40000a5714d0",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "NetUpdateFrequency",
+      "type": "FloatProperty",
+      "offset": "0x1c8",
+      "owner": "Actor",
+      "field": "0x40000a571460",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "MinNetUpdateFrequency",
+      "type": "FloatProperty",
+      "offset": "0x1cc",
+      "owner": "Actor",
+      "field": "0x40000a5713f0",
+      "extra": "0x400031616628"
+    },
+    {
+      "name": "ActorReplicateFreqLODGroupID",
+      "type": "ByteProperty",
+      "offset": "0x1d0",
+      "owner": "Actor",
+      "field": "0x40000a571370",
+      "extra": "0x0"
+    },
+    {
+      "name": "bLowRepFreqOptimizedNAK",
+      "type": "BoolProperty",
+      "offset": "0x1d1",
+      "owner": "Actor",
+      "field": "0x40000a5712f0",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "NetPriority",
+      "type": "FloatProperty",
+      "offset": "0x1d4",
+      "owner": "Actor",
+      "field": "0x40000a571280",
+      "extra": "0x400031615e48"
+    },
+    {
+      "name": "bAutoDestroyWhenFinished",
+      "type": "BoolProperty",
+      "offset": "0x1dc",
+      "owner": "Actor",
+      "field": "0x40000a571200",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bCanBeDamaged",
+      "type": "BoolProperty",
+      "offset": "0x1dc",
+      "owner": "Actor",
+      "field": "0x40000a571180",
+      "extra": "0x2020001"
+    },
+    {
+      "name": "bPreReplicationIsReplay",
+      "type": "BoolProperty",
+      "offset": "0x1dc",
+      "owner": "Actor",
+      "field": "0x40000a571100",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "bActorIsBeingDestroyed",
+      "type": "BoolProperty",
+      "offset": "0x1dc",
+      "owner": "Actor",
+      "field": "0x40000a571080",
+      "extra": "0x8080001"
+    },
+    {
+      "name": "bCollideWhenPlacing",
+      "type": "BoolProperty",
+      "offset": "0x1dc",
+      "owner": "Actor",
+      "field": "0x40000a571000",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bFindCameraComponentWhenViewTarget",
+      "type": "BoolProperty",
+      "offset": "0x1dc",
+      "owner": "Actor",
+      "field": "0x40000a570f80",
+      "extra": "0x20200001"
+    },
+    {
+      "name": "bRelevantForNetworkReplays",
+      "type": "BoolProperty",
+      "offset": "0x1dc",
+      "owner": "Actor",
+      "field": "0x40000a570f00",
+      "extra": "0x40400001"
+    },
+    {
+      "name": "bLowUpdateRateForReplay",
+      "type": "BoolProperty",
+      "offset": "0x1dc",
+      "owner": "Actor",
+      "field": "0x40000a570e80",
+      "extra": "0x80800001"
+    },
+    {
+      "name": "bNetDormancyForReplay",
+      "type": "BoolProperty",
+      "offset": "0x1dd",
+      "owner": "Actor",
+      "field": "0x40000a570e00",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bSkipComparePropertiesForReplay",
+      "type": "BoolProperty",
+      "offset": "0x1dd",
+      "owner": "Actor",
+      "field": "0x40000a570d80",
+      "extra": "0x2020001"
+    },
+    {
+      "name": "bGenerateOverlapEventsDuringLevelStreaming",
+      "type": "BoolProperty",
+      "offset": "0x1dd",
+      "owner": "Actor",
+      "field": "0x40000a570d00",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "bCanBeInCluster",
+      "type": "BoolProperty",
+      "offset": "0x1dd",
+      "owner": "Actor",
+      "field": "0x40000a570c80",
+      "extra": "0x8080001"
+    },
+    {
+      "name": "bAllowReceiveTickEventOnDedicatedServer",
+      "type": "BoolProperty",
+      "offset": "0x1dd",
+      "owner": "Actor",
+      "field": "0x40000a570c00",
+      "extra": "0x10100001"
+    },
+    {
+      "name": "bActorSeamlessTraveled",
+      "type": "BoolProperty",
+      "offset": "0x1de",
+      "owner": "Actor",
+      "field": "0x40000a570b80",
+      "extra": "0x1010001"
+    },
+    {
+      "name": "bIgnoresOriginShifting",
+      "type": "BoolProperty",
+      "offset": "0x1de",
+      "owner": "Actor",
+      "field": "0x40000a570b00",
+      "extra": "0x2020001"
+    },
+    {
+      "name": "bEnableAutoLODGeneration",
+      "type": "BoolProperty",
+      "offset": "0x1de",
+      "owner": "Actor",
+      "field": "0x40000a570a80",
+      "extra": "0x4040001"
+    },
+    {
+      "name": "SpawnCollisionHandlingMethod",
+      "type": "EnumProperty",
+      "offset": "0x1df",
+      "owner": "Actor",
+      "field": "0x40000a570920",
+      "extra": "0x40000a570a00"
+    },
+    {
+      "name": "Instigator",
+      "type": "ObjectProperty",
+      "offset": "0x1f0",
+      "owner": "Actor",
+      "field": "0x40000a5708a0",
+      "extra": "0x7beb7dad0f80"
+    },
+    {
+      "name": "Children",
+      "type": "ArrayProperty",
+      "offset": "0x1f8",
+      "owner": "Actor",
+      "field": "0x40000a5707a0",
+      "extra": "0x40000a570820"
+    },
+    {
+      "name": "RootComponent",
+      "type": "ObjectProperty",
+      "offset": "0x208",
+      "owner": "Actor",
+      "field": "0x40000a570720",
+      "extra": "0x7beb7e103a80"
+    },
+    {
+      "name": "ControllingMatineeActors",
+      "type": "ArrayProperty",
+      "offset": "0x210",
+      "owner": "Actor",
+      "field": "0x40000a570620",
+      "extra": "0x40000a5706a0"
+    },
+    {
+      "name": "Layers",
+      "type": "ArrayProperty",
+      "offset": "0x228",
+      "owner": "Actor",
+      "field": "0x40000a570530",
+      "extra": "0x40000a5705b0"
+    },
+    {
+      "name": "ParentComponent",
+      "type": "WeakObjectProperty",
+      "offset": "0x238",
+      "owner": "Actor",
+      "field": "0x40000a5704b0",
+      "extra": "0x7beb7d627c80"
+    },
+    {
+      "name": "Tags",
+      "type": "ArrayProperty",
+      "offset": "0x240",
+      "owner": "Actor",
+      "field": "0x40000a5703c0",
+      "extra": "0x40000a570440"
+    },
+    {
+      "name": "HiddenEditorViews",
+      "type": "UInt64Property",
+      "offset": "0x250",
+      "owner": "Actor",
+      "field": "0x40000a5702e0",
+      "extra": "0x40003161c1a8"
+    },
+    {
+      "name": "OnTakeAnyDamage",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x258",
+      "owner": "Actor",
+      "field": "0x40000a570260",
+      "extra": "0x40000a55d1f0"
+    },
+    {
+      "name": "OnTakePointDamage",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x268",
+      "owner": "Actor",
+      "field": "0x40000a5701e0",
+      "extra": "0x40000a55d520"
+    },
+    {
+      "name": "OnActorBeginOverlap",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x278",
+      "owner": "Actor",
+      "field": "0x40000a570160",
+      "extra": "0x40000a55da40"
+    },
+    {
+      "name": "OnActorEndOverlap",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x288",
+      "owner": "Actor",
+      "field": "0x40000a5700e0",
+      "extra": "0x40000a55dc00"
+    },
+    {
+      "name": "OnBeginCursorOver",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x298",
+      "owner": "Actor",
+      "field": "0x40000a570060",
+      "extra": "0x40000a55eb00"
+    },
+    {
+      "name": "OnEndCursorOver",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2a8",
+      "owner": "Actor",
+      "field": "0x40000a56ffe0",
+      "extra": "0x40000a55ec40"
+    },
+    {
+      "name": "OnClicked",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2b8",
+      "owner": "Actor",
+      "field": "0x40000a56ff60",
+      "extra": "0x40000a55ed80"
+    },
+    {
+      "name": "OnReleased",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2c8",
+      "owner": "Actor",
+      "field": "0x40000a56fee0",
+      "extra": "0x40000a55f050"
+    },
+    {
+      "name": "OnInputTouchBegin",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2d8",
+      "owner": "Actor",
+      "field": "0x40000a56fe60",
+      "extra": "0x40000a55f210"
+    },
+    {
+      "name": "OnInputTouchEnd",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2e8",
+      "owner": "Actor",
+      "field": "0x40000a56fde0",
+      "extra": "0x40000a55f430"
+    },
+    {
+      "name": "OnInputTouchEnter",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x2f8",
+      "owner": "Actor",
+      "field": "0x40000a56fd60",
+      "extra": "0x40000a55f5f0"
+    },
+    {
+      "name": "OnInputTouchLeave",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x308",
+      "owner": "Actor",
+      "field": "0x40000a56fce0",
+      "extra": "0x40000a55f7b0"
+    },
+    {
+      "name": "OnActorHit",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x318",
+      "owner": "Actor",
+      "field": "0x40000a56fc60",
+      "extra": "0x40000a55ddc0"
+    },
+    {
+      "name": "OnDestroyed",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x328",
+      "owner": "Actor",
+      "field": "0x40000a56fbe0",
+      "extra": "0x40000a55f970"
+    },
+    {
+      "name": "OnPreEndPlay",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x338",
+      "owner": "Actor",
+      "field": "0x40000a56fb60",
+      "extra": "0x40000a55fab0"
+    },
+    {
+      "name": "OnEndPlay",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x348",
+      "owner": "Actor",
+      "field": "0x40000a56fae0",
+      "extra": "0x40000a55fab0"
+    },
+    {
+      "name": "BlueprintCreatedComponents",
+      "type": "ArrayProperty",
+      "offset": "0x400",
+      "owner": "Actor",
+      "field": "0x40000a56f9e0",
+      "extra": "0x40000a56fa60"
+    },
+    {
+      "name": "InstanceComponents",
+      "type": "ArrayProperty",
+      "offset": "0x410",
+      "owner": "Actor",
+      "field": "0x40000a56f8e0",
+      "extra": "0x40000a56f960"
+    },
+    {
+      "name": "ParallelWorldId",
+      "type": "IntProperty",
+      "offset": "0x438",
+      "owner": "Actor",
+      "field": "0x40000a56f870",
+      "extra": "0x400031617210"
+    },
+    {
+      "name": "bAlwaysRelevantToParallelWorld",
+      "type": "BoolProperty",
+      "offset": "0x43c",
+      "owner": "Actor",
+      "field": "0x40000a56f7f0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "OnActorEnterParallelWorld",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x440",
+      "owner": "Actor",
+      "field": "0x40000a56f770",
+      "extra": "0x40000a55fcd0"
+    },
+    {
+      "name": "OnActorLeaveParallelWorld",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x450",
+      "owner": "Actor",
+      "field": "0x40000a56f6f0",
+      "extra": "0x40000a55fd90"
+    },
+    {
+      "name": "RealParallelWorldId",
+      "type": "IntProperty",
+      "offset": "0x460",
+      "owner": "Actor",
+      "field": "0x40000a56f680",
+      "extra": "0x40003161e498"
+    },
+    {
+      "name": "OnActorPhysicsContactDelegate",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x468",
+      "owner": "Actor",
+      "field": "0x40000a56f600",
+      "extra": "0x40000a560780"
+    },
+    {
+      "name": "OnTriggeredBy",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x478",
+      "owner": "Actor",
+      "field": "0x40000a56f580",
+      "extra": "0x40000a560b20"
+    },
+    {
+      "name": "OnInteractWithTrigger",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x488",
+      "owner": "Actor",
+      "field": "0x40000a56f480",
+      "extra": "0x40000a560000"
+    }
+  ],
+  "selected": [
+    {
+      "name": "TailLightParamName",
+      "type": "NameProperty",
+      "offset": "0x21f0",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb3aecd8c0",
+      "extra": "0x40003161dd28",
+      "raw_value": "61010800000000006901080000000000"
+    },
+    {
+      "name": "FrontLightParamName",
+      "type": "NameProperty",
+      "offset": "0x21f8",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb3aecd930",
+      "extra": "0x400031616628",
+      "raw_value": "69010800000000006801080000000000"
+    },
+    {
+      "name": "FPPBoostLightParamName",
+      "type": "NameProperty",
+      "offset": "0x2200",
+      "owner": "BP_STExtraWheeledVehicle_C",
+      "field": "0x7beb3aecdd20",
+      "extra": "0x40003161dd28",
+      "raw_value": "68010800000000000000000000000000"
+    },
+    {
+      "name": "LoopSmokeCmpName",
+      "type": "StrProperty",
+      "offset": "0x2090",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b498030",
+      "extra": "0x400031616628",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "IsStoppedBlackboardKeyName",
+      "type": "NameProperty",
+      "offset": "0x20f8",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b498110",
+      "extra": "0x40003161dd28",
+      "raw_value": "08c8000000000000be47000000000000"
+    },
+    {
+      "name": "TargetLocationBlackboardKeyName",
+      "type": "NameProperty",
+      "offset": "0x2100",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b498180",
+      "extra": "0x40003161dd28",
+      "raw_value": "be4700000000000056fc010000000000"
+    },
+    {
+      "name": "PathingLocationBlackboardKeyName",
+      "type": "NameProperty",
+      "offset": "0x2108",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b4981f0",
+      "extra": "0x40003161dd28",
+      "raw_value": "56fc0100000000006165020000000000"
+    },
+    {
+      "name": "PathInputLocationBlackboardKeyName",
+      "type": "NameProperty",
+      "offset": "0x2110",
+      "owner": "STExtraWheeledVehicle",
+      "field": "0x7beb7b498260",
+      "extra": "0x400031616628",
+      "raw_value": "61650200000000000700000000000000"
+    },
+    {
+      "name": "VehicleType",
+      "type": "EnumProperty",
+      "offset": "0x70c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6c10a0",
+      "extra": "0x40000a6c1180",
+      "raw_value": "0d070000090000003a191d0000000000"
+    },
+    {
+      "name": "VehicleDisplayName",
+      "type": "TextProperty",
+      "offset": "0x9a0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf420",
+      "extra": "0x40003161b530",
+      "raw_value": "c0e1eb58eb7b0000b0e1eb58eb7b0000"
+    },
+    {
+      "name": "AirDropParachuteSocketName",
+      "type": "NameProperty",
+      "offset": "0x9d0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bf230",
+      "extra": "0x40003161c5d0",
+      "raw_value": "51650200000000000000404000000000"
+    },
+    {
+      "name": "BackpackName",
+      "type": "NameProperty",
+      "offset": "0xa10",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bece0",
+      "extra": "0x400031616628",
+      "raw_value": "c8980900000000000000000000000000"
+    },
+    {
+      "name": "VehicleCommon",
+      "type": "ObjectProperty",
+      "offset": "0xc08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6bd470",
+      "extra": "0x7beb7d8d4000",
+      "raw_value": "e01ffea7ea7b0000e0d8053aeb7b0000",
+      "pointer": "0x7beaa7fe1fe0",
+      "object_class": "VehicleCommonComponent"
+    },
+    {
+      "name": "VehicleBloodMaxHpConfigClass",
+      "type": "StructProperty",
+      "offset": "0x1600",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b6980",
+      "extra": "0x40000a557970",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "OnVehicleHealthStateChanged",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x17e8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5180",
+      "extra": "0x40000a68b780",
+      "raw_value": "f0f077a7ea7b0000090000000b000000"
+    },
+    {
+      "name": "OnVehicleHealthDestroy",
+      "type": "MulticastDelegateProperty",
+      "offset": "0x17f8",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5100",
+      "extra": "0x40000a68c4d0",
+      "raw_value": "80837735eb7b00000100000004000000"
+    },
+    {
+      "name": "VehicleHealthStateGoodPercent",
+      "type": "FloatProperty",
+      "offset": "0x1808",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5090",
+      "extra": "0x40003161e498",
+      "raw_value": "0000003fcdcc4c3e0000804000000000",
+      "value": 0.5
+    },
+    {
+      "name": "VehicleHealthStateSmokingPercent",
+      "type": "FloatProperty",
+      "offset": "0x180c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b5020",
+      "extra": "0x400031616628",
+      "raw_value": "cdcc4c3e000080400000000000010101",
+      "value": 0.20000000298023224
+    },
+    {
+      "name": "VehicleHealthState",
+      "type": "EnumProperty",
+      "offset": "0x18c9",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b45c0",
+      "extra": "0x40000a6b4640",
+      "raw_value": "000000000000000000000000000000ff"
+    },
+    {
+      "name": "PrevVehicleHealthState",
+      "type": "EnumProperty",
+      "offset": "0x18ca",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b44c0",
+      "extra": "0x40000a6b4540",
+      "raw_value": "0000000000000000000000000000ffff"
+    },
+    {
+      "name": "ChassisBoneName",
+      "type": "NameProperty",
+      "offset": "0x18f0",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b4280",
+      "extra": "0x400031616628",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "FuelConsumptionModifierBoost",
+      "type": "FloatProperty",
+      "offset": "0x197c",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b35e0",
+      "extra": "0x400031615e48",
+      "raw_value": "0000c03f000000000000000000000000",
+      "value": 1.5
+    },
+    {
+      "name": "DecalSocketName",
+      "type": "NameProperty",
+      "offset": "0x1b08",
+      "owner": "STExtraVehicleBase",
+      "field": "0x40000a6b2d70",
+      "extra": "0x400031617210",
+      "raw_value": "00000000000000000000000000000000"
+    },
+    {
+      "name": "NetDriverName",
+      "type": "NameProperty",
+      "offset": "0x108",
+      "owner": "Actor",
+      "field": "0x40000a572860",
+      "extra": "0x400031616200",
+      "raw_value": "1a010000000000000000000000000000"
+    }
+  ],
+  "pages_read": 193
+}

@@ -1,0 +1,32 @@
+{
+  "ConfirmedPickupRecommendAvailableArray": {
+    "inner_name": "ConfirmedPickupRecommendAvailableArray",
+    "inner_type": "ObjectProperty",
+    "inner_extra": "0x7beb7e102680",
+    "header": [
+      0,
+      0,
+      0
+    ]
+  },
+  "PickupAvailableActorPool": {
+    "inner_name": "PickupAvailableActorPool",
+    "inner_type": "WeakObjectProperty",
+    "inner_extra": "0x7beb7e102680",
+    "header": [
+      136251086260624,
+      394,
+      803
+    ]
+  },
+  "ConfirmedPickupActorPool": {
+    "inner_name": "ConfirmedPickupActorPool",
+    "inner_type": "ObjectProperty",
+    "inner_extra": "0x7beb7e102680",
+    "header": [
+      136247826878272,
+      0,
+      394
+    ]
+  }
+}

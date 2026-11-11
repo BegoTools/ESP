@@ -1,0 +1,116 @@
+{
+  "ReaderPid": 4207,
+  "Session": "9fd29ca7194846e7a6b8885a9df864df",
+  "CameraPosition": {
+    "X": 36133.32,
+    "Y": 444237.22,
+    "Z": 1626.3132
+  },
+  "CameraRotation": {
+    "X": -10.108488,
+    "Y": -95.89966,
+    "Z": 4.3361777e-07
+  },
+  "Fov": 80,
+  "AspectRatio": 1.777778,
+  "Origin": {
+    "X": 36086.19,
+    "Y": 444024.34,
+    "Z": 1497.7004
+  },
+  "LocalPawn": "0x7beb6d60b000",
+  "LocalTeam": 301,
+  "ActorCount": 285,
+  "ActorProviderFlag": 0,
+  "ActorProvider": "0x0",
+  "Skipped": 0,
+  "ReadOperations": 366,
+  "ReadMilliseconds": 0.407,
+  "Actors": [
+    {
+      "Address": "0x7beb6d60b000",
+      "Name": "JustDie888",
+      "ObjectName": "BP_PlayerPawn_ST_C",
+      "Class": "BP_PlayerPawn_ST_C",
+      "Kind": "Character",
+      "IsPlayer": true,
+      "Position": {
+        "X": 36086.19,
+        "Y": 444024.34,
+        "Z": 1497.7004
+      },
+      "Health": 100,
+      "MaxHealth": 100,
+      "Height": 176,
+      "Team": 301
+    },
+    {
+      "Address": "0x7beaa7c40000",
+      "Name": "ModelTarget",
+      "ObjectName": "BP_CharacterModelTaget_C",
+      "Class": "BP_CharacterModelTaget_C",
+      "Kind": "TrainingTarget",
+      "IsPlayer": true,
+      "Position": {
+        "X": 37418.918,
+        "Y": 432867.16,
+        "Z": 209.20462
+      },
+      "Health": 1000,
+      "MaxHealth": 1000,
+      "Height": 176,
+      "Team": 100000012
+    },
+    {
+      "Address": "0x7beaa5c29000",
+      "Name": "ModelTarget",
+      "ObjectName": "BP_CharacterModelTaget_C",
+      "Class": "BP_CharacterModelTaget_C",
+      "Kind": "TrainingTarget",
+      "IsPlayer": true,
+      "Position": {
+        "X": 37418.918,
+        "Y": 432614.44,
+        "Z": 209.20456
+      },
+      "Health": 1000,
+      "MaxHealth": 1000,
+      "Height": 176,
+      "Team": 100000012
+    },
+    {
+      "Address": "0x7beaa5c21000",
+      "Name": "ModelTarget",
+      "ObjectName": "BP_CharacterModelTaget_C",
+      "Class": "BP_CharacterModelTaget_C",
+      "Kind": "TrainingTarget",
+      "IsPlayer": true,
+      "Position": {
+        "X": 37419.31,
+        "Y": 432115.5,
+        "Z": 209.20132
+      },
+      "Health": 1000,
+      "MaxHealth": 1000,
+      "Height": 176,
+      "Team": 100000012
+    },
+    {
+      "Address": "0x7beaa5040000",
+      "Name": "ModelTarget",
+      "ObjectName": "BP_CharacterModelTaget_C",
+      "Class": "BP_CharacterModelTaget_C",
+      "Kind": "TrainingTarget",
+      "IsPlayer": true,
+      "Position": {
+        "X": 37419.31,
+        "Y": 432368.22,
+        "Z": 209.20139
+      },
+      "Health": 1000,
+      "MaxHealth": 1000,
+      "Height": 176,
+      "Team": 100000012
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "targets": {
+    "PixUtil_GameWorld_GEngine_null": "0x409f06a",
+    "PixUtil_GameInstance_GEngine_null": "0x3ffdd6e",
+    "PersistentLevel_reflection": "0x39b96b0",
+    "AcknowledgedPawn_reflection": "0x406b974",
+    "ShaderPrecompile_GEngine_null": "0x39b085c",
+    "MainCity_GEngine_null": "0x3b0b6e8",
+    "SpawnActorNoClass": "0x3c40d1e",
+    "SpawnActorTearingDown": "0x398c58e",
+    "GetLevelActorsName": "0x418e9d0",
+    "RemoveActorName": "0x41fd609",
+    "LevelActorSource": "0x4196fb8"
+  },
+  "code_xrefs": [
+    {
+      "target": [
+        "PersistentLevel_reflection"
+      ],
+      "target_va": "0x39b96b0",
+      "adrp_va": "0x8be3d1c",
+      "add_va": "0x8be3d20",
+      "distance": 1
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a2da0",
+      "add_va": "0xa9a2da8",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a2e10",
+      "add_va": "0xa9a2e18",
+      "distance": 2
+    },
+    {
+      "target": [
+        "SpawnActorNoClass"
+      ],
+      "target_va": "0x3c40d1e",
+      "adrp_va": "0xa9a2e14",
+      "add_va": "0xa9a2e1c",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a2e94",
+      "add_va": "0xa9a2e9c",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a2f20",
+      "add_va": "0xa9a2f28",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a2ff0",
+      "add_va": "0xa9a2ff8",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a3170",
+      "add_va": "0xa9a3178",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a31fc",
+      "add_va": "0xa9a3204",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a32e8",
+      "add_va": "0xa9a32f0",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a3694",
+      "add_va": "0xa9a369c",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a3e84",
+      "add_va": "0xa9a3e8c",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a3ffc",
+      "add_va": "0xa9a4004",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a412c",
+      "add_va": "0xa9a4134",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a65b8",
+      "add_va": "0xa9a65c0",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a66e4",
+      "add_va": "0xa9a66ec",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a68d8",
+      "add_va": "0xa9a68e0",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a6be0",
+      "add_va": "0xa9a6be8",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a723c",
+      "add_va": "0xa9a7244",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a78bc",
+      "add_va": "0xa9a78c4",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a7954",
+      "add_va": "0xa9a795c",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a7f48",
+      "add_va": "0xa9a7f50",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a8084",
+      "add_va": "0xa9a808c",
+      "distance": 2
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a8628",
+      "add_va": "0xa9a8630",
+      "distance": 2
+    },
+    {
+      "target": [
+        "SpawnActorTearingDown"
+      ],
+      "target_va": "0x398c58e",
+      "adrp_va": "0xa9a32ec",
+      "add_va": "0xa9a32f8",
+      "distance": 3
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a6ddc",
+      "add_va": "0xa9a6de8",
+      "distance": 3
+    },
+    {
+      "target": [
+        "PixUtil_GameWorld_GEngine_null"
+      ],
+      "target_va": "0x409f06a",
+      "adrp_va": "0xcec3d28",
+      "add_va": "0xcec3d34",
+      "distance": 3
+    },
+    {
+      "target": [
+        "PixUtil_GameWorld_GEngine_null"
+      ],
+      "target_va": "0x409f06a",
+      "adrp_va": "0xcec544c",
+      "add_va": "0xcec5458",
+      "distance": 3
+    },
+    {
+      "target": [
+        "PixUtil_GameInstance_GEngine_null"
+      ],
+      "target_va": "0x3ffdd6e",
+      "adrp_va": "0xcec6048",
+      "add_va": "0xcec6054",
+      "distance": 3
+    },
+    {
+      "target": [
+        "PixUtil_GameWorld_GEngine_null"
+      ],
+      "target_va": "0x409f06a",
+      "adrp_va": "0xcec60e4",
+      "add_va": "0xcec60f0",
+      "distance": 3
+    },
+    {
+      "target": [
+        "PixUtil_GameWorld_GEngine_null"
+      ],
+      "target_va": "0x409f06a",
+      "adrp_va": "0xcec618c",
+      "add_va": "0xcec6198",
+      "distance": 3
+    },
+    {
+      "target": [
+        "LevelActorSource"
+      ],
+      "target_va": "0x4196fb8",
+      "adrp_va": "0xa9a83ec",
+      "add_va": "0xa9a8400",
+      "distance": 5
+    }
+  ],
+  "relocation_xrefs": [
+    {
+      "target": [
+        "RemoveActorName"
+      ],
+      "target_va": "0x41fd609",
+      "storage_va": "0xd91f1a0",
+      "type": 1027
+    },
+    {
+      "target": [
+        "RemoveActorName"
+      ],
+      "target_va": "0x41fd609",
+      "storage_va": "0xd92c898",
+      "type": 1027
+    },
+    {
+      "target": [
+        "RemoveActorName"
+      ],
+      "target_va": "0x41fd609",
+      "storage_va": "0xd930d10",
+      "type": 1027
+    },
+    {
+      "target": [
+        "GetLevelActorsName"
+      ],
+      "target_va": "0x418e9d0",
+      "storage_va": "0xdbce540",
+      "type": 1027
+    },
+    {
+      "target": [
+        "GetLevelActorsName"
+      ],
+      "target_va": "0x418e9d0",
+      "storage_va": "0xdbd37e0",
+      "type": 1027
+    },
+    {
+      "target": [
+        "GetLevelActorsName"
+      ],
+      "target_va": "0x418e9d0",
+      "storage_va": "0xdbd7bf8",
+      "type": 1027
+    },
+    {
+      "target": [
+        "AcknowledgedPawn_reflection"
+      ],
+      "target_va": "0x406b974",
+      "storage_va": "0xe8c6fb8",
+      "type": 1027
+    }
+  ],
+  "adrp_candidates": 1034859,
+  "scope": "All .text words; ADRP followed within 8 instructions by same-base ADD immediate, plus .rela.dyn addend equality. No data-flow or runtime validation."
+}

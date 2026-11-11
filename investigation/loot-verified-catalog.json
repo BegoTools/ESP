@@ -1,0 +1,1776 @@
+{
+  "pid": 3418,
+  "base": "0x400023200000",
+  "define_id_struct_name": "ItemDefineID",
+  "define_id_properties": [
+    {
+      "name": "Type",
+      "type": "IntProperty",
+      "offset": "0x0",
+      "owner": "ItemDefineID",
+      "field": "0x40000a5decb0",
+      "extra": "0x400031613858"
+    },
+    {
+      "name": "TypeSpecificID",
+      "type": "IntProperty",
+      "offset": "0x4",
+      "owner": "ItemDefineID",
+      "field": "0x40000a5dec40",
+      "extra": "0x40003161b530"
+    },
+    {
+      "name": "bValidItem",
+      "type": "BoolProperty",
+      "offset": "0x8",
+      "owner": "ItemDefineID",
+      "field": "0x40000a5debc0",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "bValidInstance",
+      "type": "BoolProperty",
+      "offset": "0x9",
+      "owner": "ItemDefineID",
+      "field": "0x40000a5deb40",
+      "extra": "0xff010001"
+    },
+    {
+      "name": "InstanceID",
+      "type": "UInt64Property",
+      "offset": "0x10",
+      "owner": "ItemDefineID",
+      "field": "0x40000a5dead0",
+      "extra": "0x400031615e48"
+    }
+  ],
+  "pickups": [
+    {
+      "address": "0x7beb3b41ef20",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b41d9e0",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b41cf40",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b41c4a0",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b41ba00",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b41af60",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b41a4c0",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b419a20",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b418f80",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b4184e0",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b417a40",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b416fa0",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b416500",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b415a60",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b414fc0",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b414520",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b413a80",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b412fe0",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b412540",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b411aa0",
+      "class": "GoldenTokenWrapper_C",
+      "parents": [
+        "GoldenTokenWrapper_C",
+        "BP_MutilCount_PickUpWrapperActor_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 3000324,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b411000",
+      "class": "BP_Rifle_M416_Wrapper_C",
+      "parents": [
+        "BP_Rifle_M416_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101004,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaab8204a0",
+      "class": "BP_MachineGun_UMP9_Wrapper_C",
+      "parents": [
+        "BP_MachineGun_UMP9_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 102002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b338460",
+      "class": "BP_ShotGun_S12K_Wrapper_C",
+      "parents": [
+        "BP_ShotGun_S12K_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 104003,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b3379c0",
+      "class": "BP_Rifle_Mk47_Wrapper_C",
+      "parents": [
+        "BP_Rifle_Mk47_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101009,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b336f20",
+      "class": "BP_Rifle_M762_Wrapper_C",
+      "parents": [
+        "BP_Rifle_M762_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101008,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b3359e0",
+      "class": "BP_MachineGun_Vector_Wrapper_C",
+      "parents": [
+        "BP_MachineGun_Vector_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 102003,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb6288c460",
+      "class": "Drink_Pickup_C",
+      "parents": [
+        "Drink_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 601001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb6288a480",
+      "class": "Drink_Pickup_C",
+      "parents": [
+        "Drink_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 601001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb628899e0",
+      "class": "BP_ShotGun_S1897_Wrapper_C",
+      "parents": [
+        "BP_ShotGun_S1897_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 104002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62888f40",
+      "class": "BP_Rifle_AKM_Wrapper_C",
+      "parents": [
+        "BP_Rifle_AKM_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb628884a0",
+      "class": "BP_Rifle_AKM_Wrapper_C",
+      "parents": [
+        "BP_Rifle_AKM_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62885a20",
+      "class": "BP_MachineGun_P90_Wrapper_C",
+      "parents": [
+        "BP_MachineGun_P90_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 102105,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62886f60",
+      "class": "BP_Sniper_SKS_Wrapper_C",
+      "parents": [
+        "BP_Sniper_SKS_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 103004,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62884f80",
+      "class": "BP_Pistol_P92_Wrapper_C",
+      "parents": [
+        "BP_Pistol_P92_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 106001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb628844e0",
+      "class": "BP_Pistol_P92_Wrapper_C",
+      "parents": [
+        "BP_Pistol_P92_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 106001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62883a40",
+      "class": "BP_Ammo_45ACP_Pickup_C",
+      "parents": [
+        "BP_Ammo_45ACP_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 3,
+      "item_id": 305001,
+      "count": 30,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62882fa0",
+      "class": "BP_Ammo_45ACP_Pickup_C",
+      "parents": [
+        "BP_Ammo_45ACP_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 3,
+      "item_id": 305001,
+      "count": 30,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62882500",
+      "class": "BP_Rifle_M16A4_Wrapper_C",
+      "parents": [
+        "BP_Rifle_M16A4_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62881a60",
+      "class": "BP_Rifle_M16A4_Wrapper_C",
+      "parents": [
+        "BP_Rifle_M16A4_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb62880fc0",
+      "class": "BP_MachineGun_Uzi_Wrapper_C",
+      "parents": [
+        "BP_MachineGun_Uzi_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 102001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7c01540",
+      "class": "PickUp_BP_Helmet_Lv1_C",
+      "parents": [
+        "PickUp_BP_Helmet_Lv1_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 502001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7c00000",
+      "class": "PickUp_BP_Helmet_Lv2_C",
+      "parents": [
+        "PickUp_BP_Helmet_Lv2_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 502002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa797e460",
+      "class": "BP_Rifle_SCAR_Wrapper_C",
+      "parents": [
+        "BP_Rifle_SCAR_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101003,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa797d9c0",
+      "class": "BP_Rifle_SCAR_Wrapper_C",
+      "parents": [
+        "BP_Rifle_SCAR_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101003,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa797cf20",
+      "class": "BP_ShotGun_S686_Wrapper_C",
+      "parents": [
+        "BP_ShotGun_S686_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 104001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa797c480",
+      "class": "PickUp_BP_Helmet_Lv1_B_C",
+      "parents": [
+        "PickUp_BP_Helmet_Lv1_B_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 502004,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa797b9e0",
+      "class": "PickUp_BP_Helmet_Lv1_B_C",
+      "parents": [
+        "PickUp_BP_Helmet_Lv1_B_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 502004,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa797a4a0",
+      "class": "PickUp_BP_Bag_Lv1_B_C",
+      "parents": [
+        "PickUp_BP_Bag_Lv1_B_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 501004,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7979a00",
+      "class": "PickUp_BP_Bag_Lv1_B_C",
+      "parents": [
+        "PickUp_BP_Bag_Lv1_B_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 501004,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa79784c0",
+      "class": "Bandage_Pickup_C",
+      "parents": [
+        "Bandage_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 601004,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7977a20",
+      "class": "Bandage_Pickup_C",
+      "parents": [
+        "Bandage_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 601004,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7976f80",
+      "class": "PickUp_BP_Armor_Lv2_C",
+      "parents": [
+        "PickUp_BP_Armor_Lv2_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 503002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa79764e0",
+      "class": "BP_Ammo_12Guage_Pickup_C",
+      "parents": [
+        "BP_Ammo_12Guage_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 3,
+      "item_id": 304001,
+      "count": 10,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7975a40",
+      "class": "BP_Ammo_12Guage_Pickup_C",
+      "parents": [
+        "BP_Ammo_12Guage_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 3,
+      "item_id": 304001,
+      "count": 10,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa75de4c0",
+      "class": "BP_Grenade_Smoke_Weapon_Wrapper_C",
+      "parents": [
+        "BP_Grenade_Smoke_Weapon_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 602002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa75dc4e0",
+      "class": "BP_Grenade_Smoke_Weapon_Wrapper_C",
+      "parents": [
+        "BP_Grenade_Smoke_Weapon_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 6,
+      "item_id": 602002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa75dda20",
+      "class": "BP_Ammo_556mm_Pickup_C",
+      "parents": [
+        "BP_Ammo_556mm_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 3,
+      "item_id": 303001,
+      "count": 30,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa75dba40",
+      "class": "BP_Ammo_556mm_Pickup_C",
+      "parents": [
+        "BP_Ammo_556mm_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 3,
+      "item_id": 303001,
+      "count": 30,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa75dafa0",
+      "class": "BP_Other_DP28_Wrapper_C",
+      "parents": [
+        "BP_Other_DP28_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 105002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa75da500",
+      "class": "BP_Ammo_762mm_Pickup_C",
+      "parents": [
+        "BP_Ammo_762mm_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 3,
+      "item_id": 302001,
+      "count": 30,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa75d9a60",
+      "class": "BP_Ammo_762mm_Pickup_C",
+      "parents": [
+        "BP_Ammo_762mm_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 3,
+      "item_id": 302001,
+      "count": 30,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa75d5000",
+      "class": "BP_MZJ_QX_Pickup_C",
+      "parents": [
+        "BP_MZJ_QX_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 2,
+      "item_id": 203002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7487460",
+      "class": "BP_MZJ_QX_Pickup_C",
+      "parents": [
+        "BP_MZJ_QX_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 2,
+      "item_id": 203002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa74869c0",
+      "class": "PickUp_BP_Armor_Lv1_C",
+      "parents": [
+        "PickUp_BP_Armor_Lv1_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 503001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7485f20",
+      "class": "PickUp_BP_Armor_Lv1_C",
+      "parents": [
+        "PickUp_BP_Armor_Lv1_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 503001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7485480",
+      "class": "PickUp_BP_Bag_Lv1_C",
+      "parents": [
+        "PickUp_BP_Bag_Lv1_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 501001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa74849e0",
+      "class": "PickUp_BP_Bag_Lv1_C",
+      "parents": [
+        "PickUp_BP_Bag_Lv1_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 501001,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7483f40",
+      "class": "PickUp_BP_Bag_Lv2_C",
+      "parents": [
+        "PickUp_BP_Bag_Lv2_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 5,
+      "item_id": 501002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa74834a0",
+      "class": "BP_Pistol_P1911_Wrapper_C",
+      "parents": [
+        "BP_Pistol_P1911_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 106002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beaa7482a00",
+      "class": "BP_Pistol_P1911_Wrapper_C",
+      "parents": [
+        "BP_Pistol_P1911_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 106002,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    },
+    {
+      "address": "0x7beb3b336480",
+      "class": "BP_Rifle_M762_Wrapper_C",
+      "parents": [
+        "BP_Rifle_M762_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "item_type": 1,
+      "item_id": 101008,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "position": [
+        36641.69921875,
+        434096.5,
+        117.9000015258789
+      ],
+      "hidden_byte": 97,
+      "hidden": true
+    }
+  ],
+  "current_hidden_counts": {
+    "True": 71
+  }
+}

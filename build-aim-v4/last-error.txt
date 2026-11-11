@@ -1,0 +1,4 @@
+System.IO.IOException: No active player connection. Enter training or a live scene, then restart Live (inactivity can return the game to its waiting area)
+   at ESPWorkbench.NativeSnapshot.Parse(String json)
+   at ESPWorkbench.NativeReader.Once(CancellationToken token)
+   at ESPWorkbench.Program.Main(String[] args)

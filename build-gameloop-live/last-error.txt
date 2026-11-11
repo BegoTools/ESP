@@ -1,0 +1,5 @@
+System.IO.IOException: Command failed (1): sha256sum: /data/local/tmp/esp-workbench-reader: Permission denied 
+   at ESPWorkbench.CommandResult.EnsureSuccess()
+   at ESPWorkbench.Adb.Shell(String command, CancellationToken token)
+   at ESPWorkbench.NativeReader.Prepare(Adb adb, Profile profile, GameInfo info, List`1 maps, CancellationToken token)
+   at ESPWorkbench.Program.Main(String[] args)

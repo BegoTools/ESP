@@ -1,0 +1,25 @@
+{
+  "UWorld::PersistentLevel": [],
+  "PersistentLevel !=": [],
+  "World->PersistentLevel": [],
+  "Actors.Num()": [],
+  "Actors.Num": [],
+  "Invalid object index": [],
+  "FUObjectArray": [],
+  "GObjectArray": [],
+  "GetAllActorsOfClass": [
+    {
+      "offset": "0x410e807",
+      "start": "0x410e807",
+      "encoding": "utf-8",
+      "text": "GetAllActorsOfClass"
+    },
+    {
+      "offset": "0x41da697",
+      "start": "0x41da697",
+      "encoding": "utf-8",
+      "text": "GetAllActorsOfClassMatchingTagQuery"
+    }
+  ],
+  "GetCurrentLevelName": []
+}

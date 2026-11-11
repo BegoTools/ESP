@@ -1,0 +1,12 @@
+{
+  "pid": 8584,
+  "base": "0x400023600000",
+  "sha256": "ad923890b4e12e389aba66253ef0259285b351b3742fbda7ae0d0716ea070484",
+  "enforcement": {
+    "exit_code": 0,
+    "stdout": "Enforcing",
+    "stderr": ""
+  },
+  "exit": 0,
+  "stderr": ""
+}

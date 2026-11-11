@@ -1,0 +1,462 @@
+{
+  "PickupManager": {
+    "object": "0x7beb39f3a100",
+    "class": "PickupManagerComponent",
+    "properties": [
+      {
+        "name": "bEnablePickupRecommend",
+        "type": "BoolProperty",
+        "offset": "0x27e",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444400",
+        "extra": "0xff010001"
+      },
+      {
+        "name": "PickupRecommendInterval",
+        "type": "FloatProperty",
+        "offset": "0x280",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b440010",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "PickupRecommendDistance",
+        "type": "FloatProperty",
+        "offset": "0x284",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b440080",
+        "extra": "0x40003161b530"
+      },
+      {
+        "name": "PickupRecommendIDArray",
+        "type": "ArrayProperty",
+        "offset": "0x288",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444480",
+        "extra": "0x7beb7b4400f0"
+      },
+      {
+        "name": "ConfirmedPickupRecommendAvailableArray",
+        "type": "ArrayProperty",
+        "offset": "0x298",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444580",
+        "extra": "0x7beb7b444500"
+      },
+      {
+        "name": "OnPickupRecommendAvailable",
+        "type": "MulticastDelegateProperty",
+        "offset": "0x2b0",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444600",
+        "extra": "0x40000a9ce7b0"
+      },
+      {
+        "name": "CheckPickUpInterval",
+        "type": "FloatProperty",
+        "offset": "0x2c0",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b440160",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "PickUpZLimit",
+        "type": "FloatProperty",
+        "offset": "0x2c4",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b4401d0",
+        "extra": "0x40003161b530"
+      },
+      {
+        "name": "bApplyVisibleTrace",
+        "type": "BoolProperty",
+        "offset": "0x2c8",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444680",
+        "extra": "0xff010001"
+      },
+      {
+        "name": "FindPutDownPointSearchRadiusGroupArray",
+        "type": "ArrayProperty",
+        "offset": "0x2d0",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b445a00",
+        "extra": "0x7beb7b444700"
+      },
+      {
+        "name": "FindPutDownPointCircleSplitNum",
+        "type": "IntProperty",
+        "offset": "0x2e0",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b440240",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "FindPutDownPointZThreshold",
+        "type": "FloatProperty",
+        "offset": "0x2e4",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b4402b0",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "FindPutDownPointZHalfHeightAdjust",
+        "type": "FloatProperty",
+        "offset": "0x2e8",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b440320",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "FindPutDownPointZTraceOffset",
+        "type": "FloatProperty",
+        "offset": "0x2ec",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b440390",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "RegionXRange",
+        "type": "StructProperty",
+        "offset": "0x2f0",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444780",
+        "extra": "0x40000a552dc0"
+      },
+      {
+        "name": "RegionYRange",
+        "type": "StructProperty",
+        "offset": "0x2f8",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444800",
+        "extra": "0x40000a552dc0"
+      },
+      {
+        "name": "bDrawDebugSearchLine",
+        "type": "BoolProperty",
+        "offset": "0x300",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444880",
+        "extra": "0xff010001"
+      },
+      {
+        "name": "bDrawDebugSearchedPutDownPointsSphere",
+        "type": "BoolProperty",
+        "offset": "0x301",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444900",
+        "extra": "0xff010001"
+      },
+      {
+        "name": "DebugSearchedPutDownPointsBoxExtent",
+        "type": "StructProperty",
+        "offset": "0x304",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444980",
+        "extra": "0x40000a552900"
+      },
+      {
+        "name": "DebugSearchedPutDownPointsSphereRadius",
+        "type": "FloatProperty",
+        "offset": "0x310",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b440400",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "DebugSearchedPutDownPointsPointSize",
+        "type": "FloatProperty",
+        "offset": "0x314",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b440470",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "DrawTime",
+        "type": "FloatProperty",
+        "offset": "0x318",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b4404e0",
+        "extra": "0x400031616628"
+      },
+      {
+        "name": "bDebugGetLocWithOutClamp",
+        "type": "BoolProperty",
+        "offset": "0x31c",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444a00",
+        "extra": "0xff010001"
+      },
+      {
+        "name": "CacheRepActorForGetRandomLoc",
+        "type": "ObjectProperty",
+        "offset": "0x320",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444a80",
+        "extra": "0x7beb7e102680"
+      },
+      {
+        "name": "RecentAutoPickupMap",
+        "type": "MapProperty",
+        "offset": "0x328",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b8c1cb0",
+        "extra": "0x7beb7b444b00"
+      },
+      {
+        "name": "PickupAvailableActorPool",
+        "type": "ArrayProperty",
+        "offset": "0x378",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444c00",
+        "extra": "0x7beb7b444b80"
+      },
+      {
+        "name": "ConfirmedPickupActorPool",
+        "type": "ArrayProperty",
+        "offset": "0x388",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444d00",
+        "extra": "0x7beb7b444c80"
+      },
+      {
+        "name": "MaxPickupLoc",
+        "type": "StructProperty",
+        "offset": "0x3a8",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b444d80",
+        "extra": "0x40000a552900"
+      },
+      {
+        "name": "MaxPickupNum",
+        "type": "IntProperty",
+        "offset": "0x3b4",
+        "owner": "PickupManagerComponent",
+        "field": "0x7beb7b4405c0",
+        "extra": "0x40003161b530"
+      },
+      {
+        "name": "LuaNetSerialization",
+        "type": "StructProperty",
+        "offset": "0x1d0",
+        "owner": "LuaActorComponent",
+        "field": "0x40000a654090",
+        "extra": "0x40000a5fea10"
+      },
+      {
+        "name": "LuaFilePath",
+        "type": "StrProperty",
+        "offset": "0x220",
+        "owner": "LuaActorComponent",
+        "field": "0x40000a654020",
+        "extra": "0x40003161ad50"
+      },
+      {
+        "name": "PrimaryComponentTick",
+        "type": "StructProperty",
+        "offset": "0x30",
+        "owner": "ActorComponent",
+        "field": "0x40000a578e90",
+        "extra": "0x40000a578f10"
+      },
+      {
+        "name": "bSupportSuspendTick",
+        "type": "BoolProperty",
+        "offset": "0xe8",
+        "owner": "ActorComponent",
+        "field": "0x40000a578e10",
+        "extra": "0xff010001"
+      },
+      {
+        "name": "ComponentTags",
+        "type": "ArrayProperty",
+        "offset": "0xf0",
+        "owner": "ActorComponent",
+        "field": "0x40000a578d20",
+        "extra": "0x40000a578da0"
+      },
+      {
+        "name": "bDestroyIfOnClientNoLocalControl",
+        "type": "BoolProperty",
+        "offset": "0x100",
+        "owner": "ActorComponent",
+        "field": "0x40000a578ca0",
+        "extra": "0xff010001"
+      },
+      {
+        "name": "bFastCreation",
+        "type": "BoolProperty",
+        "offset": "0x101",
+        "owner": "ActorComponent",
+        "field": "0x40000a578c20",
+        "extra": "0x1010001"
+      },
+      {
+        "name": "bCallPreReplication",
+        "type": "BoolProperty",
+        "offset": "0x101",
+        "owner": "ActorComponent",
+        "field": "0x40000a578ba0",
+        "extra": "0x2020001"
+      },
+      {
+        "name": "bNeedDeferCreatePhysicsState",
+        "type": "BoolProperty",
+        "offset": "0x101",
+        "owner": "ActorComponent",
+        "field": "0x40000a578b20",
+        "extra": "0x4040001"
+      },
+      {
+        "name": "NetUpdateFrequency",
+        "type": "FloatProperty",
+        "offset": "0x104",
+        "owner": "ActorComponent",
+        "field": "0x40000a578ab0",
+        "extra": "0x400031615e48"
+      },
+      {
+        "name": "AssetUserData",
+        "type": "ArrayProperty",
+        "offset": "0x110",
+        "owner": "ActorComponent",
+        "field": "0x40000a5789b0",
+        "extra": "0x40000a578a30"
+      },
+      {
+        "name": "bReplicates",
+        "type": "BoolProperty",
+        "offset": "0x120",
+        "owner": "ActorComponent",
+        "field": "0x40000a578930",
+        "extra": "0x10100001"
+      },
+      {
+        "name": "bNetAddressable",
+        "type": "BoolProperty",
+        "offset": "0x120",
+        "owner": "ActorComponent",
+        "field": "0x40000a5788b0",
+        "extra": "0x20200001"
+      },
+      {
+        "name": "bAutoActivate",
+        "type": "BoolProperty",
+        "offset": "0x12a",
+        "owner": "ActorComponent",
+        "field": "0x40000a578830",
+        "extra": "0x4040001"
+      },
+      {
+        "name": "bIsActive",
+        "type": "BoolProperty",
+        "offset": "0x12a",
+        "owner": "ActorComponent",
+        "field": "0x40000a5787b0",
+        "extra": "0x8080001"
+      },
+      {
+        "name": "bEditableWhenInherited",
+        "type": "BoolProperty",
+        "offset": "0x12a",
+        "owner": "ActorComponent",
+        "field": "0x40000a578730",
+        "extra": "0x10100001"
+      },
+      {
+        "name": "bCanEverAffectNavigation",
+        "type": "BoolProperty",
+        "offset": "0x12c",
+        "owner": "ActorComponent",
+        "field": "0x40000a5786b0",
+        "extra": "0x1010001"
+      },
+      {
+        "name": "bIsEditorOnly",
+        "type": "BoolProperty",
+        "offset": "0x12c",
+        "owner": "ActorComponent",
+        "field": "0x40000a578630",
+        "extra": "0x8080001"
+      },
+      {
+        "name": "bIsClientOnly",
+        "type": "BoolProperty",
+        "offset": "0x12c",
+        "owner": "ActorComponent",
+        "field": "0x40000a5785b0",
+        "extra": "0x10100001"
+      },
+      {
+        "name": "bIsDSOnly",
+        "type": "BoolProperty",
+        "offset": "0x12c",
+        "owner": "ActorComponent",
+        "field": "0x40000a578530",
+        "extra": "0x20200001"
+      },
+      {
+        "name": "bRelevantForNetworkReplays",
+        "type": "BoolProperty",
+        "offset": "0x12c",
+        "owner": "ActorComponent",
+        "field": "0x40000a5784b0",
+        "extra": "0x40400001"
+      },
+      {
+        "name": "CreationMethod",
+        "type": "EnumProperty",
+        "offset": "0x12e",
+        "owner": "ActorComponent",
+        "field": "0x40000a578350",
+        "extra": "0x40000a578430"
+      },
+      {
+        "name": "UCSModifiedProperties",
+        "type": "ArrayProperty",
+        "offset": "0x130",
+        "owner": "ActorComponent",
+        "field": "0x40000a578040",
+        "extra": "0x40000a5780c0"
+      },
+      {
+        "name": "OnComponentActivated",
+        "type": "MulticastDelegateProperty",
+        "offset": "0x148",
+        "owner": "ActorComponent",
+        "field": "0x40000a577fc0",
+        "extra": "0x40000a55cbf0"
+      },
+      {
+        "name": "OnComponentDeactivated",
+        "type": "MulticastDelegateProperty",
+        "offset": "0x158",
+        "owner": "ActorComponent",
+        "field": "0x40000a577f40",
+        "extra": "0x40000a55ceb0"
+      }
+    ]
+  },
+  "PickupProxy": {
+    "object": "0x7beb3d4a7000",
+    "class": "BaseCharacterPickupProxy",
+    "properties": [
+      {
+        "name": "ProxyOwnerCharacter",
+        "type": "ObjectProperty",
+        "offset": "0x30",
+        "owner": "BaseCharacterPickupProxy",
+        "field": "0x7beb7b861380",
+        "extra": "0x7beb7d95b580"
+      },
+      {
+        "name": "ProxyOwner",
+        "type": "ObjectProperty",
+        "offset": "0x28",
+        "owner": "PickupProxy",
+        "field": "0x7beb7b861400",
+        "extra": "0x7beb7e102680"
+      }
+    ]
+  }
+}

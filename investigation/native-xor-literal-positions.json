@@ -1,0 +1,20 @@
+{
+  "PersistentLevel": [
+    "0x41e4856"
+  ],
+  "Actors": [],
+  "Levels": [],
+  "LocalPlayers": [
+    "0x41923b4"
+  ],
+  "PlayerController": [],
+  "CameraCache": [],
+  "POV": [],
+  "Location": [],
+  "Rotation": [
+    "0x40d30a7",
+    "0x42553d0"
+  ],
+  "FOV": [],
+  "TeamID": []
+}

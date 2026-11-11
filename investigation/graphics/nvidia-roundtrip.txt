@@ -1,0 +1,4 @@
+PASS real NVIDIA FXAA Off / On / Off saved and read back for all 8 emulator executables.
+PASS simulated preference-save failure restores the previous NVIDIA values.
+PASS original driver overrides and profile associations restored.
+This verifies driver configuration, not game rendering or visual FXAA support.

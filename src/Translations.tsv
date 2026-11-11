@@ -1,0 +1,425 @@
+key	en	ar	de	fr
+نظرة عامة	Overview	نظرة عامة	Übersicht	Vue d’ensemble
+مساعدة التصويب	Aim Assist	مساعدة التصويب	Zielhilfe	Aide à la visée
+اللاعبون والبوتات	Players and bots	اللاعبون والبوتات	Spieler und Bots	Joueurs et bots
+أهداف التدريب	Training targets	أهداف التدريب	Trainingsziele	Cibles d’entraînement
+المركبات	Vehicles	المركبات	Fahrzeuge	Véhicules
+العناصر والأسلحة	Items and weapons	العناصر والأسلحة	Gegenstände und Waffen	Objets et armes
+الصناديق	Crates	الصناديق	Kisten	Caisses
+الأداء والمظهر	Performance and appearance	الأداء والمظهر	Leistung und Darstellung	Performances et apparence
+اختصارات الكيبورد	Keyboard shortcuts	اختصارات الكيبورد	Tastenkürzel	Raccourcis clavier
+حفظ والعودة للعبة	Save and return to game	حفظ والعودة للعبة	Speichern und zum Spiel zurück	Enregistrer et revenir au jeu
+التغييرات تطبّق فورًا، وتُحفظ عند إغلاق القائمة.	Changes apply immediately and are saved when the menu closes.	التغييرات تطبّق فورًا، وتُحفظ عند إغلاق القائمة.	Änderungen gelten sofort und werden beim Schließen des Menüs gespeichert.	Les modifications s’appliquent immédiatement et sont enregistrées à la fermeture du menu.
+تُعرض كأهداف تدريب مستقلة عن اللاعبين الحقيقيين والبوتات.	Training targets are displayed separately from players and bots.	تُعرض كأهداف تدريب مستقلة عن اللاعبين الحقيقيين والبوتات.	Trainingsziele werden getrennt von Spielern und Bots angezeigt.	Les cibles d’entraînement s’affichent séparément des joueurs et des bots.
+عرض الصناديق التي تم التحقق من نوعها. لا نفترض محتويات صندوق غير مقروءة.	Displays crates whose type is known. Contents are shown only when available.	عرض الصناديق التي تم التحقق من نوعها. لا نفترض محتويات صندوق غير مقروءة.	Zeigt Kisten mit bekanntem Typ an. Der Inhalt erscheint, wenn er verfügbar ist.	Affiche les caisses dont le type est connu. Le contenu s’affiche lorsqu’il est disponible.
+حفظ والعودة للرئيسية	Save and return home	حفظ والعودة للرئيسية	Speichern und zur Startseite	Enregistrer et revenir à l’accueil
+لوحة التحكم	Control panel	لوحة التحكم	Steuerung	Panneau de contrôle
+تحكم مستقل في كل فئة. خيارات هذه الصفحة مفاتيح عامة لباقي الصفحات.	Manage each category independently. The switches here apply across all pages.	تحكم مستقل في كل فئة. خيارات هذه الصفحة مفاتيح عامة لباقي الصفحات.	Kategorien lassen sich einzeln verwalten. Die Schalter auf dieser Seite gelten seitenübergreifend.	Gérez chaque catégorie séparément. Les interrupteurs de cette page s’appliquent à toutes les pages.
+الرسم العام ESP / {0}	ESP display / {0}	عرض مساعدات استكشاف / {0}	Anzeige der Erkundungshilfen / {0}	Affichage des aides à l’exploration / {0}
+عداد اللاعبين حولك أعلى الشاشة	Show nearby player count at the top	عداد اللاعبين حولك أعلى الشاشة	Spielerzahl in der Nähe oben anzeigen	Afficher le nombre de joueurs proches en haut
+يحسب اللاعبين والبوتات وأهداف التدريب الأحياء والمنوكين ضمن مسافات ESP، حتى خلفك وخارج الشاشة ومع إغلاق فلاتر عرضهم. يستبعد فريقك والمركبات والغنائم، ولا يتأثر بحد العناصر المرسومة.	Counts active and downed players, bots and training targets within ESP range, including off-screen targets and categories hidden by filters. The count excludes teammates, vehicles and loot and ignores the display limit.	يحسب اللاعبين والبوتات وأهداف التدريب الأحياء والمنوكين ضمن نطاق مساعدات الاستكشاف، حتى خلفك وخارج الشاشة ومع إغلاق فلاتر عرضهم. يستبعد فريقك والمركبات والغنائم، ولا يتأثر بحد العناصر المرسومة.	Zählt aktive und niedergeschlagene Spieler, Bots und Trainingsziele in Reichweite der Erkundungshilfen, auch außerhalb des Bildschirms und bei ausgeblendeten Kategorien. Teammitglieder, Fahrzeuge und Beute zählen nicht mit. Das Anzeigelimit hat keinen Einfluss.	Compte les joueurs, bots et cibles d’entraînement actifs ou à terre à portée des aides à l’exploration, même hors écran ou masqués par les filtres. Les coéquipiers, véhicules et objets sont exclus. La limite d’affichage n’affecte pas ce compteur.
+تغيير ألوان اللاعبين حسب حالة الرؤية	Color players by visibility	تغيير ألوان اللاعبين حسب حالة الرؤية	Spieler nach Sichtbarkeit einfärben	Colorer les joueurs selon leur visibilité
+لون اللاعب الظاهر	Visible player color	لون اللاعب الظاهر	Farbe sichtbarer Spieler	Couleur des joueurs visibles
+لون اللاعب المحجوب	Occluded player color	لون اللاعب المحجوب	Farbe verdeckter Spieler	Couleur des joueurs masqués
+لون حالة الرؤية غير المعروفة	Unknown visibility color	لون حالة الرؤية غير المعروفة	Farbe bei unbekannter Sichtbarkeit	Couleur de visibilité inconnue
+ألوان الرؤية تخص اللاعبين والبوتات وأهداف التدريب. الحالة غير المعروفة لها لون مستقل، ولا تُعتبر محجوبة. عند تعطيل الخيار تُستخدم ألوان الفئات المعتادة.	Visibility colors apply to players, bots and training targets. Unknown visibility has its own color. When this option is off, category colors are used.	ألوان الرؤية تخص اللاعبين والبوتات وأهداف التدريب. الحالة غير المعروفة لها لون مستقل، ولا تُعتبر محجوبة. عند تعطيل الخيار تُستخدم ألوان الفئات المعتادة.	Sichtbarkeitsfarben gelten für Spieler, Bots und Trainingsziele. Unbekannte Sichtbarkeit hat eine eigene Farbe. Ist die Option aus, gelten die Kategoriefarben.	Les couleurs de visibilité s’appliquent aux joueurs, bots et cibles d’entraînement. Une couleur est dédiée à la visibilité inconnue. Si l’option est désactivée, les couleurs des catégories s’appliquent.
+عرض اللاعبين	Show players	عرض اللاعبين	Spieler anzeigen	Afficher les joueurs
+عرض أهداف التدريب	Show training targets	عرض أهداف التدريب	Trainingsziele anzeigen	Afficher les cibles d’entraînement
+عرض المركبات	Show vehicles	عرض المركبات	Fahrzeuge anzeigen	Afficher les véhicules
+عرض الأسلحة والعناصر	Show weapons and items	عرض الأسلحة والعناصر	Waffen und Gegenstände anzeigen	Afficher les armes et objets
+عرض الصناديق	Show crates	عرض الصناديق	Kisten anzeigen	Afficher les caisses
+المربعات / علامات المواقع	Boxes / position markers	المربعات / علامات المواقع	Rahmen / Positionsmarker	Cadres / repères de position
+الأسماء والتسميات	Names and labels	الأسماء والتسميات	Namen und Beschriftungen	Noms et libellés
+الصحة	Health	الصحة	Gesundheit	Santé
+المسافة	Distance	المسافة	Entfernung	Distance
+الخطوط من أعلى الشاشة	Lines from the top of the screen	الخطوط من أعلى الشاشة	Linien vom oberen Bildschirmrand	Lignes depuis le haut de l’écran
+تنبيهات الاتجاه والمسافة	Direction and distance alerts	تنبيهات الاتجاه والمسافة	Richtungs- und Entfernungswarnungen	Alertes de direction et de distance
+أفراد الفريق	Teammates	أفراد الفريق	Teammitglieder	Coéquipiers
+تفعيل هذه الفئة	Enable this category	تفعيل هذه الفئة	Diese Kategorie aktivieren	Activer cette catégorie
+الاسم / النوع	Name / type	الاسم / النوع	Name / Typ	Nom / type
+الصحة عند توفرها	Health when available	الصحة عند توفرها	Gesundheit, falls verfügbar	Santé si disponible
+تنبيهات خارج مجال الرؤية	Off-screen alerts	تنبيهات خارج مجال الرؤية	Warnungen außerhalb des Bildschirms	Alertes hors écran
+أقصى مسافة لهذه الفئة (م)	Maximum category distance (m)	أقصى مسافة لهذه الفئة (م)	Maximale Kategorieentfernung (m)	Distance maximale de la catégorie (m)
+الحد الأقصى للعناصر المعروضة	Maximum displayed items	الحد الأقصى للعناصر المعروضة	Maximal angezeigte Elemente	Nombre maximal d’éléments affichés
+اختيار اللون	Choose color	اختيار اللون	Farbe auswählen	Choisir la couleur
+مساعدة التصويب / Aim	Aim Assist	مساعدة التصويب / Aim	Zielhilfe	Aide à la visée
+تصحيح خارجي بحركة الماوس فقط. يُشترط تطابق صلاحيات الأداة مع المحاكي. أوضاع السكوب والضرب تعتمد على حالة اللعبة المقروءة.	Adjusts aim through mouse movement. The tool and emulator need matching privileges. Scope and fire modes depend on game state.	تصحيح خارجي بحركة الماوس فقط. يُشترط تطابق صلاحيات الأداة مع المحاكي. أوضاع السكوب والضرب تعتمد على حالة اللعبة المقروءة.	Korrigiert das Zielen über Mausbewegungen. Tool und Emulator brauchen gleiche Berechtigungen. Visier- und Feuermodi hängen vom Spielzustand ab.	Corrige la visée par des mouvements de souris. L’outil et l’émulateur doivent avoir les mêmes privilèges. Les modes de visée et de tir dépendent de l’état du jeu.
+تفعيل مساعدة التصويب	Enable aim assist	تفعيل مساعدة التصويب	Zielhilfe aktivieren	Activer l’aide à la visée
+موضع التصويب	Aim point	موضع التصويب	Zielpunkt	Point de visée
+الرأس (تقديري)	Head (estimated)	الرأس (تقديري)	Kopf (geschätzt)	Tête (estimée)
+الصدر (تقديري)	Chest (estimated)	الصدر (تقديري)	Brust (geschätzt)	Torse (estimé)
+الأرجل (تقديري)	Legs (estimated)	الأرجل (تقديري)	Beine (geschätzt)	Jambes (estimées)
+حجم الدائرة — نصف القطر	Aim circle radius	حجم الدائرة — نصف القطر	Radius des Zielkreises	Rayon du cercle de visée
+قوة المساعدة	Assist strength	قوة المساعدة	Stärke der Zielhilfe	Intensité de l’aide
+معامل حركة الماوس	Mouse movement multiplier	معامل حركة الماوس	Multiplikator der Mausbewegung	Multiplicateur du mouvement de la souris
+طريقة التفعيل	Activation mode	طريقة التفعيل	Aktivierungsmodus	Mode d’activation
+عند فتح السكوب فقط	While aiming down sights	عند فتح السكوب فقط	Nur beim Anvisieren	Uniquement en visant
+أثناء إطلاق النار فقط	While firing	أثناء إطلاق النار فقط	Nur beim Feuern	Uniquement en tirant
+دائمًا داخل الدائرة	Always within circle	دائمًا داخل الدائرة	Immer im Zielkreis	Toujours dans le cercle
+السكوب مع إطلاق النار	While aiming and firing	السكوب مع إطلاق النار	Beim Anvisieren und Feuern	En visant et en tirant
+أثناء الضغط المستمر على زر	While holding a button	أثناء الضغط المستمر على زر	Beim Halten einer Taste	En maintenant un bouton
+زر التفعيل لوضع الضغط	Hold button	زر التفعيل لوضع الضغط	Taste zum Halten	Bouton à maintenir
+زر الماوس الأيمن / RMB	Right mouse button	زر الماوس الأيمن / RMB	Rechte Maustaste	Bouton droit de la souris
+زر جانبي / Mouse 4	Side button / Mouse 4	زر جانبي / Mouse 4	Seitentaste / Maus 4	Bouton latéral / Souris 4
+زر جانبي / Mouse 5	Side button / Mouse 5	زر جانبي / Mouse 5	Seitentaste / Maus 5	Bouton latéral / Souris 5
+أقصى مسافة للمساعدة (م)	Maximum assist distance (m)	أقصى مسافة للمساعدة (م)	Maximale Entfernung der Zielhilfe (m)	Distance maximale de l’aide (m)
+إظهار دائرة نطاق المساعدة	Show aim circle	إظهار دائرة نطاق المساعدة	Zielkreis anzeigen	Afficher le cercle de visée
+مساعدة على اللاعبين والبوتات (باستثناء الفريق)	Assist on players and bots (excluding teammates)	مساعدة على اللاعبين والبوتات (باستثناء الفريق)	Zielhilfe für Spieler und Bots (außer Teammitglieder)	Aide sur les joueurs et bots (hors coéquipiers)
+مساعدة على أهداف التدريب	Assist on training targets	مساعدة على أهداف التدريب	Zielhilfe für Trainingsziele	Aide sur les cibles d’entraînement
+فحص ظهور المؤشر (اختياري؛ قد يمنع الحركة في GameLoop)	Check cursor visibility (optional, may block movement in GameLoop)	فحص ظهور المؤشر (اختياري؛ قد يمنع الحركة في GameLoop)	Mauszeiger prüfen (optional, kann Bewegungen in GameLoop blockieren)	Vérifier la visibilité du curseur (facultatif, peut bloquer le mouvement dans GameLoop)
+مواضع التصويب تقديرية من موضع الجسم وارتفاعه. عدّل المفاتيح من صفحة اختصارات الكيبورد. Insert يصغّر ويكبّر لوحة اللعبة.	Aim points are estimated from body position and height. Set keys in Keyboard shortcuts. Insert collapses or expands the in-game panel.	مواضع التصويب تقديرية من موضع الجسم وارتفاعه. عدّل المفاتيح من صفحة اختصارات الكيبورد. Insert يصغّر ويكبّر لوحة اللعبة.	Zielpunkte werden aus Körperposition und -höhe geschätzt. Tasten lassen sich unter Tastenkürzel ändern. Einfg klappt das Spielpanel ein oder aus.	Les points de visée sont estimés à partir de la position et de la hauteur du corps. Configurez les touches dans Raccourcis clavier. Inser réduit ou déploie le panneau en jeu.
+BOT يعتمد على بيانات اللعبة. أهداف التدريب منفصلة، والحالة غير المؤكدة تُعرض UNKNOWN.	Bot labels use game data. Training targets are separate. Unconfirmed player types appear as Unknown.	BOT يعتمد على بيانات اللعبة. أهداف التدريب منفصلة، والحالة غير المؤكدة تُعرض UNKNOWN.	Bot-Kennzeichnungen basieren auf Spieldaten. Trainingsziele sind separat. Unbestätigte Spielertypen erscheinen als Unbekannt.	Les libellés de bots proviennent des données du jeu. Les cibles d’entraînement sont séparées. Les types de joueurs non confirmés s’affichent comme Inconnu.
+إظهار نوع الشخصية BOT / PLAYER	Show player or bot type	إظهار نوع الشخصية BOT / PLAYER	Spieler- oder Bot-Typ anzeigen	Afficher le type de joueur ou de bot
+عرض البوتات	Show bots	عرض البوتات	Bots anzeigen	Afficher les bots
+عرض اللاعبين غير المصنفين AI	Show human players	عرض اللاعبين غير المصنفين AI	Menschliche Spieler anzeigen	Afficher les joueurs humains
+عرض الحالة غير المعروفة	Show unknown player types	عرض الحالة غير المعروفة	Unbekannte Spielertypen anzeigen	Afficher les types de joueurs inconnus
+صحة المركبة والوقود من VehicleCommon. الوقود يُعرض كنسبة إلى سعة المركبة الفعلية.	Vehicle health and fuel come from VehicleCommon. Fuel is shown as a percentage of the vehicle’s capacity.	صحة المركبة والوقود من VehicleCommon. الوقود يُعرض كنسبة إلى سعة المركبة الفعلية.	Fahrzeugzustand und Kraftstoff stammen aus VehicleCommon. Der Kraftstoffstand erscheint als Prozentsatz der Tankkapazität.	L’état du véhicule et le carburant proviennent de VehicleCommon. Le carburant s’affiche en pourcentage de la capacité du réservoir.
+نسبة الوقود	Fuel percentage	نسبة الوقود	Kraftstoff in Prozent	Pourcentage de carburant
+الأسلحة والعناصر	Weapons and items	الأسلحة والعناصر	Waffen und Gegenstände	Armes et objets
+تصفية مستقلة لتقليل ازدحام ساحة التدريب. أسماء العناصر مأخوذة من الأنواع المرصودة ومعرفاتها.	Filter items to keep the training area readable. Item names come from observed types and IDs.	تصفية مستقلة لتقليل ازدحام ساحة التدريب. أسماء العناصر مأخوذة من الأنواع المرصودة ومعرفاتها.	Filter für eine übersichtliche Trainingsansicht. Gegenstandsnamen basieren auf erfassten Typen und IDs.	Filtrez les objets pour garder le terrain d’entraînement lisible. Les noms proviennent des types et identifiants observés.
+الأسلحة	Weapons	الأسلحة	Waffen	Armes
+الذخيرة	Ammunition	الذخيرة	Munition	Munitions
+العلاج والمشروبات	Healing and drinks	العلاج والمشروبات	Heilung und Getränke	Soins et boissons
+الخوذات والدروع والحقائب	Helmets, armor and bags	الخوذات والدروع والحقائب	Helme, Rüstung und Taschen	Casques, armures et sacs
+المناظير	Scopes	المناظير	Visiere	Lunettes
+المعدات والملحقات	Equipment and attachments	المعدات والملحقات	Ausrüstung und Aufsätze	Équipement et accessoires
+أنواع أخرى	Other types	أنواع أخرى	Andere Typen	Autres types
+كمية العنصر	Item quantity	كمية العنصر	Gegenstandsmenge	Quantité de l’objet
+معرف العنصر	Item ID	معرف العنصر	Gegenstands-ID	Identifiant de l’objet
+120 Hz هو معدل طلب القراءة والرسم؛ الإطارات المرئية تعتمد أيضًا على اللعبة والشاشة. التنعيم يستخدم البيانات المقروءة فقط.	120 Hz is the requested read and draw rate. The visible frame rate also depends on the game and display. Smoothing uses the data already read.	120 Hz هو معدل طلب القراءة والرسم؛ الإطارات المرئية تعتمد أيضًا على اللعبة والشاشة. التنعيم يستخدم البيانات المقروءة فقط.	120 Hz ist die angeforderte Lese- und Zeichenrate. Die sichtbare Bildrate hängt auch von Spiel und Bildschirm ab. Die Glättung nutzt bereits gelesene Daten.	120 Hz est la fréquence demandée pour la lecture et le rendu. La fréquence visible dépend aussi du jeu et de l’écran. Le lissage utilise les données déjà lues.
+تحسين الصورة: NVIDIA FXAA للمحاكيات + تنعيم الأداة	Image enhancement: NVIDIA FXAA for emulators + smoothing	تحسين الصورة: NVIDIA FXAA للمحاكيات + تنعيم الأداة	Bildverbesserung: NVIDIA FXAA für Emulatoren + Glättung	Amélioration de l’image : NVIDIA FXAA pour les émulateurs + lissage
+تنعيم الأداة مفعّل. إعداد FXAA محفوظ؛ تأثيره على اللعبة غير مؤكد.	Smoothing is on. FXAA settings are saved. Its effect on the game is unconfirmed.	تنعيم الأداة مفعّل. إعداد FXAA محفوظ؛ تأثيره على اللعبة غير مؤكد.	Glättung ist aktiv. Die FXAA-Einstellung ist gespeichert. Die Wirkung im Spiel ist unbestätigt.	Le lissage est actif. Le réglage FXAA est enregistré. Son effet dans le jeu reste à confirmer.
+تحسين الصورة متوقف.	Image enhancement is off.	تحسين الصورة متوقف.	Bildverbesserung ist aus.	L’amélioration de l’image est désactivée.
+تعذر التطبيق؛ لم يتغير الاختيار. {0}	Could not apply the change. The previous setting was kept. {0}	تعذر التطبيق؛ لم يتغير الاختيار. {0}	Änderung konnte nicht angewendet werden. Die vorige Einstellung bleibt aktiv. {0}	Impossible d’appliquer la modification. Le réglage précédent est conservé. {0}
+FXAA يُطلب من تعريف NVIDIA لـ GameLoop وLDPlayer. أعد تشغيل المحاكي بعد التفعيل أو الإيقاف؛ الاستجابة تعتمد على دعمه وطريقة الرسم، ولا يمكن تأكيدها من هنا. تنعيم الأداة يطبق فورًا.\nDLSS ورفع الدقة: غير متاحين هنا؛ يحتاج DLSS دعم محرك اللعبة، وNVIDIA Image Scaling يحتاج إعدادات العرض المناسبة. لا يضمن هذا الخيار زيادة FPS أو أفضل نتيجة لكل لعبة.	The app requests FXAA through the NVIDIA driver for GameLoop and LDPlayer. Restart the emulator after changing this setting. Results depend on its rendering support. Smoothing applies immediately.\nDLSS and upscaling are unavailable here. DLSS requires game engine support. NVIDIA Image Scaling requires compatible display settings. Frame rate and visual results vary by game.	FXAA يُطلب من تعريف NVIDIA لـ GameLoop وLDPlayer. أعد تشغيل المحاكي بعد التفعيل أو الإيقاف؛ الاستجابة تعتمد على دعمه وطريقة الرسم، ولا يمكن تأكيدها من هنا. تنعيم الأداة يطبق فورًا.\nDLSS ورفع الدقة: غير متاحين هنا؛ يحتاج DLSS دعم محرك اللعبة، وNVIDIA Image Scaling يحتاج إعدادات العرض المناسبة. لا يضمن هذا الخيار زيادة FPS أو أفضل نتيجة لكل لعبة.	Die App fordert FXAA über den NVIDIA-Treiber für GameLoop und LDPlayer an. Starten Sie den Emulator nach der Änderung neu. Die Wirkung hängt von der Darstellung des Emulators ab. Die Glättung gilt sofort.\nDLSS und Hochskalierung sind hier nicht verfügbar. DLSS erfordert Unterstützung durch die Spiel-Engine. NVIDIA Image Scaling braucht kompatible Anzeigeeinstellungen. Bildrate und Darstellung hängen vom Spiel ab.	L’application demande le FXAA via le pilote NVIDIA pour GameLoop et LDPlayer. Redémarrez l’émulateur après chaque modification. Le résultat dépend de sa prise en charge du rendu. Le lissage s’applique immédiatement.\nLe DLSS et la mise à l’échelle sont indisponibles ici. Le DLSS exige un moteur de jeu compatible. NVIDIA Image Scaling exige des réglages d’affichage compatibles. La fréquence d’images et le rendu varient selon le jeu.
+إظهار شريط الاختصارات فوق الشمال	Show the shortcuts panel in the top-left corner	إظهار شريط الاختصارات فوق الشمال	Tastenkürzel oben links anzeigen	Afficher les raccourcis en haut à gauche
+معدل الرسم المطلوب (Hz)	Requested draw rate (Hz)	معدل الرسم المطلوب (Hz)	Angeforderte Zeichenrate (Hz)	Fréquence de rendu demandée (Hz)
+حجم الخط	Font size	حجم الخط	Schriftgröße	Taille de police
+سُمك الخطوط والمربعات	Line and box thickness	سُمك الخطوط والمربعات	Linien- und Rahmenstärke	Épaisseur des lignes et cadres
+أقصى عدد للتسميات على الشاشة	Maximum on-screen labels	أقصى عدد للتسميات على الشاشة	Maximale Anzahl sichtbarer Beschriftungen	Nombre maximal de libellés à l’écran
+حد عام للمسافة (م)	Overall distance limit (m)	حد عام للمسافة (م)	Allgemeines Entfernungslimit (m)	Limite de distance globale (m)
+{0} (under development)	{0} (under development)	{0} (تحت التطوير)	{0} (in Entwicklung)	{0} (en développement)
+Home	Home	الرئيسية	Startseite	Accueil
+ESP	ESP	مساعدات استكشاف	Erkundungshilfen	Aides à l’exploration
+Visuals	Visuals	المظهر	Darstellung	Affichage
+Settings	Settings	الإعدادات	Einstellungen	Paramètres
+Shortcuts	Shortcuts	الاختصارات	Tastenkürzel	Raccourcis
+About	About	عن الأداة	Über das Tool	À propos
+Language	Language	اللغة	Sprache	Langue
+Minimize	Minimize	تصغير	Minimieren	Réduire
+Maximize or restore	Maximize or restore	تكبير أو استعادة	Maximieren oder wiederherstellen	Agrandir ou restaurer
+Close	Close	إغلاق	Schließen	Fermer
+General	General	عام	Allgemein	Général
+Connection & diagnostics	Connection & diagnostics	الاتصال والتشخيص	Verbindung und Diagnose	Connexion et diagnostic
+Profile & preview	Profile & preview	الملف والمعاينة	Profil und Vorschau	Profil et aperçu
+Emulator connection	Emulator connection	اتصال المحاكي	Emulatorverbindung	Connexion à l’émulateur
+Emulator	Emulator	المحاكي	Emulator	Émulateur
+ADB executable	ADB executable	ملف تشغيل ADB	ADB-Programmdatei	Exécutable ADB
+LDPlayer console	LDPlayer console	وحدة تحكم LDPlayer	LDPlayer-Konsole	Console LDPlayer
+GameLoop ADB address	GameLoop ADB address	عنوان ADB لـ GameLoop	ADB-Adresse für GameLoop	Adresse ADB de GameLoop
+ADB device (actual serial)	ADB device (actual serial)	جهاز ADB (الرقم التسلسلي الفعلي)	ADB-Gerät (tatsächliche Seriennummer)	Appareil ADB (numéro de série réel)
+Overlay target (select matching instance)	Overlay target (select matching instance)	نافذة العرض (اختر النافذة المطابقة)	Overlay-Ziel (passendes Fenster wählen)	Fenêtre de superposition (sélectionnez la fenêtre correspondante)
+JSON profile	JSON profile	ملف تعريف JSON	JSON-Profil	Profil JSON
+JSON profile (*.json)|*.json	JSON profile (*.json)|*.json	ملف تعريف JSON ‏(*.json)|*.json	JSON-Profil (*.json)|*.json	Profil JSON (*.json)|*.json
+Executable (*.exe)|*.exe	Executable (*.exe)|*.exe	ملف تنفيذي ‏(*.exe)|*.exe	Programmdatei (*.exe)|*.exe	Exécutable (*.exe)|*.exe
+Boxes	Boxes	المربعات	Rahmen	Cadres
+Labels	Labels	التسميات	Beschriftungen	Libellés
+Top lines	Top lines	الخطوط العلوية	Linien von oben	Lignes du haut
+Alerts	Alerts	التنبيهات	Warnungen	Alertes
+Max distance (m)	Max distance (m)	أقصى مسافة (م)	Maximale Entfernung (m)	Distance max. (m)
+Insert: collapse / expand	Insert: collapse / expand	Insert لطي اللوحة أو توسيعها	Einfg zum Ein- oder Ausklappen	Inser pour réduire ou déployer
+Dashboard	Dashboard	لوحة التحكم	Übersicht	Tableau de bord
+PUBG Mobile Assistant	PUBG Mobile Assistant	مساعد PUBG Mobile	PUBG Mobile-Assistent	Assistant PUBG Mobile
+START	START	تشغيل	STARTEN	DÉMARRER
+Target:	Target:	الهدف:	Ziel:	Cible :
+Game:	Game:	اللعبة:	Spiel:	Jeu :
+Resolution:	Resolution:	الدقة:	Auflösung:	Résolution :
+Box	Box	المربع	Rahmen	Cadre
+Snapline	Snapline	خط التتبع	Verbindungslinie	Ligne de suivi
+Color:	Color:	اللون:	Farbe:	Couleur :
+FOV radius	FOV radius	نصف قطر دائرة التصويب	Radius des Zielkreises	Rayon du cercle de visée
+Strength	Strength	القوة	Stärke	Intensité
+Aim point:	Aim point:	موضع التصويب:	Zielpunkt:	Point de visée :
+Hold Key:	Hold Key:	زر الضغط:	Haltetaste:	Bouton :
+Mode: {0}	Mode: {0}	الوضع: {0}	Modus: {0}	Mode : {0}
+Head	Head	الرأس	Kopf	Tête
+Chest	Chest	الصدر	Brust	Torse
+Legs	Legs	الأرجل	Beine	Jambes
+Right Mouse (RMB)	Right Mouse (RMB)	زر الماوس الأيمن	Rechte Maustaste	Bouton droit
+Mouse 4	Mouse 4	زر الماوس 4	Maustaste 4	Bouton 4 de la souris
+Mouse 5	Mouse 5	زر الماوس 5	Maustaste 5	Bouton 5 de la souris
+LIVE	LIVE	مباشر	LIVE	DIRECT
+DEMO	DEMO	تجريبي	DEMO	DÉMO
+Working	Working	قيد التنفيذ	Wird ausgeführt	En cours
+Ready	Ready	جاهز	Bereit	Prêt
+Idle	Idle	خامل	Inaktiv	Inactif
+Status: {0}	Status: {0}	الحالة: {0}	Status: {0}	État : {0}
+Reader: {0}	Reader: {0}	القارئ: {0}	Leser: {0}	Lecture : {0}
+Insert · Collapse / expand overlay\nCustomize your keys in Shortcuts	Insert · Collapse / expand overlay\nCustomize your keys in Shortcuts	Insert · طي لوحة العرض أو توسيعها\nعدّل المفاتيح من صفحة الاختصارات	Einfg · Overlay ein- oder ausklappen\nTasten unter Tastenkürzel anpassen	Inser · Réduire ou déployer la superposition\nPersonnalisez les touches dans Raccourcis
+Could not save the language setting.	Could not save the language setting.	تعذر حفظ إعداد اللغة.	Die Spracheinstellung konnte nicht gespeichert werden.	Impossible d’enregistrer la langue.
+Idle / waiting for connection	Idle / waiting for connection	خامل / بانتظار الاتصال	Inaktiv / wartet auf Verbindung	Inactif / en attente de connexion
+LIVE / {0} entities / {1:0} Hz / {2} menu / {3} stop	LIVE / {0} entities / {1:0} Hz / {2} menu / {3} stop	مباشر / {0} عنصر / {1:0} Hz / {2} القائمة / {3} إيقاف	LIVE / {0} Einheiten / {1:0} Hz / {2} Menü / {3} Stopp	DIRECT / {0} entités / {1:0} Hz / {2} menu / {3} arrêter
+{0} connected / run game inspection	{0} connected / run game inspection	{0} متصل / افحص اللعبة	{0} verbunden / Spiel prüfen	{0} connecté / inspectez le jeu
+No connected device / start {0} and check ADB	No connected device / start {0} and check ADB	لا يوجد جهاز متصل / شغّل {0} وتحقق من ADB	Kein Gerät verbunden / {0} starten und ADB prüfen	Aucun appareil connecté / lancez {0} et vérifiez ADB
+Inspection complete / see results below	Inspection complete / see results below	اكتمل الفحص / النتائج بالأسفل	Prüfung abgeschlossen / Ergebnisse unten	Inspection terminée / voir les résultats ci-dessous
+DEMO / generated actors only / no game data	DEMO / generated actors only / no game data	عرض تجريبي / عناصر مصطنعة	DEMO / künstlich erzeugte Einheiten	DÉMO / entités générées
+Live reader stopped / see log	Live reader stopped / see log	توقفت القراءة المباشرة / راجع السجل	Live-Leser gestoppt / siehe Protokoll	Lecture en direct arrêtée / voir le journal
+LIVE / {0} to stop	LIVE / {0} to stop	مباشر / {0} للإيقاف	LIVE / {0} zum Stoppen	DIRECT / {0} pour arrêter
+Cancelling startup...	Cancelling startup...	جارٍ إلغاء التشغيل…	Start wird abgebrochen…	Annulation du démarrage…
+Stopped	Stopped	متوقف	Gestoppt	Arrêté
+Action failed / see log	Action failed / see log	تعذر تنفيذ الإجراء / راجع السجل	Aktion fehlgeschlagen / siehe Protokoll	Échec de l’action / voir le journal
+Render surface unavailable	Render surface unavailable	نافذة الرسم غير متاحة	Renderfläche nicht verfügbar	Surface de rendu indisponible
+Select a connected and authorized ADB device, then scan again if needed.	Select a connected and authorized ADB device, then scan again if needed.	اختر جهاز ADB متصلًا ومصرحًا به، وأعد الفحص إذا لزم الأمر.	Wählen Sie ein verbundenes und autorisiertes ADB-Gerät. Suchen Sie bei Bedarf erneut.	Sélectionnez un appareil ADB connecté et autorisé. Relancez la recherche si nécessaire.
+Select the matching running {0} game window.	Select the matching running {0} game window.	اختر نافذة اللعبة المفتوحة المطابقة في {0}.	Wählen Sie das passende geöffnete Spielfenster von {0}.	Sélectionnez la fenêtre de jeu ouverte correspondante dans {0}.
+The game render surface is unavailable. Restore the emulator game window and refresh devices.	The game render surface is unavailable. Restore the emulator game window and refresh devices.	نافذة رسم اللعبة غير متاحة. استعد نافذة اللعبة في المحاكي وحدّث الأجهزة.	Die Renderfläche des Spiels ist nicht verfügbar. Stellen Sie das Spielfenster wieder her und aktualisieren Sie die Geräte.	La surface de rendu est indisponible. Restaurez la fenêtre de jeu de l’émulateur et actualisez les appareils.
+ADB: {0} device(s); {1}: {2} running window(s). Select the serial and its matching window.	ADB: {0} device(s); {1}: {2} running window(s). Select the serial and its matching window.	ADB: عدد الأجهزة {0}، {1}: عدد النوافذ المفتوحة {2}. اختر الرقم التسلسلي والنافذة المطابقة.	ADB: {0} Geräte, {1}: {2} offene Fenster. Wählen Sie die Seriennummer und das passende Fenster.	ADB : {0} appareils, {1} : {2} fenêtres ouvertes. Sélectionnez le numéro de série et la fenêtre correspondante.
+Demo started. All displayed positions and labels are synthetic.	Demo started. All displayed positions and labels are synthetic.	بدأ العرض التجريبي. المواضع والتسميات المعروضة مصطنعة.	Demo gestartet. Alle angezeigten Positionen und Beschriftungen sind künstlich erzeugt.	Démo démarrée. Les positions et libellés affichés sont générés.
+Aim input: Windows Mouse (no touchscreen gestures). Tool integrity: 0x{0:X}. GameLoop may require restarting this tool as administrator.	Aim input: Windows Mouse (no touchscreen gestures). Tool integrity: 0x{0:X}. GameLoop may require restarting this tool as administrator.	إدخال التصويب عبر ماوس Windows. مستوى صلاحيات الأداة: 0x{0:X}. قد يتطلب GameLoop إعادة تشغيل الأداة كمسؤول.	Zieleingabe über die Windows-Maus. Integritätsstufe: 0x{0:X}. Für GameLoop muss das Tool ggf. als Administrator neu gestartet werden.	Entrée de visée par la souris Windows. Niveau d’intégrité : 0x{0:X}. GameLoop peut nécessiter un redémarrage de l’outil en tant qu’administrateur.
+Live reader started for {0} {1}, PID {2}, base 0x{3:X}. The overlay appears while the selected {4} window is active.	Live reader started for {0} {1}, PID {2}, base 0x{3:X}. The overlay appears while the selected {4} window is active.	بدأت القراءة المباشرة لـ {0} {1}، العملية {2}، العنوان 0x{3:X}. تظهر اللوحة عند تنشيط نافذة {4} المختارة.	Live-Leser für {0} {1} gestartet, PID {2}, Basis 0x{3:X}. Das Overlay erscheint, wenn das gewählte {4}-Fenster aktiv ist.	Lecture en direct lancée pour {0} {1}, PID {2}, base 0x{3:X}. La superposition apparaît lorsque la fenêtre {4} sélectionnée est active.
+Quick settings could not be saved: {0}	Quick settings could not be saved: {0}	تعذر حفظ الإعدادات السريعة: {0}	Schnelleinstellungen konnten nicht gespeichert werden: {0}	Impossible d’enregistrer les réglages rapides : {0}
+Aim input transport failed. Aim disabled; restart Live and check the selected input method.	Aim input transport failed. Aim disabled; restart Live and check the selected input method.	تعذر إرسال حركة التصويب. أُوقفت المساعدة. أعد التشغيل المباشر وراجع طريقة الإدخال.	Zieleingabe fehlgeschlagen. Zielhilfe deaktiviert. Starten Sie Live neu und prüfen Sie die Eingabemethode.	Échec de l’entrée de visée. Aide désactivée. Relancez le direct et vérifiez le mode d’entrée.
+Image quality could not be synchronized: {0}	Image quality could not be synchronized: {0}	تعذرت مزامنة تحسين الصورة: {0}	Bildqualität konnte nicht synchronisiert werden: {0}	Impossible de synchroniser la qualité d’image : {0}
+LIVE STOPPED: {0}	LIVE STOPPED: {0}	توقف التشغيل المباشر: {0}	LIVE GESTOPPT: {0}	DIRECT ARRÊTÉ : {0}
+Display and reader stopped.	Display and reader stopped.	توقف العرض والقارئ.	Anzeige und Leser wurden gestoppt.	Affichage et lecture arrêtés.
+Administrator restart was cancelled in Windows. Input remains blocked while the emulator has higher privileges.	Administrator restart was cancelled in Windows. Input remains blocked while the emulator has higher privileges.	أُلغي التشغيل كمسؤول في Windows. يظل الإدخال موقوفًا طالما صلاحيات المحاكي أعلى.	Neustart als Administrator wurde in Windows abgebrochen. Die Eingabe bleibt bei höheren Emulatorrechten gesperrt.	Le redémarrage en tant qu’administrateur a été annulé dans Windows. L’entrée reste bloquée tant que l’émulateur possède des privilèges supérieurs.
+Quick panel arrow is already in use. {0} still closes the panel.	Quick panel arrow is already in use. {0} still closes the panel.	مفتاح سهم اللوحة السريعة مستخدم بالفعل. يمكنك إغلاق اللوحة بـ {0}.	Eine Pfeiltaste ist bereits belegt. {0} schließt das Schnellpanel weiterhin.	Une flèche du panneau rapide est déjà utilisée. {0} ferme toujours le panneau.
+{0} is already in use. Change it in Shortcuts.	{0} is already in use. Change it in Shortcuts.	{0} مستخدم بالفعل. غيّره من الاختصارات.	{0} ist bereits belegt. Ändern Sie die Taste unter Tastenkürzel.	{0} est déjà utilisé. Modifiez-le dans Raccourcis.
+Overlay hidden.	Overlay hidden.	تم إخفاء لوحة العرض.	Overlay ausgeblendet.	Superposition masquée.
+Overlay enabled.	Overlay enabled.	تم إظهار لوحة العرض.	Overlay eingeblendet.	Superposition affichée.
+Could not start RAM HAX or install the update.	Could not start RAM HAX or install the update.	تعذر تشغيل RAM HAX أو تثبيت التحديث.	RAM HAX konnte nicht gestartet oder das Update nicht installiert werden.	Impossible de démarrer RAM HAX ou d’installer la mise à jour.
+Overlay	Overlay	لوحة العرض	Overlay	Superposition
+On	On	مفعّل	An	Activé
+Off	Off	متوقف	Aus	Désactivé
+Pause	Pause	إيقاف مؤقت	Pause	Pause
+Stop	Stop	إيقاف	Stopp	Arrêter
+Insert	Insert	Insert	Einfg	Inser
+Input {0}  |  {1}	Input {0}  |  {1}	الإدخال {0}  |  {1}	Eingabe {0}  |  {1}	Entrée {0}  |  {1}
+AIM {0}% | {1} | {2} | INPUT {3}	AIM {0}% | {1} | {2} | INPUT {3}	التصويب {0}% | {1} | {2} | الإدخال {3}	ZIELHILFE {0}% | {1} | {2} | EINGABE {3}	VISÉE {0}% | {1} | {2} | ENTRÉE {3}
+تحديث الأجهزة	Refresh devices	تحديث الأجهزة	Geräte aktualisieren	Actualiser les appareils
+فحص اللعبة	Inspect game	فحص اللعبة	Spiel prüfen	Inspecter le jeu
+ملفا 4.6.0 للبناءين 21525 و21518 مرتبطان ببصمة المكتبة. Live يقرأ بيانات فعلية؛ العرض التجريبي يستخدم بيانات مصطنعة.	The 4.6.0 profiles for builds 21525 and 21518 are tied to the library fingerprint. Live reads game data. Demo uses generated data.	ملفا 4.6.0 للبناءين 21525 و21518 مرتبطان ببصمة المكتبة. Live يقرأ بيانات فعلية؛ العرض التجريبي يستخدم بيانات مصطنعة.	Die 4.6.0-Profile für Builds 21525 und 21518 sind an den Bibliotheksfingerabdruck gebunden. Live liest Spieldaten. Die Demo nutzt erzeugte Daten.	Les profils 4.6.0 pour les versions 21525 et 21518 dépendent de l’empreinte de la bibliothèque. Le direct lit les données du jeu. La démo utilise des données générées.
+عرض تجريبي	Run demo	عرض تجريبي	Demo starten	Lancer la démo
+تشغيل Live	Start live	تشغيل Live	Live starten	Lancer le direct
+إيقاف	Stop	إيقاف	Stoppen	Arrêter
+القائمة الكاملة	Full menu	القائمة الكاملة	Vollständiges Menü	Menu complet
+تشغيل كمسؤول	Run as administrator	تشغيل كمسؤول	Als Administrator starten	Exécuter en administrateur
+التشخيص يقرأ بيانات الاتصال والذاكرة فقط.	Diagnostics read connection and memory data.	التشخيص يقرأ بيانات الاتصال والذاكرة فقط.	Die Diagnose liest Verbindungs- und Speicherdaten.	Le diagnostic lit les données de connexion et de mémoire.
+Live يحتاج ملف إزاحات متحقق من هذا الإصدار.	Live requires a verified profile for this version.	Live يحتاج ملف إزاحات متحقق من هذا الإصدار.	Live benötigt ein geprüftes Profil für diese Version.	Le direct exige un profil vérifié pour cette version.
+تنعيم الأداة مفعّل، وتم حفظ طلب FXAA والتحقق منه. أعد تشغيل المحاكي؛ تأثيره على اللعبة غير مؤكد.	Smoothing is on and the FXAA request was saved and verified. Restart the emulator. The effect on the game is unconfirmed.	تنعيم الأداة مفعّل، وتم حفظ طلب FXAA والتحقق منه. أعد تشغيل المحاكي؛ تأثيره على اللعبة غير مؤكد.	Glättung ist aktiv und die FXAA-Anforderung wurde gespeichert und geprüft. Starten Sie den Emulator neu. Die Wirkung im Spiel ist unbestätigt.	Le lissage est actif et la demande FXAA a été enregistrée et vérifiée. Redémarrez l’émulateur. L’effet dans le jeu reste à confirmer.
+تنعيم الأداة متوقف، وتم حفظ FXAA = Off والتحقق منه. أعد تشغيل المحاكي لتطبيق الإيقاف عليه.	Smoothing is off and the FXAA setting was saved and verified. Restart the emulator to apply the change.	تنعيم الأداة متوقف، وتم حفظ FXAA = Off والتحقق منه. أعد تشغيل المحاكي لتطبيق الإيقاف عليه.	Glättung ist aus und die FXAA-Einstellung wurde gespeichert und geprüft. Starten Sie den Emulator neu, um die Änderung anzuwenden.	Le lissage est désactivé et le réglage FXAA a été enregistré et vérifié. Redémarrez l’émulateur pour appliquer la modification.
+Pause overlay + input	Pause overlay + input	إيقاف العرض والإدخال مؤقتًا	Overlay und Eingabe pausieren	Suspendre la superposition et l’entrée
+Stop session	Stop session	إيقاف الجلسة	Sitzung stoppen	Arrêter la session
+Quick adjustment panel	Quick adjustment panel	لوحة التعديل السريع	Schnellsteuerung	Panneau de réglage rapide
+Aim Assist / input ON–OFF	Aim Assist / input ON–OFF	تشغيل أو إيقاف مساعدة التصويب	Zielhilfe / Eingabe an–aus	Activer ou désactiver l’aide à la visée
+Activation mode	Activation mode	طريقة التفعيل	Aktivierungsmodus	Mode d’activation
+Target body region	Target body region	موضع التصويب في الجسم	Zielregion am Körper	Zone du corps ciblée
+ESP ON–OFF	ESP ON–OFF	تشغيل أو إيقاف مساعدات استكشاف	Erkundungshilfen ein- oder ausschalten	Activer ou désactiver les aides à l’exploration
+Full settings menu	Full settings menu	قائمة الإعدادات الكاملة	Vollständiges Einstellungsmenü	Menu complet des paramètres
+Choose another key. Insert is reserved for collapsing the overlay; arrows adjust it.	Choose another key. Insert is reserved for collapsing the overlay; arrows adjust it.	اختر مفتاحًا آخر. Insert مخصص لطي اللوحة، والأسهم للتعديل.	Wählen Sie eine andere Taste. Einfg ist zum Einklappen reserviert, Pfeiltasten zum Anpassen.	Choisissez une autre touche. Inser est réservé à la réduction du panneau et les flèches aux réglages.
+Already assigned to: {0}	Already assigned to: {0}	مُخصص بالفعل لـ: {0}	Bereits zugewiesen für: {0}	Déjà attribué à : {0}
+Press a key…	Press a key…	اضغط مفتاحًا…	Taste drücken…	Appuyez sur une touche…
+Press your new shortcut here. Esc cancels. Insert is reserved.	Press your new shortcut here. Esc cancels. Insert is reserved.	اضغط الاختصار الجديد هنا. Esc للإلغاء. Insert محجوز.	Drücken Sie hier das neue Kürzel. Esc bricht ab. Einfg ist reserviert.	Saisissez le nouveau raccourci ici. Échap annule. Inser est réservé.
+Shortcut change cancelled.	Shortcut change cancelled.	تم إلغاء تغيير الاختصار.	Änderung des Kürzels abgebrochen.	Modification du raccourci annulée.
+Saved: {0}	Saved: {0}	تم الحفظ: {0}	Gespeichert: {0}	Enregistré : {0}
+Keyboard shortcuts	Keyboard shortcuts	اختصارات الكيبورد	Tastenkürzel	Raccourcis clavier
+Click a shortcut, then press the new key here. Changes save automatically.\nInsert always collapses / expands the in-game panel.	Click a shortcut, then press the new key here. Changes save automatically.\nInsert always collapses / expands the in-game panel.	اضغط على اختصار، ثم اضغط المفتاح الجديد هنا. التغييرات تُحفظ تلقائيًا.\nInsert يطوي لوحة اللعبة أو يوسعها دائمًا.	Klicken Sie auf ein Kürzel und drücken Sie die neue Taste. Änderungen werden automatisch gespeichert.\nEinfg klappt das Spielpanel immer ein oder aus.	Cliquez sur un raccourci, puis appuyez sur la nouvelle touche. Les modifications sont enregistrées automatiquement.\nInser réduit ou déploie toujours le panneau en jeu.
+Ctrl / Alt / Shift combinations are supported.	Ctrl / Alt / Shift combinations are supported.	يمكن استخدام تركيبات Ctrl وAlt وShift.	Tastenkombinationen mit Strg / Alt / Umschalt werden unterstützt.	Les combinaisons Ctrl / Alt / Maj sont prises en charge.
+Scoped	Scoped	مع السكوب	Beim Anvisieren	En visant
+Firing	Firing	أثناء الضرب	Beim Feuern	En tirant
+Always	Always	دائمًا	Immer	Toujours
+ScopedAndFiring	ScopedAndFiring	سكوب وضرب	Anvisieren und Feuern	Visée et tir
+Hold	Hold	ضغط مستمر	Taste halten	Bouton maintenu
+Aim {0}	Aim {0}	التصويب {0}	Zielhilfe {0}	Visée {0}
+Activation {0}	Activation {0}	التفعيل {0}	Aktivierung {0}	Activation {0}
+Target {0}	Target {0}	الموضع {0}	Ziel {0}	Cible {0}
+{0} Pause · {1} Stop	{0} Pause · {1} Stop	{0} إيقاف مؤقت · {1} إيقاف	{0} Pause · {1} Stopp	{0} Pause · {1} Arrêter
+↑ ↓ Select | ← → Adjust | {0} Menu	↑ ↓ Select | ← → Adjust | {0} Menu	↑ ↓ اختيار | ← → تعديل | {0} القائمة	↑ ↓ Wählen | ← → Anpassen | {0} Menü	↑ ↓ Choisir | ← → Régler | {0} Menu
+PREVIEW / Waiting for data	PREVIEW / Waiting for data	معاينة / بانتظار البيانات	VORSCHAU / wartet auf Daten	APERÇU / en attente de données
+LIVE PREVIEW / Game data	LIVE PREVIEW / Game data	معاينة مباشرة / بيانات اللعبة	LIVE-VORSCHAU / Spieldaten	APERÇU DIRECT / données du jeu
+SYNTHETIC SCENE / No game data	SYNTHETIC SCENE / No game data	مشهد مصطنع / عرض تجريبي	KÜNSTLICHE SZENE / Demodaten	SCÈNE GÉNÉRÉE / données de démo
+WAITING FOR FRESH DATA	WAITING FOR FRESH DATA	بانتظار بيانات حديثة	WARTET AUF AKTUELLE DATEN	EN ATTENTE DE DONNÉES RÉCENTES
+{0} entities  /  {1} actors  /  {2:0} Hz	{0} entities  /  {1} actors  /  {2:0} Hz	{0} عنصر / {1} كائن / {2:0} Hz	{0} Einheiten / {1} Akteure / {2:0} Hz	{0} entités / {1} acteurs / {2:0} Hz
+ESP OFF	ESP OFF	مساعدات استكشاف متوقفة	Erkundungshilfen aus	Aides à l’exploration désactivées
+BOT	BOT	بوت	BOT	BOT
+PLAYER	PLAYER	لاعب	SPIELER	JOUEUR
+UNKNOWN	UNKNOWN	غير معروف	UNBEKANNT	INCONNU
+KNOCKED	KNOCKED	منوك	NIEDERGESCHLAGEN	À TERRE
+HP	HP	الصحة	LP	PV
+FUEL	FUEL	وقود	KRAFTSTOFF	CARBURANT
+m	m	م	m	m
+No data	No data	لا توجد بيانات	Keine Daten	Aucune donnée
+DEMO / synthetic data	DEMO / synthetic data	تجريبي / بيانات مصطنعة	DEMO / künstliche Daten	DÉMO / données générées
+السكوب فقط	Scoped only	السكوب فقط	Nur beim Anvisieren	Visée uniquement
+الضرب فقط	Firing only	الضرب فقط	Nur beim Feuern	Tir uniquement
+دائمًا	Always	دائمًا	Immer	Toujours
+سكوب + ضرب	Scoped + firing	سكوب + ضرب	Anvisieren + Feuern	Visée + tir
+ضغط زر	Hold button	ضغط زر	Taste halten	Bouton maintenu
+الرأس	Head	الرأس	Kopf	Tête
+الأرجل	Legs	الأرجل	Beine	Jambes
+الصدر	Chest	الصدر	Brust	Torse
+إغلاق الإعدادات السريعة	Close quick settings	إغلاق الإعدادات السريعة	Schnelleinstellungen schließen	Fermer les réglages rapides
+فتح الإعدادات السريعة	Open quick settings	فتح الإعدادات السريعة	Schnelleinstellungen öffnen	Ouvrir les réglages rapides
+الاختصار مستخدم	Shortcut in use	الاختصار مستخدم	Tastenkürzel belegt	Raccourci utilisé
+قوة التصحيح	Correction strength	قوة التصحيح	Korrekturstärke	Intensité de correction
+نصف قطر الدائرة	Circle radius	نصف قطر الدائرة	Kreisradius	Rayon du cercle
+اللاعبون حولك	Nearby players	اللاعبون حولك	Spieler in der Nähe	Joueurs proches
+نافذة اللعبة غير متاحة	Game window unavailable	نافذة اللعبة غير متاحة	Spielfenster nicht verfügbar	Fenêtre de jeu indisponible
+ارجع لنافذة اللعبة	Return to the game window	ارجع لنافذة اللعبة	Zum Spielfenster zurückkehren	Revenez à la fenêtre de jeu
+اضغط باستمرار على {0}	Hold {0}	اضغط باستمرار على {0}	{0} gedrückt halten	Maintenez {0}
+فحص المؤشر أوقف الحركة — عطّله من الإعدادات	Cursor check paused movement — disable it in settings	فحص المؤشر أوقف الحركة — عطّله من الإعدادات	Mauszeigerprüfung pausiert die Bewegung — in Einstellungen deaktivieren	La vérification du curseur suspend le mouvement — désactivez-la dans les paramètres
+متوقف	Stopped	متوقف	Gestoppt	Arrêté
+المساعدة معطلة	Assist disabled	المساعدة معطلة	Zielhilfe deaktiviert	Aide désactivée
+الجلسة أو القائمة توقف الحركة	Session or menu paused movement	الجلسة أو القائمة توقف الحركة	Sitzung oder Menü pausiert die Bewegung	La session ou le menu suspend le mouvement
+القوة صفر — ارفع شريط القوة	Strength is zero — increase it using the slider	القوة صفر — ارفع شريط القوة	Stärke ist null — mit dem Regler erhöhen	L’intensité est à zéro — augmentez-la avec le curseur
+بانتظار بيانات حديثة	Waiting for fresh data	بانتظار بيانات حديثة	Wartet auf aktuelle Daten	En attente de données récentes
+تأخر التحديث — إيقاف الحركة مؤقتًا	Update delayed — movement paused	تأخر التحديث — إيقاف الحركة مؤقتًا	Aktualisierung verzögert — Bewegung pausiert	Mise à jour retardée — mouvement suspendu
+لا يوجد هدف صالح داخل الدائرة	No valid target in circle	لا يوجد هدف صالح داخل الدائرة	Kein gültiges Ziel im Kreis	Aucune cible valide dans le cercle
+هدف محدد — تنعيم الحركة	Target selected — smoothing movement	هدف محدد — تنعيم الحركة	Ziel gewählt — Bewegung wird geglättet	Cible sélectionnée — lissage du mouvement
+إرسال حركة التصويب	Sending aim movement	إرسال حركة التصويب	Zielbewegung wird gesendet	Envoi du mouvement de visée
+حركات مرسلة بلا استجابة كاميرا — راجع طريقة الإدخال	Movement sent without camera response — check input method	حركات مرسلة بلا استجابة كاميرا — راجع طريقة الإدخال	Bewegung ohne Kamerareaktion — Eingabemethode prüfen	Mouvement envoyé sans réponse de la caméra — vérifiez le mode d’entrée
+تعذر إرسال حركة الإدخال	Could not send input movement	تعذر إرسال حركة الإدخال	Eingabebewegung konnte nicht gesendet werden	Impossible d’envoyer le mouvement
+حالة السكوب غير متاحة	Scope state unavailable	حالة السكوب غير متاحة	Visierstatus nicht verfügbar	État de visée indisponible
+افتح السكوب لتفعيل المساعدة	Aim down sights to enable assist	افتح السكوب لتفعيل المساعدة	Zum Aktivieren der Hilfe anvisieren	Visez pour activer l’aide
+حالة إطلاق النار غير متاحة	Firing state unavailable	حالة إطلاق النار غير متاحة	Feuerstatus nicht verfügbar	État de tir indisponible
+اضرب لتفعيل المساعدة	Fire to enable assist	اضرب لتفعيل المساعدة	Zum Aktivieren der Hilfe feuern	Tirez pour activer l’aide
+{0}: overlay and assist paused	{0}: overlay and assist paused	{0}: العرض والمساعدة موقوفان	{0}: Overlay und Zielhilfe pausiert	{0} : superposition et aide suspendues
+Left	Left	يسار	Links	Gauche
+Right	Right	يمين	Rechts	Droite
+Front	Front	أمام	Vorne	Devant
+Back	Back	خلف	Hinten	Derrière
+Front left	Front left	أمام يسار	Vorne links	Devant à gauche
+Front right	Front right	أمام يمين	Vorne rechts	Devant à droite
+Back left	Back left	خلف يسار	Hinten links	Derrière à gauche
+Back right	Back right	خلف يمين	Hinten rechts	Derrière à droite
+Updates	Updates	التحديثات	Updates	Mises à jour
+RAM HAX update	RAM HAX update	تحديث RAM HAX	RAM HAX-Update	Mise à jour RAM HAX
+Version {0} is already up to date.	Version {0} is already up to date.	أنت على أحدث إصدار {0}.	Version {0} ist bereits aktuell.	Vous disposez de la dernière version {0}.
+Version {0} is available. Open Settings and select Update now.	Version {0} is available. Open Settings and select Update now.	الإصدار {0} متاح. افتح الإعدادات واضغط «تحديث الآن».	Version {0} ist verfügbar. Öffnen Sie die Einstellungen und wählen Sie Jetzt aktualisieren.	La version {0} est disponible. Ouvrez les paramètres et choisissez Mettre à jour.
+Update available	Update available	تحديث متاح	Update verfügbar	Mise à jour disponible
+Install version {0}?\n\n{1}	Install version {0}?\n\n{1}	تثبيت الإصدار {0}؟\n\n{1}	Version {0} installieren?\n\n{1}	Installer la version {0} ?\n\n{1}
+Code expires  {0}	Code expires  {0}	انتهاء الكود  {0}	Code läuft ab  {0}	Expiration du code  {0}
+RAM HAX | Activation	RAM HAX | Activation	RAM HAX | تفعيل الأداة	RAM HAX | Aktivierung	RAM HAX | Activation
+{0} device(s)	{0} device(s)	{0} جهاز	{0} Geräte	{0} appareils
+فحص التحديثات	Check for updates	فحص التحديثات	Nach Updates suchen	Rechercher des mises à jour
+تحديث الآن	Update now	تحديث الآن	Jetzt aktualisieren	Mettre à jour
+تعذر التحقق من التحديث. حاول تاني لاحقًا.	Could not check for updates. Try again later.	تعذر التحقق من التحديث. حاول تاني لاحقًا.	Updates konnten nicht geprüft werden. Versuchen Sie es später erneut.	Impossible de vérifier les mises à jour. Réessayez plus tard.
+افتح الأداة بشكل عادي من قائمة Start لتثبيت التحديث.	Open the app normally from Start to install the update.	افتح الأداة بشكل عادي من قائمة Start لتثبيت التحديث.	Öffnen Sie die App über das Startmenü, um das Update zu installieren.	Ouvrez l’application normalement depuis le menu Démarrer pour installer la mise à jour.
+جاري التنزيل…	Downloading…	جاري التنزيل…	Wird heruntergeladen…	Téléchargement…
+التحديث جاهز. إنهاء الجلسة وتثبيت التحديث؟	The update is ready. End the session and install it?	التحديث جاهز. إنهاء الجلسة وتثبيت التحديث؟	Das Update ist bereit. Sitzung beenden und installieren?	La mise à jour est prête. Terminer la session et l’installer ?
+تعذر تنزيل التحديث أو التحقق من الملف. حاول تاني.	Could not download or verify the update. Try again.	تعذر تنزيل التحديث أو التحقق من الملف. حاول تاني.	Das Update konnte nicht heruntergeladen oder geprüft werden. Versuchen Sie es erneut.	Impossible de télécharger ou de vérifier la mise à jour. Réessayez.
+الترخيص يحتاج تفعيل.	License activation is required.	الترخيص يحتاج تفعيل.	Die Lizenz muss aktiviert werden.	L’activation de la licence est requise.
+تعذر تحديد جهاز Windows.	Could not identify this Windows device.	تعذر تحديد جهاز Windows.	Dieses Windows-Gerät konnte nicht erkannt werden.	Impossible d’identifier cet appareil Windows.
+أدخل الكود اللي استلمته لتفعيل الأداة على الجهاز ده.	Enter your code to activate the tool on this device.	أدخل الكود اللي استلمته لتفعيل الأداة على الجهاز ده.	Geben Sie Ihren Code ein, um das Tool auf diesem Gerät zu aktivieren.	Saisissez votre code pour activer l’outil sur cet appareil.
+تعذر الاتصال بسيرفر التفعيل. راجع الإنترنت وحاول تاني.	Could not connect to the activation server. Check your internet connection and try again.	تعذر الاتصال بسيرفر التفعيل. راجع الإنترنت وحاول تاني.	Keine Verbindung zum Aktivierungsserver. Prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.	Impossible de joindre le serveur d’activation. Vérifiez votre connexion et réessayez.
+سيرفر التفعيل غير متاح حاليًا. حاول تاني.	The activation server is unavailable. Try again.	سيرفر التفعيل غير متاح حاليًا. حاول تاني.	Der Aktivierungsserver ist nicht verfügbar. Versuchen Sie es erneut.	Le serveur d’activation est indisponible. Réessayez.
+تعذر حفظ التفعيل على الجهاز.	Could not save activation on this device.	تعذر حفظ التفعيل على الجهاز.	Aktivierung konnte auf diesem Gerät nicht gespeichert werden.	Impossible d’enregistrer l’activation sur cet appareil.
+راجع تاريخ وساعة Windows وحاول تاني.	Check the Windows date and time and try again.	راجع تاريخ وساعة Windows وحاول تاني.	Prüfen Sie Datum und Uhrzeit in Windows und versuchen Sie es erneut.	Vérifiez la date et l’heure de Windows et réessayez.
+صلاحية الكود انتهت. اطلب تمديده أو أدخل كود جديد.	The code has expired. Request an extension or enter a new code.	صلاحية الكود انتهت. اطلب تمديده أو أدخل كود جديد.	Der Code ist abgelaufen. Fordern Sie eine Verlängerung an oder geben Sie einen neuen Code ein.	Le code a expiré. Demandez une prolongation ou saisissez un nouveau code.
+الكود اتوقف. تواصل مع المسؤول أو أدخل كود جديد.	The code was revoked. Contact the administrator or enter a new code.	الكود اتوقف. تواصل مع المسؤول أو أدخل كود جديد.	Der Code wurde gesperrt. Kontaktieren Sie den Administrator oder geben Sie einen neuen Code ein.	Le code a été révoqué. Contactez l’administrateur ou saisissez un nouveau code.
+الجهاز اتفك ربطه. فعّل الأداة بكود صالح.	This device was unlinked. Activate it using a valid code.	الجهاز اتفك ربطه. فعّل الأداة بكود صالح.	Das Gerät wurde entkoppelt. Aktivieren Sie es mit einem gültigen Code.	Cet appareil a été dissocié. Activez-le avec un code valide.
+الكود وصل للحد الأقصى من الأجهزة.	The code has reached its device limit.	الكود وصل للحد الأقصى من الأجهزة.	Der Code hat das Gerätelimit erreicht.	Le code a atteint sa limite d’appareils.
+الكود غير صحيح. راجع الحروف والأرقام.	Invalid code. Check the letters and numbers.	الكود غير صحيح. راجع الحروف والأرقام.	Ungültiger Code. Prüfen Sie die Buchstaben und Zahlen.	Code invalide. Vérifiez les lettres et les chiffres.
+أدخل كود التفعيل	Enter activation code	أدخل كود التفعيل	Aktivierungscode eingeben	Saisir le code d’activation
+كود التفعيل	Activation code	كود التفعيل	Aktivierungscode	Code d’activation
+تفعيل	Activate	تفعيل	Aktivieren	Activer
+خروج	Exit	خروج	Beenden	Quitter
+جاري التحقق من الترخيص…	Verifying license…	جاري التحقق من الترخيص…	Lizenz wird geprüft…	Vérification de la licence…
+Empty offset.	Empty offset.	قيمة الإزاحة فارغة.	Leerer Offset.	Décalage vide.
+Profile is disabled: verified version-specific offsets are required. The supplied template is NOT a working PUBG profile.	Profile is disabled: verified version-specific offsets are required. The supplied template is NOT a working PUBG profile.	ملف التعريف معطل. يلزم ملف إزاحات متحقق من إصدار اللعبة. القالب المرفق لا يصلح لتشغيل PUBG.	Profil ist deaktiviert. Geprüfte versionsspezifische Offsets sind erforderlich. Die mitgelieferte Vorlage ist kein verwendbares PUBG-Profil.	Le profil est désactivé. Des décalages vérifiés pour cette version sont requis. Le modèle fourni ne permet pas de lancer PUBG.
+Invalid package name.	Invalid package name.	اسم الحزمة غير صالح.	Ungültiger Paketname.	Nom de paquet invalide.
+Both exact VersionName and VersionCode are required.	Both exact VersionName and VersionCode are required.	يلزم تحديد VersionName وVersionCode المطابقين تمامًا.	Exakte Angaben für VersionName und VersionCode sind erforderlich.	Les valeurs exactes de VersionName et VersionCode sont requises.
+Invalid library name.	Invalid library name.	اسم المكتبة غير صالح.	Ungültiger Bibliotheksname.	Nom de bibliothèque invalide.
+PointerSize must be 4 or 8.	PointerSize must be 4 or 8.	يجب أن تكون PointerSize بقيمة 4 أو 8.	PointerSize muss 4 oder 8 sein.	PointerSize doit valoir 4 ou 8.
+Invalid actor or polling limits.	Invalid actor or polling limits.	حدود العناصر أو فترات القراءة غير صالحة.	Ungültige Einheiten- oder Abfragelimits.	Limites d’entités ou d’interrogation invalides.
+Invalid units, height, or health.	Invalid units, height, or health.	قيم الوحدات أو الارتفاع أو الصحة غير صالحة.	Ungültige Einheiten, Höhe oder Gesundheit.	Unités, hauteur ou santé invalides.
+Native reader requires an exact inspected PUBG Global 4.6.0 ARM64 build/library pair (21525 or 21518).	Native reader requires an exact inspected PUBG Global 4.6.0 ARM64 build/library pair (21525 or 21518).	القارئ الأصلي يتطلب تطابق بناء ومكتبة PUBG Global 4.6.0 ARM64 المتحقق منهما (21525 أو 21518).	Der native Leser benötigt ein exakt geprüftes Build-/Bibliothekspaar von PUBG Global 4.6.0 ARM64 (21525 oder 21518).	Le lecteur natif exige une paire version/bibliothèque vérifiée de PUBG Global 4.6.0 ARM64 (21525 ou 21518).
+Unknown reader backend.	Unknown reader backend.	نوع القارئ غير معروف.	Unbekanntes Leser-Backend.	Moteur de lecture inconnu.
+Required pointer paths are missing.	Required pointer paths are missing.	مسارات المؤشرات المطلوبة مفقودة.	Erforderliche Zeigerpfade fehlen.	Les chemins de pointeurs requis sont absents.
+Pointer path is too long.	Pointer path is too long.	مسار المؤشر أطول من المسموح.	Zeigerpfad ist zu lang.	Le chemin de pointeur est trop long.
+Profile exceeds 128 KB.	Profile exceeds 128 KB.	حجم ملف التعريف يتجاوز 128 كيلوبايت.	Profil überschreitet 128 KB.	Le profil dépasse 128 Ko.
+Empty profile.	Empty profile.	ملف التعريف فارغ.	Leeres Profil.	Profil vide.
+Invalid installed game version.	Invalid installed game version.	إصدار اللعبة المثبت غير صالح.	Ungültige installierte Spielversion.	Version du jeu installée invalide.
+Library not mapped: {0}. Verify the installed build.	Library not mapped: {0}. Verify the installed build.	المكتبة غير موجودة في خريطة الذاكرة: {0}. تحقق من البناء المثبت.	Bibliothek nicht zugeordnet: {0}. Prüfen Sie das installierte Build.	Bibliothèque absente de la mémoire : {0}. Vérifiez la version installée.
+Native snapshot exceeds size limit.	Native snapshot exceeds size limit.	حجم لقطة القارئ الأصلي يتجاوز الحد المسموح.	Native Momentaufnahme überschreitet das Größenlimit.	L’instantané natif dépasse la taille limite.
+Empty native snapshot.	Empty native snapshot.	لقطة القارئ الأصلي فارغة.	Leere native Momentaufnahme.	Instantané natif vide.
+Invalid native camera or actor data.	Invalid native camera or actor data.	بيانات الكاميرا أو العناصر في القارئ الأصلي غير صالحة.	Ungültige native Kamera- oder Einheitendaten.	Données natives de caméra ou d’entités invalides.
+This native helper requires an x86_64 Android kernel on the selected emulator.	This native helper requires an x86_64 Android kernel on the selected emulator.	المساعد الأصلي يتطلب نواة Android من نوع x86_64 على المحاكي المختار.	Der native Helfer benötigt einen x86_64-Android-Kernel im gewählten Emulator.	L’outil natif exige un noyau Android x86_64 dans l’émulateur sélectionné.
+Library SHA-256 differs from the inspected build. Reader stopped before using offsets.	Library SHA-256 differs from the inspected build. Reader stopped before using offsets.	بصمة SHA-256 للمكتبة تختلف عن البناء المتحقق منه. توقف القارئ قبل استخدام الإزاحات.	SHA-256 der Bibliothek weicht vom geprüften Build ab. Der Leser wurde vor Verwendung der Offsets gestoppt.	Le SHA-256 de la bibliothèque diffère de la version vérifiée. La lecture s’est arrêtée avant d’utiliser les décalages.
+Native reader binary is missing.	Native reader binary is missing.	ملف القارئ الأصلي مفقود.	Native Leserdatei fehlt.	Le fichier du lecteur natif est absent.
+Native helper transfer verification failed.	Native helper transfer verification failed.	تعذر التحقق من نقل المساعد الأصلي.	Überprüfung der Übertragung des nativen Helfers fehlgeschlagen.	Échec de la vérification du transfert de l’outil natif.
+Native reader did not return a snapshot: {0}	Native reader did not return a snapshot: {0}	القارئ الأصلي لم يُرجع لقطة بيانات: {0}	Nativer Leser lieferte keine Momentaufnahme: {0}	Le lecteur natif n’a renvoyé aucun instantané : {0}
+Unable to start native reader transport.	Unable to start native reader transport.	تعذر تشغيل قناة اتصال القارئ الأصلي.	Transport des nativen Lesers konnte nicht gestartet werden.	Impossible de démarrer le transport du lecteur natif.
+No native frame for four seconds. Reader stopped.	No native frame for four seconds. Reader stopped.	لم تصل بيانات من القارئ الأصلي لمدة أربع ثوانٍ. تم إيقافه.	Vier Sekunden lang kein natives Bild empfangen. Leser gestoppt.	Aucune donnée native reçue pendant quatre secondes. Lecture arrêtée.
+Native reader session identity mismatch.	Native reader session identity mismatch.	هوية جلسة القارئ الأصلي غير مطابقة.	Sitzungskennung des nativen Lesers stimmt nicht überein.	Identité de session du lecteur natif incompatible.
+Native helper exited unexpectedly. {0}	Native helper exited unexpectedly. {0}	المساعد الأصلي توقف بشكل غير متوقع. {0}	Nativer Helfer wurde unerwartet beendet. {0}	L’outil natif s’est arrêté inopinément. {0}
+LIVE / PUBG Global 4.6.0	LIVE / PUBG Global 4.6.0	مباشر / PUBG Global 4.6.0	LIVE / PUBG Global 4.6.0	DIRECT / PUBG Global 4.6.0
+Command failed ({0}): {1} {2}	Command failed ({0}): {1} {2}	فشل الأمر ({0}): {1} {2}	Befehl fehlgeschlagen ({0}): {1} {2}	Échec de la commande ({0}) : {1} {2}
+Unable to start {0}	Unable to start {0}	تعذر تشغيل {0}	{0} konnte nicht gestartet werden	Impossible de démarrer {0}
+Command timed out after {0} ms: {1}	Command timed out after {0} ms: {1}	انتهت مهلة الأمر بعد {0} مللي ثانية: {1}	Zeitüberschreitung nach {0} ms: {1}	Délai de la commande dépassé après {0} ms : {1}
+Process output did not close.	Process output did not close.	لم يُغلق مخرج العملية.	Prozessausgabe wurde nicht geschlossen.	La sortie du processus ne s’est pas fermée.
+No existing privileged command facility was found.	No existing privileged command facility was found.	لم يتم العثور على وسيلة أوامر متاحة بصلاحيات مرتفعة.	Keine vorhandene privilegierte Befehlsausführung gefunden.	Aucun mécanisme de commande privilégié disponible n’a été trouvé.
+Invalid process ID.	Invalid process ID.	معرّف العملية غير صالح.	Ungültige Prozess-ID.	Identifiant de processus invalide.
+Invalid package.	Invalid package.	الحزمة غير صالحة.	Ungültiges Paket.	Paquet invalide.
+Package not installed or version unavailable: {0}	Package not installed or version unavailable: {0}	الحزمة غير مثبتة أو إصدارها غير متاح: {0}	Paket nicht installiert oder Version nicht verfügbar: {0}	Paquet non installé ou version indisponible : {0}
+The package is installed but not running. Open the game first.	The package is installed but not running. Open the game first.	الحزمة مثبتة لكنها متوقفة. افتح اللعبة أولًا.	Das Paket ist installiert, läuft aber nicht. Öffnen Sie zuerst das Spiel.	Le paquet est installé mais ne fonctionne pas. Ouvrez d’abord le jeu.
+Root access is unavailable. An existing privileged shell, su, or GameLoop txperm is required.	Root access is unavailable. An existing privileged shell, su, or GameLoop txperm is required.	صلاحيات root غير متاحة. يلزم وجود shell بصلاحيات مرتفعة أو su أو GameLoop txperm.	Root-Zugriff nicht verfügbar. Eine vorhandene privilegierte Shell, su oder GameLoop txperm ist erforderlich.	L’accès root est indisponible. Un shell privilégié, su ou GameLoop txperm existant est requis.
+Process maps are unavailable or access was denied.	Process maps are unavailable or access was denied.	خريطة ذاكرة العملية غير متاحة أو تم رفض الوصول.	Prozessspeicherkarte nicht verfügbar oder Zugriff verweigert.	La carte mémoire du processus est indisponible ou l’accès est refusé.
+Root access unavailable: the reader needs an existing privileged command facility (su, root shell, or GameLoop txperm). ADB connection alone is insufficient.	Root access unavailable: the reader needs an existing privileged command facility (su, root shell, or GameLoop txperm). ADB connection alone is insufficient.	صلاحيات root غير متاحة. يحتاج القارئ وسيلة أوامر بصلاحيات مرتفعة متاحة مسبقًا، مثل su أو root shell أو GameLoop txperm. اتصال ADB وحده غير كافٍ.	Root-Zugriff nicht verfügbar. Der Leser benötigt vorhandene privilegierte Befehlsausführung wie su, Root-Shell oder GameLoop txperm. Eine ADB-Verbindung allein reicht nicht aus.	L’accès root est indisponible. Le lecteur exige un mécanisme privilégié existant, comme su, un shell root ou GameLoop txperm. Une connexion ADB seule ne suffit pas.
+Package ABI does not match the profile pointer width.	Package ABI does not match the profile pointer width.	واجهة ABI للحزمة لا تطابق حجم المؤشر في ملف التعريف.	Paket-ABI passt nicht zur Zeigerbreite des Profils.	L’ABI du paquet ne correspond pas à la taille de pointeur du profil.
+Profile/build mismatch: installed {0} ({1}), profile {2} ({3}). A verified profile and compatible reader are required.	Profile/build mismatch: installed {0} ({1}), profile {2} ({3}). A verified profile and compatible reader are required.	ملف التعريف لا يطابق البناء. المثبت {0} ({1})، وملف التعريف {2} ({3}). يلزم ملف متحقق منه وقارئ متوافق.	Profil-/Build-Konflikt: installiert {0} ({1}), Profil {2} ({3}). Ein geprüftes Profil und ein kompatibler Leser sind erforderlich.	Incompatibilité profil/version : installé {0} ({1}), profil {2} ({3}). Un profil vérifié et un lecteur compatible sont requis.
+{0} / Live unavailable	{0} / Live unavailable	{0} / التشغيل المباشر غير متاح	{0} / Live nicht verfügbar	{0} / Direct indisponible
+Invalid memory read range.	Invalid memory read range.	نطاق قراءة الذاكرة غير صالح.	Ungültiger Speicherlesebereich.	Plage de lecture mémoire invalide.
+Address is not in a readable map: 0x{0:X}	Address is not in a readable map: 0x{0:X}	العنوان غير موجود في خريطة ذاكرة قابلة للقراءة: 0x{0:X}	Adresse liegt nicht in einem lesbaren Speicherbereich: 0x{0:X}	L’adresse n’est pas dans une zone mémoire lisible : 0x{0:X}
+Invalid memory transport response at 0x{0:X}. Check su access and toybox base64.	Invalid memory transport response at 0x{0:X}. Check su access and toybox base64.	استجابة نقل الذاكرة غير صالحة عند 0x{0:X}. تحقق من صلاحيات su وtoybox base64.	Ungültige Speichertransportantwort bei 0x{0:X}. Prüfen Sie su-Zugriff und toybox base64.	Réponse de transport mémoire invalide à 0x{0:X}. Vérifiez l’accès su et toybox base64.
+Memory read failed at 0x{0:X} (decoded {1} of 4096 bytes). Access denied, incompatible toybox, or process exited.	Memory read failed at 0x{0:X} (decoded {1} of 4096 bytes). Access denied, incompatible toybox, or process exited.	فشلت قراءة الذاكرة عند 0x{0:X} (تم فك {1} من 4096 بايت). قد يكون الوصول مرفوضًا أو toybox غير متوافق أو العملية متوقفة.	Speicherlesen bei 0x{0:X} fehlgeschlagen ({1} von 4096 Bytes dekodiert). Zugriff verweigert, inkompatibles toybox oder Prozess beendet.	Échec de lecture mémoire à 0x{0:X} ({1} octets décodés sur 4096). Accès refusé, toybox incompatible ou processus arrêté.
+Null or invalid pointer.	Null or invalid pointer.	المؤشر فارغ أو غير صالح.	Leerer oder ungültiger Zeiger.	Pointeur nul ou invalide.
+View-projection matrix is invalid.	View-projection matrix is invalid.	مصفوفة العرض والإسقاط غير صالحة.	Ungültige Ansichtsprojektionsmatrix.	Matrice de projection de vue invalide.
+Invalid actor count: {0}. Check the profile. Reading stopped.	Invalid actor count: {0}. Check the profile. Reading stopped.	عدد العناصر غير صالح: {0}. راجع ملف التعريف. توقفت القراءة.	Ungültige Einheitenzahl: {0}. Prüfen Sie das Profil. Lesen gestoppt.	Nombre d’entités invalide : {0}. Vérifiez le profil. Lecture arrêtée.
+Invalid local position.	Invalid local position.	الموقع المحلي غير صالح.	Ungültige lokale Position.	Position locale invalide.
+GameLoop ADB address must be a local address such as 127.0.0.1:5555.	GameLoop ADB address must be a local address such as 127.0.0.1:5555.	عنوان ADB لـ GameLoop يجب أن يكون محليًا، مثل 127.0.0.1:5555.	Die ADB-Adresse für GameLoop muss lokal sein, z. B. 127.0.0.1:5555.	L’adresse ADB de GameLoop doit être locale, par exemple 127.0.0.1:5555.
+NVIDIA returned an empty application profile.	NVIDIA returned an empty application profile.	أرجع NVIDIA ملف تعريف تطبيق فارغًا.	NVIDIA lieferte ein leeres Anwendungsprofil.	NVIDIA a renvoyé un profil d’application vide.
+Could not verify FXAA settings for {0}	Could not verify FXAA settings for {0}	تعذر التحقق من إعداد FXAA لـ {0}	FXAA-Einstellungen für {0} konnten nicht geprüft werden	Impossible de vérifier les paramètres FXAA pour {0}
+{0} Could not restore previous NVIDIA settings: {1}	{0} Could not restore previous NVIDIA settings: {1}	{0} تعذرت استعادة إعداد NVIDIA السابق: {1}	{0} Vorige NVIDIA-Einstellungen konnten nicht wiederhergestellt werden: {1}	{0} Impossible de restaurer les paramètres NVIDIA précédents : {1}
+HTTPS is required.	HTTPS is required.	يلزم استخدام HTTPS.	HTTPS ist erforderlich.	HTTPS est requis.
+Invalid license response.	Invalid license response.	استجابة الترخيص غير صالحة.	Ungültige Lizenzantwort.	Réponse de licence invalide.
+Invalid update response.	Invalid update response.	استجابة التحديث غير صالحة.	Ungültige Update-Antwort.	Réponse de mise à jour invalide.
+Invalid release signature.	Invalid release signature.	توقيع الإصدار غير صالح.	Ungültige Versionssignatur.	Signature de version invalide.
+Invalid release information.	Invalid release information.	بيانات الإصدار غير صالحة.	Ungültige Versionsinformationen.	Informations de version invalides.
+Incomplete update.	Incomplete update.	ملف التحديث غير مكتمل.	Unvollständiges Update.	Mise à jour incomplète.
+Invalid update size.	Invalid update size.	حجم التحديث غير صالح.	Ungültige Update-Größe.	Taille de mise à jour invalide.
+Invalid update checksum.	Invalid update checksum.	بصمة ملف التحديث غير صحيحة.	Ungültige Update-Prüfsumme.	Somme de contrôle de mise à jour invalide.
+Could not start the update.	Could not start the update.	تعذر بدء تثبيت التحديث.	Update konnte nicht gestartet werden.	Impossible de démarrer la mise à jour.
+Serial:	Serial:	الرقم التسلسلي:	Seriennummer:	Numéro de série :
+Package:	Package:	الحزمة:	Paket:	Paquet :
+Version:	Version:	الإصدار:	Version:	Version :
+PID:	PID:	معرّف العملية:	Prozess-ID:	Identifiant du processus :
+ABI:	ABI:	واجهة ABI:	ABI:	ABI :
+Android:	Android:	Android:	Android:	Android :
+Root:	Root:	صلاحيات root:	Root:	Root :
+Profile:	Profile:	ملف التعريف:	Profil:	Profil :
+Live prerequisites:	Live prerequisites:	متطلبات التشغيل المباشر:	Live-Voraussetzungen:	Conditions du direct :
+PASS (library hash and memory still require verification)	PASS (library hash and memory still require verification)	ناجح (تحتاج بصمة المكتبة والذاكرة إلى تحقق إضافي)	BESTANDEN (Bibliothekshash und Speicher müssen noch geprüft werden)	RÉUSSI (l’empreinte de la bibliothèque et la mémoire doivent encore être vérifiées)
+FAILED	FAILED	فشل	FEHLGESCHLAGEN	ÉCHEC
+Memory test unavailable without existing root permission.	Memory test unavailable without existing root permission.	اختبار الذاكرة غير متاح دون صلاحيات root موجودة مسبقًا.	Speichertest ohne vorhandene Root-Rechte nicht verfügbar.	Test mémoire indisponible sans droits root existants.
+libUE4.so base:	libUE4.so base:	عنوان بداية libUE4.so:	libUE4.so-Basis:	Base libUE4.so :
+Memory transport:	Memory transport:	نقل الذاكرة:	Speichertransport:	Transport mémoire :
+PASS / {0} decoded bytes	PASS / {0} decoded bytes	ناجح / تم فك {0} بايت	BESTANDEN / {0} Bytes dekodiert	RÉUSSI / {0} octets décodés
+Live startup also verifies the profile's library SHA-256.	Live startup also verifies the profile's library SHA-256.	يتحقق التشغيل المباشر أيضًا من بصمة SHA-256 لمكتبة ملف التعريف.	Beim Live-Start wird auch der Bibliotheks-SHA-256 des Profils geprüft.	Le démarrage du direct vérifie également le SHA-256 de la bibliothèque du profil.
+Yes	Yes	نعم	Ja	Oui
+No	No	لا	Nein	Non
+تعذر التحقق من صلاحيات الإدخال	Could not verify input privileges	تعذر التحقق من صلاحيات الإدخال	Eingabeberechtigungen konnten nicht geprüft werden	Impossible de vérifier les privilèges d’entrée
+المحاكي بصلاحيات أعلى — أعد تشغيل الأداة كمسؤول	Emulator has higher privileges — restart the tool as administrator	المحاكي بصلاحيات أعلى — أعد تشغيل الأداة كمسؤول	Emulator hat höhere Rechte — Tool als Administrator neu starten	L’émulateur possède des privilèges supérieurs — redémarrez l’outil en administrateur
+تعريف NVIDIA لا يدعم العملية المطلوبة.	The NVIDIA driver does not support this operation.	تعريف NVIDIA لا يدعم العملية المطلوبة.	Der NVIDIA-Treiber unterstützt diese Funktion nicht.	Le pilote NVIDIA ne prend pas en charge cette opération.
+شغّل الأداة كمسؤول.	Run the tool as administrator.	شغّل الأداة كمسؤول.	Starten Sie das Tool als Administrator.	Exécutez l’outil en tant qu’administrateur.
+تعريف NVIDIA غير متاح. ثبّت تعريف كرت NVIDIA.	The NVIDIA driver is unavailable. Install the NVIDIA graphics driver.	تعريف NVIDIA غير متاح. ثبّت تعريف كرت NVIDIA.	Der NVIDIA-Treiber ist nicht verfügbar. Installieren Sie den NVIDIA-Grafiktreiber.	Le pilote NVIDIA est indisponible. Installez le pilote graphique NVIDIA.
+NVAPI غير متاح في التعريف.	NVAPI is unavailable in this driver.	NVAPI غير متاح في التعريف.	NVAPI ist in diesem Treiber nicht verfügbar.	NVAPI est indisponible dans ce pilote.
+FRONT	Front	أمام	Vorne	Devant
+FRONT RIGHT	Front right	أمام يمين	Vorne rechts	Devant à droite
+RIGHT	Right	يمين	Rechts	Droite
+BACK RIGHT	Back right	خلف يمين	Hinten rechts	Derrière à droite
+BEHIND	Back	خلف	Hinten	Derrière
+BACK LEFT	Back left	خلف يسار	Hinten links	Derrière à gauche
+LEFT	Left	يسار	Links	Gauche
+FRONT LEFT	Front left	أمام يسار	Vorne links	Devant à gauche
+Mouse multiplier	Mouse multiplier	معامل حركة الماوس	Mausfaktor	Facteur de mouvement
+ESP ON	ESP ON	مساعدات استكشاف مفعّلة	Erkundungshilfen an	Aides à l’exploration activées

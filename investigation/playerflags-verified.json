@@ -1,0 +1,59 @@
+{
+  "pid": 3418,
+  "property_name": "bIsAI",
+  "property_class": "BoolProperty",
+  "owner": "UAECharacter",
+  "offset": "0xa40",
+  "metadata_address": "0x40000a637890",
+  "metadata_hex": "485e613100400000410000006a33000000b7697deb7b00009549010000000000806faa7deb7b00001078630a004000000100000001000000140200401000180000000000400a000000000000000000001078630a00400000000000000000000000000000000000000000000000000000010001ff00000000",
+  "metadata_70_73": [
+    1,
+    0,
+    1,
+    255
+  ],
+  "samples": [
+    {
+      "address": "0x7beb6d60b000",
+      "class": "BP_PlayerPawn_ST_C",
+      "is_local": true,
+      "flag_byte": 0,
+      "pet_flag_byte": 0
+    },
+    {
+      "address": "0x7beb33a0c000",
+      "class": "BP_PlayerPawn_ST_AI_C",
+      "is_local": false,
+      "flag_byte": 0,
+      "pet_flag_byte": 0
+    },
+    {
+      "address": "0x7beaa7c40000",
+      "class": "BP_CharacterModelTaget_C",
+      "is_local": false,
+      "flag_byte": 0,
+      "pet_flag_byte": 0
+    },
+    {
+      "address": "0x7beaa5c29000",
+      "class": "BP_CharacterModelTaget_C",
+      "is_local": false,
+      "flag_byte": 0,
+      "pet_flag_byte": 0
+    },
+    {
+      "address": "0x7beaa5c21000",
+      "class": "BP_CharacterModelTaget_C",
+      "is_local": false,
+      "flag_byte": 0,
+      "pet_flag_byte": 0
+    },
+    {
+      "address": "0x7beaa5040000",
+      "class": "BP_CharacterModelTaget_C",
+      "is_local": false,
+      "flag_byte": 0,
+      "pet_flag_byte": 0
+    }
+  ]
+}

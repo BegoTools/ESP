@@ -1,0 +1,26 @@
+{
+  "level_count": 3,
+  "levels": [
+    {
+      "address": "0x7beb69b83f90",
+      "name": "PersistentLevel",
+      "outer": "SingleTraining_Main",
+      "actor_count": 286,
+      "actors_pointer": "0x7beb6d1fcfc0"
+    },
+    {
+      "address": "0x7beb6c74c4a0",
+      "name": "PersistentLevel",
+      "outer": "shooting01",
+      "actor_count": 239,
+      "actors_pointer": "0x7beb75be5580"
+    },
+    {
+      "address": "0x7beb6921d4a0",
+      "name": "PersistentLevel",
+      "outer": "shooting_sublevel01",
+      "actor_count": 452,
+      "actors_pointer": "0x7beb61650000"
+    }
+  ]
+}

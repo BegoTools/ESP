@@ -1,0 +1,9 @@
+{
+  "command": "/system/bin/toybox dd if=/proc/3418/mem bs=4096 skip=17180013056 count=1 2>/dev/null | /system/bin/toybox base64",
+  "transport_bytes": 5608,
+  "decoded_bytes": 4096,
+  "exit_code": 0,
+  "stderr": "",
+  "prefix_hex": "5000005800021fd640360668eb7b00000300b700010000000080bd0500000000400000000000000018a0090f0000000000000000400038000e00400018001700",
+  "sha256": "f7c5362a59114cede73e1b5a1aeb312e9b2d678724ca6b47991222a19cffa007"
+}

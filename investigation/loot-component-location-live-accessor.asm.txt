@@ -1,0 +1,92 @@
+K2_GetComponentToWorld native exec 0xb0faefc
+0xb0faefc: sub      sp, sp, #0x50
+0xb0faf00: stp      x29, x30, [sp, #0x30]
+0xb0faf04: str      x19, [sp, #0x40]
+0xb0faf08: add      x29, sp, #0x30
+0xb0faf0c: ldr      x8, [x1, #0x20]
+0xb0faf10: mov      x19, x2
+0xb0faf14: cmp      x8, #0
+0xb0faf18: cinc     x8, x8, ne
+0xb0faf1c: str      x8, [x1, #0x20]
+0xb0faf20: mov      x8, sp
+0xb0faf24: bl       #0xa72cd18
+0xb0faf28: ldp      q1, q0, [sp]
+0xb0faf2c: ldp      x29, x30, [sp, #0x30]
+0xb0faf30: stp      q1, q0, [x19]
+0xb0faf34: ldr      q0, [sp, #0x20]
+0xb0faf38: str      q0, [x19, #0x20]
+0xb0faf3c: ldr      x19, [sp, #0x40]
+0xb0faf40: add      sp, sp, #0x50
+0xb0faf44: ret      
+0xb0faf48: sub      sp, sp, #0xe0
+0xb0faf4c: stp      x29, x30, [sp, #0xb0]
+0xb0faf50: stp      x22, x21, [sp, #0xc0]
+0xb0faf54: stp      x20, x19, [sp, #0xd0]
+0xb0faf58: add      x29, sp, #0xb0
+0xb0faf5c: ldr      x8, [x1, #0x20]
+0xb0faf60: mov      x20, x1
+0xb0faf64: mov      x19, x0
+0xb0faf68: cbz      x8, #0xb0faf9c
+0xb0faf6c: ldr      x1, [x20, #0x18]
+0xb0faf70: sub      x2, x29, #0x10
+0xb0faf74: mov      x0, x20
+0xb0faf78: bl       #0x8e54d38
+0xb0faf7c: stur     wzr, [x29, #-0x14]
+0xb0faf80: ldr      x8, [x20, #0x20]
+0xb0faf84: cbz      x8, #0xb0fafc0
+0xb0faf88: ldr      x1, [x20, #0x18]
+0xb0faf8c: sub      x2, x29, #0x14
+0xb0faf90: mov      x0, x20
+0xb0faf94: bl       #0x8e54d38
+0xb0faf98: b        #0xb0fafd8
+0xb0faf9c: ldr      x2, [x20, #0x80]
+0xb0fafa0: sub      x1, x29, #0x10
+0xb0fafa4: mov      x0, x20
+0xb0fafa8: ldr      x8, [x2, #0x28]
+0xb0fafac: str      x8, [x20, #0x80]
+K2_GetComponentLocation native exec 0xb0fae54
+0xb0fae54: stp      x29, x30, [sp, #-0x20]!
+0xb0fae58: str      x19, [sp, #0x10]
+0xb0fae5c: mov      x29, sp
+0xb0fae60: ldr      x8, [x1, #0x20]
+0xb0fae64: mov      x19, x2
+0xb0fae68: cmp      x8, #0
+0xb0fae6c: cinc     x8, x8, ne
+0xb0fae70: str      x8, [x1, #0x20]
+0xb0fae74: bl       #0xa72cf00
+0xb0fae78: stp      s0, s1, [x19]
+0xb0fae7c: str      s2, [x19, #8]
+0xb0fae80: ldr      x19, [sp, #0x10]
+0xb0fae84: ldp      x29, x30, [sp], #0x20
+0xb0fae88: ret      
+0xb0fae8c: stp      x29, x30, [sp, #-0x20]!
+0xb0fae90: str      x19, [sp, #0x10]
+0xb0fae94: mov      x29, sp
+0xb0fae98: ldr      x8, [x1, #0x20]
+0xb0fae9c: mov      x19, x2
+0xb0faea0: cmp      x8, #0
+0xb0faea4: cinc     x8, x8, ne
+0xb0faea8: str      x8, [x1, #0x20]
+0xb0faeac: bl       #0xa72cf10
+0xb0faeb0: stp      s0, s1, [x19]
+0xb0faeb4: str      s2, [x19, #8]
+0xb0faeb8: ldr      x19, [sp, #0x10]
+0xb0faebc: ldp      x29, x30, [sp], #0x20
+0xb0faec0: ret      
+0xb0faec4: stp      x29, x30, [sp, #-0x20]!
+0xb0faec8: str      x19, [sp, #0x10]
+0xb0faecc: mov      x29, sp
+0xb0faed0: ldr      x8, [x1, #0x20]
+0xb0faed4: mov      x19, x2
+0xb0faed8: cmp      x8, #0
+0xb0faedc: cinc     x8, x8, ne
+0xb0faee0: str      x8, [x1, #0x20]
+0xb0faee4: bl       #0xa72cfb4
+0xb0faee8: stp      s0, s1, [x19]
+0xb0faeec: str      s2, [x19, #8]
+0xb0faef0: ldr      x19, [sp, #0x10]
+0xb0faef4: ldp      x29, x30, [sp], #0x20
+0xb0faef8: ret      
+0xb0faefc: sub      sp, sp, #0x50
+0xb0faf00: stp      x29, x30, [sp, #0x30]
+0xb0faf04: str      x19, [sp, #0x40]

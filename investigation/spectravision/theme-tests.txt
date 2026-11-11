@@ -1,0 +1,16 @@
+PASS configured global shortcuts register with Windows
+PASS registered shortcut is owned by the application
+PASS shortcut capture releases the existing keyboard chord
+PASS rebind owns the new chord while the old chord is free for another window
+PASS repeated rebind releases its own previous registration
+PASS session cleanup releases the custom chord
+PASS external shortcut conflict is reported without disabling the remaining actions
+PASS home switch updates the shared ESP option
+PASS home FOV slider updates the existing aim radius
+PASS home refresh keeps the selected target in sync
+PASS reference artwork is embedded in the executable
+PASS only the active sidebar destination is highlighted
+PASS themed settings slider clamps values and notifies its binding
+PASS themed settings slider supports keyboard adjustment
+PASS themed selector supports keyboard selection
+15 Windows UI and hotkey checks passed. No game session started.

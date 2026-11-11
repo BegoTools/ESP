@@ -1,0 +1,51 @@
+{
+  "pid": 3418,
+  "local_pawn": "0x7beb6d60b000",
+  "class_chain": [
+    {
+      "address": "0x7beb33d96700",
+      "name": "BP_PlayerPawn_ST_C"
+    },
+    {
+      "address": "0x7beb33d91300",
+      "name": "BP_PlayerPawn_C"
+    },
+    {
+      "address": "0x7beb7d94b800",
+      "name": "STExtraPlayerCharacter"
+    },
+    {
+      "address": "0x7beb7d95b580",
+      "name": "STExtraBaseCharacter"
+    },
+    {
+      "address": "0x7beb7daa7200",
+      "name": "STExtraCharacter"
+    },
+    {
+      "address": "0x7beb7daa6f80",
+      "name": "UAECharacter"
+    },
+    {
+      "address": "0x7beb7daca900",
+      "name": "Character"
+    },
+    {
+      "address": "0x7beb7dad0f80",
+      "name": "Pawn"
+    },
+    {
+      "address": "0x7beb7e102680",
+      "name": "Actor"
+    },
+    {
+      "address": "0x7bec924c2780",
+      "name": "Object"
+    }
+  ],
+  "name_sentinel": "None",
+  "level": "0x7beb69b83f90",
+  "level_actor_provider_flag": 0,
+  "level_actor_provider_object": "0x0",
+  "pages_read": 39
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "Kind": "Character",
+    "Address": "0x7beb6d60b000",
+    "Root": "0x7beb4221aa40",
+    "RelativeLocation": [
+      32824.484375,
+      439901.09375,
+      592.3467407226562
+    ],
+    "WorldLocation": [
+      32824.484375,
+      439901.09375,
+      592.3467407226562
+    ],
+    "RelativeScaleZ": 1.0,
+    "WorldScaleZ": 1.0,
+    "Capsule": "0x7beb4221aa40",
+    "HalfHeight": 88.0,
+    "CapsuleRelativeScaleZ": 1.0,
+    "CapsuleWorldScaleZ": 1.0
+  },
+  {
+    "Kind": "Vehicle",
+    "Address": "0x7beb6c9ed240",
+    "Root": "0x7beb3a0bb530",
+    "RelativeLocation": [
+      35089.41015625,
+      426883.6875,
+      -7.0
+    ],
+    "WorldLocation": [
+      35089.41015625,
+      426883.6875,
+      -7.0
+    ],
+    "RelativeScaleZ": 1.0,
+    "WorldScaleZ": 1.0
+  },
+  {
+    "Kind": "TrainingTarget",
+    "Address": "0x7beaa7c40000",
+    "Root": "0x7beb70386000",
+    "RelativeLocation": [
+      37418.91796875,
+      432867.15625,
+      209.20462036132812
+    ],
+    "WorldLocation": [
+      37418.91796875,
+      432867.15625,
+      209.20462036132812
+    ],
+    "RelativeScaleZ": 1.0,
+    "WorldScaleZ": 1.0
+  }
+]

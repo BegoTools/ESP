@@ -1,0 +1,177 @@
+PASS configured global shortcuts register with Windows
+PASS registered shortcut is owned by the application
+PASS shortcut capture releases the existing keyboard chord
+PASS rebind owns the new chord while the old chord is free for another window
+PASS repeated rebind releases its own previous registration
+PASS session cleanup releases the custom chord
+PASS external shortcut conflict is reported without disabling the remaining actions
+PASS home switch updates the shared ESP option
+PASS home FOV slider updates the existing aim radius
+PASS home refresh keeps the selected target in sync
+PASS reference artwork is embedded in the executable
+PASS only the active sidebar destination is highlighted
+PASS themed settings slider clamps values and notifies its binding
+PASS themed settings slider supports keyboard adjustment
+PASS themed selector supports keyboard selection
+PASS shell page 1 uses direct content without an old sidebar or popup
+PASS shell page 2 uses direct content without an old sidebar or popup
+PASS shell page 3 uses direct content without an old sidebar or popup
+PASS shell page 4 uses direct content without an old sidebar or popup
+PASS shell page 5 uses direct content without an old sidebar or popup
+PASS Shortcuts exposes the input binding on the main screen
+PASS inline capture suspends shortcuts without opening a window
+PASS inline key capture updates the shared binding and exits capture
+PASS Escape cancels inline capture without changing the shortcut
+PASS leaving Shortcuts during capture restores global bindings
+PASS SpectraSwitch clears stale background pixels on every paint
+PASS SpectraSlider clears stale background pixels on every paint
+PASS Home START requires elevation unless the current process already has high integrity
+PASS administrator restart requests Windows elevation and resumes the selected emulator session
+PASS changing language through the normal settings action saves to disk
+PASS a fresh window restores the saved language
+PASS dropdown opens on page 0
+PASS dropdown selection finishes with a reusable native menu on page 0
+PASS outside-click closure keeps the dropdown alive on page 0
+PASS dropdown opens on page 0
+PASS dropdown selection finishes with a reusable native menu on page 0
+PASS outside-click closure keeps the dropdown alive on page 0
+PASS dropdown opens on page 0
+PASS dropdown selection finishes with a reusable native menu on page 0
+PASS outside-click closure keeps the dropdown alive on page 0
+PASS dropdown opens on page 0
+PASS dropdown selection finishes with a reusable native menu on page 0
+PASS outside-click closure keeps the dropdown alive on page 0
+PASS each dropdown selection changes its setting once
+PASS dropdown opens on page 0
+PASS dropdown selection finishes with a reusable native menu on page 0
+PASS outside-click closure keeps the dropdown alive on page 0
+PASS dropdown opens on page 0
+PASS dropdown selection finishes with a reusable native menu on page 0
+PASS outside-click closure keeps the dropdown alive on page 0
+PASS dropdown opens on page 0
+PASS dropdown selection finishes with a reusable native menu on page 0
+PASS outside-click closure keeps the dropdown alive on page 0
+PASS dropdown opens on page 0
+PASS dropdown selection finishes with a reusable native menu on page 0
+PASS outside-click closure keeps the dropdown alive on page 0
+PASS each dropdown selection changes its setting once
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS each dropdown selection changes its setting once
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS each dropdown selection changes its setting once
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS dropdown opens on page 2
+PASS dropdown selection finishes with a reusable native menu on page 2
+PASS outside-click closure keeps the dropdown alive on page 2
+PASS each dropdown selection changes its setting once
+PASS menu choices retain stored aim identifiers
+PASS language selector updates the shared preference for en
+PASS window branding and navigation use en
+PASS the exploration aids name appears in navigation in en
+PASS existing status retranslates into en
+PASS existing application log retranslates into en
+PASS aim labels and text direction match en
+PASS the Aim Assist page exposes only point, activation, and hold-key selectors in en
+PASS switching language preserves settings for en
+PASS localized page 1 opens in en
+PASS localized page 3 opens in en
+PASS localized page 4 opens in en
+PASS localized page 5 opens in en
+PASS localized page 6 opens in en
+PASS localized page 0 opens in en
+PASS development labels remain attached to the pictured options on page 0 in en
+PASS development labels remain attached to the pictured options on page 5 in en
+PASS development labels remain attached to the pictured options on page 6 in en
+PASS development labels remain attached to the pictured options on page 7 in en
+PASS language preference round-trips for en
+PASS language selector updates the shared preference for ar
+PASS window branding and navigation use ar
+PASS the exploration aids name appears in navigation in ar
+PASS existing status retranslates into ar
+PASS existing application log retranslates into ar
+PASS aim labels and text direction match ar
+PASS the Aim Assist page exposes only point, activation, and hold-key selectors in ar
+PASS switching language preserves settings for ar
+PASS localized page 1 opens in ar
+PASS localized page 3 opens in ar
+PASS localized page 4 opens in ar
+PASS localized page 5 opens in ar
+PASS localized page 6 opens in ar
+PASS localized page 0 opens in ar
+PASS development labels remain attached to the pictured options on page 0 in ar
+PASS development labels remain attached to the pictured options on page 5 in ar
+PASS development labels remain attached to the pictured options on page 6 in ar
+PASS development labels remain attached to the pictured options on page 7 in ar
+PASS language preference round-trips for ar
+PASS language selector updates the shared preference for de
+PASS window branding and navigation use de
+PASS the exploration aids name appears in navigation in de
+PASS existing status retranslates into de
+PASS existing application log retranslates into de
+PASS aim labels and text direction match de
+PASS the Aim Assist page exposes only point, activation, and hold-key selectors in de
+PASS switching language preserves settings for de
+PASS localized page 1 opens in de
+PASS localized page 3 opens in de
+PASS localized page 4 opens in de
+PASS localized page 5 opens in de
+PASS localized page 6 opens in de
+PASS localized page 0 opens in de
+PASS development labels remain attached to the pictured options on page 0 in de
+PASS development labels remain attached to the pictured options on page 5 in de
+PASS development labels remain attached to the pictured options on page 6 in de
+PASS development labels remain attached to the pictured options on page 7 in de
+PASS language preference round-trips for de
+PASS language selector updates the shared preference for fr
+PASS window branding and navigation use fr
+PASS the exploration aids name appears in navigation in fr
+PASS existing status retranslates into fr
+PASS existing application log retranslates into fr
+PASS aim labels and text direction match fr
+PASS the Aim Assist page exposes only point, activation, and hold-key selectors in fr
+PASS switching language preserves settings for fr
+PASS localized page 1 opens in fr
+PASS localized page 3 opens in fr
+PASS localized page 4 opens in fr
+PASS localized page 5 opens in fr
+PASS localized page 6 opens in fr
+PASS localized page 0 opens in fr
+PASS development labels remain attached to the pictured options on page 0 in fr
+PASS development labels remain attached to the pictured options on page 5 in fr
+PASS development labels remain attached to the pictured options on page 6 in fr
+PASS development labels remain attached to the pictured options on page 7 in fr
+PASS language preference round-trips for fr
+PASS older settings default to Arabic
+PASS unsupported saved language falls back to Arabic
+PASS UI regression form shuts down cleanly
+176 Windows UI and hotkey checks passed. No game session started.

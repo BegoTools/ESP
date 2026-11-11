@@ -1,0 +1,46 @@
+{
+  "GetFOVAngle": [],
+  "GetCameraLocation": [],
+  "GetCameraRotation": [
+    {
+      "string": "0x403d7a6",
+      "ref": "0xe8bc828",
+      "next_reloc": "0xb0c388c",
+      "prev_reloc": null
+    },
+    {
+      "string": "0x403d7a6",
+      "ref": "0xe8bcf68",
+      "next_reloc": null,
+      "prev_reloc": "0xb0c4840"
+    },
+    {
+      "string": "0x403d7a6",
+      "ref": "0xe8be190",
+      "next_reloc": "0xb0c4a60",
+      "prev_reloc": "0xb0c4a14"
+    }
+  ],
+  "GetActorLocation": [
+    {
+      "string": "0x423e2f4",
+      "ref": "0xd73f208",
+      "next_reloc": "0x70b8954",
+      "prev_reloc": null
+    },
+    {
+      "string": "0x423e2f4",
+      "ref": "0xd73f2b8",
+      "next_reloc": null,
+      "prev_reloc": "0x70b8a30"
+    },
+    {
+      "string": "0x423e2f4",
+      "ref": "0xd73f308",
+      "next_reloc": "0x70b889c",
+      "prev_reloc": "0x70b89e4"
+    }
+  ],
+  "GetWorldLocation": [],
+  "GetCurrentLevelName": []
+}

@@ -1,0 +1,1394 @@
+{
+  "Contexts": [
+    {
+      "Type": 1,
+      "World": {
+        "Address": "0x7e486b3e4000",
+        "Name": "SingleTraining_Main",
+        "Class": "World",
+        "Properties": [
+          {
+            "Name": "PersistentLevel",
+            "Owner": "World",
+            "Offset": 48,
+            "Extra": "0x7e488c2d1100"
+          },
+          {
+            "Name": "NetDriver",
+            "Owner": "World",
+            "Offset": 56,
+            "Extra": "0x7e488c4dbd80"
+          },
+          {
+            "Name": "Levels",
+            "Owner": "World",
+            "Offset": 1088,
+            "Extra": "0x7e4888e04b80"
+          },
+          {
+            "Name": "OwningGameInstance",
+            "Owner": "World",
+            "Offset": 1136,
+            "Extra": "0x7e488c66fe00"
+          }
+        ]
+      },
+      "Level": {
+        "Address": "0x7e487bc119b0",
+        "Name": "PersistentLevel",
+        "Class": "Level",
+        "Properties": []
+      },
+      "NetDriver": null,
+      "GameInstance": {
+        "Address": "0x7e4885f4a300",
+        "Name": "STExtraGameInstance",
+        "Class": "STExtraGameInstance",
+        "Properties": [
+          {
+            "Name": "EncryptedLocalPlayers",
+            "Owner": "STExtraGameInstance",
+            "Offset": 56,
+            "Extra": "0x40000a5c8b70"
+          },
+          {
+            "Name": "LocalPlayers",
+            "Owner": "STExtraGameInstance",
+            "Offset": 72,
+            "Extra": "0x40000a5c8a70"
+          },
+          {
+            "Name": "EncryptedLocalPlayers",
+            "Owner": "UAEGameInstance",
+            "Offset": 56,
+            "Extra": "0x40000a5c8b70"
+          },
+          {
+            "Name": "LocalPlayers",
+            "Owner": "UAEGameInstance",
+            "Offset": 72,
+            "Extra": "0x40000a5c8a70"
+          },
+          {
+            "Name": "EncryptedLocalPlayers",
+            "Owner": "GameInstance",
+            "Offset": 56,
+            "Extra": "0x40000a5c8b70"
+          },
+          {
+            "Name": "LocalPlayers",
+            "Owner": "GameInstance",
+            "Offset": 72,
+            "Extra": "0x40000a5c8a70"
+          }
+        ]
+      },
+      "LevelActors": {
+        "Array": "0x7e48753de800",
+        "Count": 227,
+        "Capacity": 252
+      },
+      "Controllers": [
+        {
+          "Controller": {
+            "Address": "0x7e48a33eeaa0",
+            "Name": "BP_PlayerController_ST_C",
+            "Class": "BP_PlayerController_ST_C",
+            "Properties": [
+              {
+                "Name": "PrePlayerPawn",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 17800,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "FriendOBRelevancyCharacterSet",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 5832,
+                "Extra": "0x40000a921b20"
+              },
+              {
+                "Name": "OnCharacterNearDeathOrRescueingOtherNotifyDelegate",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 7048,
+                "Extra": "0x40000a8cde20"
+              },
+              {
+                "Name": "OnCharacterBreathChange",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 7456,
+                "Extra": "0x40000a8cd2a0"
+              },
+              {
+                "Name": "OnCharacterAntidoteChange",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 7504,
+                "Extra": "0x40000a8cd100"
+              },
+              {
+                "Name": "OnLocalCharacterHPChangeDel",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 8376,
+                "Extra": "0x40000a8d1a00"
+              },
+              {
+                "Name": "OnChangeCharacterBeforeDelegate",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 8768,
+                "Extra": "0x40000a8aa710"
+              },
+              {
+                "Name": "OnChangeCharacterLogicDelegate",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 8784,
+                "Extra": "0x40000a8aa8d0"
+              },
+              {
+                "Name": "OnSetChangeCharacterStateDelegate",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 8816,
+                "Extra": "0x40000a8d8de0"
+              },
+              {
+                "Name": "tmpAnchorCharacter",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 8928,
+                "Extra": "0x7e488c4de580"
+              },
+              {
+                "Name": "OnCharacterRecoveryHealth",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 9096,
+                "Extra": "0x40000a8ce3c0"
+              },
+              {
+                "Name": "ShouldShowPawnDetailInfoOnHUD",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 10264,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ShouldSpringUsePawnControlRotation",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 10265,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "STExtraBaseCharacter",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 10456,
+                "Extra": "0x7e488c4de580"
+              },
+              {
+                "Name": "CharacterTouchMove",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 10464,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ClientObserveCharacterDelegate",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 12200,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnSetObserveCharacter",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 12464,
+                "Extra": "0x40000a8a3af0"
+              },
+              {
+                "Name": "OnCharacterStatesChange",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 12512,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnCharacterStatesChangeFilter",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 12528,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnCharacterStatesChangeWithState",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 12544,
+                "Extra": "0x40000a8a3c30"
+              },
+              {
+                "Name": "OnCharacterStatesChangeWithFilterState",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 12560,
+                "Extra": "0x40000a8a3c30"
+              },
+              {
+                "Name": "FilterPawnStates",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 12592,
+                "Extra": "0x40000a911f10"
+              },
+              {
+                "Name": "IsCharacterInitFlushStreaming",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 13233,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "OnCharacterReceiveHealthChangeHistory",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 13240,
+                "Extra": "0x40000a8ce210"
+              },
+              {
+                "Name": "nowNearCharacterList",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 13280,
+                "Extra": "0x40000a90fb50"
+              },
+              {
+                "Name": "RealTimePawnHeight",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 13664,
+                "Extra": "0x400031a16628"
+              },
+              {
+                "Name": "bClientCheckResetViewTargetToCharacter",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 13824,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ClientCheckResetViewTargetToCharacterConfigSeconds",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 13828,
+                "Extra": "0x400031a15e48"
+              },
+              {
+                "Name": "IsCharacterDie",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 14817,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "InfectionPlayerPawnInitType",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 16096,
+                "Extra": "0x40000a8a4730"
+              },
+              {
+                "Name": "OnSelfPawnDeathDelegate",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 16176,
+                "Extra": "0x40000a8dd370"
+              },
+              {
+                "Name": "PlayerName",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 2320,
+                "Extra": "0x400031a1dd28"
+              },
+              {
+                "Name": "TeamID",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 2368,
+                "Extra": "0x400031a1e0e0"
+              },
+              {
+                "Name": "CharacterLocation",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 2388,
+                "Extra": "0x40000a578900"
+              },
+              {
+                "Name": "DefaultCharacterGender",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 2720,
+                "Extra": "0x40000a63a710"
+              },
+              {
+                "Name": "DefaultCharacterHeadID",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 2724,
+                "Extra": "0x400031a14250"
+              },
+              {
+                "Name": "Player",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 1304,
+                "Extra": "0x7e488c3fad00"
+              },
+              {
+                "Name": "AcknowledgedPawn",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 1320,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "PlayerCameraManager",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 1352,
+                "Extra": "0x7e488c4c7780"
+              },
+              {
+                "Name": "SpectatorPawn",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 2040,
+                "Extra": "0x7e488c4b4980"
+              },
+              {
+                "Name": "Pawn",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 1208,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "Character",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 1224,
+                "Extra": "0x7e488c694900"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "bAttachToPawn",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 1260,
+                "Extra": "0x1010001"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "BP_PlayerController_ST_C",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "PrePlayerPawn",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 17800,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "FriendOBRelevancyCharacterSet",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 5832,
+                "Extra": "0x40000a921b20"
+              },
+              {
+                "Name": "OnCharacterNearDeathOrRescueingOtherNotifyDelegate",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 7048,
+                "Extra": "0x40000a8cde20"
+              },
+              {
+                "Name": "OnCharacterBreathChange",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 7456,
+                "Extra": "0x40000a8cd2a0"
+              },
+              {
+                "Name": "OnCharacterAntidoteChange",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 7504,
+                "Extra": "0x40000a8cd100"
+              },
+              {
+                "Name": "OnLocalCharacterHPChangeDel",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 8376,
+                "Extra": "0x40000a8d1a00"
+              },
+              {
+                "Name": "OnChangeCharacterBeforeDelegate",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 8768,
+                "Extra": "0x40000a8aa710"
+              },
+              {
+                "Name": "OnChangeCharacterLogicDelegate",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 8784,
+                "Extra": "0x40000a8aa8d0"
+              },
+              {
+                "Name": "OnSetChangeCharacterStateDelegate",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 8816,
+                "Extra": "0x40000a8d8de0"
+              },
+              {
+                "Name": "tmpAnchorCharacter",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 8928,
+                "Extra": "0x7e488c4de580"
+              },
+              {
+                "Name": "OnCharacterRecoveryHealth",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 9096,
+                "Extra": "0x40000a8ce3c0"
+              },
+              {
+                "Name": "ShouldShowPawnDetailInfoOnHUD",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 10264,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ShouldSpringUsePawnControlRotation",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 10265,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "STExtraBaseCharacter",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 10456,
+                "Extra": "0x7e488c4de580"
+              },
+              {
+                "Name": "CharacterTouchMove",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 10464,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ClientObserveCharacterDelegate",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 12200,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnSetObserveCharacter",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 12464,
+                "Extra": "0x40000a8a3af0"
+              },
+              {
+                "Name": "OnCharacterStatesChange",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 12512,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnCharacterStatesChangeFilter",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 12528,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnCharacterStatesChangeWithState",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 12544,
+                "Extra": "0x40000a8a3c30"
+              },
+              {
+                "Name": "OnCharacterStatesChangeWithFilterState",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 12560,
+                "Extra": "0x40000a8a3c30"
+              },
+              {
+                "Name": "FilterPawnStates",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 12592,
+                "Extra": "0x40000a911f10"
+              },
+              {
+                "Name": "IsCharacterInitFlushStreaming",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 13233,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "OnCharacterReceiveHealthChangeHistory",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 13240,
+                "Extra": "0x40000a8ce210"
+              },
+              {
+                "Name": "nowNearCharacterList",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 13280,
+                "Extra": "0x40000a90fb50"
+              },
+              {
+                "Name": "RealTimePawnHeight",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 13664,
+                "Extra": "0x400031a16628"
+              },
+              {
+                "Name": "bClientCheckResetViewTargetToCharacter",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 13824,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ClientCheckResetViewTargetToCharacterConfigSeconds",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 13828,
+                "Extra": "0x400031a15e48"
+              },
+              {
+                "Name": "IsCharacterDie",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 14817,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "InfectionPlayerPawnInitType",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 16096,
+                "Extra": "0x40000a8a4730"
+              },
+              {
+                "Name": "OnSelfPawnDeathDelegate",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 16176,
+                "Extra": "0x40000a8dd370"
+              },
+              {
+                "Name": "PlayerName",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 2320,
+                "Extra": "0x400031a1dd28"
+              },
+              {
+                "Name": "TeamID",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 2368,
+                "Extra": "0x400031a1e0e0"
+              },
+              {
+                "Name": "CharacterLocation",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 2388,
+                "Extra": "0x40000a578900"
+              },
+              {
+                "Name": "DefaultCharacterGender",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 2720,
+                "Extra": "0x40000a63a710"
+              },
+              {
+                "Name": "DefaultCharacterHeadID",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 2724,
+                "Extra": "0x400031a14250"
+              },
+              {
+                "Name": "Player",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 1304,
+                "Extra": "0x7e488c3fad00"
+              },
+              {
+                "Name": "AcknowledgedPawn",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 1320,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "PlayerCameraManager",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 1352,
+                "Extra": "0x7e488c4c7780"
+              },
+              {
+                "Name": "SpectatorPawn",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 2040,
+                "Extra": "0x7e488c4b4980"
+              },
+              {
+                "Name": "Pawn",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 1208,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "Character",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 1224,
+                "Extra": "0x7e488c694900"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "bAttachToPawn",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 1260,
+                "Extra": "0x1010001"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "BP_STExtraPlayerController_C",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "FriendOBRelevancyCharacterSet",
+                "Owner": "STExtraPlayerController",
+                "Offset": 5832,
+                "Extra": "0x40000a921b20"
+              },
+              {
+                "Name": "OnCharacterNearDeathOrRescueingOtherNotifyDelegate",
+                "Owner": "STExtraPlayerController",
+                "Offset": 7048,
+                "Extra": "0x40000a8cde20"
+              },
+              {
+                "Name": "OnCharacterBreathChange",
+                "Owner": "STExtraPlayerController",
+                "Offset": 7456,
+                "Extra": "0x40000a8cd2a0"
+              },
+              {
+                "Name": "OnCharacterAntidoteChange",
+                "Owner": "STExtraPlayerController",
+                "Offset": 7504,
+                "Extra": "0x40000a8cd100"
+              },
+              {
+                "Name": "OnLocalCharacterHPChangeDel",
+                "Owner": "STExtraPlayerController",
+                "Offset": 8376,
+                "Extra": "0x40000a8d1a00"
+              },
+              {
+                "Name": "OnChangeCharacterBeforeDelegate",
+                "Owner": "STExtraPlayerController",
+                "Offset": 8768,
+                "Extra": "0x40000a8aa710"
+              },
+              {
+                "Name": "OnChangeCharacterLogicDelegate",
+                "Owner": "STExtraPlayerController",
+                "Offset": 8784,
+                "Extra": "0x40000a8aa8d0"
+              },
+              {
+                "Name": "OnSetChangeCharacterStateDelegate",
+                "Owner": "STExtraPlayerController",
+                "Offset": 8816,
+                "Extra": "0x40000a8d8de0"
+              },
+              {
+                "Name": "tmpAnchorCharacter",
+                "Owner": "STExtraPlayerController",
+                "Offset": 8928,
+                "Extra": "0x7e488c4de580"
+              },
+              {
+                "Name": "OnCharacterRecoveryHealth",
+                "Owner": "STExtraPlayerController",
+                "Offset": 9096,
+                "Extra": "0x40000a8ce3c0"
+              },
+              {
+                "Name": "ShouldShowPawnDetailInfoOnHUD",
+                "Owner": "STExtraPlayerController",
+                "Offset": 10264,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ShouldSpringUsePawnControlRotation",
+                "Owner": "STExtraPlayerController",
+                "Offset": 10265,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "STExtraBaseCharacter",
+                "Owner": "STExtraPlayerController",
+                "Offset": 10456,
+                "Extra": "0x7e488c4de580"
+              },
+              {
+                "Name": "CharacterTouchMove",
+                "Owner": "STExtraPlayerController",
+                "Offset": 10464,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ClientObserveCharacterDelegate",
+                "Owner": "STExtraPlayerController",
+                "Offset": 12200,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnSetObserveCharacter",
+                "Owner": "STExtraPlayerController",
+                "Offset": 12464,
+                "Extra": "0x40000a8a3af0"
+              },
+              {
+                "Name": "OnCharacterStatesChange",
+                "Owner": "STExtraPlayerController",
+                "Offset": 12512,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnCharacterStatesChangeFilter",
+                "Owner": "STExtraPlayerController",
+                "Offset": 12528,
+                "Extra": "0x40000a8a3340"
+              },
+              {
+                "Name": "OnCharacterStatesChangeWithState",
+                "Owner": "STExtraPlayerController",
+                "Offset": 12544,
+                "Extra": "0x40000a8a3c30"
+              },
+              {
+                "Name": "OnCharacterStatesChangeWithFilterState",
+                "Owner": "STExtraPlayerController",
+                "Offset": 12560,
+                "Extra": "0x40000a8a3c30"
+              },
+              {
+                "Name": "FilterPawnStates",
+                "Owner": "STExtraPlayerController",
+                "Offset": 12592,
+                "Extra": "0x40000a911f10"
+              },
+              {
+                "Name": "IsCharacterInitFlushStreaming",
+                "Owner": "STExtraPlayerController",
+                "Offset": 13233,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "OnCharacterReceiveHealthChangeHistory",
+                "Owner": "STExtraPlayerController",
+                "Offset": 13240,
+                "Extra": "0x40000a8ce210"
+              },
+              {
+                "Name": "nowNearCharacterList",
+                "Owner": "STExtraPlayerController",
+                "Offset": 13280,
+                "Extra": "0x40000a90fb50"
+              },
+              {
+                "Name": "RealTimePawnHeight",
+                "Owner": "STExtraPlayerController",
+                "Offset": 13664,
+                "Extra": "0x400031a16628"
+              },
+              {
+                "Name": "bClientCheckResetViewTargetToCharacter",
+                "Owner": "STExtraPlayerController",
+                "Offset": 13824,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "ClientCheckResetViewTargetToCharacterConfigSeconds",
+                "Owner": "STExtraPlayerController",
+                "Offset": 13828,
+                "Extra": "0x400031a15e48"
+              },
+              {
+                "Name": "IsCharacterDie",
+                "Owner": "STExtraPlayerController",
+                "Offset": 14817,
+                "Extra": "0xff010001"
+              },
+              {
+                "Name": "InfectionPlayerPawnInitType",
+                "Owner": "STExtraPlayerController",
+                "Offset": 16096,
+                "Extra": "0x40000a8a4730"
+              },
+              {
+                "Name": "OnSelfPawnDeathDelegate",
+                "Owner": "STExtraPlayerController",
+                "Offset": 16176,
+                "Extra": "0x40000a8dd370"
+              },
+              {
+                "Name": "PlayerName",
+                "Owner": "STExtraPlayerController",
+                "Offset": 2320,
+                "Extra": "0x400031a1dd28"
+              },
+              {
+                "Name": "TeamID",
+                "Owner": "STExtraPlayerController",
+                "Offset": 2368,
+                "Extra": "0x400031a1e0e0"
+              },
+              {
+                "Name": "CharacterLocation",
+                "Owner": "STExtraPlayerController",
+                "Offset": 2388,
+                "Extra": "0x40000a578900"
+              },
+              {
+                "Name": "DefaultCharacterGender",
+                "Owner": "STExtraPlayerController",
+                "Offset": 2720,
+                "Extra": "0x40000a63a710"
+              },
+              {
+                "Name": "DefaultCharacterHeadID",
+                "Owner": "STExtraPlayerController",
+                "Offset": 2724,
+                "Extra": "0x400031a14250"
+              },
+              {
+                "Name": "Player",
+                "Owner": "STExtraPlayerController",
+                "Offset": 1304,
+                "Extra": "0x7e488c3fad00"
+              },
+              {
+                "Name": "AcknowledgedPawn",
+                "Owner": "STExtraPlayerController",
+                "Offset": 1320,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "PlayerCameraManager",
+                "Owner": "STExtraPlayerController",
+                "Offset": 1352,
+                "Extra": "0x7e488c4c7780"
+              },
+              {
+                "Name": "SpectatorPawn",
+                "Owner": "STExtraPlayerController",
+                "Offset": 2040,
+                "Extra": "0x7e488c4b4980"
+              },
+              {
+                "Name": "Pawn",
+                "Owner": "STExtraPlayerController",
+                "Offset": 1208,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "Character",
+                "Owner": "STExtraPlayerController",
+                "Offset": 1224,
+                "Extra": "0x7e488c694900"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "STExtraPlayerController",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "bAttachToPawn",
+                "Owner": "STExtraPlayerController",
+                "Offset": 1260,
+                "Extra": "0x1010001"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "STExtraPlayerController",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "PlayerName",
+                "Owner": "UAEPlayerController",
+                "Offset": 2320,
+                "Extra": "0x400031a1dd28"
+              },
+              {
+                "Name": "TeamID",
+                "Owner": "UAEPlayerController",
+                "Offset": 2368,
+                "Extra": "0x400031a1e0e0"
+              },
+              {
+                "Name": "CharacterLocation",
+                "Owner": "UAEPlayerController",
+                "Offset": 2388,
+                "Extra": "0x40000a578900"
+              },
+              {
+                "Name": "DefaultCharacterGender",
+                "Owner": "UAEPlayerController",
+                "Offset": 2720,
+                "Extra": "0x40000a63a710"
+              },
+              {
+                "Name": "DefaultCharacterHeadID",
+                "Owner": "UAEPlayerController",
+                "Offset": 2724,
+                "Extra": "0x400031a14250"
+              },
+              {
+                "Name": "Player",
+                "Owner": "UAEPlayerController",
+                "Offset": 1304,
+                "Extra": "0x7e488c3fad00"
+              },
+              {
+                "Name": "AcknowledgedPawn",
+                "Owner": "UAEPlayerController",
+                "Offset": 1320,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "PlayerCameraManager",
+                "Owner": "UAEPlayerController",
+                "Offset": 1352,
+                "Extra": "0x7e488c4c7780"
+              },
+              {
+                "Name": "SpectatorPawn",
+                "Owner": "UAEPlayerController",
+                "Offset": 2040,
+                "Extra": "0x7e488c4b4980"
+              },
+              {
+                "Name": "Pawn",
+                "Owner": "UAEPlayerController",
+                "Offset": 1208,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "Character",
+                "Owner": "UAEPlayerController",
+                "Offset": 1224,
+                "Extra": "0x7e488c694900"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "UAEPlayerController",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "bAttachToPawn",
+                "Owner": "UAEPlayerController",
+                "Offset": 1260,
+                "Extra": "0x1010001"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "UAEPlayerController",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "Player",
+                "Owner": "LuaPlayerController",
+                "Offset": 1304,
+                "Extra": "0x7e488c3fad00"
+              },
+              {
+                "Name": "AcknowledgedPawn",
+                "Owner": "LuaPlayerController",
+                "Offset": 1320,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "PlayerCameraManager",
+                "Owner": "LuaPlayerController",
+                "Offset": 1352,
+                "Extra": "0x7e488c4c7780"
+              },
+              {
+                "Name": "SpectatorPawn",
+                "Owner": "LuaPlayerController",
+                "Offset": 2040,
+                "Extra": "0x7e488c4b4980"
+              },
+              {
+                "Name": "Pawn",
+                "Owner": "LuaPlayerController",
+                "Offset": 1208,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "Character",
+                "Owner": "LuaPlayerController",
+                "Offset": 1224,
+                "Extra": "0x7e488c694900"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "LuaPlayerController",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "bAttachToPawn",
+                "Owner": "LuaPlayerController",
+                "Offset": 1260,
+                "Extra": "0x1010001"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "LuaPlayerController",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "Player",
+                "Owner": "PlayerController",
+                "Offset": 1304,
+                "Extra": "0x7e488c3fad00"
+              },
+              {
+                "Name": "AcknowledgedPawn",
+                "Owner": "PlayerController",
+                "Offset": 1320,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "PlayerCameraManager",
+                "Owner": "PlayerController",
+                "Offset": 1352,
+                "Extra": "0x7e488c4c7780"
+              },
+              {
+                "Name": "SpectatorPawn",
+                "Owner": "PlayerController",
+                "Offset": 2040,
+                "Extra": "0x7e488c4b4980"
+              },
+              {
+                "Name": "Pawn",
+                "Owner": "PlayerController",
+                "Offset": 1208,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "Character",
+                "Owner": "PlayerController",
+                "Offset": 1224,
+                "Extra": "0x7e488c694900"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "PlayerController",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "bAttachToPawn",
+                "Owner": "PlayerController",
+                "Offset": 1260,
+                "Extra": "0x1010001"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "PlayerController",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "Pawn",
+                "Owner": "Controller",
+                "Offset": 1208,
+                "Extra": "0x7e488c69af80"
+              },
+              {
+                "Name": "Character",
+                "Owner": "Controller",
+                "Offset": 1224,
+                "Extra": "0x7e488c694900"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "Controller",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "bAttachToPawn",
+                "Owner": "Controller",
+                "Offset": 1260,
+                "Extra": "0x1010001"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "Controller",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "Actor",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              }
+            ]
+          },
+          "Player": {
+            "Address": "0x7e487d61fc00",
+            "Name": "LocalPlayer",
+            "Class": "LocalPlayer",
+            "Properties": [
+              {
+                "Name": "PlayerController",
+                "Owner": "LocalPlayer",
+                "Offset": 48,
+                "Extra": "0x7e488c4cde00"
+              },
+              {
+                "Name": "PlayerController",
+                "Owner": "Player",
+                "Offset": 48,
+                "Extra": "0x7e488c4cde00"
+              }
+            ]
+          },
+          "Pawn": null,
+          "Character": null,
+          "Camera": {
+            "Address": "0x7e488a8b4aa0",
+            "Name": "BP_PlayerCameraManager_C",
+            "Class": "BP_PlayerCameraManager_C",
+            "Properties": [
+              {
+                "Name": "CameraCache",
+                "Owner": "BP_PlayerCameraManager_C",
+                "Offset": 1312,
+                "Extra": "0x7e488a785180"
+              },
+              {
+                "Name": "ViewTarget",
+                "Owner": "BP_PlayerCameraManager_C",
+                "Offset": 4256,
+                "Extra": "0x7e488a785220"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "BP_PlayerCameraManager_C",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "CameraCache",
+                "Owner": "STPlayerCameraManager",
+                "Offset": 1312,
+                "Extra": "0x7e488a785180"
+              },
+              {
+                "Name": "ViewTarget",
+                "Owner": "STPlayerCameraManager",
+                "Offset": 4256,
+                "Extra": "0x7e488a785220"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "STPlayerCameraManager",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "CameraCache",
+                "Owner": "PlayerCameraManager",
+                "Offset": 1312,
+                "Extra": "0x7e488a785180"
+              },
+              {
+                "Name": "ViewTarget",
+                "Owner": "PlayerCameraManager",
+                "Offset": 4256,
+                "Extra": "0x7e488a785220"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "PlayerCameraManager",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "Actor",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              }
+            ]
+          },
+          "ViewTarget": {
+            "Address": "0x7e47c6ffc550",
+            "Name": "SpectatorPawn",
+            "Class": "SpectatorPawn",
+            "Properties": [
+              {
+                "Name": "PlayerState",
+                "Owner": "SpectatorPawn",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "SpectatorPawn",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "DefaultPawn",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "DefaultPawn",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "PlayerState",
+                "Owner": "Pawn",
+                "Offset": 1232,
+                "Extra": "0x7e488c656e80"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "Pawn",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              },
+              {
+                "Name": "RootComponent",
+                "Owner": "Actor",
+                "Offset": 520,
+                "Extra": "0x7e48a12b2a80"
+              }
+            ]
+          },
+          "ReciprocalController": "0x7e48a33eeaa0"
+        }
+      ],
+      "ActorClasses": {
+        "VH_CoupeRB_1_C": 1,
+        "Skill_Store_RubberBoat_C": 1,
+        "BP_Rifle_M762_Wrapper_C": 2,
+        "BP_PlayerRifleBullet_C": 6,
+        "Skill_Build_Vehicle_C": 1,
+        "Water_C": 1,
+        "ParticleEventManager": 1,
+        "VehicleDataMgr": 1,
+        "PickUp_BP_Bag_Lv2_C": 1,
+        "VH_Snowmobile_C": 1,
+        "BP_MachineGun_UMP9_Wrapper_C": 1,
+        "BP_PlayerSniperBullet_C": 3,
+        "BP_VehicleMachineGun_C": 1,
+        "NetworkReportActor": 1,
+        "NavMeshBoundsVolume": 1,
+        "BP_MZJ_QX_Pickup_C": 2,
+        "Mirado_open_4_C": 1,
+        "BP_Pistol_P1911_Wrapper_C": 2,
+        "Bandage_Pickup_C": 2,
+        "InstancedFoliageActor": 1,
+        "BP_Rifle_M416_Wrapper_C": 1,
+        "BP_Projectile_FragGrenade_C": 1,
+        "Skill_Template_Execute_C": 1,
+        "SkyLight": 1,
+        "BP_PlayerPawn_ST_AI_C": 1,
+        "BP_Rifle_M16A4_Wrapper_C": 2,
+        "BP_PlayerState_SingleTraining_C": 1,
+        "VH_ATV1_C": 1,
+        "StaticMeshActor": 1,
+        "BP_ScreenAppearanceActor_C": 1,
+        "FollowPet_MiniTv_C": 1,
+        "BP_GameState_SingleTraining_C": 1,
+        "WaterSwimObject_C": 1,
+        "PickUp_07_C": 1,
+        "Skill_Punch_Fist_bp_C": 2,
+        "ExponentialHeightFog": 2,
+        "VH_UTV_C": 1,
+        "PickUp_BP_Bag_Lv1_B_C": 2,
+        "Skill_Build_RubberBoat_C": 1,
+        "PickUp_BP_Helmet_Lv2_C": 1,
+        "Skill_Melee_Sickle_BP_C": 1,
+        "Rony_01_C": 1,
+        "BP_MiniMapStandardPoint_C": 1,
+        "GoldenTokenWrapper_C": 20,
+        "VH_Scooter_C": 1,
+        "PickUp_BP_Helmet_Lv1_C": 1,
+        "BP_Ammo_12Guage_Pickup_C": 2,
+        "Skill_Melee_Pan_BP_C": 1,
+        "Skill_Melee_Custom_BP_C": 1,
+        "VH_Motorcycle_1_C": 1,
+        "SingleTraining_Main_C": 1,
+        "SpectatorPawn": 1,
+        "Skill_PaintDecal_C": 1,
+        "BP_MachineGun_Uzi_Wrapper_C": 1,
+        "WorldSettings": 1,
+        "VH_Snowbike_C": 1,
+        "Skill_Melee_Cowbar_BP_C": 1,
+        "CameraActor": 2,
+        "BP_Grenade_Smoke_Weapon_Wrapper_C": 2,
+        "PickUp_BP_Bag_Lv1_C": 2,
+        "BP_Rifle_SCAR_Wrapper_C": 2,
+        "LevelStreamingVolume": 12,
+        "BP_Ammo_45ACP_Pickup_C": 2,
+        "PickUp_BP_Helmet_Lv1_B_C": 2,
+        "BP_Ammo_762mm_Pickup_C": 2,
+        "BP_Ammo_556mm_Pickup_C": 2,
+        "BP_Projectile_BurnGrenade_C": 1,
+        "Skill_Template_Grenade_C": 2,
+        "VH_Dacia_C": 1,
+        "Skill_Melee_Dagger_BP_C": 1,
+        "BP_PlayerController_ST_C": 1,
+        "BP_PlayerCameraManager_C": 1,
+        "VH_Roadster_C": 1,
+        "PickUp_BP_Armor_Lv1_C": 2,
+        "BP_VH_Tuk_1_C": 1,
+        "BP_VH_Buggy_2_C": 1,
+        "AIWorldVolume": 1,
+        "BP_DecalBakingActor_C": 1,
+        "Skill_Melee_Machete_BP_C": 1,
+        "BP_ShotGun_S686_Wrapper_C": 1,
+        "BP_MachineGun_P90_Wrapper_C": 1,
+        "Drink_Pickup_C": 2,
+        "BP_Sniper_SKS_Wrapper_C": 1,
+        "BP_CharacterModelTaget_C": 4,
+        "BP_Rifle_AKM_Wrapper_C": 2,
+        "BP_Pistol_P92_Wrapper_C": 2,
+        "Skill_Template_Grenade_Classic_C": 8,
+        "Skill_HealTeammate_BP_C": 1,
+        "BP_LevelGenerator_C": 1,
+        "Skill_Zipline_C": 1,
+        "DefaultPhysicsVolume": 1,
+        "VH_Motorglider_C": 1,
+        "PhysicsVolume": 1,
+        "BackpackRepActor": 2,
+        "VH_MTLB_C": 1,
+        "Skill_Melee_Karambit_BP_C": 1,
+        "BP_ShotGun_S12K_Wrapper_C": 1,
+        "BP_Sky_Sphere_Base_C": 1,
+        "VH_MiniBus_01_C": 1,
+        "VH_MotorcycleCart_1_C": 1,
+        "VH_UAZ01_C": 1,
+        "PickUp_BP_Armor_Lv2_C": 1,
+        "BP_Rifle_Mk47_Wrapper_C": 1,
+        "BP_MachineGun_Vector_Wrapper_C": 1,
+        "Skill_Template_Interactive_AllAnim_Loading_C": 1,
+        "BP_BattleRoyaleHUD_C": 1,
+        "DirectionalLight": 1,
+        "BP_ShotGun_S1897_Wrapper_C": 1,
+        "Skill_Storage_Vehicle_C": 1,
+        "Skill_Template_Grenade_SingleMode_C": 13,
+        "PostProcessVolume": 6,
+        "BP_VH_Bigfoot_C": 1,
+        "BP_Other_DP28_Wrapper_C": 1,
+        "Skill_ShootingWeaponMelee_BP_C": 1,
+        "BP_PlayerShotgunBullet_C": 13,
+        "BP_STPlayerStart_C": 12,
+        "PlayerCharacterDataMgr": 1
+      },
+      "LocalPlayerCount": 0
+    }
+  ]
+}

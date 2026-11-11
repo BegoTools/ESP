@@ -1,0 +1,177 @@
+{
+  "state_value": 115,
+  "hops": 5,
+  "initial": "0x7becaac4cfa0",
+  "names": "0x7bec9fbbbaf0",
+  "zero": {
+    "id": 0,
+    "entry": "0x7bec95736000",
+    "flags": 0,
+    "text": "None"
+  },
+  "0x7beb770fa000": {
+    "dwords": [
+      "0x30fffe08",
+      "0x4000",
+      "0x40",
+      "0x30f95",
+      "0x7d829600",
+      "0x7beb",
+      "0xe743",
+      "0x1",
+      "0xa551d10",
+      "0x4000",
+      "0x31000360",
+      "0x4000",
+      "0x748dfc40",
+      "0x7beb",
+      "0x25b35",
+      "0x0"
+    ],
+    "class": "0x7beb7d829600",
+    "name": {
+      "id": 59203,
+      "entry": "0x7beb7d85a710",
+      "flags": 118406,
+      "text": "UAEGameEngine"
+    },
+    "class_name": {
+      "id": 59203,
+      "entry": "0x7beb7d85a710",
+      "flags": 118406,
+      "text": "UAEGameEngine"
+    }
+  },
+  "0x7beb7a0d2000": {
+    "dwords": [
+      "0x319501e8",
+      "0x4000",
+      "0x28000b",
+      "0x3d0c4",
+      "0x7d8f4f00",
+      "0x7beb",
+      "0x96f7e",
+      "0x0",
+      "0x78e94e60",
+      "0x7beb",
+      "0x319504f8",
+      "0x4000",
+      "0x69b83f90",
+      "0x7beb",
+      "0x3d577280",
+      "0x7beb"
+    ],
+    "class": "0x7beb7d8f4f00",
+    "name": {
+      "id": 618366,
+      "entry": "0x7beb6f180890",
+      "flags": 1236732,
+      "text": "SingleTraining_Main"
+    },
+    "class_name": {
+      "id": 23455,
+      "entry": "0x7bec90abab28",
+      "flags": 46910,
+      "text": "World"
+    }
+  },
+  "0x7beb6d690550": {
+    "dwords": [
+      "0x30815c38",
+      "0x4000",
+      "0x8",
+      "0x32456",
+      "0x33d94080",
+      "0x7beb",
+      "0x96ff5",
+      "0x1",
+      "0x69b83f90",
+      "0x7beb",
+      "0x3181b090",
+      "0x4000",
+      "0x0",
+      "0x100011f",
+      "0x70f0",
+      "0x70f0"
+    ],
+    "class": "0x7beb33d94080",
+    "name": {
+      "id": 618485,
+      "entry": "0x7beb6f181e40",
+      "flags": 1236970,
+      "text": "BP_PlayerController_ST_C"
+    },
+    "class_name": {
+      "id": 618485,
+      "entry": "0x7beb6f181e40",
+      "flags": 1236970,
+      "text": "BP_PlayerController_ST_C"
+    }
+  },
+  "0x7beb6d60b000": {
+    "dwords": [
+      "0x30812858",
+      "0x4000",
+      "0x8",
+      "0x4236b",
+      "0x33d96700",
+      "0x7beb",
+      "0x96ff6",
+      "0x1",
+      "0x69b83f90",
+      "0x7beb",
+      "0x3181b090",
+      "0x4000",
+      "0x0",
+      "0x100010e",
+      "0x7108",
+      "0x7108"
+    ],
+    "class": "0x7beb33d96700",
+    "name": {
+      "id": 618486,
+      "entry": "0x7beb6f181e70",
+      "flags": 1236972,
+      "text": "BP_PlayerPawn_ST_C"
+    },
+    "class_name": {
+      "id": 618486,
+      "entry": "0x7beb6f181e70",
+      "flags": 1236972,
+      "text": "BP_PlayerPawn_ST_C"
+    }
+  },
+  "0x7beb59d38aa0": {
+    "dwords": [
+      "0x307a3008",
+      "0x4000",
+      "0x48",
+      "0x3190e",
+      "0x3eec1e00",
+      "0x7beb",
+      "0x826eb",
+      "0x1",
+      "0x69b83f90",
+      "0x7beb",
+      "0x3181b090",
+      "0x4000",
+      "0x0",
+      "0xc",
+      "0x0",
+      "0x0"
+    ],
+    "class": "0x7beb3eec1e00",
+    "name": {
+      "id": 534251,
+      "entry": "0x7beb72738830",
+      "flags": 1068502,
+      "text": "BP_PlayerCameraManager_C"
+    },
+    "class_name": {
+      "id": 534251,
+      "entry": "0x7beb72738830",
+      "flags": 1068502,
+      "text": "BP_PlayerCameraManager_C"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'ContextMenuStrip'.
+   at System.Windows.Forms.Control.CreateHandle()
+   at System.Windows.Forms.ToolStripDropDown.CreateHandle()
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ToolStripDropDown.ReparentToDropDownOwnerWindow()
+   at System.Windows.Forms.ToolStripDropDown.SetVisibleCore(Boolean visible)
+   at System.Windows.Forms.ToolStripDropDown.set_Visible(Boolean value)
+   at System.Windows.Forms.ToolStripManager.ModalMenuFilter.CloseActiveDropDown(ToolStripDropDown activeToolStripDropDown, ToolStripDropDownCloseReason reason)
+   at System.Windows.Forms.ToolStripManager.ModalMenuFilter.ProcessMouseButtonPressed(IntPtr hwndMouseMessageIsFrom, Int32 x, Int32 y)
+   at System.Windows.Forms.ToolStripManager.ModalMenuFilter.PreFilterMessage(Message& m)
+   at System.Windows.Forms.Application.ThreadContext.ProcessFilters(MSG& msg, Boolean& modified)
+   at System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at ESPWorkbench.Program.Main(String[] args)

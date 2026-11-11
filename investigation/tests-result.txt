@@ -1,0 +1,47 @@
+PASS projection center
+PASS projection corner
+PASS near-plane rejection
+PASS far-plane rejection
+PASS NaN rejection
+PASS zero-W rejection
+PASS matrix order conventions
+PASS proc maps parsing
+PASS ASLR module base
+PASS missing module fails explicitly
+PASS ADB serial and state parsing
+PASS Windows trailing slash quoting
+PASS Windows embedded quote escaping
+PASS disabled template fails closed
+PASS reader skips null and despawned actors
+PASS nested pointer path resolves final field address
+PASS local state and frame cache reset
+PASS actor count bounds
+PASS empty actor array
+PASS 32-bit pointer path
+PASS reader cancellation
+PASS stale frames hidden
+PASS fresh frame eligible
+PASS synthetic scene explicitly labeled
+PASS demo matrix projects actors
+PASS camera forward projects to center
+PASS camera horizontal FOV projection
+PASS camera yaw convention
+PASS camera pitch convention
+PASS camera rejects points behind view
+PASS camera rejects invalid FOV
+PASS visible contact does not trigger edge warning
+PASS behind warning direction and metres
+PASS right warning direction
+PASS left warning direction
+PASS camera interpolation follows shortest angle across wrap
+PASS actor interpolation matches stable address
+PASS frame buffer clears on stop
+PASS loot category is opt-in
+PASS loot enabled with category filter
+PASS ammo toggles independently
+PASS bot filter leaves players independent
+PASS player remains enabled when bots hidden
+PASS vehicle toggle filters category
+PASS menu settings round-trip persistence
+PASS nearby zoomed character retains clipped box
+46 checks passed. Synthetic memory fixtures; no assertion of PUBG layout correctness.

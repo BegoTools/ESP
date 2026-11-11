@@ -1,0 +1,92 @@
+{
+  "pid": 3418,
+  "module_base": "0x400023200000",
+  "player_origin": [
+    33024.19140625,
+    439110.34375,
+    506.68963623046875
+  ],
+  "samples": [
+    {
+      "address": "0x7beb3b336480",
+      "object_name": "BP_Rifle_M762_Wrapper_C_Recycled",
+      "parents": [
+        "BP_Rifle_M762_Wrapper_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "root": "0x7beb3b5d3a40",
+      "root_class": "SceneComponent",
+      "position": [
+        36641.69921875,
+        434096.5,
+        117.9000015258789
+      ],
+      "attach_parent": "0x0",
+      "hidden_byte": 97,
+      "hidden": true,
+      "item_type": 1,
+      "item_id": 101008,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "pickup_mesh": "0x7beb3b322900"
+    },
+    {
+      "address": "0x7beb624fe920",
+      "object_name": "PickUp_07_C",
+      "parents": [
+        "PickUp_07_C",
+        "PickUp_06_C",
+        "PickUp_01_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "root": "0x7beaa7429550",
+      "root_class": "SkeletalMeshComponentBudgeted",
+      "position": [
+        32747.419921875,
+        426991.90625,
+        -14.01133918762207
+      ],
+      "attach_parent": "0x0",
+      "hidden_byte": 0,
+      "hidden": false
+    },
+    {
+      "address": "0x7beaa75d9a60",
+      "object_name": "BP_Ammo_762mm_Pickup_C_Recycled",
+      "parents": [
+        "BP_Ammo_762mm_Pickup_C",
+        "PickUpWrapperActor",
+        "UAENetActor",
+        "LuaActor",
+        "Actor",
+        "Object"
+      ],
+      "root": "0x7beaa7533400",
+      "root_class": "SceneComponent",
+      "position": [
+        32999.80078125,
+        439161.09375,
+        428.70001220703125
+      ],
+      "attach_parent": "0x0",
+      "hidden_byte": 97,
+      "hidden": true,
+      "item_type": 3,
+      "item_id": 302001,
+      "count": 30,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0,
+      "pickup_mesh": "0x7beaa7496580"
+    }
+  ]
+}

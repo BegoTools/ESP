@@ -1,0 +1,1599 @@
+{
+  "artifacts": [
+    {
+      "path": "C:\\Users\\ahmed\\Desktop\\ESP\\investigation\\libUE4.so",
+      "size": 252290584,
+      "sha256": "abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce"
+    },
+    {
+      "path": "C:\\Users\\ahmed\\Desktop\\ESP\\investigation\\gameloop-21518\\libUE4.so",
+      "size": 252290584,
+      "sha256": "ad923890b4e12e389aba66253ef0259285b351b3742fbda7ae0d0716ea070484"
+    }
+  ],
+  "layouts": [
+    {
+      "sections": [
+        {
+          "sh_addr": 0,
+          "sh_offset": 0,
+          "sh_size": 0,
+          "sh_flags": 0,
+          "name": ""
+        },
+        {
+          "sh_addr": 250172440,
+          "sh_offset": 250172440,
+          "sh_size": 21,
+          "sh_flags": 2,
+          "name": ".interp"
+        },
+        {
+          "sh_addr": 259364488,
+          "sh_offset": 252270216,
+          "sh_size": 18096,
+          "sh_flags": 2,
+          "name": ".dynsym"
+        },
+        {
+          "sh_addr": 18408,
+          "sh_offset": 18408,
+          "sh_size": 1480,
+          "sh_flags": 2,
+          "name": ".gnu.version"
+        },
+        {
+          "sh_addr": 19888,
+          "sh_offset": 19888,
+          "sh_size": 56,
+          "sh_flags": 2,
+          "name": ".gnu.version_d"
+        },
+        {
+          "sh_addr": 19944,
+          "sh_offset": 19944,
+          "sh_size": 128,
+          "sh_flags": 2,
+          "name": ".gnu.version_r"
+        },
+        {
+          "sh_addr": 20072,
+          "sh_offset": 20072,
+          "sh_size": 528,
+          "sh_flags": 2,
+          "name": ".gnu.hash"
+        },
+        {
+          "sh_addr": 20600,
+          "sh_offset": 20600,
+          "sh_size": 5928,
+          "sh_flags": 2,
+          "name": ".hash"
+        },
+        {
+          "sh_addr": 50652776,
+          "sh_offset": 50652776,
+          "sh_size": 19442,
+          "sh_flags": 2,
+          "name": ".dynstr"
+        },
+        {
+          "sh_addr": 26528,
+          "sh_offset": 26528,
+          "sh_size": 50626248,
+          "sh_flags": 2,
+          "name": ".rela.dyn"
+        },
+        {
+          "sh_addr": 848,
+          "sh_offset": 848,
+          "sh_size": 15120,
+          "sh_flags": 2,
+          "name": ".rela.plt"
+        },
+        {
+          "sh_addr": 50684664,
+          "sh_offset": 50684664,
+          "sh_size": 7774288,
+          "sh_flags": 2,
+          "name": ".gcc_except_table"
+        },
+        {
+          "sh_addr": 58459008,
+          "sh_offset": 58459008,
+          "sh_size": 12910322,
+          "sh_flags": 50,
+          "name": ".rodata"
+        },
+        {
+          "sh_addr": 71369332,
+          "sh_offset": 71369332,
+          "sh_size": 5023004,
+          "sh_flags": 2,
+          "name": ".eh_frame_hdr"
+        },
+        {
+          "sh_addr": 76392336,
+          "sh_offset": 76392336,
+          "sh_size": 19899508,
+          "sh_flags": 2,
+          "name": ".eh_frame"
+        },
+        {
+          "sh_addr": 96305152,
+          "sh_offset": 96305152,
+          "sh_size": 126600648,
+          "sh_flags": 6,
+          "name": ".text"
+        },
+        {
+          "sh_addr": 222905808,
+          "sh_offset": 222905808,
+          "sh_size": 9952,
+          "sh_flags": 6,
+          "name": ".plt"
+        },
+        {
+          "sh_addr": 222920704,
+          "sh_offset": 222920704,
+          "sh_size": 27238840,
+          "sh_flags": 3,
+          "name": ".data.rel.ro"
+        },
+        {
+          "sh_addr": 259382584,
+          "sh_offset": 252288312,
+          "sh_size": 736,
+          "sh_flags": 3,
+          "name": ".dynamic"
+        },
+        {
+          "sh_addr": 250173080,
+          "sh_offset": 250173080,
+          "sh_size": 71824,
+          "sh_flags": 3,
+          "name": ".got"
+        },
+        {
+          "sh_addr": 250244904,
+          "sh_offset": 250244904,
+          "sh_size": 4984,
+          "sh_flags": 3,
+          "name": ".got.plt"
+        },
+        {
+          "sh_addr": 250249888,
+          "sh_offset": 250249888,
+          "sh_size": 0,
+          "sh_flags": 3,
+          "name": ".bss.rel.ro"
+        },
+        {
+          "sh_addr": 250265600,
+          "sh_offset": 250265600,
+          "sh_size": 1977812,
+          "sh_flags": 3,
+          "name": ".data"
+        },
+        {
+          "sh_addr": 0,
+          "sh_offset": 252243412,
+          "sh_size": 244,
+          "sh_flags": 0,
+          "name": ".shstrtab"
+        }
+      ],
+      "segments": [
+        {
+          "p_type": "PT_PHDR",
+          "p_offset": 64,
+          "p_vaddr": 64,
+          "p_filesz": 560,
+          "p_memsz": 560,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_INTERP",
+          "p_offset": 250172440,
+          "p_vaddr": 250172440,
+          "p_filesz": 21,
+          "p_memsz": 21,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 0,
+          "p_vaddr": 0,
+          "p_filesz": 96291844,
+          "p_memsz": 96291844,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 96305152,
+          "p_vaddr": 96305152,
+          "p_filesz": 126610608,
+          "p_memsz": 126610608,
+          "p_flags": 5
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 222920704,
+          "p_vaddr": 222920704,
+          "p_filesz": 27329184,
+          "p_memsz": 27329184,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 250265600,
+          "p_vaddr": 250265600,
+          "p_filesz": 1977812,
+          "p_memsz": 9020832,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_DYNAMIC",
+          "p_offset": 252288312,
+          "p_vaddr": 259382584,
+          "p_filesz": 736,
+          "p_memsz": 736,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_GNU_RELRO",
+          "p_offset": 222920704,
+          "p_vaddr": 222920704,
+          "p_filesz": 27329184,
+          "p_memsz": 27332608,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_GNU_EH_FRAME",
+          "p_offset": 71369332,
+          "p_vaddr": 71369332,
+          "p_filesz": 5023004,
+          "p_memsz": 5023004,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_GNU_STACK",
+          "p_offset": 0,
+          "p_vaddr": 0,
+          "p_filesz": 0,
+          "p_memsz": 0,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 252248064,
+          "p_vaddr": 259293184,
+          "p_filesz": 13648,
+          "p_memsz": 13648,
+          "p_flags": 5
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 252248064,
+          "p_vaddr": 259309568,
+          "p_filesz": 14408,
+          "p_memsz": 16384,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 252248064,
+          "p_vaddr": 259325952,
+          "p_filesz": 22152,
+          "p_memsz": 22165,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 252264448,
+          "p_vaddr": 259358720,
+          "p_filesz": 24600,
+          "p_memsz": 24600,
+          "p_flags": 6
+        }
+      ]
+    },
+    {
+      "sections": [
+        {
+          "sh_addr": 0,
+          "sh_offset": 0,
+          "sh_size": 0,
+          "sh_flags": 0,
+          "name": ""
+        },
+        {
+          "sh_addr": 250172440,
+          "sh_offset": 250172440,
+          "sh_size": 21,
+          "sh_flags": 2,
+          "name": ".interp"
+        },
+        {
+          "sh_addr": 259364488,
+          "sh_offset": 252270216,
+          "sh_size": 18096,
+          "sh_flags": 2,
+          "name": ".dynsym"
+        },
+        {
+          "sh_addr": 18408,
+          "sh_offset": 18408,
+          "sh_size": 1480,
+          "sh_flags": 2,
+          "name": ".gnu.version"
+        },
+        {
+          "sh_addr": 19888,
+          "sh_offset": 19888,
+          "sh_size": 56,
+          "sh_flags": 2,
+          "name": ".gnu.version_d"
+        },
+        {
+          "sh_addr": 19944,
+          "sh_offset": 19944,
+          "sh_size": 128,
+          "sh_flags": 2,
+          "name": ".gnu.version_r"
+        },
+        {
+          "sh_addr": 20072,
+          "sh_offset": 20072,
+          "sh_size": 528,
+          "sh_flags": 2,
+          "name": ".gnu.hash"
+        },
+        {
+          "sh_addr": 20600,
+          "sh_offset": 20600,
+          "sh_size": 5928,
+          "sh_flags": 2,
+          "name": ".hash"
+        },
+        {
+          "sh_addr": 50652776,
+          "sh_offset": 50652776,
+          "sh_size": 19442,
+          "sh_flags": 2,
+          "name": ".dynstr"
+        },
+        {
+          "sh_addr": 26528,
+          "sh_offset": 26528,
+          "sh_size": 50626248,
+          "sh_flags": 2,
+          "name": ".rela.dyn"
+        },
+        {
+          "sh_addr": 848,
+          "sh_offset": 848,
+          "sh_size": 15120,
+          "sh_flags": 2,
+          "name": ".rela.plt"
+        },
+        {
+          "sh_addr": 50684664,
+          "sh_offset": 50684664,
+          "sh_size": 7774288,
+          "sh_flags": 2,
+          "name": ".gcc_except_table"
+        },
+        {
+          "sh_addr": 58459008,
+          "sh_offset": 58459008,
+          "sh_size": 12910322,
+          "sh_flags": 50,
+          "name": ".rodata"
+        },
+        {
+          "sh_addr": 71369332,
+          "sh_offset": 71369332,
+          "sh_size": 5023004,
+          "sh_flags": 2,
+          "name": ".eh_frame_hdr"
+        },
+        {
+          "sh_addr": 76392336,
+          "sh_offset": 76392336,
+          "sh_size": 19899508,
+          "sh_flags": 2,
+          "name": ".eh_frame"
+        },
+        {
+          "sh_addr": 96305152,
+          "sh_offset": 96305152,
+          "sh_size": 126600648,
+          "sh_flags": 6,
+          "name": ".text"
+        },
+        {
+          "sh_addr": 222905808,
+          "sh_offset": 222905808,
+          "sh_size": 9952,
+          "sh_flags": 6,
+          "name": ".plt"
+        },
+        {
+          "sh_addr": 222920704,
+          "sh_offset": 222920704,
+          "sh_size": 27238840,
+          "sh_flags": 3,
+          "name": ".data.rel.ro"
+        },
+        {
+          "sh_addr": 259382584,
+          "sh_offset": 252288312,
+          "sh_size": 736,
+          "sh_flags": 3,
+          "name": ".dynamic"
+        },
+        {
+          "sh_addr": 250173080,
+          "sh_offset": 250173080,
+          "sh_size": 71824,
+          "sh_flags": 3,
+          "name": ".got"
+        },
+        {
+          "sh_addr": 250244904,
+          "sh_offset": 250244904,
+          "sh_size": 4984,
+          "sh_flags": 3,
+          "name": ".got.plt"
+        },
+        {
+          "sh_addr": 250249888,
+          "sh_offset": 250249888,
+          "sh_size": 0,
+          "sh_flags": 3,
+          "name": ".bss.rel.ro"
+        },
+        {
+          "sh_addr": 250265600,
+          "sh_offset": 250265600,
+          "sh_size": 1977812,
+          "sh_flags": 3,
+          "name": ".data"
+        },
+        {
+          "sh_addr": 0,
+          "sh_offset": 252243412,
+          "sh_size": 244,
+          "sh_flags": 0,
+          "name": ".shstrtab"
+        }
+      ],
+      "segments": [
+        {
+          "p_type": "PT_PHDR",
+          "p_offset": 64,
+          "p_vaddr": 64,
+          "p_filesz": 560,
+          "p_memsz": 560,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_INTERP",
+          "p_offset": 250172440,
+          "p_vaddr": 250172440,
+          "p_filesz": 21,
+          "p_memsz": 21,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 0,
+          "p_vaddr": 0,
+          "p_filesz": 96291844,
+          "p_memsz": 96291844,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 96305152,
+          "p_vaddr": 96305152,
+          "p_filesz": 126610608,
+          "p_memsz": 126610608,
+          "p_flags": 5
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 222920704,
+          "p_vaddr": 222920704,
+          "p_filesz": 27329184,
+          "p_memsz": 27329184,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 250265600,
+          "p_vaddr": 250265600,
+          "p_filesz": 1977812,
+          "p_memsz": 9020832,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_DYNAMIC",
+          "p_offset": 252288312,
+          "p_vaddr": 259382584,
+          "p_filesz": 736,
+          "p_memsz": 736,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_GNU_RELRO",
+          "p_offset": 222920704,
+          "p_vaddr": 222920704,
+          "p_filesz": 27329184,
+          "p_memsz": 27332608,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_GNU_EH_FRAME",
+          "p_offset": 71369332,
+          "p_vaddr": 71369332,
+          "p_filesz": 5023004,
+          "p_memsz": 5023004,
+          "p_flags": 4
+        },
+        {
+          "p_type": "PT_GNU_STACK",
+          "p_offset": 0,
+          "p_vaddr": 0,
+          "p_filesz": 0,
+          "p_memsz": 0,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 252248064,
+          "p_vaddr": 259293184,
+          "p_filesz": 13648,
+          "p_memsz": 13648,
+          "p_flags": 5
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 252248064,
+          "p_vaddr": 259309568,
+          "p_filesz": 14408,
+          "p_memsz": 16384,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 252248064,
+          "p_vaddr": 259325952,
+          "p_filesz": 22152,
+          "p_memsz": 22165,
+          "p_flags": 6
+        },
+        {
+          "p_type": "PT_LOAD",
+          "p_offset": 252264448,
+          "p_vaddr": 259358720,
+          "p_filesz": 24600,
+          "p_memsz": 24600,
+          "p_flags": 6
+        }
+      ]
+    }
+  ],
+  "layout_equal": true,
+  "changed_bytes": 35966900,
+  "range_count": 917993,
+  "range_preview_limit": 100,
+  "ranges": [
+    {
+      "start": "0xb2b0",
+      "end": "0xb2b1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "31",
+      "new_hex": "28"
+    },
+    {
+      "start": "0xb3b8",
+      "end": "0xb3b9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "3b",
+      "new_hex": "32"
+    },
+    {
+      "start": "0xb448",
+      "end": "0xb449",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "bd",
+      "new_hex": "b4"
+    },
+    {
+      "start": "0xb580",
+      "end": "0xb581",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "43",
+      "new_hex": "3a"
+    },
+    {
+      "start": "0xb598",
+      "end": "0xb599",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "ce",
+      "new_hex": "c5"
+    },
+    {
+      "start": "0xb5c8",
+      "end": "0xb5c9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "3d",
+      "new_hex": "34"
+    },
+    {
+      "start": "0xb610",
+      "end": "0xb611",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "db",
+      "new_hex": "d2"
+    },
+    {
+      "start": "0xb640",
+      "end": "0xb641",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "46",
+      "new_hex": "3d"
+    },
+    {
+      "start": "0xb6d0",
+      "end": "0xb6d1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "57",
+      "new_hex": "4e"
+    },
+    {
+      "start": "0xb760",
+      "end": "0xb761",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "60",
+      "new_hex": "57"
+    },
+    {
+      "start": "0xbc28",
+      "end": "0xbc29",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "47",
+      "new_hex": "3e"
+    },
+    {
+      "start": "0xbce8",
+      "end": "0xbce9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "e8",
+      "new_hex": "df"
+    },
+    {
+      "start": "0xbd00",
+      "end": "0xbd01",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "72",
+      "new_hex": "69"
+    },
+    {
+      "start": "0xbd60",
+      "end": "0xbd61",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "f7",
+      "new_hex": "ee"
+    },
+    {
+      "start": "0xbe80",
+      "end": "0xbe81",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "53",
+      "new_hex": "4a"
+    },
+    {
+      "start": "0xc018",
+      "end": "0xc019",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "80",
+      "new_hex": "77"
+    },
+    {
+      "start": "0xc240",
+      "end": "0xc241",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "ff",
+      "new_hex": "f6"
+    },
+    {
+      "start": "0xc348",
+      "end": "0xc349",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "09",
+      "new_hex": "00"
+    },
+    {
+      "start": "0xc390",
+      "end": "0xc391",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "1b",
+      "new_hex": "12"
+    },
+    {
+      "start": "0xc468",
+      "end": "0xc469",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "58",
+      "new_hex": "4f"
+    },
+    {
+      "start": "0xc498",
+      "end": "0xc499",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "63",
+      "new_hex": "5a"
+    },
+    {
+      "start": "0xc4f8",
+      "end": "0xc4f9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "85",
+      "new_hex": "7c"
+    },
+    {
+      "start": "0xc618",
+      "end": "0xc619",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "72",
+      "new_hex": "69"
+    },
+    {
+      "start": "0xc780",
+      "end": "0xc781",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "30",
+      "new_hex": "27"
+    },
+    {
+      "start": "0xc810",
+      "end": "0xc811",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "8e",
+      "new_hex": "85"
+    },
+    {
+      "start": "0xca80",
+      "end": "0xca81",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "99",
+      "new_hex": "90"
+    },
+    {
+      "start": "0xcbb8",
+      "end": "0xcbb9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "41",
+      "new_hex": "38"
+    },
+    {
+      "start": "0xcc90",
+      "end": "0xcc91",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "77",
+      "new_hex": "6e"
+    },
+    {
+      "start": "0xccc0",
+      "end": "0xccc1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "a3",
+      "new_hex": "9a"
+    },
+    {
+      "start": "0xcdf8",
+      "end": "0xcdf9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "b8",
+      "new_hex": "af"
+    },
+    {
+      "start": "0xcf18",
+      "end": "0xcf19",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "cb",
+      "new_hex": "c2"
+    },
+    {
+      "start": "0xd038",
+      "end": "0xd039",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "53",
+      "new_hex": "4a"
+    },
+    {
+      "start": "0x2ddc50",
+      "end": "0x2ddc51",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "6a",
+      "new_hex": "98"
+    },
+    {
+      "start": "0x314bb0",
+      "end": "0x314bb2",
+      "length": 2,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "e64b",
+      "new_hex": "144c"
+    },
+    {
+      "start": "0x314be0",
+      "end": "0x314be1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "44",
+      "new_hex": "72"
+    },
+    {
+      "start": "0x314c58",
+      "end": "0x314c59",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "72",
+      "new_hex": "a0"
+    },
+    {
+      "start": "0x314c88",
+      "end": "0x314c89",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "5a",
+      "new_hex": "88"
+    },
+    {
+      "start": "0x314ca0",
+      "end": "0x314ca1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "94",
+      "new_hex": "c2"
+    },
+    {
+      "start": "0x314cd0",
+      "end": "0x314cd1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "6a",
+      "new_hex": "98"
+    },
+    {
+      "start": "0x59c640",
+      "end": "0x59c641",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "c4",
+      "new_hex": "f2"
+    },
+    {
+      "start": "0x59c6a0",
+      "end": "0x59c6a1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "b0",
+      "new_hex": "de"
+    },
+    {
+      "start": "0x59c700",
+      "end": "0x59c701",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "4a",
+      "new_hex": "78"
+    },
+    {
+      "start": "0x59c7f0",
+      "end": "0x59c7f1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "86",
+      "new_hex": "b4"
+    },
+    {
+      "start": "0x59c820",
+      "end": "0x59c821",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "5a",
+      "new_hex": "88"
+    },
+    {
+      "start": "0x59c850",
+      "end": "0x59c852",
+      "length": 2,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "e620",
+      "new_hex": "1421"
+    },
+    {
+      "start": "0x59c8b0",
+      "end": "0x59c8b1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "38",
+      "new_hex": "66"
+    },
+    {
+      "start": "0x59c8e0",
+      "end": "0x59c8e1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "56",
+      "new_hex": "84"
+    },
+    {
+      "start": "0x59c9b8",
+      "end": "0x59c9b9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "46",
+      "new_hex": "74"
+    },
+    {
+      "start": "0x59ca18",
+      "end": "0x59ca19",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "9a",
+      "new_hex": "c8"
+    },
+    {
+      "start": "0x59ca30",
+      "end": "0x59ca32",
+      "length": 2,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "d811",
+      "new_hex": "0612"
+    },
+    {
+      "start": "0x59ca78",
+      "end": "0x59ca79",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "ae",
+      "new_hex": "dc"
+    },
+    {
+      "start": "0x59ca90",
+      "end": "0x59ca92",
+      "length": 2,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "e4f7",
+      "new_hex": "12f8"
+    },
+    {
+      "start": "0x59cad8",
+      "end": "0x59cada",
+      "length": 2,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "f411",
+      "new_hex": "2212"
+    },
+    {
+      "start": "0x59cb68",
+      "end": "0x59cb69",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "70",
+      "new_hex": "9e"
+    },
+    {
+      "start": "0x59cc28",
+      "end": "0x59cc29",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "00",
+      "new_hex": "2e"
+    },
+    {
+      "start": "0x59cca0",
+      "end": "0x59cca1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "66",
+      "new_hex": "94"
+    },
+    {
+      "start": "0x59cd18",
+      "end": "0x59cd19",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "92",
+      "new_hex": "c0"
+    },
+    {
+      "start": "0x59cd30",
+      "end": "0x59cd32",
+      "length": 2,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "faf7",
+      "new_hex": "28f8"
+    },
+    {
+      "start": "0x59ce08",
+      "end": "0x59ce09",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "4c",
+      "new_hex": "7a"
+    },
+    {
+      "start": "0x59ce38",
+      "end": "0x59ce39",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "7a",
+      "new_hex": "a8"
+    },
+    {
+      "start": "0x7a4300",
+      "end": "0x7a4301",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "d5",
+      "new_hex": "cc"
+    },
+    {
+      "start": "0x7a4798",
+      "end": "0x7a4799",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "2f",
+      "new_hex": "26"
+    },
+    {
+      "start": "0x7a47b0",
+      "end": "0x7a47b1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "2f",
+      "new_hex": "26"
+    },
+    {
+      "start": "0x7a6418",
+      "end": "0x7a6419",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "40",
+      "new_hex": "37"
+    },
+    {
+      "start": "0x7a6b80",
+      "end": "0x7a6b81",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "f4",
+      "new_hex": "eb"
+    },
+    {
+      "start": "0x7a6f58",
+      "end": "0x7a6f59",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "fe",
+      "new_hex": "f5"
+    },
+    {
+      "start": "0x7a79c0",
+      "end": "0x7a79c1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "21",
+      "new_hex": "18"
+    },
+    {
+      "start": "0x7a7bd0",
+      "end": "0x7a7bd1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "33",
+      "new_hex": "2a"
+    },
+    {
+      "start": "0x7a7eb8",
+      "end": "0x7a7eb9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "47",
+      "new_hex": "3e"
+    },
+    {
+      "start": "0x7a8050",
+      "end": "0x7a8051",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "21",
+      "new_hex": "18"
+    },
+    {
+      "start": "0x7a8158",
+      "end": "0x7a8159",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "cd",
+      "new_hex": "c4"
+    },
+    {
+      "start": "0x7a8440",
+      "end": "0x7a8441",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "47",
+      "new_hex": "3e"
+    },
+    {
+      "start": "0x7a8848",
+      "end": "0x7a8849",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "21",
+      "new_hex": "18"
+    },
+    {
+      "start": "0x7a8b48",
+      "end": "0x7a8b49",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "50",
+      "new_hex": "47"
+    },
+    {
+      "start": "0x7a91f0",
+      "end": "0x7a91f1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "d8",
+      "new_hex": "cf"
+    },
+    {
+      "start": "0x7a92e0",
+      "end": "0x7a92e1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "67",
+      "new_hex": "5e"
+    },
+    {
+      "start": "0x7a94d8",
+      "end": "0x7a94d9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "67",
+      "new_hex": "5e"
+    },
+    {
+      "start": "0x7a95b0",
+      "end": "0x7a95b1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "3f",
+      "new_hex": "36"
+    },
+    {
+      "start": "0x7aa060",
+      "end": "0x7aa061",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "e0",
+      "new_hex": "d7"
+    },
+    {
+      "start": "0x7aa318",
+      "end": "0x7aa319",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "7f",
+      "new_hex": "76"
+    },
+    {
+      "start": "0x7aa690",
+      "end": "0x7aa691",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "49",
+      "new_hex": "40"
+    },
+    {
+      "start": "0x7aa8e8",
+      "end": "0x7aa8e9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "90",
+      "new_hex": "87"
+    },
+    {
+      "start": "0x7aa960",
+      "end": "0x7aa961",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "90",
+      "new_hex": "87"
+    },
+    {
+      "start": "0x7aaa38",
+      "end": "0x7aaa39",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "ee",
+      "new_hex": "e5"
+    },
+    {
+      "start": "0x7aaa98",
+      "end": "0x7aaa99",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "a3",
+      "new_hex": "9a"
+    },
+    {
+      "start": "0x7aab88",
+      "end": "0x7aab89",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "90",
+      "new_hex": "87"
+    },
+    {
+      "start": "0x7aabb8",
+      "end": "0x7aabb9",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "ee",
+      "new_hex": "e5"
+    },
+    {
+      "start": "0x7ab080",
+      "end": "0x7ab081",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "b1",
+      "new_hex": "a8"
+    },
+    {
+      "start": "0x7ab158",
+      "end": "0x7ab159",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "c8",
+      "new_hex": "bf"
+    },
+    {
+      "start": "0x7ab458",
+      "end": "0x7ab459",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "5b",
+      "new_hex": "52"
+    },
+    {
+      "start": "0x7ab548",
+      "end": "0x7ab549",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "5b",
+      "new_hex": "52"
+    },
+    {
+      "start": "0x7ab608",
+      "end": "0x7ab609",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "d8",
+      "new_hex": "cf"
+    },
+    {
+      "start": "0x7ab7d0",
+      "end": "0x7ab7d1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "09",
+      "new_hex": "00"
+    },
+    {
+      "start": "0x7ac0a0",
+      "end": "0x7ac0a1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "22",
+      "new_hex": "19"
+    },
+    {
+      "start": "0x7ac610",
+      "end": "0x7ac611",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "31",
+      "new_hex": "28"
+    },
+    {
+      "start": "0x7ac820",
+      "end": "0x7ac821",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "62",
+      "new_hex": "59"
+    },
+    {
+      "start": "0x7ac9a0",
+      "end": "0x7ac9a1",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "ec",
+      "new_hex": "e3"
+    },
+    {
+      "start": "0x7ace50",
+      "end": "0x7ace51",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "79",
+      "new_hex": "70"
+    },
+    {
+      "start": "0x7ad318",
+      "end": "0x7ad319",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "45",
+      "new_hex": "3c"
+    },
+    {
+      "start": "0x7ad750",
+      "end": "0x7ad751",
+      "length": 1,
+      "sections": [
+        ".rela.dyn"
+      ],
+      "old_hex": "31",
+      "new_hex": "28"
+    }
+  ],
+  "section_changed_bytes": {
+    ".rela.dyn": 25377,
+    ".rodata": 4201939,
+    ".text": 31739297
+  }
+}

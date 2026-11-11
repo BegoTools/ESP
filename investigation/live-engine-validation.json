@@ -1,0 +1,18 @@
+{
+  "pid": 3418,
+  "module_base": "0x400023200000",
+  "got": "0x400032821d90",
+  "expected_global": "0x400032821d90",
+  "engine": "0x7beb770fa000",
+  "context_count": 1,
+  "contexts": [
+    {
+      "address": "0x7beb7915a100",
+      "type": 1,
+      "world": "0x7beb7a0d2000",
+      "world_vtable": "0x4000319501e8"
+    }
+  ],
+  "game_instance": "0x7beb77344300",
+  "pages_read": 6
+}

@@ -1,0 +1,7 @@
+System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   at ESPWorkbench.Commands.Run(String executable, IEnumerable`1 args, Int32 timeout, CancellationToken token)
+   at ESPWorkbench.Adb.Run(CancellationToken token, String[] args)
+   at ESPWorkbench.Adb.Shell(String command, CancellationToken token)
+   at ESPWorkbench.GameInfo.Inspect(Adb adb, String package, Boolean includeMaps, CancellationToken token)
+   at ESPWorkbench.Program.Main(String[] args)

@@ -1,0 +1,2362 @@
+[
+  {
+    "rva": "0x3fbcf39",
+    "text": "OccludeBuildingActorInvalidDis"
+  },
+  {
+    "rva": "0x3fbd680",
+    "text": "EAvatarVisiblityType::EAllVisible"
+  },
+  {
+    "rva": "0x3fbf8b7",
+    "text": "VisibleAngle"
+  },
+  {
+    "rva": "0x3fc672f",
+    "text": "EAIMoveToOcclusionFinishMovePoseType"
+  },
+  {
+    "rva": "0x3fc8edb",
+    "text": "EWidgetVisible::Default"
+  },
+  {
+    "rva": "0x3fca016",
+    "text": "CollisionVisibility"
+  },
+  {
+    "rva": "0x3fcac39",
+    "text": "bMakeVisibleAfterLoad"
+  },
+  {
+    "rva": "0x3fcb055",
+    "text": "IsLevelVisible"
+  },
+  {
+    "rva": "0x3fcb9bf",
+    "text": "bOverride_SRTMinOcclusion"
+  },
+  {
+    "rva": "0x3fcbc58",
+    "text": "SetOcclusionTint"
+  },
+  {
+    "rva": "0x3fcbdf9",
+    "text": "IgnoreOccluderMaterial"
+  },
+  {
+    "rva": "0x3fcca4b",
+    "text": "FilterSearchResultVisible"
+  },
+  {
+    "rva": "0x3fce63a",
+    "text": "TargetDataIndex"
+  },
+  {
+    "rva": "0x3fd7eb0",
+    "text": "DrawVisibleTraceDebugLine"
+  },
+  {
+    "rva": "0x3fdaa36",
+    "text": "AutoAimingConfig_InnerRange_AdsorbMinAttenuationDis"
+  },
+  {
+    "rva": "0x3fdc293",
+    "text": "VisibleLevels"
+  },
+  {
+    "rva": "0x3fdc556",
+    "text": "NearbyDynamicItemsVisibleAngle"
+  },
+  {
+    "rva": "0x3fdc60e",
+    "text": "SensedNearestEnemyInVisibleRadius"
+  },
+  {
+    "rva": "0x3fdc630",
+    "text": "SensedNearestEnemyVisibleRadius"
+  },
+  {
+    "rva": "0x3fdc7da",
+    "text": "EAIMoveToOcclusionSearchBestOcclusionMethod"
+  },
+  {
+    "rva": "0x3fde6c4",
+    "text": "bTraceVisible"
+  },
+  {
+    "rva": "0x3fdfac3",
+    "text": "SetTextBlockVisibility"
+  },
+  {
+    "rva": "0x3fdfc39",
+    "text": "SetWidgetVisibility"
+  },
+  {
+    "rva": "0x3fdfc4d",
+    "text": "VisibilityDelegate"
+  },
+  {
+    "rva": "0x3fdfce2",
+    "text": "bIsHoveredWidgetHitTestVisible"
+  },
+  {
+    "rva": "0x3fe0b42",
+    "text": "OcclusionMaskDarkness"
+  },
+  {
+    "rva": "0x3fe1f30",
+    "text": "bOcclusionHighlight"
+  },
+  {
+    "rva": "0x3fe67a7",
+    "text": "InitialVisible"
+  },
+  {
+    "rva": "0x3fe9178",
+    "text": "RadialDamageVisibilityTest"
+  },
+  {
+    "rva": "0x3fe9c39",
+    "text": "bIsVisible"
+  },
+  {
+    "rva": "0x3fea6db",
+    "text": "UpdateEffectVisible"
+  },
+  {
+    "rva": "0x3feb3b4",
+    "text": "bIterateVisibilityTest"
+  },
+  {
+    "rva": "0x3feb83e",
+    "text": "bCheckActorVisible"
+  },
+  {
+    "rva": "0x3fec911",
+    "text": "SetVisible"
+  },
+  {
+    "rva": "0x3fecf05",
+    "text": "UnInitTargetDataUnEquip"
+  },
+  {
+    "rva": "0x3fee187",
+    "text": "ComponentIsVisibleFromOrigin"
+  },
+  {
+    "rva": "0x3fee31f",
+    "text": "ServerIsHeadVisibleOffsetForProne"
+  },
+  {
+    "rva": "0x3ff0f5b",
+    "text": "AutoAimingConfig_MaxAngle"
+  },
+  {
+    "rva": "0x3ff0f75",
+    "text": "AutoAimingConfig_OuterRange_DyingRate"
+  },
+  {
+    "rva": "0x3ff0f9b",
+    "text": "AutoAimingConfig_OuterRange_ProneRate"
+  },
+  {
+    "rva": "0x3ff689c",
+    "text": "SpawnWhenMeshVisible"
+  },
+  {
+    "rva": "0x3ff781d",
+    "text": "VisibilityTrackKey"
+  },
+  {
+    "rva": "0x3ff82fc",
+    "text": "SetVisibleDyeingColor"
+  },
+  {
+    "rva": "0x3ff8344",
+    "text": "bIdeaOverrideOutlineAndOcclusion"
+  },
+  {
+    "rva": "0x3ff8853",
+    "text": "OcclusionPluginSettings"
+  },
+  {
+    "rva": "0x3ff8af1",
+    "text": "LocalOcclusionFadeRatio"
+  },
+  {
+    "rva": "0x3ff8b09",
+    "text": "LocalOcclusionRadius"
+  },
+  {
+    "rva": "0x40003b9",
+    "text": "EnemyInfo"
+  },
+  {
+    "rva": "0x40004a4",
+    "text": "SetTargetSlotParticleVisible"
+  },
+  {
+    "rva": "0x40016d9",
+    "text": "bVisibleChangeRefreshAvatarReAttach"
+  },
+  {
+    "rva": "0x4001751",
+    "text": "IsMountedMeshVisible"
+  },
+  {
+    "rva": "0x40062bb",
+    "text": "EAutoAimType::ScopeOrFire"
+  },
+  {
+    "rva": "0x4007dc7",
+    "text": "AutoAimingConfig_ScopeRange_InVehicleRate"
+  },
+  {
+    "rva": "0x4007df1",
+    "text": "AutoAimingConfig_InnerRange_Speed"
+  },
+  {
+    "rva": "0x4007f03",
+    "text": "OutSetLevelVisibleInfo"
+  },
+  {
+    "rva": "0x400a002",
+    "text": "EAIOcclusionPointPoseType::Occlusion_PoseStand"
+  },
+  {
+    "rva": "0x400a031",
+    "text": "EAICheckShootingPoseType::ShootingPose_WaitVisibilityCheck"
+  },
+  {
+    "rva": "0x400a133",
+    "text": "EAIAdvFindOcclusionPointPoseType::Occlusion_PoseCrouch"
+  },
+  {
+    "rva": "0x400a16a",
+    "text": "OcclusionPointChooseZFactor"
+  },
+  {
+    "rva": "0x400a1bd",
+    "text": "bOcclusionSaveToBlackBoard"
+  },
+  {
+    "rva": "0x400d51f",
+    "text": "ELevelVisibility::Visible"
+  },
+  {
+    "rva": "0x400d7ec",
+    "text": "ESlateVisibility::Collapsed"
+  },
+  {
+    "rva": "0x400e9bc",
+    "text": "DSVisibilityAggressiveness"
+  },
+  {
+    "rva": "0x400ea7a",
+    "text": "VMI_CollisionVisibility"
+  },
+  {
+    "rva": "0x400f9fe",
+    "text": "OverrideInvisibleLevels"
+  },
+  {
+    "rva": "0x400fa16",
+    "text": "OverrideInvisibleActors"
+  },
+  {
+    "rva": "0x400fa79",
+    "text": "SetIdeaOutlineOcclusionHighlight"
+  },
+  {
+    "rva": "0x400fad4",
+    "text": "bOutlineAndOcclusion"
+  },
+  {
+    "rva": "0x400fc0b",
+    "text": "bDefaultFeatureAmbientOcclusionStaticFraction"
+  },
+  {
+    "rva": "0x4010003",
+    "text": "BVS_Visible"
+  },
+  {
+    "rva": "0x4010046",
+    "text": "OcclusionInterpolationTime"
+  },
+  {
+    "rva": "0x40103d8",
+    "text": "bGenerateAmbientOcclusionMaterialMask"
+  },
+  {
+    "rva": "0x4010f04",
+    "text": "MenuItemVisibility_Key"
+  },
+  {
+    "rva": "0x401775e",
+    "text": "SetCurrentWidgetVisible"
+  },
+  {
+    "rva": "0x4017e7a",
+    "text": "BaseVisibleDistanceFactorThesholds"
+  },
+  {
+    "rva": "0x4018b88",
+    "text": "BP_SetAvatarVisibility"
+  },
+  {
+    "rva": "0x401b7a1",
+    "text": "CheckVisible"
+  },
+  {
+    "rva": "0x401ce89",
+    "text": "ChangeWeaponVisibilityDelegate"
+  },
+  {
+    "rva": "0x401d5c7",
+    "text": "EAutoAimType::OnlyNotTouch"
+  },
+  {
+    "rva": "0x401edb3",
+    "text": "VisibleActorMetaInfo"
+  },
+  {
+    "rva": "0x401edc8",
+    "text": "VisibleActorInfo"
+  },
+  {
+    "rva": "0x401ef06",
+    "text": "UnregisterAutoAimCandidate"
+  },
+  {
+    "rva": "0x401f1c2",
+    "text": "AutoAimingConfig_ScopeRange_AdsorbActiveMinRange"
+  },
+  {
+    "rva": "0x401f1f3",
+    "text": "AutoAimingConfig_ScopeRange_CrouchRate"
+  },
+  {
+    "rva": "0x401fef5",
+    "text": "bShouldBeVisible"
+  },
+  {
+    "rva": "0x4020932",
+    "text": "AutoAimTime"
+  },
+  {
+    "rva": "0x40263eb",
+    "text": "bCullOccluded"
+  },
+  {
+    "rva": "0x40267dd",
+    "text": "VisibilityVolumes"
+  },
+  {
+    "rva": "0x4026b5f",
+    "text": "bOverride_SRTDefaultOcclusion"
+  },
+  {
+    "rva": "0x4026e0c",
+    "text": "OcclusionExponent"
+  },
+  {
+    "rva": "0x4027060",
+    "text": "bVisualizeAmbientOcclusion"
+  },
+  {
+    "rva": "0x402707b",
+    "text": "IndirectIlluminationOcclusionFraction"
+  },
+  {
+    "rva": "0x40272f7",
+    "text": "bBuildWithHiddenSymbolVisibility"
+  },
+  {
+    "rva": "0x4027828",
+    "text": "GetIsVirtualKeyboardVisible"
+  },
+  {
+    "rva": "0x4029883",
+    "text": "ServerSetReplicatedTargetData"
+  },
+  {
+    "rva": "0x402b074",
+    "text": "VisibilityTraceEndZ"
+  },
+  {
+    "rva": "0x402b7f2",
+    "text": "SetWidgetVisiblePass"
+  },
+  {
+    "rva": "0x402c1c4",
+    "text": "AutoTestEnableTickOrVisibilityByActorName"
+  },
+  {
+    "rva": "0x402c515",
+    "text": "DecalVisibleBinding"
+  },
+  {
+    "rva": "0x402f624",
+    "text": "bSpawnWhenMeshVisible"
+  },
+  {
+    "rva": "0x403689e",
+    "text": "AutoAimingConfig_ScopeRange_DyingRate"
+  },
+  {
+    "rva": "0x40368c4",
+    "text": "AutoAimingConfig_ScopeRange_SpeedRateSight"
+  },
+  {
+    "rva": "0x40368ef",
+    "text": "AutoAimingConfig_OuterRange_CrouchRate"
+  },
+  {
+    "rva": "0x40375a6",
+    "text": "ScrollBoxVisibility"
+  },
+  {
+    "rva": "0x4038626",
+    "text": "bSetCanSeeTargetFlag"
+  },
+  {
+    "rva": "0x403863b",
+    "text": "bUseVisibilityTrace"
+  },
+  {
+    "rva": "0x40386d7",
+    "text": "bIgnorePossibleAttackableOcclusion"
+  },
+  {
+    "rva": "0x40386fa",
+    "text": "OcclusionPadAngle_Normal"
+  },
+  {
+    "rva": "0x403872c",
+    "text": "BBKeyOcclusionLocation"
+  },
+  {
+    "rva": "0x4038829",
+    "text": "EAIMoveToOcclusionSearchBestOcclusionMethod::FarToTarget"
+  },
+  {
+    "rva": "0x403b5e0",
+    "text": "bOverride_LPVDirectionalOcclusionRadius"
+  },
+  {
+    "rva": "0x403bbdb",
+    "text": "GetIsVisible"
+  },
+  {
+    "rva": "0x403bc81",
+    "text": "InWidgetVisible"
+  },
+  {
+    "rva": "0x403da77",
+    "text": "SRTMinOcclusion"
+  },
+  {
+    "rva": "0x403daca",
+    "text": "bOverride_SRTMaxOcclusionDistance"
+  },
+  {
+    "rva": "0x403ddcd",
+    "text": "InMinOcclusion"
+  },
+  {
+    "rva": "0x4041782",
+    "text": "bEnableVisibilityCheck"
+  },
+  {
+    "rva": "0x4046781",
+    "text": "ConfigBaseVisibleDistanceFactorThesholds"
+  },
+  {
+    "rva": "0x4046a80",
+    "text": "SetScrollBarVisibility"
+  },
+  {
+    "rva": "0x404802f",
+    "text": "AutoAimRangeMax"
+  },
+  {
+    "rva": "0x4048b91",
+    "text": "SyncVisibilityFor"
+  },
+  {
+    "rva": "0x404c8c5",
+    "text": "GetIsStartScopeAutoAimCheck"
+  },
+  {
+    "rva": "0x404c8f7",
+    "text": "AimTargetScreenPos"
+  },
+  {
+    "rva": "0x404cb67",
+    "text": "AutoAimingConfig_OuterRange_SpeedRate"
+  },
+  {
+    "rva": "0x404cb8d",
+    "text": "AutoAimingConfig_InnerRange_RangeRateSight"
+  },
+  {
+    "rva": "0x404d5e7",
+    "text": "StatisVisibilityWidget"
+  },
+  {
+    "rva": "0x404defd",
+    "text": "AimAssist"
+  },
+  {
+    "rva": "0x404e85b",
+    "text": "EAIMoveToOcclusionMovingPoseType::MovingPoseType_CrouchSprintIfAlreadyCrouched"
+  },
+  {
+    "rva": "0x40560d0",
+    "text": "VISIBLESTRING"
+  },
+  {
+    "rva": "0x4057068",
+    "text": "GetTargetDataOrigin"
+  },
+  {
+    "rva": "0x40592c2",
+    "text": "VisibleCondition"
+  },
+  {
+    "rva": "0x405a9e7",
+    "text": "bSectionVisible"
+  },
+  {
+    "rva": "0x405c182",
+    "text": "bTestOccupiedOcclusionPoint"
+  },
+  {
+    "rva": "0x405c4b6",
+    "text": "OnAutoAimInfoDelegate"
+  },
+  {
+    "rva": "0x405c5af",
+    "text": "SetAvatarVisibility"
+  },
+  {
+    "rva": "0x405e51e",
+    "text": "ShowCheckPropsMeshVisibleBoxTime"
+  },
+  {
+    "rva": "0x405eb86",
+    "text": "OcclusionInfo"
+  },
+  {
+    "rva": "0x405fae8",
+    "text": "PVSVisibleAfterKeyTime"
+  },
+  {
+    "rva": "0x4066000",
+    "text": "EAIAdvFindOcclusionPointSearchBestOcclusionMethod::Method_Normal"
+  },
+  {
+    "rva": "0x4066041",
+    "text": "ChooseAttackableOcclusionFirst"
+  },
+  {
+    "rva": "0x4069651",
+    "text": "GetVisibility"
+  },
+  {
+    "rva": "0x406b2cf",
+    "text": "AmbientOcclusionConstant"
+  },
+  {
+    "rva": "0x406b348",
+    "text": "VisibleLayer_NotVisible"
+  },
+  {
+    "rva": "0x406b73e",
+    "text": "EParticleSystemOcclusionBoundsMethod"
+  },
+  {
+    "rva": "0x406ba06",
+    "text": "InOcclusionColor"
+  },
+  {
+    "rva": "0x406c884",
+    "text": "CanSeeCustomVar"
+  },
+  {
+    "rva": "0x406caa5",
+    "text": "ESearchResultVisibleType::SRVT_OnlyBlocks"
+  },
+  {
+    "rva": "0x406d598",
+    "text": "ASN1_VISIBLESTRING"
+  },
+  {
+    "rva": "0x406e5e1",
+    "text": "GameplayAbilityTargetData_SingleTargetHit"
+  },
+  {
+    "rva": "0x407604f",
+    "text": "AutoAimSpeedRateMax"
+  },
+  {
+    "rva": "0x4077165",
+    "text": "IsSupportAutoAim"
+  },
+  {
+    "rva": "0x407899e",
+    "text": "TriggerAutoAimCheck"
+  },
+  {
+    "rva": "0x407aa64",
+    "text": "AutoAimingConfig_OuterRange_CenterSpeedRate"
+  },
+  {
+    "rva": "0x407ba27",
+    "text": "NotFullScrollBoxHitTestInvisible"
+  },
+  {
+    "rva": "0x407ba48",
+    "text": "OnlyVisible"
+  },
+  {
+    "rva": "0x407cd19",
+    "text": "ChooseAttackableOcclusionWithLineTrace"
+  },
+  {
+    "rva": "0x407fee8",
+    "text": "MovieSceneVisibilitySectionTemplate"
+  },
+  {
+    "rva": "0x40811fd",
+    "text": "MaxOcclusionPixelsFraction"
+  },
+  {
+    "rva": "0x4081996",
+    "text": "SVB_VisibilityBlockingOnLoad"
+  },
+  {
+    "rva": "0x4089d11",
+    "text": "SetDelayParticleVisibility"
+  },
+  {
+    "rva": "0x408a343",
+    "text": "SetAvatarEntityParticleVisibility"
+  },
+  {
+    "rva": "0x408aa66",
+    "text": "bVisibleCheck"
+  },
+  {
+    "rva": "0x408b08a",
+    "text": "Visibility"
+  },
+  {
+    "rva": "0x408b66e",
+    "text": "bAlwaysUpdateVisible"
+  },
+  {
+    "rva": "0x408b9a1",
+    "text": "QuerySafeOcclusionPoints"
+  },
+  {
+    "rva": "0x408bd3e",
+    "text": "VisibilitySkipTypes"
+  },
+  {
+    "rva": "0x408d355",
+    "text": "CheckPVSVisibilityDeltaTime"
+  },
+  {
+    "rva": "0x408e547",
+    "text": "EVehiclVisibleErrorType::VVET_MeshInvisible"
+  },
+  {
+    "rva": "0x40917cd",
+    "text": "CompareEnemyInfo"
+  },
+  {
+    "rva": "0x40917de",
+    "text": "AutoAimBreakThroughRatio"
+  },
+  {
+    "rva": "0x40917f7",
+    "text": "AutoAimBreakThroughAngle"
+  },
+  {
+    "rva": "0x4091a27",
+    "text": "AutoAimingConfig_SensitiveCurvePath"
+  },
+  {
+    "rva": "0x4091a4b",
+    "text": "AutoAimingConfig_OuterRange_OpeningRate"
+  },
+  {
+    "rva": "0x4096af2",
+    "text": "EWidgetVisible::ForceNotVisible"
+  },
+  {
+    "rva": "0x40973ad",
+    "text": "ESlateVisibility::Hidden"
+  },
+  {
+    "rva": "0x40998dd",
+    "text": "IdeaOutlineOcclusionColor"
+  },
+  {
+    "rva": "0x4099b29",
+    "text": "bOverride_AmbientOcclusionRadius"
+  },
+  {
+    "rva": "0x409ca49",
+    "text": "GameplayAbilityTargetData_LocationInfo"
+  },
+  {
+    "rva": "0x409ff7c",
+    "text": "CollectVisibleWidgetBlueprintPaths"
+  },
+  {
+    "rva": "0x40a8828",
+    "text": "AutoAimingConfig_SpeedCurve"
+  },
+  {
+    "rva": "0x40a8844",
+    "text": "AutoAimingConfig_ScopeRange_FreeFallRate"
+  },
+  {
+    "rva": "0x40a886d",
+    "text": "AutoAimingConfig_ScopeRange_DriveVehicleRate"
+  },
+  {
+    "rva": "0x40a8c58",
+    "text": "EBattleItemPickupRule::AllCanSeeSelfCanPickUp"
+  },
+  {
+    "rva": "0x40aaab8",
+    "text": "EAIMoveToOcclusionSearchBestOcclusionMethod::NearToTarget"
+  },
+  {
+    "rva": "0x40aaaf2",
+    "text": "MoveToOcclusionKeepCurPoseDistance"
+  },
+  {
+    "rva": "0x40ad3a0",
+    "text": "EWidgetVisible"
+  },
+  {
+    "rva": "0x40ada15",
+    "text": "ELevelVisibility::Hidden"
+  },
+  {
+    "rva": "0x40ae49e",
+    "text": "SoundOcclusion"
+  },
+  {
+    "rva": "0x40aedd6",
+    "text": "bCommentBubbleVisible"
+  },
+  {
+    "rva": "0x40af888",
+    "text": "ConstMultiScatteringOcclusion"
+  },
+  {
+    "rva": "0x40b01ad",
+    "text": "AmbientOcclusionMipScale"
+  },
+  {
+    "rva": "0x40b0223",
+    "text": "bOverride_AmbientOcclusionIntensity"
+  },
+  {
+    "rva": "0x40b0266",
+    "text": "bNewVisibility"
+  },
+  {
+    "rva": "0x40b036b",
+    "text": "SetCapsuleIndirectShadowMinVisibility"
+  },
+  {
+    "rva": "0x40b03ba",
+    "text": "MinOcclusion"
+  },
+  {
+    "rva": "0x40b060f",
+    "text": "LocalOcclusionDenoising"
+  },
+  {
+    "rva": "0x40b0f5c",
+    "text": "ESearchResultVisibleType::SRVT_ShowAll"
+  },
+  {
+    "rva": "0x40bb589",
+    "text": "SetOnlyVisibleToTeam"
+  },
+  {
+    "rva": "0x40bb59e",
+    "text": "bOnlyVisibleToTeam"
+  },
+  {
+    "rva": "0x40bb962",
+    "text": "AutoAimInfoDelegate__DelegateSignature"
+  },
+  {
+    "rva": "0x40bb989",
+    "text": "TryDoAutoAim"
+  },
+  {
+    "rva": "0x40bd401",
+    "text": "IsTargetPosVisible"
+  },
+  {
+    "rva": "0x40be59b",
+    "text": "VerifySwitchAutoAimByLockView"
+  },
+  {
+    "rva": "0x40c043f",
+    "text": "bDrawVisibilityTraceLine"
+  },
+  {
+    "rva": "0x40c0703",
+    "text": "BPUpdateUIVisible"
+  },
+  {
+    "rva": "0x40c0ac7",
+    "text": "BroadcastWeaponVisibilityChange"
+  },
+  {
+    "rva": "0x40c0e02",
+    "text": "GetJoystickVisibility"
+  },
+  {
+    "rva": "0x40c0ff2",
+    "text": "bIsAutoAimOnlyInTouch"
+  },
+  {
+    "rva": "0x40c1008",
+    "text": "bIsMeleeAutoAimEnabled"
+  },
+  {
+    "rva": "0x40c8033",
+    "text": "ELevelVisibility"
+  },
+  {
+    "rva": "0x40c879a",
+    "text": "bShouldBeVisibleInGame"
+  },
+  {
+    "rva": "0x40c9e71",
+    "text": "EMeshVisibleLayer"
+  },
+  {
+    "rva": "0x40ca4b8",
+    "text": "AmbientOcclusionMipThreshold"
+  },
+  {
+    "rva": "0x40ca512",
+    "text": "bOverride_DepthOfFieldOcclusion"
+  },
+  {
+    "rva": "0x40ca634",
+    "text": "ToggleVisibility"
+  },
+  {
+    "rva": "0x40ca8cc",
+    "text": "bForceNotHzbOccluder"
+  },
+  {
+    "rva": "0x40caa00",
+    "text": "CurrentLevelPendingVisibility"
+  },
+  {
+    "rva": "0x40caa65",
+    "text": "LocalOcclusionPower"
+  },
+  {
+    "rva": "0x40caa79",
+    "text": "DefaultMaxDistanceFieldOcclusionDistance"
+  },
+  {
+    "rva": "0x40cccad",
+    "text": "UseAlternateObstructionOcclusionFeature"
+  },
+  {
+    "rva": "0x40cf1cc",
+    "text": "SetPhysicsActorVisible"
+  },
+  {
+    "rva": "0x40d6f69",
+    "text": "EVehiclVisibleErrorType::VVET_ActorHide"
+  },
+  {
+    "rva": "0x40d8382",
+    "text": "bMeshVisibility"
+  },
+  {
+    "rva": "0x40d9cc7",
+    "text": "AutoAimingConfig_ScopeRange_CenterSpeedRate"
+  },
+  {
+    "rva": "0x40d9cf3",
+    "text": "AutoAimingConfig_InnerRange_DriveVehicleRate"
+  },
+  {
+    "rva": "0x40d9d20",
+    "text": "AutoAimingConfig_InnerRange_SpeedRate"
+  },
+  {
+    "rva": "0x40dbddc",
+    "text": "bEnablePeekShootingCheckAtOcclusion"
+  },
+  {
+    "rva": "0x40dbea2",
+    "text": "EAIAdvFindOcclusionPointSearchBestOcclusionMethod::Method_FarToTarget"
+  },
+  {
+    "rva": "0x40df7b0",
+    "text": "GetSlateVisibility__DelegateSignature"
+  },
+  {
+    "rva": "0x40e1260",
+    "text": "bSkipUpdateIfNotVisible"
+  },
+  {
+    "rva": "0x40e1588",
+    "text": "BeamTargetData"
+  },
+  {
+    "rva": "0x40e1818",
+    "text": "OverrideVisibleActors"
+  },
+  {
+    "rva": "0x40e18c5",
+    "text": "SetIdeaOverrideOutlineAndOcclusion"
+  },
+  {
+    "rva": "0x40e19b7",
+    "text": "VisibilityId"
+  },
+  {
+    "rva": "0x40e1b5e",
+    "text": "AmbientOcclusionBias"
+  },
+  {
+    "rva": "0x40e1bf2",
+    "text": "bOverride_AmbientOcclusionDistance"
+  },
+  {
+    "rva": "0x40e1e42",
+    "text": "OcclusionTraceChannel"
+  },
+  {
+    "rva": "0x40e1f40",
+    "text": "OcclusionBounds"
+  },
+  {
+    "rva": "0x40e7a27",
+    "text": "IsMeshSectionVisible"
+  },
+  {
+    "rva": "0x40e8cfc",
+    "text": "Visible"
+  },
+  {
+    "rva": "0x40e8ecc",
+    "text": "bVisible"
+  },
+  {
+    "rva": "0x40e954a",
+    "text": "OuterVisibility"
+  },
+  {
+    "rva": "0x40eba3f",
+    "text": "bEnableOptimizeVisibility"
+  },
+  {
+    "rva": "0x40ebd8f",
+    "text": "AutoAimSpeed"
+  },
+  {
+    "rva": "0x40ec6b1",
+    "text": "bDropEffectVisibility"
+  },
+  {
+    "rva": "0x40edcb2",
+    "text": "EVehiclVisibleErrorType::VVET_None"
+  },
+  {
+    "rva": "0x40ee237",
+    "text": "ComponentIsVisibleParams"
+  },
+  {
+    "rva": "0x40eee6e",
+    "text": "bUIVisibility"
+  },
+  {
+    "rva": "0x40ef13f",
+    "text": "EAutoAimType"
+  },
+  {
+    "rva": "0x40f0e50",
+    "text": "AutoAimingConfig_OuterRange_FreeFallRate"
+  },
+  {
+    "rva": "0x40f0e79",
+    "text": "AutoAimingConfig_InnerRange_LandingRate"
+  },
+  {
+    "rva": "0x40f0ea1",
+    "text": "AutoAimingConfig_InnerRange_CenterSpeedRate"
+  },
+  {
+    "rva": "0x40f0f96",
+    "text": "OutSetWorldAlwaysVisible"
+  },
+  {
+    "rva": "0x40f81b7",
+    "text": "SetLayerVisibilityEnable"
+  },
+  {
+    "rva": "0x40f9cdc",
+    "text": "IsFeatureVisible"
+  },
+  {
+    "rva": "0x40f9cfc",
+    "text": "IsWindowVisible"
+  },
+  {
+    "rva": "0x40fb62a",
+    "text": "AbilityTargetDataFromHitResult"
+  },
+  {
+    "rva": "0x40fb649",
+    "text": "GetDataCountFromTargetData"
+  },
+  {
+    "rva": "0x40fb805",
+    "text": "GameplayAbilityTargetData"
+  },
+  {
+    "rva": "0x40fd83c",
+    "text": "bCheckVisibilitySkipTypes"
+  },
+  {
+    "rva": "0x40fd86a",
+    "text": "GetVisibilitySkipTypes"
+  },
+  {
+    "rva": "0x40fed2e",
+    "text": "SetMeshSectionVisible"
+  },
+  {
+    "rva": "0x41009cd",
+    "text": "SyncVisibleSlotArray"
+  },
+  {
+    "rva": "0x410196d",
+    "text": "ScrollBarVisibility"
+  },
+  {
+    "rva": "0x4107c6a",
+    "text": "RegisterAutoAimCandidateWithAimPoint"
+  },
+  {
+    "rva": "0x4107e9d",
+    "text": "AutoAimingConfig_OuterRange_DriveVehicleRate"
+  },
+  {
+    "rva": "0x4107eca",
+    "text": "AutoAimingConfig_InnerRange_SpeedRateSight"
+  },
+  {
+    "rva": "0x4109ed6",
+    "text": "AcceptableOcclusionTypeArray"
+  },
+  {
+    "rva": "0x4109fda",
+    "text": "EAIMoveToOcclusionMovingPoseType"
+  },
+  {
+    "rva": "0x410af6f",
+    "text": "bAnchorSpawnVisible"
+  },
+  {
+    "rva": "0x410ee2a",
+    "text": "AmbientOcclusionTextureSize"
+  },
+  {
+    "rva": "0x410f518",
+    "text": "AmbientOcclusionIntensity"
+  },
+  {
+    "rva": "0x410fab5",
+    "text": "VisibilityCellSize"
+  },
+  {
+    "rva": "0x4110405",
+    "text": "SetIsVirtualKeyboardVisible"
+  },
+  {
+    "rva": "0x4116735",
+    "text": "InvisibleWallDynamic"
+  },
+  {
+    "rva": "0x4117311",
+    "text": "bLostAutoAimTarget"
+  },
+  {
+    "rva": "0x411733c",
+    "text": "OnAutoAimLockStateDelegate"
+  },
+  {
+    "rva": "0x41195cc",
+    "text": "TagIsVisible"
+  },
+  {
+    "rva": "0x4119982",
+    "text": "NearestEnemyVisibleElapsedTime"
+  },
+  {
+    "rva": "0x411a768",
+    "text": "PVSInvisibleAfterKeyTime"
+  },
+  {
+    "rva": "0x411e37a",
+    "text": "AutoAimParams"
+  },
+  {
+    "rva": "0x411e5c6",
+    "text": "AutoAimingConfig_ScopeRange_OpeningRate"
+  },
+  {
+    "rva": "0x411f9cb",
+    "text": "InvisibleZombieUseTimes"
+  },
+  {
+    "rva": "0x412056d",
+    "text": "OutNearestEnemyPawnInVisible"
+  },
+  {
+    "rva": "0x41205fc",
+    "text": "EAIAdvFindOcclusionPointPoseType::Occlusion_PoseBush"
+  },
+  {
+    "rva": "0x412071f",
+    "text": "EAIMoveToOcclusionPoseType::PoseProne"
+  },
+  {
+    "rva": "0x4120745",
+    "text": "EAIMoveToOcclusionPoseType"
+  },
+  {
+    "rva": "0x41260a1",
+    "text": "bOverride_AmbientOcclusionFadeRadius"
+  },
+  {
+    "rva": "0x41262ef",
+    "text": "bUseComplexCollisionForOcclusion"
+  },
+  {
+    "rva": "0x4126408",
+    "text": "OcclusionCullingVertex"
+  },
+  {
+    "rva": "0x412a669",
+    "text": "VisibleTime"
+  },
+  {
+    "rva": "0x412cd79",
+    "text": "InvisibleWall"
+  },
+  {
+    "rva": "0x412dab2",
+    "text": "bNotifyWithMeshVisibility"
+  },
+  {
+    "rva": "0x412e7f8",
+    "text": "IsVisible"
+  },
+  {
+    "rva": "0x4137125",
+    "text": "NearestEnemyVisibleMemoryTime"
+  },
+  {
+    "rva": "0x41371d4",
+    "text": "EAIAdvFindOcclusionPointPoseType::Occlusion_PoseProne"
+  },
+  {
+    "rva": "0x41372b1",
+    "text": "EAIMoveToOcclusionSearchBestOcclusionMethod::NearToSelf"
+  },
+  {
+    "rva": "0x413a0c1",
+    "text": "LPVDirectionalOcclusionIntensity"
+  },
+  {
+    "rva": "0x413a0e2",
+    "text": "bOverride_LPVDirectionalOcclusionIntensity"
+  },
+  {
+    "rva": "0x413af0d",
+    "text": "CanBeOccluded"
+  },
+  {
+    "rva": "0x413b0b3",
+    "text": "FoliageOcclusionBounds"
+  },
+  {
+    "rva": "0x413c12b",
+    "text": "VisibleLayer_3"
+  },
+  {
+    "rva": "0x413c13a",
+    "text": "VisibleLayer_4"
+  },
+  {
+    "rva": "0x413c1fe",
+    "text": "bVisibilityAided"
+  },
+  {
+    "rva": "0x413c7ff",
+    "text": "bAlwaysAvailableOccluder"
+  },
+  {
+    "rva": "0x413c818",
+    "text": "bOnlyAsOccluder"
+  },
+  {
+    "rva": "0x413c958",
+    "text": "SRTDefaultOcclusion"
+  },
+  {
+    "rva": "0x413cc4a",
+    "text": "SetMinOcclusion"
+  },
+  {
+    "rva": "0x413cc5a",
+    "text": "OcclusionMaxDistance"
+  },
+  {
+    "rva": "0x413cfcf",
+    "text": "bUseAmbientOcclusion"
+  },
+  {
+    "rva": "0x413d870",
+    "text": "CategoriesVisibility_Key"
+  },
+  {
+    "rva": "0x413dabc",
+    "text": "SetFeatureVisible"
+  },
+  {
+    "rva": "0x413f1bf",
+    "text": "AbilityTargetDataFromActor"
+  },
+  {
+    "rva": "0x413f1da",
+    "text": "DoesTargetDataContainActor"
+  },
+  {
+    "rva": "0x413f235",
+    "text": "GetTargetDataEndPointTransform"
+  },
+  {
+    "rva": "0x413f3aa",
+    "text": "OnTargetDataCancelledCallback"
+  },
+  {
+    "rva": "0x41465ad",
+    "text": "InvisibleAngle"
+  },
+  {
+    "rva": "0x41475ad",
+    "text": "InitTargetData"
+  },
+  {
+    "rva": "0x41480e7",
+    "text": "OnSmartBearerLayerVisibilityChanged__DelegateSignature"
+  },
+  {
+    "rva": "0x414b02d",
+    "text": "AutoAimSensitiveScreenRatio"
+  },
+  {
+    "rva": "0x414b0b7",
+    "text": "SetWeaponEntityVisibility"
+  },
+  {
+    "rva": "0x414b33f",
+    "text": "AutoAimingConfig_ScopeRange_LandingRate"
+  },
+  {
+    "rva": "0x414b367",
+    "text": "AutoAimingConfig_OuterRange_AdsorbMaxRange"
+  },
+  {
+    "rva": "0x414b392",
+    "text": "AutoAimingConfig_InnerRange_AdsorbMinRange"
+  },
+  {
+    "rva": "0x414b3bd",
+    "text": "AutoAimingConfig_InnerRange_FreeFallRate"
+  },
+  {
+    "rva": "0x414d22f",
+    "text": "EAIAdvFindOcclusionPointPoseType"
+  },
+  {
+    "rva": "0x414d250",
+    "text": "searchBestOcclusionMethod"
+  },
+  {
+    "rva": "0x414dfda",
+    "text": "bSendTraceResultsMessage"
+  },
+  {
+    "rva": "0x414e62d",
+    "text": "MeshVisibilityStates"
+  },
+  {
+    "rva": "0x41516b5",
+    "text": "ComponentIsVisibleFrom"
+  },
+  {
+    "rva": "0x41518c1",
+    "text": "AmbientOcclusion"
+  },
+  {
+    "rva": "0x41518e9",
+    "text": "PrecomputedVisibility"
+  },
+  {
+    "rva": "0x415dd41",
+    "text": "UpdateMapMarkVisibility"
+  },
+  {
+    "rva": "0x415df66",
+    "text": "EDisplayPolicy::Visibility"
+  },
+  {
+    "rva": "0x415ff4b",
+    "text": "EMeleeAutoAimType"
+  },
+  {
+    "rva": "0x41609eb",
+    "text": "BroadcastUISetWidgetVisibility"
+  },
+  {
+    "rva": "0x4160ced",
+    "text": "PetVisibilityInfo"
+  },
+  {
+    "rva": "0x4160f66",
+    "text": "bCanSee"
+  },
+  {
+    "rva": "0x4167ffb",
+    "text": "bOverride_LPVSecondaryOcclusionIntensity"
+  },
+  {
+    "rva": "0x41680a0",
+    "text": "MultiVisibilityTextureData_Key"
+  },
+  {
+    "rva": "0x416812f",
+    "text": "bUseLandscapeForCullingInvisibleHLODVertices"
+  },
+  {
+    "rva": "0x416894d",
+    "text": "SetVisibility"
+  },
+  {
+    "rva": "0x416a27b",
+    "text": "bAmbientOcclusionMap"
+  },
+  {
+    "rva": "0x416ab42",
+    "text": "bOverride_AmbientOcclusionMipThreshold"
+  },
+  {
+    "rva": "0x416ad87",
+    "text": "bEnableOcclusion"
+  },
+  {
+    "rva": "0x416b067",
+    "text": "LocalOcclusionDistribution"
+  },
+  {
+    "rva": "0x416d2fb",
+    "text": "GetActorsFromTargetData"
+  },
+  {
+    "rva": "0x416d313",
+    "text": "GetTargetDataEndPoint"
+  },
+  {
+    "rva": "0x417748f",
+    "text": "ChangeWeaponVisibility__DelegateSignature"
+  },
+  {
+    "rva": "0x4177749",
+    "text": "AutoAimComp"
+  },
+  {
+    "rva": "0x4179831",
+    "text": "RefreshWeaponVisibleWithCameraMode"
+  },
+  {
+    "rva": "0x41798a5",
+    "text": "AutoAimingConfig_ScopeRange_AdsorbMinAttenuationDis"
+  },
+  {
+    "rva": "0x41798d9",
+    "text": "AutoAimingConfig_OuterRange_RangeRate"
+  },
+  {
+    "rva": "0x41798ff",
+    "text": "AutoAimingConfig_InnerRange_DyingRate"
+  },
+  {
+    "rva": "0x417bdeb",
+    "text": "EAIAdvFindOcclusionPointSearchBestOcclusionMethod"
+  },
+  {
+    "rva": "0x417bef8",
+    "text": "EAIMoveToOcclusionSearchBestOcclusionMethod::RandomOfSelf"
+  },
+  {
+    "rva": "0x417ec63",
+    "text": "ESlateVisibility::SelfHitTestInvisible"
+  },
+  {
+    "rva": "0x417ed10",
+    "text": "WidgetVisible"
+  },
+  {
+    "rva": "0x417ed1e",
+    "text": "bVisiblePass"
+  },
+  {
+    "rva": "0x417fc39",
+    "text": "SetOcclusionMaskDarkness"
+  },
+  {
+    "rva": "0x41804b7",
+    "text": "bInitiallyVisible"
+  },
+  {
+    "rva": "0x4180df3",
+    "text": "SetOccludedDyeingColor"
+  },
+  {
+    "rva": "0x4180f43",
+    "text": "AmbientOcclusionRadius"
+  },
+  {
+    "rva": "0x4180f9e",
+    "text": "bOverride_AmbientOcclusionQuality"
+  },
+  {
+    "rva": "0x418138f",
+    "text": "bUseAsOccluderIgnoreMobility"
+  },
+  {
+    "rva": "0x4181d19",
+    "text": "ESearchResultVisibleType"
+  },
+  {
+    "rva": "0x4181d5c",
+    "text": "MenuItemVisibility"
+  },
+  {
+    "rva": "0x4186261",
+    "text": "IsAABBVisible"
+  },
+  {
+    "rva": "0x4189392",
+    "text": "CheckTargetVisibility"
+  },
+  {
+    "rva": "0x418ac88",
+    "text": "SetDoorBtnVisibility"
+  },
+  {
+    "rva": "0x418b8fa",
+    "text": "UISetWidgetVisibility"
+  },
+  {
+    "rva": "0x418c154",
+    "text": "IconVisibleArray"
+  },
+  {
+    "rva": "0x418df63",
+    "text": "EVehiclVisibleErrorType"
+  },
+  {
+    "rva": "0x418f31a",
+    "text": "EAutoAimType::OnlyFire"
+  },
+  {
+    "rva": "0x4190b63",
+    "text": "IsCurrentWeaponSupportAutoAim"
+  },
+  {
+    "rva": "0x4196014",
+    "text": "VisibilityData"
+  },
+  {
+    "rva": "0x4197006",
+    "text": "UseOcclusionHighlight"
+  },
+  {
+    "rva": "0x4197bf5",
+    "text": "VisibilityTrack"
+  },
+  {
+    "rva": "0x4198744",
+    "text": "OverrideOccludedDyeingColorMaterial"
+  },
+  {
+    "rva": "0x41988a5",
+    "text": "DepthOfFieldOcclusion"
+  },
+  {
+    "rva": "0x41988e5",
+    "text": "bOverride_AmbientOcclusionMipBlend"
+  },
+  {
+    "rva": "0x4198ee8",
+    "text": "SetSkyLightCloudBottomOcclusion"
+  },
+  {
+    "rva": "0x419b4bc",
+    "text": "TargetDataHasOrigin"
+  },
+  {
+    "rva": "0x419b68e",
+    "text": "GameplayTargetDataFilterHandle"
+  },
+  {
+    "rva": "0x419da3f",
+    "text": "CheckShouldSkipByVisibility"
+  },
+  {
+    "rva": "0x41a02bb",
+    "text": "visible"
+  },
+  {
+    "rva": "0x41a08c0",
+    "text": "SetMeshVisibleByID"
+  },
+  {
+    "rva": "0x41a1a5d",
+    "text": "BP_RefreshCollisionAndVisible"
+  },
+  {
+    "rva": "0x41a6a90",
+    "text": "DoRefreshCameraVisible"
+  },
+  {
+    "rva": "0x41a7643",
+    "text": "AutoAimBreakThroughStart"
+  },
+  {
+    "rva": "0x41a78c9",
+    "text": "AutoAimingConfig_DistanceCurvePath"
+  },
+  {
+    "rva": "0x41a78ec",
+    "text": "AutoAimingConfig_OuterRange_AdsorbMaxAttenuationDis"
+  },
+  {
+    "rva": "0x41a85a8",
+    "text": "InVisibleToolbar"
+  },
+  {
+    "rva": "0x41a8c7f",
+    "text": "bAutoAimAt"
+  },
+  {
+    "rva": "0x41a9229",
+    "text": "GetVisibleLevelsLoadedName"
+  },
+  {
+    "rva": "0x41a9578",
+    "text": "OcclusionPadAngle"
+  },
+  {
+    "rva": "0x41a95d7",
+    "text": "EnemyInfoList"
+  },
+  {
+    "rva": "0x41a96be",
+    "text": "DoNotUseCurrentOcclusionFirst"
+  },
+  {
+    "rva": "0x41ac24f",
+    "text": "bOverride_LPVDiffuseOcclusionIntensity"
+  },
+  {
+    "rva": "0x41ac321",
+    "text": "VisibilityLayerChannel"
+  },
+  {
+    "rva": "0x41ada92",
+    "text": "OcclusionDepthRange"
+  },
+  {
+    "rva": "0x41ae1e9",
+    "text": "LevelStreamingVisibilityStatus__DelegateSignature"
+  },
+  {
+    "rva": "0x41ae4c2",
+    "text": "SetLayerVisibilityValue"
+  },
+  {
+    "rva": "0x41ae7b1",
+    "text": "bCollideOnlyIfVisible"
+  },
+  {
+    "rva": "0x41ae8b8",
+    "text": "OcclusionBoundsMethod"
+  },
+  {
+    "rva": "0x41aebaf",
+    "text": "bTreatAsBackgroundForOcclusion"
+  },
+  {
+    "rva": "0x41aed43",
+    "text": "AmbientOcclusionMipBlend"
+  },
+  {
+    "rva": "0x41aed5c",
+    "text": "AmbientOcclusionQuality"
+  },
+  {
+    "rva": "0x41af300",
+    "text": "SkyLightCloudBottomOcclusion"
+  },
+  {
+    "rva": "0x41b7f43",
+    "text": "RevertAvatarVisibilityReasons"
+  },
+  {
+    "rva": "0x41b914d",
+    "text": "IsInstVisible"
+  },
+  {
+    "rva": "0x41b92b4",
+    "text": "bNewVisible"
+  },
+  {
+    "rva": "0x41ba594",
+    "text": "UpdateSafeZoneGuideVisibilityAndPosition"
+  },
+  {
+    "rva": "0x41ba9fa",
+    "text": "EnableDynmaicOccluder"
+  },
+  {
+    "rva": "0x41bc21c",
+    "text": "VisibleErrorType"
+  },
+  {
+    "rva": "0x41bc4cc",
+    "text": "OnSmartBearerLayerVisibilityChanged"
+  },
+  {
+    "rva": "0x41bcb9f",
+    "text": "IsVisibility"
+  },
+  {
+    "rva": "0x41bd2d8",
+    "text": "RPC_Client_UISetWidgetVisibility"
+  },
+  {
+    "rva": "0x41bd2f9",
+    "text": "RPC_OwnerClient_SetCurrentWeaponVisible"
+  },
+  {
+    "rva": "0x41bf057",
+    "text": "GetNearestAutoAimEnemy"
+  },
+  {
+    "rva": "0x41bf237",
+    "text": "AutoAimingConfig_InnerRange_AdsorbMaxAttenuationDis"
+  },
+  {
+    "rva": "0x41bf39e",
+    "text": "ResetVisibleLevels"
+  },
+  {
+    "rva": "0x41c1097",
+    "text": "ServerUpdateLevelVisibility"
+  },
+  {
+    "rva": "0x41c1466",
+    "text": "PeekShootingCheckAtOcclusionOfOcclusionRadius"
+  },
+  {
+    "rva": "0x41c1494",
+    "text": "bEnableSmokingVisibilityCheck"
+  },
+  {
+    "rva": "0x41c621d",
+    "text": "bShouldBeVisibleInEditor"
+  },
+  {
+    "rva": "0x41c6236",
+    "text": "SVB_LoadingAndVisibility"
+  },
+  {
+    "rva": "0x41c64a8",
+    "text": "VisibleLayer_Default"
+  },
+  {
+    "rva": "0x41c64bd",
+    "text": "VisibleLayer_6"
+  },
+  {
+    "rva": "0x41c6d1c",
+    "text": "bOverride_AmbientOcclusionMipScale"
+  },
+  {
+    "rva": "0x41c7247",
+    "text": "MaxOcclusionDistance"
+  },
+  {
+    "rva": "0x41c98e7",
+    "text": "OnTargetDataReadyCallback"
+  },
+  {
+    "rva": "0x41c9a42",
+    "text": "GameplayAbilityTargetDataHandle"
+  },
+  {
+    "rva": "0x41cab87",
+    "text": "VisiblePhysicsBatchActors"
+  },
+  {
+    "rva": "0x41caf0e",
+    "text": "IsWidgetVisibleWithUICondition"
+  },
+  {
+    "rva": "0x41d729f",
+    "text": "EAIAdvFindOcclusionPointSearchBestOcclusionMethod::Method_NearToTarget"
+  },
+  {
+    "rva": "0x41d72e6",
+    "text": "ChooseTagOcclusionEnable"
+  },
+  {
+    "rva": "0x41d9ea3",
+    "text": "LPVDirectionalOcclusionRadius"
+  },
+  {
+    "rva": "0x41d9f34",
+    "text": "OccluderMeshDataPath"
+  },
+  {
+    "rva": "0x41db5d8",
+    "text": "ECC_Visibility"
+  },
+  {
+    "rva": "0x41dc3d5",
+    "text": "bNewShouldBeVisible"
+  },
+  {
+    "rva": "0x41dc830",
+    "text": "bOverride_AmbientOcclusionStaticFraction"
+  },
+  {
+    "rva": "0x41dc9e5",
+    "text": "EBoneVisibilityStatus"
+  },
+  {
+    "rva": "0x41dca78",
+    "text": "SetOcclusionExponent"
+  },
+  {
+    "rva": "0x41dcb09",
+    "text": "OcclusionVolumeAttenuation"
+  },
+  {
+    "rva": "0x41dd553",
+    "text": "UpdateSearchButtonVisible"
+  },
+  {
+    "rva": "0x41dd5c2",
+    "text": "ESearchResultVisibleType::SRVT_OnlyGraphs"
+  },
+  {
+    "rva": "0x41df598",
+    "text": "WaitTargetDataDelegate__DelegateSignature"
+  },
+  {
+    "rva": "0x41e744d",
+    "text": "OnWeaponVisibilityRestoreTagChanged"
+  },
+  {
+    "rva": "0x41e7548",
+    "text": "TagIsVisible_Key"
+  },
+  {
+    "rva": "0x41e8794",
+    "text": "PVSVisibleBeforeKeyTime"
+  },
+  {
+    "rva": "0x41ec736",
+    "text": "AutoAimTargetSelector"
+  },
+  {
+    "rva": "0x41ec74c",
+    "text": "AutoAimBreakThroughSensitiveScale"
+  },
+  {
+    "rva": "0x41ec99c",
+    "text": "AutoAimingConfig_OuterRange_AdsorbMinRange"
+  },
+  {
+    "rva": "0x41ec9c7",
+    "text": "AutoAimingConfig_InnerRange_RangeRate"
+  },
+  {
+    "rva": "0x41eee96",
+    "text": "AddAICheckVisibilityFilteredActor"
+  },
+  {
+    "rva": "0x41f1967",
+    "text": "LPVDiffuseOcclusionIntensity"
+  },
+  {
+    "rva": "0x41f19ae",
+    "text": "VisibleVisibilityLayer"
+  },
+  {
+    "rva": "0x41fa425",
+    "text": "bVisibleOnly"
+  },
+  {
+    "rva": "0x41fb885",
+    "text": "CheckItemSpotVisibility"
+  },
+  {
+    "rva": "0x41fc446",
+    "text": "GetOcclusionPoint"
+  },
+  {
+    "rva": "0x41fc97a",
+    "text": "HandleSlotVisibleChanged"
+  },
+  {
+    "rva": "0x42012f8",
+    "text": "EAutoAimType::TouchOrFire"
+  },
+  {
+    "rva": "0x42071a4",
+    "text": "bCheckMeshVisibility"
+  },
+  {
+    "rva": "0x4207a1c",
+    "text": "LPVDirectionalOcclusionFadeRange"
+  },
+  {
+    "rva": "0x420802c",
+    "text": "ESlateVisibility"
+  },
+  {
+    "rva": "0x4209155",
+    "text": "EDrawDyeingMode::EDDM_OCCLUDED"
+  },
+  {
+    "rva": "0x42099e2",
+    "text": "MultiScatteringOcclusion"
+  },
+  {
+    "rva": "0x420a0fa",
+    "text": "SetIdeaOutlineOcclusionColor"
+  },
+  {
+    "rva": "0x420a6c8",
+    "text": "bCanBeOccludeed"
+  },
+  {
+    "rva": "0x420cbca",
+    "text": "FilterTargetData"
+  },
+  {
+    "rva": "0x420dbc3",
+    "text": "VisibilityTraceStartZ"
+  },
+  {
+    "rva": "0x420dbd9",
+    "text": "VisibilityTraceChannel"
+  },
+  {
+    "rva": "0x420f01b",
+    "text": "SetAppPageVisibility"
+  },
+  {
+    "rva": "0x42113ca",
+    "text": "UActorFilter_Visibility_Filter"
+  },
+  {
+    "rva": "0x42166d8",
+    "text": "MeleeAutoAimType"
+  },
+  {
+    "rva": "0x421860f",
+    "text": "SetActorVisible"
+  },
+  {
+    "rva": "0x42190ae",
+    "text": "VisibleActor"
+  },
+  {
+    "rva": "0x4219405",
+    "text": "AutoAimingConfig_OuterRange_SpeedRateSight"
+  },
+  {
+    "rva": "0x42194d2",
+    "text": "VisibleRadius"
+  },
+  {
+    "rva": "0x421980c",
+    "text": "OnTickVisibilityChange__DelegateSignature"
+  },
+  {
+    "rva": "0x421b007",
+    "text": "SmokingVisibilityCheckTag"
+  },
+  {
+    "rva": "0x421c347",
+    "text": "IsMeshVisible"
+  },
+  {
+    "rva": "0x421c355",
+    "text": "OnRep_MeshVisibilityStates"
+  },
+  {
+    "rva": "0x421ddb6",
+    "text": "EWidgetVisible::MaxVisible"
+  },
+  {
+    "rva": "0x421e073",
+    "text": "bUseAsOccluder"
+  },
+  {
+    "rva": "0x421e5fa",
+    "text": "InVisibility"
+  },
+  {
+    "rva": "0x421f4d5",
+    "text": "SetEnableLightShaftOcclusion"
+  },
+  {
+    "rva": "0x421ff54",
+    "text": "VisibleLayer_7"
+  },
+  {
+    "rva": "0x421fff6",
+    "text": "VisibilityAggressiveness"
+  },
+  {
+    "rva": "0x4220516",
+    "text": "bInCanBeOccluded"
+  },
+  {
+    "rva": "0x4220538",
+    "text": "bIdeaOutlineOcclusionHighlight"
+  },
+  {
+    "rva": "0x42206ff",
+    "text": "bOverride_AmbientOcclusionPower"
+  },
+  {
+    "rva": "0x422071f",
+    "text": "bOverride_AmbientOcclusionFadeDistance"
+  },
+  {
+    "rva": "0x4227e69",
+    "text": "OccludePosInvalidDis"
+  },
+  {
+    "rva": "0x4228065",
+    "text": "AIOcclusionFilePath"
+  },
+  {
+    "rva": "0x4228ec4",
+    "text": "bModiVisible"
+  },
+  {
+    "rva": "0x42290df",
+    "text": "OnAvatarVisibleChanged"
+  },
+  {
+    "rva": "0x422913d",
+    "text": "OnOwnerAvatarVisibleChanged"
+  },
+  {
+    "rva": "0x42292c8",
+    "text": "InAttachedEntityVisibility"
+  },
+  {
+    "rva": "0x4229574",
+    "text": "NewScrollBarVisibility"
+  },
+  {
+    "rva": "0x4229957",
+    "text": "SetAvatarVisible"
+  },
+  {
+    "rva": "0x422a361",
+    "text": "bShowCheckPropsMeshVisibleBox"
+  },
+  {
+    "rva": "0x422a621",
+    "text": "SetImageVisibility"
+  },
+  {
+    "rva": "0x422aa18",
+    "text": "AutoAimingConfig"
+  },
+  {
+    "rva": "0x422accf",
+    "text": "bApplyVisibleTrace"
+  },
+  {
+    "rva": "0x422ad42",
+    "text": "DynamicOccluder"
+  },
+  {
+    "rva": "0x422c202",
+    "text": "EMeleeAutoAimType::AllTime"
+  },
+  {
+    "rva": "0x422ce8a",
+    "text": "SetPetVisibility"
+  },
+  {
+    "rva": "0x422efa0",
+    "text": "AutoAimingConfig_ScopeRange_SpeedRate"
+  },
+  {
+    "rva": "0x4230704",
+    "text": "ERealtimePunishType::AutoAim"
+  },
+  {
+    "rva": "0x4230de5",
+    "text": "EAIOcclusionPointPoseType::Occlusion_PoseProne"
+  },
+  {
+    "rva": "0x4230eec",
+    "text": "SmokingVisibilityCheckChannel"
+  },
+  {
+    "rva": "0x4230f99",
+    "text": "CurrentOcclusionRadius"
+  },
+  {
+    "rva": "0x423103d",
+    "text": "EAIMoveToOcclusionMovingPoseType::MovingPoseType_Normal"
+  },
+  {
+    "rva": "0x4236764",
+    "text": "AmbientOcclusionFadeDistance"
+  },
+  {
+    "rva": "0x4236781",
+    "text": "AmbientOcclusionStaticFraction"
+  },
+  {
+    "rva": "0x4236db3",
+    "text": "DirectIlluminationOcclusionFraction"
+  },
+  {
+    "rva": "0x4236df7",
+    "text": "LocalOcclusionDilation"
+  },
+  {
+    "rva": "0x4236e0e",
+    "text": "LocalOcclusionRes"
+  },
+  {
+    "rva": "0x4236e20",
+    "text": "LocalOcclusionFallOff"
+  },
+  {
+    "rva": "0x4236e36",
+    "text": "bUseLocalOcclusion"
+  },
+  {
+    "rva": "0x423789c",
+    "text": "SearchResultVisibleType"
+  },
+  {
+    "rva": "0x42378ec",
+    "text": "CategoriesVisibility"
+  },
+  {
+    "rva": "0x4238ed3",
+    "text": "SetOcclusionScalingFactor"
+  },
+  {
+    "rva": "0x4239388",
+    "text": "AbilityTargetDataFromActorArray"
+  },
+  {
+    "rva": "0x4239558",
+    "text": "ETargetDataFilterSelf::Type"
+  },
+  {
+    "rva": "0x423ea1c",
+    "text": "OuterReasonedVisibility"
+  },
+  {
+    "rva": "0x423f4a1",
+    "text": "visibleNum"
+  },
+  {
+    "rva": "0x423f63d",
+    "text": "TemporarySetHidedBonesVisibility"
+  },
+  {
+    "rva": "0x423fc4b",
+    "text": "OcclusionRefreshInterval"
+  },
+  {
+    "rva": "0x42402e6",
+    "text": "AddTimerToSetModelActorVisible"
+  },
+  {
+    "rva": "0x4240b3b",
+    "text": "AutoExplodeVisibleAreaDegree"
+  },
+  {
+    "rva": "0x4246226",
+    "text": "AutoAimingConfig_OuterRange_InVehicleRate"
+  },
+  {
+    "rva": "0x424684a",
+    "text": "bVisibleWithLOD"
+  },
+  {
+    "rva": "0x42480c4",
+    "text": "EAIOcclusionPointPoseType"
+  },
+  {
+    "rva": "0x4248323",
+    "text": "EAIMoveToOcclusionPoseType::PoseStand"
+  },
+  {
+    "rva": "0x424b760",
+    "text": "bOverride_LPVSpecularOcclusionExponent"
+  },
+  {
+    "rva": "0x424b787",
+    "text": "bOverride_LPVDiffuseOcclusionExponent"
+  },
+  {
+    "rva": "0x424b822",
+    "text": "__LANDSCAPE_VISIBILITY__"
+  },
+  {
+    "rva": "0x424dd0a",
+    "text": "SetOverrideOccludedDyeingColorMaterial"
+  },
+  {
+    "rva": "0x424e41e",
+    "text": "LocalOcclusionMultiple"
+  },
+  {
+    "rva": "0x424ea25",
+    "text": "CurrentVisibleBlockNum"
+  },
+  {
+    "rva": "0x424f0c0",
+    "text": "DumpAIOcclusion"
+  },
+  {
+    "rva": "0x4250c36",
+    "text": "ServerSetReplicatedTargetDataCancelled"
+  },
+  {
+    "rva": "0x4250d3c",
+    "text": "OnTargetDataReplicatedCallback"
+  },
+  {
+    "rva": "0x4250d87",
+    "text": "OptionalTargetData"
+  },
+  {
+    "rva": "0x4258d47",
+    "text": "bBoxVisibility"
+  },
+  {
+    "rva": "0x4259407",
+    "text": "CurCheckSeekAndGetLockTargetVisibilityInterval"
+  },
+  {
+    "rva": "0x425cfe9",
+    "text": "EAutoAimRangeType"
+  },
+  {
+    "rva": "0x425cffb",
+    "text": "AutoAimSensitiveAngle"
+  },
+  {
+    "rva": "0x425d011",
+    "text": "AC_AutoAimBreakThroughRatio"
+  },
+  {
+    "rva": "0x425d1ff",
+    "text": "AutoAimingConfig_OuterRange_Speed"
+  },
+  {
+    "rva": "0x425d221",
+    "text": "AutoAimingConfig_InnerRange_OpeningRate"
+  },
+  {
+    "rva": "0x425f38c",
+    "text": "EAIOcclusionPointPoseType::Occlusion_PoseBush"
+  },
+  {
+    "rva": "0x4267e10",
+    "text": "GetHitResultFromTargetData"
+  },
+  {
+    "rva": "0x4267eb9",
+    "text": "ApplyRootMotionMoveToTargetDataActorForce"
+  },
+  {
+    "rva": "0x42680db",
+    "text": "ETargetDataFilterSelf"
+  },
+  {
+    "rva": "0x426d353",
+    "text": "AutoAimInfo"
+  },
+  {
+    "rva": "0x426d4b4",
+    "text": "VisibilityType"
+  },
+  {
+    "rva": "0x426e10d",
+    "text": "SetAttachedEntityVisibility"
+  },
+  {
+    "rva": "0x426f0b0",
+    "text": "bCheckComponentVisible"
+  },
+  {
+    "rva": "0x4271a9a",
+    "text": "ComponentIsVisibleFromExplosionWithEndPosition"
+  },
+  {
+    "rva": "0x42769c5",
+    "text": "EAIOcclusionPointPoseType::Occlusion_PoseCrouch"
+  },
+  {
+    "rva": "0x4276ae2",
+    "text": "OutNearestEnemyPawnVisible"
+  },
+  {
+    "rva": "0x4276b20",
+    "text": "EAIAdvFindOcclusionPointSearchBestOcclusionMethod::Method_NearToSelf"
+  },
+  {
+    "rva": "0x4276c22",
+    "text": "EAIMoveToOcclusionPoseType::PoseBush"
+  },
+  {
+    "rva": "0x4276e51",
+    "text": "RemoveAICheckVisibilityFilteredActor"
+  },
+  {
+    "rva": "0x427892e",
+    "text": "OnChatUIVisibleChange"
+  },
+  {
+    "rva": "0x427a539",
+    "text": "IsOverHitTestVisibleWidget"
+  },
+  {
+    "rva": "0x427c86a",
+    "text": "InOcclusionContrast"
+  },
+  {
+    "rva": "0x427ca8c",
+    "text": "EVisibilityAggressiveness"
+  },
+  {
+    "rva": "0x427d422",
+    "text": "BlockItemsVisibility"
+  },
+  {
+    "rva": "0x427e27a",
+    "text": "VISIBLE"
+  },
+  {
+    "rva": "0x427f420",
+    "text": "ETargetDataFilterSelf::TDFS_NoOthers"
+  },
+  {
+    "rva": "0x427f445",
+    "text": "GameplayTargetDataFilter"
+  },
+  {
+    "rva": "0x4286233",
+    "text": "bPriorityCullVisible"
+  },
+  {
+    "rva": "0x4286586",
+    "text": "bVoiceVisibleTeammate"
+  },
+  {
+    "rva": "0x4287302",
+    "text": "OcclusionInfos"
+  },
+  {
+    "rva": "0x428771e",
+    "text": "AddDynamicOccluder"
+  },
+  {
+    "rva": "0x4288277",
+    "text": "OnOwnerLobbyCharWeaponVisibilityChange"
+  },
+  {
+    "rva": "0x4289d5b",
+    "text": "OnRep_AutoAimType"
+  },
+  {
+    "rva": "0x428a062",
+    "text": "bIsAutoAimEnabled"
+  },
+  {
+    "rva": "0x428ace1",
+    "text": "bIsWorldMapVisible"
+  },
+  {
+    "rva": "0x428bd65",
+    "text": "AutoAimingConfig_ScopeRange_ProneRate"
+  },
+  {
+    "rva": "0x4290ec8",
+    "text": "ESlateVisibility::Visible"
+  },
+  {
+    "rva": "0x429605a",
+    "text": "WaitTargetData"
+  },
+  {
+    "rva": "0x43a18b1",
+    "text": "ZN7vraudio21ResonanceAudioApiImpl32SetSoundObjectOcclusionIntensityEifEUlvE_"
+  },
+  {
+    "rva": "0x43a1ef0",
+    "text": "St23_Sp_counted_ptr_inplaceIN7vraudio13OcclusionNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE"
+  },
+  {
+    "rva": "0x43aaf40",
+    "text": "N7vraudio13OcclusionNodeE"
+  }
+]

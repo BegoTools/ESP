@@ -1,0 +1,181 @@
+{
+  "descriptor_record_count": 566,
+  "equal_record_count": 566,
+  "different_records": [],
+  "selected_offset_records": [
+    {
+      "name": "AcknowledgedPawn",
+      "descriptor_rva": "0xe8c6fb8",
+      "declared_offset": "0x528",
+      "record96_equal": true
+    },
+    {
+      "name": "PlayerCameraManager",
+      "descriptor_rva": "0xe8c6ef8",
+      "declared_offset": "0x548",
+      "record96_equal": true
+    },
+    {
+      "name": "RootComponent",
+      "descriptor_rva": "0xe75cc78",
+      "declared_offset": "0x208",
+      "record96_equal": true
+    },
+    {
+      "name": "RelativeLocation",
+      "descriptor_rva": "0xe8f26c8",
+      "declared_offset": "0x1e4",
+      "record96_equal": true
+    },
+    {
+      "name": "Health",
+      "descriptor_rva": "0xdbb6180",
+      "declared_offset": "0xe60",
+      "record96_equal": true
+    },
+    {
+      "name": "HealthMax",
+      "descriptor_rva": "0xdbb6148",
+      "declared_offset": "0xe64",
+      "record96_equal": true
+    },
+    {
+      "name": "TeamID",
+      "descriptor_rva": "0xdf89b88",
+      "declared_offset": "0x998",
+      "record96_equal": true
+    },
+    {
+      "name": "PlayerName",
+      "descriptor_rva": "0xdf89c68",
+      "declared_offset": "0x960",
+      "record96_equal": true
+    },
+    {
+      "name": "CameraCache",
+      "descriptor_rva": "0xe8bea60",
+      "declared_offset": "0x520",
+      "record96_equal": true
+    },
+    {
+      "name": "FOV",
+      "descriptor_rva": "0xe797ce0",
+      "declared_offset": "0x24",
+      "record96_equal": true
+    },
+    {
+      "name": "CapsuleHalfHeight",
+      "descriptor_rva": "0xe79b338",
+      "declared_offset": "0x9f8",
+      "record96_equal": true
+    },
+    {
+      "name": "HPMax",
+      "descriptor_rva": "0xdd52688",
+      "declared_offset": "0x350",
+      "record96_equal": true
+    },
+    {
+      "name": "DefineID",
+      "descriptor_rva": "0xda1a4c0",
+      "declared_offset": "0x5f8",
+      "record96_equal": true
+    },
+    {
+      "name": "Levels",
+      "descriptor_rva": "0xe935a30",
+      "declared_offset": "0x440",
+      "record96_equal": true
+    },
+    {
+      "name": "NetDriver",
+      "descriptor_rva": "0xe936100",
+      "declared_offset": "0x38",
+      "record96_equal": true
+    },
+    {
+      "name": "ServerConnection",
+      "descriptor_rva": "0xe88bd78",
+      "declared_offset": "0x78",
+      "record96_equal": true
+    },
+    {
+      "name": "PlayerController",
+      "descriptor_rva": "0xe8bc308",
+      "declared_offset": "0x30",
+      "record96_equal": true
+    }
+  ],
+  "bool_callbacks": [
+    {
+      "name": "UAECharacter_bIsAI_setbit",
+      "rva": "0x7f63250",
+      "bytes_equal": true,
+      "hex": "2800805208002939c0035fd62800805208c02639c0035fd6ff4301d1fd7b03a9",
+      "assembly": [
+        "0x7f63250: mov w8, #1",
+        "0x7f63254: strb w8, [x0, #0xa40]",
+        "0x7f63258: ret ",
+        "0x7f6325c: mov w8, #1",
+        "0x7f63260: strb w8, [x0, #0x9b0]",
+        "0x7f63264: ret ",
+        "0x7f63268: sub sp, sp, #0x50",
+        "0x7f6326c: stp x29, x30, [sp, #0x30]"
+      ]
+    },
+    {
+      "name": "Actor_bHidden_setbit",
+      "rva": "0xaf08f14",
+      "bytes_equal": true,
+      "hex": "08d041790801003208d00179c0035fd62800805208800339c0035fd6ff4301d1",
+      "assembly": [
+        "0xaf08f14: ldrh w8, [x0, #0xe8]",
+        "0xaf08f18: orr w8, w8, #1",
+        "0xaf08f1c: strh w8, [x0, #0xe8]",
+        "0xaf08f20: ret ",
+        "0xaf08f24: mov w8, #1",
+        "0xaf08f28: strb w8, [x0, #0xe0]",
+        "0xaf08f2c: ret ",
+        "0xaf08f30: sub sp, sp, #0x50"
+      ]
+    }
+  ],
+  "anchor_regions": [
+    {
+      "name": "GameWorld",
+      "address": "0xcec53ec",
+      "size": 256,
+      "byte_equal": false
+    },
+    {
+      "name": "GameInstance",
+      "address": "0xcec5fe8",
+      "size": 208,
+      "byte_equal": false
+    },
+    {
+      "name": "WorldContexts",
+      "address": "0xa858440",
+      "size": 256,
+      "byte_equal": true
+    },
+    {
+      "name": "NamesStateAccessor",
+      "address": "0x8be1bfc",
+      "size": 768,
+      "byte_equal": true
+    },
+    {
+      "name": "NamesEntryAccessor",
+      "address": "0x8be2ed8",
+      "size": 192,
+      "byte_equal": true
+    },
+    {
+      "name": "LevelActorsGetter",
+      "address": "0xa98c454",
+      "size": 144,
+      "byte_equal": false
+    }
+  ]
+}

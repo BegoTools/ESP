@@ -1,0 +1,44 @@
+{
+  "origin": {
+    "X": 32824.484,
+    "Y": 439901.1,
+    "Z": 592.34674
+  },
+  "ActorCount": 287,
+  "samples": [
+    {
+      "address": "0x7beb3b336480",
+      "class": "BP_Rifle_M762_Wrapper_C",
+      "object": "BP_Rifle_M762_Wrapper_C_Recycled",
+      "position": {
+        "X": 36641.7,
+        "Y": 434096.5,
+        "Z": 117.9
+      },
+      "hidden_byte": 97,
+      "hidden": true,
+      "item_type": 1,
+      "item_id": 101008,
+      "count": 1,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0
+    },
+    {
+      "address": "0x7beaa75d9a60",
+      "class": "BP_Ammo_762mm_Pickup_C",
+      "object": "BP_Ammo_762mm_Pickup_C_Recycled",
+      "position": {
+        "X": 32985.6,
+        "Y": 439483.2,
+        "Z": 485.1
+      },
+      "hidden_byte": 97,
+      "hidden": true,
+      "item_type": 3,
+      "item_id": 302001,
+      "count": 30,
+      "can_pick_up": 1,
+      "has_been_picked_up": 0
+    }
+  ]
+}

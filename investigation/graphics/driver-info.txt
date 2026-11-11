@@ -1,0 +1,5 @@
+AndroidEmulator.exe: no application override
+AndroidEmulatorEn.exe: no application override
+AndroidEmulatorEx.exe: no application override
+dnplayer.exe: no application override
+LdVBoxHeadless.exe: no application override

@@ -1,0 +1,97 @@
+{
+  "enum_name": "ESTExtraVehicleType",
+  "entry_count": 167,
+  "selected_values": [
+    {
+      "value": 2,
+      "name": "ESTExtraVehicleType::VT_Motorbike",
+      "name_number": 2
+    },
+    {
+      "value": 4,
+      "name": "ESTExtraVehicleType::VT_Motorbike_SideCart",
+      "name_number": 2
+    },
+    {
+      "value": 5,
+      "name": "ESTExtraVehicleType::VT_Dacia",
+      "name_number": 1
+    },
+    {
+      "value": 9,
+      "name": "ESTExtraVehicleType::VT_UAZ",
+      "name_number": 1
+    },
+    {
+      "value": 13,
+      "name": "ESTExtraVehicleType::VT_Buggy",
+      "name_number": 2
+    },
+    {
+      "value": 17,
+      "name": "ESTExtraVehicleType::VT_MiniBus",
+      "name_number": 2
+    },
+    {
+      "value": 26,
+      "name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 8
+    },
+    {
+      "value": 40,
+      "name": "ESTExtraVehicleType::VT_Mirado_Open",
+      "name_number": 5
+    },
+    {
+      "value": 45,
+      "name": "ESTExtraVehicleType::VT_Scooter",
+      "name_number": 0
+    },
+    {
+      "value": 49,
+      "name": "ESTExtraVehicleType::VT_TUK",
+      "name_number": 0
+    },
+    {
+      "value": 58,
+      "name": "ESTExtraVehicleType::VT_Motorglider",
+      "name_number": 0
+    },
+    {
+      "value": 65,
+      "name": "ESTExtraVehicleType::VT_ATV",
+      "name_number": 0
+    },
+    {
+      "value": 103,
+      "name": "ESTExtraVehicleType::VT_BigFoot",
+      "name_number": 0
+    },
+    {
+      "value": 105,
+      "name": "ESTExtraVehicleType::VT_CoupeRB",
+      "name_number": 0
+    },
+    {
+      "value": 108,
+      "name": "ESTExtraVehicleType::VT_UTV",
+      "name_number": 0
+    },
+    {
+      "value": 154,
+      "name": "ESTExtraVehicleType::VT_MTLB",
+      "name_number": 0
+    },
+    {
+      "value": 156,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle1",
+      "name_number": 0
+    },
+    {
+      "value": 166,
+      "name": "ESTExtraVehicleType::VT_MAX",
+      "name_number": 0
+    }
+  ],
+  "interpretation": "VehicleType is ByteProperty-backed EnumProperty, read one byte only; neighboring bytes not part of type."
+}

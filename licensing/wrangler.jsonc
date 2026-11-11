@@ -1,0 +1,19 @@
+{
+  "name": "spectravision-api",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-04-21",
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": true, "logs": { "enabled": true } },
+  "assets": { "directory": "./public", "run_worker_first": ["/api/*"] },
+  "ratelimits": [
+    { "name": "ADMIN_LOGIN_LIMIT", "namespace_id": "80351701", "simple": { "limit": 12, "period": 60 } }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "spectravision-licenses",
+      "database_id": "6b885a7d-5470-4bcc-864b-75c9198aca8c"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_8fcce62e61f070812fc99fce59fa7467af30b28da635a379ba5692cdabd407ba\",\"subject\":{\"name\":\"libUE4.so\",\"digest\":{\"sha256\":\"abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce\"},\"local_path\":\"C:\\\\Users\\\\ahmed\\\\Desktop\\\\ESP\\\\investigation\\\\libUE4.so\",\"format\":\"elf\",\"architecture\":null},\"provider\":{\"id\":\"rea-analysis-view\",\"name\":\"REA analysis view projection\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis-view\",\"operation\":\"inspect_analysis_view\",\"parameters\":{\"parent_evidence_id\":\"ev_62870ad742aa4c78ad9943403f04de06b8b790a1dd3551a7fe5bae0c6cd9e629\",\"view\":{\"kind\":\"summary\"}},\"raw_result\":null,\"normalized_result\":{\"kind\":\"summary\",\"view\":{\"kind\":\"summary\"},\"parent_evidence_id\":\"ev_62870ad742aa4c78ad9943403f04de06b8b790a1dd3551a7fe5bae0c6cd9e629\",\"parent_operation\":\"inspect_native_exports\",\"parent_digest\":\"62870ad742aa4c78ad9943403f04de06b8b790a1dd3551a7fe5bae0c6cd9e629\",\"view_digest\":\"44487e371f2f4f82cf3b4d2ff14219933afadd52ad3544c8c22f10f0db1d913b\",\"artifact\":{\"path\":\"C:\\\\Users\\\\ahmed\\\\Desktop\\\\ESP\\\\investigation\\\\libUE4.so\",\"sha256\":\"abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce\"},\"coverage\":{\"status\":\"complete-within-view\",\"examined\":77,\"total\":77,\"next_offset\":null,\"exhausted\":true},\"limitations\":[\"A hidden symbol version is not the default version that a by-name dlsym lookup selects.\",\"Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.\",\"Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime.\"],\"unknowns\":[\"1 export table issue(s) affect reported rows or metadata; see issues\"],\"summary\":{\"artifact\":{\"path\":\"C:\\\\Users\\\\ahmed\\\\Desktop\\\\ESP\\\\investigation\\\\libUE4.so\",\"sha256\":\"abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce\",\"bytes\":252290584},\"format\":\"elf\",\"architecture\":\"arm64\",\"bits\":64,\"byte_order\":\"little\",\"coverage\":{\"status\":\"partial\",\"reason\":\"1 export table issue(s) affect reported rows or metadata; see issues\",\"examined_entries\":753,\"exports\":77},\"export_count\":77,\"issue_count\":1,\"limitation_count\":3}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"A hidden symbol version is not the default version that a by-name dlsym lookup selects.\",\"Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.\",\"Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime.\"],\"relationship_coverage\":null,\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"C:\\\\Users\\\\ahmed\\\\Desktop\\\\ESP\\\\investigation\\\\libUE4.so\"}],\"evidence_links\":[\"ev_62870ad742aa4c78ad9943403f04de06b8b790a1dd3551a7fe5bae0c6cd9e629\"]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_8fcce62e61f070812fc99fce59fa7467af30b28da635a379ba5692cdabd407ba",
+    "subject": {
+      "name": "libUE4.so",
+      "digest": {
+        "sha256": "abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce"
+      },
+      "local_path": "C:\\Users\\ahmed\\Desktop\\ESP\\investigation\\libUE4.so",
+      "format": "elf",
+      "architecture": null
+    },
+    "provider": {
+      "id": "rea-analysis-view",
+      "name": "REA analysis view projection",
+      "version": "1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis-view",
+    "operation": "inspect_analysis_view",
+    "parameters": {
+      "parent_evidence_id": "ev_62870ad742aa4c78ad9943403f04de06b8b790a1dd3551a7fe5bae0c6cd9e629",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_62870ad742aa4c78ad9943403f04de06b8b790a1dd3551a7fe5bae0c6cd9e629",
+      "parent_operation": "inspect_native_exports",
+      "parent_digest": "62870ad742aa4c78ad9943403f04de06b8b790a1dd3551a7fe5bae0c6cd9e629",
+      "view_digest": "44487e371f2f4f82cf3b4d2ff14219933afadd52ad3544c8c22f10f0db1d913b",
+      "artifact": {
+        "path": "C:\\Users\\ahmed\\Desktop\\ESP\\investigation\\libUE4.so",
+        "sha256": "abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 77,
+        "total": 77,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+        "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+        "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+      ],
+      "unknowns": [
+        "1 export table issue(s) affect reported rows or metadata; see issues"
+      ],
+      "summary": {
+        "artifact": {
+          "path": "C:\\Users\\ahmed\\Desktop\\ESP\\investigation\\libUE4.so",
+          "sha256": "abb9343f69735378b6aea4db97a66e9789664075b0196b1b99378514052454ce",
+          "bytes": 252290584
+        },
+        "format": "elf",
+        "architecture": "arm64",
+        "bits": 64,
+        "byte_order": "little",
+        "coverage": {
+          "status": "partial",
+          "reason": "1 export table issue(s) affect reported rows or metadata; see issues",
+          "examined_entries": 753,
+          "exports": 77
+        },
+        "export_count": 77,
+        "issue_count": 1,
+        "limitation_count": 3
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "A hidden symbol version is not the default version that a by-name dlsym lookup selects.",
+      "Rows list defined default- or protected-visibility global, weak and unique dynamic symbols; local, hidden, internal and undefined symbols are not exports.",
+      "Rows reproduce the dynamic symbol table; they do not establish that a symbol is reachable, safe to call or loaded at runtime."
+    ],
+    "relationship_coverage": null,
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "C:\\Users\\ahmed\\Desktop\\ESP\\investigation\\libUE4.so"
+      }
+    ],
+    "evidence_links": [
+      "ev_62870ad742aa4c78ad9943403f04de06b8b790a1dd3551a7fe5bae0c6cd9e629"
+    ]
+  }
+}

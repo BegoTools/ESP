@@ -1,0 +1,1009 @@
+{
+  "enum_name": "ESTExtraVehicleType",
+  "entry_count": 167,
+  "values": [
+    {
+      "value": 0,
+      "name": "ESTExtraVehicleType::VT_Unknown",
+      "base_name": "ESTExtraVehicleType::VT_Unknown",
+      "name_number": 0
+    },
+    {
+      "value": 1,
+      "name": "ESTExtraVehicleType::VT_Motorbike_0",
+      "base_name": "ESTExtraVehicleType::VT_Motorbike",
+      "name_number": 1
+    },
+    {
+      "value": 2,
+      "name": "ESTExtraVehicleType::VT_Motorbike_1",
+      "base_name": "ESTExtraVehicleType::VT_Motorbike",
+      "name_number": 2
+    },
+    {
+      "value": 3,
+      "name": "ESTExtraVehicleType::VT_Motorbike_SideCart_0",
+      "base_name": "ESTExtraVehicleType::VT_Motorbike_SideCart",
+      "name_number": 1
+    },
+    {
+      "value": 4,
+      "name": "ESTExtraVehicleType::VT_Motorbike_SideCart_1",
+      "base_name": "ESTExtraVehicleType::VT_Motorbike_SideCart",
+      "name_number": 2
+    },
+    {
+      "value": 5,
+      "name": "ESTExtraVehicleType::VT_Dacia_0",
+      "base_name": "ESTExtraVehicleType::VT_Dacia",
+      "name_number": 1
+    },
+    {
+      "value": 6,
+      "name": "ESTExtraVehicleType::VT_Dacia_1",
+      "base_name": "ESTExtraVehicleType::VT_Dacia",
+      "name_number": 2
+    },
+    {
+      "value": 7,
+      "name": "ESTExtraVehicleType::VT_Dacia_2",
+      "base_name": "ESTExtraVehicleType::VT_Dacia",
+      "name_number": 3
+    },
+    {
+      "value": 8,
+      "name": "ESTExtraVehicleType::VT_Dacia_3",
+      "base_name": "ESTExtraVehicleType::VT_Dacia",
+      "name_number": 4
+    },
+    {
+      "value": 9,
+      "name": "ESTExtraVehicleType::VT_UAZ_0",
+      "base_name": "ESTExtraVehicleType::VT_UAZ",
+      "name_number": 1
+    },
+    {
+      "value": 10,
+      "name": "ESTExtraVehicleType::VT_UAZ_1",
+      "base_name": "ESTExtraVehicleType::VT_UAZ",
+      "name_number": 2
+    },
+    {
+      "value": 11,
+      "name": "ESTExtraVehicleType::VT_UAZ_2",
+      "base_name": "ESTExtraVehicleType::VT_UAZ",
+      "name_number": 3
+    },
+    {
+      "value": 12,
+      "name": "ESTExtraVehicleType::VT_Buggy_0",
+      "base_name": "ESTExtraVehicleType::VT_Buggy",
+      "name_number": 1
+    },
+    {
+      "value": 13,
+      "name": "ESTExtraVehicleType::VT_Buggy_1",
+      "base_name": "ESTExtraVehicleType::VT_Buggy",
+      "name_number": 2
+    },
+    {
+      "value": 14,
+      "name": "ESTExtraVehicleType::VT_Buggy_2",
+      "base_name": "ESTExtraVehicleType::VT_Buggy",
+      "name_number": 3
+    },
+    {
+      "value": 15,
+      "name": "ESTExtraVehicleType::VT_PG117",
+      "base_name": "ESTExtraVehicleType::VT_PG117",
+      "name_number": 0
+    },
+    {
+      "value": 16,
+      "name": "ESTExtraVehicleType::VT_Aquarail",
+      "base_name": "ESTExtraVehicleType::VT_Aquarail",
+      "name_number": 0
+    },
+    {
+      "value": 17,
+      "name": "ESTExtraVehicleType::VT_MiniBus_1",
+      "base_name": "ESTExtraVehicleType::VT_MiniBus",
+      "name_number": 2
+    },
+    {
+      "value": 18,
+      "name": "ESTExtraVehicleType::VT_MiniBus_2",
+      "base_name": "ESTExtraVehicleType::VT_MiniBus",
+      "name_number": 3
+    },
+    {
+      "value": 19,
+      "name": "ESTExtraVehicleType::VT_MiniBus_3",
+      "base_name": "ESTExtraVehicleType::VT_MiniBus",
+      "name_number": 4
+    },
+    {
+      "value": 20,
+      "name": "ESTExtraVehicleType::VT_PickUp_1",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 2
+    },
+    {
+      "value": 21,
+      "name": "ESTExtraVehicleType::VT_PickUp_2",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 3
+    },
+    {
+      "value": 22,
+      "name": "ESTExtraVehicleType::VT_PickUp_3",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 4
+    },
+    {
+      "value": 23,
+      "name": "ESTExtraVehicleType::VT_PickUp_4",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 5
+    },
+    {
+      "value": 24,
+      "name": "ESTExtraVehicleType::VT_PickUp_5",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 6
+    },
+    {
+      "value": 25,
+      "name": "ESTExtraVehicleType::VT_PickUp_6",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 7
+    },
+    {
+      "value": 26,
+      "name": "ESTExtraVehicleType::VT_PickUp_7",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 8
+    },
+    {
+      "value": 27,
+      "name": "ESTExtraVehicleType::VT_PickUp_8",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 9
+    },
+    {
+      "value": 28,
+      "name": "ESTExtraVehicleType::VT_PickUp_9",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 10
+    },
+    {
+      "value": 29,
+      "name": "ESTExtraVehicleType::VT_PickUp_10",
+      "base_name": "ESTExtraVehicleType::VT_PickUp",
+      "name_number": 11
+    },
+    {
+      "value": 30,
+      "name": "ESTExtraVehicleType::VT_Buggy_4",
+      "base_name": "ESTExtraVehicleType::VT_Buggy",
+      "name_number": 5
+    },
+    {
+      "value": 31,
+      "name": "ESTExtraVehicleType::VT_Buggy_5",
+      "base_name": "ESTExtraVehicleType::VT_Buggy",
+      "name_number": 6
+    },
+    {
+      "value": 32,
+      "name": "ESTExtraVehicleType::VT_Buggy_6",
+      "base_name": "ESTExtraVehicleType::VT_Buggy",
+      "name_number": 7
+    },
+    {
+      "value": 33,
+      "name": "ESTExtraVehicleType::VT_Mirado_Close_1",
+      "base_name": "ESTExtraVehicleType::VT_Mirado_Close",
+      "name_number": 2
+    },
+    {
+      "value": 34,
+      "name": "ESTExtraVehicleType::VT_Mirado_Close_2",
+      "base_name": "ESTExtraVehicleType::VT_Mirado_Close",
+      "name_number": 3
+    },
+    {
+      "value": 35,
+      "name": "ESTExtraVehicleType::VT_Mirado_Close_3",
+      "base_name": "ESTExtraVehicleType::VT_Mirado_Close",
+      "name_number": 4
+    },
+    {
+      "value": 36,
+      "name": "ESTExtraVehicleType::VT_Mirado_Close_4",
+      "base_name": "ESTExtraVehicleType::VT_Mirado_Close",
+      "name_number": 5
+    },
+    {
+      "value": 37,
+      "name": "ESTExtraVehicleType::VT_Mirado_Open_1",
+      "base_name": "ESTExtraVehicleType::VT_Mirado_Open",
+      "name_number": 2
+    },
+    {
+      "value": 38,
+      "name": "ESTExtraVehicleType::VT_Mirado_Open_2",
+      "base_name": "ESTExtraVehicleType::VT_Mirado_Open",
+      "name_number": 3
+    },
+    {
+      "value": 39,
+      "name": "ESTExtraVehicleType::VT_Mirado_Open_3",
+      "base_name": "ESTExtraVehicleType::VT_Mirado_Open",
+      "name_number": 4
+    },
+    {
+      "value": 40,
+      "name": "ESTExtraVehicleType::VT_Mirado_Open_4",
+      "base_name": "ESTExtraVehicleType::VT_Mirado_Open",
+      "name_number": 5
+    },
+    {
+      "value": 41,
+      "name": "ESTExtraVehicleType::VT_UAZ04",
+      "base_name": "ESTExtraVehicleType::VT_UAZ04",
+      "name_number": 0
+    },
+    {
+      "value": 42,
+      "name": "ESTExtraVehicleType::VT_Rony_1",
+      "base_name": "ESTExtraVehicleType::VT_Rony",
+      "name_number": 2
+    },
+    {
+      "value": 43,
+      "name": "ESTExtraVehicleType::VT_Rony_2",
+      "base_name": "ESTExtraVehicleType::VT_Rony",
+      "name_number": 3
+    },
+    {
+      "value": 44,
+      "name": "ESTExtraVehicleType::VT_Rony_3",
+      "base_name": "ESTExtraVehicleType::VT_Rony",
+      "name_number": 4
+    },
+    {
+      "value": 45,
+      "name": "ESTExtraVehicleType::VT_Scooter",
+      "base_name": "ESTExtraVehicleType::VT_Scooter",
+      "name_number": 0
+    },
+    {
+      "value": 46,
+      "name": "ESTExtraVehicleType::VT_Surfboard",
+      "base_name": "ESTExtraVehicleType::VT_Surfboard",
+      "name_number": 0
+    },
+    {
+      "value": 47,
+      "name": "ESTExtraVehicleType::VT_UH60",
+      "base_name": "ESTExtraVehicleType::VT_UH60",
+      "name_number": 0
+    },
+    {
+      "value": 48,
+      "name": "ESTExtraVehicleType::VT_Amphibious",
+      "base_name": "ESTExtraVehicleType::VT_Amphibious",
+      "name_number": 0
+    },
+    {
+      "value": 49,
+      "name": "ESTExtraVehicleType::VT_TUK",
+      "base_name": "ESTExtraVehicleType::VT_TUK",
+      "name_number": 0
+    },
+    {
+      "value": 50,
+      "name": "ESTExtraVehicleType::VT_Snowboard",
+      "base_name": "ESTExtraVehicleType::VT_Snowboard",
+      "name_number": 0
+    },
+    {
+      "value": 51,
+      "name": "ESTExtraVehicleType::VT_UAV",
+      "base_name": "ESTExtraVehicleType::VT_UAV",
+      "name_number": 0
+    },
+    {
+      "value": 52,
+      "name": "ESTExtraVehicleType::VT_Telecar",
+      "base_name": "ESTExtraVehicleType::VT_Telecar",
+      "name_number": 0
+    },
+    {
+      "value": 53,
+      "name": "ESTExtraVehicleType::VT_UCAV",
+      "base_name": "ESTExtraVehicleType::VT_UCAV",
+      "name_number": 0
+    },
+    {
+      "value": 54,
+      "name": "ESTExtraVehicleType::VT_Reserved_54",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 55
+    },
+    {
+      "value": 55,
+      "name": "ESTExtraVehicleType::VT_DragonBoat",
+      "base_name": "ESTExtraVehicleType::VT_DragonBoat",
+      "name_number": 0
+    },
+    {
+      "value": 56,
+      "name": "ESTExtraVehicleType::VT_Tesla",
+      "base_name": "ESTExtraVehicleType::VT_Tesla",
+      "name_number": 0
+    },
+    {
+      "value": 57,
+      "name": "ESTExtraVehicleType::VT_ExtraMount",
+      "base_name": "ESTExtraVehicleType::VT_ExtraMount",
+      "name_number": 0
+    },
+    {
+      "value": 58,
+      "name": "ESTExtraVehicleType::VT_Motorglider",
+      "base_name": "ESTExtraVehicleType::VT_Motorglider",
+      "name_number": 0
+    },
+    {
+      "value": 59,
+      "name": "ESTExtraVehicleType::VT_Reserved_59",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 60
+    },
+    {
+      "value": 60,
+      "name": "ESTExtraVehicleType::VT_LootTruck",
+      "base_name": "ESTExtraVehicleType::VT_LootTruck",
+      "name_number": 0
+    },
+    {
+      "value": 61,
+      "name": "ESTExtraVehicleType::VT_Reserved_61",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 62
+    },
+    {
+      "value": 62,
+      "name": "ESTExtraVehicleType::VT_Reserved_62",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 63
+    },
+    {
+      "value": 63,
+      "name": "ESTExtraVehicleType::VT_ATGMotorCycle",
+      "base_name": "ESTExtraVehicleType::VT_ATGMotorCycle",
+      "name_number": 0
+    },
+    {
+      "value": 64,
+      "name": "ESTExtraVehicleType::VT_ModelY",
+      "base_name": "ESTExtraVehicleType::VT_ModelY",
+      "name_number": 0
+    },
+    {
+      "value": 65,
+      "name": "ESTExtraVehicleType::VT_ATV",
+      "base_name": "ESTExtraVehicleType::VT_ATV",
+      "name_number": 0
+    },
+    {
+      "value": 66,
+      "name": "ESTExtraVehicleType::VT_SciFi",
+      "base_name": "ESTExtraVehicleType::VT_SciFi",
+      "name_number": 0
+    },
+    {
+      "value": 67,
+      "name": "ESTExtraVehicleType::VT_LionDance",
+      "base_name": "ESTExtraVehicleType::VT_LionDance",
+      "name_number": 0
+    },
+    {
+      "value": 68,
+      "name": "ESTExtraVehicleType::VT_UAZ_PS",
+      "base_name": "ESTExtraVehicleType::VT_UAZ_PS",
+      "name_number": 0
+    },
+    {
+      "value": 69,
+      "name": "ESTExtraVehicleType::VT_Reserved_69",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 70
+    },
+    {
+      "value": 70,
+      "name": "ESTExtraVehicleType::VT_Reserved_70",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 71
+    },
+    {
+      "value": 71,
+      "name": "ESTExtraVehicleType::VT_Reserved_71",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 72
+    },
+    {
+      "value": 72,
+      "name": "ESTExtraVehicleType::VT_Reserved_72",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 73
+    },
+    {
+      "value": 73,
+      "name": "ESTExtraVehicleType::VT_Reserved_73",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 74
+    },
+    {
+      "value": 74,
+      "name": "ESTExtraVehicleType::VT_Reserved_74",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 75
+    },
+    {
+      "value": 75,
+      "name": "ESTExtraVehicleType::VT_Reserved_75",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 76
+    },
+    {
+      "value": 76,
+      "name": "ESTExtraVehicleType::VT_Reserved_76",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 77
+    },
+    {
+      "value": 77,
+      "name": "ESTExtraVehicleType::VT_Reserved_77",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 78
+    },
+    {
+      "value": 78,
+      "name": "ESTExtraVehicleType::VT_Reserved_78",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 79
+    },
+    {
+      "value": 79,
+      "name": "ESTExtraVehicleType::VT_Reserved_79",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 80
+    },
+    {
+      "value": 80,
+      "name": "ESTExtraVehicleType::VT_Reserved_80",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 81
+    },
+    {
+      "value": 81,
+      "name": "ESTExtraVehicleType::VT_Reserved_81",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 82
+    },
+    {
+      "value": 82,
+      "name": "ESTExtraVehicleType::VT_Reserved_82",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 83
+    },
+    {
+      "value": 83,
+      "name": "ESTExtraVehicleType::VT_Reserved_83",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 84
+    },
+    {
+      "value": 84,
+      "name": "ESTExtraVehicleType::VT_Reserved_84",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 85
+    },
+    {
+      "value": 85,
+      "name": "ESTExtraVehicleType::VT_Reserved_85",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 86
+    },
+    {
+      "value": 86,
+      "name": "ESTExtraVehicleType::VT_Reserved_86",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 87
+    },
+    {
+      "value": 87,
+      "name": "ESTExtraVehicleType::VT_Reserved_87",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 88
+    },
+    {
+      "value": 88,
+      "name": "ESTExtraVehicleType::VT_Reserved_88",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 89
+    },
+    {
+      "value": 89,
+      "name": "ESTExtraVehicleType::VT_Reserved_89",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 90
+    },
+    {
+      "value": 90,
+      "name": "ESTExtraVehicleType::VT_Reserved_90",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 91
+    },
+    {
+      "value": 91,
+      "name": "ESTExtraVehicleType::VT_Reserved_91",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 92
+    },
+    {
+      "value": 92,
+      "name": "ESTExtraVehicleType::VT_Reserved_92",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 93
+    },
+    {
+      "value": 93,
+      "name": "ESTExtraVehicleType::VT_Reserved_93",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 94
+    },
+    {
+      "value": 94,
+      "name": "ESTExtraVehicleType::VT_Reserved_94",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 95
+    },
+    {
+      "value": 95,
+      "name": "ESTExtraVehicleType::VT_Reserved_95",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 96
+    },
+    {
+      "value": 96,
+      "name": "ESTExtraVehicleType::VT_Reserved_96",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 97
+    },
+    {
+      "value": 97,
+      "name": "ESTExtraVehicleType::VT_Reserved_97",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 98
+    },
+    {
+      "value": 98,
+      "name": "ESTExtraVehicleType::VT_Reserved_98",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 99
+    },
+    {
+      "value": 99,
+      "name": "ESTExtraVehicleType::VT_Reserved_99",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 100
+    },
+    {
+      "value": 100,
+      "name": "ESTExtraVehicleType::VT_Lamborghini",
+      "base_name": "ESTExtraVehicleType::VT_Lamborghini",
+      "name_number": 0
+    },
+    {
+      "value": 101,
+      "name": "ESTExtraVehicleType::VT_Lamborghini_1",
+      "base_name": "ESTExtraVehicleType::VT_Lamborghini",
+      "name_number": 2
+    },
+    {
+      "value": 102,
+      "name": "ESTExtraVehicleType::VT_MegaDrop",
+      "base_name": "ESTExtraVehicleType::VT_MegaDrop",
+      "name_number": 0
+    },
+    {
+      "value": 103,
+      "name": "ESTExtraVehicleType::VT_BigFoot",
+      "base_name": "ESTExtraVehicleType::VT_BigFoot",
+      "name_number": 0
+    },
+    {
+      "value": 104,
+      "name": "ESTExtraVehicleType::VT_TrackVehicle",
+      "base_name": "ESTExtraVehicleType::VT_TrackVehicle",
+      "name_number": 0
+    },
+    {
+      "value": 105,
+      "name": "ESTExtraVehicleType::VT_CoupeRB",
+      "base_name": "ESTExtraVehicleType::VT_CoupeRB",
+      "name_number": 0
+    },
+    {
+      "value": 106,
+      "name": "ESTExtraVehicleType::VT_Reserved_106",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 107
+    },
+    {
+      "value": 107,
+      "name": "ESTExtraVehicleType::VT_CatapultMachine",
+      "base_name": "ESTExtraVehicleType::VT_CatapultMachine",
+      "name_number": 0
+    },
+    {
+      "value": 108,
+      "name": "ESTExtraVehicleType::VT_UTV",
+      "base_name": "ESTExtraVehicleType::VT_UTV",
+      "name_number": 0
+    },
+    {
+      "value": 109,
+      "name": "ESTExtraVehicleType::VT_Bike",
+      "base_name": "ESTExtraVehicleType::VT_Bike",
+      "name_number": 0
+    },
+    {
+      "value": 110,
+      "name": "ESTExtraVehicleType::VT_Tank",
+      "base_name": "ESTExtraVehicleType::VT_Tank",
+      "name_number": 0
+    },
+    {
+      "value": 111,
+      "name": "ESTExtraVehicleType::VT_Bike_WithRack",
+      "base_name": "ESTExtraVehicleType::VT_Bike_WithRack",
+      "name_number": 0
+    },
+    {
+      "value": 112,
+      "name": "ESTExtraVehicleType::VT_RaptorDinosaur",
+      "base_name": "ESTExtraVehicleType::VT_RaptorDinosaur",
+      "name_number": 0
+    },
+    {
+      "value": 113,
+      "name": "ESTExtraVehicleType::VT_Pterosaur",
+      "base_name": "ESTExtraVehicleType::VT_Pterosaur",
+      "name_number": 0
+    },
+    {
+      "value": 114,
+      "name": "ESTExtraVehicleType::VT_TyrannosaurusRex",
+      "base_name": "ESTExtraVehicleType::VT_TyrannosaurusRex",
+      "name_number": 0
+    },
+    {
+      "value": 115,
+      "name": "ESTExtraVehicleType::VT_RubberDuck",
+      "base_name": "ESTExtraVehicleType::VT_RubberDuck",
+      "name_number": 0
+    },
+    {
+      "value": 116,
+      "name": "ESTExtraVehicleType::VT_CapsuleVehicle",
+      "base_name": "ESTExtraVehicleType::VT_CapsuleVehicle",
+      "name_number": 0
+    },
+    {
+      "value": 117,
+      "name": "ESTExtraVehicleType::VT_ReindeerBio",
+      "base_name": "ESTExtraVehicleType::VT_ReindeerBio",
+      "name_number": 0
+    },
+    {
+      "value": 118,
+      "name": "ESTExtraVehicleType::VT_ReindeerCart",
+      "base_name": "ESTExtraVehicleType::VT_ReindeerCart",
+      "name_number": 0
+    },
+    {
+      "value": 119,
+      "name": "ESTExtraVehicleType::VT_Bike_Valentine",
+      "base_name": "ESTExtraVehicleType::VT_Bike_Valentine",
+      "name_number": 0
+    },
+    {
+      "value": 120,
+      "name": "ESTExtraVehicleType::VT_BlanketVehicle",
+      "base_name": "ESTExtraVehicleType::VT_BlanketVehicle",
+      "name_number": 0
+    },
+    {
+      "value": 121,
+      "name": "ESTExtraVehicleType::VT_HoveringMecha",
+      "base_name": "ESTExtraVehicleType::VT_HoveringMecha",
+      "name_number": 0
+    },
+    {
+      "value": 122,
+      "name": "ESTExtraVehicleType::VT_MechaVehicle",
+      "base_name": "ESTExtraVehicleType::VT_MechaVehicle",
+      "name_number": 0
+    },
+    {
+      "value": 123,
+      "name": "ESTExtraVehicleType::VT_OceanVehicle",
+      "base_name": "ESTExtraVehicleType::VT_OceanVehicle",
+      "name_number": 0
+    },
+    {
+      "value": 124,
+      "name": "ESTExtraVehicleType::VT_Fighter",
+      "base_name": "ESTExtraVehicleType::VT_Fighter",
+      "name_number": 0
+    },
+    {
+      "value": 125,
+      "name": "ESTExtraVehicleType::VT_Reserved_125",
+      "base_name": "ESTExtraVehicleType::VT_Reserved",
+      "name_number": 126
+    },
+    {
+      "value": 126,
+      "name": "ESTExtraVehicleType::VT_Horse",
+      "base_name": "ESTExtraVehicleType::VT_Horse",
+      "name_number": 0
+    },
+    {
+      "value": 127,
+      "name": "ESTExtraVehicleType::VT_WarHorse",
+      "base_name": "ESTExtraVehicleType::VT_WarHorse",
+      "name_number": 0
+    },
+    {
+      "value": 128,
+      "name": "ESTExtraVehicleType::VT_HorseLiquid",
+      "base_name": "ESTExtraVehicleType::VT_HorseLiquid",
+      "name_number": 0
+    },
+    {
+      "value": 129,
+      "name": "ESTExtraVehicleType::VT_AmphibiousBoat",
+      "base_name": "ESTExtraVehicleType::VT_AmphibiousBoat",
+      "name_number": 0
+    },
+    {
+      "value": 130,
+      "name": "ESTExtraVehicleType::VT_Tiger",
+      "base_name": "ESTExtraVehicleType::VT_Tiger",
+      "name_number": 0
+    },
+    {
+      "value": 131,
+      "name": "ESTExtraVehicleType::VT_Mammoth",
+      "base_name": "ESTExtraVehicleType::VT_Mammoth",
+      "name_number": 0
+    },
+    {
+      "value": 132,
+      "name": "ESTExtraVehicleType::VT_SnowBall",
+      "base_name": "ESTExtraVehicleType::VT_SnowBall",
+      "name_number": 0
+    },
+    {
+      "value": 133,
+      "name": "ESTExtraVehicleType::VT_StoreBus",
+      "base_name": "ESTExtraVehicleType::VT_StoreBus",
+      "name_number": 0
+    },
+    {
+      "value": 134,
+      "name": "ESTExtraVehicleType::VT_Panda",
+      "base_name": "ESTExtraVehicleType::VT_Panda",
+      "name_number": 0
+    },
+    {
+      "value": 135,
+      "name": "ESTExtraVehicleType::VT_PandaBall",
+      "base_name": "ESTExtraVehicleType::VT_PandaBall",
+      "name_number": 0
+    },
+    {
+      "value": 136,
+      "name": "ESTExtraVehicleType::VT_UAVDeer",
+      "base_name": "ESTExtraVehicleType::VT_UAVDeer",
+      "name_number": 0
+    },
+    {
+      "value": 137,
+      "name": "ESTExtraVehicleType::VT_Camel",
+      "base_name": "ESTExtraVehicleType::VT_Camel",
+      "name_number": 0
+    },
+    {
+      "value": 138,
+      "name": "ESTExtraVehicleType::VT_Titan",
+      "base_name": "ESTExtraVehicleType::VT_Titan",
+      "name_number": 0
+    },
+    {
+      "value": 139,
+      "name": "ESTExtraVehicleType::VT_Aircraft",
+      "base_name": "ESTExtraVehicleType::VT_Aircraft",
+      "name_number": 0
+    },
+    {
+      "value": 140,
+      "name": "ESTExtraVehicleType::VT_PicoBus",
+      "base_name": "ESTExtraVehicleType::VT_PicoBus",
+      "name_number": 0
+    },
+    {
+      "value": 141,
+      "name": "ESTExtraVehicleType::VT_Blanc",
+      "base_name": "ESTExtraVehicleType::VT_Blanc",
+      "name_number": 0
+    },
+    {
+      "value": 142,
+      "name": "ESTExtraVehicleType::VT_Optimus",
+      "base_name": "ESTExtraVehicleType::VT_Optimus",
+      "name_number": 0
+    },
+    {
+      "value": 143,
+      "name": "ESTExtraVehicleType::VT_OptimusVehicle",
+      "base_name": "ESTExtraVehicleType::VT_OptimusVehicle",
+      "name_number": 0
+    },
+    {
+      "value": 144,
+      "name": "ESTExtraVehicleType::VT_Megatron",
+      "base_name": "ESTExtraVehicleType::VT_Megatron",
+      "name_number": 0
+    },
+    {
+      "value": 145,
+      "name": "ESTExtraVehicleType::VT_MegatronVehicle",
+      "base_name": "ESTExtraVehicleType::VT_MegatronVehicle",
+      "name_number": 0
+    },
+    {
+      "value": 146,
+      "name": "ESTExtraVehicleType::VT_Skate",
+      "base_name": "ESTExtraVehicleType::VT_Skate",
+      "name_number": 0
+    },
+    {
+      "value": 147,
+      "name": "ESTExtraVehicleType::VT_Broom",
+      "base_name": "ESTExtraVehicleType::VT_Broom",
+      "name_number": 0
+    },
+    {
+      "value": 148,
+      "name": "ESTExtraVehicleType::VT_PenguinCart",
+      "base_name": "ESTExtraVehicleType::VT_PenguinCart",
+      "name_number": 0
+    },
+    {
+      "value": 149,
+      "name": "ESTExtraVehicleType::VT_Scorpion",
+      "base_name": "ESTExtraVehicleType::VT_Scorpion",
+      "name_number": 0
+    },
+    {
+      "value": 150,
+      "name": "ESTExtraVehicleType::VT_Deer",
+      "base_name": "ESTExtraVehicleType::VT_Deer",
+      "name_number": 0
+    },
+    {
+      "value": 151,
+      "name": "ESTExtraVehicleType::VT_UAVVine",
+      "base_name": "ESTExtraVehicleType::VT_UAVVine",
+      "name_number": 0
+    },
+    {
+      "value": 152,
+      "name": "ESTExtraVehicleType::VT_PoliceCar",
+      "base_name": "ESTExtraVehicleType::VT_PoliceCar",
+      "name_number": 0
+    },
+    {
+      "value": 153,
+      "name": "ESTExtraVehicleType::VT_UAVGodView",
+      "base_name": "ESTExtraVehicleType::VT_UAVGodView",
+      "name_number": 0
+    },
+    {
+      "value": 154,
+      "name": "ESTExtraVehicleType::VT_MTLB",
+      "base_name": "ESTExtraVehicleType::VT_MTLB",
+      "name_number": 0
+    },
+    {
+      "value": 155,
+      "name": "ESTExtraVehicleType::VT_QuadcopterDrone",
+      "base_name": "ESTExtraVehicleType::VT_QuadcopterDrone",
+      "name_number": 0
+    },
+    {
+      "value": 156,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle1",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle1",
+      "name_number": 0
+    },
+    {
+      "value": 157,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle2",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle2",
+      "name_number": 0
+    },
+    {
+      "value": 158,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle3",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle3",
+      "name_number": 0
+    },
+    {
+      "value": 159,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle4",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle4",
+      "name_number": 0
+    },
+    {
+      "value": 160,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle5",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle5",
+      "name_number": 0
+    },
+    {
+      "value": 161,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle6",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle6",
+      "name_number": 0
+    },
+    {
+      "value": 162,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle7",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle7",
+      "name_number": 0
+    },
+    {
+      "value": 163,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle8",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle8",
+      "name_number": 0
+    },
+    {
+      "value": 164,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle9",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle9",
+      "name_number": 0
+    },
+    {
+      "value": 165,
+      "name": "ESTExtraVehicleType::VT_CustomVehicle10",
+      "base_name": "ESTExtraVehicleType::VT_CustomVehicle10",
+      "name_number": 0
+    },
+    {
+      "value": 166,
+      "name": "ESTExtraVehicleType::VT_MAX",
+      "base_name": "ESTExtraVehicleType::VT_MAX",
+      "name_number": 0
+    }
+  ],
+  "interpretation": "VehicleType is ByteProperty-backed EnumProperty. FName numeric suffix reconstructed as number-1. Enum declarations alone do not prove every variant is instantiated in the current world."
+}

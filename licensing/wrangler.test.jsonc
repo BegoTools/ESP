@@ -1,0 +1,17 @@
+{
+  "name": "spectravision-local-test",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-04-21",
+  "workers_dev": false,
+  "assets": { "directory": "./test-assets", "run_worker_first": ["/api/*"] },
+  "ratelimits": [
+    { "name": "ADMIN_LOGIN_LIMIT", "namespace_id": "80351701", "simple": { "limit": 12, "period": 60 } }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "spectravision-test",
+      "database_id": "00000000-0000-0000-0000-000000000001"
+    }
+  ]
+}

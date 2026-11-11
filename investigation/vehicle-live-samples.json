@@ -1,0 +1,734 @@
+{
+  "pid": 3418,
+  "samples": [
+    {
+      "address": "0x7beb6c9ed240",
+      "inventory_class": "BP_VH_Tuk_1_C",
+      "class_chain": [
+        "BP_VH_Tuk_1_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beb6dd8a690",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1000.0,
+      "hp": 1000.0,
+      "fuel_max": 2000000.0,
+      "fuel": 2000000.0,
+      "position": [
+        35089.41015625,
+        426883.6875,
+        -7.0
+      ],
+      "vehicle_type_bytes": "31130000",
+      "text_data": "0x7beb58ebfa20",
+      "text_data_bytes": "087e603100400000504cce3aeb7b0000404cce3aeb7b0000208f6031004000000400000000000000d0b20558eb7b000006000000060000000000000000000000c0f9eb58eb7b0000000000000800000040084658eb7b00005b0000005b000000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805b2d0",
+          "count": 6,
+          "capacity": 6,
+          "text": "34233"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa71bb6d0",
+      "inventory_class": "VH_ATV1_C",
+      "class_chain": [
+        "VH_ATV1_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa787dd90",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1400.0,
+      "hp": 1400.0,
+      "fuel_max": 2000000.0,
+      "fuel": 2000000.0,
+      "position": [
+        34876.921875,
+        426917.6875,
+        -6.940000057220459
+      ],
+      "vehicle_type_bytes": "411e0000",
+      "text_data": "0x7beb58ec39e0",
+      "text_data_bytes": "087e603100400000307a65abea7b0000207a65abea7b0000208f6031004000000400700055003100109f0558eb7b00000600000006000000000000000000000080273c39eb7b00000a0000000e000000ff030000000000000000000000000000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb58059f10",
+          "count": 6,
+          "capacity": 6,
+          "text": "44154"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa743edb0",
+      "inventory_class": "BP_VH_Buggy_2_C",
+      "class_chain": [
+        "BP_VH_Buggy_2_C",
+        "BP_VH_Buggy_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa7fe1fe0",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1550.0,
+      "hp": 1171.450927734375,
+      "fuel_max": 2500000.0,
+      "fuel": 2500000.0,
+      "position": [
+        34596.33984375,
+        426948.71875,
+        -7.630000114440918
+      ],
+      "vehicle_type_bytes": "0d070000",
+      "text_data": "0x7beb58ebe1c0",
+      "text_data_bytes": "087e603100400000104ee84beb7b0000004ee84beb7b0000208f60310040000004002e93eb7b000050678a85eb7b00000600000006000000248c2e93eb7b000010876031004000000400000001000000087e603100400000d0e40562eb7b0000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb858a6750",
+          "count": 6,
+          "capacity": 6,
+          "text": "34235"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa743a490",
+      "inventory_class": "VH_Snowmobile_C",
+      "class_chain": [
+        "VH_Snowmobile_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa7181240",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1000.0,
+      "hp": 1000.0,
+      "fuel_max": 2000000.0,
+      "fuel": 2000000.0,
+      "position": [
+        35512.171875,
+        426872.6875,
+        -7.0
+      ],
+      "vehicle_type_bytes": "a6120000",
+      "text_data": "0x7beb58ebd680",
+      "text_data_bytes": "087e603100400000104ae84beb7b0000004ae84beb7b0000208f6031004000000400000000000000e0ac0558eb7b0000060000000600000000000000000000004400460037003300330044003100460034003900460034003200370043003100",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805ace0",
+          "count": 6,
+          "capacity": 6,
+          "text": "34232"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa7210240",
+      "inventory_class": "VH_Snowbike_C",
+      "class_chain": [
+        "VH_Snowbike_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa7180db0",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 350.0,
+      "hp": 350.0,
+      "fuel_max": 2000000.0,
+      "fuel": 2000000.0,
+      "position": [
+        35661.5,
+        426926.6875,
+        -7.0
+      ],
+      "vehicle_type_bytes": "a6140000",
+      "text_data": "0x7beb58ebcbe0",
+      "text_data_bytes": "087e603100400000b02fd059eb7b0000a02fd059eb7b0000208f60310040000004000300ac440100100a745feb7b0000060000000600000041004600330000000000000000000000000000000000000000000000000000000000000000000000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5f740a10",
+          "count": 6,
+          "capacity": 6,
+          "text": "34230"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa720b920",
+      "inventory_class": "VH_Scooter_C",
+      "class_chain": [
+        "VH_Scooter_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa71e5420",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 500.0,
+      "hp": 500.0,
+      "fuel_max": 2000000.0,
+      "fuel": 2000000.0,
+      "position": [
+        35894.62890625,
+        426848.6875,
+        -7.0
+      ],
+      "vehicle_type_bytes": "2d110000",
+      "text_data": "0x7beb58ebfb10",
+      "text_data_bytes": "087e6031004000003000d059eb7b00002000d059eb7b0000208f6031004000000400550031006b0020b30558eb7b000006000000060000000000000000000000a042fd6ceb7b0000e0a6ec69eb7b0000c0a6ec69eb7b000040a7ec69eb7b0000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805b320",
+          "count": 6,
+          "capacity": 6,
+          "text": "34229"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa7207000",
+      "inventory_class": "VH_MotorcycleCart_1_C",
+      "class_chain": [
+        "VH_MotorcycleCart_1_C",
+        "VH_MotorcycleCart_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa71e2b10",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1000.0,
+      "hp": 1000.0,
+      "fuel_max": 2000000.0,
+      "fuel": 2000000.0,
+      "position": [
+        35362.51171875,
+        426875.6875,
+        -5.0
+      ],
+      "vehicle_type_bytes": "04020000",
+      "text_data": "0x7beb58ec1b40",
+      "text_data_bytes": "087e603100400000304ae84beb7b0000204ae84beb7b0000208f60310040000004000300ac44010000b70558eb7b000006000000060000004b003500320000004c007500610043006f006c006c006500630074004100730079006e0063005200",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805b700",
+          "count": 6,
+          "capacity": 6,
+          "text": "34225"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa72e9240",
+      "inventory_class": "VH_Motorcycle_1_C",
+      "class_chain": [
+        "VH_Motorcycle_1_C",
+        "VH_Motorcycle_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa71e2fa0",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1000.0,
+      "hp": 1000.0,
+      "fuel_max": 2000000.0,
+      "fuel": 2000000.0,
+      "position": [
+        35786.87109375,
+        426869.6875,
+        -2.1700000762939453
+      ],
+      "vehicle_type_bytes": "02010000",
+      "text_data": "0x7beb58ec41b0",
+      "text_data_bytes": "087e603100400000f046e84beb7b0000e046e84beb7b0000208f603100400000040000000800000040a90558eb7b0000060000000600000000000000000000003900330033003100380037003100330034004600430030003700340044003800",
+      "display_string_candidates": [
+        {
+          "offset": "0x18",
+          "pointer": "0x400031608f20",
+          "count": 4,
+          "capacity": 8,
+          "text": "ꄸ⯐䀀"
+        },
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805a940",
+          "count": 6,
+          "capacity": 6,
+          "text": "34224"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa72126d0",
+      "inventory_class": "VH_Roadster_C",
+      "class_chain": [
+        "VH_Roadster_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa7fde490",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1600.0,
+      "hp": 832.4213256835938,
+      "fuel_max": 2500000.0,
+      "fuel": 2500000.0,
+      "position": [
+        34277.71875,
+        427058.375,
+        -7.524658203125
+      ],
+      "vehicle_type_bytes": "9c740000",
+      "text_data": "0x7beb6079a980",
+      "text_data_bytes": "087e603100400000d070e84beb7b0000c070e84beb7b0000208f60310040000004000000200000004072e84beb7b00000a0000000a0000000000000000000000002aa96deb7b0000404e717aeb7b0000100ef23deb7b000080aca86deb7b0000",
+      "display_string_candidates": [
+        {
+          "offset": "0x18",
+          "pointer": "0x400031608f20",
+          "count": 4,
+          "capacity": 32,
+          "text": "ꄸ⯐䀀"
+        },
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb4be87240",
+          "count": 10,
+          "capacity": 10,
+          "text": "612401122"
+        }
+      ]
+    },
+    {
+      "address": "0x7beb624fe920",
+      "inventory_class": "PickUp_07_C",
+      "class_chain": [
+        "PickUp_07_C",
+        "PickUp_06_C",
+        "PickUp_01_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beb6dd83910",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1200.0,
+      "hp": 1060.0380859375,
+      "fuel_max": 3000000.0,
+      "fuel": 3000000.0,
+      "position": [
+        32747.419921875,
+        426991.90625,
+        -14.01133918762207
+      ],
+      "vehicle_type_bytes": "1a060000",
+      "text_data": "0x7beb58ebe210",
+      "text_data_bytes": "087e603100400000d0e40562eb7b0000c0e40562eb7b0000208f603100400000040000000000000000578a85eb7b0000060000000600000000000000eb7b0000205ad059eb7b0000605ad059eb7b00008058d059eb7b00008054d059eb7b0000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb858a5700",
+          "count": 6,
+          "capacity": 6,
+          "text": "34227"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa84d3db0",
+      "inventory_class": "VH_CoupeRB_1_C",
+      "class_chain": [
+        "VH_CoupeRB_1_C",
+        "BP_CoupeRB_Base_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa84fa1e0",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1800.0,
+      "hp": 1800.0,
+      "fuel_max": 2750000.0,
+      "fuel": 2750000.0,
+      "position": [
+        33664.98828125,
+        426990.6875,
+        -10.0
+      ],
+      "vehicle_type_bytes": "693d0000",
+      "text_data": "0x7beb58ec3da0",
+      "text_data_bytes": "087e603100400000d09d65abea7b0000c09d65abea7b0000208f6031004000000400690063005f00e0a00558eb7b000006000000060000003200000000000000802e3c39eb7b00000a0000000e000000ff030000000000000000000000000000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805a0e0",
+          "count": 6,
+          "capacity": 6,
+          "text": "34238"
+        }
+      ]
+    },
+    {
+      "address": "0x7beb34d19000",
+      "inventory_class": "Mirado_open_4_C",
+      "class_chain": [
+        "Mirado_open_4_C",
+        "Mirado_open_1_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaab4caf90",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1500.0,
+      "hp": 1500.0,
+      "fuel_max": 2750000.0,
+      "fuel": 2750000.0,
+      "position": [
+        33980.73828125,
+        426998.6875,
+        -6.400000095367432
+      ],
+      "vehicle_type_bytes": "280f0000",
+      "text_data": "0x7beb58ec4610",
+      "text_data_bytes": "087e60310040000090a4cf59eb7b000080a4cf59eb7b0000208f6031004000000400213feb7b0000e08d8a85eb7b00000600000006000000320000000000000080d1d739eb7b000004000000040000000f000000000000000000000000000000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb858a8de0",
+          "count": 6,
+          "capacity": 6,
+          "text": "49441"
+        },
+        {
+          "offset": "0x40",
+          "pointer": "0x7beb39d7d180",
+          "count": 4,
+          "capacity": 4,
+          "text": "䲀媀篫"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa8662b60",
+      "inventory_class": "VH_Dacia_C",
+      "class_chain": [
+        "VH_Dacia_C",
+        "BP_DaciaBase_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa7fedaf0",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1800.0,
+      "hp": 1800.0,
+      "fuel_max": 2750000.0,
+      "fuel": 2750000.0,
+      "position": [
+        33354.16015625,
+        426971.6875,
+        -7.440000057220459
+      ],
+      "vehicle_type_bytes": "05030000",
+      "text_data": "0x7beb58ec3e90",
+      "text_data_bytes": "087e603100400000d048e84beb7b0000c048e84beb7b0000208f60310040000004000300ac44010010888a85eb7b00000600000006000000700061006b0000003600460038003300460041003100440034004100340035004200360030003200",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb858a8810",
+          "count": 6,
+          "capacity": 6,
+          "text": "34220"
+        }
+      ]
+    },
+    {
+      "address": "0x7beb593a1b60",
+      "inventory_class": "BP_VH_Bigfoot_C",
+      "class_chain": [
+        "BP_VH_Bigfoot_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa71e38c0",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 2000.0,
+      "hp": 2000.0,
+      "fuel_max": 2500000.0,
+      "fuel": 2500000.0,
+      "position": [
+        32007.23046875,
+        427000.6875,
+        -10.0
+      ],
+      "vehicle_type_bytes": "67350000",
+      "text_data": "0x7beb58ec38a0",
+      "text_data_bytes": "087e603100400000507b65abea7b0000407b65abea7b0000208f60310040000004000300ac440100f09e0558eb7b0000060000000600000000000000000000004400390030003200430030003600420034003100300035004600320034003200",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb58059ef0",
+          "count": 6,
+          "capacity": 6,
+          "text": "34236"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa8418b60",
+      "inventory_class": "VH_UAZ01_C",
+      "class_chain": [
+        "VH_UAZ01_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa84f4fc0",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 2450.0,
+      "hp": 2450.0,
+      "fuel_max": 3000000.0,
+      "fuel": 3000000.0,
+      "position": [
+        32380.060546875,
+        426995.6875,
+        -7.0
+      ],
+      "vehicle_type_bytes": "09080000",
+      "text_data": "0x7beb58ebdae0",
+      "text_data_bytes": "087e603100400000704ae84beb7b0000604ae84beb7b0000208f603100400000040000000800000020ad0558eb7b000006000000060000000000000000000000008102aaea7b00005400000069000000ffffffffffffffffffff0f0000000000",
+      "display_string_candidates": [
+        {
+          "offset": "0x18",
+          "pointer": "0x400031608f20",
+          "count": 4,
+          "capacity": 8,
+          "text": "ꄸ⯐䀀"
+        },
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805ad20",
+          "count": 6,
+          "capacity": 6,
+          "text": "34234"
+        }
+      ]
+    },
+    {
+      "address": "0x7beb78904b60",
+      "inventory_class": "VH_UTV_C",
+      "class_chain": [
+        "VH_UTV_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beb6215e6a0",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 2000.0,
+      "hp": 273.4985656738281,
+      "fuel_max": 2500000.0,
+      "fuel": 2500000.0,
+      "position": [
+        31595.029296875,
+        427041.96875,
+        -5.76171875
+      ],
+      "vehicle_type_bytes": "6c420000",
+      "text_data": "0x7beb58ebe580",
+      "text_data_bytes": "087e603100400000306b6a6deb7b0000206b6a6deb7b0000208f60310040000004002e93eb7b000010af0558eb7b00000600000006000000248c2e93eb7b00006054d059eb7b0000c0aaec69eb7b0000a0acec69eb7b0000a054d059eb7b0000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805af10",
+          "count": 6,
+          "capacity": 6,
+          "text": "37205"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa7548000",
+      "inventory_class": "VH_MTLB_C",
+      "class_chain": [
+        "VH_MTLB_C",
+        "TrackedAmphibiousVehicle",
+        "TrackedVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa787c230",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 2400.0,
+      "hp": 2380.0,
+      "fuel_max": 4000000.0,
+      "fuel": 4000000.0,
+      "position": [
+        30821.0,
+        426941.84375,
+        -16.999988555908203
+      ],
+      "vehicle_type_bytes": "9a720000",
+      "text_data": "0x7beb60795b60",
+      "text_data_bytes": "087e603100400000706dd059eb7b0000606dd059eb7b0000208f603100400000040031006b005900106f0558eb7b000008000000080000000000000000000000503ad07beb7b000040a35c35eb7b000080d5c95aeb7b00003039d07beb7b0000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb58056f10",
+          "count": 8,
+          "capacity": 8,
+          "text": "4303110"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaa743c920",
+      "inventory_class": "VH_Motorglider_C",
+      "class_chain": [
+        "VH_Motorglider_C",
+        "VehicleMotorGlider",
+        "VehicleAircraft",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beaa7182480",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 1000.0,
+      "hp": 836.2870483398438,
+      "fuel_max": 2500000.0,
+      "fuel": 2347867.5,
+      "position": [
+        40630.33984375,
+        450213.09375,
+        826.27001953125
+      ],
+      "vehicle_type_bytes": "3a3c0000",
+      "text_data": "0x7beb58ec2900",
+      "text_data_bytes": "087e6031004000001091e84beb7b00000091e84beb7b0000208f60310040000004000300ac440100207b0558eb7b00000600000006000000000078004b00000040038d60eb7b000004000000040000000b000000000000000000000000000000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb58057b20",
+          "count": 6,
+          "capacity": 6,
+          "text": "34237"
+        },
+        {
+          "offset": "0x40",
+          "pointer": "0x7beb608d0340",
+          "count": 4,
+          "capacity": 4,
+          "text": "俀堳篫"
+        }
+      ]
+    },
+    {
+      "address": "0x7beaaade0920",
+      "inventory_class": "VH_MiniBus_01_C",
+      "class_chain": [
+        "VH_MiniBus_01_C",
+        "BP_STExtraWheeledVehicle_C",
+        "STExtraWheeledVehicle",
+        "STExtraVehicleBase",
+        "Pawn",
+        "Actor",
+        "Object"
+      ],
+      "common": "0x7beb62165420",
+      "common_class": "VehicleCommonComponent",
+      "hp_max": 3100.0,
+      "hp": 3100.0,
+      "fuel_max": 2500000.0,
+      "fuel": 2500000.0,
+      "position": [
+        31282.380859375,
+        426984.6875,
+        -1.0
+      ],
+      "vehicle_type_bytes": "11040000",
+      "text_data": "0x7beb58ebdc70",
+      "text_data_bytes": "087e60310040000090b365abea7b000080b365abea7b0000208f603100400000040062007a00730060a40558eb7b00000600000006000000700061006b000000a032ec58eb7b000000000000eb7b0000c0004658eb7b00005b0000005b000000",
+      "display_string_candidates": [
+        {
+          "offset": "0x28",
+          "pointer": "0x7beb5805a460",
+          "count": 6,
+          "capacity": 6,
+          "text": "34222"
+        }
+      ]
+    }
+  ],
+  "pages_read": 147
+}

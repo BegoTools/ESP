@@ -1,0 +1,113 @@
+PASS aim chooses nearest enemy to screen centre and excludes allies/non-characters
+PASS aim retains valid target instead of switching each frame
+PASS aim ignores targets outside assistance circle
+PASS aim respects distance limit
+PASS aim excludes dead targets
+PASS aim rejects invalid target health
+PASS aim rejects invalid positions
+PASS aim excludes targets behind camera
+PASS aim skips characters when local team is unknown
+PASS training aim independent of player setting
+PASS training aim can be disabled independently
+PASS aim correction moves toward projected target
+PASS releasing activation clears motion and target
+PASS disabled aim never generates input
+PASS zero strength never generates input
+PASS aim rejects data older than 100 ms
+PASS aim rejects future timestamps
+PASS synthetic matrix preview cannot drive aim
+PASS long UI stalls cannot cause a catch-up jump
+PASS invalid elapsed time cannot produce input
+PASS dead zone avoids centre jitter
+PASS strength controls total correction with a bounded count rate
+PASS aim speed independent of 60 vs 120 Hz timer
+PASS gentle aim converges with camera feedback without a large turn
+PASS despawn clears target and fractional movement immediately
+PASS aim radius scales with viewport height
+PASS corrupt aim settings normalized
+PASS legacy settings receive disabled gentle aim defaults
+PASS aim settings persist through JSON round-trip
+PASS x64 SendInput structure matches Windows ABI
+PASS missing target window cannot receive aim input
+PASS legacy cursor guard migrates without changing saved strength
+PASS explicit optional cursor guard persists after migration
+PASS selected head chest and leg regions project in correct order
+PASS small circle excludes peripheral target
+PASS enlarging circle admits peripheral target
+PASS wide assistance circle supported up to 1200 pixels at 1080p
+PASS invalid aim region and activation normalize
+PASS region circle size and activation persist
+PASS visible GameLoop cursor does not block default mouse input
+PASS optional cursor guard reports its exact blocking reason
+PASS hold mode reports missing activation key
+PASS inside-circle mode sends input without a held activation key
+PASS foreground loss blocks and resets continuous input
+PASS menu stop and hidden-overlay gate block continuous input
+PASS focus recheck prevents sending after foreground changes
+PASS Windows input rejection disables aim and reports failure
+PASS accepted input without camera response gets a distinct diagnostic
+PASS camera motion clears missing-response diagnostic
+PASS zero strength is reported instead of claiming no target
+PASS legacy LDPlayer connection settings migrate
+PASS emulator connections persist independently
+PASS emulator build profiles persist independently
+PASS LDPlayer su command remains unchanged
+PASS GameLoop uses its existing privileged shell
+PASS GameLoop process bootstrap includes native restore and independent recovery guard
+PASS missing privilege cannot execute process access command
+PASS verified GameLoop exact-build profile accepted
+PASS native build and hash cannot be interchanged
+PASS GameLoop local ADB address normalization
+PASS invalid GameLoop port rejected
+PASS non-local GameLoop address rejected
+PASS GameLoop rendering child excludes Qt chrome
+PASS existing LDPlayer reader prerequisites accepted
+PASS build and root blockers reported together
+PASS incompatible GameLoop cannot start reader
+PASS projection center
+PASS projection corner
+PASS near-plane rejection
+PASS far-plane rejection
+PASS NaN rejection
+PASS zero-W rejection
+PASS matrix order conventions
+PASS proc maps parsing
+PASS ASLR module base
+PASS missing module fails explicitly
+PASS ADB serial and state parsing
+PASS Windows trailing slash quoting
+PASS Windows embedded quote escaping
+PASS disabled template fails closed
+PASS reader skips null and despawned actors
+PASS nested pointer path resolves final field address
+PASS local state and frame cache reset
+PASS actor count bounds
+PASS empty actor array
+PASS 32-bit pointer path
+PASS reader cancellation
+PASS stale frames hidden
+PASS fresh frame eligible
+PASS synthetic scene explicitly labeled
+PASS demo matrix projects actors
+PASS camera forward projects to center
+PASS camera horizontal FOV projection
+PASS camera yaw convention
+PASS camera pitch convention
+PASS camera rejects points behind view
+PASS camera rejects invalid FOV
+PASS visible contact does not trigger edge warning
+PASS behind warning direction and metres
+PASS right warning direction
+PASS left warning direction
+PASS camera interpolation follows shortest angle across wrap
+PASS actor interpolation matches stable address
+PASS frame buffer clears on stop
+PASS loot category is opt-in
+PASS loot enabled with category filter
+PASS ammo toggles independently
+PASS bot filter leaves players independent
+PASS player remains enabled when bots hidden
+PASS vehicle toggle filters category
+PASS menu settings round-trip persistence
+PASS nearby zoomed character retains clipped box
+112 checks passed. Synthetic memory fixtures; no assertion of PUBG layout correctness.

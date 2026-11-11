@@ -1,0 +1,17 @@
+# GameLoop integration — verified 2026-11-04
+
+This report supersedes the initial connection-only conclusion. The missing `su` binary was not sufficient evidence that this emulator lacked a privileged facility: `/system/xbin/txperm` is bundled, setuid-root, and supports a root shell.
+
+GameLoop 7.0.167.0 on Android 13, x86_64 kernel, PUBG Global 4.6.0 / versionCode 21518 / arm64-v8a. Bundled ADB is used explicitly at 127.0.0.1:5555. REA's configured older ADB client caused a server version conflict, so device operations continued through the emulator's own CLI. Portable REA/static export evidence and focused local ELF/reflection comparisons were retained under `gameloop-21518`.
+
+Exact library SHA-256: ad923890b4e12e389aba66253ef0259285b351b3742fbda7ae0d0716ea070484. The previous 21525 identity remains separately accepted; hashes cannot be interchanged. Static comparison, exact global/name-accessor bytes, Boolean callbacks, and 566 selected reflection records support the layout. Full live native snapshot then confirmed the names/world/camera/player/actor traversal. The AFK waiting-area world had no local player and correctly failed; after the user reentered training, the existing network player traversal worked. No speculative offline-controller traversal was added.
+
+Access method: txperm gives uid0/all capabilities but retains shell SELinux context. Process handles are opened during a brief temporary permissive bootstrap, with a restoration trap and independent two-second restoration guard. Native Reader::new restores and verifies Enforcing immediately after opening the memory file, before names/game-field reads. The already-open file continues reading under Enforcing. No policy files, boot/root settings, game memory, or game files are changed. The earlier adb-root diagnostic experiment is reverted before delivery.
+
+Observed live snapshot: 920 level actors, one local character, four training targets, 20 vehicles, 314 loot records. The host excludes local pawn. The native stream/host pipeline ran for 70 seconds: 8273 frames, 118.4187 Hz, average read work 0.6166 ms, successful cancellation. CameraChanges=0 and PositionChanges=0 during that measurement, so it is a stationary streaming/performance validation, not a motion validation. All 34 independent enforcement samples and final state were Enforcing.
+
+Live GUI validation: selected GameLoop / profile21518 / serial127.0.0.1:5555; fresh live frames; OverlayVisible=true; overlay bounds equal rendering-child bounds (62,65,1758,988); foreground and root handle matched. Native render child is class subWin, title sub; Qt title/right chrome is excluded. The Windows helper was used once to foreground the minimized game for this essential visibility test.
+
+62 regression checks pass. Existing LDPlayer settings/ADB console path and su command remain supported. LDPlayer was not running during this continuation, so a new LDPlayer live test was not performed. Live GameLoop observations are training-scene-specific; other maps, fullscreen modes, emulator releases and game builds remain outside this validation.
+
+Evidence: gameloop-21518/static-findings.md, anchor-comparison.json, static-reflection-params.json, host-native-snapshot.json, host-stream-70seconds.json, stream-enforcement.json, visible-overlay-ui.png.json, self-test.txt.

@@ -1,0 +1,13 @@
+{
+  "Mode": "keepalive stdin EOF",
+  "RunSeconds": 0.483,
+  "SecondsFromInputCloseToExit": 0.031,
+  "Frames": 20,
+  "ReaderPids": [
+    8088
+  ],
+  "Errors": [],
+  "NonJSON": [],
+  "ADBExitCode": 0,
+  "Stderr": ""
+}

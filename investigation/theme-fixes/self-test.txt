@@ -1,0 +1,165 @@
+PASS aim chooses nearest enemy to screen centre and excludes allies/non-characters
+PASS aim retains valid target instead of switching each frame
+PASS aim ignores targets outside assistance circle
+PASS aim respects distance limit
+PASS aim excludes dead targets
+PASS aim rejects invalid target health
+PASS aim rejects invalid positions
+PASS aim excludes targets behind camera
+PASS aim skips characters when local team is unknown
+PASS training aim independent of player setting
+PASS training aim can be disabled independently
+PASS aim correction moves toward projected target
+PASS releasing activation clears motion and target
+PASS disabled aim never generates input
+PASS zero strength never generates input
+PASS aim rejects data older than 100 ms
+PASS aim rejects future timestamps
+PASS synthetic matrix preview cannot drive aim
+PASS long UI stalls cannot cause a catch-up jump
+PASS invalid elapsed time cannot produce input
+PASS dead zone avoids centre jitter
+PASS strength controls total correction with a bounded count rate
+PASS aim speed independent of 60 vs 120 Hz timer
+PASS gentle aim converges with camera feedback without a large turn
+PASS despawn clears target and fractional movement immediately
+PASS aim radius scales with viewport height
+PASS corrupt aim settings normalized
+PASS legacy settings receive disabled gentle aim defaults
+PASS aim settings persist through JSON round-trip
+PASS x64 SendInput structure matches Windows ABI
+PASS missing target window cannot receive aim input
+PASS legacy cursor guard migrates without changing saved strength
+PASS explicit optional cursor guard persists after migration
+PASS selected head chest and leg regions project in correct order
+PASS small circle excludes peripheral target
+PASS enlarging circle admits peripheral target
+PASS wide assistance circle supported up to 1200 pixels at 1080p
+PASS invalid aim region and activation normalize
+PASS region circle size and activation persist
+PASS visible GameLoop cursor does not block default mouse input
+PASS optional cursor guard reports its exact blocking reason
+PASS hold mode reports missing activation key
+PASS inside-circle mode sends input without a held activation key
+PASS foreground loss blocks and resets continuous input
+PASS menu stop and hidden-overlay gate block continuous input
+PASS focus recheck prevents sending after foreground changes
+PASS Windows input rejection disables aim and reports failure
+PASS accepted input without camera response gets a distinct diagnostic
+PASS camera motion clears missing-response diagnostic
+PASS zero strength is reported instead of claiming no target
+PASS unknown input transport defaults to automatic emulator selection
+PASS retired Android touch transport migrates to non-interfering mouse input
+PASS stop/menu gates release the input transport as well as resetting target selection
+PASS device transport error is exposed as the blocking reason
+PASS medium integrity cannot silently send input to a high-integrity emulator
+PASS matching administrator integrity permits ordinary mouse input
+PASS unknown integrity fails closed instead of claiming successful input
+PASS scope-only aim is blocked while scope is closed
+PASS scope-only aim follows actual ADS state without a held right button
+PASS fire-only aim is blocked while the weapon is idle
+PASS fire-only aim follows actual weapon firing state
+PASS combined activation accepts scope and firing together
+PASS combined activation rejects hip firing
+PASS unverified scope data cannot activate scope-only aim
+PASS unverified firing data cannot activate fire-only aim
+PASS always mode does not require a scope or firing state
+PASS legacy continuous activation migrates to always mode
+PASS reader snapshot carries actual activation flags into live frames
+PASS scope trigger sends correction from actual ADS even after the right button is released
+PASS closing the actual scope immediately stops scope-only corrections
+PASS idle weapon does not receive fire-only corrections
+PASS actual weapon firing starts fire-only correction
+PASS ending weapon firing immediately stops fire-only correction
+PASS display smoothing preserves the latest discrete scope and firing states
+PASS F3 toggles aim independently of ESP
+PASS F4 advances to the next activation mode
+PASS F4 cycles all modes and returns to the starting mode
+PASS F5 cycles the selected body region
+PASS F5 body-region cycle is reversible
+PASS F6 hides drawing without disabling aim or changing category filters
+PASS F6 restores ESP drawing
+PASS quick strength clamps at 100 percent
+PASS quick strength clamps at zero
+PASS quick radius clamps at its maximum
+PASS quick radius clamps at its minimum
+PASS quick input scale clamps at its maximum
+PASS quick input scale clamps at its minimum
+PASS quick drawing preferences persist independently of aim
+PASS legacy settings enable the shortcut HUD and preserve ESP by default
+PASS legacy settings retain existing shortcut defaults
+PASS input toggle accepts a custom keyboard chord
+PASS custom chord produces the Windows key and modifier binding
+PASS duplicate shortcut is rejected without replacing the previous binding
+PASS Insert stays reserved for panel collapse with or without modifiers
+PASS panel navigation and standalone modifier keys cannot become action shortcuts
+PASS custom shortcuts survive saving and reloading settings
+PASS malformed shortcut settings recover existing defaults
+PASS in-game panel uses the reduced medium and adjustment sizes
+PASS collapsed overlay is a small strip in the same top-left position
+PASS quick panel bounds fit small game windows
+PASS ESP master switch actually suppresses actor rendering
+PASS expanded quick HUD renders a solid readable panel
+PASS legacy LDPlayer connection settings migrate
+PASS emulator connections persist independently
+PASS emulator build profiles persist independently
+PASS LDPlayer su command remains unchanged
+PASS GameLoop uses its existing privileged shell
+PASS GameLoop process bootstrap includes native restore and independent recovery guard
+PASS missing privilege cannot execute process access command
+PASS verified GameLoop exact-build profile accepted
+PASS native build and hash cannot be interchanged
+PASS GameLoop local ADB address normalization
+PASS invalid GameLoop port rejected
+PASS non-local GameLoop address rejected
+PASS GameLoop rendering child excludes Qt chrome
+PASS existing LDPlayer reader prerequisites accepted
+PASS build and root blockers reported together
+PASS incompatible GameLoop cannot start reader
+PASS projection center
+PASS projection corner
+PASS near-plane rejection
+PASS far-plane rejection
+PASS NaN rejection
+PASS zero-W rejection
+PASS matrix order conventions
+PASS proc maps parsing
+PASS ASLR module base
+PASS missing module fails explicitly
+PASS ADB serial and state parsing
+PASS Windows trailing slash quoting
+PASS Windows embedded quote escaping
+PASS disabled template fails closed
+PASS reader skips null and despawned actors
+PASS nested pointer path resolves final field address
+PASS local state and frame cache reset
+PASS actor count bounds
+PASS empty actor array
+PASS 32-bit pointer path
+PASS reader cancellation
+PASS stale frames hidden
+PASS fresh frame eligible
+PASS synthetic scene explicitly labeled
+PASS demo matrix projects actors
+PASS camera forward projects to center
+PASS camera horizontal FOV projection
+PASS camera yaw convention
+PASS camera pitch convention
+PASS camera rejects points behind view
+PASS camera rejects invalid FOV
+PASS visible contact does not trigger edge warning
+PASS behind warning direction and metres
+PASS right warning direction
+PASS left warning direction
+PASS camera interpolation follows shortest angle across wrap
+PASS actor interpolation matches stable address
+PASS frame buffer clears on stop
+PASS loot category is opt-in
+PASS loot enabled with category filter
+PASS ammo toggles independently
+PASS bot filter leaves players independent
+PASS player remains enabled when bots hidden
+PASS vehicle toggle filters category
+PASS menu settings round-trip persistence
+PASS nearby zoomed character retains clipped box
+164 checks passed. Synthetic memory fixtures; no assertion of PUBG layout correctness.

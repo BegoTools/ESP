@@ -1,0 +1,7 @@
+PUBG MOBILE host=7212508 render=46336378
+7212508 / Qt5152QWindowIcon / PUBG MOBILE / {X=-31996,Y=-32000,Width=152,Height=24} / visible=True
+4786874 / Qt5152QWindowIcon / GameLoopEmulator / {X=-31996,Y=-32000,Width=1758,Height=1028} / visible=True
+2752620 / Qt5152QWindowIcon / GameLoopEmulator / {X=-31996,Y=-31960,Width=1758,Height=988} / visible=True
+3149410 / Qt5152QWindowIcon / GameLoopEmulator / {X=-31996,Y=-31960,Width=1758,Height=988} / visible=True
+8851090 / Qt5152QWindowIcon / GameLoopEmulator / {X=-31996,Y=-31960,Width=1758,Height=988} / visible=True
+46336378 / subWin / sub / {X=-31996,Y=-31960,Width=1758,Height=988} / visible=True

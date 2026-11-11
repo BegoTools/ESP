@@ -1,0 +1,90 @@
+[
+  {
+    "file_offset": "0x3fc13aa",
+    "text": "ESightVisionMask::NightVisionEnv"
+  },
+  {
+    "file_offset": "0x3fc9a24",
+    "text": "AILineOfSight"
+  },
+  {
+    "file_offset": "0x3ff6772",
+    "text": "SeePawnDelegate__DelegateSignature"
+  },
+  {
+    "file_offset": "0x3ff6795",
+    "text": "OnSeePawn"
+  },
+  {
+    "file_offset": "0x400a031",
+    "text": "EAICheckShootingPoseType::ShootingPose_WaitVisibilityCheck"
+  },
+  {
+    "file_offset": "0x403bf6f",
+    "text": "LineOfSight"
+  },
+  {
+    "file_offset": "0x4041782",
+    "text": "bEnableVisibilityCheck"
+  },
+  {
+    "file_offset": "0x40e8910",
+    "text": "SimpleLineOfSight"
+  },
+  {
+    "file_offset": "0x4131d47",
+    "text": "ESightVisionMask"
+  },
+  {
+    "file_offset": "0x4147de5",
+    "text": "ESightVisionMask::NightVisionScope"
+  },
+  {
+    "file_offset": "0x4147e08",
+    "text": "ESightVisionMask::NightVisionFrame"
+  },
+  {
+    "file_offset": "0x41ad962",
+    "text": "LineOfSightTo"
+  },
+  {
+    "file_offset": "0x41bc52e",
+    "text": "CharacterCompOutOfVisionOptimizationDataMap"
+  },
+  {
+    "file_offset": "0x41bc56f",
+    "text": "bCheckRelevantWithFOV"
+  },
+  {
+    "file_offset": "0x41c1494",
+    "text": "bEnableSmokingVisibilityCheck"
+  },
+  {
+    "file_offset": "0x41e9401",
+    "text": "ESightVisionMask::NightVisionEquip"
+  },
+  {
+    "file_offset": "0x41e9424",
+    "text": "ESightVisionMask::NightVisionHelmet"
+  },
+  {
+    "file_offset": "0x41e9448",
+    "text": "ESightVisionMask::NightVision"
+  },
+  {
+    "file_offset": "0x421b007",
+    "text": "SmokingVisibilityCheckTag"
+  },
+  {
+    "file_offset": "0x422a9cc",
+    "text": "CharacterCompOutOfVisionOptimizationItem"
+  },
+  {
+    "file_offset": "0x4230eec",
+    "text": "SmokingVisibilityCheckChannel"
+  },
+  {
+    "file_offset": "0x428ab08",
+    "text": "WeaponCompOutOfVisionOptimizationDataMap"
+  }
+]

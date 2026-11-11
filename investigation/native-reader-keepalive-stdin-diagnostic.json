@@ -1,0 +1,32 @@
+{
+  "Transport": "bundledADB exec-out su",
+  "DurationSeconds": 3.255,
+  "PingsSent": 13,
+  "FrameCount": 180,
+  "FirstFrameSeconds": 0.12593929999275133,
+  "LastFrameSeconds": 3.1173309999867342,
+  "UniqueReaderPids": [
+    7797
+  ],
+  "JSONErrors": [],
+  "NonJSON": [],
+  "WriteErrors": [],
+  "ExitCode": 0,
+  "Stderr": "",
+  "StdinProbes": [
+    {
+      "Mode": "exec-out",
+      "DurationSeconds": 1.048,
+      "ExitCode": 0,
+      "Stdout": "sh: read: select: Interrupted system call\r\nINPUT:\r\n",
+      "Stderr": ""
+    },
+    {
+      "Mode": "shell",
+      "DurationSeconds": 0.201,
+      "ExitCode": 0,
+      "Stdout": "INPUT:PINGPROBE\r\n",
+      "Stderr": ""
+    }
+  ]
+}
