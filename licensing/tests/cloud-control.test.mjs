@@ -156,8 +156,9 @@ test("Admin changes affect later verification and all successful writes are audi
   assert.equal((await activate(code, device(5))).status, 200);
   assert.equal((await activate(code, device(6))).value.error, "device_limit");
   assert.equal((await manage("plans", { id: plan, name: "Test plan", status: "active", maxDevices: 1 }, { method: "PUT" })).status, 409);
-  assert.equal((await manage("features", { key: "live", scope: "plan", id: plan, enabled: false }, { method: "PUT" })).status, 200);
+  assert.equal((await manage("features", { key: "live", scope: "plan_default", id: plan, enabled: false }, { method: "PUT" })).status, 200);
   assert.equal((await heartbeat(first.token, device(4))).value.permissions.live, false);
+  assert.equal((await manage("features?search=plan_default")).value.items[0].scope_id, plan);
   assert.equal((await manage("features", { key: "live", scope: "license", id, enabled: true }, { method: "PUT" })).status, 200);
   assert.equal((await heartbeat(first.token, device(4))).value.permissions.live, true);
   assert.equal((await manage("licenses/" + id + "/revoke", {})).status, 200);

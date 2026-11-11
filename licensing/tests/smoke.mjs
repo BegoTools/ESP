@@ -7,13 +7,16 @@ const suffix = (stage ? "-staging" : "") + ".ahmed-mabrouk-dev.workers.dev";
 const client = "https://sv-client-api-v2" + suffix;
 const admin = "https://sv-admin-v2" + suffix;
 const options = { redirect: "manual", signal: AbortSignal.timeout(8000) };
-const health = await fetch(client + "/v2/client/health", options);
-assert.equal(health.status, 200);
-assert.deepEqual(await health.json(), { ok: true });
-const version = await fetch(client + "/v2/client/version", options);
-assert.equal(version.status, 200);
-assert.equal((await version.json()).channel, stage ? "test" : "stable");
-assert.equal((await fetch(client + "/v2/admin/overview", options)).status, 404);
+if (!process.argv.includes("--admin-only")) {
+  const health = await fetch(client + "/v2/client/health", options);
+  assert.equal(health.status, 200);
+  assert.deepEqual(await health.json(), { ok: true });
+  const version = await fetch(client + "/v2/client/version", options);
+  assert.equal(version.status, 200);
+  assert.equal((await version.json()).channel, stage ? "test" : "stable");
+  assert.equal((await fetch(client + "/v2/admin/overview", options)).status, 404);
+  console.log("Client health, version and API isolation passed.");
+}
 
 for (const route of ["/", "/v2/admin/overview"]) {
   const response = await fetch(admin + route, options);
@@ -26,4 +29,3 @@ for (const route of ["/", "/v2/admin/overview"]) {
   }
   console.log(route + (access ? " Cloudflare Access enforced" : " Worker authentication enforced"));
 }
-console.log("Client health, version and API isolation passed.");

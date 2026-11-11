@@ -7,7 +7,7 @@
 | Staging | `sv-client-api-v2-staging` | `sv-admin-v2-staging` | `spectravision-licenses-staging` |
 | الإنتاج | `sv-client-api-v2` | `sv-admin-v2` | `spectravision-licenses` |
 
-من Workers & Pages افتح Worker الإدارة ثم Access واختر حماية All traffic. اسمح بحساب المالك وحسابات الدعم المعتمدة فقط. طبق ذلك لكل بيئة على حدة. أول مرة يمكن نشر Worker الإدارة وهو مغلق افتراضيًا حتى تكتمل حماية Access. اترك Client Worker متاحًا لبرنامج Windows. [إعداد Cloudflare Access للـWorkers](https://developers.cloudflare.com/workers/configuration/cloudflare-access/)
+من Workers & Pages افتح Worker الإدارة ثم Access واختر حماية All traffic. اسمح بحساب المالك وحسابات الدعم المعتمدة فقط. طبق ذلك لكل بيئة على حدة. في أول إعداد للإنتاج، أنشئ Worker الإدارة بالاسم المحدد باستخدام قالب فارغ من بيانات التطبيق، ثم فعّل Access قبل تشغيل workflow الإنتاج. يتحقق workflow من التحويل إلى صفحة Access قبل بدء ترحيل D1. اترك Client Worker متاحًا لبرنامج Windows. [إعداد Cloudflare Access للـWorkers](https://developers.cloudflare.com/workers/configuration/cloudflare-access/)
 
 في Worker الإدارة خزّن `ACCESS_ISSUER` بعنوان الفريق مثل `https://TEAM.cloudflareaccess.com` من دون slash أخير. خزّن `ACCESS_AUD` بمعرّف Application Audience. خزّن `ADMIN_ROLES` كـJSON مفاتيحه عناوين بريد بالحروف الصغيرة وقيمه `owner` أو `support`. كرر بقيم تخص كل بيئة. استخدم لوحة Cloudflare أو `wrangler secret put` مع ملف إعدادات البيئة. يتطلب السماح بالوصول نجاح السياسة ووجود الدور في القائمة. راجع الوصول بحساب فعلي وجرّب الرفض من جلسة غير مصرح بها.
 

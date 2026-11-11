@@ -41,6 +41,7 @@ $null = New-Item -ItemType Directory -Force -Path $stage
 $config = Join-Path $stage 'ReleaseConfig.cs'
 $rsa = [Security.Cryptography.RSACryptoServiceProvider]::new(3072)
 $rsa.PersistKeyInCsp = $false
+$signingSecret = $env:SV_RELEASE_SIGNING_KEY
 
 function Import-LocalKey([string]$name) {
     Add-Type -AssemblyName System.Security
@@ -53,10 +54,11 @@ function Import-LocalKey([string]$name) {
 }
 
 try {
+    $env:SV_RELEASE_SIGNING_KEY = $null
     if ($Bridge) {
         Import-LocalKey 'setup.rsa'
-    } elseif ($env:SV_RELEASE_SIGNING_KEY) {
-        try { $rsa.FromXmlString($env:SV_RELEASE_SIGNING_KEY) }
+    } elseif ($signingSecret) {
+        try { $rsa.FromXmlString($signingSecret) }
         catch { throw 'The supplied signing key is invalid.' }
     } elseif (-not $Test) {
         Import-LocalKey 'cloud-v2.rsa'
@@ -132,6 +134,7 @@ namespace ESPWorkbench {
     } | ConvertTo-Json))
     Write-Output "Setup: $setup"
 } finally {
+    $env:SV_RELEASE_SIGNING_KEY = $signingSecret
     $rsa.Dispose()
     if (Test-Path -LiteralPath $config) { Remove-Item -LiteralPath $config }
 }

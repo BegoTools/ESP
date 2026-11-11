@@ -26,6 +26,8 @@ jobs:
           cache: npm
           cache-dependency-path: licensing/package-lock.json
       - run: npm ci && npm run build
+      - name: Verify Access is in place before touching production D1
+        run: node tests/smoke.mjs production --admin-only --require-access
       - name: Record restore point, reconcile schema and deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
