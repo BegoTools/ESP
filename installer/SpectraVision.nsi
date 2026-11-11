@@ -9,6 +9,8 @@ SetCompressor /SOLID lzma
 
 !if "${PRODUCT}" == "SpectraVision-Test"
 !define PRODUCT_NAME "RAM HAX Test"
+!else if "${PRODUCT}" == "SpectraVision-Local"
+!define PRODUCT_NAME "RAM HAX Local"
 !else
 !define PRODUCT_NAME "RAM HAX"
 !endif

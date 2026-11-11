@@ -1,0 +1,35 @@
+{
+  "name": "sv-client-api-v2",
+  "main": "client-api/worker.mjs",
+  "compatibility_date": "2026-04-21",
+  "workers_dev": true,
+  "preview_urls": false,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "spectravision-licenses",
+      "database_id": "6b885a7d-5470-4bcc-864b-75c9198aca8c"
+    }
+  ],
+  "vars": {
+    "RELEASE_CHANNEL": "stable"
+  },
+  "ratelimits": [
+    {
+      "name": "ACTIVATION_LIMIT",
+      "namespace_id": "80351801",
+      "simple": {
+        "limit": 15,
+        "period": 60
+      }
+    },
+    {
+      "name": "SESSION_LIMIT",
+      "namespace_id": "80351802",
+      "simple": {
+        "limit": 120,
+        "period": 60
+      }
+    }
+  ]
+}

@@ -2,3 +2,6 @@
 .dev.vars*
 public/updates/
 test-assets/
+.env*
+node_modules/
+dashboard/dist/

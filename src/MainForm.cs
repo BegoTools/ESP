@@ -35,6 +35,9 @@ namespace ESPWorkbench
     }
     public sealed class Settings
     {
+#if DISTRIBUTION
+        public int SchemaVersion;
+#endif
         public string AdbPath = "", ConsolePath = "", ProfilePath = "", Serial = "";
         public string Emulator = "LDPlayer";
         public string Language = "ar";
@@ -60,7 +63,13 @@ namespace ESPWorkbench
             }
         }
         public static Settings Load() { try { return new JavaScriptSerializer().Deserialize<Settings>(File.ReadAllText(File.Exists(FilePath)?FilePath:LegacyFilePath)) ?? new Settings(); } catch { return new Settings(); } }
-        public void Save() { UserData.Replace(FilePath,System.Text.Encoding.UTF8.GetBytes(new JavaScriptSerializer().Serialize(this))); }
+        public void Save()
+        {
+#if DISTRIBUTION
+            SchemaVersion = Math.Max(SchemaVersion, 2);
+#endif
+            UserData.Replace(FilePath,System.Text.Encoding.UTF8.GetBytes(new JavaScriptSerializer().Serialize(this)));
+        }
     }
     public sealed partial class MainForm : Form
     {
@@ -169,6 +178,9 @@ namespace ESPWorkbench
             SetStatus("Idle / waiting for connection");
             Native.timeBeginPeriod(1);
             timer.Interval=Math.Max(1,1000/options.RefreshRate); timer.Tick+=delegate {
+#if DISTRIBUTION
+                if (license != null) SuspendUnlicensedFeatures();
+#endif
                 int requestedInterval=Math.Max(1,1000/Math.Max(30,options.RefreshRate)); if(timer.Interval!=requestedInterval) timer.Interval=requestedInterval;
                 if (demoMode) latest=Demo.Make(demoClock.Elapsed.TotalSeconds);
                 if (liveDisplay&&!demoMode&&Painter.Fresh(latest)) SetStatus("LIVE / {0} entities / {1:0} Hz / {2} menu / {3} stop",latest.Actors.Length,latest.ReadHertz,options.Shortcuts.Label(8),options.Shortcuts.Label(2));
@@ -343,6 +355,11 @@ namespace ESPWorkbench
         {
             busy=value; bool running=readerTask!=null && !readerTask.IsCompleted;
             scan.Enabled=inspect.Enabled=!value&&!running; live.Enabled=demo.Enabled=!value&&!running;
+#if DISTRIBUTION
+            inspect.Enabled &= license != null && license.Allows("inspection");
+            live.Enabled &= license != null && license.Allows("live");
+            demo.Enabled &= license != null && license.Allows("demo");
+#endif
             adbPath.Enabled=consolePath.Enabled=profilePath.Enabled=devices.Enabled=instances.Enabled=!value&&!running;
             connectionSetup.Enabled=profilePath.Parent.Enabled=!value&&!running;
             stop.Enabled=!value && (demoMode||running||latest!=null);
@@ -395,19 +412,43 @@ namespace ESPWorkbench
         }
         private async Task Inspect()
         {
-            if (busy) return; SetBusy(true);
-            try { Adb adb=SelectedAdb(); Profile profile=Profile.Load(profilePath.Text); string text=await Task.Run(()=>Diagnostics.Run(adb,profile)); WriteLog(text); SetStatus("Inspection complete / see results below"); }
+            if (busy) return;
+#if DISTRIBUTION
+            using (var permission = license == null ? null : license.BeginWork("inspection"))
+            {
+                if (permission == null) return;
+                await InspectWithPermission(permission.Token);
+            }
+#else
+            await InspectWithPermission(CancellationToken.None);
+#endif
+        }
+        private async Task InspectWithPermission(CancellationToken token)
+        {
+            SetBusy(true);
+            try { Adb adb=SelectedAdb(); Profile profile=Profile.Load(profilePath.Text); string text=await Task.Run(()=>Diagnostics.Run(adb,profile,token)); token.ThrowIfCancellationRequested(); WriteLog(text); SetStatus("Inspection complete / see results below"); }
+            catch (OperationCanceledException) { SetStatus("Stopped"); }
             catch (Exception ex) { Failure(ex); }
             finally { SetBusy(false); }
         }
         private void StartDemo()
         {
             if (busy || (readerTask!=null&&!readerTask.IsCompleted)) return;
+#if DISTRIBUTION
+            if (license == null || !license.Allows("demo")) return;
+            if (demoPermission != null) demoPermission.Dispose();
+            demoPermission = license.BeginWork("demo");
+            if (demoPermission == null) return;
+#endif
             demoMode=true; demoClock.Restart(); overlay.Hide(); latest=Demo.Make(0); SetStatus("DEMO / generated actors only / no game data"); WriteLogText("Demo started. All displayed positions and labels are synthetic."); SetBusy(false);
         }
         internal async Task StartLive()
         {
-            if (busy || (readerTask!=null&&!readerTask.IsCompleted)) return; SetBusy(true);
+            if (busy || (readerTask!=null&&!readerTask.IsCompleted)) return;
+#if DISTRIBUTION
+            if (license == null || !license.Allows("live")) return;
+#endif
+            SetBusy(true);
             try
             {
                 Profile p=Profile.Load(profilePath.Text); p.Validate(); Adb adb=SelectedAdb();
@@ -416,7 +457,14 @@ namespace ESPWorkbench
                 if (!Native.IsWindow(target.Window)) throw new IOException(L.Text("The game render surface is unavailable. Restore the emulator game window and refresh devices."));
                 demoMode=false; latest=null; frameBuffer.Clear(); overlay.Hide();
                 if (readerCancel!=null) readerCancel.Dispose();
-                readerCancel=new CancellationTokenSource(); CancellationToken token=readerCancel.Token;
+#if DISTRIBUTION
+                if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
+                readerCancel = license.BeginWork("live");
+                if (readerCancel == null) return;
+#else
+                readerCancel = new CancellationTokenSource();
+#endif
+                CancellationToken token=readerCancel.Token;
                 GameInfo info=await Task.Run(()=>GameInfo.Inspect(adb,p.Package,false,token));
                 GameCompatibility.Ensure(p,info,Emulators.Name(activeEmulator));
                 info.Maps=await Task.Run(()=>adb.ReadMaps(info.Pid,token));
@@ -425,6 +473,7 @@ namespace ESPWorkbench
                 await Task.Run(()=>memory.Read(baseAddress,64));
                 NativeReader nativeReader=null;
                 if (p.Backend=="Native") { await Task.Run(()=>NativeReader.Prepare(adb,p,info,maps,token)); nativeReader=new NativeReader(adb,info.Pid,baseAddress); }
+                token.ThrowIfCancellationRequested();
                 GameReader reader=p.Backend=="Native"?null:new GameReader(p,memory,baseAddress); overlay.Target=target.Window; overlay.Suppressed=false;
                 StopAimInput();
                 WriteLogText("Aim input: Windows Mouse (no touchscreen gestures). Tool integrity: 0x{0:X}. GameLoop may require restarting this tool as administrator.",WindowsInputAccess.CurrentIntegrity);
@@ -458,6 +507,9 @@ namespace ESPWorkbench
         }
         public async Task StopReader()
         {
+#if DISTRIBUTION
+            if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
+#endif
             StopAimInput();
             liveDisplay=false; overlay.Suppressed=true; demoMode=false; latest=null; frameBuffer.Clear(); overlay.Hide();
             UpdateQuickBindings();
@@ -553,6 +605,9 @@ namespace ESPWorkbench
         private void RebindShortcuts()
         {
             ReleaseShortcuts();overlay.Quick.Unavailable.Clear();shortcutsSuspended=false;
+#if DISTRIBUTION
+            if (license == null || !license.Allows(null)) return;
+#endif
             toggleHotkey=RegisterShortcut(1);stopHotkey=RegisterShortcut(2);menuHotkey=RegisterShortcut(3);UpdateQuickBindings();
         }
         private void CaptureShortcuts(bool capturing)
@@ -606,6 +661,9 @@ namespace ESPWorkbench
         {
             if (closing) return;
             e.Cancel=true; closing=true; liveDisplay=false; overlay.Suppressed=true; overlay.Hide(); timer.Stop();StopAimInput(); if (readerCancel!=null) readerCancel.Cancel();
+#if DISTRIBUTION
+            if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
+#endif
             UpdateQuickBindings();
             ReleaseShortcuts();
             if (readerTask!=null) try { await readerTask; } catch { }

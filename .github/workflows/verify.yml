@@ -1,0 +1,50 @@
+name: Verify
+on:
+  pull_request:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  cloud:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: licensing
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: licensing/package-lock.json
+      - run: npm ci
+      - run: npm run check && npm run build && npm test
+      - run: |
+          npx --no-install wrangler d1 migrations apply spectravision-licenses-staging --local --config wrangler.staging.client.jsonc
+          npx --no-install wrangler deploy --dry-run --config wrangler.client.jsonc
+          npx --no-install wrangler deploy --dry-run --config wrangler.admin.jsonc
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Build and run existing regression checks
+        shell: pwsh
+        run: |
+          ./build.ps1 -OutputFolder 'build-cloud-control/preview'
+          $report = 'build-cloud-control/preview/self-test.txt'
+          $test = Start-Process -FilePath 'build-cloud-control/preview/ESPWorkbench.exe' -ArgumentList "--self-test $report" -Wait -PassThru -WindowStyle Hidden
+          Get-Content $report
+          if ($test.ExitCode -ne 0) { exit $test.ExitCode }
+      - name: Verify online licensing on Windows
+        shell: pwsh
+        run: ./installer/tests/Test-OnlineLicensing.ps1
+      - name: Build a local-only signed setup
+        shell: pwsh
+        run: |
+          choco install nsis --version=3.12.0 --yes --no-progress
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          ./installer/build-release.ps1 -Version 2.0.0 -Test -Local

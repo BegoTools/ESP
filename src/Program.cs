@@ -17,7 +17,10 @@ namespace ESPWorkbench
         }
         public static string Run(Adb adb,Profile profile)
         {
-            CancellationToken token=CancellationToken.None;
+            return Run(adb,profile,CancellationToken.None);
+        }
+        internal static string Run(Adb adb,Profile profile,CancellationToken token)
+        {
             profile.Validate();
             GameInfo info=GameInfo.Inspect(adb,profile.Package,false,token);
             string report=String.Join("\r\n",new[] {
@@ -42,6 +45,7 @@ namespace ESPWorkbench
                 report+="\r\n"+L.Text("libUE4.so base:")+" 0x"+module.ToString("X")+"\r\n"+L.Text("Memory transport:")+" "+L.Format("PASS / {0} decoded bytes",page.Length);
                 report+="\r\n"+L.Text("Live startup also verifies the profile's library SHA-256.");
             }
+            catch (OperationCanceledException) { throw; }
             catch (Exception ex) { report+="\r\n"+L.Text("Memory transport:")+" "+L.Text("FAILED")+" / "+ex.Message; }
             return report;
         }
@@ -168,21 +172,18 @@ namespace ESPWorkbench
                     return 0;
                 }
 #if DISTRIBUTION
-                LicenseClient license = new LicenseClient();
-                bool firstLaunch = true;
-                while (true)
+                using (var license = new LicenseService())
                 {
-                    using (ActivationForm activation = new ActivationForm(license, firstLaunch && license.HasToken))
+                    using (var activation = new ActivationForm(license, license.HasToken))
                         if (activation.ShowDialog() != DialogResult.OK) return 0;
-                    using (MainForm form = new MainForm(firstLaunch && args.Contains("--live"), preferred))
+                    using (var form = new MainForm(args.Contains("--live"), preferred))
                     {
                         form.ConnectDistribution(license);
                         Application.Run(form);
                         form.InstallStagedUpdate();
-                        if (!form.LicenseEnded) return 0;
                     }
-                    firstLaunch = false;
                 }
+                return 0;
 #else
                 Application.Run(new MainForm(args.Contains("--live"),preferred)); return 0;
 #endif

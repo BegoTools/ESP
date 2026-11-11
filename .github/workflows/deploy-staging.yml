@@ -1,0 +1,40 @@
+name: Deploy staging
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: spectravision-staging
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/develop'
+    uses: ./.github/workflows/verify.yml
+  deploy:
+    needs: verify
+    runs-on: ubuntu-latest
+    environment: staging
+    defaults:
+      run:
+        working-directory: licensing
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: licensing/package-lock.json
+      - run: npm ci && npm run build
+      - name: Migrate and deploy staging
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" && test -n "$CLOUDFLARE_ACCOUNT_ID"
+          npx --no-install wrangler d1 migrations apply spectravision-licenses-staging --remote --config wrangler.staging.client.jsonc
+          npx --no-install wrangler deploy --config wrangler.staging.client.jsonc
+          npx --no-install wrangler deploy --config wrangler.staging.admin.jsonc
+      - run: node tests/smoke.mjs staging --require-access
