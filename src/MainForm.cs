@@ -147,11 +147,10 @@ namespace ESPWorkbench
             AddLabel(setup,"ADB device (actual serial)"); ConfigureCombo(setup,devices);
             AddLabel(setup,"Overlay target (select matching instance)"); ConfigureCombo(setup,instances);
             FlowLayoutPanel connectionButtons = Row(); ConfigureButton(scan,"تحديث الأجهزة",async delegate { await Scan(); }); ConfigureButton(inspect,"فحص اللعبة",async delegate { await Inspect(); }); connectionButtons.Controls.Add(scan); connectionButtons.Controls.Add(inspect); setup.Controls.Add(connectionButtons);
-            AddLabel(displaySetup,"JSON profile");
-            ConfigurePath(displaySetup,"JSON profile",profilePath,delegate {
+            ConfigurePath(displaySetup,"JSON profile (optional)",profilePath,delegate {
                 using (OpenFileDialog dialog = new OpenFileDialog { Filter=L.Text("JSON profile (*.json)|*.json"),InitialDirectory=Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"profiles") }) if (dialog.ShowDialog(this)==DialogResult.OK) profilePath.Text=dialog.FileName;
             });
-            Label note = new Label { Width=340,Height=72,ForeColor=Color.FromArgb(237,188,104),Margin=new Padding(0,12,0,4) }; BindText(note,"ملفا 4.6.0 للبناءين 21525 و21518 مرتبطان ببصمة المكتبة. Live يقرأ بيانات فعلية؛ العرض التجريبي يستخدم بيانات مصطنعة."); displaySetup.Controls.Add(note);
+            Label note = new Label { Width=340,Height=72,ForeColor=Color.FromArgb(237,188,104),Margin=new Padding(0,12,0,4) }; BindText(note,"Leave the profile blank to use the verified profile for the installed game build."); displaySetup.Controls.Add(note);
             FlowLayoutPanel checks = new FlowLayoutPanel { Width=340,Height=90,Margin=Padding.Empty };
             AddCheck(checks,"Boxes",options.Boxes,v=>options.Boxes=v); AddCheck(checks,"الصحة",options.Health,v=>options.Health=v); AddCheck(checks,"Labels",options.Names,v=>options.Names=v); AddCheck(checks,"المسافة",options.Distance,v=>options.Distance=v); AddCheck(checks,"Top lines",options.Lines,v=>options.Lines=v); AddCheck(checks,"Alerts",options.Alerts,v=>options.Alerts=v); AddCheck(checks,"أفراد الفريق",options.Allies,v=>options.Allies=v,true); displaySetup.Controls.Add(checks);
             FlowLayoutPanel range = Row(); AddLabel(range,"Max distance (m)");
@@ -215,8 +214,7 @@ namespace ESPWorkbench
             consolePath.Text=File.Exists(connection.ConsolePath)?connection.ConsolePath:activeEmulator==EmulatorKind.LDPlayer?Emulators.FindConsole():"";
             adbPath.Text=File.Exists(connection.AdbPath)?connection.AdbPath:Emulators.FindAdb(activeEmulator,consolePath.Text);
             endpoint.Text=connection.Endpoint;
-            string defaultProfile=Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"profiles",activeEmulator==EmulatorKind.GameLoop?"pubg-global-4.6.0-21518.json":"pubg-global-4.6.0-21525.json");
-            profilePath.Text=File.Exists(connection.ProfilePath)&&!connection.ProfilePath.EndsWith("pubg-global.template.json",StringComparison.OrdinalIgnoreCase)?connection.ProfilePath:defaultProfile;
+            profilePath.Text=File.Exists(connection.ProfilePath)&&!Profile.IsBundledPath(connection.ProfilePath)?connection.ProfilePath:"";
             consoleRow.Visible=((Control)consoleRow.Tag).Visible=activeEmulator==EmulatorKind.LDPlayer;
             endpointRow.Visible=((Control)endpointRow.Tag).Visible=activeEmulator==EmulatorKind.GameLoop;
         }
@@ -426,7 +424,7 @@ namespace ESPWorkbench
         private async Task InspectWithPermission(CancellationToken token)
         {
             SetBusy(true);
-            try { Adb adb=SelectedAdb(); Profile profile=Profile.Load(profilePath.Text); string text=await Task.Run(()=>Diagnostics.Run(adb,profile,token)); token.ThrowIfCancellationRequested(); WriteLog(text); SetStatus("Inspection complete / see results below"); }
+            try { Adb adb=SelectedAdb(); Profile profile=String.IsNullOrWhiteSpace(profilePath.Text)?null:Profile.Load(profilePath.Text); string text=await Task.Run(()=>Diagnostics.Run(adb,profile,token)); token.ThrowIfCancellationRequested(); WriteLog(text); SetStatus("Inspection complete / see results below"); }
             catch (OperationCanceledException) { SetStatus("Stopped"); }
             catch (Exception ex) { Failure(ex); }
             finally { SetBusy(false); }
@@ -451,7 +449,7 @@ namespace ESPWorkbench
             SetBusy(true);
             try
             {
-                Profile p=Profile.Load(profilePath.Text); p.Validate(); Adb adb=SelectedAdb();
+                Profile p=String.IsNullOrWhiteSpace(profilePath.Text)?null:Profile.Load(profilePath.Text); Adb adb=SelectedAdb();
                 Instance target=instances.SelectedItem as Instance;
                 if (target==null) throw new IOException(L.Format("Select the matching running {0} game window.",Emulators.Name(activeEmulator)));
                 if (!Native.IsWindow(target.Window)) throw new IOException(L.Text("The game render surface is unavailable. Restore the emulator game window and refresh devices."));
@@ -465,14 +463,17 @@ namespace ESPWorkbench
                 readerCancel = new CancellationTokenSource();
 #endif
                 CancellationToken token=readerCancel.Token;
-                GameInfo info=await Task.Run(()=>GameInfo.Inspect(adb,p.Package,false,token));
+                string package=p==null?Profile.GlobalPackage:p.Package;
+                GameInfo info=await Task.Run(()=>GameInfo.Inspect(adb,package,false,token));
+                if (p==null) p=Profile.ForInstalled(info);
+                p.Validate();
                 GameCompatibility.Ensure(p,info,Emulators.Name(activeEmulator));
                 info.Maps=await Task.Run(()=>adb.ReadMaps(info.Pid,token));
                 List<MapRegion> maps=MapRegion.Parse(info.Maps); ulong baseAddress=MapRegion.ModuleBase(maps,p.Module);
                 AndroidMemory memory=new AndroidMemory(adb,info.Pid,maps,token);
                 await Task.Run(()=>memory.Read(baseAddress,64));
                 NativeReader nativeReader=null;
-                if (p.Backend=="Native") { await Task.Run(()=>NativeReader.Prepare(adb,p,info,maps,token)); nativeReader=new NativeReader(adb,info.Pid,baseAddress); }
+                if (p.Backend=="Native") { await Task.Run(()=>NativeReader.Prepare(adb,p,info,maps,token)); nativeReader=new NativeReader(adb,info.Pid,baseAddress,p); }
                 token.ThrowIfCancellationRequested();
                 GameReader reader=p.Backend=="Native"?null:new GameReader(p,memory,baseAddress); overlay.Target=target.Window; overlay.Suppressed=false;
                 StopAimInput();

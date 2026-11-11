@@ -116,7 +116,23 @@ impl Memory {
 
 #[derive(Clone)]
 struct ClassInfo { name: String, player: bool, vehicle: bool, loot: bool, capsule: bool, kind: String }
+#[derive(Clone, Copy)]
+struct BuildLayout {
+    engine: u64, names_state: u64, health: u64, team: u64, bot: u64,
+    dead: u64, breath: u64, ads: u64, firing: u64,
+}
+
+const LAYOUT_46: BuildLayout = BuildLayout {
+    engine: 0xf621d90, names_state: 0xf354be0, health: 0xe60, team: 0x998, bot: 0xa40,
+    dead: 0xe7c, breath: 0x1c40, ads: 0x1134, firing: 0x1840,
+};
+const LAYOUT_47_21718: BuildLayout = BuildLayout {
+    engine: 0xfc70a70, names_state: 0xf9a2920, health: 0xe70, team: 0x9a8, bot: 0xa50,
+    dead: 0xe8c, breath: 0x1cb0, ads: 0x114c, firing: 0x18b0,
+};
+
 struct Reader {
+    layout: BuildLayout,
     memory: Memory, base: u64, names: u64, session: String, last_world: u64,
     name_cache: HashMap<i32,String>, class_cache: HashMap<u64,Rc<ClassInfo>>,
     classification_at: Option<Instant>, static_refresh_at: Option<Instant>,
@@ -125,7 +141,7 @@ struct Reader {
     life_layouts:HashMap<u64,bool>,
 }
 impl Reader {
-    fn new(pid: u32, base: u64, session: String) -> Result<Self> {
+    fn new(pid: u32, base: u64, session: String, layout: BuildLayout) -> Result<Self> {
         let maps = fs::read_to_string(format!("/proc/{pid}/maps")).map_err(|e|format!("Cannot read process maps: {e}"))?;
         let matched = maps.lines().any(|line| {
             let fields: Vec<&str> = line.split_whitespace().collect();
@@ -143,11 +159,11 @@ impl Reader {
             }
         }
         let mut memory = Memory {file, reads:0};
-        let state = base+0xf354be0; let encoded = memory.int(state)?;
+        let state = base+layout.names_state; let encoded = memory.int(state)?;
         if encoded < 100 || (encoded-100)%3 != 0 || (encoded-100)/3 > 20 { return Err("Invalid exact-build names indirection".into()); }
         let mut names = memory.ptr(state+8)?;
         for _ in 0..(encoded-100)/3 { names = memory.ptr(names)?; }
-        let mut reader = Reader {memory,base,names,session,last_world:0,name_cache:HashMap::new(),class_cache:HashMap::new(),classification_at:None,static_refresh_at:None,classification_signature:Vec::new(),dynamic_actors:Vec::new(),activation_class:0,activation_offsets:None,life_layouts:HashMap::new()};
+        let mut reader = Reader {layout,memory,base,names,session,last_world:0,name_cache:HashMap::new(),class_cache:HashMap::new(),classification_at:None,static_refresh_at:None,classification_signature:Vec::new(),dynamic_actors:Vec::new(),activation_class:0,activation_offsets:None,life_layouts:HashMap::new()};
         if reader.name(0)? != "None" { return Err("Name table sentinel validation failed".into()); }
         Ok(reader)
     }
@@ -224,8 +240,8 @@ impl Reader {
             let class=self.memory.ptr(pawn+0x10)?;
             if class!=self.activation_class {
                 self.activation_class=class;self.activation_offsets=None;
-                let ads=self.verified_bool_offset(class,"bIsGunADS",0x1134)?;
-                let fire=self.verified_bool_offset(class,"bIsWeaponFiring",0x1840)?;
+                let ads=self.verified_bool_offset(class,"bIsGunADS",self.layout.ads)?;
+                let fire=self.verified_bool_offset(class,"bIsWeaponFiring",self.layout.firing)?;
                 self.activation_offsets=Some((ads,fire));
             }
             let Some((ads,fire))=self.activation_offsets else {return Ok((None,None));};
@@ -247,11 +263,11 @@ impl Reader {
                     let kind=self.object_name(u64_at(&bytes,0x10))?;
                     let offset=i32_at(&bytes,0x44);
                     if name=="bDead"&&owner=="STExtraCharacter" {
-                        if kind!="BoolProperty"||offset!=0xe7c||bytes[0x70..0x74]!=[1,0,1,1] {return Ok(false);}
+                        if kind!="BoolProperty"||offset as u64!=self.layout.dead||bytes[0x70..0x74]!=[1,0,1,1] {return Ok(false);}
                         dead=true;
                     }
                     if name=="NearDeathBreath"&&owner=="STExtraBaseCharacter" {
-                        if kind!="FloatProperty"||offset!=0x1c40 {return Ok(false);}
+                        if kind!="FloatProperty"||offset as u64!=self.layout.breath {return Ok(false);}
                         breath=true;
                     }
                     if dead&&breath {return Ok(true);}
@@ -270,13 +286,13 @@ impl Reader {
             self.life_layouts.insert(class,verified);
         }
         if self.life_layouts.get(&class)!=Some(&true) {return (None,None);}
-        let dead=self.memory.read(actor+0xe7c,1).ok().map(|b|b[0]&1!=0);
-        let breath=self.memory.float(actor+0x1c40).ok().filter(|b|b.is_finite()&&*b>=0.0&&*b<=100000.0);
+        let dead=self.memory.read(actor+self.layout.dead,1).ok().map(|b|b[0]&1!=0);
+        let breath=self.memory.float(actor+self.layout.breath).ok().filter(|b|b.is_finite()&&*b>=0.0&&*b<=100000.0);
         (dead,breath)
     }
     fn snapshot(&mut self, inventory:bool, watch_loot:bool, delta:bool) -> Result<String> {
         let start=Instant::now(); let reads_before=self.memory.reads;
-        let engine=self.memory.ptr(self.base+0xf621d90)?;
+        let engine=self.memory.ptr(self.base+self.layout.engine)?;
         let contexts=self.memory.ptr(engine+0xc40)?; let context_count=self.memory.int(engine+0xc48)?;
         if !(1..=32).contains(&context_count) {return Err("Invalid world context count".into());}
         let mut world=0;
@@ -325,7 +341,7 @@ impl Reader {
         let bool_json=|value:Option<bool>|match value {Some(true)=>"true",Some(false)=>"false",None=>"null"};
         let activation_json=format!(",\"LocalScoped\":{},\"LocalFiring\":{}",bool_json(local_scoped),bool_json(local_firing));
         let root=self.memory.ptr(pawn+0x208)?;
-        let origin=self.memory.vec(root+0x220)?; let local_team=self.memory.int(pawn+0x998)?;
+        let origin=self.memory.vec(root+0x220)?; let local_team=self.memory.int(pawn+self.layout.team)?;
         let camera_info=self.memory.read(camera+0x530,56)?;
         let camera_position=Vec3{x:f32_at(&camera_info,0),y:f32_at(&camera_info,4),z:f32_at(&camera_info,8)};
         let camera_rotation=Vec3{x:f32_at(&camera_info,24),y:f32_at(&camera_info,28),z:f32_at(&camera_info,32)};
@@ -354,13 +370,13 @@ impl Reader {
                 let mut is_dead=None;let mut near_death_breath=None;
                 let mut is_bot=None; let mut item_id=None; let mut quantity=0; let mut group=""; let mut debug_state=String::new();
                 let (health,max_health,team,name)=if info.player {
-                    let health=self.memory.float(actor+0xe60)?; let max_health=self.memory.float(actor+0xe64)?;
-                    let team=self.memory.int(actor+0x998)?;
+                    let health=self.memory.float(actor+self.layout.health)?; let max_health=self.memory.float(actor+self.layout.health+4)?;
+                    let team=self.memory.int(actor+self.layout.team)?;
                     (is_dead,near_death_breath)=self.life_state(actor,class);
                     if !inventory && !retain_character(health,max_health,is_dead,near_death_breath) {return Ok(None);}
                     has_health=health.is_finite()&&max_health.is_finite()&&max_health>0.0;
                     if info.kind=="Character" {
-                        if let Ok(flag)=self.memory.read(actor+0xa40,1) {
+                        if let Ok(flag)=self.memory.read(actor+self.layout.bot,1) {
                             is_bot=if flag[0]!=0 {Some(true)} else if info.name=="BP_PlayerPawn_ST_AI_C" {None} else {Some(false)};
                         }
                     }
@@ -418,12 +434,12 @@ impl Reader {
 
 fn main() {
     let args:Vec<String>=env::args().collect();
-    let usage="Usage: esp-reader PID MODULE_BASE_HEX [--once|--inventory|--watch-loot] [--session=HEXGUID] [--keepalive] [--delta]";
-    let parsed=(||->Result<(u32,u64,bool,bool,String,bool,bool,bool)> {
-        if args.len()<3 || args.len()>6 {return Err(usage.into());}
+    let usage="Usage: esp-reader PID MODULE_BASE_HEX [--once|--inventory|--watch-loot] [--session=HEXGUID] [--keepalive] [--delta] [--build=VERSION_CODE]";
+    let parsed=(||->Result<(u32,u64,bool,bool,String,bool,bool,bool,BuildLayout)> {
+        if args.len()<3 || args.len()>7 {return Err(usage.into());}
         let pid=args[1].parse::<u32>().map_err(|_|usage.to_string())?;
         let base=u64::from_str_radix(args[2].trim_start_matches("0x"),16).map_err(|_|usage.to_string())?;
-        let mut once=false; let mut inventory=false; let mut session=String::new(); let mut mode_seen=false; let mut keepalive=false; let mut watch_loot=false;let mut delta=false;
+        let mut once=false; let mut inventory=false; let mut session=String::new(); let mut mode_seen=false; let mut keepalive=false; let mut watch_loot=false;let mut delta=false;let mut layout=None;
         for arg in &args[3..] {
             match arg.as_str() {
                 "--once" if !mode_seen => {once=true;mode_seen=true;},
@@ -431,6 +447,13 @@ fn main() {
                 "--watch-loot" if !mode_seen => {inventory=true;watch_loot=true;mode_seen=true;},
                 "--keepalive" if !keepalive => {keepalive=true;},
                 "--delta" if !delta => {delta=true;},
+                s if s.starts_with("--build=") && layout.is_none() => {
+                    layout=Some(match &s[8..] {
+                        "21518" | "21525" => LAYOUT_46,
+                        "21718" => LAYOUT_47_21718,
+                        _ => return Err("Unsupported exact build".into()),
+                    });
+                },
                 s if s.starts_with("--session=") && session.is_empty() => {
                     session=s[10..].to_string();
                     if session.is_empty() || session.len()>64 || !session.chars().all(|c|c.is_ascii_hexdigit()) {return Err("Session must contain 1..64 hexadecimal characters".into());}
@@ -439,13 +462,13 @@ fn main() {
             }
         }
         if pid<1 || (keepalive && once) {return Err(usage.into());}
-        Ok((pid,base,once,inventory,session,keepalive,watch_loot,delta))
+        Ok((pid,base,once,inventory,session,keepalive,watch_loot,delta,layout.unwrap_or(LAYOUT_46)))
     })();
     let mut stdout=io::stdout().lock();
-    let (pid,base,once,inventory,session,keepalive,watch_loot,delta)=match parsed {Ok(v)=>v,Err(e)=>{let _=writeln!(stdout,"{{\"Error\":{}}}",quoted(&e));process::exit(2);}};
+    let (pid,base,once,inventory,session,keepalive,watch_loot,delta,layout)=match parsed {Ok(v)=>v,Err(e)=>{let _=writeln!(stdout,"{{\"Error\":{}}}",quoted(&e));process::exit(2);}};
     let started=Instant::now();
     let heartbeat=if keepalive {Some(Heartbeat::start(started))} else {None};
-    let mut reader=match Reader::new(pid,base,session) {Ok(r)=>r,Err(e)=>{let _=writeln!(stdout,"{{\"Error\":{}}}",quoted(&e));process::exit(1);}};
+    let mut reader=match Reader::new(pid,base,session,layout) {Ok(r)=>r,Err(e)=>{let _=writeln!(stdout,"{{\"Error\":{}}}",quoted(&e));process::exit(1);}};
     loop {
         if heartbeat.as_ref().is_some_and(|h|h.expired(started)) {break;}
         let frame_start=Instant::now();
@@ -498,7 +521,7 @@ mod life_tests {
         let path=env::temp_dir().join(format!("esp-life-fixture-{}",process::id()));
         let file=fs::OpenOptions::new().read(true).write(true).create_new(true).open(&path).unwrap();
         file.set_len(0x4000).unwrap();
-        let mut reader=Reader {memory:Memory {file:file.try_clone().unwrap(),reads:0},base:0,names:0,session:"test".into(),last_world:0,name_cache:HashMap::new(),class_cache:HashMap::new(),classification_at:None,static_refresh_at:None,classification_signature:Vec::new(),dynamic_actors:Vec::new(),activation_class:0,activation_offsets:None,life_layouts:HashMap::from([(0x2000,true)])};
+        let mut reader=Reader {layout:LAYOUT_46,memory:Memory {file:file.try_clone().unwrap(),reads:0},base:0,names:0,session:"test".into(),last_world:0,name_cache:HashMap::new(),class_cache:HashMap::new(),classification_at:None,static_refresh_at:None,classification_signature:Vec::new(),dynamic_actors:Vec::new(),activation_class:0,activation_offsets:None,life_layouts:HashMap::from([(0x2000,true)])};
         file.write_at(&[2],0x1e7c).unwrap();
         file.write_at(&70.0f32.to_le_bytes(),0x2c40).unwrap();
         assert_eq!(reader.life_state(0x1000,0x2000),(Some(false),Some(70.0)));

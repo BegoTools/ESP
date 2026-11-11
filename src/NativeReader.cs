@@ -45,9 +45,9 @@ namespace ESPWorkbench
             if (!s.CameraPosition.Finite || !s.CameraRotation.Finite || !s.Origin.Finite || !Vec3.Good(s.Fov) || s.Fov<5 || s.Fov>175 || s.ActorCount<0 || s.ActorCount>16384 || s.Actors==null || s.Actors.Length+(s.StaticActors==null?0:s.StaticActors.Length)>16384) throw new InvalidDataException(L.Text("Invalid native camera or actor data."));
             return s;
         }
-        public Frame ToFrame()
+        public Frame ToFrame(string versionName=null)
         {
-            return new Frame { CameraMode=true,CameraPosition=CameraPosition,CameraRotation=CameraRotation,Fov=Fov,Origin=Origin,LocalTeam=LocalTeam,LocalScoped=LocalScoped,LocalFiring=LocalFiring,TotalActorCount=ActorCount,ReadMilliseconds=ReadMilliseconds,Source="LIVE / PUBG Global 4.6.0",Actors=ConvertActors(Actors.Concat(StaticActors??new NativeActorData[0]),LocalPawn) };
+            return new Frame { CameraMode=true,CameraPosition=CameraPosition,CameraRotation=CameraRotation,Fov=Fov,Origin=Origin,LocalTeam=LocalTeam,LocalScoped=LocalScoped,LocalFiring=LocalFiring,TotalActorCount=ActorCount,ReadMilliseconds=ReadMilliseconds,Source=L.Text("LIVE")+" / PUBG Global"+(String.IsNullOrEmpty(versionName)?"":" "+versionName),Actors=ConvertActors(Actors.Concat(StaticActors??new NativeActorData[0]),LocalPawn) };
         }
         public static Actor[] ConvertActors(System.Collections.Generic.IEnumerable<NativeActorData> actors,string localPawn)
         {
@@ -60,9 +60,14 @@ namespace ESPWorkbench
         private readonly Adb adb;
         private readonly int gamePid;
         private readonly ulong moduleBase;
+        private readonly string versionName, versionCode;
         private readonly string session=Guid.NewGuid().ToString("N");
         private int helperPid;
-        public NativeReader(Adb adb,int gamePid,ulong moduleBase) { this.adb=adb; this.gamePid=gamePid; this.moduleBase=moduleBase; }
+        public NativeReader(Adb adb,int gamePid,ulong moduleBase,Profile profile)
+        {
+            if (profile.Backend!="Native") throw new ArgumentException(L.Text("Unknown reader backend."));
+            profile.Validate(); this.adb=adb; this.gamePid=gamePid; this.moduleBase=moduleBase; versionName=profile.VersionName; versionCode=profile.VersionCode;
+        }
         public static void Prepare(Adb adb,Profile profile,GameInfo info,System.Collections.Generic.List<MapRegion> maps,CancellationToken token)
         {
             if (adb.Shell("uname -m",token).Trim()!="x86_64") throw new IOException(L.Text("This native helper requires an x86_64 Android kernel on the selected emulator."));
@@ -78,7 +83,7 @@ namespace ESPWorkbench
             using (FileStream stream=File.OpenRead(payload)) using (SHA256 sha=SHA256.Create()) expected=BitConverter.ToString(sha.ComputeHash(stream)).Replace("-","").ToLowerInvariant();
             if (!String.Equals(remoteHash,expected,StringComparison.OrdinalIgnoreCase)) throw new IOException(L.Text("Native helper transfer verification failed."));
         }
-        private string Command(bool once) { return adb.PrivilegedCommand(RemotePath+" "+gamePid.ToString(CultureInfo.InvariantCulture)+" "+moduleBase.ToString("x",CultureInfo.InvariantCulture)+(once?" --once":" --keepalive --delta")+" --session="+session,true); }
+        private string Command(bool once) { return adb.PrivilegedCommand(RemotePath+" "+gamePid.ToString(CultureInfo.InvariantCulture)+" "+moduleBase.ToString("x",CultureInfo.InvariantCulture)+(once?" --once":" --keepalive --delta")+" --session="+session+" --build="+versionCode,true); }
         public NativeSnapshot Once(CancellationToken token)
         {
             CommandResult r=adb.Run(token,"exec-out",Command(true)); r.EnsureSuccess();
@@ -113,7 +118,7 @@ namespace ESPWorkbench
                             helperPid=snapshot.ReaderPid;
                             double timestamp=arrival.Elapsed.TotalMilliseconds;
                             if(snapshot.StaticActors!=null) { staticCache=NativeSnapshot.ConvertActors(snapshot.StaticActors,snapshot.LocalPawn);lastStatic=timestamp;snapshot.StaticActors=null; }
-                            Frame frame=snapshot.ToFrame();if(timestamp-lastStatic<1500&&staticCache.Length>0)frame.Actors=frame.Actors.Concat(staticCache).ToArray();
+                            Frame frame=snapshot.ToFrame(versionName);if(timestamp-lastStatic<1500&&staticCache.Length>0)frame.Actors=frame.Actors.Concat(staticCache).ToArray();
                             if(timestamp-heartbeat>=500) { await process.StandardInput.WriteLineAsync("PING"); await process.StandardInput.FlushAsync(); heartbeat=timestamp; }
                             rateWindow.Enqueue(timestamp);while(rateWindow.Count>1&&rateWindow.Peek()<timestamp-1000)rateWindow.Dequeue();
                             frame.ReadHertz=rateWindow.Count>1&&timestamp>rateWindow.Peek()?(rateWindow.Count-1)*1000/(timestamp-rateWindow.Peek()):0; token.ThrowIfCancellationRequested(); publish(frame);
