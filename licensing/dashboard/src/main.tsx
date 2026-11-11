@@ -5,7 +5,7 @@ import "./style.css";
 
 type Row = Record<string, string | number | boolean | null>;
 type Page = { items: Row[]; nextOffset: number | null };
-type Actor = { email: string; role: "owner" | "support" };
+type Actor = { email?: string; login?: string; role: "owner" | "support" };
 type Overview = { actor: Actor; licenses: number; available: number; devices: number; recentlyActive: number; channels: Row[] };
 type Settings = { maintenance: boolean; channels: Row[] };
 type Field = {
@@ -45,7 +45,7 @@ const copy: Record<string, string> = {
   "Set maintenance": "ضبط الصيانة", Off: "متوقفة", On: "مفعّلة", Actor: "الحساب", Action: "الإجراء", Entity: "الكيان",
   Time: "الوقت", Details: "التفاصيل", Owner: "المالك", Support: "الدعم", "Light mode": "وضع فاتح", "Dark mode": "وضع داكن",
   "License has no linked devices": "الترخيص غير مرتبط بأجهزة", "Request failed": "تعذر تنفيذ الطلب",
-  "Access denied": "تم رفض الوصول", "Check your Cloudflare Access session.": "راجع تسجيل الدخول في Cloudflare Access.",
+  "Access denied": "تم رفض الوصول", "Sign in again.": "سجّل الدخول مرة تانية.", "Sign out": "تسجيل الخروج",
   "Check the submitted values.": "راجع القيم المدخلة.", "This change conflicts with existing data.": "التغيير يتعارض مع البيانات الحالية.",
   "The service is temporarily unavailable.": "الخدمة غير متاحة مؤقتًا.", "The requested item was not found.": "العنصر المطلوب غير موجود.",
   "Saving": "جاري الحفظ…", "Show linked devices": "عرض الأجهزة المرتبطة", "License ID": "معرّف الترخيص",
@@ -59,7 +59,7 @@ const navigation = [
   ["releases", "Releases"], ["audit", "Audit & security"], ["system", "Settings"]
 ];
 const errors: Record<string, string> = {
-  unauthorized: "Check your Cloudflare Access session.", forbidden: "Access denied",
+  unauthorized: "Sign in again.", forbidden: "Access denied",
   bad_input: "Check the submitted values.", conflict: "This change conflicts with existing data.",
   service_unavailable: "The service is temporarily unavailable.", not_found: "The requested item was not found."
 };
@@ -71,7 +71,7 @@ const switchOptions: [string, string][] = [["false", "Off"], ["true", "On"]];
 async function api<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch("/v2/admin/" + path, { credentials: "same-origin", ...init });
   if (response.redirected || !response.headers.get("Content-Type")?.includes("application/json")) {
-    throw new Error("Check your Cloudflare Access session.");
+    throw new Error("Sign in again.");
   }
   const value = await response.json();
   if (!response.ok) throw new Error(errors[value.error] || "Request failed");
@@ -417,7 +417,10 @@ function App() {
       </div>
       {actor && <nav aria-label={t("Cloud Control")}>{navigation.filter(([key]) => owner || !["audit", "system"].includes(key)).map(([key, label]) =>
         <a href={"#" + key} key={key} aria-current={key === selected[0] ? "page" : undefined}>{t(label)}</a>)}</nav>}
-      {actor && <div className="identity"><small>{t(roles[actor.role])}</small><span title={actor.email}>{actor.email}</span></div>}
+      {actor && <div className="identity">
+        <small>{t(roles[actor.role])}</small><span title={actor.email ?? actor.login}>{actor.email ?? actor.login}</span>
+        {actor.login && <form action="/auth/logout" method="post"><button>{t("Sign out")}</button></form>}
+      </div>}
     </aside>
     <main>
       <header><h1>{t(selected[1])}</h1><div className="preferences">

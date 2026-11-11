@@ -110,6 +110,65 @@ test("Access covers HTML and API, validates JWT and enforces roles and CSRF", as
   assert.equal((await use("version")).value.channel, "test");
 });
 
+test("GitHub login exchanges a state-bound PKCE code and authorizes only configured account IDs", async t => {
+  const github = {
+    ...env, ADMIN_AUTH_PROVIDER: "github", GITHUB_ADMIN_ORIGIN: origin,
+    GITHUB_ADMIN_CLIENT_ID: "test-client", GITHUB_ADMIN_CLIENT_SECRET: "test-secret",
+    GITHUB_ADMIN_SESSION_KEY: "ae".repeat(32), GITHUB_ADMIN_ROLES: '{"123":"owner"}'
+  };
+  const request = (path, headers, method) => new Request(origin + path, { headers, method });
+  const fetchPage = (path, headers, method, config = github) => admin.fetch(request(path, headers, method), config);
+  const overview = "/v2/admin/overview";
+  const anonymous = await fetchPage("/");
+  assert.equal(anonymous.status, 302);
+  assert.equal(anonymous.headers.get("Location"), "/auth/login");
+  assert.equal((await fetchPage(overview, { "Cf-Access-Jwt-Assertion": jwt })).status, 401);
+
+  const login = await fetchPage("/auth/login");
+  assert.equal(login.status, 303);
+  const authorize = new URL(login.headers.get("Location"));
+  assert.equal(authorize.origin, "https://github.com");
+  assert.equal(authorize.searchParams.has("scope"), false);
+  assert.equal(authorize.searchParams.get("code_challenge_method"), "S256");
+  const loginCookie = login.headers.getSetCookie()[0].split(";")[0];
+  assert.match(login.headers.getSetCookie()[0], /Secure; HttpOnly; SameSite=Lax/);
+  const state = authorize.searchParams.get("state");
+  const callback = "/auth/callback?code=example&state=";
+  assert.equal((await fetchPage(callback + "wrong", { Cookie: loginCookie })).status, 401);
+  assert.equal((await fetchPage(callback + state)).status, 401);
+
+  let userId = 456;
+  t.mock.method(globalThis, "fetch", async (target, options) => {
+    if (target === "https://github.com/login/oauth/access_token") {
+      assert.equal(options.body.get("code"), "example");
+      assert.equal(options.body.get("redirect_uri"), origin + "/auth/callback");
+      const data = new TextEncoder().encode(options.body.get("code_verifier"));
+      const challenge = Buffer.from(await crypto.subtle.digest("SHA-256", data)).toString("base64url");
+      assert.equal(challenge, authorize.searchParams.get("code_challenge"));
+      return Response.json({ access_token: "synthetic-test-token" });
+    }
+    assert.equal(target, "https://api.github.com/user");
+    assert.equal(options.headers.Authorization, "Bearer synthetic-test-token");
+    return Response.json({ id: userId, login: "test-user" });
+  });
+  assert.equal((await fetchPage(callback + state, { Cookie: loginCookie })).status, 403);
+  userId = 123;
+  const accepted = await fetchPage(callback + state, { Cookie: loginCookie });
+  assert.equal(accepted.status, 303);
+  const session = accepted.headers.getSetCookie().find(value => value.startsWith("__Host-sv-admin-session="));
+  assert.match(session, /Secure; HttpOnly; SameSite=Lax/);
+  assert.doesNotMatch(session, /synthetic-test-token/);
+  const headers = { Cookie: session.split(";")[0] };
+  assert.equal(await (await fetchPage("/", headers)).text(), "private dashboard");
+  assert.deepEqual((await (await fetchPage(overview, headers)).json()).actor, { id: "123", login: "test-user", role: "owner" });
+  assert.equal((await fetchPage(overview, { Cookie: headers.Cookie + "tamper" })).status, 401);
+  assert.equal((await fetchPage(overview, headers, "GET", { ...github, GITHUB_ADMIN_ROLES: "{}" })).status, 403);
+  assert.equal((await fetchPage("/auth/logout", headers, "POST")).status, 403);
+  const logout = await fetchPage("/auth/logout", { ...headers, Origin: origin }, "POST");
+  assert.equal(logout.status, 303);
+  assert.match(logout.headers.getSetCookie()[0], /__Host-sv-admin-session=; Max-Age=0/);
+});
+
 test("Existing device upgrades in place and v1 verification keeps working", async () => {
   migrated = (await use("activate", { legacyToken: v1.token, device: v1.device, version })).value;
   assert.equal(migrated.authorized, true);

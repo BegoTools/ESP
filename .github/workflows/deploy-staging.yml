@@ -37,4 +37,4 @@ jobs:
           npx --no-install wrangler d1 migrations apply spectravision-licenses-staging --remote --config wrangler.staging.client.jsonc
           npx --no-install wrangler deploy --config wrangler.staging.client.jsonc
           npx --no-install wrangler deploy --config wrangler.staging.admin.jsonc
-      - run: node tests/smoke.mjs staging --require-access
+      - run: node tests/smoke.mjs staging --require-auth

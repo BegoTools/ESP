@@ -1,4 +1,5 @@
 import { authenticate } from "./access.mjs";
+import { authenticateGitHub, githubLogin } from "./github-auth.mjs";
 import {
   compareVersions, DAY, digest, entityId, errorResponse, featureKeys, fingerprint, HttpError, input,
   json, page, planId, random, requireInput, validDays, validLabel, validLimit, validVersion
@@ -26,7 +27,7 @@ function conflict() {
 async function mutate(db, actor, now, action, type, id, statement, metadata = {}, extra = []) {
   const audit = db.prepare(`INSERT INTO audit_logs (id, actor, action, entity_type, entity_id, occurred_at, metadata_json)
     SELECT ?1, ?2, ?3, ?4, ?5, ?6, ?7 WHERE changes() > 0`)
-    .bind(random(12), actor.email, action, type, id, now, JSON.stringify(metadata));
+    .bind(random(12), actor.email ?? `github:${actor.id}:${actor.login}`, action, type, id, now, JSON.stringify(metadata));
   const [changed] = await db.batch([statement, audit, ...extra]);
   return changed.meta.changes;
 }
@@ -247,9 +248,11 @@ async function route(request, env, url, actor, now) {
 
 export default {
   async fetch(request, env) {
+    const url = new URL(request.url);
+    const github = env.ADMIN_AUTH_PROVIDER === "github";
     try {
-      const url = new URL(request.url);
-      const actor = await authenticate(request, env);
+      if (github && url.pathname.startsWith("/auth/")) return await githubLogin(request, env, url);
+      const actor = github ? await authenticateGitHub(request, env, url) : await authenticate(request, env);
       if (url.pathname.startsWith("/v2/admin/")) {
         if (request.method !== "GET" && request.headers.get("Origin") !== url.origin)
           throw new HttpError(403, "bad_origin");
@@ -264,6 +267,9 @@ export default {
       response.headers.set("Content-Security-Policy", "default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'");
       return response;
     } catch (error) {
+      if (github && url.pathname === "/" && request.method === "GET" &&
+          error instanceof HttpError && error.status === 401)
+        return new Response(null, { status: 302, headers: { Location: "/auth/login", "Cache-Control": "no-store" } });
       return errorResponse(error);
     }
   }

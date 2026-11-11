@@ -11,6 +11,19 @@
 
 في Worker الإدارة خزّن `ACCESS_ISSUER` بعنوان الفريق مثل `https://TEAM.cloudflareaccess.com` من دون slash أخير. خزّن `ACCESS_AUD` بمعرّف Application Audience. خزّن `ADMIN_ROLES` كـJSON مفاتيحه عناوين بريد بالحروف الصغيرة وقيمه `owner` أو `support`. كرر بقيم تخص كل بيئة. استخدم لوحة Cloudflare أو `wrangler secret put` مع ملف إعدادات البيئة. يتطلب السماح بالوصول نجاح السياسة ووجود الدور في القائمة. راجع الوصول بحساب فعلي وجرّب الرفض من جلسة غير مصرح بها.
 
+إذا طلب حساب Cloudflare وسيلة دفع لتفعيل Zero Trust، يدعم Worker الإدارة تسجيل الدخول بـGitHub OAuth. أنشئ تطبيق OAuth لكل بيئة، بعنوان الصفحة الرئيسية للوحة نفسها، وعنوان callback هو عنوان اللوحة متبوعًا بـ`/auth/callback`. احفظ القيم التالية في إعدادات Worker الإدارة المعني. [إنشاء GitHub OAuth App](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app)
+
+| المتغير | القيمة |
+| --- | --- |
+| `ADMIN_AUTH_PROVIDER` | `github` |
+| `GITHUB_ADMIN_ORIGIN` | عنوان HTTPS للوحة الإدارة بدون شرطة مائلة أخيرة |
+| `GITHUB_ADMIN_CLIENT_ID` | Client ID من تطبيق GitHub OAuth الخاص بالبيئة |
+| `GITHUB_ADMIN_CLIENT_SECRET` | Client secret من نفس التطبيق. احفظه كـSecret |
+| `GITHUB_ADMIN_SESSION_KEY` | مفتاح عشوائي مستقل لكل بيئة، 32 بايت بصيغة hex. احفظه كـSecret |
+| `GITHUB_ADMIN_ROLES` | JSON يربط معرفات حساب GitHub الرقمية بالدور، مثل `{"290194235":"owner"}` |
+
+للتحقق من المعرّف، افتح `https://api.github.com/users/USERNAME` واقرأ `id`. يطلب التطبيق هوية الحساب العامة فقط، وتظل الصلاحيات محددة بالمعرّف. في أول نشر للإنتاج باستخدام GitHub، انشر Worker الإدارة فقط بإعداداته ثم جرّب تسجيل الدخول. بعد نجاح التحقق، شغّل workflow الإنتاج الذي يطبق ترحيلات D1. يحتفظ إعداد Wrangler بقيم Worker عند النشر.
+
 بيئة GitHub المسماة `staging` تستقبل النشر من `develop`. بيئة `production` محصورة في `main` وتتطلب مراجعة يدوية. استخدم رمز Cloudflare محدودًا بحسابك لإدارة Workers Scripts وD1، مع صلاحيات القراءة اللازمة لجرد الحساب. ضع كل رمز في بيئته باسم `CLOUDFLARE_API_TOKEN` واضبط `CLOUDFLARE_ACCOUNT_ID` كمتغير. سر `SV_RELEASE_SIGNING_KEY` يجب أن يطابق مفتاح القناة. مفتاح الاختبار منفصل عن مفتاح الإنتاج. [GitHub Environments](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments)
 
 ## التحقق
@@ -22,7 +35,7 @@ npm run check
 npm run build
 npm test
 npx --no-install wrangler d1 migrations apply spectravision-licenses-staging --local --config wrangler.staging.client.jsonc
-node tests/smoke.mjs staging --require-access
+node tests/smoke.mjs staging --require-auth
 node tests/staging-load.mjs
 ```
 
