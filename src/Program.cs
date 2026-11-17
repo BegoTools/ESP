@@ -75,11 +75,15 @@ namespace ESPWorkbench
                 if(args.Length>=2&&args[0]=="--render-quick")
                 {
                     Directory.CreateDirectory(args[1]);RenderOptions options=new RenderOptions();options.Aim.Enabled=true;options.Aim.Strength=35;options.Aim.Radius=151;options.Aim.InputScale=.94f;options.Aim.Activation="Firing";
-                    for(int i=0;i<3;i++)using(Bitmap bitmap=new Bitmap(1000,620))using(Graphics graphics=Graphics.FromImage(bitmap))
+                    for(int i=0;i<4;i++)using(Bitmap bitmap=new Bitmap(1000,620))using(Graphics graphics=Graphics.FromImage(bitmap))
                     {
-                        Painter.Draw(graphics,bitmap.Size,Demo.Make(0),options,true,false);
-                        QuickHud.Draw(graphics,bitmap.Size,options,new QuickHudState { Open=i==1,Collapsed=i==2,SelectedRow=1 },L.Text("اضرب لتفعيل المساعدة"));
-                        bitmap.Save(Path.Combine(args[1],i==0?"medium.png":i==1?"expanded.png":"collapsed.png"),ImageFormat.Png);
+                        Frame frame=Demo.Make(0);
+                        Painter.Draw(graphics,bitmap.Size,frame,options,true,false,i==2);
+                        QuickHud.Draw(graphics,bitmap.Size,options,new QuickHudState {
+                            Section=i==1?QuickHudSection.Adjustments:i==3?QuickHudSection.Display:QuickHudSection.None,
+                            Collapsed=i==2,SelectedRow=1
+                        },L.Text("اضرب لتفعيل المساعدة"),96,0,NearbyPlayers.Count(frame,options));
+                        bitmap.Save(Path.Combine(args[1],i==0?"medium.png":i==1?"expanded.png":i==2?"collapsed.png":"display.png"),ImageFormat.Png);
                     }
                     return 0;
                 }

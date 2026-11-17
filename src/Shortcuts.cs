@@ -37,7 +37,7 @@ namespace ESPWorkbench
             Keys value=Key(id);return 0x4000u|((value&Keys.Control)!=0?2u:0)|((value&Keys.Shift)!=0?4u:0)|((value&Keys.Alt)!=0?1u:0);
         }
     }
-    internal sealed class ShortcutKeyButton : Button
+    internal sealed class ShortcutKeyButton : SpectraButton
     {
         private readonly ShortcutOptions shortcuts;
         private readonly int index;
@@ -48,17 +48,17 @@ namespace ESPWorkbench
         public ShortcutKeyButton(ShortcutOptions shortcuts,int index,Action<bool> capture,Action changed,Label feedback)
         {
             this.shortcuts=shortcuts;this.index=index;this.capture=capture;this.changed=changed;this.feedback=feedback;
-            Text=shortcuts.Label(index+1);Width=230;Height=40;BackColor=SpectraTheme.Surface;ForeColor=Color.White;FlatStyle=FlatStyle.Flat;Cursor=Cursors.Hand;
-            FlatAppearance.BorderColor=SpectraTheme.Border;
+            Text=shortcuts.Label(index+1);
+            AccessibleName=L.Text(ShortcutOptions.Names[index]);
         }
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);Focus();if(Capturing)return;Capturing=true;if(capture!=null)capture(true);
-            Text=L.Text("Press a key…");FlatAppearance.BorderColor=SpectraTheme.Accent;feedback.ForeColor=SpectraTheme.Muted;feedback.Text=L.Text("Press your new shortcut here. Esc cancels. Insert is reserved.");
+            Text=L.Text("Press a key…");Highlighted=true;feedback.ForeColor=SpectraTheme.Accent;feedback.Text=L.Text("Press your new shortcut here. Esc cancels. Insert is reserved.");
         }
         private void Finish()
         {
-            if(!Capturing)return;Capturing=false;Text=shortcuts.Label(index+1);FlatAppearance.BorderColor=SpectraTheme.Border;if(capture!=null)capture(false);
+            if(!Capturing)return;Capturing=false;Text=shortcuts.Label(index+1);Highlighted=false;if(capture!=null)capture(false);
         }
         protected override bool ProcessCmdKey(ref Message message,Keys keyData)
         {
@@ -74,30 +74,22 @@ namespace ESPWorkbench
         protected override void OnLostFocus(EventArgs e) { Finish();base.OnLostFocus(e); }
         protected override void Dispose(bool disposing) { if(disposing)Finish();base.Dispose(disposing); }
     }
-    internal sealed class ShortcutEditor : FlowLayoutPanel
+    internal static class ShortcutEditor
     {
-        public ShortcutEditor(ShortcutOptions shortcuts,Action<bool> capture=null,Action changed=null)
+        internal static Control Create(ShortcutOptions shortcuts,Action<bool> capture,Action changed)
         {
-            Dock=DockStyle.Fill;AutoScroll=true;FlowDirection=FlowDirection.TopDown;WrapContents=false;Padding=new Padding(22,16,22,20);BackColor=SpectraTheme.Background;ForeColor=Color.White;Font=new Font("Segoe UI",11);
-            Controls.Add(new Label { Text=L.Text("Keyboard shortcuts"),AutoSize=true,Font=new Font("Segoe UI",23,FontStyle.Bold),ForeColor=SpectraTheme.Accent });
-            Controls.Add(new Label { Text=L.Text("Click a shortcut, then press the new key here. Changes save automatically.\nInsert always collapses / expands the in-game panel."),Width=650,Height=62,ForeColor=SpectraTheme.Muted });
-            Label feedback=new Label { Text=L.Text("Ctrl / Alt / Shift combinations are supported."),Width=680,Height=44,ForeColor=SpectraTheme.Muted };
-            Controls.Add(feedback);
+            var page=new SpectraPage(L.Text("Keyboard shortcuts"),L.Text("Click a shortcut, then press the new key here. Changes save automatically.\nInsert always collapses / expands the in-game panel."));
+            SpectraCard session=page.Group(L.Text("Session and panel"));
+            SpectraCard controls=page.Group(L.Text("In-game controls"),1);
+            Label feedback=SpectraFields.Note(L.Text("Ctrl / Alt / Shift combinations are supported."));
+            page.Group(L.Text("Shortcut feedback")).Add(feedback);
             for(int i=0;i<8;i++)
             {
-                FlowLayoutPanel row=new FlowLayoutPanel { Width=680,Height=56,WrapContents=false };
-                row.Controls.Add(new Label { Text=L.Text(ShortcutOptions.Names[i]),RightToLeft=L.Direction,Width=390,Height=38,TextAlign=ContentAlignment.MiddleLeft });
-                Button key=new ShortcutKeyButton(shortcuts,i,capture,changed,feedback);
-                row.Controls.Add(key);Controls.Add(row);
+                SpectraCard group=i<3||i==7?session:controls;
+                group.Add(SpectraFields.Pair(SpectraFields.Caption(L.Text(ShortcutOptions.Names[i])),
+                    new ShortcutKeyButton(shortcuts,i,capture,changed,feedback),142,45));
             }
-            SizeChanged+=delegate {
-                int width=Math.Max(280,ClientSize.Width-Padding.Horizontal-26);
-                foreach(Control child in Controls)
-                {
-                    child.Width=width;FlowLayoutPanel row=child as FlowLayoutPanel;if(row==null)continue;
-                    int keyWidth=Math.Min(270,width/2);row.Controls[0].Width=Math.Max(100,width-keyWidth-20);row.Controls[1].Width=keyWidth;
-                }
-            };
+            return page;
         }
     }
 }

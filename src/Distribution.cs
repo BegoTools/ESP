@@ -1,5 +1,6 @@
 using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -86,9 +87,9 @@ namespace ESPWorkbench
     internal sealed class ActivationForm : Form
     {
         private readonly TextBox code = new TextBox();
-        private readonly Button activate = new Button();
-        private readonly Button retry = new Button();
-        private readonly Button update = new Button();
+        private readonly Button activate = new SpectraPrimaryButton();
+        private readonly Button retry = new SpectraButton();
+        private readonly Button update = new SpectraButton();
         private readonly Label status = new Label();
         private readonly LicenseService client;
         private bool working;
@@ -97,39 +98,84 @@ namespace ESPWorkbench
         {
             this.client = client;
             Text = L.Text("RAM HAX | Activation");
-            ClientSize = new Size(490, 290);
-            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(720, 548);
+            AutoScaleMode = AutoScaleMode.None;
             StartPosition = FormStartPosition.CenterScreen;
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
+            DoubleBuffered = true;
             BackColor = SpectraTheme.Background;
             ForeColor = Color.White;
-            Font = new Font("Segoe UI", 11);
-            Label title = new Label { Text = L.Text("أدخل كود التفعيل"), Bounds = new Rectangle(24, 20, 440, 39), RightToLeft=L.Direction, TextAlign = L.Rtl?ContentAlignment.MiddleRight:ContentAlignment.MiddleLeft, ForeColor = SpectraTheme.Accent, Font = new Font(Font, FontStyle.Bold) };
-            status.Bounds = new Rectangle(24, 62, 440, 80);
+            Font = new Font("Segoe UI", 16, GraphicsUnit.Pixel);
+            Label title = new Label { Text=L.Text("كود التفعيل"),Bounds=new Rectangle(167,251,386,32),
+                RightToLeft=L.Direction,TextAlign=L.Rtl?ContentAlignment.MiddleRight:ContentAlignment.MiddleLeft,
+                BackColor=SpectraTheme.Surface,ForeColor=Color.White,Font=new Font(Font,FontStyle.Bold) };
+            status.Bounds = new Rectangle(150, 157, 420, 67);
+            status.TextAlign=ContentAlignment.MiddleCenter;
             status.RightToLeft = L.Direction;
+            status.BackColor = SpectraTheme.Surface;
+            status.ForeColor = SpectraTheme.Accent;
             status.Text = client.Message;
-            code.Bounds = new Rectangle(24, 145, 440, 32);
+            code.Bounds = new Rectangle(170, 301, 380, 36);
+            code.BorderStyle=BorderStyle.None;
+            code.BackColor=SpectraTheme.Background;
+            code.ForeColor=Color.White;
+            code.Font=new Font("Segoe UI",20,GraphicsUnit.Pixel);
+            code.TextAlign=HorizontalAlignment.Center;
+            code.UseSystemPasswordChar=true;
+            code.RightToLeft=RightToLeft.No;
             code.MaxLength = 64;
             code.AccessibleName = L.Text("كود التفعيل");
             activate.Text = L.Text("تفعيل");
-            activate.Bounds = new Rectangle(333, 195, 131, 38);
+            activate.Bounds = new Rectangle(164, 349, 392, 57);
             activate.BackColor = SpectraTheme.Surface;
             activate.FlatStyle = FlatStyle.Flat;
             activate.Click += async delegate { if (code.Text.Trim().Length != 0) await Check(false); };
-            retry.Text = L.Text("Retry");
-            retry.Bounds = new Rectangle(170, 195, 150, 38);
+            StyleButton(retry,L.Text("Retry"),new Rectangle(164, 419, 184, 38));
             retry.Enabled = client.HasToken;
             retry.Click += async delegate { await Check(true); };
-            update.Text = L.Text("فحص التحديثات");
-            update.Bounds = new Rectangle(333, 240, 131, 38);
+            StyleButton(update,L.Text("فحص التحديثات"),new Rectangle(371, 419, 184, 38));
             update.Click += async delegate { await UpdateApplication(); };
-            Button exit = new Button { Text = L.Text("خروج"), Bounds = new Rectangle(24, 195, 100, 38), DialogResult = DialogResult.Cancel, FlatStyle = FlatStyle.Flat };
-            Controls.AddRange(new Control[] { title, status, code, activate, retry, update, exit });
+            Button exit = new SpectraButton { DialogResult=DialogResult.Cancel,AccessibleName=L.Text("Close"),TabStop=false };
+            StyleButton(exit,"×",new Rectangle(667, 15, 34, 30));
+            Button support=SupportLink.CreateButton();
+            support.Bounds=new Rectangle(251,486,218,39);
+            Controls.AddRange(new Control[] { title, status, code, activate, retry, update, exit, support });
+            ActiveControl=code;
             AcceptButton = activate;
             CancelButton = exit;
             if (verifyExisting) Shown += async delegate { await Check(true); };
+        }
+
+        private static void StyleButton(Button button,string text,Rectangle bounds)
+        {
+            button.Text=text;
+            button.Bounds=bounds;
+            button.BackColor=SpectraTheme.Surface;
+            button.ForeColor=Color.White;
+            button.FlatStyle=FlatStyle.Flat;
+            button.FlatAppearance.BorderColor=SpectraTheme.Border;
+            button.FlatAppearance.MouseOverBackColor=SpectraTheme.Selected;
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            Graphics g=e.Graphics;
+            g.SmoothingMode=SmoothingMode.AntiAlias;
+            RectangleF frame=new RectangleF(4,4,Width-8,Height-8);
+            SpectraTheme.Card(g,frame,true);
+            SpectraTheme.Wordmark(g,new RectangleF(282,37,156,103),true);
+            SpectraTheme.Card(g,new RectangleF(143,151,434,79),true,255,10,SpectraTheme.Surface);
+            SpectraTheme.Card(g,new RectangleF(144,237,432,240),true,255,14,SpectraTheme.Surface);
+            SpectraTheme.Card(g,new RectangleF(165,287,390,54),true,255,8);
+        }
+
+        protected override void OnMouseDown(MouseEventArgs e)
+        {
+            base.OnMouseDown(e);
+            if(e.Button==MouseButtons.Left&&e.Y<146)SpectraTheme.DragWindow(Handle);
         }
 
         private async Task Check(bool existing)

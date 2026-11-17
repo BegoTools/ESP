@@ -42,7 +42,7 @@ key	en	ar	de	fr
 أقصى مسافة لهذه الفئة (م)	Maximum category distance (m)	أقصى مسافة لهذه الفئة (م)	Maximale Kategorieentfernung (m)	Distance maximale de la catégorie (m)
 الحد الأقصى للعناصر المعروضة	Maximum displayed items	الحد الأقصى للعناصر المعروضة	Maximal angezeigte Elemente	Nombre maximal d’éléments affichés
 اختيار اللون	Choose color	اختيار اللون	Farbe auswählen	Choisir la couleur
-مساعدة التصويب / Aim	Aim Assist	مساعدة التصويب / Aim	Zielhilfe	Aide à la visée
+مساعدة التصويب / Aim	Aim Assist	مساعدة التصويب	Zielhilfe	Aide à la visée
 تصحيح خارجي بحركة الماوس فقط. يُشترط تطابق صلاحيات الأداة مع المحاكي. أوضاع السكوب والضرب تعتمد على حالة اللعبة المقروءة.	Adjusts aim through mouse movement. The tool and emulator need matching privileges. Scope and fire modes depend on game state.	تصحيح خارجي بحركة الماوس فقط. يُشترط تطابق صلاحيات الأداة مع المحاكي. أوضاع السكوب والضرب تعتمد على حالة اللعبة المقروءة.	Korrigiert das Zielen über Mausbewegungen. Tool und Emulator brauchen gleiche Berechtigungen. Visier- und Feuermodi hängen vom Spielzustand ab.	Corrige la visée par des mouvements de souris. L’outil et l’émulateur doivent avoir les mêmes privilèges. Les modes de visée et de tir dépendent de l’état du jeu.
 تفعيل مساعدة التصويب	Enable aim assist	تفعيل مساعدة التصويب	Zielhilfe aktivieren	Activer l’aide à la visée
 موضع التصويب	Aim point	موضع التصويب	Zielpunkt	Point de visée
@@ -57,9 +57,9 @@ key	en	ar	de	fr
 أثناء إطلاق النار فقط	While firing	أثناء إطلاق النار فقط	Nur beim Feuern	Uniquement en tirant
 دائمًا داخل الدائرة	Always within circle	دائمًا داخل الدائرة	Immer im Zielkreis	Toujours dans le cercle
 السكوب مع إطلاق النار	While aiming and firing	السكوب مع إطلاق النار	Beim Anvisieren und Feuern	En visant et en tirant
-أثناء الضغط المستمر على زر	While holding a button	أثناء الضغط المستمر على زر	Beim Halten einer Taste	En maintenant un bouton
+أثناء الضغط المستمر على زر	While holding a button	أثناء الاستمرار بالضغط	Bei gedrückter Taste	En maintenant un bouton
 زر التفعيل لوضع الضغط	Hold button	زر التفعيل لوضع الضغط	Taste zum Halten	Bouton à maintenir
-زر الماوس الأيمن / RMB	Right mouse button	زر الماوس الأيمن / RMB	Rechte Maustaste	Bouton droit de la souris
+زر الماوس الأيمن / RMB	Right mouse button	زر الماوس الأيمن	Rechte Maustaste	Bouton droit de la souris
 زر جانبي / Mouse 4	Side button / Mouse 4	زر جانبي / Mouse 4	Seitentaste / Maus 4	Bouton latéral / Souris 4
 زر جانبي / Mouse 5	Side button / Mouse 5	زر جانبي / Mouse 5	Seitentaste / Maus 5	Bouton latéral / Souris 5
 أقصى مسافة للمساعدة (م)	Maximum assist distance (m)	أقصى مسافة للمساعدة (م)	Maximale Entfernung der Zielhilfe (m)	Distance maximale de l’aide (m)
@@ -67,7 +67,7 @@ key	en	ar	de	fr
 مساعدة على اللاعبين والبوتات (باستثناء الفريق)	Assist on players and bots (excluding teammates)	مساعدة على اللاعبين والبوتات (باستثناء الفريق)	Zielhilfe für Spieler und Bots (außer Teammitglieder)	Aide sur les joueurs et bots (hors coéquipiers)
 مساعدة على أهداف التدريب	Assist on training targets	مساعدة على أهداف التدريب	Zielhilfe für Trainingsziele	Aide sur les cibles d’entraînement
 فحص ظهور المؤشر (اختياري؛ قد يمنع الحركة في GameLoop)	Check cursor visibility (optional, may block movement in GameLoop)	فحص ظهور المؤشر (اختياري؛ قد يمنع الحركة في GameLoop)	Mauszeiger prüfen (optional, kann Bewegungen in GameLoop blockieren)	Vérifier la visibilité du curseur (facultatif, peut bloquer le mouvement dans GameLoop)
-مواضع التصويب تقديرية من موضع الجسم وارتفاعه. عدّل المفاتيح من صفحة اختصارات الكيبورد. Insert يصغّر ويكبّر لوحة اللعبة.	Aim points are estimated from body position and height. Set keys in Keyboard shortcuts. Insert collapses or expands the in-game panel.	مواضع التصويب تقديرية من موضع الجسم وارتفاعه. عدّل المفاتيح من صفحة اختصارات الكيبورد. Insert يصغّر ويكبّر لوحة اللعبة.	Zielpunkte werden aus Körperposition und -höhe geschätzt. Tasten lassen sich unter Tastenkürzel ändern. Einfg klappt das Spielpanel ein oder aus.	Les points de visée sont estimés à partir de la position et de la hauteur du corps. Configurez les touches dans Raccourcis clavier. Inser réduit ou déploie le panneau en jeu.
+مواضع التصويب تقديرية من موضع الجسم وارتفاعه. عدّل المفاتيح من صفحة اختصارات الكيبورد. Insert يصغّر ويكبّر لوحة اللعبة.	Aim points are estimated from body position and height. Change keys on the Keyboard shortcuts page.	مواضع التصويب تقديرية وتعتمد على موضع الجسم وارتفاعه. غيّر المفاتيح من صفحة اختصارات لوحة المفاتيح.	Zielpunkte werden anhand von Körperposition und -größe geschätzt. Tasten lassen sich unter Tastenkürzel ändern.	Les points de visée sont estimés à partir de la position et de la hauteur du corps. Modifiez les touches dans Raccourcis clavier.
 BOT يعتمد على بيانات اللعبة. أهداف التدريب منفصلة، والحالة غير المؤكدة تُعرض UNKNOWN.	Bot labels use game data. Training targets are separate. Unconfirmed player types appear as Unknown.	BOT يعتمد على بيانات اللعبة. أهداف التدريب منفصلة، والحالة غير المؤكدة تُعرض UNKNOWN.	Bot-Kennzeichnungen basieren auf Spieldaten. Trainingsziele sind separat. Unbestätigte Spielertypen erscheinen als Unbekannt.	Les libellés de bots proviennent des données du jeu. Les cibles d’entraînement sont séparées. Les types de joueurs non confirmés s’affichent comme Inconnu.
 إظهار نوع الشخصية BOT / PLAYER	Show player or bot type	إظهار نوع الشخصية BOT / PLAYER	Spieler- oder Bot-Typ anzeigen	Afficher le type de joueur ou de bot
 عرض البوتات	Show bots	عرض البوتات	Bots anzeigen	Afficher les bots
@@ -215,14 +215,14 @@ Activation mode	Activation mode	طريقة التفعيل	Aktivierungsmodus	Mode
 Target body region	Target body region	موضع التصويب في الجسم	Zielregion am Körper	Zone du corps ciblée
 ESP ON–OFF	ESP ON–OFF	تشغيل أو إيقاف مساعدات استكشاف	Erkundungshilfen ein- oder ausschalten	Activer ou désactiver les aides à l’exploration
 Full settings menu	Full settings menu	قائمة الإعدادات الكاملة	Vollständiges Einstellungsmenü	Menu complet des paramètres
-Choose another key. Insert is reserved for collapsing the overlay; arrows adjust it.	Choose another key. Insert is reserved for collapsing the overlay; arrows adjust it.	اختر مفتاحًا آخر. Insert مخصص لطي اللوحة، والأسهم للتعديل.	Wählen Sie eine andere Taste. Einfg ist zum Einklappen reserviert, Pfeiltasten zum Anpassen.	Choisissez une autre touche. Inser est réservé à la réduction du panneau et les flèches aux réglages.
+Choose another key. Insert is reserved for collapsing the overlay; arrows adjust it.	Choose another key. Insert controls panel visibility. The arrow keys adjust the settings.	اختر مفتاحًا آخر. مفتاح Insert مخصص لإظهار اللوحة وتصغيرها، ومفاتيح الأسهم للضبط.	Wählen Sie eine andere Taste. Einfg steuert die Sichtbarkeit des Spielpanels. Die Pfeiltasten dienen zum Anpassen der Einstellungen.	Choisissez une autre touche. Inser commande l’affichage du panneau. Les flèches servent au réglage.
 Already assigned to: {0}	Already assigned to: {0}	مُخصص بالفعل لـ: {0}	Bereits zugewiesen für: {0}	Déjà attribué à : {0}
 Press a key…	Press a key…	اضغط مفتاحًا…	Taste drücken…	Appuyez sur une touche…
 Press your new shortcut here. Esc cancels. Insert is reserved.	Press your new shortcut here. Esc cancels. Insert is reserved.	اضغط الاختصار الجديد هنا. Esc للإلغاء. Insert محجوز.	Drücken Sie hier das neue Kürzel. Esc bricht ab. Einfg ist reserviert.	Saisissez le nouveau raccourci ici. Échap annule. Inser est réservé.
 Shortcut change cancelled.	Shortcut change cancelled.	تم إلغاء تغيير الاختصار.	Änderung des Kürzels abgebrochen.	Modification du raccourci annulée.
 Saved: {0}	Saved: {0}	تم الحفظ: {0}	Gespeichert: {0}	Enregistré : {0}
 Keyboard shortcuts	Keyboard shortcuts	اختصارات الكيبورد	Tastenkürzel	Raccourcis clavier
-Click a shortcut, then press the new key here. Changes save automatically.\nInsert always collapses / expands the in-game panel.	Click a shortcut, then press the new key here. Changes save automatically.\nInsert always collapses / expands the in-game panel.	اضغط على اختصار، ثم اضغط المفتاح الجديد هنا. التغييرات تُحفظ تلقائيًا.\nInsert يطوي لوحة اللعبة أو يوسعها دائمًا.	Klicken Sie auf ein Kürzel und drücken Sie die neue Taste. Änderungen werden automatisch gespeichert.\nEinfg klappt das Spielpanel immer ein oder aus.	Cliquez sur un raccourci, puis appuyez sur la nouvelle touche. Les modifications sont enregistrées automatiquement.\nInser réduit ou déploie toujours le panneau en jeu.
+Click a shortcut, then press the new key here. Changes save automatically.\nInsert always collapses / expands the in-game panel.	Select a shortcut, then press the new key. Changes save automatically.\nInsert restores, collapses or expands the in-game panel.	اضغط على الاختصار، ثم اضغط المفتاح الجديد. تُحفظ التغييرات تلقائيًا.\nمفتاح Insert يعيد إظهار لوحة اللعبة أو يصغّرها أو يوسّعها.	Wählen Sie ein Tastenkürzel und drücken Sie die neue Taste. Änderungen werden automatisch gespeichert.\nMit Einfg können Sie das Spielpanel wieder einblenden, einklappen oder ausklappen.	Cliquez sur un raccourci, puis appuyez sur la nouvelle touche. Les modifications sont enregistrées automatiquement.\nLa touche Inser réaffiche, réduit ou déploie le panneau en jeu.
 Ctrl / Alt / Shift combinations are supported.	Ctrl / Alt / Shift combinations are supported.	يمكن استخدام تركيبات Ctrl وAlt وShift.	Tastenkombinationen mit Strg / Alt / Umschalt werden unterstützt.	Les combinaisons Ctrl / Alt / Maj sont prises en charge.
 Scoped	Scoped	مع السكوب	Beim Anvisieren	En visant
 Firing	Firing	أثناء الضرب	Beim Feuern	En tirant
@@ -428,3 +428,37 @@ Leave the profile blank to use the verified profile for the installed game build
 Native reader requires a verified PUBG Global ARM64 build and library fingerprint.	Native reader requires a verified PUBG Global ARM64 build and library fingerprint.	القارئ الأصلي يتطلب بناء PUBG Global ARM64 وبصمة مكتبة متحققًا منهما.	Der native Leser benötigt einen geprüften PUBG Global ARM64-Build und den passenden Bibliotheksfingerabdruck.	Le lecteur natif exige une version PUBG Global ARM64 et une empreinte de bibliothèque vérifiées.
 No verified profile is installed for PUBG Global {0} ({1}).	No verified profile is installed for PUBG Global {0} ({1}).	لا يوجد ملف متحقق منه للعبة PUBG Global {0} ({1}).	Für PUBG Global {0} ({1}) ist kein geprüftes Profil installiert.	Aucun profil vérifié n’est installé pour PUBG Global {0} ({1}).
 The native reader requires the arm64-v8a game package.	The native reader requires the arm64-v8a game package.	القارئ الأصلي يتطلب حزمة اللعبة بمعمارية arm64-v8a.	Der native Leser benötigt das arm64-v8a-Spielpaket.	Le lecteur natif nécessite le paquet du jeu arm64-v8a.
+Adjustments	Adjustments	الضبط السريع	Feineinstellung	Réglages rapides
+Display options	Display options	عناصر العرض	Anzeigeoptionen	Options d’affichage
+Nearby count	Nearby players	اللاعبون حولك	Spieler in der Nähe	Joueurs proches
+Aim circle	Aim circle	دائرة التصويب	Zielkreis	Cercle de visée
+Visibility colors	Visibility colors	ألوان الرؤية	Sichtbarkeitsfarben	Couleurs de visibilité
+Paused	Paused	متوقف مؤقتًا	Pausiert	En pause
+Live connection	Live connection	اتصال مباشر	Live-Verbindung	Connexion active
+Show in-game panel by default	Show in-game panel by default	إظهار لوحة اللعبة تلقائيًا	Spielpanel standardmäßig anzeigen	Afficher le panneau en jeu par défaut
+Insert: restore, collapse or expand panel	Insert: restore, collapse or expand panel	Insert لإظهار اللوحة أو تصغيرها أو توسيعها	Einfg stellt das Panel wieder her oder klappt es ein oder aus	Inser réaffiche, réduit ou déploie le panneau
+Player ESP	Player ESP	عرض اللاعبين	Spieleranzeige	Affichage des joueurs
+Item & Loot ESP	Item & Loot ESP	عرض العناصر والغنائم	Beuteanzeige	Affichage des objets
+Names	Names	الأسماء	Namen	Noms
+In-game panel	In-game panel	لوحة اللعبة	Spielpanel	Panneau en jeu
+Armor	Armor	الدروع	Rüstung	Armures
+Medical	Medical	العلاج	Medizin	Soins
+Equipment	Equipment	المعدات	Ausrüstung	Équipement
+Waiting for game data	Waiting for game data	في انتظار بيانات اللعبة	Warten auf Spieldaten	En attente des données du jeu
+Retry	Retry	إعادة المحاولة	Erneut versuchen	Réessayer
+Categories	Categories	الفئات	Kategorien	Catégories
+Limits and color	Limits and color	الحدود واللون	Grenzen und Farbe	Limites et couleur
+Filters	Filters	الفلاتر	Filter	Filtres
+Target and response	Target and response	الهدف والاستجابة	Ziel und Reaktion	Cible et réponse
+Image quality	Image quality	جودة الصورة	Bildqualität	Qualité d’image
+Rendering	Rendering	إعدادات الرسم	Darstellung	Rendu
+Session and panel	Session and panel	الجلسة ولوحة اللعبة	Sitzung und Spielpanel	Session et panneau
+In-game controls	In-game controls	التحكم داخل اللعبة	Steuerung im Spiel	Commandes en jeu
+Shortcut feedback	Shortcut feedback	حالة الاختصار	Tastenkürzel-Status	État du raccourci
+Preview	Preview	معاينة	Vorschau	Aperçu
+Activity log	Activity log	سجل النشاط	Aktivitätsprotokoll	Journal d’activité
+Browse	Browse	استعراض	Durchsuchen	Parcourir
+Decrease	Decrease	تقليل	Verringern	Diminuer
+Increase	Increase	زيادة	Erhöhen	Augmenter
+Telegram support	Telegram support	الدعم عبر تيليجرام	Telegram-Support	Assistance Telegram
+Open the Telegram support link manually.	Open the Telegram support link manually.	افتح رابط الدعم عبر تيليجرام يدويًا.	Öffnen Sie den Telegram-Supportlink manuell.	Ouvrez manuellement le lien d’assistance Telegram.

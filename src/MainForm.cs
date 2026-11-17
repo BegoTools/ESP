@@ -73,11 +73,11 @@ namespace ESPWorkbench
     }
     public sealed partial class MainForm : Form
     {
-        private readonly TextBox adbPath = new TextBox(), consolePath = new TextBox(), endpoint = new TextBox(), profilePath = new TextBox(), log = new TextBox();
-        private readonly ComboBox emulators = new ComboBox(), devices = new ComboBox(), instances = new ComboBox();
-        private Control consoleRow, endpointRow, connectionSetup;
+        private readonly TextBox adbPath = new TextBox(), consolePath = new TextBox(), endpoint = new TextBox(), profilePath = new TextBox(), log = new SpectraLog();
+        private readonly SpectraChoice emulators=new SpectraChoice(),devices=new SpectraChoice(),instances=new SpectraChoice();
+        private Control consoleRow,endpointRow,profileRow,connectionSetup;
         private EmulatorKind activeEmulator;
-        private readonly Button scan = new Button(), inspect = new Button(), live = new Button(), demo = new Button(), stop = new Button();
+        private readonly Button scan=new SpectraButton(),inspect=new SpectraButton(),live=new SpectraButton(),demo=new SpectraButton(),stop=new SpectraButton();
         private readonly Label status = new Label();
         private readonly RenderOptions options = new RenderOptions();
         private readonly FrameBuffer frameBuffer=new FrameBuffer();
@@ -99,7 +99,7 @@ namespace ESPWorkbench
         private readonly HashSet<int> quickRegistered=new HashSet<int>();
         public Task InitialScan { get; private set; }
         internal bool HasLiveFrame { get { return liveDisplay&&Painter.Fresh(latest); } }
-        internal bool HasVisibleOverlay { get { return HasLiveFrame&&overlay.Visible; } }
+        internal bool HasVisibleOverlay { get { return HasLiveFrame&&overlay.IsShown; } }
         internal object AimStatus()
         {
             AimTarget target=aim.Target;
@@ -109,11 +109,11 @@ namespace ESPWorkbench
         internal object RuntimeStatus()
         {
             IntPtr target=overlay.Target;
-            return new { Emulator=Emulators.Name(activeEmulator),SelectedEmulator=emulators.Text,Profile=profilePath.Text,Serial=(devices.SelectedItem as Device)==null?"":((Device)devices.SelectedItem).Serial,Live=liveDisplay,FreshFrame=Painter.Fresh(latest),Entities=latest==null?0:latest.Actors.Length,Hertz=latest==null?0:latest.ReadHertz,RenderWindow=target.ToInt64(),RenderBounds=Native.ClientBounds(target),OverlayBounds=overlay.Bounds,OverlayVisible=overlay.Visible,Foreground=Native.GetForegroundWindow().ToInt64(),TargetRoot=Native.GetAncestor(target,2).ToInt64() };
+            return new { Emulator=Emulators.Name(activeEmulator),SelectedEmulator=emulators.SelectionText,Profile=profilePath.Text,Serial=(devices.SelectedItem as Device)==null?"":((Device)devices.SelectedItem).Serial,Live=liveDisplay,FreshFrame=Painter.Fresh(latest),Entities=latest==null?0:latest.Actors.Length,Hertz=latest==null?0:latest.ReadHertz,RenderWindow=target.ToInt64(),RenderBounds=Native.ClientBounds(target),OverlayBounds=overlay.Bounds,OverlayVisible=overlay.IsShown,Foreground=Native.GetForegroundWindow().ToInt64(),TargetRoot=Native.GetAncestor(target,2).ToInt64() };
         }
         internal object QuickStatus()
         {
-            return new { Open=overlay.Quick.Open,Collapsed=overlay.Quick.Collapsed,Row=overlay.Quick.SelectedRow,Aim=options.Aim.Enabled,Mode=options.Aim.Activation,Point=options.Aim.AimPoint,Strength=options.Aim.Strength,Radius=options.Aim.Radius,Scale=options.Aim.InputScale,Esp=options.EspEnabled,GameFocused=GameFocused(),Registered=quickRegistered.OrderBy(i=>i).ToArray(),Unavailable=overlay.Quick.Unavailable.OrderBy(i=>i).ToArray(),SavePending=quickSavePending };
+            return new { Open=overlay.Quick.Open,Collapsed=overlay.Quick.Collapsed,Hidden=overlay.Quick.Hidden,PanelVisible=overlay.Panel.Visible,PanelBounds=overlay.Panel.Bounds,Row=overlay.Quick.SelectedRow,Aim=options.Aim.Enabled,Mode=options.Aim.Activation,Point=options.Aim.AimPoint,Strength=options.Aim.Strength,Radius=options.Aim.Radius,Scale=options.Aim.InputScale,Esp=options.EspEnabled,GameFocused=GameFocused(),Registered=quickRegistered.OrderBy(i=>i).ToArray(),Unavailable=overlay.Quick.Unavailable.OrderBy(i=>i).ToArray(),SavePending=quickSavePending };
         }
         private static readonly Color Background = SpectraTheme.Background, Surface = SpectraTheme.Surface;
         public MainForm(bool autoStart=false, EmulatorKind? selectedEmulator=null,bool renderOnly=false)
@@ -126,52 +126,17 @@ namespace ESPWorkbench
             StartPosition = FormStartPosition.CenterScreen; BackColor = Background; ForeColor = Color.Gainsboro; Font = new Font("Segoe UI",10);
             scene = new ScenePanel(options) { Dock = DockStyle.Fill, Margin = new Padding(12,0,0,0) };
             overlay = new Overlay(options);
-            TableLayoutPanel layout = new TableLayoutPanel { Dock=DockStyle.Fill,Padding=new Padding(24),ColumnCount=2,RowCount=5 };
-            layout.BackColor=Background;
-            layout.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute,390)); layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent,100));
-            layout.RowStyles.Add(new RowStyle(SizeType.Absolute,86)); layout.RowStyles.Add(new RowStyle(SizeType.Percent,100)); layout.RowStyles.Add(new RowStyle(SizeType.Absolute,44)); layout.RowStyles.Add(new RowStyle(SizeType.Absolute,150)); layout.RowStyles.Add(new RowStyle(SizeType.Absolute,32));
-            Controls.Add(layout);
-            TabControl tabs=new TabControl { Dock=DockStyle.Fill,Margin=new Padding(0,0,12,0) };
-            TabPage connectionTab=new TabPage() { BackColor=Background,ForeColor=Color.Gainsboro }, displayTab=new TabPage() { BackColor=Background,ForeColor=Color.Gainsboro };
-            tabs.TabPages.Add(connectionTab); tabs.TabPages.Add(displayTab);
-            FlowLayoutPanel setup = new FlowLayoutPanel { Dock=DockStyle.Fill,FlowDirection=FlowDirection.TopDown,WrapContents=false,AutoScroll=true,Padding=new Padding(4,0,0,0),BackColor=Background };
-            FlowLayoutPanel displaySetup = new FlowLayoutPanel { Dock=DockStyle.Fill,FlowDirection=FlowDirection.TopDown,WrapContents=false,AutoScroll=true,Padding=new Padding(4,0,0,0),BackColor=Background };
-            connectionTab.Controls.Add(setup); displayTab.Controls.Add(displaySetup);
-            connectionSetup=setup;
-            layout.Controls.Add(tabs,0,1); layout.Controls.Add(scene,1,1);
-            AddLabel(setup,"Emulator connection");
-            AddLabel(setup,"Emulator"); ConfigureCombo(setup,emulators); emulators.Items.AddRange(new object[] { "LDPlayer 14", "GameLoop" });
-            ConfigurePath(setup,"ADB executable",adbPath,delegate { BrowseExecutable(adbPath,"adb.exe"); });
-            consoleRow=ConfigurePath(setup,"LDPlayer console",consolePath,delegate { BrowseExecutable(consolePath,"ldconsole.exe"); });
-            endpointRow=ConfigurePath(setup,"GameLoop ADB address",endpoint,null);
-            AddLabel(setup,"ADB device (actual serial)"); ConfigureCombo(setup,devices);
-            AddLabel(setup,"Overlay target (select matching instance)"); ConfigureCombo(setup,instances);
-            FlowLayoutPanel connectionButtons = Row(); ConfigureButton(scan,"تحديث الأجهزة",async delegate { await Scan(); }); ConfigureButton(inspect,"فحص اللعبة",async delegate { await Inspect(); }); connectionButtons.Controls.Add(scan); connectionButtons.Controls.Add(inspect); setup.Controls.Add(connectionButtons);
-            ConfigurePath(displaySetup,"JSON profile (optional)",profilePath,delegate {
-                using (OpenFileDialog dialog = new OpenFileDialog { Filter=L.Text("JSON profile (*.json)|*.json"),InitialDirectory=Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"profiles") }) if (dialog.ShowDialog(this)==DialogResult.OK) profilePath.Text=dialog.FileName;
-            });
-            Label note = new Label { Width=340,Height=72,ForeColor=Color.FromArgb(237,188,104),Margin=new Padding(0,12,0,4) }; BindText(note,"Leave the profile blank to use the verified profile for the installed game build."); displaySetup.Controls.Add(note);
-            FlowLayoutPanel checks = new FlowLayoutPanel { Width=340,Height=90,Margin=Padding.Empty };
-            AddCheck(checks,"Boxes",options.Boxes,v=>options.Boxes=v); AddCheck(checks,"الصحة",options.Health,v=>options.Health=v); AddCheck(checks,"Labels",options.Names,v=>options.Names=v); AddCheck(checks,"المسافة",options.Distance,v=>options.Distance=v); AddCheck(checks,"Top lines",options.Lines,v=>options.Lines=v); AddCheck(checks,"Alerts",options.Alerts,v=>options.Alerts=v); AddCheck(checks,"أفراد الفريق",options.Allies,v=>options.Allies=v,true); displaySetup.Controls.Add(checks);
-            FlowLayoutPanel range = Row(); AddLabel(range,"Max distance (m)");
-            NumericUpDown distance = new NumericUpDown { Minimum=10,Maximum=5000,Value=(decimal)options.MaxDistance,Width=90,BackColor=Surface,ForeColor=Color.White }; distance.ValueChanged+=delegate { options.MaxDistance=(float)distance.Value; }; range.Controls.Add(distance); displaySetup.Controls.Add(range);
-            FlowLayoutPanel runButtons = Row(); ConfigureButton(demo,"عرض تجريبي",delegate { StartDemo(); }); ConfigureButton(live,"تشغيل Live",async delegate { await StartFromHome(); }); ConfigureButton(stop,"إيقاف",async delegate { await StopReader(); }); stop.Width=70;
-            Button menu=new Button(); ConfigureButton(menu,"القائمة الكاملة",delegate { OpenMenu(); }); menu.Width=160;
-            Button administrator=new Button();ConfigureButton(administrator,"تشغيل كمسؤول",delegate { RestartAsAdministrator(); });administrator.Width=145;
-            runButtons.Width=1050; runButtons.Controls.Add(demo); runButtons.Controls.Add(live); runButtons.Controls.Add(stop); runButtons.Controls.Add(menu);runButtons.Controls.Add(administrator); AddLabel(runButtons,"Insert: collapse / expand"); layout.Controls.Add(runButtons,0,2); layout.SetColumnSpan(runButtons,2);
-            AddLabel(setup,"التشخيص يقرأ بيانات الاتصال والذاكرة فقط.");
-            AddLabel(setup,"Live يحتاج ملف إزاحات متحقق من هذا الإصدار.");
-            log.Dock=DockStyle.Fill; log.Multiline=true; log.ReadOnly=true; log.ScrollBars=ScrollBars.Vertical; log.BackColor=Color.FromArgb(10,16,24); log.ForeColor=Color.Silver; log.BorderStyle=BorderStyle.FixedSingle; log.Font=new Font("Consolas",9); log.Margin=new Padding(0,12,0,0);
-            layout.Controls.Add(log,0,3); layout.SetColumnSpan(log,2);
-            status.Dock=DockStyle.Fill; status.TextAlign=ContentAlignment.MiddleLeft; status.ForeColor=Painter.Accent; layout.Controls.Add(status,0,4); layout.SetColumnSpan(status,2);
-            BuildSpectraShell(layout);
+            overlay.Panel.ClickAction+=ProcessGamePanelAction;
+            overlay.Panel.PositionChanged+=QueueQuickSave;
+            overlay.Panel.AdjustmentChanged+=ChangedQuickOptions;
+            BuildSpectraShell();
             activeEmulator=selectedEmulator??(settings.Emulator=="GameLoop"?EmulatorKind.GameLoop:EmulatorKind.LDPlayer);
             emulators.SelectedIndex=activeEmulator==EmulatorKind.GameLoop?1:0;
             LoadConnection();
             emulators.SelectedIndexChanged+=async delegate {
                 SaveConnection(); activeEmulator=emulators.SelectedIndex==1?EmulatorKind.GameLoop:EmulatorKind.LDPlayer;
-                demoMode=false; liveDisplay=false; latest=null; frameBuffer.Clear(); overlay.Hide();
-                devices.Items.Clear(); instances.Items.Clear(); LoadConnection();
+                demoMode=false; liveDisplay=false; latest=null; frameBuffer.Clear(); overlay.HideOverlay();
+                devices.ReplaceItems(new object[0]); instances.ReplaceItems(new object[0]); LoadConnection();
                 settings.Emulator=activeEmulator.ToString(); SaveOptions(); await Scan();
             };
             SetStatus("Idle / waiting for connection");
@@ -190,7 +155,7 @@ namespace ESPWorkbench
                 }
                 Frame displayed=demoMode?latest:frameBuffer.Sample();
                 scene.Frame=demoMode||liveDisplay?displayed:null; scene.Invalidate(); overlay.UpdateFrame(demoMode||!liveDisplay ? null : displayed);
-                if(!aim.Update(latest,overlay.Target,options.Aim,liveDisplay&&!demoMode&&!closing&&!overlay.Suppressed)) WriteLogText("Aim input transport failed. Aim disabled; restart Live and check the selected input method.");
+                if(!aim.Update(latest,overlay.Target,options.Aim,liveDisplay&&!demoMode&&!closing&&!overlay.Suppressed&&!overlay.Panel.IsInteracting)) WriteLogText("Aim input transport failed. Aim disabled; restart Live and check the selected input method.");
                 overlay.AimState=aim.State;
                 overlay.AimCandidate=aim.Candidate;
                 overlay.AimMovements=aim.DeliveredMovements;
@@ -215,8 +180,8 @@ namespace ESPWorkbench
             adbPath.Text=File.Exists(connection.AdbPath)?connection.AdbPath:Emulators.FindAdb(activeEmulator,consolePath.Text);
             endpoint.Text=connection.Endpoint;
             profilePath.Text=File.Exists(connection.ProfilePath)&&!Profile.IsBundledPath(connection.ProfilePath)?connection.ProfilePath:"";
-            consoleRow.Visible=((Control)consoleRow.Tag).Visible=activeEmulator==EmulatorKind.LDPlayer;
-            endpointRow.Visible=((Control)endpointRow.Tag).Visible=activeEmulator==EmulatorKind.GameLoop;
+            consoleRow.Visible=activeEmulator==EmulatorKind.LDPlayer;
+            endpointRow.Visible=activeEmulator==EmulatorKind.GameLoop;
         }
         private void SaveConnection()
         {
@@ -228,36 +193,16 @@ namespace ESPWorkbench
             // Preserve the original LDPlayer fields for existing settings and older builds.
             settings.AdbPath=settings.LDPlayer.AdbPath; settings.ConsolePath=settings.LDPlayer.ConsolePath; settings.Serial=settings.LDPlayer.Serial;settings.ProfilePath=settings.LDPlayer.ProfilePath;
         }
-        private static FlowLayoutPanel Row() { return new FlowLayoutPanel { Width=345,Height=40,Margin=new Padding(0,4,0,0),WrapContents=false }; }
-        private void AddLabel(Control parent,string text)
+        private void ConfigureButton(Button button,string text,EventHandler handler)
         {
-            var label = new Label { AutoSize=true,Margin=new Padding(0,9,0,4),ForeColor=Color.Silver };
-            BindText(label,text);
-            parent.Controls.Add(label);
+            BindText(button,text);
+            button.AutoSize=true;
+            button.MinimumSize=new Size(96,37);
+            button.Padding=new Padding(7,0,7,0);
+            button.Margin=new Padding(0,0,5,5);
+            button.Click+=handler;
         }
-        private static void ConfigureCombo(Control parent,ComboBox combo)
-        {
-            combo.DropDownStyle=ComboBoxStyle.DropDownList; combo.Width=340; combo.BackColor=Surface; combo.ForeColor=Color.White;
-            combo.FlatStyle=FlatStyle.Flat; combo.DrawMode=DrawMode.OwnerDrawFixed; combo.ItemHeight=22;
-            combo.DrawItem+=delegate(object sender,DrawItemEventArgs e) {
-                if(e.Bounds.Width<=0||e.Bounds.Height<=0)return;
-                using(SolidBrush brush=new SolidBrush(Surface))e.Graphics.FillRectangle(brush,e.Bounds);
-                int index=e.Index>=0?e.Index:combo.SelectedIndex;
-                string text=index>=0&&index<combo.Items.Count?combo.Items[index].ToString():"";
-                TextRenderer.DrawText(e.Graphics,text,combo.Font,e.Bounds,combo.Enabled?Color.White:Color.Gray,TextFormatFlags.Left|TextFormatFlags.VerticalCenter|TextFormatFlags.EndEllipsis|TextFormatFlags.NoPrefix);
-                e.DrawFocusRectangle();
-            };
-            parent.Controls.Add(combo);
-        }
-        private void ConfigureButton(Button b,string text,EventHandler handler) { BindText(b,text);b.AutoSize=true; b.Width=126; b.Height=34; b.FlatStyle=FlatStyle.Flat; b.BackColor=Surface; b.ForeColor=Color.White; b.Margin=new Padding(0,0,5,0); b.Click+=handler; }
-        private void AddCheck(Control parent,string text,bool initial,Action<bool> changed, bool developing=false) { CheckBox c=new CheckBox { Checked=initial,AutoSize=true,Margin=new Padding(0,4,12,0) }; BindText(c,text,developing);c.CheckedChanged+=delegate { changed(c.Checked); }; parent.Controls.Add(c); }
-        private Control ConfigurePath(Control parent,string label,TextBox box,Action browse)
-        {
-            AddLabel(parent,label); Control caption=parent.Controls[parent.Controls.Count-1]; FlowLayoutPanel row=Row(); row.Tag=caption; row.Height=31; box.Width=browse==null?335:297; box.BackColor=Surface; box.ForeColor=Color.White; box.BorderStyle=BorderStyle.FixedSingle;
-            row.Controls.Add(box);
-            if(browse!=null) { Button b=new Button { Text="...",Width=35,Height=27,FlatStyle=FlatStyle.Flat,Margin=new Padding(0) }; b.Click+=delegate { browse(); }; row.Controls.Add(b); }
-            parent.Controls.Add(row); return row;
-        }
+
         private void BrowseExecutable(TextBox target,string name) { using (OpenFileDialog d=new OpenFileDialog { Filter=L.Text("Executable (*.exe)|*.exe"),FileName=name }) if (d.ShowDialog(this)==DialogResult.OK) target.Text=d.FileName; }
 
         private readonly Dictionary<Control, Func<string>> localizedControls = new Dictionary<Control, Func<string>>();
@@ -312,7 +257,7 @@ namespace ESPWorkbench
 #if DISTRIBUTION
             RefreshDistributionLanguage();
 #endif
-            overlay.Invalidate();
+            overlay.RefreshQuickPanel();
             scene.Invalidate();
             Invalidate(true);
         }
@@ -359,7 +304,7 @@ namespace ESPWorkbench
             demo.Enabled &= license != null && license.Allows("demo");
 #endif
             adbPath.Enabled=consolePath.Enabled=profilePath.Enabled=devices.Enabled=instances.Enabled=!value&&!running;
-            connectionSetup.Enabled=profilePath.Parent.Enabled=!value&&!running;
+            connectionSetup.Enabled=profileRow.Enabled=!value&&!running;
             stop.Enabled=!value && (demoMode||running||latest!=null);
         }
         private Adb SelectedAdb()
@@ -376,7 +321,7 @@ namespace ESPWorkbench
             try
             {
                 string address=null;
-                instances.Items.Clear(); devices.Items.Clear();
+                instances.ReplaceItems(new object[0]); devices.ReplaceItems(new object[0]);
                 if(activeEmulator==EmulatorKind.GameLoop)
                 {
                     instances.Items.AddRange(Emulators.GameLoopWindows().ToArray());
@@ -398,7 +343,7 @@ namespace ESPWorkbench
                     EmulatorConnection gameLoop=settings.Connection(EmulatorKind.GameLoop);
                     found=found.Where(d=>d.Serial!=gameLoop.Endpoint&&d.Serial!=gameLoop.Serial).ToList();
                 }
-                devices.Items.Clear(); devices.Items.AddRange(found.ToArray());
+                devices.ReplaceItems(found.ToArray());
                 Device preferred=found.FirstOrDefault(d=>d.Serial==previous) ?? found.FirstOrDefault(d=>d.State=="device") ?? found.FirstOrDefault(); if (preferred!=null) devices.SelectedItem=preferred;
                 SaveConnection(); settings.Save();
                 WriteLogText("ADB: {0} device(s); {1}: {2} running window(s). Select the serial and its matching window.",found.Count,Emulators.Name(activeEmulator),instances.Items.Count);
@@ -438,7 +383,7 @@ namespace ESPWorkbench
             demoPermission = license.BeginWork("demo");
             if (demoPermission == null) return;
 #endif
-            demoMode=true; demoClock.Restart(); overlay.Hide(); latest=Demo.Make(0); SetStatus("DEMO / generated actors only / no game data"); WriteLogText("Demo started. All displayed positions and labels are synthetic."); SetBusy(false);
+            demoMode=true; demoClock.Restart(); overlay.HideOverlay(); latest=Demo.Make(0); SetStatus("DEMO / generated actors only / no game data"); WriteLogText("Demo started. All displayed positions and labels are synthetic."); SetBusy(false);
         }
         internal async Task StartLive()
         {
@@ -453,7 +398,7 @@ namespace ESPWorkbench
                 Instance target=instances.SelectedItem as Instance;
                 if (target==null) throw new IOException(L.Format("Select the matching running {0} game window.",Emulators.Name(activeEmulator)));
                 if (!Native.IsWindow(target.Window)) throw new IOException(L.Text("The game render surface is unavailable. Restore the emulator game window and refresh devices."));
-                demoMode=false; latest=null; frameBuffer.Clear(); overlay.Hide();
+                demoMode=false; latest=null; frameBuffer.Clear(); overlay.HideOverlay();
                 if (readerCancel!=null) readerCancel.Dispose();
 #if DISTRIBUTION
                 if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
@@ -495,7 +440,7 @@ namespace ESPWorkbench
                     finally
                     {
                         liveDisplay=false; latest=null; frameBuffer.Clear();
-                        if (!closing && !IsDisposed) try { BeginInvoke(new Action(delegate { if(readerCancel==null||readerCancel.Token!=token)return;StopAimInput();overlay.Hide(); SetStatus("Live reader stopped / see log"); SetBusy(false); })); } catch (InvalidOperationException) { }
+                        if (!closing && !IsDisposed) try { BeginInvoke(new Action(delegate { if(readerCancel==null||readerCancel.Token!=token)return;StopAimInput();overlay.HideOverlay(); SetStatus("Live reader stopped / see log"); SetBusy(false); })); } catch (InvalidOperationException) { }
                     }
                 });
                 WriteLogText("Live reader started for {0} {1}, PID {2}, base 0x{3:X}. The overlay appears while the selected {4} window is active.",p.Package,info.VersionName,info.Pid,baseAddress,Emulators.Name(activeEmulator)); SetStatus("LIVE / {0} to stop",options.Shortcuts.Label(2));
@@ -512,7 +457,7 @@ namespace ESPWorkbench
             if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
 #endif
             StopAimInput();
-            liveDisplay=false; overlay.Suppressed=true; demoMode=false; latest=null; frameBuffer.Clear(); overlay.Hide();
+            liveDisplay=false; overlay.Suppressed=true; demoMode=false; latest=null; frameBuffer.Clear(); overlay.HideOverlay();
             UpdateQuickBindings();
             if (readerCancel!=null) readerCancel.Cancel();
             if (busy && readerTask==null) { SetStatus("Cancelling startup..."); return; }
@@ -560,7 +505,6 @@ namespace ESPWorkbench
         {
             if(shortcutsSuspended)return;
             bool game=GameFocused();
-            if(!game)overlay.Quick.Open=false;
             if(game!=quickKeysActive)
             {
                 quickKeysActive=game;
@@ -573,7 +517,7 @@ namespace ESPWorkbench
                     else if(quickRegistered.Remove(id))Native.UnregisterHotKey(Handle,id);
                 }
             }
-            bool arrows=game&&overlay.Quick.Open&&!overlay.Quick.Collapsed;
+            bool arrows=game&&overlay.Quick.Open&&!overlay.Quick.Collapsed&&!overlay.Quick.Hidden;
             if(arrows!=quickArrowsActive)
             {
                 quickArrowsActive=arrows;
@@ -616,9 +560,44 @@ namespace ESPWorkbench
             if(capturing) { ReleaseShortcuts();shortcutsSuspended=true; }
             else if(!closing)RebindShortcuts();
         }
+        private void QueueQuickSave()
+        {
+            quickSavePending=true;
+            quickSaveDue=DateTime.UtcNow.AddMilliseconds(300);
+        }
         private void ChangedQuickOptions()
         {
-            aim.Reset();quickSavePending=true;quickSaveDue=DateTime.UtcNow.AddMilliseconds(300);overlay.Invalidate();scene.Invalidate();
+            aim.Reset();QueueQuickSave();overlay.RefreshQuickPanel();scene.Invalidate();
+        }
+        private void ProcessGamePanelAction(QuickHudAction action)
+        {
+            if(!GameFocused())return;
+            switch(action)
+            {
+                case QuickHudAction.Collapse: overlay.Quick.ToggleCollapse(options,overlay.Suppressed);break;
+                case QuickHudAction.Hide: overlay.Quick.Hidden=true;break;
+                case QuickHudAction.Adjustments: overlay.Quick.ToggleSection(QuickHudSection.Adjustments);break;
+                case QuickHudAction.Display: overlay.Quick.ToggleSection(QuickHudSection.Display);break;
+                case QuickHudAction.Settings: OpenMenu();return;
+                case QuickHudAction.Aim:
+                case QuickHudAction.Activation:
+                case QuickHudAction.Target:
+                case QuickHudAction.Esp:
+                    QuickActions.Apply(options,3+(action-QuickHudAction.Aim));
+                    ChangedQuickOptions();
+                    return;
+                default:
+                    foreach(QuickHud.DisplayOption option in QuickHud.DisplayOptions)
+                    {
+                        if(option.Action!=action)continue;
+                        option.Set(options,!option.Get(options));
+                        ChangedQuickOptions();
+                        return;
+                    }
+                    return;
+            }
+            UpdateQuickBindings();
+            overlay.RefreshQuickPanel();
         }
         private void OpenMenu(int page=0)
         {
@@ -637,23 +616,23 @@ namespace ESPWorkbench
             }
             if (m.Msg==0x0312)
             {
-                if (m.WParam.ToInt32()==1) { overlay.Suppressed=!overlay.Suppressed; WriteLogText(overlay.Suppressed?"Overlay hidden.":"Overlay enabled."); }
+                if (m.WParam.ToInt32()==1) { overlay.Suppressed=!overlay.Suppressed;overlay.RefreshQuickPanel();WriteLogText(overlay.Suppressed?"Overlay hidden.":"Overlay enabled."); }
                 else if (m.WParam.ToInt32()==2) { Task ignored=StopReader(); }
                 else if (m.WParam.ToInt32()==3)
                 {
-                    if(GameFocused()) { if(overlay.Quick.Collapsed) { overlay.Quick.Collapsed=false;overlay.Quick.Open=true; }else overlay.Quick.Open=!overlay.Quick.Open;UpdateQuickBindings();overlay.Invalidate(); }
+                    if(GameFocused())ProcessGamePanelAction(QuickHudAction.Adjustments);
                     else OpenMenu();
                 }
                 else if(m.WParam.ToInt32()==8)OpenMenu();
-                else if(m.WParam.ToInt32()==9&&GameFocused()) { overlay.Quick.Collapsed=!overlay.Quick.Collapsed;UpdateQuickBindings();overlay.Invalidate(); }
-                else if(m.WParam.ToInt32()>=4&&m.WParam.ToInt32()<=7&&GameFocused()) { QuickActions.Apply(options,m.WParam.ToInt32()-1);ChangedQuickOptions(); }
-                else if(m.WParam.ToInt32()>=20&&m.WParam.ToInt32()<=23&&GameFocused()&&overlay.Quick.Open&&!overlay.Quick.Collapsed)
+                else if(m.WParam.ToInt32()==9)ProcessGamePanelAction(QuickHudAction.Collapse);
+                else if(m.WParam.ToInt32()>=4&&m.WParam.ToInt32()<=7)ProcessGamePanelAction(QuickHudAction.Aim+(m.WParam.ToInt32()-4));
+                else if(m.WParam.ToInt32()>=20&&m.WParam.ToInt32()<=23&&GameFocused()&&overlay.Quick.Open&&!overlay.Quick.Collapsed&&!overlay.Quick.Hidden)
                 {
                     int id=m.WParam.ToInt32();
                     if(id==22)overlay.Quick.SelectedRow=(overlay.Quick.SelectedRow+2)%3;
                     else if(id==23)overlay.Quick.SelectedRow=(overlay.Quick.SelectedRow+1)%3;
                     else { QuickActions.Adjust(options,overlay.Quick.SelectedRow,id==20?-1:1);ChangedQuickOptions(); }
-                    overlay.Invalidate();
+                    overlay.RefreshQuickPanel();
                 }
             }
             base.WndProc(ref m);
@@ -661,14 +640,14 @@ namespace ESPWorkbench
         private async void OnClosing(object sender,FormClosingEventArgs e)
         {
             if (closing) return;
-            e.Cancel=true; closing=true; liveDisplay=false; overlay.Suppressed=true; overlay.Hide(); timer.Stop();StopAimInput(); if (readerCancel!=null) readerCancel.Cancel();
+            e.Cancel=true; closing=true; liveDisplay=false; overlay.Suppressed=true; overlay.HideOverlay(); timer.Stop();StopAimInput(); if (readerCancel!=null) readerCancel.Cancel();
 #if DISTRIBUTION
             if (demoPermission != null) { demoPermission.Dispose(); demoPermission = null; }
 #endif
             UpdateQuickBindings();
             ReleaseShortcuts();
             if (readerTask!=null) try { await readerTask; } catch { }
-            if (toggleHotkey) Native.UnregisterHotKey(Handle,1); if (stopHotkey) Native.UnregisterHotKey(Handle,2); overlay.Close();
+            if (toggleHotkey) Native.UnregisterHotKey(Handle,1); if (stopHotkey) Native.UnregisterHotKey(Handle,2); overlay.Dispose();
             if(menuHotkey)Native.UnregisterHotKey(Handle,3);
             if(fullMenuHotkey)Native.UnregisterHotKey(Handle,8);
             Native.timeEndPeriod(1);

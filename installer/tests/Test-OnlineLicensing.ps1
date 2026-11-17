@@ -40,7 +40,7 @@ namespace ESPWorkbench {
     [IO.File]::WriteAllText($releaseConfig, $source)
     $sourceFiles = @(Get-ChildItem -LiteralPath (Join-Path $root 'src') -Filter '*.cs' | ForEach-Object FullName)
     $target = Join-Path $scratch 'LicenseChecks.exe'
-    & $compiler /nologo /main:ESPWorkbench.LicenseChecks /platform:x64 /define:DISTRIBUTION /utf8output /codepage:65001 /out:"$target" /resource:"$root\src\Translations.tsv,App.Translations.tsv" /resource:"$root\ui.png,Theme.Reference.png" /reference:System.Windows.Forms.dll /reference:System.Drawing.dll /reference:System.Web.Extensions.dll /reference:System.Security.dll @sourceFiles $releaseConfig (Join-Path $PSScriptRoot 'LicenseChecks.cs')
+    & $compiler /nologo /main:ESPWorkbench.LicenseChecks /platform:x64 /define:DISTRIBUTION /utf8output /codepage:65001 /out:"$target" /resource:"$root\src\Translations.tsv,App.Translations.tsv" /reference:System.Windows.Forms.dll /reference:System.Drawing.dll /reference:System.Web.Extensions.dll /reference:System.Security.dll @sourceFiles $releaseConfig (Join-Path $PSScriptRoot 'LicenseChecks.cs')
     if ($LASTEXITCODE -ne 0) { throw 'License checks could not compile.' }
     $env:SV_TEST_SIGNER_XML = $signer.ToXmlString($true)
     & $target

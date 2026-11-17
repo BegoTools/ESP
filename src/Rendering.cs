@@ -38,7 +38,7 @@ namespace ESPWorkbench
             return ally?Color.FromArgb(106,168,255):Color.FromArgb(options.Category(actor.Kind).ColorArgb);
         }
         public static bool Fresh(Frame frame) { return frame != null && (DateTime.UtcNow-frame.CapturedUtc).TotalSeconds < 2; }
-        public static void Draw(Graphics g, Size size, Frame frame, RenderOptions options, bool demoBackground,bool showStatus=true)
+        public static void Draw(Graphics g, Size size, Frame frame, RenderOptions options, bool demoBackground,bool showStatus=true,bool showNearbyCount=true)
         {
             bool smooth=demoBackground||options.ImageQualityEnabled;
             g.SmoothingMode = smooth?SmoothingMode.AntiAlias:SmoothingMode.None;
@@ -143,7 +143,7 @@ namespace ESPWorkbench
                     }
                 }
                 foreach (EdgeContact contact in warnings.Values) DrawWarning(g,size,contact,label);
-                if(options.PlayerCountVisible)DrawPlayerCount(g,size,NearbyPlayers.Count(frame,options));
+                if(showNearbyCount&&options.PlayerCountVisible)DrawPlayerCount(g,size,NearbyPlayers.Count(frame,options));
             }
         }
         private static void DrawPlayerCount(Graphics g,Size size,int count)
@@ -152,12 +152,12 @@ namespace ESPWorkbench
             if(width<100||size.Height<44)return;
             RectangleF badge=new RectangleF((size.Width-width)/2,10,width,30);
             using(GraphicsPath shape=SpectraTheme.Round(badge,8))
-            using(Brush background=new LinearGradientBrush(badge,Color.FromArgb(68,33,95),Color.FromArgb(36,21,47),90))
+            using(Brush background=new LinearGradientBrush(badge,SpectraTheme.Surface,SpectraTheme.Background,90))
             using(Pen border=new Pen(SpectraTheme.Accent,1))
             { g.FillPath(background,shape);g.DrawPath(border,shape); }
             using(Font label=new Font("Segoe UI",13,FontStyle.Bold,GraphicsUnit.Pixel))
             using(Font number=new Font("Segoe UI",18,FontStyle.Bold,GraphicsUnit.Pixel))
-            using(Brush foreground=new SolidBrush(Color.FromArgb(226,200,247)))
+            using(Brush foreground=new SolidBrush(Color.White))
             using(Brush highlight=new SolidBrush(Color.FromArgb(231,255,105)))
             using(StringFormat rtl=new StringFormat { Alignment=StringAlignment.Center,LineAlignment=StringAlignment.Center,FormatFlags=(L.Rtl?StringFormatFlags.DirectionRightToLeft:0)|StringFormatFlags.NoWrap })
             using(StringFormat digits=new StringFormat { Alignment=StringAlignment.Center,LineAlignment=StringAlignment.Center,FormatFlags=StringFormatFlags.NoWrap })
@@ -217,6 +217,25 @@ namespace ESPWorkbench
         [DllImport("user32.dll")] public static extern bool IsIconic(IntPtr h);
         [DllImport("user32.dll")] public static extern IntPtr GetForegroundWindow();
         [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr h);
+        [DllImport("user32.dll")] internal static extern short GetAsyncKeyState(int key);
+        [DllImport("user32.dll")] private static extern bool SetWindowPos(IntPtr h,IntPtr after,int x,int y,int width,int height,uint flags);
+        private const uint NoActivate=0x0010,NoMove=0x0002,NoSize=0x0001,NoZOrder=0x0004;
+        internal static CreateParams LayeredOverlay(Rectangle bounds,string title,bool clickThrough)
+        {
+            return new CreateParams {
+                Caption=title,Style=unchecked((int)0x80000000), // WS_POPUP
+                ExStyle=0x80000|0x80|0x08000000|(clickThrough?0x20:0), // layered, tool window, no activation
+                X=bounds.X,Y=bounds.Y,Width=bounds.Width,Height=bounds.Height
+            };
+        }
+        internal static void PlaceOverlay(IntPtr window,Rectangle bounds,bool show)
+        {
+            SetWindowPos(window,show?new IntPtr(-1):IntPtr.Zero,bounds.X,bounds.Y,bounds.Width,bounds.Height,NoActivate|(show?0x0040u:NoZOrder));
+        }
+        internal static void HideOverlayWindow(IntPtr window)
+        {
+            SetWindowPos(window,IntPtr.Zero,0,0,0,0,NoMove|NoSize|NoZOrder|NoActivate|0x0080);
+        }
         [DllImport("user32.dll")] public static extern bool ShowWindowAsync(IntPtr h,int command);
         [DllImport("user32.dll")] public static extern IntPtr GetAncestor(IntPtr h,uint flag);
         [DllImport("user32.dll")] public static extern bool RegisterHotKey(IntPtr h,int id,uint mods,uint key);
@@ -231,10 +250,10 @@ namespace ESPWorkbench
             return new Rectangle(p.X,p.Y,r.Right-r.Left,r.Bottom-r.Top);
         }
     }
-    public sealed class Overlay : Form
+    public sealed class Overlay : NativeWindow,IDisposable
     {
         private readonly AlphaSurface surface=new AlphaSurface();
-        private bool alphaMode;
+        internal readonly QuickPanel Panel;
         public readonly QuickHudState Quick=new QuickHudState();
         public string AimState="off";
         public AimTarget AimCandidate;
@@ -243,63 +262,77 @@ namespace ESPWorkbench
         public readonly RenderOptions Options;
         public IntPtr Target;
         public bool Suppressed;
+        public Rectangle Bounds { get; private set; }
+        internal bool IsShown { get { return DrawWindowVisible||Panel.Visible; } }
+        private bool DrawWindowVisible { get { return Handle!=IntPtr.Zero&&Native.IsWindowVisible(Handle); } }
+
         public Overlay(RenderOptions options)
         {
-            Text=L.ProductName+" "+L.Text("Overlay");
-            Options = options; FormBorderStyle = FormBorderStyle.None; ShowInTaskbar = false;
-            TopMost = true; BackColor=Color.Fuchsia;TransparencyKey=Color.Fuchsia;DoubleBuffered = true;
-            StartPosition = FormStartPosition.Manual;
+            Options=options;
+            Panel=new QuickPanel(options,Quick);
         }
-        protected override bool ShowWithoutActivation { get { return true; } }
-        protected override CreateParams CreateParams { get { CreateParams p = base.CreateParams; p.ExStyle |= 0x80000|0x20|0x80|0x08000000; return p; } }
+
         public void UpdateFrame(Frame frame)
         {
-            Frame = frame;
-            bool valid = (!Suppressed||Quick.Open) && Target != IntPtr.Zero && Native.IsWindow(Target) && Native.IsWindowVisible(Target) && !Native.IsIconic(Native.GetAncestor(Target,2)) && Painter.Fresh(frame);
-            IntPtr root = Native.GetAncestor(Target,2);
-            if (!valid || Native.GetForegroundWindow() != root) { Hide(); return; }
-            Rectangle bounds = Native.ClientBounds(Target);
-            if (bounds.Width < 10 || bounds.Height < 10) { Hide(); return; }
-            if (Bounds != bounds) Bounds = bounds;
-            EnsurePresentationMode();
-            if (!Visible) Show();
-            if(alphaMode)Present();else Invalidate();
+            Frame=frame;
+            if(Target==IntPtr.Zero||!Native.IsWindow(Target)||!Native.IsWindowVisible(Target)||!Painter.Fresh(frame))
+            {
+                HideOverlay();
+                return;
+            }
+            IntPtr root=Native.GetAncestor(Target,2);
+            if(Native.IsIconic(root)||Native.GetForegroundWindow()!=root)
+            {
+                HideOverlay();
+                return;
+            }
+            Rectangle bounds=Native.ClientBounds(Target);
+            if(bounds.Width<10||bounds.Height<10)
+            {
+                HideOverlay();
+                return;
+            }
+            Bounds=bounds;
+            bool raisePanel=false;
+            if(Suppressed)
+            {
+                if(DrawWindowVisible)Native.HideOverlayWindow(Handle);
+            }
+            else
+            {
+                if(Handle==IntPtr.Zero)CreateHandle(Native.LayeredOverlay(bounds,L.ProductName+" "+L.Text("Overlay"),true));
+                raisePanel=!DrawWindowVisible;
+                surface.Draw(Handle,bounds,DrawOverlay,!Options.ImageQualityEnabled);
+                if(raisePanel)Native.PlaceOverlay(Handle,bounds,true);
+            }
+            Panel.UpdateView(bounds,frame,AimState,AimMovements,Suppressed,raisePanel);
         }
-        private void EnsurePresentationMode()
+
+        internal void RefreshQuickPanel() { Panel.RefreshContent(); }
+
+        internal void HideOverlay()
         {
-            if(alphaMode==Options.ImageQualityEnabled)return;
-            alphaMode=Options.ImageQualityEnabled;
-            TransparencyKey=alphaMode?Color.Empty:Color.Fuchsia;
-            // SetLayeredWindowAttributes (color key) and UpdateLayeredWindow
-            // cannot share the same layered-window state. Recreate at the switch.
-            if(IsHandleCreated)RecreateHandle();
+            Panel.Hide();
+            if(DrawWindowVisible)Native.HideOverlayWindow(Handle);
+        }
+
+        public void Dispose()
+        {
+            Panel.Dispose();
+            if(Handle!=IntPtr.Zero)DestroyHandle();
             surface.Dispose();
         }
-        private void Present() { if(Visible&&ClientSize.Width>0&&ClientSize.Height>0)surface.Draw(Handle,Bounds,DrawOverlay); }
-        protected override void OnPaintBackground(PaintEventArgs e) { if(!alphaMode)base.OnPaintBackground(e); }
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            if(alphaMode)Present();else { base.OnPaint(e);DrawOverlay(e.Graphics); }
-        }
-        protected override void Dispose(bool disposing) { if(disposing)surface.Dispose();base.Dispose(disposing); }
+
         private void DrawOverlay(Graphics graphics)
         {
-            PaintEventArgs e=new PaintEventArgs(graphics,ClientRectangle);
-            if(!Suppressed)Painter.Draw(e.Graphics,ClientSize,Frame,Options,false,!Options.QuickHudVisible&&!Quick.Open);
-            if(!Suppressed&&Options.Aim.Enabled&&Painter.Fresh(Frame))
-            {
-                float radius=Options.Aim.ScreenRadius(ClientSize);
-                if(Options.Aim.ShowRadius)using(Pen pen=new Pen(Color.FromArgb(102,160,168),1))e.Graphics.DrawEllipse(pen,ClientSize.Width/2f-radius,ClientSize.Height/2f-radius,radius*2,radius*2);
-                if(AimCandidate!=null)using(Pen marker=new Pen(Color.LimeGreen,2))e.Graphics.DrawEllipse(marker,AimCandidate.Point.X-5,AimCandidate.Point.Y-5,10,10);
-                if(!Options.QuickHudVisible&&!Quick.Open)using(Font font=new Font("Segoe UI",10))
-                {
-                    string text=L.Format("AIM {0}% | {1} | {2} | INPUT {3}",Options.Aim.Strength,Options.Aim.PointLabel,AimState,AimMovements);
-                    SizeF measured=e.Graphics.MeasureString(text,font);
-                    e.Graphics.FillRectangle(Brushes.Black,12,56,Math.Min(ClientSize.Width-24,measured.Width+12),measured.Height+6);
-                    e.Graphics.DrawString(text,font,Brushes.LightGray,16,59);
-                }
-            }
-            if(Painter.Fresh(Frame))QuickHud.Draw(e.Graphics,ClientSize,Options,Quick,Suppressed?L.Format("{0}: overlay and assist paused",Options.Shortcuts.Label(1)):AimState,Frame.ReadHertz,AimMovements);
+            Size size=Bounds.Size;
+            Painter.Draw(graphics,size,Frame,Options,false,false,Quick.Collapsed||!Quick.IsVisible(Options,false));
+            if(!Options.Aim.Enabled)return;
+            float radius=Options.Aim.ScreenRadius(size);
+            if(Options.Aim.ShowRadius)
+                using(Pen pen=new Pen(Color.FromArgb(102,160,168),1))graphics.DrawEllipse(pen,size.Width/2f-radius,size.Height/2f-radius,radius*2,radius*2);
+            if(AimCandidate!=null)
+                using(Pen marker=new Pen(Color.LimeGreen,2))graphics.DrawEllipse(marker,AimCandidate.Point.X-5,AimCandidate.Point.Y-5,10,10);
         }
     }
 }

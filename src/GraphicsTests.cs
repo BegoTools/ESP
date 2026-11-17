@@ -2,7 +2,6 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
-using System.Reflection;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
@@ -44,17 +43,21 @@ namespace ESPWorkbench
                 surface.Draw(handle,new Rectangle(-20000,-20000,90,80),g=>g.FillRectangle(Brushes.Green,4,4,12,12));
                 check(true,"native alpha overlay presents and resizes without color-key artifacts");
             }
-            using(Overlay overlay=new Overlay(options))
+            NativeWindow drawingWindow=new NativeWindow();
+            Rectangle drawingBounds=new Rectangle(-20000,-20000,64,64);
+            drawingWindow.CreateHandle(Native.LayeredOverlay(drawingBounds,"Overlay test",true));
+            try
             {
-                IntPtr initial=overlay.Handle;
-                check(overlay.TransparencyKey==Color.Fuchsia,"quality off preserves the existing lightweight color-key overlay");
-                options.ImageQualityEnabled=true;
-                MethodInfo switchMode=typeof(Overlay).GetMethod("EnsurePresentationMode",BindingFlags.NonPublic|BindingFlags.Instance);
-                switchMode.Invoke(overlay,null);
-                check(overlay.TransparencyKey==Color.Empty&&(NativeStyle.GetWindowLongPtr(overlay.Handle,-20).ToInt64()&0x08080020)==0x08080020,"quality on selects alpha while retaining click-through and no-activation styles");
-                options.ImageQualityEnabled=false;switchMode.Invoke(overlay,null);
-                check(overlay.TransparencyKey==Color.Fuchsia,"quality off safely returns from per-pixel alpha to color-key rendering");
+                using(AlphaSurface surface=new AlphaSurface())
+                {
+                    surface.Draw(drawingWindow.Handle,drawingBounds,g=>{},true);
+                    surface.Draw(drawingWindow.Handle,drawingBounds,g=>{});
+                    surface.Draw(drawingWindow.Handle,drawingBounds,g=>{},true);
+                }
+                check((NativeStyle.GetWindowLongPtr(drawingWindow.Handle,-20).ToInt64()&0x08080020)==0x08080020,
+                    "color-key and alpha rendering switch on the same non-activating, click-through window");
             }
+            finally { drawingWindow.DestroyHandle(); }
             bool requested=false;
             using(OptionsForm menu=new OptionsForm(options,delegate {},null,null,enabled=>{requested=enabled;options.ImageQualityEnabled=enabled;return "saved";}))
             using(Control page=menu.CreateEmbeddedPage(7))

@@ -11,7 +11,7 @@ if ($ReleaseConfig) {
     $sourcePaths += (Resolve-Path -LiteralPath $ReleaseConfig).Path
     $releaseFlags += '/define:DISTRIBUTION'
 }
-& $compilerPath /nologo /target:winexe /platform:x64 /optimize+ /utf8output /codepage:65001 /warn:4 /resource:"$projectRoot\src\Translations.tsv,App.Translations.tsv" /resource:"$projectRoot\ui.png,Theme.Reference.png" /out:"$outputPath\ESPWorkbench.exe" /reference:System.Windows.Forms.dll /reference:System.Drawing.dll /reference:System.Web.Extensions.dll /reference:System.Security.dll @releaseFlags $sourcePaths
+& $compilerPath /nologo /target:winexe /platform:x64 /optimize+ /utf8output /codepage:65001 /warn:4 /resource:"$projectRoot\src\Translations.tsv,App.Translations.tsv" /out:"$outputPath\ESPWorkbench.exe" /reference:System.Windows.Forms.dll /reference:System.Drawing.dll /reference:System.Web.Extensions.dll /reference:System.Security.dll @releaseFlags $sourcePaths
 if ($LASTEXITCODE -ne 0) { throw 'Compilation failed.' }
 Copy-Item -LiteralPath (Join-Path $projectRoot 'profiles') -Destination $outputPath -Recurse -Force
 Copy-Item -LiteralPath (Join-Path $projectRoot 'README.ar.md') -Destination $outputPath -Force
