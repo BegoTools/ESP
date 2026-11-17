@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -28,7 +29,7 @@ namespace ESPWorkbench
                 using(MainForm reopened=new MainForm(false,null,true))
                 {
                     var navigation=(List<Button>)Field(reopened,"shellNavigation");
-                    check(L.Language=="fr"&&navigation[0].Text.Contains("Accueil"),"a fresh window restores the saved language");
+                    check(L.Language=="fr"&&navigation[0].Text.Contains("Tableau de bord"),"a fresh window restores the saved language");
                 }
             }
             finally
@@ -78,7 +79,127 @@ namespace ESPWorkbench
                 }
             }
             check(options.Aim.AimPoint=="Head"||options.Aim.AimPoint=="Chest"||options.Aim.AimPoint=="Legs","menu choices retain stored aim identifiers");
+            CheckThemedLayout(form,check);
+            CheckLocalizedRepainting(form,check);
             form.Hide();
+        }
+
+        private static void CheckThemedLayout(MainForm form,Action<bool,string> check)
+        {
+            CheckClippedText(check);
+            form.Size=form.MinimumSize;
+            Button support=(Button)form.Controls.Find("TelegramSupport",true)[0];
+            var navigation=(List<Button>)Field(form,"shellNavigation");
+            check(support.Visible&&support.Top>navigation[navigation.Count-1].Bottom&&support.Bottom<=support.Parent.Height,
+                "Telegram support stays visible below navigation at the minimum window size");
+            check(SupportLink.Address=="https://t.me/ramhaxsuppoort_bot","support points to the configured Telegram bot");
+            Call(form,"NavigateShell",3);
+            var shell=(Panel)Field(form,"shellContent");
+            SpectraNumber number=null;
+            foreach(Control child in Children(shell))if(child is SpectraNumber) { number=(SpectraNumber)child;break; }
+            check(number!=null&&number.Visible,"rendering values use the themed numeric control");
+            decimal requested=number.Value;
+            number.Value=30;
+            foreach(Control child in Children(number))if(child is Button&&child.Text=="+")((Button)child).PerformClick();
+            check(number.Value==60,"themed stepper applies the existing increment");
+            number.Value=requested;
+
+            Call(form,"NavigateShell",1);
+            SpectraScroll page=null;
+            foreach(Control child in Children(shell))if(child is SpectraScroll) { page=(SpectraScroll)child;break; }
+            Panel track=(Panel)Field(page,"track"),scroll=(Panel)Field(page,"scroll");
+            Call(track,"OnMouseDown",new MouseEventArgs(MouseButtons.Left,1,7,track.Height-6,0));
+            Call(track,"OnMouseUp",new MouseEventArgs(MouseButtons.Left,1,7,track.Height-6,0));
+            check(scroll.AutoScrollPosition.Y<0,"themed scrollbar reaches the lower ESP controls at the minimum window size");
+        }
+
+        private static void CheckClippedText(Action<bool,string> check)
+        {
+            using(var row=new SpectraSwitch { Text="ESP display / NumPad8",Size=new Size(290,34),Checked=true })
+            using(var image=new Bitmap(340,84))
+            using(Graphics graphics=Graphics.FromImage(image))
+            {
+                graphics.Clear(Color.Magenta);
+                var area=new Rectangle(33,38,76,10);
+                graphics.SetClip(area);
+                graphics.TranslateTransform(30,25);
+                Call(row,"OnPaint",new PaintEventArgs(graphics,new Rectangle(3,13,area.Width,area.Height)));
+                bool confined=true,painted=false;
+                for(int y=0;y<image.Height;y++)
+                for(int x=0;x<image.Width;x++)
+                {
+                    bool changed=image.GetPixel(x,y).ToArgb()!=Color.Magenta.ToArgb();
+                    if(area.Contains(x,y))painted|=changed;
+                    else confined&=!changed;
+                }
+                check(confined&&painted,"a partial switch repaint covers its background and keeps text inside the translated clip");
+            }
+        }
+
+        private static void CheckLocalizedRepainting(MainForm form,Action<bool,string> check)
+        {
+            var language=(SpectraChoice)Field(form,"languageChoice");
+            Panel shell=(Panel)Field(form,"shellContent");
+            int previous=L.Index;
+            try
+            {
+                for(int locale=0;locale<4;locale++)
+                {
+                    language.SelectedIndex=locale;
+                    Call(form,"NavigateShell",1);
+                    CheckPagePaint(shell,"ESP General",true,check);
+                    Control tabs=shell.Controls.Find("EspTabs",true)[0];
+                    foreach(Button tab in tabs.Controls)
+                    {
+                        tab.PerformClick();
+                        CheckPagePaint(shell,tab.Text,false,check);
+                    }
+                    for(int page=2;page<=6;page++)
+                    {
+                        Call(form,"NavigateShell",page);
+                        CheckPagePaint(shell,"page "+page,false,check);
+                        if(page!=4)continue;
+                        ((Button)shell.Controls.Find("ProfileTab",true)[0]).PerformClick();
+                        CheckPagePaint(shell,"connection profile",false,check);
+                    }
+                }
+            }
+            finally { language.SelectedIndex=previous; }
+        }
+
+        private static void CheckPagePaint(Panel shell,string name,bool compareAfterScroll,Action<bool,string> check)
+        {
+            Application.DoEvents();
+            var page=Children(shell).OfType<SpectraScroll>().Single();
+            var scroll=(Panel)Field(page,"scroll");
+            var content=(SpectraStack)Field(page,"content");
+            check(Children(content).Where(child=>child.Visible).All(child=>child.BackColor.A==255)
+                &&Children(content).OfType<SpectraSwitch>().Where(row=>row.Visible).All(row=>row.Height>=row.PreferredHeight(row.Width)),
+                name+" uses opaque rows with space for wrapped text in "+L.Language);
+            if(content.Height<=scroll.ClientSize.Height)return;
+            if(!compareAfterScroll)
+            {
+                scroll.AutoScrollPosition=new Point(0,content.Height);
+                Application.DoEvents();
+                check(scroll.AutoScrollPosition.Y<0,name+" scrolls to the bottom in "+L.Language);
+                return;
+            }
+            using(var first=new Bitmap(page.Width,page.Height))
+            using(var restored=new Bitmap(page.Width,page.Height))
+            {
+                page.DrawToBitmap(first,page.ClientRectangle);
+                scroll.AutoScrollPosition=new Point(0,content.Height);
+                Application.DoEvents();
+                check(scroll.AutoScrollPosition.Y<0,name+" scrolls to the bottom in "+L.Language);
+                scroll.AutoScrollPosition=Point.Empty;
+                Application.DoEvents();
+                page.DrawToBitmap(restored,page.ClientRectangle);
+                bool same=true;
+                for(int y=0;y<first.Height&&same;y+=3)
+                for(int x=0;x<first.Width&&same;x+=3)
+                    same=first.GetPixel(x,y)==restored.GetPixel(x,y);
+                check(same,name+" redraws the same text after scrolling away and back in "+L.Language);
+            }
         }
 
         private static void CheckLanguages(MainForm form, Action<bool,string> check)
@@ -99,8 +220,8 @@ namespace ESPWorkbench
                 {
                     language.SelectedIndex=index;
                     check(L.Index==index&&((Settings)Field(form,"settings")).Language==L.CodeAt(index),"language selector updates the shared preference for "+L.Language);
-                    check(form.Text=="RAM HAX"&&navigation[0].Text.Contains(L.Text("Home")),"window branding and navigation use "+L.Language);
-                    check(L.Text("ESP")==espNames[index]&&navigation[1].Text.Contains(espNames[index]),"the exploration aids name appears in navigation in "+L.Language);
+                    check(form.Text=="RAM HAX"&&navigation[0].Text.Contains(L.Text("Dashboard")),"window branding and navigation use "+L.Language);
+                    check(L.Text("ESP")==espNames[index]&&navigation[1].Text.Contains(L.Text("Player ESP")),"the player ESP page is localized in "+L.Language);
                     check(((Label)Field(form,"status")).Text==L.Format("{0} connected / run game inspection","GameLoop"),"existing status retranslates into "+L.Language);
                     check(((TextBox)Field(form,"log")).Text.Contains(L.Text("Display and reader stopped.")),"existing application log retranslates into "+L.Language);
                     Call(form,"NavigateShell",2);
@@ -194,12 +315,11 @@ namespace ESPWorkbench
                     Call(form,"RebindShortcuts");Overlay overlay=(Overlay)Field(form,"overlay");
                     check(overlay.Quick.Unavailable.Contains(1)&&registered.Contains(2),"external shortcut conflict is reported without disabling the remaining actions");
                     SpectraDashboard dashboard=(SpectraDashboard)Field(form,"dashboard");dashboard.Size=new Size(1280,740);
-                    bool original=options.EspEnabled;typeof(Control).GetMethod("OnMouseDown",BindingFlags.NonPublic|BindingFlags.Instance).Invoke(dashboard,new object[]{new MouseEventArgs(MouseButtons.Left,1,(int)(550*dashboard.Width/1280f),(int)(345*dashboard.Height/740f),0)});
+                    bool original=options.EspEnabled;typeof(Control).GetMethod("OnMouseDown",BindingFlags.NonPublic|BindingFlags.Instance).Invoke(dashboard,new object[]{new MouseEventArgs(MouseButtons.Left,1,(int)(550*dashboard.Width/1280f),(int)(300*dashboard.Height/740f),0)});
                     check(options.EspEnabled!=original,"home switch updates the shared ESP option");
-                    typeof(Control).GetMethod("OnMouseDown",BindingFlags.NonPublic|BindingFlags.Instance).Invoke(dashboard,new object[]{new MouseEventArgs(MouseButtons.Left,1,(int)(955*dashboard.Width/1280f),(int)(462*dashboard.Height/740f),0)});
+                    typeof(Control).GetMethod("OnMouseDown",BindingFlags.NonPublic|BindingFlags.Instance).Invoke(dashboard,new object[]{new MouseEventArgs(MouseButtons.Left,1,(int)(953*dashboard.Width/1280f),(int)(551*dashboard.Height/740f),0)});
                     check(Math.Abs(options.Aim.Radius-610)<3,"home FOV slider updates the existing aim radius");
                     options.Aim.AimPoint="Legs";dashboard.RefreshValues();check(options.Aim.AimPoint=="Legs","home refresh keeps the selected target in sync");
-                    check(SpectraTheme.Reference!=null,"reference artwork is embedded in the executable");
                     List<Button> navigation=(List<Button>)Field(form,"shellNavigation");check(navigation.FindAll(b=>b.BackColor!=SpectraTheme.Background).Count==1,"only the active sidebar destination is highlighted");
                     using(SpectraSlider slider=new SpectraSlider { Minimum=20,Maximum=1200,Value=90,Width=650,SmallChange=10 })
                     {

@@ -134,6 +134,7 @@ namespace ESPWorkbench
         public ShortcutOptions Shortcuts=new ShortcutOptions();
         public VisibilityOptions Visibility=new VisibilityOptions();
         public bool EspEnabled=true,QuickHudVisible=true,PlayerCountVisible=true;
+        public int QuickHudX=12,QuickHudY=12;
         public bool ImageQualityEnabled;
         public bool Boxes = true, Names = true, Health = true, Distance = true, Lines = true, Alerts = true, Allies;
         public float MaxDistance = 1500;

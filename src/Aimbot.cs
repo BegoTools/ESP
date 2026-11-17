@@ -127,12 +127,11 @@ namespace ESPWorkbench
         // INPUT's union is 32 bytes on x64; the mouse member is its largest member.
         [StructLayout(LayoutKind.Sequential)] internal struct Input { public uint Type; public Mouse Mouse; }
         [StructLayout(LayoutKind.Sequential)] private struct CursorInfo { public int Size,Flags; public IntPtr Cursor; public Native.Point Position; }
-        [DllImport("user32.dll")] private static extern short GetAsyncKeyState(int key);
         [DllImport("user32.dll")] private static extern bool GetCursorInfo(ref CursorInfo info);
         [DllImport("user32.dll",SetLastError=true)] private static extern uint SendInput(uint count,Input[] inputs,int size);
         public AimInputState Read(IntPtr target,AimOptions options)
         {
-            AimInputState state=new AimInputState { KeyHeld=(GetAsyncKeyState(options.HoldKey)&0x8000)!=0 };
+            AimInputState state=new AimInputState { KeyHeld=(Native.GetAsyncKeyState(options.HoldKey)&0x8000)!=0 };
             CursorInfo info=new CursorInfo { Size=Marshal.SizeOf(typeof(CursorInfo)) };
             state.CursorKnown=GetCursorInfo(ref info);state.CursorVisible=(info.Flags&1)!=0;
             if(target==IntPtr.Zero||!Native.IsWindow(target)||!Native.IsWindowVisible(target))return state;

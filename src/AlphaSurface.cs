@@ -21,13 +21,17 @@ namespace ESPWorkbench
         private IntPtr dc,dib,previous;
         private Bitmap bitmap;
         private Size size;
-        internal void Draw(IntPtr window,Rectangle bounds,Action<Graphics> paint)
+        internal void Draw(IntPtr window,Rectangle bounds,Action<Graphics> paint,bool colorKey=false)
         {
             if(bounds.Width<1||bounds.Height<1)return;
             Ensure(bounds.Size);
-            using(Graphics graphics=Graphics.FromImage(bitmap)) { graphics.Clear(Color.Transparent);paint(graphics);graphics.Flush(); }
-            Point destination=bounds.Location,origin=Point.Empty;Blend blend=new Blend { Alpha=255,Format=1 };
-            if(!UpdateLayeredWindow(window,IntPtr.Zero,ref destination,ref size,dc,ref origin,0,ref blend,2))throw new Win32Exception(Marshal.GetLastWin32Error(),"Unable to present transparent overlay.");
+            using(Graphics graphics=Graphics.FromImage(bitmap)) { graphics.Clear(colorKey?Color.Fuchsia:Color.Transparent);paint(graphics);graphics.Flush(); }
+            Point destination=bounds.Location,origin=Point.Empty;
+            Blend blend=new Blend { Alpha=255,Format=1 };
+            const uint magentaKey=0x00FF00FF,layeredColorKey=1,layeredAlpha=2;
+            if(!UpdateLayeredWindow(window,IntPtr.Zero,ref destination,ref size,dc,ref origin,
+                colorKey?magentaKey:0,ref blend,colorKey?layeredColorKey:layeredAlpha))
+                throw new Win32Exception(Marshal.GetLastWin32Error(),"Unable to present transparent overlay.");
         }
         private void Ensure(Size requested)
         {

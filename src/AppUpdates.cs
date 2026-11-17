@@ -187,7 +187,7 @@ namespace ESPWorkbench
             license = client;
             var actions = (FlowLayoutPanel)demo.Parent;
             licenseLabel = new Label { Text = client.Description, Width = 225, Height = 38, TextAlign = ContentAlignment.MiddleCenter, ForeColor = Color.White };
-            updateButton = new Button();
+            updateButton = new SpectraButton();
             ConfigureButton(updateButton, "فحص التحديثات", async delegate
             {
                 if (availableRelease != null) await DownloadUpdate();
@@ -195,7 +195,7 @@ namespace ESPWorkbench
             });
             updateButton.Width = 145;
             updateButton.Height = 38;
-            activationButton = new Button { Width = 145, Height = 38 };
+            activationButton = new SpectraButton { Width = 145, Height = 38 };
             ConfigureButton(activationButton, "تفعيل", delegate
             {
                 using (var activation = new ActivationForm(license, false)) activation.ShowDialog(this);
@@ -240,7 +240,7 @@ namespace ESPWorkbench
                 latest = null;
                 frameBuffer.Clear();
                 overlay.Suppressed = true;
-                overlay.Hide();
+                overlay.HideOverlay();
                 StopAimInput();
                 SetStatus("Stopped");
             }

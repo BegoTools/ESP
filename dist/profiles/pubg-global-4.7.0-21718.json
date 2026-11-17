@@ -1,0 +1,17 @@
+{
+  "Name": "PUBG Global 4.7.0 (21718) / inspected ARM64 build",
+  "Enabled": true,
+  "Backend": "Native",
+  "Package": "com.tencent.ig",
+  "VersionName": "4.7.0",
+  "VersionCode": "21718",
+  "Module": "libUE4.so",
+  "ModuleSha256": "0467ee62be0054b9e7ed4a5544178296e827af61627a691b06fd6d48d464006c",
+  "PointerSize": 8,
+  "UnitsPerMeter": 100,
+  "ActorHeight": 180,
+  "MaxHealth": 100,
+  "MaxActors": 16384,
+  "MaxDisplayed": 200,
+  "PollMilliseconds": 100
+}
